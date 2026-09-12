@@ -4,50 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  server: 51.222.12.127
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  server: 51.79.64.198
-  port: 8119
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
-- name: 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  server: 15.235.75.71
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: FD3rCuOsxOay
-- name: 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  server: 15.223.122.197
+- name: 🇨🇦 加拿大 (Canada) 01
+  server: 172.67.67.178
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
   skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  server: 142.4.216.225
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /?ed=2560
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇨🇦 加拿大 (Canada) 02
+  server: 149.22.95.183
   port: 443
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 3ssumf2
-- name: 🇨🇦 加拿大 (Canada) 07 - xiaohe
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 03
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -55,22 +34,90 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 08 - xiaohe
-  server: 15.223.183.81
-  port: 443
+- name: 🇨🇦 加拿大 (Canada) 04
+  server: 15.235.75.71
+  port: 8388
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 15.223.183.81
-  skip-cert-verify: true
-- name: 🇨🇦 加拿大 (Canada) 09 - xiaohe
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: FD3rCuOsxOay
+- name: 🇨🇦 加拿大 (Canada) 05
+  server: 51.222.141.125
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 06
+  server: 51.222.200.165
+  port: 5000
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: Y6R9pAtvxxzmGC
+- name: 🇨🇦 加拿大 (Canada) 07
   server: 51.222.155.113
   port: 5601
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 10 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 08
+  server: 15.223.122.197
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇨🇦 加拿大 (Canada) 09
+  server: 51.79.64.198
+  port: 8119
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 10
+  server: 216.152.147.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
+    short-id: b9f8d3f8
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 11
+  server: 209.200.246.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
+    short-id: f98843107912e782
+  servername: www.cloudflare.com
+  client-fingerprint: random
+- name: 🇨🇦 加拿大 (Canada) 12
+  server: 51.222.12.127
+  port: 445
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 13
+  server: 142.4.216.225
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 3ssumf2
+- name: 🇨🇦 加拿大 (Canada) 14
   server: 158.69.112.254
   port: 443
   udp: true
@@ -83,61 +130,7 @@ proxies:
     short-id: 3d3c1e645f763ee3
   servername: www.speedtest.net
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  server: 138.197.141.58
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 13 - xiaohe
-  server: 216.152.147.28
-  port: 443
-  udp: true
-  type: vless
-  uuid: d9e4721d-cdac-44c7-bc91-117367eac194
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: kjiuPmjM4IutdZudHfcPZHEwcrBEFY4qBLlvfC6A_Ss
-    short-id: b9f8d3f8
-  servername: www.cloudflare.com
-  client-fingerprint: edge
-- name: 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  server: 51.222.141.125
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 15 - xiaohe
-  server: 209.200.246.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: ca52e2b6-fb9f-4dac-b6dc-49da9923f251
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: uTmb-ytXsx8p0fkBz7A76SHpWk7_oVutIA4LGTE8BQk
-    short-id: f98843107912e782
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 16 - xiaohe
-  server: 149.22.95.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇨🇦 加拿大 (Canada) 17 - xiaohe
+- name: 🇨🇦 加拿大 (Canada) 15
   server: 66.70.179.124
   port: 443
   udp: true
@@ -149,8 +142,16 @@ proxies:
     public-key: feWlxnxySxB9B9HiuC4NwoTe_6slRqaW-EULPN0yxjY
     short-id: af7e79b5
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇨🇦 加拿大 (Canada) 18 - xiaohe
+  client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 16
+  server: 134.195.196.211
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 17
   server: 130.107.73.148
   port: 41373
   udp: true
@@ -163,94 +164,58 @@ proxies:
     short-id: 0e
   servername: google.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  server: ca1.gigobingo.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3e0c1fbf-467a-49d7-abd2-3a158628f3d0
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Aj6Op88j_eYXxoBw095KS_NnKCBm5uwa874uumXdiDQ
-    short-id: ef7c4e4302bd52d7
-  servername: ca1.gigobingo.ru
-  client-fingerprint: firefox
-- name: 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 21 - xiaohe
-  server: 51.222.136.236
-  port: 8882
+- name: 🇨🇦 加拿大 (Canada) 18
+  server: 51.222.155.32
+  port: 5003
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 22 - xiaohe
-  server: 51.79.85.185
-  port: 8118
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  password: g5MeD6Ft3CWlJId
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 07 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 08 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 09 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 13 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 15 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 16 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 17 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 18 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 21 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 22 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01
+  - 🇨🇦 加拿大 (Canada) 02
+  - 🇨🇦 加拿大 (Canada) 03
+  - 🇨🇦 加拿大 (Canada) 04
+  - 🇨🇦 加拿大 (Canada) 05
+  - 🇨🇦 加拿大 (Canada) 06
+  - 🇨🇦 加拿大 (Canada) 07
+  - 🇨🇦 加拿大 (Canada) 08
+  - 🇨🇦 加拿大 (Canada) 09
+  - 🇨🇦 加拿大 (Canada) 10
+  - 🇨🇦 加拿大 (Canada) 11
+  - 🇨🇦 加拿大 (Canada) 12
+  - 🇨🇦 加拿大 (Canada) 13
+  - 🇨🇦 加拿大 (Canada) 14
+  - 🇨🇦 加拿大 (Canada) 15
+  - 🇨🇦 加拿大 (Canada) 16
+  - 🇨🇦 加拿大 (Canada) 17
+  - 🇨🇦 加拿大 (Canada) 18
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇦 加拿大 (Canada) 01 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 02 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 03 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 04 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 05 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 06 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 07 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 08 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 09 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 10 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 11 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 12 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 13 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 14 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 15 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 16 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 17 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 18 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 19 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 20 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 21 - xiaohe
-  - 🇨🇦 加拿大 (Canada) 22 - xiaohe
+  - 🇨🇦 加拿大 (Canada) 01
+  - 🇨🇦 加拿大 (Canada) 02
+  - 🇨🇦 加拿大 (Canada) 03
+  - 🇨🇦 加拿大 (Canada) 04
+  - 🇨🇦 加拿大 (Canada) 05
+  - 🇨🇦 加拿大 (Canada) 06
+  - 🇨🇦 加拿大 (Canada) 07
+  - 🇨🇦 加拿大 (Canada) 08
+  - 🇨🇦 加拿大 (Canada) 09
+  - 🇨🇦 加拿大 (Canada) 10
+  - 🇨🇦 加拿大 (Canada) 11
+  - 🇨🇦 加拿大 (Canada) 12
+  - 🇨🇦 加拿大 (Canada) 13
+  - 🇨🇦 加拿大 (Canada) 14
+  - 🇨🇦 加拿大 (Canada) 15
+  - 🇨🇦 加拿大 (Canada) 16
+  - 🇨🇦 加拿大 (Canada) 17
+  - 🇨🇦 加拿大 (Canada) 18
 rules:
 - MATCH,PROXIES

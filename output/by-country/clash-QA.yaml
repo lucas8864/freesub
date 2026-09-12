@@ -4,7 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
+- name: 🇶🇦 卡塔尔 (Qatar) 01
   server: z-jp2.1card.cc
   port: 10008
   udp: true
@@ -17,12 +17,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
+  - 🇶🇦 卡塔尔 (Qatar) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇶🇦 卡塔尔 (Qatar) 01 - xiaohe
+  - 🇶🇦 卡塔尔 (Qatar) 01
 rules:
 - MATCH,PROXIES

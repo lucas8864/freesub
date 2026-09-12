@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe",
+      "tag": "🇶🇦 卡塔尔 (Qatar) 01",
       "server": "z-jp2.1card.cc",
       "server_port": 10008,
       "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
+        "🇶🇦 卡塔尔 (Qatar) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01 - xiaohe"
+        "🇶🇦 卡塔尔 (Qatar) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇪 比利时 (Belgium) 01 - xiaohe",
+      "tag": "🇧🇪 比利时 (Belgium) 01",
       "server": "172.67.209.13",
       "server_port": 443,
       "uuid": "fa45096d-bed0-ad80-c773-23c30000001b",
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇪 比利时 (Belgium) 01 - xiaohe"
+        "🇧🇪 比利时 (Belgium) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
