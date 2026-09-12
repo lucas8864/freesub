@@ -1,0 +1,90 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  server: 64.177.32.29
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: wBYiDjDDyFqcBnNl
+- name: 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  server: 140.174.184.5
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  server: 93.189.94.67
+  port: 48296
+  udp: true
+  type: vless
+  uuid: 898537d9-ce3a-4937-bbef-c0fa61c07791
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ga1wUMMknP4pwJfUNOOvD9I35XV4q3c73byXPYbRxBE
+    short-id: 109657bb2dbe99
+  servername: www.sony.com
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  server: 185.254.205.79
+  port: 19842
+  udp: true
+  type: vless
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+  servername: www.tesla.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 06 - xiaohe
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇪🇸 西班牙 (Spain) 01 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 02 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 03 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 04 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 05 - xiaohe
+  - 🇪🇸 西班牙 (Spain) 06 - xiaohe
+rules:
+- MATCH,PROXIES
