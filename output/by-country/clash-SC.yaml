@@ -11,7 +11,7 @@ proxies:
   type: hysteria2
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   sni: hopp-legend-se.roxa.org
-  skip-cert-verify: false
+  skip-cert-verify: true
 - name: 🇸🇨 塞舌尔 (Seychelles) 02
   server: 156.226.168.221
   port: 35193
@@ -24,7 +24,18 @@ proxies:
     public-key: d_pn_DMaIxhCkNh80h0Mc7nP94hrlN--I8liOIREDxE
     short-id: e8daed2d
   servername: www.apple.com
-  client-fingerprint: safari
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 03
+  server: 45.130.125.75
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01
   - 🇸🇨 塞舌尔 (Seychelles) 02
+  - 🇸🇨 塞舌尔 (Seychelles) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01
   - 🇸🇨 塞舌尔 (Seychelles) 02
+  - 🇸🇨 塞舌尔 (Seychelles) 03
 rules:
 - MATCH,PROXIES

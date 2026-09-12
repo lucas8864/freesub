@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 83.147.18.3
-  port: 443
+  server: 140.174.184.5
+  port: 8388
   udp: true
-  type: vless
-  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
-    short-id: fd8cf7e1173f0edb
-  servername: www.cloudflare.com
-  client-fingerprint: ''
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 02
   server: 108.181.121.226
   port: 8388
@@ -25,19 +19,6 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03
-  server: 185.254.205.79
-  port: 19842
-  udp: true
-  type: vless
-  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
-    short-id: 25ebc9e0a912
-  servername: www.tesla.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 04
   server: 93.189.94.67
   port: 48296
   udp: true
@@ -50,13 +31,27 @@ proxies:
     short-id: 109657bb2dbe99
   servername: www.sony.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 05
-  server: 140.174.184.5
-  port: 8388
+- name: 🇪🇸 西班牙 (Spain) 04
+  server: 185.254.205.79
+  port: 19842
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: qItG8SueYQcP
+  type: vless
+  uuid: 43c23116-1115-4af4-a0f0-56f02841a605
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sfOfuQeJBlKfDnPL_EMWUxMIiFAN8BNKjtWDUvlsjzM
+    short-id: 25ebc9e0a912
+  servername: www.tesla.com
+  client-fingerprint: random
+- name: 🇪🇸 西班牙 (Spain) 05
+  server: 85.90.217.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 06
   server: 212.227.235.66
   port: 2053
