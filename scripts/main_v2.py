@@ -55,6 +55,11 @@ except ImportError as e:
 SOURCE_URLS = [
     "https://wild-cloud-9893.heleimail.workers.dev",
     "https://github.com/Au1rxx/free-vpn-subscriptions/raw/main/output/by-country/v2ray-base64-TW.txt",
+    "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/by-country/v2ray-base64-US.txt",
+    "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/by-country/v2ray-base64-SG.txt",
+    "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/by-country/v2ray-base64-JP.txt",
+    "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/by-country/v2ray-base64-KR.txt",
+    "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/refs/heads/main/output/by-country/v2ray-base64-HK.txt",
     "https://raw.githubusercontent.com/ShatakVPN/ConfigForge-V2Ray/main/configs/all.txt",
     "https://raw.githubusercontent.com/10ium/HiN-VPN/main/subscription/base64/mix",
     "https://raw.githubusercontent.com/10ium/telegram-configs-collector/main/protocols/hysteria",
@@ -65,8 +70,11 @@ SOURCE_URLS = [
     "https://www.ermao.net/sub/v2ray/ermao.net",
     "https://node.freeclashnode.com/uploads/2026/09/0-20260912.txt",
     "https://raw.githubusercontent.com/WLget/V2Ray_configs_64/refs/heads/master/ConfigSub_list.txt",
-    "https://raw.githubusercontent.com/Au1rxx/free-vpn-subscriptions/main/output/v2ray-base64.txt",
     "https://raw.githubusercontent.com/kooker/FreeSubsCheck/refs/heads/main/base64.txt",
+    "https://www.xrayvip.com/free.txt",
+    "https://raw.githubusercontent.com/Epodonios/v2ray-configs/main/All_Configs_base64_Sub.txt",
+    "https://raw.githubusercontent.com/Alirewa/V2ray-Configs/main/sub1.txt",
+    "https://raw.githubusercontent.com/free18/v2ray/refs/heads/main/v.txt",
 ]
 
 OUTPUT_DIR = "output"
