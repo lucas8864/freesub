@@ -1637,9 +1637,38 @@ def classify_network_type(ip: str, country: str, asn, org: str, ip_api_rec: dict
 def outbound_to_clash(node: dict, name: str) -> dict:
     """sing-box outbound → Clash (Meta/mihomo) proxy dict"""
     t = node.get("type")
-    server, port = node["server"], node["server_port"]
-    proxy = {"name": name, "server": server, "port": port, "udp": True}
+    server = node.get("server", "")
+    port = node.get("server_port")
 
+    # Hysteria2 端口跳跃节点没有固定 server_port
+    if port is None:
+        server_ports = node.get("server_ports") or []
+
+        if server_ports:
+            first_port = str(server_ports[0]).split(":", 1)[0]
+            try:
+                port = int(first_port)
+            except (TypeError, ValueError):
+                port = 0
+
+    # 防止异常节点导致整个导出失败
+    if not server or not port or int(port) <= 0:
+        raise ValueError(
+            f"无效节点，无法生成 Clash 配置: "
+            f"type={t}, server={server!r}, "
+            f"server_port={node.get('server_port')!r}, "
+            f"server_ports={node.get('server_ports')!r}"
+        )
+
+    port = int(port)
+
+    proxy = {
+        "name": name,
+        "server": server,
+        "port": port,
+        "udp": True
+    }
+  
     if t == "vless":
         proxy["type"] = "vless"
         proxy["uuid"] = node["uuid"]
@@ -2199,7 +2228,17 @@ def export_all(unique_nodes, residential, non_residential):
             if not ob:
                 continue
             links.append(outbound_to_v2ray_link(ob, name))
+          try:
             cp = outbound_to_clash(ob, name)
+        except Exception as e:
+          print(
+            f"[!] Clash 导出跳过异常节点: "
+            f"{name} | type={ob.get('type')} | "
+            f"server={ob.get('server')} | "
+            f"error={e}"
+          )
+          continue
+          
             if cp:
                 proxies.append(cp)
             sb_nodes.append(outbound_to_singbox(ob, name))
