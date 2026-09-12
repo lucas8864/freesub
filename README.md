@@ -92,35 +92,51 @@
 
 ```javascript
 export default {
-  async fetch(request) {
-    const GITHUB_TOKEN = "ghp_你的GitHub永久访问令牌";
-    const OWNER = "lucas8864";
-    const REPO = "freesub";
-    const BRANCH = "main";
-
+  async fetch(request, env) {
+    const GITHUB_TOKEN = env.GITHUB_TOKEN || "your_tokens";
+    const OWNER = env.GITHUB_OWNER || "username";
+    const REPO = env.GITHUB_REPO || "freesub";
+    const BRANCH = env.GITHUB_BRANCH || "main";
+	
     const url = new URL(request.url);
-    const filePath = "output" + url.pathname;
-    const ghUrl = "https://raw.githubusercontent.com/" + OWNER + "/" + REPO + "/" + BRANCH + "/" + filePath;
+    let filePath = url.searchParams.get("path") || url.searchParams.get("file");
+
+    if (!filePath) {
+      filePath = url.pathname;
+    }
+	
+    filePath = filePath.replace(/^\/+/, "");
+    filePath = filePath.replace(/\.\./g, "");
+    if (!filePath.startsWith("output/")) {
+      filePath = "output/" + filePath;
+    }
+
+    const ghUrl = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${filePath}`;
 
     const res = await fetch(ghUrl, {
       headers: {
-        "Authorization": "token " + GITHUB_TOKEN,
+        "Authorization": `Bearer ${GITHUB_TOKEN}`,
         "User-Agent": "Cloudflare-Worker"
       }
     });
 
     if (!res.ok) {
-      return new Response("Not Found", { status: 404 });
+      return new Response("Not Found", {
+        status: 404
+      });
     }
 
-    return new Response(await res.text(), {
+    const content = await res.text();
+
+    return new Response(content, {
+      status: 200,
       headers: {
         "Content-Type": "text/plain; charset=utf-8",
         "Cache-Control": "no-cache"
       }
     });
   }
-}
+};
 ```
 
 ### 3. 私有订阅链接映射方式
