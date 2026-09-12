@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01
   server: 195.238.126.20
-  port: 9012
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
+  password: UkXRsXvR6buDMG2Y
 - name: 🇱🇹 立陶宛 (Lithuania) 02
-  server: 195.238.126.20
-  port: 9068
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: mwgRg9hRq3b4Qnwb
-- name: 🇱🇹 立陶宛 (Lithuania) 03
   server: 88.119.176.24
   port: 443
   udp: true
@@ -38,7 +31,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01
   - 🇱🇹 立陶宛 (Lithuania) 02
-  - 🇱🇹 立陶宛 (Lithuania) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,6 +38,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01
   - 🇱🇹 立陶宛 (Lithuania) 02
-  - 🇱🇹 立陶宛 (Lithuania) 03
 rules:
 - MATCH,PROXIES

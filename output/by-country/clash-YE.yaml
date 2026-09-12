@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇶🇦 卡塔尔 (Qatar) 01
-  server: z-jp2.1card.cc
-  port: 10008
+- name: 🇾🇪 YE 01
+  server: z-jp1.1card.cc
+  port: 10010
   udp: true
   type: trojan
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  sni: z-jp2.1card.cc
+  sni: www.cloudflare.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇶🇦 卡塔尔 (Qatar) 01
+  - 🇾🇪 YE 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇶🇦 卡塔尔 (Qatar) 01
+  - 🇾🇪 YE 01
 rules:
 - MATCH,PROXIES

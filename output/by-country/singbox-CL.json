@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇶🇦 卡塔尔 (Qatar) 01",
-      "server": "z-jp2.1card.cc",
-      "server_port": 10008,
-      "password": "ultra@kWZdAzt_IH593eGLRjdxnBZ0",
-      "tls": {
-        "enabled": true,
-        "server_name": "z-jp2.1card.cc",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇱 智利 (Chile) 01",
+      "server": "64.176.2.21",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "xBStBEVqvGwHPocc"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇶🇦 卡塔尔 (Qatar) 01"
+        "🇨🇱 智利 (Chile) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇶🇦 卡塔尔 (Qatar) 01"
+        "🇨🇱 智利 (Chile) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -1,0 +1,42 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇷 巴西 (Brazil) 01
+  server: 216.128.168.190
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: owVdNnQcdPgthSyX
+- name: 🇧🇷 巴西 (Brazil) 02
+  server: 201.51.10.239
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02722550-1915-4629-a653-cbe95e594f70
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: unAvLudgWMwMSCs9ltSr2_Ayp7q3685S7EBxFVk_4Uw
+    short-id: 9d0791d1
+  servername: apitw1.goonars.com
+  client-fingerprint: ios
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇷 巴西 (Brazil) 01
+  - 🇧🇷 巴西 (Brazil) 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇷 巴西 (Brazil) 01
+  - 🇧🇷 巴西 (Brazil) 02
+rules:
+- MATCH,PROXIES
