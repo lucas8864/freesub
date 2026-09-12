@@ -2228,16 +2228,16 @@ def export_all(unique_nodes, residential, non_residential):
             if not ob:
                 continue
             links.append(outbound_to_v2ray_link(ob, name))
-          try:
-            cp = outbound_to_clash(ob, name)
-        except Exception as e:
-          print(
-            f"[!] Clash 导出跳过异常节点: "
-            f"{name} | type={ob.get('type')} | "
-            f"server={ob.get('server')} | "
-            f"error={e}"
-          )
-          continue
+            try:
+              cp = outbound_to_clash(ob, name)
+            except Exception as e:
+              print(
+                f"[!] Clash 导出跳过异常节点: "
+                f"{name} | type={ob.get('type')} | "
+                f"server={ob.get('server')} | "
+                f"error={e}"
+              )
+              continue
           
             if cp:
                 proxies.append(cp)
