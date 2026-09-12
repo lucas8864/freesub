@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,44 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "83.143.106.9",
-      "server_port": 8443,
-      "uuid": "3f9f2bda-0b9c-8469-7381-a73de2255619",
-      "tls": {
-        "enabled": true,
-        "server_name": "res.cdn.office.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01 - xiaohe",
-        "🇮🇱 以色列 (Israel) 02 - xiaohe"
+        "🇮🇱 以色列 (Israel) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

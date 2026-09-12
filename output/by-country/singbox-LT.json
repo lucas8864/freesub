@@ -4,23 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01 - xiaohe",
-      "server": "89.116.180.49",
-      "server_port": 443,
-      "password": "f18d6149-e214-8554-e737-f7523c8b2eea",
-      "tls": {
-        "enabled": true,
-        "server_name": "0403.infinityconfig4.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/sync",
-        "headers": {
-          "Host": "0403.infinityconfig4.workers.dev"
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9068,
+      "method": "aes-256-cfb",
+      "password": "mwgRg9hRq3b4Qnwb"
     },
     {
       "type": "selector",
