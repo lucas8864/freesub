@@ -25,8 +25,16 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇳🇴 挪威 (Norway) 02",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+    },
+    {
+      "type": "vless",
+      "tag": "🇳🇴 挪威 (Norway) 03",
       "server": "46.29.238.88",
       "server_port": 40443,
       "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
@@ -50,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01",
-        "🇳🇴 挪威 (Norway) 02"
+        "🇳🇴 挪威 (Norway) 02",
+        "🇳🇴 挪威 (Norway) 03"
       ]
     },
     {
@@ -58,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01",
-        "🇳🇴 挪威 (Norway) 02"
+        "🇳🇴 挪威 (Norway) 02",
+        "🇳🇴 挪威 (Norway) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
