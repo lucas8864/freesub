@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 31.76.21.179
+  server: 31.76.21.9
   port: 443
   udp: true
   type: vless
@@ -16,8 +16,21 @@ proxies:
     public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
     short-id: 8ffa160e608bf539
   servername: fin.pinkmoon.pro
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02
+  server: 31.76.21.11
+  port: 443
+  udp: true
+  type: vless
+  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
+    short-id: 8ffa160e608bf539
+  servername: fin.pinkmoon.pro
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 03
   server: 185.79.138.71
   port: 448
   udp: true
@@ -29,40 +42,18 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: fin.pinkmoon.pro
-  port: 443
-  udp: true
-  type: vless
-  uuid: 827a0eb0-21bf-4bce-96ef-0a7bac5d68f5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: DS9mX6cMb5wvwFzga8yN2NLbs7soXM7038_P23yPKwk
-    short-id: 8ffa160e608bf539
-  servername: fin.pinkmoon.pro
-  client-fingerprint: qq
 - name: 🇫🇮 芬兰 (Finland) 04
-  server: 171.22.129.56
-  port: 2053
+  server: 212.193.18.183
+  port: 8443
   udp: true
   type: vless
-  uuid: 9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc
-  flow: xtls-rprx-vision
+  uuid: 90aff853-23d8-460b-913e-80c92bb60884
   tls: true
   reality-opts:
-    public-key: AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI
-    short-id: beff3ff061a64cfd
-  servername: fi-one.quiet-rogue.site
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 65.109.189.128
-  port: 2086
-  udp: true
-  type: vmess
-  uuid: f6361af8-bb8f-4609-bf5d-3fc0f688f47b
-  alterId: 0
-  cipher: auto
+    public-key: XnPQT554eJohCPNsM8gw9oCS-3NTZmqxNoU36Td-tlM
+    short-id: a1b2c3d4e5f6
+  servername: maps.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,7 +63,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,6 +72,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES

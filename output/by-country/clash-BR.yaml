@@ -5,12 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇷 巴西 (Brazil) 01
-  server: 216.128.168.190
-  port: 8388
+  server: ip6-br5.vp1000.net
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: owVdNnQcdPgthSyX
+  type: vmess
+  uuid: d9bcf9dd-690c-49b6-8897-46959572bd18
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: br.vp1000.net
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /pulicpDisney
+    headers:
+      Host: br.vp1000.net
 proxy-groups:
 - name: PROXIES
   type: select

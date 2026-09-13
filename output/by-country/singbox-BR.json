@@ -4,12 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇧🇷 巴西 (Brazil) 01",
-      "server": "216.128.168.190",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "owVdNnQcdPgthSyX"
+      "server": "ip6-br5.vp1000.net",
+      "server_port": 443,
+      "uuid": "d9bcf9dd-690c-49b6-8897-46959572bd18",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "br.vp1000.net",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/pulicpDisney",
+        "headers": {
+          "Host": "br.vp1000.net"
+        }
+      }
     },
     {
       "type": "selector",

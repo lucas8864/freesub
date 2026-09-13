@@ -5,33 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 111.88.143.139
-  port: 8443
+  server: 139.64.235.123
+  port: 443
   udp: true
   type: vless
-  uuid: 2b8c0574-ff6f-4975-8a06-e24ebefa1d1c
-  flow: xtls-rprx-vision
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   tls: true
-  reality-opts:
-    public-key: Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0
-    short-id: ac4b582e
-  servername: www.cloudflare.com
+  servername: notls.lukongtou.eu.org
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /Telegram-WangCai2🇨🇳
+    headers:
+      Host: notls.lukongtou.eu.org
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 111.88.143.139
-  port: 51940
+  server: 104.21.19.76
+  port: 2096
   udp: true
   type: vless
-  uuid: 03464802-b517-404b-b15c-7750ffc5e78f
+  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
   tls: true
-  reality-opts:
-    public-key: uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y
-    short-id: fd7f
-  servername: yahoo.com
+  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: ez-82c7e7.abobaba.workers.dev
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
   server: 94.198.220.183
   port: 64674
@@ -39,6 +41,33 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: s8LbJCgUiGXeCKVc63tHJP
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
+  server: 62.233.39.9
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
+  tls: true
+  reality-opts:
+    public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
+  servername: dl.dell.com
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +76,8 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +86,7 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
 rules:
 - MATCH,PROXIES

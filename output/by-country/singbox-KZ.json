@@ -6,45 +6,50 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-      "server": "111.88.143.139",
-      "server_port": 8443,
-      "uuid": "2b8c0574-ff6f-4975-8a06-e24ebefa1d1c",
-      "flow": "xtls-rprx-vision",
+      "server": "139.64.235.123",
+      "server_port": 443,
+      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "notls.lukongtou.eu.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Ao_imnCEIGAaL1DZnjOK1SSPpjQOw_XJcgMpNLEZwg0",
-          "short_id": "ac4b582e"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/Telegram-WangCai2🇨🇳",
+        "headers": {
+          "Host": "notls.lukongtou.eu.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-      "server": "111.88.143.139",
-      "server_port": 51940,
-      "uuid": "03464802-b517-404b-b15c-7750ffc5e78f",
+      "server": "104.21.19.76",
+      "server_port": 2096,
+      "uuid": "fee1da7e-a258-4456-8e5e-8ecf6518ed12",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "ez-82c7e7.aBoBaBA.WorkeRS.dEv",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uPHvFb_vZ3DKL-8Et_e9OliZskdSV5U1NZ66tHfC-2Y",
-          "short_id": "fd7f"
         }
       },
       "transport": {
-        "type": "grpc"
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "ez-82c7e7.abobaba.workers.dev"
+        }
       }
     },
     {
@@ -56,13 +61,54 @@
       "password": "s8LbJCgUiGXeCKVc63tHJP"
     },
     {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
+      "server": "62.233.39.9",
+      "server_port": 8443,
+      "uuid": "4350213a-b4e7-262a-0bd7-bd16957cf71a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.dell.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 05",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vmess/",
+        "headers": {
+          "Host": "38.107.234.57"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05"
       ]
     },
     {
@@ -71,7 +117,9 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

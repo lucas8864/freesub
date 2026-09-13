@@ -11,17 +11,34 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇹 奥地利 (Austria) 02
+  server: 188.68.218.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6aaa7d1d-8b35-4fd2-ae60-0129ad624935
+  tls: true
+  reality-opts:
+    public-key: 8dPBbufX7ST4NrD8Etatp_FR_mbd38vXa2ZXCVLxjQ4
+    short-id: 0fc62d3cd3089adb
+  servername: static-basket-01.wbbasket.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01
+  - 🇦🇹 奥地利 (Austria) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 奥地利 (Austria) 01
+  - 🇦🇹 奥地利 (Austria) 02
 rules:
 - MATCH,PROXIES

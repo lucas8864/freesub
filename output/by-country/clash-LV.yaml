@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 02
   server: 138.124.180.137
   port: 443
   udp: true
@@ -23,33 +16,18 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 03
-  server: 169.40.1.62
-  port: 1443
-  udp: true
-  type: vless
-  uuid: 773251ef-4691-453e-b062-27e3ed3ed784
-  flow: xtls-rprx-vision
-  tls: true
-  servername: lv.pawnet.ink
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01
-  - 🇱🇻 拉脱维亚 (Latvia) 02
-  - 🇱🇻 拉脱维亚 (Latvia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01
-  - 🇱🇻 拉脱维亚 (Latvia) 02
-  - 🇱🇻 拉脱维亚 (Latvia) 03
 rules:
 - MATCH,PROXIES

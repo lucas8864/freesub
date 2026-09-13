@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
+  server: 104.17.169.13
+  port: 2053
+  udp: true
+  type: vless
+  uuid: a22bff60-a40a-4250-bde2-4c660e363b47
+  tls: true
+  servername: inDeX.HaRMONiCA01.WORkers.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /axch1mttbxz2k55y01
+    headers:
+      Host: inDeX.HaRMONiCA01.WORkers.DeV
+- name: 🇹🇷 土耳其 (Turkey) 02
   server: 156.67.63.231
   port: 443
   udp: true
@@ -17,16 +32,117 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02
-  server: 195.162.69.203
+- name: 🇹🇷 土耳其 (Turkey) 03
+  server: 144.225.65.166
+  port: 26109
+  udp: true
+  type: vless
+  uuid: 8d0a82ca-41cf-4661-a9d7-ea2e192c5f64
+  tls: true
+  reality-opts:
+    public-key: 0EgMUSL26mD_WAqkFmwMXXWSoWRthDKePFxCvfyu3CU
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 04
+  server: 158.94.216.50
+  port: 32306
+  udp: true
+  type: vless
+  uuid: f1505323-ecb6-4152-9a5b-d37b3ae1cacf
+  tls: true
+  reality-opts:
+    public-key: 5iqitmx5fd71pubTxlrX0sd-ei7palcgVL7vtKToJGA
+    short-id: 61614f026070554f
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 05
+  server: 188.132.237.20
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 3b9e513e-30d9-4ca8-8340-8f33fc6710de
+- name: 🇹🇷 土耳其 (Turkey) 06
+  server: 188.114.97.8
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 4fea1f87-e983-4111-8afc-dccb43b3fd38
+  tls: true
+  servername: kurdnet.arianetmili.xyz
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: httpupgrade
+  httpupgrade-opts:
+    path: /random
+    headers:
+      Host: kurdnet.arianetmili.xyz
+- name: 🇹🇷 土耳其 (Turkey) 07
+  server: 45.74.159.233
+  port: 56659
+  udp: true
+  type: vless
+  uuid: 12af43c3-84b4-4248-878b-b75f35835487
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qLggZ7qospn6X7UEO1zSoohNXK4Y1EX7Hx2sJeWfvw0
+    short-id: 9aa3a3f599f3d5d0
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 08
+  server: 172.67.151.109
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 09
+  server: shop.neexbyte.ir
   port: 8443
   udp: true
   type: vless
-  uuid: 953358cb-82ba-4296-960d-6d2ec3468f4c
+  uuid: 464bc502-f963-45b6-81e3-e33d18427506
   tls: true
-  servername: 195-162-69-203.sslip.io
+  servername: shop.neexbyte.ir
   skip-cert-verify: false
-  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇷 土耳其 (Turkey) 10
+  server: 172.67.134.170
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
+  tls: true
+  servername: jdzit4e4urks.xwzohsebujps.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
+    headers:
+      Host: jdzit4e4urks.xwzohsebujps.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 11
+  server: 104.21.238.93
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
+  tls: true
+  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
+    headers:
+      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,6 +150,15 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
+  - 🇹🇷 土耳其 (Turkey) 03
+  - 🇹🇷 土耳其 (Turkey) 04
+  - 🇹🇷 土耳其 (Turkey) 05
+  - 🇹🇷 土耳其 (Turkey) 06
+  - 🇹🇷 土耳其 (Turkey) 07
+  - 🇹🇷 土耳其 (Turkey) 08
+  - 🇹🇷 土耳其 (Turkey) 09
+  - 🇹🇷 土耳其 (Turkey) 10
+  - 🇹🇷 土耳其 (Turkey) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,5 +166,14 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
+  - 🇹🇷 土耳其 (Turkey) 03
+  - 🇹🇷 土耳其 (Turkey) 04
+  - 🇹🇷 土耳其 (Turkey) 05
+  - 🇹🇷 土耳其 (Turkey) 06
+  - 🇹🇷 土耳其 (Turkey) 07
+  - 🇹🇷 土耳其 (Turkey) 08
+  - 🇹🇷 土耳其 (Turkey) 09
+  - 🇹🇷 土耳其 (Turkey) 10
+  - 🇹🇷 土耳其 (Turkey) 11
 rules:
 - MATCH,PROXIES

@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇧🇪 比利时 (Belgium) 01
+  server: 172.67.155.136
+  port: 2086
+  udp: true
+  type: vless
+  uuid: 73796e63-0000-4000-8000-000000000007
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇧🇪 比利时 (Belgium) 01
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇧🇪 比利时 (Belgium) 01
+rules:
+- MATCH,PROXIES

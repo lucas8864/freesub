@@ -5,20 +5,52 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01
+  server: 66.245.207.70
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: qMvJmCbMduKUoeHq
+- name: 🇮🇹 意大利 (Italy) 02
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 02
+- name: 🇮🇹 意大利 (Italy) 03
   server: 57.131.48.45
   port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 03
+- name: 🇮🇹 意大利 (Italy) 04
+  server: 31.77.154.91
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vMpyuTZ06hfF-Yu1u8w43TiUidkML1Ges5KGeyr6Ui4
+    short-id: '324344345654'
+  servername: mil.2clash.ru
+  client-fingerprint: firefox
+- name: 🇮🇹 意大利 (Italy) 05
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇹 意大利 (Italy) 06
   server: 82.118.16.187
   port: 443
   udp: true
@@ -31,18 +63,15 @@ proxies:
     short-id: cd6065902eea7a02
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 04
-  server: 57.131.38.163
-  port: 2053
+- name: 🇮🇹 意大利 (Italy) 07
+  server: 57.131.32.191
+  port: 80
   udp: true
   type: vless
-  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
-  tls: true
-  reality-opts:
-    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
-    short-id: 5b8a942318178e7b
-  servername: www.apple.com
-  client-fingerprint: random
+  uuid: 049e56d8-0ba0-49e3-b764-ee04122b9f00
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +81,9 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02
   - 🇮🇹 意大利 (Italy) 03
   - 🇮🇹 意大利 (Italy) 04
+  - 🇮🇹 意大利 (Italy) 05
+  - 🇮🇹 意大利 (Italy) 06
+  - 🇮🇹 意大利 (Italy) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +93,8 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 02
   - 🇮🇹 意大利 (Italy) 03
   - 🇮🇹 意大利 (Italy) 04
+  - 🇮🇹 意大利 (Italy) 05
+  - 🇮🇹 意大利 (Italy) 06
+  - 🇮🇹 意大利 (Italy) 07
 rules:
 - MATCH,PROXIES
