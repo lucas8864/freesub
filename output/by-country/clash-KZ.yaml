@@ -5,57 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 139.64.235.123
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /Telegram-WangCai2🇨🇳
-    headers:
-      Host: notls.lukongtou.eu.org
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 104.21.19.76
-  port: 2096
-  udp: true
-  type: vless
-  uuid: fee1da7e-a258-4456-8e5e-8ecf6518ed12
-  tls: true
-  servername: ez-82c7e7.aBoBaBA.WorkeRS.dEv
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiemxGMEFDU1VDRyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: ez-82c7e7.abobaba.workers.dev
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  server: 94.198.220.183
-  port: 64674
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: s8LbJCgUiGXeCKVc63tHJP
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  server: 62.233.39.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  tls: true
-  reality-opts:
-    public-key: oHaUPZiESTQQ89DMd4uIcPWgsyeFFy58iZYX_8mbvWk
-  servername: dl.dell.com
-  client-fingerprint: safari
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
   server: 38.107.234.57
   port: 80
   udp: true
@@ -68,6 +17,18 @@ proxies:
     path: /vmess/
     headers:
       Host: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
+  server: 178.236.16.98
+  port: 35728
+  udp: true
+  type: vless
+  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  tls: true
+  reality-opts:
+    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
+    short-id: 69a2
+  servername: yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,9 +36,6 @@ proxy-groups:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,8 +43,5 @@ proxy-groups:
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
 rules:
 - MATCH,PROXIES

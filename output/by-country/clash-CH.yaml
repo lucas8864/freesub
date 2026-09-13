@@ -5,113 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 104.21.200.243
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 7074b9d7-2183-8919-fc11-ca5e00000000
-  tls: true
-  servername: netlivpn2584.vjvdgbc.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn2584.vjvdgbc.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 02
-  server: 188.114.97.6
-  port: 8080
-  udp: true
-  type: vless
-  uuid: bd9ff08b-d042-3650-48e4-c4b400000000
-  network: ws
-  ws-opts:
-    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
-    headers:
-      Host: netlivpn2950.bbxff.workers.dev
-- name: 🇨🇭 瑞士 (Switzerland) 03
-  server: 151.242.2.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
-  tls: true
-  servername: cf9.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: qq
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: cf9.rumedia-cdn.com
-- name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 132.243.162.30
-  port: 46280
-  udp: true
-  type: vless
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 3xEvhIbjIvO9bJSqHEF3D91YZEYaA3fWzb2JpxW0XmQ
-    short-id: e53690af52736850
-  servername: amp-api-edge.apps.apple.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 05
   server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 52e3dd44-ed23-4030-b0cc-5b5a953f2d4d
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 06
-  server: 104.165.205.40
   port: 8443
   udp: true
   type: hysteria2
   password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
   sni: speedtestmark.com
   skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 07
-  server: 104.18.28.234
-  port: 443
-  udp: true
-  type: vless
-  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
-  tls: true
-  servername: netlivpn5505.ffffdsaaa.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01
-  - 🇨🇭 瑞士 (Switzerland) 02
-  - 🇨🇭 瑞士 (Switzerland) 03
-  - 🇨🇭 瑞士 (Switzerland) 04
-  - 🇨🇭 瑞士 (Switzerland) 05
-  - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01
-  - 🇨🇭 瑞士 (Switzerland) 02
-  - 🇨🇭 瑞士 (Switzerland) 03
-  - 🇨🇭 瑞士 (Switzerland) 04
-  - 🇨🇭 瑞士 (Switzerland) 05
-  - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
 rules:
 - MATCH,PROXIES

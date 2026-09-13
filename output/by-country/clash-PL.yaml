@@ -5,50 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 104.25.22.24
-  port: 443
+  server: 217.30.10.44
+  port: 9071
   udp: true
-  type: vless
-  uuid: e6cc4788-3c45-4df1-94f3-8303504a65bf
-  tls: true
-  servername: khoda.ak-khoda.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: khoda.ak-khoda.workers.dev
+  type: ss
+  cipher: aes-256-cfb
+  password: mENfxTFQpRKKh4As
 - name: 🇵🇱 波兰 (Poland) 02
-  server: 217.30.10.44
-  port: 9006
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: FAdUvMJUq5vDgKEq
-- name: 🇵🇱 波兰 (Poland) 03
-  server: 217.30.10.44
-  port: 9052
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: jt2ekBNc9HuVtm2a
-- name: 🇵🇱 波兰 (Poland) 04
-  server: 217.30.10.44
-  port: 9095
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: N7j3pdTYkKmsy8CR
-- name: 🇵🇱 波兰 (Poland) 05
   server: 217.30.10.44
   port: 9041
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: U6qnYRhfyDmn8sgn
-- name: 🇵🇱 波兰 (Poland) 06
-  server: 185.223.57.16
+- name: 🇵🇱 波兰 (Poland) 03
+  server: 217.30.10.44
+  port: 9095
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: N7j3pdTYkKmsy8CR
+- name: 🇵🇱 波兰 (Poland) 04
+  server: 185.223.57.10
   port: 33743
   udp: true
   type: vless
@@ -57,11 +35,62 @@ proxies:
   reality-opts:
     public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
   servername: www.google.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: TunService
+- name: 🇵🇱 波兰 (Poland) 05
+  server: 94.183.209.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 06
+  server: 217.30.10.44
+  port: 9052
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: jt2ekBNc9HuVtm2a
 - name: 🇵🇱 波兰 (Poland) 07
+  server: 144.31.5.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl4.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 08
+  server: 144.31.2.33
+  port: 443
+  udp: true
+  type: vless
+  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
+  flow: xtls-rprx-vision
+  tls: true
+  servername: pl3.moritech.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 09
+  server: 82.118.22.161
+  port: 443
+  udp: true
+  type: vless
+  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
+    short-id: fa3ea655619a3e78
+  servername: www.cloudflare.com
+  client-fingerprint: safari
+- name: 🇵🇱 波兰 (Poland) 10
   server: 94.183.209.58
   port: 443
   udp: true
@@ -72,39 +101,6 @@ proxies:
     path: /
     headers:
       Host: pl2.lckdwn.ru
-- name: 🇵🇱 波兰 (Poland) 08
-  server: 144.31.5.64
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl6.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 09
-  server: 94.183.209.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: d23cb516-40db-4aa4-8142-6b45ff882f90
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇵🇱 波兰 (Poland) 10
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 11
   server: admin.wwwinternetvideo.click
   port: 443
@@ -121,49 +117,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: U9YAoqBgg5VyGBc6vQv1sN
 - name: 🇵🇱 波兰 (Poland) 13
-  server: poland-new-ded.failspace.top
+  server: pl6.moritech.net
   port: 443
   udp: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
   flow: xtls-rprx-vision
   tls: true
-  servername: poland-new-ded.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 14
-  server: 144.31.2.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl3.moritech.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15
-  server: datpol.2clash.ru
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3b6a9df3-f1d1-4bc1-94a5-0d8f2d5512b1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QOT8VdR2idgWURLucBQrAMtWtsEx1gfO8AcPEj7xhCU
-    short-id: '32445654'
-  servername: datpol.2clash.ru
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 16
-  server: 144.31.5.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl4.moritech.net
+  servername: pl6.moritech.net
   skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
@@ -184,9 +145,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 11
   - 🇵🇱 波兰 (Poland) 12
   - 🇵🇱 波兰 (Poland) 13
-  - 🇵🇱 波兰 (Poland) 14
-  - 🇵🇱 波兰 (Poland) 15
-  - 🇵🇱 波兰 (Poland) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -205,8 +163,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 11
   - 🇵🇱 波兰 (Poland) 12
   - 🇵🇱 波兰 (Poland) 13
-  - 🇵🇱 波兰 (Poland) 14
-  - 🇵🇱 波兰 (Poland) 15
-  - 🇵🇱 波兰 (Poland) 16
 rules:
 - MATCH,PROXIES

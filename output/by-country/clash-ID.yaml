@@ -4,33 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 巴西 (Brazil) 01
-  server: ip6-br5.vp1000.net
+- name: 🇮🇩 印尼 (Indonesia) 01
+  server: edu.ruangguru.com
   port: 443
   udp: true
-  type: vmess
-  uuid: d9bcf9dd-690c-49b6-8897-46959572bd18
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: br.vp1000.net
+  type: trojan
+  password: 018b8e7b-7813-4dcb-84a5-3c98f1521e00
+  sni: id1.nathaya.web.id
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /pulicpDisney
-    headers:
-      Host: br.vp1000.net
+    path: /trojan
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 巴西 (Brazil) 01
+  - 🇮🇩 印尼 (Indonesia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 (Brazil) 01
+  - 🇮🇩 印尼 (Indonesia) 01
 rules:
 - MATCH,PROXIES

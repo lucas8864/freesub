@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇩 SD 01
-  server: z-jp1.1card.cc
-  port: 10012
+- name: 🇨🇱 智利 (Chile) 01
+  server: 64.176.2.21
+  port: 8388
   udp: true
-  type: trojan
-  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
-  sni: www.cloudflare.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: xBStBEVqvGwHPocc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇩 SD 01
+  - 🇨🇱 智利 (Chile) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇩 SD 01
+  - 🇨🇱 智利 (Chile) 01
 rules:
 - MATCH,PROXIES
