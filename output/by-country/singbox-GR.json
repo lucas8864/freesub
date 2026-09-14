@@ -15,7 +15,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -36,12 +36,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇬🇷 希腊 (Greece) 03",
+      "server": "38.54.29.113",
+      "server_port": 8553,
+      "uuid": "824faea9-cafe-5fa1-90dd-46d975d22ca8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "C41m2OJvTIXOIo9KsTstW-4BggXA0BR3p3B7Ve5jkx8",
+          "short_id": "a141e13cdb91e888"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇬🇷 希腊 (Greece) 01",
-        "🇬🇷 希腊 (Greece) 02"
+        "🇬🇷 希腊 (Greece) 02",
+        "🇬🇷 希腊 (Greece) 03"
       ]
     },
     {
@@ -49,7 +71,8 @@
       "tag": "auto",
       "outbounds": [
         "🇬🇷 希腊 (Greece) 01",
-        "🇬🇷 希腊 (Greece) 02"
+        "🇬🇷 希腊 (Greece) 02",
+        "🇬🇷 希腊 (Greece) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
