@@ -5,39 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  server: dlbgwqqngrjbwan.jiedddym.com
-  port: 42868
-  udp: true
-  type: vless
-  uuid: 6dbb8854-17a5-4684-b930-c11f022975ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA
-    short-id: 747a75eb5ecef8
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: hk02.xn--9kq85xcu6b.com
-  port: 65534
+  server: hk01.kfc-520.com
+  port: 60001
   udp: true
   type: hysteria2
-  password: 45dae7e6-4573-4e6b-a1f3-57b3bbaf990d
-  sni: hk02.xn--9kq85xcu6b.com
-  skip-cert-verify: true
+  password: 49f7ff21-a176-30cc-ab60-a5988fd85ce0
+  sni: hk01.kfc-520.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 rules:
 - MATCH,PROXIES

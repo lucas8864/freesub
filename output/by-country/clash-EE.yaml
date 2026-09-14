@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
+  server: 104.24.30.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
+  tls: true
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.nastaran.dpdns.org
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 94.183.170.135
   port: 443
   udp: true
@@ -13,9 +28,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: estproxy4.lockdwn.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -24,28 +37,7 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03
-  server: 95.85.224.154
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 52ecaf96-9c28-4cad-a132-13898f2bbb29
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E
-    short-id: 8c554321
-  servername: fota-cloud-dn.ospserver.net
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
-  server: 217.60.182.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,7 +46,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
-  - 🇪🇪 爱沙尼亚 (Estonia) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,6 +54,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
-  - 🇪🇪 爱沙尼亚 (Estonia) 04
 rules:
 - MATCH,PROXIES

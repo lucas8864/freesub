@@ -6,20 +6,40 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "94.183.170.135",
+      "server": "104.24.30.89",
       "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
+      "tls": {
+        "enabled": true,
+        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
         "path": "/",
         "headers": {
-          "Host": "estproxy4.lockdwn.com"
+          "Host": "rayan-007.nastaran.dpdns.org"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
+      "server": "94.183.170.135",
+      "server_port": 443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -29,41 +49,8 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
-      "server": "95.85.224.154",
-      "server_port": 8443,
-      "uuid": "52ecaf96-9c28-4cad-a132-13898f2bbb29",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "fota-cloud-dn.ospserver.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "BX8CqIiZTbjfp--_TsYmp5pPQzzIZZ6rW9ly5HxDM3E",
-          "short_id": "8c554321"
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": false
       }
     },
     {
@@ -73,8 +60,7 @@
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
-        "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04"
+        "🇪🇪 爱沙尼亚 (Estonia) 03"
       ]
     },
     {
@@ -83,8 +69,7 @@
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
-        "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04"
+        "🇪🇪 爱沙尼亚 (Estonia) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

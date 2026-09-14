@@ -6,14 +6,23 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽)",
-      "server": "104.18.39.218",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "172.66.47.45",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "wk1.f1w.de5.net",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
+        "path": "/",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "wk1.f1w.de5.net"
         }
       }
     },
@@ -27,56 +36,38 @@
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
-      "server": "dlbgwqqngrjbwan.jiedddym.com",
-      "server_port": 42868,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇸🇪 瑞典 (Sweden) 03 (移动家宽)",
+      "server": "170.168.99.8",
+      "server_port": 8443,
+      "uuid": "dca76b88-b038-e82b-45e1-1d76b476d7ca",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "cdn.steamstatic.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "GLtdhq3ZSKYlJv62ye5dFKfjI3UF9mBIGOl5ms75rVA",
-          "short_id": "747a75eb5ecef8"
+          "public_key": "R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0",
+          "short_id": ""
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-      "server": "wwbqwqqnlyydssc.cfooov.xyz",
-      "server_port": 39817,
-      "uuid": "6dbb8854-17a5-4684-b930-c11f022975ec",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "uzaav8KrDeu1P9qdg6fDfxmq9Z6vV6a-WVPTWX1zIj4",
-          "short_id": "0044d4f490e795b8"
-        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽)",
-      "server": "hk02.xn--9kq85xcu6b.com",
-      "server_port": 65534,
-      "password": "45dae7e6-4573-4e6b-a1f3-57b3bbaf990d",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+      "server": "hk01.kfc-520.com",
+      "server_port": 60001,
+      "password": "49f7ff21-a176-30cc-ab60-a5988fd85ce0",
       "tls": {
         "enabled": true,
-        "server_name": "hk02.xn--9kq85xcu6b.com",
-        "insecure": true
+        "server_name": "hk01.kfc-520.com",
+        "insecure": false
       }
     },
     {
@@ -86,9 +77,8 @@
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽)"
+        "🇸🇪 瑞典 (Sweden) 03 (移动家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)"
       ]
     },
     {
@@ -97,9 +87,8 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽)"
+        "🇸🇪 瑞典 (Sweden) 03 (移动家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
