@@ -5,6 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: 108.162.198.178
+  port: 80
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 02
+  server: 162.159.24.131
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: /?ed=2560security=tls
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 03
+  server: 172.64.229.170
+  port: 2095
+  udp: true
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  network: ws
+  ws-opts:
+    path: '/?ed=2560security=tls '
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇸🇨 塞舌尔 (Seychelles) 04
   server: 156.226.168.221
   port: 35193
   udp: true
@@ -17,21 +50,6 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: random
-- name: 🇸🇨 塞舌尔 (Seychelles) 02
-  server: 104.21.238.93
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-44890b90d17e
-  tls: true
-  servername: afzoybehu2ws.vtzv4xe1un6s.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/44890b90d17e/loc-0
-    headers:
-      Host: afzoybehu2ws.vtzv4xe1un6s.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +57,8 @@ proxy-groups:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01
   - 🇸🇨 塞舌尔 (Seychelles) 02
+  - 🇸🇨 塞舌尔 (Seychelles) 03
+  - 🇸🇨 塞舌尔 (Seychelles) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +66,7 @@ proxy-groups:
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01
   - 🇸🇨 塞舌尔 (Seychelles) 02
+  - 🇸🇨 塞舌尔 (Seychelles) 03
+  - 🇸🇨 塞舌尔 (Seychelles) 04
 rules:
 - MATCH,PROXIES

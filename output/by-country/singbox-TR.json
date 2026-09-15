@@ -6,40 +6,27 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
-      "server": "104.17.169.13",
-      "server_port": 2053,
-      "uuid": "a22bff60-a40a-4250-bde2-4c660e363b47",
+      "server": "107.161.174.26",
+      "server_port": 443,
+      "uuid": "069ba4cf-e8af-4561-b11e-18bd07b0dbd3",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "inDeX.HaRMONiCA01.WORkers.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "books.blackbigdog.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/axch1mttbxz2k55y01",
-        "headers": {
-          "Host": "inDeX.HaRMONiCA01.WORkers.DeV"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "N8tPKh6gTyc6L5GOmBn_3wIy707a-5QYB0FrF2HigUc",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 02",
-      "server": "188.132.174.236",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "rSeYcig_XBy8q3k33NpK3A"
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03",
+      "tag": "🇹🇷 土耳其 (Turkey) 02",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -49,7 +36,7 @@
         "server_name": "sync-bridge.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -60,7 +47,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04",
+      "tag": "🇹🇷 土耳其 (Turkey) 03",
       "server": "13.143.137.164",
       "server_port": 9443,
       "uuid": "953358cb-82ba-4296-960d-6d2ec3468f4c",
@@ -70,7 +57,7 @@
         "server_name": "plaincanvas.videoclothing.xyz",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -81,22 +68,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 05",
-      "server": "172.67.134.170",
-      "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-635698a6bb9c",
-      "tls": {
-        "enabled": true,
-        "server_name": "jdzit4e4urks.xwzohsebujps.workers.dev",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/PANEL_ZEUS/635698a6bb9c/loc-0",
-        "headers": {
-          "Host": "jdzit4e4urks.xwzohsebujps.workers.dev"
-        }
-      }
+      "tag": "🇹🇷 土耳其 (Turkey) 04",
+      "server": "turkyea.vanguardia.ir",
+      "server_port": 37446,
+      "uuid": "960e6852-9d2b-48bb-b1cf-5cb27ec27473"
     },
     {
       "type": "selector",
@@ -106,8 +81,7 @@
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
         "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04",
-        "🇹🇷 土耳其 (Turkey) 05"
+        "🇹🇷 土耳其 (Turkey) 04"
       ]
     },
     {
@@ -117,8 +91,7 @@
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
         "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04",
-        "🇹🇷 土耳其 (Turkey) 05"
+        "🇹🇷 土耳其 (Turkey) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
