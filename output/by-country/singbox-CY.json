@@ -6,6 +6,30 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
+      "server": "194.76.155.80",
+      "server_port": 2443,
+      "uuid": "826f4c26-5e01-472d-a1f1-1bd8e2cb25fb",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic",
+          "short_id": "e496c7fe1cefc9ff"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "rex-grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
       "server": "194.76.154.31",
       "server_port": 40443,
       "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
@@ -14,7 +38,7 @@
         "server_name": "deepl.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
@@ -25,7 +49,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
       "server": "45.9.2.171",
       "server_port": 8443,
       "uuid": "167610e4-bcaf-4074-bc2d-0c08dc4ea294",
@@ -44,31 +68,31 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
-      "server": "2.56.124.241",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04",
+      "server": "89.105.206.124",
       "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "uuid": "4360f941-b541-00e9-8507-2de3763e0cfd",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.amazon.com",
+        "server_name": "nl.convert-flow.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw",
-          "short_id": "72104d27a0f5f62e"
+          "public_key": "8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w",
+          "short_id": "00a61d55a07de885"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04",
-      "server": "preview.netraidly.ru",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 05",
+      "server": "carina.yokkastars.com",
       "server_port": 40443,
-      "uuid": "15fd22d1-8931-4d41-af37-8ba6711e93fe",
+      "uuid": "588456a5-f724-46a7-a08b-5d336d9f8f56",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -79,8 +103,91 @@
         },
         "reality": {
           "enabled": true,
+          "public_key": "3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic",
+          "short_id": "e496c7fe1cefc9ff"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 06",
+      "server": "5.253.42.163",
+      "server_port": 40443,
+      "uuid": "15fd22d1-8931-4d41-af37-8ba6711e93fe",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
           "public_key": "d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo",
           "short_id": "84fc"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 07",
+      "server": "cassiopeia.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "e4371581-c418-4770-b09a-d630f18290a6",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc",
+          "short_id": "5d96"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 08",
+      "server": "2.56.121.43",
+      "server_port": 443,
+      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ikea.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM",
+          "short_id": "86229a5e3b1e6ef4"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 09",
+      "server": "5.253.30.99",
+      "server_port": 40443,
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
       }
     },
@@ -92,7 +199,12 @@
         "🇨🇾 塞浦路斯 (Cyprus) 01",
         "🇨🇾 塞浦路斯 (Cyprus) 02",
         "🇨🇾 塞浦路斯 (Cyprus) 03",
-        "🇨🇾 塞浦路斯 (Cyprus) 04"
+        "🇨🇾 塞浦路斯 (Cyprus) 04",
+        "🇨🇾 塞浦路斯 (Cyprus) 05",
+        "🇨🇾 塞浦路斯 (Cyprus) 06",
+        "🇨🇾 塞浦路斯 (Cyprus) 07",
+        "🇨🇾 塞浦路斯 (Cyprus) 08",
+        "🇨🇾 塞浦路斯 (Cyprus) 09"
       ]
     },
     {
@@ -102,7 +214,12 @@
         "🇨🇾 塞浦路斯 (Cyprus) 01",
         "🇨🇾 塞浦路斯 (Cyprus) 02",
         "🇨🇾 塞浦路斯 (Cyprus) 03",
-        "🇨🇾 塞浦路斯 (Cyprus) 04"
+        "🇨🇾 塞浦路斯 (Cyprus) 04",
+        "🇨🇾 塞浦路斯 (Cyprus) 05",
+        "🇨🇾 塞浦路斯 (Cyprus) 06",
+        "🇨🇾 塞浦路斯 (Cyprus) 07",
+        "🇨🇾 塞浦路斯 (Cyprus) 08",
+        "🇨🇾 塞浦路斯 (Cyprus) 09"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

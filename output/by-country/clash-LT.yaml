@@ -6,46 +6,22 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01
   server: 195.238.126.20
-  port: 9045
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: Lp27rqyJq72bZsqX
-- name: 🇱🇹 立陶宛 (Lithuania) 02
-  server: 195.238.126.20
   port: 9012
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03
-  server: 144.31.243.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: c09cfd91-b234-4998-9bed-a0211b7f5c3c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: -qLezG1nUEtvOJi-Ra7WRYv-aHkv3PSefEuXpWV2G04
-    short-id: abcd1234
-  servername: lt.yservice.help
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01
-  - 🇱🇹 立陶宛 (Lithuania) 02
-  - 🇱🇹 立陶宛 (Lithuania) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01
-  - 🇱🇹 立陶宛 (Lithuania) 02
-  - 🇱🇹 立陶宛 (Lithuania) 03
 rules:
 - MATCH,PROXIES

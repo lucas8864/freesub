@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01
+  server: 194.76.155.80
+  port: 2443
+  udp: true
+  type: vless
+  uuid: 826f4c26-5e01-472d-a1f1-1bd8e2cb25fb
+  tls: true
+  reality-opts:
+    public-key: 3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic
+    short-id: e496c7fe1cefc9ff
+  servername: deepl.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: rex-grpc
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02
   server: 194.76.154.31
   port: 40443
   udp: true
@@ -15,8 +30,8 @@ proxies:
     public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
     short-id: a8ae
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02
+  client-fingerprint: qq
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03
   server: 45.9.2.171
   port: 8443
   udp: true
@@ -29,21 +44,34 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: ''
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03
-  server: 2.56.124.241
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04
+  server: 89.105.206.124
   port: 443
   udp: true
   type: vless
-  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  uuid: 4360f941-b541-00e9-8507-2de3763e0cfd
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bPbAdn6ogLbiv5cRe5d12EL7FhooAIVrC3-fg90P-Bw
-    short-id: 72104d27a0f5f62e
-  servername: www.amazon.com
+    public-key: 8ZYjmjb0b2QJKCGMrcdhQNV28jZZPCKgIQbIdqChQ0w
+    short-id: 00a61d55a07de885
+  servername: nl.convert-flow.net
+  client-fingerprint: qq
+- name: 🇨🇾 塞浦路斯 (Cyprus) 05
+  server: carina.yokkastars.com
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 588456a5-f724-46a7-a08b-5d336d9f8f56
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3cW_F0us0je_lhnl5xpwSxHyRfTQaKFELxWLr8jRzic
+    short-id: e496c7fe1cefc9ff
+  servername: deepl.com
   client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 04
-  server: preview.netraidly.ru
+- name: 🇨🇾 塞浦路斯 (Cyprus) 06
+  server: 5.253.42.163
   port: 40443
   udp: true
   type: vless
@@ -53,6 +81,44 @@ proxies:
   reality-opts:
     public-key: d1gJntekIStCHyAwgJCuv-N4_BBx5dDQ7K6CeWmpMRo
     short-id: 84fc
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 07
+  server: cassiopeia.yokkastars.com
+  port: 40443
+  udp: true
+  type: vless
+  uuid: e4371581-c418-4770-b09a-d630f18290a6
+  tls: true
+  reality-opts:
+    public-key: WFvn-RRJzpt2qV4xwj_R93gDr6dduIjkQKO3De3Y2Hc
+    short-id: 5d96
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 08
+  server: 2.56.121.43
+  port: 443
+  udp: true
+  type: vless
+  uuid: eec2f6a7-c10f-43b0-b133-61f9bf9bbc27
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vnUSQFujh6K08KR6FHYWoBkZCAEZNWSKji0PPw9eMWM
+    short-id: 86229a5e3b1e6ef4
+  servername: www.ikea.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 09
+  server: 5.253.30.99
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
   servername: deepl.com
   client-fingerprint: chrome
 proxy-groups:
@@ -64,6 +130,11 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02
   - 🇨🇾 塞浦路斯 (Cyprus) 03
   - 🇨🇾 塞浦路斯 (Cyprus) 04
+  - 🇨🇾 塞浦路斯 (Cyprus) 05
+  - 🇨🇾 塞浦路斯 (Cyprus) 06
+  - 🇨🇾 塞浦路斯 (Cyprus) 07
+  - 🇨🇾 塞浦路斯 (Cyprus) 08
+  - 🇨🇾 塞浦路斯 (Cyprus) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,5 +144,10 @@ proxy-groups:
   - 🇨🇾 塞浦路斯 (Cyprus) 02
   - 🇨🇾 塞浦路斯 (Cyprus) 03
   - 🇨🇾 塞浦路斯 (Cyprus) 04
+  - 🇨🇾 塞浦路斯 (Cyprus) 05
+  - 🇨🇾 塞浦路斯 (Cyprus) 06
+  - 🇨🇾 塞浦路斯 (Cyprus) 07
+  - 🇨🇾 塞浦路斯 (Cyprus) 08
+  - 🇨🇾 塞浦路斯 (Cyprus) 09
 rules:
 - MATCH,PROXIES
