@@ -5,44 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 130.49.189.158
-  port: 43558
+  server: 195.58.48.137
+  port: 9019
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: /QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA=
+  cipher: aes-256-gcm
+  password: 8ad9d72a5571df86
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 91.240.86.70
-  port: 22443
+  server: 195.133.5.102
+  port: 9011
   udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: hy.quattro-tech.ru
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
 - name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 170.168.99.9
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 1e4668ca-6526-84ac-2a53-28bbc209da13
-  tls: true
-  reality-opts:
-    public-key: -GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28
-  servername: www.epson.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: ru2.oshost.network
-  port: 80
-  udp: true
-  type: vless
-  uuid: 419f25c1-bc35-412e-93fb-258efee859b5
-  network: ws
-  ws-opts:
-    path: /api/v2/stream
-- name: 🇷🇺 俄罗斯 (Russia) 05
   server: msk.frkn.org
   port: 443
   udp: true
@@ -50,32 +26,43 @@ proxies:
   password: f317b5d6-d399-4d3d-a051-89d674ae953c
   sni: msk.frkn.org
   skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06
+- name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 194.87.196.13
+  port: 9011
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 4938e975724d0ed1
+- name: 🇷🇺 俄罗斯 (Russia) 05
   server: 46.8.200.91
   port: 443
   udp: true
   type: vless
-  uuid: b8201bab-fa6c-4f6e-b289-b5da660c6f69
+  uuid: 0a2dde28-70da-4863-a06f-35d007d94d35
   tls: true
   servername: cf3.rumedia-cdn.com
   skip-cert-verify: false
+  client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /cdn/v3/live
+    path: /casc
     headers:
       Host: cf3.rumedia-cdn.com
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: 45.12.75.242
-  port: 26424
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 193.17.92.57
+  port: 2053
   udp: true
   type: vless
-  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  uuid: 1cbb3702-b434-45cf-8520-3e32d860fd83
   tls: true
   reality-opts:
-    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
-    short-id: 23103e1e
-  servername: ya.ru
+    public-key: G7VlRXdpKKaZ_33pA0Zsii70uiYkeoBiVYgAD_tL_28
+    short-id: 76f9d74c385ae618
+  servername: vk.com
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-fd03cd54
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,7 +74,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,6 +85,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
 rules:
 - MATCH,PROXIES

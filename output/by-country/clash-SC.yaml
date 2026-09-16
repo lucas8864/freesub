@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: 185.126.67.44
+  port: 1932
+  udp: true
+  type: vless
+  uuid: bae8d9ba-9f5d-4802-bb5e-bc0956a472d6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: www.vk.com
+  client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 02
   server: hk3n.wxgqlfx.vip
   port: 35193
   udp: true
@@ -23,11 +35,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01
+  - 🇸🇨 塞舌尔 (Seychelles) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01
+  - 🇸🇨 塞舌尔 (Seychelles) 02
 rules:
 - MATCH,PROXIES

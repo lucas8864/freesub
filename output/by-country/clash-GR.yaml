@@ -5,20 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇷 希腊 (Greece) 01
-  server: 188.114.97.3
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d8af23-36cd-4c66-a42a-4469c177210f
-  tls: true
-  servername: fancy-rain-136e.thisisalee.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoidmJOWHUwYnBOS00zT04iLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6WyI5MS4xODYuMjE5LjgyIl19
-    headers:
-      Host: fancy-rain-136e.thisisalee.workers.dev
-- name: 🇬🇷 希腊 (Greece) 02
   server: 94.241.174.157
   port: 40443
   udp: true
@@ -30,8 +16,8 @@ proxies:
     public-key: mM33xyzf1GPaU2CQXAGYoGkTuYzEZRYT6S-NngyqfHQ
     short-id: beb4
   servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇬🇷 希腊 (Greece) 03
+  client-fingerprint: edge
+- name: 🇬🇷 希腊 (Greece) 02
   server: 185.126.238.87
   port: 2083
   udp: true
@@ -47,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇬🇷 希腊 (Greece) 01
   - 🇬🇷 希腊 (Greece) 02
-  - 🇬🇷 希腊 (Greece) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇬🇷 希腊 (Greece) 01
   - 🇬🇷 希腊 (Greece) 02
-  - 🇬🇷 希腊 (Greece) 03
 rules:
 - MATCH,PROXIES

@@ -5,19 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01
-  server: 57.131.48.45
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇮🇹 意大利 (Italy) 02
   server: 185.164.175.81
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 02
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 03
+  server: ittt.chainmark.ir
+  port: 1003
+  udp: true
+  type: vless
+  uuid: 89418511-64f9-4e74-ac6b-ffc1b828106f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 32R_r7HDUYslCRzhfFhBuipplnVAygudK2a9M_URfmU
+    short-id: a8cf1a1235375630
+  servername: app.stiga.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +38,7 @@ proxy-groups:
   - AUTO
   - 🇮🇹 意大利 (Italy) 01
   - 🇮🇹 意大利 (Italy) 02
+  - 🇮🇹 意大利 (Italy) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -32,5 +46,6 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 (Italy) 01
   - 🇮🇹 意大利 (Italy) 02
+  - 🇮🇹 意大利 (Italy) 03
 rules:
 - MATCH,PROXIES

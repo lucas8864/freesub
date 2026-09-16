@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 丹麦 (Denmark) 01
-  server: 38.180.214.110
-  port: 5600
+- name: 🇺🇸 美国 (United States) 01 (家宽)
+  server: 23.252.104.131
+  port: 54321
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
+  password: Proxy2024
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 丹麦 (Denmark) 01
+  - 🇺🇸 美国 (United States) 01 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 丹麦 (Denmark) 01
+  - 🇺🇸 美国 (United States) 01 (家宽)
 rules:
 - MATCH,PROXIES
