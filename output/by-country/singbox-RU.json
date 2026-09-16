@@ -6,14 +6,61 @@
     {
       "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "195.133.23.200",
-      "server_port": 7018,
-      "method": "aes-256-gcm",
-      "password": "81a20429165df87e"
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "/QFycb02d87cByC9+5ZRSygI1avHiPXkgYG2yc+TnGA="
     },
     {
       "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 02",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03",
+      "server": "170.168.99.9",
+      "server_port": 8443,
+      "uuid": "1e4668ca-6526-84ac-2a53-28bbc209da13",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.epson.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "-GbQJg3bnEGEVFjVaRRu01cgF1f0K_maI4d5MWtMb28",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
+      "server": "ru2.oshost.network",
+      "server_port": 80,
+      "uuid": "419f25c1-bc35-412e-93fb-258efee859b5",
+      "transport": {
+        "type": "ws",
+        "path": "/api/v2/stream"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
       "server": "msk.frkn.org",
       "server_port": 443,
       "password": "f317b5d6-d399-4d3d-a051-89d674ae953c",
@@ -25,24 +72,40 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06",
       "server": "46.8.200.91",
       "server_port": 443,
-      "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
+      "uuid": "b8201bab-fa6c-4f6e-b289-b5da660c6f69",
       "tls": {
         "enabled": true,
         "server_name": "cf3.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/casc",
+        "path": "/cdn/v3/live",
         "headers": {
           "Host": "cf3.rumedia-cdn.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
         }
       }
     },
@@ -53,7 +116,11 @@
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01",
         "🇷🇺 俄罗斯 (Russia) 02",
-        "🇷🇺 俄罗斯 (Russia) 03"
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04",
+        "🇷🇺 俄罗斯 (Russia) 05",
+        "🇷🇺 俄罗斯 (Russia) 06",
+        "🇷🇺 俄罗斯 (Russia) 07"
       ]
     },
     {
@@ -62,7 +129,11 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01",
         "🇷🇺 俄罗斯 (Russia) 02",
-        "🇷🇺 俄罗斯 (Russia) 03"
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04",
+        "🇷🇺 俄罗斯 (Russia) 05",
+        "🇷🇺 俄罗斯 (Russia) 06",
+        "🇷🇺 俄罗斯 (Russia) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

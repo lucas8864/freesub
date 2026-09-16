@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 185.174.135.250
+  server: 172.67.67.178
   port: 443
   udp: true
   type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
   tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
+  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
+  skip-cert-verify: false
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rAyAn-007.nAsTaRaN.DpDnS.OrG
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 94.183.170.135
   port: 443
@@ -28,6 +29,14 @@ proxies:
   ws-opts:
     path: /
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03
+  server: 217.60.182.79
+  port: 443
+  udp: true
+  type: hysteria2
+  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
+  sni: cabinet.wwwinternetvideo.click
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -37,6 +46,33 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05
+  server: 45.11.27.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: a2738d8d-ed26-4b13-a4a2-b89c7238cd10
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: IBzFSziv_xISB-Q6X90PocTBde6jb4X6swEvdZQhqzk
+    short-id: d0aae44f
+  servername: 5post-gate.x5.ru
+  client-fingerprint: firefox
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06
+  server: 185.174.135.250
+  port: 443
+  udp: true
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,6 +81,9 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
+  - 🇪🇪 爱沙尼亚 (Estonia) 04
+  - 🇪🇪 爱沙尼亚 (Estonia) 05
+  - 🇪🇪 爱沙尼亚 (Estonia) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +92,8 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
+  - 🇪🇪 爱沙尼亚 (Estonia) 04
+  - 🇪🇪 爱沙尼亚 (Estonia) 05
+  - 🇪🇪 爱沙尼亚 (Estonia) 06
 rules:
 - MATCH,PROXIES

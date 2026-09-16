@@ -6,9 +6,29 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01",
+      "server": "31.56.189.27",
+      "server_port": 2087,
+      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-21bac9.vless.monster",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "freegrpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02",
       "server": "31.58.181.88",
       "server_port": 8443,
-      "uuid": "21d11336-4659-448a-a903-e5b7e597ea8a",
+      "uuid": "a85d3eb0-c71e-4086-8139-6ac7c9120389",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -26,7 +46,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
+      "tag": "🇦🇪 阿联酋 (UAE) 03",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -41,28 +61,21 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03",
-      "server": "srv-21bac9.vless.monster",
-      "server_port": 2087,
-      "uuid": "df9f5aca-eda0-428f-a752-e53866153d12",
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 04",
+      "server": "85.204.107.177",
+      "server_port": 8080,
+      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
-        "server_name": "srv-21bac9.vless.monster",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ]
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "freegrpc"
+        "server_name": "hopp-romania-new.roxa.org",
+        "insecure": true
       }
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04",
-      "server": "uae.unixzone.us",
+      "tag": "🇦🇪 阿联酋 (UAE) 05",
+      "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -74,15 +87,49 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 05",
-      "server": "85.204.107.178",
-      "server_port": 8080,
-      "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06",
+      "server": "109.120.155.155",
+      "server_port": 444,
+      "uuid": "99ab6748-3d57-4562-9451-843c15960b9b",
       "tls": {
         "enabled": true,
-        "server_name": "hopp-romania-new.roxa.org",
-        "insecure": false
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 07",
+      "server": "37.120.222.70",
+      "server_port": 8082,
+      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
+      "tls": {
+        "enabled": true,
+        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
+        }
       }
     },
     {
@@ -94,7 +141,9 @@
         "🇦🇪 阿联酋 (UAE) 02",
         "🇦🇪 阿联酋 (UAE) 03",
         "🇦🇪 阿联酋 (UAE) 04",
-        "🇦🇪 阿联酋 (UAE) 05"
+        "🇦🇪 阿联酋 (UAE) 05",
+        "🇦🇪 阿联酋 (UAE) 06",
+        "🇦🇪 阿联酋 (UAE) 07"
       ]
     },
     {
@@ -105,7 +154,9 @@
         "🇦🇪 阿联酋 (UAE) 02",
         "🇦🇪 阿联酋 (UAE) 03",
         "🇦🇪 阿联酋 (UAE) 04",
-        "🇦🇪 阿联酋 (UAE) 05"
+        "🇦🇪 阿联酋 (UAE) 05",
+        "🇦🇪 阿联酋 (UAE) 06",
+        "🇦🇪 阿联酋 (UAE) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

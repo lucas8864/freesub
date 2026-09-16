@@ -32,6 +32,29 @@
     {
       "type": "vless",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 03",
+      "server": "108.165.233.223",
+      "server_port": 443,
+      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
+      "tls": {
+        "enabled": true,
+        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
+        "headers": {
+          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 04",
       "server": "144.31.50.236",
       "server_port": 443,
       "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
@@ -57,7 +80,8 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01",
         "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03"
+        "🇧🇬 保加利亚 (Bulgaria) 03",
+        "🇧🇬 保加利亚 (Bulgaria) 04"
       ]
     },
     {
@@ -66,7 +90,8 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01",
         "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03"
+        "🇧🇬 保加利亚 (Bulgaria) 03",
+        "🇧🇬 保加利亚 (Bulgaria) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

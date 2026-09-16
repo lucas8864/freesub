@@ -24,6 +24,21 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 03
+  server: 108.165.233.223
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2388e166-3890-33ae-f77e-efac00000001
+  tls: true
+  servername: netlivpn4813.ddhshhshs.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇧🇬 保加利亚 (Bulgaria) 04
   server: 144.31.50.236
   port: 443
   udp: true
@@ -44,6 +59,7 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01
   - 🇧🇬 保加利亚 (Bulgaria) 02
   - 🇧🇬 保加利亚 (Bulgaria) 03
+  - 🇧🇬 保加利亚 (Bulgaria) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +68,6 @@ proxy-groups:
   - 🇧🇬 保加利亚 (Bulgaria) 01
   - 🇧🇬 保加利亚 (Bulgaria) 02
   - 🇧🇬 保加利亚 (Bulgaria) 03
+  - 🇧🇬 保加利亚 (Bulgaria) 04
 rules:
 - MATCH,PROXIES
