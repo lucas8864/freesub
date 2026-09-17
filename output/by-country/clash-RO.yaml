@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: 205.237.109.162
+  server: 205.237.109.176
   port: 8443
   udp: true
   type: hysteria2
@@ -13,7 +13,7 @@ proxies:
   sni: hopp-netherland-new.dynuddns.net
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 02
-  server: 162.249.126.2
+  server: 162.249.126.7
   port: 8443
   udp: true
   type: hysteria2
@@ -21,7 +21,7 @@ proxies:
   sni: hopp-germany-new.ddnsguru.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 03
-  server: 85.204.107.183
+  server: 85.204.107.181
   port: 8443
   udp: true
   type: hysteria2
@@ -34,7 +34,7 @@ proxies:
   udp: true
   type: hysteria2
   password: gf1:gfhysteria2024
-  sni: css.rbxcdn.com
+  sni: google.com
   skip-cert-verify: true
 - name: 🇷🇴 罗马尼亚 (Romania) 05
   server: 46.28.67.55
@@ -60,7 +60,7 @@ proxies:
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
 - name: 🇷🇴 罗马尼亚 (Romania) 07
-  server: 154.46.31.106
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss

@@ -19,17 +19,16 @@ proxies:
   cipher: aes-256-gcm
   password: itzvpn@321
 - name: 🇮🇹 意大利 (Italy) 03
-  server: ittt.chainmark.ir
-  port: 1003
+  server: 57.131.38.163
+  port: 2053
   udp: true
   type: vless
-  uuid: 89418511-64f9-4e74-ac6b-ffc1b828106f
-  flow: xtls-rprx-vision
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
   tls: true
   reality-opts:
-    public-key: 32R_r7HDUYslCRzhfFhBuipplnVAygudK2a9M_URfmU
-    short-id: a8cf1a1235375630
-  servername: app.stiga.com
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

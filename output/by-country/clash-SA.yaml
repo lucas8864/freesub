@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 沙特 (Saudi Arabia) 01
+  server: 64.225.110.247
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  tls: true
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /acg/buy/ajax?ed=2560fp=chrome
+    headers:
+      Host: cdn8848.776676.xyz
+- name: 🇸🇦 沙特 (Saudi Arabia) 02
   server: 81.208.170.142
   port: 1500
   udp: true
@@ -25,11 +39,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇸🇦 沙特 (Saudi Arabia) 01
+  - 🇸🇦 沙特 (Saudi Arabia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇦 沙特 (Saudi Arabia) 01
+  - 🇸🇦 沙特 (Saudi Arabia) 02
 rules:
 - MATCH,PROXIES

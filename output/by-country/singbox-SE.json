@@ -6,43 +6,90 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "143.246.193.215",
-      "server_port": 443,
-      "uuid": "77da6e30-ad4e-11f1-94d5-525400d1d4f7",
-      "flow": "xtls-rprx-vision",
+      "server": "79.141.174.147",
+      "server_port": 33743,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
-        "server_name": "www.blocket.se",
+        "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c",
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
           "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "trgf.tarnishedking.ir",
-      "server_port": 2087,
-      "uuid": "89418511-64f9-4e74-ac6b-ffc1b828106f",
+      "server": "91.193.17.156",
+      "server_port": 9458,
+      "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
         "enabled": true,
-        "server_name": "beta.publishers.adsterra.com",
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "TunService"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "se-node.rumedia-cdn.com",
+      "server_port": 25443,
+      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
+      "tls": {
+        "enabled": true,
+        "server_name": "cf2.rumedia-cdn.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04",
+      "server": "91.186.216.100",
+      "server_port": 7005,
+      "uuid": "ac64aec6-85ee-4fc7-b34b-60a7bcf236ec",
+      "tls": {
+        "enabled": true,
+        "server_name": "play.googleapis.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "06ep3nkkA60Jh8rWJSz3dCpLWxUPYLN0uZnESYsoQFo",
-          "short_id": "2b044515f70accef"
+          "public_key": "7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4",
+          "short_id": ""
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05",
+      "server": "51.170.179.166",
+      "server_port": 45819,
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU="
     },
     {
       "type": "selector",
@@ -50,7 +97,10 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
-        "🇸🇪 瑞典 (Sweden) 02"
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03",
+        "🇸🇪 瑞典 (Sweden) 04",
+        "🇸🇪 瑞典 (Sweden) 05"
       ]
     },
     {
@@ -58,7 +108,10 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
-        "🇸🇪 瑞典 (Sweden) 02"
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03",
+        "🇸🇪 瑞典 (Sweden) 04",
+        "🇸🇪 瑞典 (Sweden) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

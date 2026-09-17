@@ -6,6 +6,25 @@
     {
       "type": "vless",
       "tag": "🇸🇦 沙特 (Saudi Arabia) 01",
+      "server": "64.225.110.247",
+      "server_port": 2083,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/acg/buy/ajax?ed=2560fp=chrome",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 02",
       "server": "81.208.170.142",
       "server_port": 1500,
       "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
@@ -31,14 +50,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇦 沙特 (Saudi Arabia) 01"
+        "🇸🇦 沙特 (Saudi Arabia) 01",
+        "🇸🇦 沙特 (Saudi Arabia) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇦 沙特 (Saudi Arabia) 01"
+        "🇸🇦 沙特 (Saudi Arabia) 01",
+        "🇸🇦 沙特 (Saudi Arabia) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

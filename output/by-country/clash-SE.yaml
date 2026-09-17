@@ -5,29 +5,59 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
-  server: 143.246.193.215
-  port: 443
+  server: 79.141.174.147
+  port: 33743
   udp: true
   type: vless
-  uuid: 77da6e30-ad4e-11f1-94d5-525400d1d4f7
-  flow: xtls-rprx-vision
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   tls: true
   reality-opts:
-    public-key: wSjV1yR_rhDUdoNbM9zIXNGLASLp9RorComnyoayo2c
-  servername: www.blocket.se
-  client-fingerprint: chrome
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: trgf.tarnishedking.ir
-  port: 2087
+  server: 91.193.17.156
+  port: 9458
   udp: true
   type: vless
-  uuid: 89418511-64f9-4e74-ac6b-ffc1b828106f
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
   tls: true
   reality-opts:
-    public-key: 06ep3nkkA60Jh8rWJSz3dCpLWxUPYLN0uZnESYsoQFo
-    short-id: 2b044515f70accef
-  servername: beta.publishers.adsterra.com
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
+- name: 🇸🇪 瑞典 (Sweden) 03
+  server: se-node.rumedia-cdn.com
+  port: 25443
+  udp: true
+  type: hysteria2
+  password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
+  sni: cf2.rumedia-cdn.com
+  skip-cert-verify: true
+- name: 🇸🇪 瑞典 (Sweden) 04
+  server: 91.186.216.100
+  port: 7005
+  udp: true
+  type: vless
+  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
+  tls: true
+  reality-opts:
+    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
+  servername: play.googleapis.com
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 05
+  server: 51.170.179.166
+  port: 45819
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -35,6 +65,9 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
+  - 🇸🇪 瑞典 (Sweden) 04
+  - 🇸🇪 瑞典 (Sweden) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,5 +75,8 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
+  - 🇸🇪 瑞典 (Sweden) 04
+  - 🇸🇪 瑞典 (Sweden) 05
 rules:
 - MATCH,PROXIES
