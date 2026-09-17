@@ -19,19 +19,12 @@ proxies:
   grpc-opts:
     grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 91.193.17.156
-  port: 9458
+  server: 51.170.179.166
+  port: 45819
   udp: true
-  type: vless
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  tls: true
-  reality-opts:
-    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
-  servername: www.google.com
-  client-fingerprint: edge
-  network: grpc
-  grpc-opts:
-    grpc-service-name: TunService
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU=
 - name: 🇸🇪 瑞典 (Sweden) 03
   server: se-node.rumedia-cdn.com
   port: 25443
@@ -40,24 +33,6 @@ proxies:
   password: 29ffde49-e1d6-4dcd-a135-352920f9f0b8
   sni: cf2.rumedia-cdn.com
   skip-cert-verify: true
-- name: 🇸🇪 瑞典 (Sweden) 04
-  server: 91.186.216.100
-  port: 7005
-  udp: true
-  type: vless
-  uuid: ac64aec6-85ee-4fc7-b34b-60a7bcf236ec
-  tls: true
-  reality-opts:
-    public-key: 7aICTN0hv6bhd8bYOjNZniDYSXgD20LunZ3BW6_Zyk4
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 05
-  server: 51.170.179.166
-  port: 45819
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 4pGFK0x/lqudD4LJU8isjFCNxlw04AnKc72lFxetSZU=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +41,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
-  - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,7 +49,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
   - 🇸🇪 瑞典 (Sweden) 03
-  - 🇸🇪 瑞典 (Sweden) 04
-  - 🇸🇪 瑞典 (Sweden) 05
 rules:
 - MATCH,PROXIES

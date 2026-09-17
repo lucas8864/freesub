@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇷 巴西 (Brazil) 01
-  server: 216.128.168.190
-  port: 8388
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
+  server: 49.254.204.134
+  port: 1774
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: owVdNnQcdPgthSyX
+  cipher: aes-256-cfb
+  password: 1234!@#$
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇷 巴西 (Brazil) 01
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇷 巴西 (Brazil) 01
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
 rules:
 - MATCH,PROXIES

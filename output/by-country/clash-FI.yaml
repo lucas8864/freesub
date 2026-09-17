@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 31.77.199.147
-  port: 4443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
   client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 02
   server: 185.79.138.71
@@ -30,20 +29,16 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: fxe3.sorixset.ir
-  port: 443
+  server: 150.241.71.148
+  port: 448
   udp: true
-  type: vless
-  uuid: d7282b41-1f2a-47bb-8593-f464fd6b6d78
-  tls: true
-  servername: global.fastly.com
+  type: trojan
+  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
+  sni: kiev.gosgenarchive.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: kayko.global.ssl.fastly.net
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TrojanGRPC
 proxy-groups:
 - name: PROXIES
   type: select

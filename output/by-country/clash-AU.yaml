@@ -5,14 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01
-  server: 82.198.246.233
-  port: 180
-  udp: true
-  type: vmess
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 02
   server: 103.75.119.126
   port: 2087
   udp: true
@@ -21,29 +13,17 @@ proxies:
   network: ws
   ws-opts:
     path: /7586c69d3dc9
-- name: 🇦🇺 澳大利亚 (Australia) 03
-  server: vpn-au-002.fastervpn.world
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
-  - 🇦🇺 澳大利亚 (Australia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
-  - 🇦🇺 澳大利亚 (Australia) 03
 rules:
 - MATCH,PROXIES

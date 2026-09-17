@@ -4,39 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
-      "server": "153.52.92.81",
-      "server_port": 2086,
-      "uuid": "f6361af8-bb8f-4609-bf5d-3fc0f688f47b",
-      "security": "auto"
+      "server": "139.28.240.68",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "rSeYcig_XBy8q3k33NpK3A"
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 02",
-      "server": "199.232.78.159",
-      "server_port": 443,
-      "uuid": "d7282b41-1f2a-47bb-8593-f464fd6b6d78",
-      "tls": {
-        "enabled": true,
-        "server_name": "global.fastly.com",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "BechBad.global.ssl.fastly.net"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03",
       "server": "156.67.63.231",
       "server_port": 443,
       "uuid": "b052df40-d51c-456c-9bd6-57af01a87e4e",
@@ -57,23 +34,25 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
+      "tag": "🇹🇷 土耳其 (Turkey) 03",
+      "server": "max.karmatel.ir",
+      "server_port": 55519,
+      "uuid": "a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play-apps-features.googleusercontent.com"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 04",
+      "server": "153.52.92.81",
+      "server_port": 1080,
+      "method": "chacha20-ietf-poly1305",
+      "password": "IXa3ylzS_jBOAsQy071tIQ"
     },
     {
       "type": "selector",
