@@ -12,20 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 181.215.18.196
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: manm1wouaeic9db3
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 103.136.150.119
-  port: 30222
+  server: 46.17.40.234
+  port: 10301
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: 72553320ae6bcc8f
-- name: 🇭🇰 中国香港 (Hong Kong) 04
+  password: bdb313adf74c2ede
+- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 162.128.157.164
   port: 443
   udp: true
@@ -38,23 +31,52 @@ proxies:
     short-id: 14156e3ac23212cc
   servername: www.bing.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
+- name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 119.246.1.143
   port: 443
   udp: true
   type: trojan
   password: BxceQaOe
-  sni: 119.246.1.143
+  sni: t.me%252fripaojiedian
   skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vk.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 47.242.79.198
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ejOMsxPtP19APyGL.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: ejOMsxPtP19APyGL.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 207.56.137.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 08
   server: 202.146.222.29
   port: 443
   udp: true
@@ -62,61 +84,94 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2рҹүёрҹүі
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: 104.16.60.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
-  tls: true
-  servername: hk1.69lover.my
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /api/v2/e2fe4e52a165854d/stream
-    headers:
-      Host: hk1.69lover.my
-- name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: www.shopify.com
+  server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   udp: true
   type: vmess
-  uuid: 3aa71202-a099-49c1-99fc-6662f3335369
+  uuid: f23bb427c1f94373876c2f43e9f790f3
   alterId: 0
   cipher: auto
   tls: true
-  servername: yoga-suggesting-recording-calls.trycloudflare.com
+  servername: i2psm3knof5qjjix.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
-    headers:
-      Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: mz.hkychina.com
-  port: 8443
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 11
+  server: lcv8v9l7oyamxxfz.v.3dns.vip
+  port: 443
   udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: lcv8v9l7oyamxxfz.v.3dns.vip
   skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 13
+  server: dog-hk.kunlun01dns.com
+  port: 21022
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 14
+  server: 47.83.19.148
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 15
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
 proxy-groups:
 - name: PROXIES
   type: select
@@ -134,6 +189,9 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
+  - 🇭🇰 中国香港 (Hong Kong) 14
+  - 🇭🇰 中国香港 (Hong Kong) 15
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,5 +209,8 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
+  - 🇭🇰 中国香港 (Hong Kong) 14
+  - 🇭🇰 中国香港 (Hong Kong) 15
 rules:
 - MATCH,PROXIES

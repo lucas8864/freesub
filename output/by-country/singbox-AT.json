@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 01",
+      "server": "82.110.60.9",
+      "server_port": 19999,
+      "method": "aes-256-gcm",
+      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02",
       "server": "g1.haxat.bestvbest.ir",
       "server_port": 20610,
       "uuid": "d65a82af-a403-405e-8b7b-27a68b830511",
@@ -28,14 +36,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇦🇹 奥地利 (Austria) 01",
+        "🇦🇹 奥地利 (Austria) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇦🇹 奥地利 (Austria) 01",
+        "🇦🇹 奥地利 (Austria) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

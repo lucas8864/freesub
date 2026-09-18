@@ -4,41 +4,30 @@
   },
   "outbounds": [
     {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 01 (家宽)",
+      "server": "172.64.158.146",
+      "server_port": 80,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
       "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "r3mrcg00129437x.cybervena.com",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-      "server": "7dba81fc3a0b.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "7dba81fc3a0b.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
-      }
-    },
-    {
       "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
       "server": "6ivh.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
@@ -53,20 +42,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
+        "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
+        "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

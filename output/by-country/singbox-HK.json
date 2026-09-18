@@ -14,22 +14,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 02",
-      "server": "181.215.18.196",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "manm1wouaeic9db3"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
-      "server": "103.136.150.119",
-      "server_port": 30222,
+      "server": "46.17.40.234",
+      "server_port": 10301,
       "method": "aes-256-gcm",
-      "password": "72553320ae6bcc8f"
+      "password": "bdb313adf74c2ede"
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
       "server": "162.128.157.164",
       "server_port": 443,
       "uuid": "5e8e81ac-a1c4-4543-b81e-651bf9872b54",
@@ -50,31 +42,72 @@
     },
     {
       "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
-      "server": "47.240.80.220",
-      "server_port": 2052,
-      "password": "tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.12169.top",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
       "server": "119.246.1.143",
       "server_port": 443,
       "password": "BxceQaOe",
       "tls": {
         "enabled": true,
-        "server_name": "119.246.1.143",
+        "server_name": "t.me%252fripaojiedian",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
+      "server": "202.146.222.89",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 06",
+      "server": "47.242.79.198",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "ejOMsxPtP19APyGL.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
+        "headers": {
+          "Host": "ejOMsxPtP19APyGL.v.3dns.vip"
+        }
+      }
+    },
+    {
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 07",
+      "server": "207.56.137.51",
+      "server_port": 443,
+      "uuid": "01ada9fb-fa2f-45da-a0d0-bce80cdf433b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0",
+          "short_id": "f713561d"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 08",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -86,84 +119,110 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 08",
-      "server": "202.146.222.89",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "t.me",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
       "tag": "🇭🇰 中国香港 (Hong Kong) 09",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.174",
+        "server_name": "https://t.me/wangcai2",
         "insecure": true
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 10",
-      "server": "104.16.60.10",
+      "server": "i2psm3knof5qjjix.v.3dns.vip",
       "server_port": 443,
-      "uuid": "cdf5205e-897f-46a7-8d7f-21a61a80b466",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "hk1.69lover.my",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "i2psm3knof5qjjix.v.3dns.vip",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/api/v2/e2fe4e52a165854d/stream",
-        "headers": {
-          "Host": "hk1.69lover.my"
-        }
+        "path": "/ws-vmess"
       }
     },
     {
       "type": "vmess",
       "tag": "🇭🇰 中国香港 (Hong Kong) 11",
-      "server": "www.shopify.com",
+      "server": "lcv8v9l7oyamxxfz.v.3dns.vip",
       "server_port": 443,
-      "uuid": "3aa71202-a099-49c1-99fc-6662f3335369",
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
       "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "yoga-suggesting-recording-calls.trycloudflare.com",
+        "server_name": "lcv8v9l7oyamxxfz.v.3dns.vip",
         "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/3aa71202-a099-49c1-99fc-6662f3335369-vm",
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 12",
+      "server": "vah4urdzl3jdx5r2.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "vah4urdzl3jdx5r2.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 13",
+      "server": "dog-hk.kunlun01dns.com",
+      "server_port": 21022,
+      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 14",
+      "server": "47.83.19.148",
+      "server_port": 443,
+      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "6JDvArazgU3qQR6Q.v.3dns.vip",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess",
         "headers": {
-          "Host": "yoga-suggesting-recording-calls.trycloudflare.com"
+          "Host": "6JDvArazgU3qQR6Q.v.3dns.vip"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 12",
-      "server": "mz.hkychina.com",
-      "server_port": 8443,
-      "password": "HysTeria2026!Proxy",
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 15",
+      "server": "ex1ogt73nzpqkac2.v.3dns.vip",
+      "server_port": 443,
+      "uuid": "f23bb427c1f94373876c2f43e9f790f3",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "mz.hkychina.com",
+        "server_name": "ex1ogt73nzpqkac2.v.3dns.vip",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws-vmess"
       }
     },
     {
@@ -182,7 +241,10 @@
         "🇭🇰 中国香港 (Hong Kong) 09",
         "🇭🇰 中国香港 (Hong Kong) 10",
         "🇭🇰 中国香港 (Hong Kong) 11",
-        "🇭🇰 中国香港 (Hong Kong) 12"
+        "🇭🇰 中国香港 (Hong Kong) 12",
+        "🇭🇰 中国香港 (Hong Kong) 13",
+        "🇭🇰 中国香港 (Hong Kong) 14",
+        "🇭🇰 中国香港 (Hong Kong) 15"
       ]
     },
     {
@@ -200,7 +262,10 @@
         "🇭🇰 中国香港 (Hong Kong) 09",
         "🇭🇰 中国香港 (Hong Kong) 10",
         "🇭🇰 中国香港 (Hong Kong) 11",
-        "🇭🇰 中国香港 (Hong Kong) 12"
+        "🇭🇰 中国香港 (Hong Kong) 12",
+        "🇭🇰 中国香港 (Hong Kong) 13",
+        "🇭🇰 中国香港 (Hong Kong) 14",
+        "🇭🇰 中国香港 (Hong Kong) 15"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
