@@ -5,13 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 139.28.240.68
+  server: 153.52.92.81
   port: 1080
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: rSeYcig_XBy8q3k33NpK3A
+  password: IXa3ylzS_jBOAsQy071tIQ
 - name: 🇹🇷 土耳其 (Turkey) 02
+  server: 206.1.97.61
+  port: 443
+  udp: true
+  type: vless
+  uuid: 103f65b2-c4a7-4afc-aa00-dd67b6904036
+  tls: true
+  reality-opts:
+    public-key: GFREEsH4rFLnXKDLKXk0iTZNP5_d1zfKTj8DUE0L6RE
+    short-id: d7397feef49deef9
+  servername: Miro.com
+  client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03
   server: 156.67.63.231
   port: 443
   udp: true
@@ -24,24 +36,18 @@ proxies:
     short-id: 5606d4a25c99e7af
   servername: sync-bridge.org
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03
-  server: max.karmatel.ir
-  port: 55519
+- name: 🇹🇷 土耳其 (Turkey) 04
+  server: tur11.zavqeron.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: a2b9a1b7-f12f-4503-a9f6-c78ec565a6bf
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play-apps-features.googleusercontent.com
-- name: 🇹🇷 土耳其 (Turkey) 04
-  server: 153.52.92.81
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
+  uuid: fafd0278-71ba-4809-8137-3c87e7d8dd58
+  tls: true
+  reality-opts:
+    public-key: t5qC-Lzm_NKsc6nQ8ORzyivswiRPlbPLK0hS4d3FxTY
+    short-id: a2eb2b8f0f0a88b1
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

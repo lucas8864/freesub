@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
+  server: 82.47.186.18
+  port: 19290
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: o2rw2hICwu1blrr_gZAl2Q
+- name: 🇫🇮 芬兰 (Finland) 02
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -16,7 +23,7 @@ proxies:
     short-id: d368b94e275ab080
   servername: www.google.com
   client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 02
+- name: 🇫🇮 芬兰 (Finland) 03
   server: 185.79.138.71
   port: 448
   udp: true
@@ -28,17 +35,33 @@ proxies:
     short-id: cd21e552537c7c0b
   servername: www.samsung.com
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 150.241.71.148
-  port: 448
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: freeman.cvbesty.ir
+  port: 10210
   udp: true
-  type: trojan
-  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
-  sni: kiev.gosgenarchive.com
+  type: vless
+  uuid: d65a82af-a403-405e-8b7b-27a68b830511
+  tls: true
+  reality-opts:
+    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
+    short-id: 13121b7150ad7fc6
+  servername: play-apps-features.googleusercontent.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: 185.255.179.11
+  port: 9443
+  udp: true
+  type: vless
+  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  tls: true
+  servername: hub-fi-02.hanvpn.cc
   skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: TrojanGRPC
+    grpc-service-name: fi02-grpc-8e47a
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,6 +70,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,5 +80,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES

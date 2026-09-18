@@ -6,14 +6,22 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "36.224.185.143",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+      "server": "r3mrcg00129437x.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
       "server": "7dba81fc3a0b.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -24,7 +32,20 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
+      "server": "6ivh.pnuqcnp.cn",
+      "server_port": 443,
+      "password": "9sK2mP8xQ7vL3nZ6",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true
       }
     },
     {
@@ -33,7 +54,9 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
       ]
     },
     {
@@ -41,7 +64,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

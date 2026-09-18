@@ -12,21 +12,19 @@ proxies:
   cipher: aes-256-gcm
   password: 6b39ae3234dfd68b
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: dog-hk.kunlun01dns.com
-  port: 21022
+  server: 181.215.18.196
+  port: 1080
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: manm1wouaeic9db3
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 47.240.80.220
-  port: 2052
+  server: 103.136.150.119
+  port: 30222
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 72553320ae6bcc8f
 - name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 162.128.157.164
   port: 443
@@ -39,16 +37,24 @@ proxies:
     public-key: TP_bpIPUtjdxxGA9j7mpsHtSDfM2HMSZFNWW9MtDPT0
     short-id: 14156e3ac23212cc
   servername: www.bing.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 47.240.80.220
+  port: 2052
+  udp: true
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: vpn.12169.top
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06
   server: 119.246.1.143
   port: 443
   udp: true
   type: trojan
   password: BxceQaOe
-  sni: t.me/ripaojiedian
+  sni: 119.246.1.143
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
+- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: 202.146.222.29
   port: 443
   udp: true
@@ -56,63 +62,38 @@ proxies:
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: https://t.me/wangcai2рҹүёрҹүі
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
+- name: 🇭🇰 中国香港 (Hong Kong) 08
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: t.me
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 103.149.182.79
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf
-  password: asd123456
 - name: 🇭🇰 中国香港 (Hong Kong) 09
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: 207.56.137.51
+  server: 104.16.60.10
   port: 443
   udp: true
   type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
+  uuid: cdf5205e-897f-46a7-8d7f-21a61a80b466
   tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: 31.58.181.88
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
+  servername: hk1.69lover.my
   skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 13
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /api/v2/e2fe4e52a165854d/stream
+    headers:
+      Host: hk1.69lover.my
+- name: 🇭🇰 中国香港 (Hong Kong) 11
   server: www.shopify.com
   port: 443
   udp: true
@@ -128,17 +109,14 @@ proxies:
     path: /3aa71202-a099-49c1-99fc-6662f3335369-vm
     headers:
       Host: yoga-suggesting-recording-calls.trycloudflare.com
-- name: 🇭🇰 中国香港 (Hong Kong) 14
-  server: 47.244.120.197
-  port: 23026
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: mz.hkychina.com
+  port: 8443
   udp: true
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /arki
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -156,8 +134,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
-  - 🇭🇰 中国香港 (Hong Kong) 13
-  - 🇭🇰 中国香港 (Hong Kong) 14
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -175,7 +151,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
-  - 🇭🇰 中国香港 (Hong Kong) 13
-  - 🇭🇰 中国香港 (Hong Kong) 14
 rules:
 - MATCH,PROXIES
