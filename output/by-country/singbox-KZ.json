@@ -4,21 +4,17 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01",
-      "server": "104.21.13.204",
-      "server_port": 443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
+      "type": "vmess",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/vmess/",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "3h-kazakhstan1.09vpn.com"
         }
       }
     },
@@ -27,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

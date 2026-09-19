@@ -14,24 +14,22 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "freeman.cvbesty.ir",
-      "server_port": 10210,
-      "uuid": "d65a82af-a403-405e-8b7b-27a68b830511",
+      "server": "87.58.147.66",
+      "server_port": 443,
+      "uuid": "ba6b7300-be34-43ef-a883-eee182dfb2d6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "play-apps-features.googleusercontent.com",
+        "server_name": "Miro.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc",
-          "short_id": "13121b7150ad7fc6"
+          "public_key": "1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo",
+          "short_id": "7a0300af51a1c4cf"
         }
-      },
-      "transport": {
-        "type": "grpc"
       }
     },
     {
@@ -57,17 +55,45 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "185.255.179.11",
-      "server_port": 9443,
-      "uuid": "d9d0f208-d582-41d5-bb7b-742671402810",
+      "server": "est1313.ggisopi.su",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "hub-fi-02.hanvpn.cc",
-        "insecure": false
+        "server_name": "est1313.ggisopi.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇫🇮 芬兰 (Finland) 05",
+      "server": "150.241.71.148",
+      "server_port": 448,
+      "password": "6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV",
+      "tls": {
+        "enabled": true,
+        "server_name": "kiev.gosgenarchive.com",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       },
       "transport": {
         "type": "grpc",
-        "service_name": "fi02-grpc-8e47a"
+        "service_name": "TrojanGRPC"
       }
     },
     {
@@ -78,7 +104,8 @@
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
         "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05"
       ]
     },
     {
@@ -88,7 +115,8 @@
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
         "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

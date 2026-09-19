@@ -6,7 +6,7 @@
     {
       "type": "vmess",
       "tag": "🇦🇺 澳大利亚 (Australia) 01",
-      "server": "82.198.246.250",
+      "server": "82.198.246.37",
       "server_port": 180,
       "uuid": "d13fc2f5-3e05-4795-81eb-44143a09e552",
       "security": "auto"
@@ -44,16 +44,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 04",
-      "server": "ww11.levikogjgfdd.ir",
-      "server_port": 18000,
-      "uuid": "f8c8dc3d-0d37-46b0-8b34-a7232882fcfe",
-      "security": "auto"
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇺 澳大利亚 (Australia) 05",
+      "tag": "🇦🇺 澳大利亚 (Australia) 04",
       "server": "34.87.244.111",
       "server_port": 443,
       "uuid": "325bc1be-0cb7-4cf7-bd35-a79ded91bbbd",
@@ -62,7 +54,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -79,8 +71,7 @@
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
         "🇦🇺 澳大利亚 (Australia) 03",
-        "🇦🇺 澳大利亚 (Australia) 04",
-        "🇦🇺 澳大利亚 (Australia) 05"
+        "🇦🇺 澳大利亚 (Australia) 04"
       ]
     },
     {
@@ -90,8 +81,7 @@
         "🇦🇺 澳大利亚 (Australia) 01",
         "🇦🇺 澳大利亚 (Australia) 02",
         "🇦🇺 澳大利亚 (Australia) 03",
-        "🇦🇺 澳大利亚 (Australia) 04",
-        "🇦🇺 澳大利亚 (Australia) 05"
+        "🇦🇺 澳大利亚 (Australia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

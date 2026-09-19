@@ -5,13 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 104.165.205.42
-  port: 8443
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: hysteria2
-  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
-  sni: 104.165.205.42
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02
   server: 151.242.2.81
   port: 443
@@ -26,6 +25,21 @@ proxies:
     path: /cdn/v3/live
     headers:
       Host: cf9.rumedia-cdn.com
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 104.18.28.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: f6b5a6a3-f3e1-63ca-bb68-bdc400000000
+  tls: true
+  servername: netlivpn5505.ffffdsaaa.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: netlivpn5505.ffffdsaaa.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,6 +47,7 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01
   - 🇨🇭 瑞士 (Switzerland) 02
+  - 🇨🇭 瑞士 (Switzerland) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,5 +55,6 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01
   - 🇨🇭 瑞士 (Switzerland) 02
+  - 🇨🇭 瑞士 (Switzerland) 03
 rules:
 - MATCH,PROXIES

@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01
-  server: 82.198.246.250
+  server: 82.198.246.37
   port: 180
   udp: true
   type: vmess
@@ -35,14 +35,6 @@ proxies:
   ws-opts:
     path: /7586c69d3dc9
 - name: 🇦🇺 澳大利亚 (Australia) 04
-  server: ww11.levikogjgfdd.ir
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇦🇺 澳大利亚 (Australia) 05
   server: 34.87.244.111
   port: 443
   udp: true
@@ -53,7 +45,7 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -63,7 +55,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02
   - 🇦🇺 澳大利亚 (Australia) 03
   - 🇦🇺 澳大利亚 (Australia) 04
-  - 🇦🇺 澳大利亚 (Australia) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -73,6 +64,5 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02
   - 🇦🇺 澳大利亚 (Australia) 03
   - 🇦🇺 澳大利亚 (Australia) 04
-  - 🇦🇺 澳大利亚 (Australia) 05
 rules:
 - MATCH,PROXIES

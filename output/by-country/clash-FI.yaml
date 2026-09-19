@@ -12,20 +12,18 @@ proxies:
   cipher: aes-128-gcm
   password: o2rw2hICwu1blrr_gZAl2Q
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: freeman.cvbesty.ir
-  port: 10210
+  server: 87.58.147.66
+  port: 443
   udp: true
   type: vless
-  uuid: d65a82af-a403-405e-8b7b-27a68b830511
+  uuid: ba6b7300-be34-43ef-a883-eee182dfb2d6
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: twRm8a1BBdz2Q5jTuNbXxA7ZdtDPAyQNEycDYkW9DFc
-    short-id: 13121b7150ad7fc6
-  servername: play-apps-features.googleusercontent.com
+    public-key: 1U9eTADaumTYxiO9NifVHUv5mbMowU2NSjgc2rBdvHo
+    short-id: 7a0300af51a1c4cf
+  servername: Miro.com
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
 - name: 🇫🇮 芬兰 (Finland) 03
   server: 185.79.138.71
   port: 448
@@ -39,17 +37,28 @@ proxies:
   servername: www.samsung.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 04
-  server: 185.255.179.11
-  port: 9443
+  server: est1313.ggisopi.su
+  port: 443
   udp: true
   type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
   tls: true
-  servername: hub-fi-02.hanvpn.cc
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: 150.241.71.148
+  port: 448
+  udp: true
+  type: trojan
+  password: 6fY77UmuJ6BEK7n0qv433JrPNjCMeZQV
+  sni: kiev.gosgenarchive.com
   skip-cert-verify: false
   network: grpc
   grpc-opts:
-    grpc-service-name: fi02-grpc-8e47a
+    grpc-service-name: TrojanGRPC
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,6 +68,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +78,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES
