@@ -5,41 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01
-  server: 104.24.31.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: aebe5a70-0ca3-46ce-8208-8b5bab1346ce
-  tls: true
-  servername: rAyAn-007.nAsTaRaN.DpDnS.OrG
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-    headers:
-      Host: rayan-007.nastaran.dpdns.org
-- name: 🇱🇻 拉脱维亚 (Latvia) 02
   server: 185.135.86.175
-  port: 9094
+  port: 9036
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: rpgbNnU9rDDU4aWZ
-- name: 🇱🇻 拉脱维亚 (Latvia) 03
-  server: 138.124.180.137
-  port: 443
+  password: hbtvgUz5uNYyB3Rf
+- name: 🇱🇻 拉脱维亚 (Latvia) 02
+  server: 185.135.86.175
+  port: 9033
   udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: random
-- name: 🇱🇻 拉脱维亚 (Latvia) 04
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 03
   server: 46.243.142.227
   port: 10443
   udp: true
@@ -61,7 +40,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01
   - 🇱🇻 拉脱维亚 (Latvia) 02
   - 🇱🇻 拉脱维亚 (Latvia) 03
-  - 🇱🇻 拉脱维亚 (Latvia) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -70,6 +48,5 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01
   - 🇱🇻 拉脱维亚 (Latvia) 02
   - 🇱🇻 拉脱维亚 (Latvia) 03
-  - 🇱🇻 拉脱维亚 (Latvia) 04
 rules:
 - MATCH,PROXIES

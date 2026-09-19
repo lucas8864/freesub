@@ -5,18 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 95.85.224.17
-  port: 443
-  udp: true
-  type: vless
-  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
-  servername: est1313.ggisopi.su
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 94.183.170.147
   port: 8443
   udp: true
@@ -31,7 +19,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 94.183.170.135
   port: 443
   udp: true
@@ -40,7 +28,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -49,15 +37,19 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05
-  server: 178.18.147.66
-  port: 29900
+  client-fingerprint: chrome
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04
+  server: 95.85.224.17
+  port: 443
   udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  type: vless
+  uuid: d0f0a880-0df1-48c9-bdf1-5669fb9483ce
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
+  servername: est1313.ggisopi.su
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -67,7 +59,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
-  - 🇪🇪 爱沙尼亚 (Estonia) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -77,6 +68,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
-  - 🇪🇪 爱沙尼亚 (Estonia) 05
 rules:
 - MATCH,PROXIES

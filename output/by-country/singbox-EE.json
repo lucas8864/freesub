@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "95.85.224.17",
-      "server_port": 443,
-      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "est1313.ggisopi.su",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
       "server": "94.183.170.147",
       "server_port": 8443,
       "uuid": "5edbcb44-8d04-4fa7-a587-bc5d60c24ca1",
@@ -50,7 +29,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
       "server": "94.183.170.135",
       "server_port": 443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -61,7 +40,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -71,20 +50,29 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05",
-      "server": "178.18.147.66",
-      "server_port": 29900,
-      "password": "github.com/Alvin9999-newpac/fanqiang",
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
+      "server": "95.85.224.17",
+      "server_port": 443,
+      "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.microsoft.com",
-        "insecure": true
+        "server_name": "est1313.ggisopi.su",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I",
+          "short_id": ""
+        }
       }
     },
     {
@@ -95,8 +83,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05"
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ]
     },
     {
@@ -106,8 +93,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05"
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

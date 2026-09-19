@@ -5,77 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  server: 36.224.185.173
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: b1ae0fce-9340-4f2e-882d-fdb2218e2e2b
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽)
-  server: 49.254.204.134
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  server: r3mrcg001286ek2.cybervena.com
-  port: 50099
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇺🇸 美国 (United States) 04 (家宽)
-  server: 172.67.151.77
+  server: 6ivh.pnuqcnp.cn
   port: 443
   udp: true
-  type: vless
-  uuid: 73796e63-0000-4000-8000-000000000000
-  tls: true
-  servername: nahan-core.fatitelegram.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /sync
-    headers:
-      Host: nahan-core.fatitelegram.workers.dev
-- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽)
-  server: cf3935cb-tly2o0-tqbai3-1hpo0.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: c3dc8d26-ab2b-11ec-a8bf-f23c91cfbbc9
-  sni: cf3935cb-tly2o0-tqbai3-1hpo0.hk3.hyhuawei.com
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: images.ctfassets.net
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 07 (家宽)
-  server: 84.32.217.120
-  port: 8443
-  udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /channels/act
-    headers:
-      Host: cdn8848.776676.xyz
-- name: 🇹🇼 中国台湾 (Taiwan) 08 (家宽)
-  server: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   port: 443
   udp: true
   type: vmess
@@ -83,36 +21,26 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: dee2309db4se3g5s1d65g672c6641e25.oylfmxz.cn
+  servername: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: dee2309db4944c248b6d4672c6641e25.oylfmxz.cn
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  - 🇰🇷 韩国 (South Korea) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇺🇸 美国 (United States) 04 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇩🇪 德国 (Germany) 07 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  - 🇰🇷 韩国 (South Korea) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇺🇸 美国 (United States) 04 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇩🇪 德国 (Germany) 07 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 08 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 rules:
 - MATCH,PROXIES

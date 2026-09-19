@@ -4,60 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01",
-      "server": "104.24.31.89",
-      "server_port": 443,
-      "uuid": "aebe5a70-0ca3-46ce-8208-8b5bab1346ce",
-      "tls": {
-        "enabled": true,
-        "server_name": "rAyAn-007.nAsTaRaN.DpDnS.OrG",
-        "insecure": true,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560",
-        "headers": {
-          "Host": "rayan-007.nastaran.dpdns.org"
-        }
-      }
+      "server": "185.135.86.175",
+      "server_port": 9036,
+      "method": "aes-256-cfb",
+      "password": "hbtvgUz5uNYyB3Rf"
     },
     {
       "type": "shadowsocks",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02",
       "server": "185.135.86.175",
-      "server_port": 9094,
+      "server_port": 9033,
       "method": "aes-256-cfb",
-      "password": "rpgbNnU9rDDU4aWZ"
+      "password": "UTJA57ypk2XKQpnm"
     },
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 03",
-      "server": "138.124.180.137",
-      "server_port": 443,
-      "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c",
-          "short_id": "33acba1b"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04",
       "server": "46.243.142.227",
       "server_port": 10443,
       "uuid": "a85ddf9f-329b-4c31-a80a-cd0f2e5b2a30",
@@ -86,8 +50,7 @@
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01",
         "🇱🇻 拉脱维亚 (Latvia) 02",
-        "🇱🇻 拉脱维亚 (Latvia) 03",
-        "🇱🇻 拉脱维亚 (Latvia) 04"
+        "🇱🇻 拉脱维亚 (Latvia) 03"
       ]
     },
     {
@@ -96,8 +59,7 @@
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01",
         "🇱🇻 拉脱维亚 (Latvia) 02",
-        "🇱🇻 拉脱维亚 (Latvia) 03",
-        "🇱🇻 拉脱维亚 (Latvia) 04"
+        "🇱🇻 拉脱维亚 (Latvia) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

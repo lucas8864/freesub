@@ -6,18 +6,18 @@
     {
       "type": "shadowsocks",
       "tag": "🇮🇹 意大利 (Italy) 01",
-      "server": "57.131.48.45",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "itzvpn@321"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇹 意大利 (Italy) 02",
       "server": "185.164.175.81",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 02",
+      "server": "57.131.48.45",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "itzvpn@321"
     },
     {
       "type": "vless",
@@ -29,6 +29,27 @@
     {
       "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 04",
+      "server": "172.238.232.239",
+      "server_port": 32833,
+      "uuid": "167ed405-7de9-4bff-b1ea-6e3d49c76b0b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.intel.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PaTDdYBrlh1xBixdI0igvRRkf0vnUwMRzi-4oDyfS20",
+          "short_id": "a0a305ccc8e94aa8"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇹 意大利 (Italy) 05",
       "server": "82.118.16.187",
       "server_port": 443,
       "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
@@ -38,7 +59,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -55,7 +76,8 @@
         "🇮🇹 意大利 (Italy) 01",
         "🇮🇹 意大利 (Italy) 02",
         "🇮🇹 意大利 (Italy) 03",
-        "🇮🇹 意大利 (Italy) 04"
+        "🇮🇹 意大利 (Italy) 04",
+        "🇮🇹 意大利 (Italy) 05"
       ]
     },
     {
@@ -65,7 +87,8 @@
         "🇮🇹 意大利 (Italy) 01",
         "🇮🇹 意大利 (Italy) 02",
         "🇮🇹 意大利 (Italy) 03",
-        "🇮🇹 意大利 (Italy) 04"
+        "🇮🇹 意大利 (Italy) 04",
+        "🇮🇹 意大利 (Italy) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
