@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01
-  server: 82.198.246.37
+  server: 82.198.246.250
   port: 180
   udp: true
   type: vmess
@@ -26,14 +26,13 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇦🇺 澳大利亚 (Australia) 03
-  server: 103.75.119.126
-  port: 2087
+  server: vpn-au-002.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: 731f177e-00aa-480c-b935-661456139a32
-  network: ws
-  ws-opts:
-    path: /7586c69d3dc9
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: whatsapp.com
+  skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 04
   server: 34.87.244.111
   port: 443
@@ -45,7 +44,38 @@ proxies:
     public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
     short-id: d725f0dd8cce210f
   servername: www.cloudflare.com
-  client-fingerprint: ios
+  client-fingerprint: random
+- name: 🇦🇺 澳大利亚 (Australia) 05
+  server: 103.75.119.126
+  port: 2087
+  udp: true
+  type: vless
+  uuid: 731f177e-00aa-480c-b935-661456139a32
+  network: ws
+  ws-opts:
+    path: /7586c69d3dc9
+- name: 🇦🇺 澳大利亚 (Australia) 06
+  server: 152.67.115.203
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+- name: 🇦🇺 澳大利亚 (Australia) 07
+  server: 34.87.229.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  tls: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +85,9 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02
   - 🇦🇺 澳大利亚 (Australia) 03
   - 🇦🇺 澳大利亚 (Australia) 04
+  - 🇦🇺 澳大利亚 (Australia) 05
+  - 🇦🇺 澳大利亚 (Australia) 06
+  - 🇦🇺 澳大利亚 (Australia) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +97,8 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 02
   - 🇦🇺 澳大利亚 (Australia) 03
   - 🇦🇺 澳大利亚 (Australia) 04
+  - 🇦🇺 澳大利亚 (Australia) 05
+  - 🇦🇺 澳大利亚 (Australia) 06
+  - 🇦🇺 澳大利亚 (Australia) 07
 rules:
 - MATCH,PROXIES

@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01
-  server: 103.139.51.51
-  port: 443
-  udp: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: 711ad7f475c35e5e
-  servername: cloud.figmafound.org
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 02
-  server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 03
   server: 103.139.51.21
   port: 443
   udp: true
@@ -37,8 +17,8 @@ proxies:
     short-id: 711ad7f475c35e5e
   servername: auth.figmafound.org
   client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 04
-  server: 103.139.51.41
+- name: 🇱🇹 立陶宛 (Lithuania) 02
+  server: 103.139.51.51
   port: 443
   udp: true
   type: vless
@@ -48,21 +28,8 @@ proxies:
   reality-opts:
     public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
     short-id: 711ad7f475c35e5e
-  servername: mail.figmafound.org
-  client-fingerprint: firefox
-- name: 🇱🇹 立陶宛 (Lithuania) 05
-  server: lt.aether-runet.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
-    short-id: 4fa44664f6a566d3
-  servername: lt.aether-runet.top
-  client-fingerprint: firefox
+  servername: cloud.figmafound.org
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,9 +37,6 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01
   - 🇱🇹 立陶宛 (Lithuania) 02
-  - 🇱🇹 立陶宛 (Lithuania) 03
-  - 🇱🇹 立陶宛 (Lithuania) 04
-  - 🇱🇹 立陶宛 (Lithuania) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,8 +44,5 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01
   - 🇱🇹 立陶宛 (Lithuania) 02
-  - 🇱🇹 立陶宛 (Lithuania) 03
-  - 🇱🇹 立陶宛 (Lithuania) 04
-  - 🇱🇹 立陶宛 (Lithuania) 05
 rules:
 - MATCH,PROXIES
