@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇳🇴 挪威 (Norway) 02",
-      "server": "46.29.238.88",
-      "server_port": 40443,
-      "uuid": "db320947-adfb-400d-b60b-383b8324bffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc",
-          "short_id": "f7b2"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇳🇴 挪威 (Norway) 03",
       "server": "46.29.238.32",
       "server_port": 40443,
       "uuid": "ed91e79c-f6bf-4fba-8cc0-6d45acaec22b",
@@ -52,26 +32,12 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇳🇴 挪威 (Norway) 04",
-      "server": "46.8.210.129",
-      "server_port": 22443,
-      "password": "2a3b101d-d8f9-40e7-9373-b0ef487c0035",
-      "tls": {
-        "enabled": true,
-        "server_name": "disk.api-yandex.net",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01",
-        "🇳🇴 挪威 (Norway) 02",
-        "🇳🇴 挪威 (Norway) 03",
-        "🇳🇴 挪威 (Norway) 04"
+        "🇳🇴 挪威 (Norway) 02"
       ]
     },
     {
@@ -79,9 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01",
-        "🇳🇴 挪威 (Norway) 02",
-        "🇳🇴 挪威 (Norway) 03",
-        "🇳🇴 挪威 (Norway) 04"
+        "🇳🇴 挪威 (Norway) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,6 +5,36 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
+  server: 104.143.223.80
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 38ffee35-b305-41ba-89e0-78e62d95b99c
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02
+  server: 104.143.223.50
+  port: 2089
+  udp: true
+  type: vless
+  uuid: d144d943-46bd-41ce-af2c-06358c845616
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 03
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 4a64b0c2-de7e-4e32-b931-247be6dc4488
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 04
   server: 130.49.161.70
   port: 443
   udp: true
@@ -14,28 +44,29 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 02
-  server: 31.58.181.88
-  port: 8443
+- name: 🇦🇪 阿联酋 (UAE) 05
+  server: 94.183.224.45
+  port: 443
   udp: true
   type: vless
-  uuid: d0da19f1-fb05-488e-99c2-262389b3537b
+  uuid: d72f05b0-b182-4783-a6f2-21cecc7d841a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
-  servername: tradingview.com
+    public-key: SibLV5WBGdljTiUCmKx77KhHQfErCwjDMD_ZLoha3js
+    short-id: a1b2c3d4e5f67890
+  servername: dzen.ru
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03
-  server: 85.204.107.181
+- name: 🇦🇪 阿联酋 (UAE) 06
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -54,6 +85,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
+  - 🇦🇪 阿联酋 (UAE) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +97,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
+  - 🇦🇪 阿联酋 (UAE) 07
 rules:
 - MATCH,PROXIES
