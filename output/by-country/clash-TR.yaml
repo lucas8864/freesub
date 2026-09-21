@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 93.190.9.9
-  port: 3090
-  udp: true
-  type: vless
-  uuid: c4a36c29-39db-4782-b7cb-6e391461a999
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇹🇷 土耳其 (Turkey) 02
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -24,33 +15,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 03
-  server: zolla2580.karmatel.ir
-  port: 55519
-  udp: true
-  type: vless
-  uuid: 20cba9d0-e235-4205-943a-7e6f0b390ec5
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play-apps-features.googleusercontent.com
-- name: 🇹🇷 土耳其 (Turkey) 04
-  server: 172.67.134.170
-  port: 443
-  udp: true
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-635698a6bb9c
-  tls: true
-  servername: jdzit4e4urks.xwzohsebujps.workers.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/635698a6bb9c/loc-0
-    headers:
-      Host: jdzit4e4urks.xwzohsebujps.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 05
+  client-fingerprint: firefox
+- name: 🇹🇷 土耳其 (Turkey) 02
   server: 206.1.97.61
   port: 443
   udp: true
@@ -69,9 +35,6 @@ proxy-groups:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
-  - 🇹🇷 土耳其 (Turkey) 03
-  - 🇹🇷 土耳其 (Turkey) 04
-  - 🇹🇷 土耳其 (Turkey) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,8 +42,5 @@ proxy-groups:
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
-  - 🇹🇷 土耳其 (Turkey) 03
-  - 🇹🇷 土耳其 (Turkey) 04
-  - 🇹🇷 土耳其 (Turkey) 05
 rules:
 - MATCH,PROXIES

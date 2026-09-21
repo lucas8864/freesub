@@ -17,34 +17,17 @@ proxies:
     short-id: 33acba1b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02
-  server: 104.25.217.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7a657573-627d-c5d7-4e7b-9e260f5cfff1
-  tls: true
-  servername: imzajnekupas.a3-60-morteza.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /stream/PANEL_ZEUS/9e260f5cfff1/loc-0
-    headers:
-      Host: imzajnekupas.a3-60-morteza.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01
-  - 🇱🇻 拉脱维亚 (Latvia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01
-  - 🇱🇻 拉脱维亚 (Latvia) 02
 rules:
 - MATCH,PROXIES

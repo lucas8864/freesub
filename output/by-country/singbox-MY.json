@@ -18,21 +18,19 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 02",
-      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
-      "server_port": 60507,
-      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
-      "flow": "xtls-rprx-vision",
+      "server": "140.245.38.33",
+      "server_port": 2096,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zCNI8OUsvp6NKt52Z_93OoqegAjbVjzP2tHGXd3cQjM",
-          "short_id": "0888830f7006f1"
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/class/season",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
         }
       }
     },

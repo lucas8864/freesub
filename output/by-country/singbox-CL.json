@@ -22,7 +22,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         },
         "reality": {
           "enabled": true,
@@ -32,24 +32,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 03",
-      "server": "platform109.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform109"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇨🇱 智利 (Chile) 01",
-        "🇨🇱 智利 (Chile) 02",
-        "🇨🇱 智利 (Chile) 03"
+        "🇨🇱 智利 (Chile) 02"
       ]
     },
     {
@@ -57,8 +45,7 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇱 智利 (Chile) 01",
-        "🇨🇱 智利 (Chile) 02",
-        "🇨🇱 智利 (Chile) 03"
+        "🇨🇱 智利 (Chile) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

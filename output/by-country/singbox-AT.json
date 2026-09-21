@@ -33,12 +33,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇦🇹 奥地利 (Austria) 03",
+      "server": "67.159.17.39",
+      "server_port": 30443,
+      "password": "1e6fed5b-5edc-4ddb-a268-79d7fae4365c",
+      "tls": {
+        "enabled": true,
+        "server_name": "filesconvert.org",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 (Austria) 02",
+        "🇦🇹 奥地利 (Austria) 03"
       ]
     },
     {
@@ -46,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 (Austria) 02",
+        "🇦🇹 奥地利 (Austria) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

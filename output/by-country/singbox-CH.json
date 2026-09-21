@@ -15,7 +15,7 @@
         "server_name": "usa.oblaco.bet",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -27,58 +27,39 @@
     {
       "type": "vless",
       "tag": "🇨🇭 瑞士 (Switzerland) 02",
-      "server": "104.21.117.9",
+      "server": "45.140.205.2",
       "server_port": 443,
-      "uuid": "bd9ff08b-d042-3650-48e4-c4b400000000",
-      "tls": {
-        "enabled": true,
-        "server_name": "netlivpn2950.bbxff.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn2950.bbxff.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03",
-      "server": "138.124.64.23",
-      "server_port": 443,
-      "uuid": "1ce68480-ed58-488b-965a-758fe9d6da76",
+      "uuid": "c795bdd5-0460-42bd-927b-fbff154d2ab5",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "google.com",
+        "server_name": "promo.ch.iki-servers.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_4ATNuZQh5uHkrwQY5Z4h0HsudsGqTRIBkuJSRmQuBU",
-          "short_id": "6ba85179e30d4fc2"
+          "public_key": "he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03",
+      "server": "82.38.64.229",
+      "server_port": 8443,
+      "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
+      "tls": {
+        "enabled": true,
+        "server_name": "hopp-swizland-new.mysynology.net",
+        "insecure": true
+      }
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04",
       "server": "ch.cache-4d8a.com",
       "server_port": 443,
       "uuid": "ddf09ad0-02dc-485b-9048-1038de5bebf0",
@@ -99,7 +80,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05",
       "server": "151.242.2.81",
       "server_port": 443,
       "uuid": "0a2dde28-70da-4863-a06f-35d007d94d35",
@@ -125,8 +106,7 @@
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
         "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05",
-        "🇨🇭 瑞士 (Switzerland) 06"
+        "🇨🇭 瑞士 (Switzerland) 05"
       ]
     },
     {
@@ -137,8 +117,7 @@
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
         "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05",
-        "🇨🇭 瑞士 (Switzerland) 06"
+        "🇨🇭 瑞士 (Switzerland) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
