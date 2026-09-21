@@ -15,7 +15,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,15 +25,13 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02",
-      "server": "129.159.156.109",
-      "server_port": 50160,
-      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+      "server": "176.65.151.237",
+      "server_port": 34528,
+      "uuid": "61906623-1a22-41d4-839c-f9117cc72846",
+      "transport": {
+        "type": "grpc"
       }
     },
     {

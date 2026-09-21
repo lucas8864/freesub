@@ -5,81 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 172.64.229.170
-  port: 80
+  server: edge-kz1.lovely.my
+  port: 443
   udp: true
   type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 172.64.42.85
-  port: 2082
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  server: 162.159.0.169
-  port: 8080
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: '/?ed=2560security=tls '
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  server: 151.101.1.194
-  port: 80
-  udp: true
-  type: vless
-  uuid: e732cb07-4a31-49d3-9122-61dc1f68334e
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: simorghfr.global.ssl.fastly.net
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
-  server: 38.107.234.57
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
-    headers:
-      Host: 3h-kazakhstan1.09vpn.com
+  uuid: 416b35f4-7cba-4023-a915-b22af73cd0c2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nNeAdcF__Tg3jBFRRPgpmKPNJGfqMGy4rG3Z3eO-T24
+    short-id: 24fc325b440818ce
+  servername: edge-kz1.lovely.my
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 05
 rules:
 - MATCH,PROXIES

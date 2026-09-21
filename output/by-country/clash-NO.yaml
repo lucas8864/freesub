@@ -12,6 +12,18 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
 - name: 🇳🇴 挪威 (Norway) 02
+  server: 46.29.238.88
+  port: 40443
+  udp: true
+  type: vless
+  uuid: db320947-adfb-400d-b60b-383b8324bffe
+  tls: true
+  reality-opts:
+    public-key: aZOpodpnifoxDqTzWgxJRffgsiGnG9-h-EZd4SvOImc
+    short-id: f7b2
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇳🇴 挪威 (Norway) 03
   server: 46.29.238.32
   port: 40443
   udp: true
@@ -22,7 +34,7 @@ proxies:
     public-key: dvx6zPztKbgHpYaW6J4OZQC74Uy0JS6HUVdDfbjG5V4
     short-id: '7606'
   servername: deepl.com
-  client-fingerprint: chrome
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -30,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇳🇴 挪威 (Norway) 01
   - 🇳🇴 挪威 (Norway) 02
+  - 🇳🇴 挪威 (Norway) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -37,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇳🇴 挪威 (Norway) 01
   - 🇳🇴 挪威 (Norway) 02
+  - 🇳🇴 挪威 (Norway) 03
 rules:
 - MATCH,PROXIES

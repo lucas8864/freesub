@@ -6,13 +6,13 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01",
-      "server": "46.101.230.110",
+      "server": "146.185.178.18",
       "server_port": 443,
       "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
       "tls": {
         "enabled": true,
         "server_name": "cdn8848.776676.xyz",
-        "insecure": false,
+        "insecure": true,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,7 +20,6 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/drama?ed=2560",
         "headers": {
           "Host": "cdn8848.776676.xyz"
         }
@@ -29,6 +28,28 @@
     {
       "type": "vless",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 02",
+      "server": "193.181.216.117",
+      "server_port": 2053,
+      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn8848.776676.xyz",
+        "insecure": true,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "cdn8848.776676.xyz"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 03",
       "server": "156.226.168.221",
       "server_port": 35193,
       "uuid": "35cbae61-ee10-4cb9-abb8-4950b35e9851",
@@ -38,7 +59,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "edge"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -53,7 +74,8 @@
       "outbounds": [
         "auto",
         "🇸🇨 塞舌尔 (Seychelles) 01",
-        "🇸🇨 塞舌尔 (Seychelles) 02"
+        "🇸🇨 塞舌尔 (Seychelles) 02",
+        "🇸🇨 塞舌尔 (Seychelles) 03"
       ]
     },
     {
@@ -61,7 +83,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇨 塞舌尔 (Seychelles) 01",
-        "🇸🇨 塞舌尔 (Seychelles) 02"
+        "🇸🇨 塞舌尔 (Seychelles) 02",
+        "🇸🇨 塞舌尔 (Seychelles) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

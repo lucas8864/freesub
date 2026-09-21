@@ -6,12 +6,12 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽)",
-      "server": "162.159.38.127",
+      "server": "162.159.43.187",
       "server_port": 2082,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls ",
+        "path": "/?ed=2560security=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -20,70 +20,14 @@
     {
       "type": "shadowsocks",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "36.224.185.173",
+      "server": "r3mrcg001286ek2.cybervena.com",
       "server_port": 50099,
       "method": "chacha20-ietf-poly1305",
       "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
     },
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-      "server": "36.224.185.143",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-      "server": "6ivh.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
-      "tls": {
-        "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽)",
-      "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
-      "server_port": 443,
-      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
       "server": "dee2309db4944c248b6d4372c6641e25.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -102,8 +46,50 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+      "server": "clhkzzzdbgwxxndnlm.cfooov.xyz",
+      "server_port": 41341,
+      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HGk0MQ7l4mWgJo1-7PctGx5pf88HECBpLRUtBSemkzY",
+          "short_id": "b93f2026953855c5"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 05 (家宽)",
+      "server": "sczznmbbbzgwlwzdhsql.jiedddym.com",
+      "server_port": 62638,
+      "uuid": "17ab31f7-c021-4aec-83b2-ab48de8886bd",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "PhXLfJ4s8EPauWaeRpzAjSuZibhmMiZFEMr8h8qU6iI",
+          "short_id": "d1f38c0f15ed22"
+        }
+      }
+    },
+    {
       "type": "vmess",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 08 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽)",
       "server": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn",
       "server_port": 443,
       "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
@@ -114,7 +100,31 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dee2309db4se3g5sds35g4s3dg.oylfmxz.cn"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
+      "server": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
+      "server_port": 443,
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "dee2309db4se3grs6e8hg4w61sd53g1.oylfmxz.cn"
+        }
       }
     },
     {
@@ -125,11 +135,10 @@
         "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇰🇷 韩国 (South Korea) 05 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 06 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽)"
       ]
     },
     {
@@ -139,11 +148,10 @@
         "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇰🇷 韩国 (South Korea) 05 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 06 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 08 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
