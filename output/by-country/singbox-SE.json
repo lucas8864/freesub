@@ -12,16 +12,12 @@
       "password": "AxIYWtskJWIIaefW"
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "se-node.rumedia-cdn.com",
-      "server_port": 25443,
-      "password": "29ffde49-e1d6-4dcd-a135-352920f9f0b8",
-      "tls": {
-        "enabled": true,
-        "server_name": "cf2.rumedia-cdn.com",
-        "insecure": true
-      }
+      "server": "16.171.55.2",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "vless",

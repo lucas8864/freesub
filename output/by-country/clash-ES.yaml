@@ -11,17 +11,75 @@ proxies:
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 02
+  server: 85.90.217.42
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇪🇸 西班牙 (Spain) 03
+  server: 92.118.127.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 72f8e59f-7a0d-44f2-a8db-b4c3e1e36716
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Rz8XjYinCcpE7NLktJzNFL7eVSUxaFGuV2Zz82p7IRg
+    short-id: 908563a721d9bdcd
+  servername: sp1.extremumnews.com
+  client-fingerprint: safari
+- name: 🇪🇸 西班牙 (Spain) 04
+  server: 83.147.18.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 05
+  server: mygptagent.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: mygptagent.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: mygptagent.org
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01
+  - 🇪🇸 西班牙 (Spain) 02
+  - 🇪🇸 西班牙 (Spain) 03
+  - 🇪🇸 西班牙 (Spain) 04
+  - 🇪🇸 西班牙 (Spain) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01
+  - 🇪🇸 西班牙 (Spain) 02
+  - 🇪🇸 西班牙 (Spain) 03
+  - 🇪🇸 西班牙 (Spain) 04
+  - 🇪🇸 西班牙 (Spain) 05
 rules:
 - MATCH,PROXIES
