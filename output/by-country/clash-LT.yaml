@@ -4,20 +4,21 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01
-  server: 151.241.226.201
-  port: 2053
+- name: 🇱🇹 立陶宛 (Lithuania) 01
+  server: 84.32.215.94
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
+    public-key: vrcsm8L_tY7sNbnCEdLCEjOthh_w9bdWS3wFPgsIomk
+    short-id: 4fa44664f6a566d3
+  servername: lt.aether-runet.top
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 02
-  server: 212.64.210.109
+- name: 🇱🇹 立陶宛 (Lithuania) 02
+  server: 5.199.169.170
   port: 443
   udp: true
   type: vless
@@ -26,22 +27,22 @@ proxies:
   tls: true
   reality-opts:
     public-key: nilJ07r1KZ0-KhmRNYeICXGhM9HeG9uxnRaqjYz3fWg
-    short-id: da69ccae3f9f367f
-  servername: tr.responsiblecare.uk
+    short-id: 20f690531579cc72
+  servername: westcostlt.responsiblecare.uk
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01
-  - 🇹🇷 土耳其 (Turkey) 02
+  - 🇱🇹 立陶宛 (Lithuania) 01
+  - 🇱🇹 立陶宛 (Lithuania) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01
-  - 🇹🇷 土耳其 (Turkey) 02
+  - 🇱🇹 立陶宛 (Lithuania) 01
+  - 🇱🇹 立陶宛 (Lithuania) 02
 rules:
 - MATCH,PROXIES

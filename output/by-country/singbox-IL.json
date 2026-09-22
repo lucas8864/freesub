@@ -6,6 +6,27 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01",
+      "server": "185.95.231.156",
+      "server_port": 443,
+      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+          "short_id": "a3a578ab"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇱 以色列 (Israel) 02",
       "server": "185.95.231.233",
       "server_port": 443,
       "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
@@ -25,55 +46,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02",
-      "server": "185.95.231.156",
-      "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 03",
-      "server": "45.140.205.2",
-      "server_port": 443,
-      "uuid": "c795bdd5-0460-42bd-927b-fbff154d2ab5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo.ch.iki-servers.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "he6F0xhRgRSY0qekzzUoFHroztc6V06CpJ5UfSSlxmg",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇮🇱 以色列 (Israel) 01",
-        "🇮🇱 以色列 (Israel) 02",
-        "🇮🇱 以色列 (Israel) 03"
+        "🇮🇱 以色列 (Israel) 02"
       ]
     },
     {
@@ -81,8 +59,7 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇱 以色列 (Israel) 01",
-        "🇮🇱 以色列 (Israel) 02",
-        "🇮🇱 以色列 (Israel) 03"
+        "🇮🇱 以色列 (Israel) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

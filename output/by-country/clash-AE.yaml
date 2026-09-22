@@ -5,33 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
-  server: 104.21.67.122
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee556a4f-d9f6-44de-af02-42c51659416a
-  tls: true
-  servername: novantunnel.tech
-  skip-cert-verify: true
-  client-fingerprint: randomized
-  network: ws
-  ws-opts:
-    path: /Novan-AE9
-    headers:
-      Host: novantunnel.tech
-- name: 🇦🇪 阿联酋 (UAE) 02
   server: 31.58.181.88
   port: 8443
   udp: true
   type: vless
-  uuid: a85d3eb0-c71e-4086-8139-6ac7c9120389
+  uuid: b5f27d9a-4d7a-4fa3-a45a-09bfd3e8a248
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
   servername: tradingview.com
   client-fingerprint: firefox
-- name: 🇦🇪 阿联酋 (UAE) 03
+- name: 🇦🇪 阿联酋 (UAE) 02
   server: 130.49.161.70
   port: 443
   udp: true
@@ -41,7 +26,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04
+- name: 🇦🇪 阿联酋 (UAE) 03
   server: 94.183.224.45
   port: 443
   udp: true
@@ -54,8 +39,21 @@ proxies:
     short-id: a1b2c3d4e5f67890
   servername: dzen.ru
   client-fingerprint: ''
+- name: 🇦🇪 阿联酋 (UAE) 04
+  server: clhkzzzdbgwxxndnlm.cfooov.xyz
+  port: 45081
+  udp: true
+  type: vless
+  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 05
-  server: 85.204.107.174
+  server: 85.204.107.171
   port: 8080
   udp: true
   type: hysteria2
@@ -73,6 +71,19 @@ proxies:
     path: /
     headers:
       Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 07
+  server: jpzzqqnzdbgwhbhzsrgh.cfooov.xyz
+  port: 48948
+  udp: true
+  type: vless
+  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AzOs0Mh5_Ax-CrvFYTYXAp78syFjgkotED2cKO_kbyw
+    short-id: 461b0192ec23b6
+  servername: www.lamer.com.hk
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -84,6 +95,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
   - 🇦🇪 阿联酋 (UAE) 06
+  - 🇦🇪 阿联酋 (UAE) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -95,5 +107,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
   - 🇦🇪 阿联酋 (UAE) 06
+  - 🇦🇪 阿联酋 (UAE) 07
 rules:
 - MATCH,PROXIES

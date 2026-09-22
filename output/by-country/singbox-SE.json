@@ -22,7 +22,18 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03",
-      "server": "193.42.39.10",
+      "server": "143.246.195.98",
+      "server_port": 8081,
+      "uuid": "54ee5e59-55a3-4599-83ff-0c67b3f411b2",
+      "transport": {
+        "type": "ws",
+        "path": "/vless-test"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04",
+      "server": "79.141.174.147",
       "server_port": 33743,
       "uuid": "b3a11068-1a7e-4643-85de-7c82cce46943",
       "tls": {
@@ -30,7 +41,7 @@
         "server_name": "www.google.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -44,13 +55,23 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 05",
+      "server": "16.170.163.124",
+      "server_port": 443,
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03"
+        "🇸🇪 瑞典 (Sweden) 03",
+        "🇸🇪 瑞典 (Sweden) 04",
+        "🇸🇪 瑞典 (Sweden) 05"
       ]
     },
     {
@@ -59,7 +80,9 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03"
+        "🇸🇪 瑞典 (Sweden) 03",
+        "🇸🇪 瑞典 (Sweden) 04",
+        "🇸🇪 瑞典 (Sweden) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
