@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 85.90.217.42
+  server: 66.163.118.73
   port: 22324
   udp: true
   type: vmess
@@ -20,7 +20,7 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
 - name: 🇪🇸 西班牙 (Spain) 03
-  server: 66.163.118.73
+  server: 85.90.217.42
   port: 22324
   udp: true
   type: vmess
@@ -28,25 +28,19 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇪🇸 西班牙 (Spain) 04
-  server: 212.227.235.66
-  port: 2053
+  server: 46.28.71.247
+  port: 443
   udp: true
   type: vless
-  uuid: ead0dd61-d398-40ad-80d6-a0e1e516d7d3
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
-    short-id: 29e8dcd2b37aaa7f
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: ''
 - name: 🇪🇸 西班牙 (Spain) 05
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 06
   server: mygptagent.org
   port: 443
   udp: true
@@ -62,19 +56,6 @@ proxies:
     path: /linkvws
     headers:
       Host: mygptagent.org
-- name: 🇪🇸 西班牙 (Spain) 07
-  server: 46.28.71.247
-  port: 443
-  udp: true
-  type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
-  servername: www.cloudflare.com
-  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,8 +66,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,7 +76,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
 rules:
 - MATCH,PROXIES

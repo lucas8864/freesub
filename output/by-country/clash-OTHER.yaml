@@ -5,31 +5,93 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01
-  server: 104.21.95.47
+  server: 172.67.140.11
   port: 443
   udp: true
   type: vless
-  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
   tls: true
-  servername: 6-m9.60673e90-5cbf-4567-b4d2-942581dac7a7.kdns.fr
+  servername: 2-m19.sudAN-pArk.CcWU.cc
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /BzuntJ8qZN0TRKbC8TveMxJ0
+    path: /CjBjB9sn5pCvaSwScc
     headers:
-      Host: 6-m9.60673e90-5cbf-4567-b4d2-942581dac7a7.kdns.fr
+      Host: 2-M19.SUDAn-pArk.CCWu.cC
+- name: 🌐 其他地区 (Other) 02
+  server: www.nextkyc.com
+  port: 8443
+  udp: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 03
+  server: www.nextkyc.com
+  port: 8443
+  udp: true
+  type: vmess
+  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: v2ray1.dozapp.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /lMnsZUN4/
+    headers:
+      Host: v2ray1.dozapp.xyz
+- name: 🌐 其他地区 (Other) 04
+  server: 162.159.244.91
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
+- name: 🌐 其他地区 (Other) 05
+  server: 162.159.244.91
+  port: 443
+  udp: true
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🌐 其他地区 (Other) 01
+  - 🌐 其他地区 (Other) 02
+  - 🌐 其他地区 (Other) 03
+  - 🌐 其他地区 (Other) 04
+  - 🌐 其他地区 (Other) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🌐 其他地区 (Other) 01
+  - 🌐 其他地区 (Other) 02
+  - 🌐 其他地区 (Other) 03
+  - 🌐 其他地区 (Other) 04
+  - 🌐 其他地区 (Other) 05
 rules:
 - MATCH,PROXIES

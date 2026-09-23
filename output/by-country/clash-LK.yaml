@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  server: hkgb707.ifastcdncache.com
-  port: 60852
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 01
+  server: free.sahanwickramasinghe.me
+  port: 80
   udp: true
-  type: vmess
-  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
-  alterId: 2
-  cipher: auto
+  type: vless
+  uuid: 684f9a2e-4f96-497f-bfd9-ff1e34637952
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 01
 rules:
 - MATCH,PROXIES
