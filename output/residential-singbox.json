@@ -6,12 +6,11 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽)",
-      "server": "172.64.52.6",
-      "server_port": 80,
+      "server": "162.159.48.32",
+      "server_port": 2052,
       "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls",
         "headers": {
           "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
@@ -20,39 +19,6 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "ttszhrmghgdssbkqf.cfooov.xyz",
-      "server_port": 42241,
-      "uuid": "edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ",
-          "short_id": "1cb574e4d5d8"
-        }
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-      "server": "6ivh.pnuqcnp.cn",
-      "server_port": 443,
-      "password": "9sK2mP8xQ7vL3nZ6",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -71,14 +37,25 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
+      "server": "hkgb707.ifastcdncache.com",
+      "server_port": 60852,
+      "uuid": "f8eca8df-a1a5-4918-a194-d34112a3673f",
+      "security": "auto",
+      "alter_id": 2,
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
       ]
     },
     {
@@ -87,8 +64,7 @@
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

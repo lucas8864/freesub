@@ -5,38 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽)
-  server: 172.64.52.6
-  port: 80
+  server: 162.159.48.32
+  port: 2052
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /?ed=2560security=tls
+    path: /
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  server: ttszhrmghgdssbkqf.cfooov.xyz
-  port: 42241
-  udp: true
-  type: vless
-  uuid: edc17c6e-bb58-4a98-a4a8-ca37aa8b56d2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lFZuIsmEomT8zwJ2f7wTI-C87oA78R9amDVHgemYmmQ
-    short-id: 1cb574e4d5d8
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  server: 6ivh.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: images.ctfassets.net
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -47,6 +26,17 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: hkgb707.ifastcdncache.com
+  port: 60852
+  udp: true
+  type: vmess
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
+  alterId: 2
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
@@ -54,8 +44,7 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,7 +52,6 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 rules:
 - MATCH,PROXIES

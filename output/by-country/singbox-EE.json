@@ -28,42 +28,8 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
-      "server": "217.60.182.79",
-      "server_port": 443,
-      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
-      "tls": {
-        "enabled": true,
-        "server_name": "cabinet.wwwinternetvideo.click",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
-      "server": "94.183.170.135",
-      "server_port": 443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "tls": {
-        "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05",
       "server": "95.85.224.17",
       "server_port": 443,
       "uuid": "d0f0a880-0df1-48c9-bdf1-5669fb9483ce",
@@ -83,6 +49,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
+      "server": "94.183.170.135",
+      "server_port": 8443,
+      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
+      "server": "217.60.182.79",
+      "server_port": 443,
+      "password": "sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX",
+      "tls": {
+        "enabled": true,
+        "server_name": "cabinet.wwwinternetvideo.click",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -90,8 +80,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05"
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ]
     },
     {
@@ -101,8 +90,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05"
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
