@@ -5,12 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01
-  server: 204.216.216.23
-  port: 10086
+  server: 185.164.175.81
+  port: 19999
   udp: true
-  type: vless
-  uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇮🇹 意大利 (Italy) 02
+  server: 89.41.172.85
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇮🇹 意大利 (Italy) 03
+  server: 57.131.48.45
+  port: 8388
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
+- name: 🇮🇹 意大利 (Italy) 04
   server: 31.77.154.14
   port: 8443
   udp: true
@@ -24,28 +40,8 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-tunnel
-- name: 🇮🇹 意大利 (Italy) 03
-  server: 185.164.175.81
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇮🇹 意大利 (Italy) 04
-  server: 31.77.201.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
-    short-id: 4fa44664f6a566d3
-  servername: italia.superbuba.top
-  client-fingerprint: chrome
 - name: 🇮🇹 意大利 (Italy) 05
-  server: 31.76.113.212
+  server: 31.77.201.33
   port: 443
   udp: true
   type: vless
@@ -58,12 +54,18 @@ proxies:
   servername: italia.superbuba.top
   client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 06
-  server: 57.131.48.45
-  port: 8388
+  server: 31.76.113.231
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: vless
+  uuid: c5694dc5-39fd-4a92-8430-3837baa522a3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: G2U8_BvRAgcOw0sX8u_0yYdVAlD8CWLSi-uYjvH07hw
+    short-id: 4fa44664f6a566d3
+  servername: italia.superbuba.top
+  client-fingerprint: firefox
 - name: 🇮🇹 意大利 (Italy) 07
   server: 57.131.38.163
   port: 2053
@@ -76,14 +78,6 @@ proxies:
     short-id: 5b8a942318178e7b
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇹 意大利 (Italy) 08
-  server: 89.41.172.85
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -96,7 +90,6 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05
   - 🇮🇹 意大利 (Italy) 06
   - 🇮🇹 意大利 (Italy) 07
-  - 🇮🇹 意大利 (Italy) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -109,6 +102,5 @@ proxy-groups:
   - 🇮🇹 意大利 (Italy) 05
   - 🇮🇹 意大利 (Italy) 06
   - 🇮🇹 意大利 (Italy) 07
-  - 🇮🇹 意大利 (Italy) 08
 rules:
 - MATCH,PROXIES

@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 01",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 02",
-      "server": "85.90.217.42",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03",
+      "tag": "🇪🇸 西班牙 (Spain) 01",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -29,7 +13,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 04",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
       "server": "212.227.235.66",
       "server_port": 2053,
       "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
@@ -48,8 +32,32 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 04",
+      "server": "85.90.217.42",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 05",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06",
       "server": "196.245.52.147",
       "server_port": 25535,
       "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
@@ -58,7 +66,7 @@
         "server_name": "www.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "qq"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -76,7 +84,8 @@
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
         "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05"
+        "🇪🇸 西班牙 (Spain) 05",
+        "🇪🇸 西班牙 (Spain) 06"
       ]
     },
     {
@@ -87,7 +96,8 @@
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
         "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05"
+        "🇪🇸 西班牙 (Spain) 05",
+        "🇪🇸 西班牙 (Spain) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

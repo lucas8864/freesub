@@ -12,18 +12,18 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02
-  server: 45.86.245.107
-  port: 5865
+  server: 152.53.1.40
+  port: 443
   udp: true
   type: vless
-  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  uuid: edde565e-41f5-400e-84ea-7b87a3e84488
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1UlHWXQ11dMmBYHq7XYsyKnfPVGTh9UssmiJE_zRnjI
-    short-id: a4f7c2e91b6d8035
-  servername: ru.vkroom-it-service.xyz
-  client-fingerprint: safari
+    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
+    short-id: 43dcff53849b81e6
+  servername: at.quattro-tech.ru
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select

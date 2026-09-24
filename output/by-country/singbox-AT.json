@@ -14,21 +14,21 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02",
-      "server": "45.86.245.107",
-      "server_port": 5865,
-      "uuid": "ce230b9c-0531-40da-bc3f-f27a8e059db1",
+      "server": "152.53.1.40",
+      "server_port": 443,
+      "uuid": "edde565e-41f5-400e-84ea-7b87a3e84488",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ru.vkroom-it-service.xyz",
+        "server_name": "at.quattro-tech.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "qq"
         },
         "reality": {
           "enabled": true,
-          "public_key": "1UlHWXQ11dMmBYHq7XYsyKnfPVGTh9UssmiJE_zRnjI",
-          "short_id": "a4f7c2e91b6d8035"
+          "public_key": "10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc",
+          "short_id": "43dcff53849b81e6"
         }
       }
     },

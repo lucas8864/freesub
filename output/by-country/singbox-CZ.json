@@ -6,35 +6,20 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "www.speedtest.net",
-      "server_port": 443,
-      "uuid": "513beae3-56e7-4954-a17e-930e06237b27",
-      "tls": {
-        "enabled": true,
-        "server_name": "CfOI-2FX16g3-8rY2kdXmCJ.WJeSv2ILA3rXbUhpC2NSugRAchGaWK.WOrkeRs.DEV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "server": "153.76.185.100",
+      "server_port": 3090,
+      "uuid": "0ea51e02-ed67-439b-a562-7e3d7b4430c3",
       "transport": {
-        "type": "ws",
-        "path": "/vl/3wSAeuGJbrGHwJ45DA6ircvHC6",
-        "headers": {
-          "Host": "cfoi-2fx16g3-8ry2kdxmcj.wjesv2ila3rxbuhpc2nsugrachgawk.workers.dev"
-        }
+        "type": "grpc",
+        "service_name": "vless"
       }
     },
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 02",
-      "server": "153.76.185.148",
+      "server": "153.76.185.93",
       "server_port": 3090,
-      "uuid": "1552d599-a036-4389-a5c0-bf14dfaddc1a",
+      "uuid": "52504f52-ddd4-43fe-9fc6-8fb354ca2a2f",
       "transport": {
         "type": "grpc",
         "service_name": "vless"
@@ -43,26 +28,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 03",
-      "server": "172.67.167.77",
+      "server": "194.87.130.9",
       "server_port": 443,
-      "uuid": "cc08d2d0-8a7a-4469-81d2-c43704451271",
+      "uuid": "57a437c4-7eed-4ecf-bf50-5e4e35f71deb",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.marktplaats.nl",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/6871nrbnl9WsdAiOUInt",
-        "headers": {
-          "Host": "9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev"
+          "fingerprint": "safari"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pccR04wlWHqbXoRk19m56lzp3CdDFd6RqGEuWj5TrWk",
+          "short_id": "793bf4b257bbf247"
         }
       }
     },

@@ -5,27 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 185.71.219.128
-  port: 80
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 02
-  server: 185.71.219.128
-  port: 2052
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
-  skip-cert-verify: false
-  client-fingerprint: ios
-- name: 🇹🇷 土耳其 (Turkey) 03
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -37,63 +16,17 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 04
-  server: 185.71.219.128
-  port: 8080
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇹🇷 土耳其 (Turkey) 05
-  server: 185.71.219.128
-  port: 2082
-  udp: true
-  type: vless
-  uuid: f4ade6db-3c64-4939-9f32-788b87a9392f
-  tls: true
-  servername: 185.71.219.128
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: httpupgrade
-  httpupgrade-opts:
-    path: /
-    headers:
-      Host: play.google.com
-- name: 🇹🇷 土耳其 (Turkey) 06
-  server: 194.135.34.157
-  port: 6443
-  udp: true
-  type: vless
-  uuid: 43562697-135a-479a-92c8-4c96b46ace07
-  flow: xtls-rprx-vision
-  tls: true
-  servername: turkey-api.locallynet.org
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01
-  - 🇹🇷 土耳其 (Turkey) 02
-  - 🇹🇷 土耳其 (Turkey) 03
-  - 🇹🇷 土耳其 (Turkey) 04
-  - 🇹🇷 土耳其 (Turkey) 05
-  - 🇹🇷 土耳其 (Turkey) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01
-  - 🇹🇷 土耳其 (Turkey) 02
-  - 🇹🇷 土耳其 (Turkey) 03
-  - 🇹🇷 土耳其 (Turkey) 04
-  - 🇹🇷 土耳其 (Turkey) 05
-  - 🇹🇷 土耳其 (Turkey) 06
 rules:
 - MATCH,PROXIES
