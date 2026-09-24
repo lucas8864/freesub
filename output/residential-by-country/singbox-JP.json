@@ -1,0 +1,79 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽)",
+      "server": "188.34.142.174",
+      "server_port": 444,
+      "uuid": "da46ec1f-84ad-4470-866f-010b58357b19",
+      "tls": {
+        "enabled": true,
+        "server_name": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 02 (家宽)",
+      "server": "89.22.224.146",
+      "server_port": 43788,
+      "uuid": "6fbd9bd1-ccd4-4e2f-a918-a0f871965763",
+      "tls": {
+        "enabled": true,
+        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/@Marisa_kristi",
+        "headers": {
+          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇯🇵 日本 (Japan) 01 (家宽)",
+        "🇯🇵 日本 (Japan) 02 (家宽)"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇯🇵 日本 (Japan) 01 (家宽)",
+        "🇯🇵 日本 (Japan) 02 (家宽)"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

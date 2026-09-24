@@ -13,6 +13,18 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇦🇺 澳大利亚 (Australia) 02
+  server: 34.87.244.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
+  tls: true
+  reality-opts:
+    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
+    short-id: d725f0dd8cce210f
+  servername: www.cloudflare.com
+  client-fingerprint: qq
+- name: 🇦🇺 澳大利亚 (Australia) 03
   server: 51.161.204.244
   port: 443
   udp: true
@@ -24,45 +36,8 @@ proxies:
     public-key: gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk
     short-id: 0ad08b47f498efd2
   servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 03
-  server: 34.87.244.111
-  port: 443
-  udp: true
-  type: vless
-  uuid: 325bc1be-0cb7-4cf7-bd35-a79ded91bbbd
-  tls: true
-  reality-opts:
-    public-key: fsdIMU2apN1C_NbkL7mHTsBKEfhwbDhgCRcB8ICf03E
-    short-id: d725f0dd8cce210f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇦🇺 澳大利亚 (Australia) 04
-  server: 34.87.229.148
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
-  tls: true
-  reality-opts:
-    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
-    short-id: 8a7d5e0248cdb1b1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 05
-  server: au1.gsafevpnapi.com
-  port: 20270
-  udp: true
-  type: vless
-  uuid: 38b8e2fb-b9a0-40a6-b42c-335def2765cf
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
-    short-id: e6a5a4a9115456de
-  servername: www.yahoo.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 06
   server: nova.freshnet.ir
   port: 2082
   udp: true
@@ -77,6 +52,41 @@ proxies:
     path: /cats/FslNz
     headers:
       Host: nova.freshnet.ir
+- name: 🇦🇺 澳大利亚 (Australia) 05
+  server: 152.67.115.203
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 633bc3be486b646190661ac2387c150a
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
+- name: 🇦🇺 澳大利亚 (Australia) 06
+  server: 34.87.229.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4f865f35-cf47-4e7f-a7e6-8882511a1b36
+  tls: true
+  reality-opts:
+    public-key: OgTkmAQdLjipA9oLloxbU5BAX3hPjzbvkEGHF4aZ8z4
+    short-id: 8a7d5e0248cdb1b1
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 07
+  server: au1.gsafevpnapi.com
+  port: 20270
+  udp: true
+  type: vless
+  uuid: 6eef3a79-22bc-4086-b5e6-95e07db73016
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: RHLiKldLu3DONcQoX4Kjs7Xmd2K25ndVbw4pwxe45XE
+    short-id: e6a5a4a9115456de
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -88,6 +98,7 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 04
   - 🇦🇺 澳大利亚 (Australia) 05
   - 🇦🇺 澳大利亚 (Australia) 06
+  - 🇦🇺 澳大利亚 (Australia) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,5 +110,6 @@ proxy-groups:
   - 🇦🇺 澳大利亚 (Australia) 04
   - 🇦🇺 澳大利亚 (Australia) 05
   - 🇦🇺 澳大利亚 (Australia) 06
+  - 🇦🇺 澳大利亚 (Australia) 07
 rules:
 - MATCH,PROXIES

@@ -6,6 +6,55 @@
     {
       "type": "vless",
       "tag": "🇮🇶 IQ 01",
+      "server": "172.67.203.158",
+      "server_port": 443,
+      "uuid": "911b84e1-d046-4fbf-bfc0-c168791115ef",
+      "tls": {
+        "enabled": true,
+        "server_name": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev",
+        "insecure": true,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR",
+        "headers": {
+          "Host": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 02",
+      "server": "104.18.34.21",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tls": {
+        "enabled": true,
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5://128.140.46.169:13482",
+        "headers": {
+          "Host": "socks5.revil-time3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇶 IQ 03",
       "server": "193.56.135.137",
       "server_port": 9543,
       "uuid": "ff6d2dda-7b90-404e-9951-34b3124bfdfa",
@@ -15,7 +64,7 @@
         "server_name": "storage.yandexcloud.net",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -29,14 +78,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01"
+        "🇮🇶 IQ 01",
+        "🇮🇶 IQ 02",
+        "🇮🇶 IQ 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01"
+        "🇮🇶 IQ 01",
+        "🇮🇶 IQ 02",
+        "🇮🇶 IQ 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,29 +5,38 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01
-  server: 195.74.90.115
-  port: 9443
+  server: 82.110.60.9
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇦🇹 奥地利 (Austria) 02
+  server: 45.86.245.107
+  port: 5865
   udp: true
   type: vless
-  uuid: d9d0f208-d582-41d5-bb7b-742671402810
+  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  flow: xtls-rprx-vision
   tls: true
-  servername: hub-vie-01.hanvpn.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vie01-grpc-8e47a
+  reality-opts:
+    public-key: 1UlHWXQ11dMmBYHq7XYsyKnfPVGTh9UssmiJE_zRnjI
+    short-id: a4f7c2e91b6d8035
+  servername: ru.vkroom-it-service.xyz
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01
+  - 🇦🇹 奥地利 (Austria) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇹 奥地利 (Austria) 01
+  - 🇦🇹 奥地利 (Austria) 02
 rules:
 - MATCH,PROXIES
