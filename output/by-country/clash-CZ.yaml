@@ -5,36 +5,35 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01
-  server: 153.76.185.100
-  port: 3090
+  server: 45.130.125.207
+  port: 8443
   udp: true
   type: vless
-  uuid: 0ea51e02-ed67-439b-a562-7e3d7b4430c3
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
+  uuid: 31aa0950-eb19-45ff-94a2-af416deb3b90
+  tls: true
+  servername: SquarE-saLaD-EbDe.ZDFGVcCfgUUYgGG.wOrKeRS.DEV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZm5INktPV0lGcHI1NjNSOSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
+    headers:
+      Host: square-salad-ebde.zdfgvccfguuyggg.workers.dev
 - name: 🇨🇿 捷克 (Czech) 02
-  server: 153.76.185.93
-  port: 3090
-  udp: true
-  type: vless
-  uuid: 52504f52-ddd4-43fe-9fc6-8fb354ca2a2f
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇨🇿 捷克 (Czech) 03
-  server: 194.87.130.9
+  server: 104.21.69.37
   port: 443
   udp: true
   type: vless
-  uuid: 57a437c4-7eed-4ecf-bf50-5e4e35f71deb
-  flow: xtls-rprx-vision
+  uuid: 911b84e1-d046-4fbf-bfc0-c168791115ef
   tls: true
-  reality-opts:
-    public-key: pccR04wlWHqbXoRk19m56lzp3CdDFd6RqGEuWj5TrWk
-    short-id: 793bf4b257bbf247
-  servername: www.marktplaats.nl
-  client-fingerprint: safari
+  servername: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/uWq9DFRgj8BwQiSXmZ46
+    headers:
+      Host: 12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -42,7 +41,6 @@ proxy-groups:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01
   - 🇨🇿 捷克 (Czech) 02
-  - 🇨🇿 捷克 (Czech) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,6 +48,5 @@ proxy-groups:
   proxies:
   - 🇨🇿 捷克 (Czech) 01
   - 🇨🇿 捷克 (Czech) 02
-  - 🇨🇿 捷克 (Czech) 03
 rules:
 - MATCH,PROXIES

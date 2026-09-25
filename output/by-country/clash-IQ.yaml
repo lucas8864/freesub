@@ -5,18 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01
-  server: 193.56.135.137
-  port: 9543
+  server: 104.21.91.50
+  port: 443
   udp: true
   type: vless
-  uuid: ff6d2dda-7b90-404e-9951-34b3124bfdfa
-  flow: xtls-rprx-vision
+  uuid: 3e43ffd1-3f7b-45b0-a955-c249010c7ebc
   tls: true
-  reality-opts:
-    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
-    short-id: 123abcde
-  servername: storage.yandexcloud.net
-  client-fingerprint: safari
+  servername: Open-39.AVL-a47261.WorKErS.DeV
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/9Vd7GxzImsNPSKUT9uIK0uYIARIV?ed=2560
+    headers:
+      Host: open-39.avl-a47261.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
