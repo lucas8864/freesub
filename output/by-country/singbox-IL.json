@@ -27,45 +27,35 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02",
-      "server": "platform115.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform115"
+      "server": "185.95.231.233",
+      "server_port": 443,
+      "uuid": "1ffa8e68-3378-4cf4-b8f6-44bf3d46d106",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "store.steampowered.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho",
+          "short_id": "a1b2c3d4"
+        }
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇱 以色列 (Israel) 03",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
+      "server": "31.57.185.82",
+      "server_port": 58212,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "feMXjpw5CFoxqX7VFCJdBYYAAYW5Sim9mBIe9/4G8vI=:0ZoLngUwAUCuVkNuCJgY8xImum67ESzti6TP0fUx7/4="
     },
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 04",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 05",
       "server": "arcturus.yokkastars.com",
       "server_port": 40443,
       "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
@@ -85,20 +75,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 06",
-      "server": "platform118.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform118",
-        "headers": {
-          "Host": "platform118.halalkhor.info"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -106,9 +82,7 @@
         "🇮🇱 以色列 (Israel) 01",
         "🇮🇱 以色列 (Israel) 02",
         "🇮🇱 以色列 (Israel) 03",
-        "🇮🇱 以色列 (Israel) 04",
-        "🇮🇱 以色列 (Israel) 05",
-        "🇮🇱 以色列 (Israel) 06"
+        "🇮🇱 以色列 (Israel) 04"
       ]
     },
     {
@@ -118,9 +92,7 @@
         "🇮🇱 以色列 (Israel) 01",
         "🇮🇱 以色列 (Israel) 02",
         "🇮🇱 以色列 (Israel) 03",
-        "🇮🇱 以色列 (Israel) 04",
-        "🇮🇱 以色列 (Israel) 05",
-        "🇮🇱 以色列 (Israel) 06"
+        "🇮🇱 以色列 (Israel) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

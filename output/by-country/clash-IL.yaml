@@ -18,37 +18,26 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02
-  server: platform115.golnamakcert.top
-  port: 80
+  server: 185.95.231.233
+  port: 443
   udp: true
   type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform115
+  uuid: 1ffa8e68-3378-4cf4-b8f6-44bf3d46d106
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: r4Dp3mztZaizbDk28rEOkLikk7erR9dzzc-Jrsgraho
+    short-id: a1b2c3d4
+  servername: store.steampowered.com
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 03
-  server: platform117.golnamakcert.top
-  port: 80
+  server: 31.57.185.82
+  port: 58212
   udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform117
-    headers:
-      Host: platform117.halalkhor.info
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: feMXjpw5CFoxqX7VFCJdBYYAAYW5Sim9mBIe9/4G8vI=:0ZoLngUwAUCuVkNuCJgY8xImum67ESzti6TP0fUx7/4=
 - name: 🇮🇱 以色列 (Israel) 04
-  server: platform113.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform113
-    headers:
-      Host: platform113.halalkhor.info
-- name: 🇮🇱 以色列 (Israel) 05
   server: arcturus.yokkastars.com
   port: 40443
   udp: true
@@ -61,17 +50,6 @@ proxies:
     short-id: db46e2946fc466fd
   servername: deepl.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 06
-  server: platform118.golnamakcert.top
-  port: 80
-  udp: true
-  type: vless
-  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
-  network: ws
-  ws-opts:
-    path: /platform118
-    headers:
-      Host: platform118.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,8 +59,6 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02
   - 🇮🇱 以色列 (Israel) 03
   - 🇮🇱 以色列 (Israel) 04
-  - 🇮🇱 以色列 (Israel) 05
-  - 🇮🇱 以色列 (Israel) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,7 +68,5 @@ proxy-groups:
   - 🇮🇱 以色列 (Israel) 02
   - 🇮🇱 以色列 (Israel) 03
   - 🇮🇱 以色列 (Israel) 04
-  - 🇮🇱 以色列 (Israel) 05
-  - 🇮🇱 以色列 (Israel) 06
 rules:
 - MATCH,PROXIES

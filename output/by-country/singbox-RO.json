@@ -16,22 +16,26 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
-      "server": "154.46.31.106",
-      "server_port": 443,
-      "method": "chacha20-ietf-poly1305",
-      "password": "QFWzCw2uX9B9i6qAYeFBIE"
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03",
-      "server": "85.204.107.172",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
+      "server": "85.204.107.186",
       "server_port": 8443,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
         "enabled": true,
         "server_name": "hopp-romania-new.roxa.org",
+        "insecure": false
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03",
+      "server": "185.156.44.99",
+      "server_port": 443,
+      "password": "gf1:gfhysteria2024",
+      "tls": {
+        "enabled": true,
+        "server_name": "css.rbxcdn.com",
         "insecure": true
       }
     },
@@ -57,25 +61,28 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 05",
-      "server": "146.70.124.85",
+      "server": "162.249.125.133",
       "server_port": 443,
-      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
-      "flow": "xtls-rprx-vision",
+      "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
       "tls": {
         "enabled": true,
-        "server_name": "www.datadoghq.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
-          "short_id": "fe24f8a0a560056e"
-        }
+        "server_name": "hy2-new.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "c1b4086fea89914496c7e10967a419216566"
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06",
+      "server": "154.46.31.106",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
     },
     {
       "type": "selector",
@@ -86,7 +93,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02",
         "🇷🇴 罗马尼亚 (Romania) 03",
         "🇷🇴 罗马尼亚 (Romania) 04",
-        "🇷🇴 罗马尼亚 (Romania) 05"
+        "🇷🇴 罗马尼亚 (Romania) 05",
+        "🇷🇴 罗马尼亚 (Romania) 06"
       ]
     },
     {
@@ -97,7 +105,8 @@
         "🇷🇴 罗马尼亚 (Romania) 02",
         "🇷🇴 罗马尼亚 (Romania) 03",
         "🇷🇴 罗马尼亚 (Romania) 04",
-        "🇷🇴 罗马尼亚 (Romania) 05"
+        "🇷🇴 罗马尼亚 (Romania) 05",
+        "🇷🇴 罗马尼亚 (Romania) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

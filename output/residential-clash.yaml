@@ -5,22 +5,82 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽)
-  server: 108.162.198.178
-  port: 2095
+  server: 162.159.43.187
+  port: 2086
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /
+    path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
-  server: test.keoplentuio.xyz
+  server: 82.47.63.156
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  server: namrcg001640lrm.cybervena.com
+  port: 50099
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 7b56aeaa-8e2d-4bdf-b1d7-233ecca15f56
+- name: 🇯🇵 日本 (Japan) 04 (家宽)
+  server: 2.26.91.98
+  port: 1443
+  udp: true
+  type: vless
+  uuid: d4c6b1ad-9ec4-4273-854a-f0bbf0448ab6
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+- name: 🇹🇷 土耳其 (Turkey) 05 (移动家宽)
+  server: 206.1.98.72
+  port: 21811
+  udp: true
+  type: vmess
+  uuid: Nitro_Skybot@
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽)
+  server: 118.167.230.191
+  port: 24215
+  udp: true
+  type: vless
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
+  tls: true
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: edge
+- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽)
+  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
+  port: 443
+  udp: true
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -28,6 +88,12 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽)
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇯🇵 日本 (Japan) 04 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +101,11 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽)
   - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇯🇵 日本 (Japan) 04 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 05 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽)
 rules:
 - MATCH,PROXIES
