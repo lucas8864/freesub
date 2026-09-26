@@ -12,18 +12,27 @@
       "password": "BWyPPTusFKhGgzKh"
     },
     {
+      "type": "vless",
+      "tag": "🇲🇽 墨西哥 (Mexico) 02",
+      "server": "45.164.20.114",
+      "server_port": 10226,
+      "uuid": "9aab8f39-ccb3-44ea-acdc-a8aefe211287"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇽 墨西哥 (Mexico) 01"
+        "🇲🇽 墨西哥 (Mexico) 01",
+        "🇲🇽 墨西哥 (Mexico) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇽 墨西哥 (Mexico) 01"
+        "🇲🇽 墨西哥 (Mexico) 01",
+        "🇲🇽 墨西哥 (Mexico) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
