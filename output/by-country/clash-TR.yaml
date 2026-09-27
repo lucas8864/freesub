@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 93.114.98.221
-  port: 443
-  udp: true
-  type: vless
-  uuid: 22453764-c126-4f39-ba05-f4972a33f589
-  tls: true
-  servername: 00iwuafi1019.dopgangster.com
-  skip-cert-verify: false
-- name: 🇹🇷 土耳其 (Turkey) 02
   server: 151.241.226.201
   port: 2053
   udp: true
@@ -25,6 +16,20 @@ proxies:
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 02
+  server: 122.8.45.2
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3ae00194-1bc0-0bf4-9564-3c55b1c6d485
+  tls: true
+  reality-opts:
+    public-key: D2SXHZRRYM0WcFChGWd57XB-U73aIsGfMpe2-Gq5XSs
+  servername: download.nvidia.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select

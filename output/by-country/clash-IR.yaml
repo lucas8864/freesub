@@ -5,16 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇷 IR 01
-  server: 91.216.171.174
-  port: 1120
+  server: 62.60.152.1
+  port: 56328
   udp: true
   type: vless
-  uuid: 280e6d2e-b93e-4f51-bc9e-bf2bb709c81c
+  uuid: ce230b9c-0531-40da-bc3f-f27a8e059db1
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wY4XRBEsMudbgXC0W1jH2E9QmTbYy1FTWwXhXvKFAnw
-    short-id: a38e9aba6a2056c8
-  servername: play.google.com
+    public-key: iI1pc8k9-mIPHL2Dga-4n4h3KoBT68lN434nglpgm2M
+    short-id: f3a9c21e8b6d4571
+  servername: table.vkroom-it-service.xyz
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

@@ -32,12 +32,21 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇳🇴 挪威 (Norway) 03",
+      "server": "139.100.236.74",
+      "server_port": 1,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WxYpOK1iPSJySbVNMMJDtw"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇳🇴 挪威 (Norway) 01",
-        "🇳🇴 挪威 (Norway) 02"
+        "🇳🇴 挪威 (Norway) 02",
+        "🇳🇴 挪威 (Norway) 03"
       ]
     },
     {
@@ -45,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇳🇴 挪威 (Norway) 01",
-        "🇳🇴 挪威 (Norway) 02"
+        "🇳🇴 挪威 (Norway) 02",
+        "🇳🇴 挪威 (Norway) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
