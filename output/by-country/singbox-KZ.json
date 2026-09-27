@@ -15,7 +15,7 @@
         "server_name": "kazartip.thewalkingded.life",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -25,21 +25,17 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-      "server": "89.218.15.90",
-      "server_port": 10002,
-      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
-      "tls": {
-        "enabled": true,
-        "server_name": "kz1.vpnjantit.com",
-        "insecure": false
-      },
+      "server": "38.107.234.57",
+      "server_port": 80,
+      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/vpnjantit",
+        "path": "/vmess/",
         "headers": {
-          "Host": "kz1.vpnjantit.com"
+          "Host": "viber.com"
         }
       }
     },

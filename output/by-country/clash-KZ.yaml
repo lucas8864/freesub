@@ -16,21 +16,20 @@ proxies:
     public-key: 5JhqvTTHIhhA_2Jjc3_y6pwLmKfe4wtwq3vSt43P00I
     short-id: 7cf408996c82639f
   servername: kazartip.thewalkingded.life
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 89.218.15.90
-  port: 10002
+  server: 38.107.234.57
+  port: 80
   udp: true
-  type: vless
-  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
-  tls: true
-  servername: kz1.vpnjantit.com
-  skip-cert-verify: false
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vpnjantit
+    path: /vmess/
     headers:
-      Host: kz1.vpnjantit.com
+      Host: viber.com
 proxy-groups:
 - name: PROXIES
   type: select

@@ -6,19 +6,14 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽)",
-      "server": "185.193.29.123",
-      "server_port": 443,
-      "uuid": "1d16c6e0-1bbe-435b-b661-90043fee999c",
-      "tls": {
-        "enabled": true,
-        "server_name": "notls.lukongtou.eu.org",
-        "insecure": false
-      },
+      "server": "172.64.32.103",
+      "server_port": 2052,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
       "transport": {
         "type": "ws",
-        "path": "Telegram-WangCai2🇨🇳",
+        "path": "/",
         "headers": {
-          "Host": "notls.lukongtou.eu.org"
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },

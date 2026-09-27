@@ -5,59 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (移动家宽)
-  server: 185.193.29.123
-  port: 443
+  server: 172.64.32.103
+  port: 2052
   udp: true
   type: vless
-  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
-  tls: true
-  servername: notls.lukongtou.eu.org
-  skip-cert-verify: false
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: Telegram-WangCai2🇨🇳
+    path: /
     headers:
-      Host: notls.lukongtou.eu.org
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  server: r3mrcg001286ek2.cybervena.com
+  server: 36.224.141.124
   port: 50099
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 7e731ec3-f8e1-43f6-92cf-3978d14705c4
-- name: 🇯🇵 日本 (Japan) 03 (家宽)
-  server: 129.151.64.169
-  port: 31867
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
+  server: dog-hk.kunlun01dns.com
+  port: 21021
   udp: true
-  type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇹🇷 土耳其 (Turkey) 04 (移动家宽)
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  server: 118.167.230.191
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: edge
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
   server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   port: 443
   udp: true
@@ -65,14 +38,6 @@ proxies:
   password: 9sK2mP8xQ7vL3nZ6
   sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07 (家宽)
-  server: ac7548f3ebe045b39a90288ff1e97528.pnuqcnp.cn
-  port: 443
-  udp: true
-  type: anytls
-  password: 9sK2mP8xQ7vL3nZ6
-  sni: ac7548f3ebe045b39a90288ff1e97528.lwdnxf.cn
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,11 +45,8 @@ proxy-groups:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (移动家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇯🇵 日本 (Japan) 03 (家宽)
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,10 +54,7 @@ proxy-groups:
   proxies:
   - 🇺🇸 美国 (United States) 01 (移动家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇯🇵 日本 (Japan) 03 (家宽)
-  - 🇹🇷 土耳其 (Turkey) 04 (移动家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 07 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
 rules:
 - MATCH,PROXIES

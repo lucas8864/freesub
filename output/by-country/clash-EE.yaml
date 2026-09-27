@@ -5,21 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: russiapower.accesscam.org
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 94.183.170.147
   port: 8443
   udp: true
   type: vless
-  uuid: 66ac188b-bd8d-4218-b9ba-0bad0e152cd0
+  uuid: 5edbcb44-8d04-4fa7-a587-bc5d60c24ca1
   tls: true
   reality-opts:
     public-key: s2uiu3GQA2SlZzsr86Z5Dav97eAFTPf7Nvr-zqzzRgg
     short-id: 72ccd4a7563c2953
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
   network: grpc
   grpc-opts:
     grpc-service-name: 9d30d49278
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02
+- name: 🇪🇪 爱沙尼亚 (Estonia) 03
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -28,15 +36,35 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03
-  server: 217.60.182.79
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04
+  server: 94.183.170.135
   port: 443
   udp: true
+  type: vless
+  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05
+  server: 94.183.170.65
+  port: 8081
+  udp: true
+  type: vless
+  uuid: e60bc99b-6630-4799-af84-f90ebdc643b6
+  network: ws
+  ws-opts:
+    path: /ws/generate
+    headers:
+      Host: hys2.arkonsoft.top
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06
+  server: 77.239.126.219
+  port: 9443
+  udp: true
   type: hysteria2
-  password: sOiWCQ2AdIV0OWNuqQVyWp4JZnRxdyLROSjX
-  sni: cabinet.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  sni: onecloudstream.com
+  skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 07
   server: 94.183.170.65
   port: 443
   udp: true
@@ -44,6 +72,19 @@ proxies:
   password: e60bc99b-6630-4799-af84-f90ebdc643b6
   sni: hys2.arkonsoft.top
   skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 08
+  server: 5.181.201.44
+  port: 443
+  udp: true
+  type: vless
+  uuid: 47b63e55-a4e4-43ce-97dc-946e6a26971d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 98MNvJC4t0ZjK_xHlQjOx2WfLfAPluNDb71MzS9sPT8
+    short-id: 38018dde3e27335e
+  servername: bababoy.karp1pdd.life
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -53,6 +94,10 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
+  - 🇪🇪 爱沙尼亚 (Estonia) 05
+  - 🇪🇪 爱沙尼亚 (Estonia) 06
+  - 🇪🇪 爱沙尼亚 (Estonia) 07
+  - 🇪🇪 爱沙尼亚 (Estonia) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -62,5 +107,9 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 02
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
+  - 🇪🇪 爱沙尼亚 (Estonia) 05
+  - 🇪🇪 爱沙尼亚 (Estonia) 06
+  - 🇪🇪 爱沙尼亚 (Estonia) 07
+  - 🇪🇪 爱沙尼亚 (Estonia) 08
 rules:
 - MATCH,PROXIES
