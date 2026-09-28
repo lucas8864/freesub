@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
-  server: 16.170.214.108
-  port: 443
+  server: 70.34.212.124
+  port: 8388
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 51.20.72.15
-  port: 443
+  server: 172.238.244.13
+  port: 17000
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  cipher: aes-256-gcm
+  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
 - name: 🇸🇪 瑞典 (Sweden) 03
   server: 13.48.104.64
   port: 443
@@ -26,41 +26,34 @@ proxies:
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 04
-  server: 13.49.64.122
+  server: 13.60.213.145
   port: 443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: amazonskr05
 - name: 🇸🇪 瑞典 (Sweden) 05
-  server: 16.171.55.2
-  port: 443
+  server: 79.141.174.147
+  port: 33743
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
+  type: vless
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  tls: true
+  reality-opts:
+    public-key: wGMBs7bvzyzA0-OUiwSkOOTDEMdxEOsSdRzxiP8GGQY
+  servername: www.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 - name: 🇸🇪 瑞典 (Sweden) 06
-  server: 172.238.244.13
-  port: 17000
+  server: 188.225.78.31
+  port: 2053
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: pX0uhU3ZjUcLWYs0Vez55BO3JoQrRlL
+  cipher: 2022-blake3-aes-256-gcm
+  password: g4h/AcJh1+jg9+yonlMK4Wq7fhbFY3NkcOzUVlZ9GjU=
 - name: 🇸🇪 瑞典 (Sweden) 07
-  server: 70.34.212.124
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
-- name: 🇸🇪 瑞典 (Sweden) 08
-  server: 51.20.122.188
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇸🇪 瑞典 (Sweden) 09
   server: 5.157.10.148
   port: 443
   udp: true
@@ -72,19 +65,27 @@ proxies:
     public-key: x6p656szvu_3CKLsJ4NtkooRvdTVGx7IoPca_p58_jA
     short-id: fb442438e2223836
   servername: surstreming.vvzzkontaktezzvv.garden
-  client-fingerprint: chrome
-- name: 🇸🇪 瑞典 (Sweden) 10
-  server: 94.103.2.224
-  port: 50445
+  client-fingerprint: firefox
+- name: 🇸🇪 瑞典 (Sweden) 08
+  server: 2.26.101.148
+  port: 443
   udp: true
   type: vless
-  uuid: d2761575-3f08-41ae-9dd1-33ccf86dddd1
+  uuid: 68d89911-b92d-46fe-9007-3645c3b285f0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: hp9ht_jsxocTnQEbChb1G3JoDF50x-xDT8UYr66D1TQ
-  servername: www.icloud.com
+    public-key: RjRxUMkBaWZPU2GlovSFYV4UdIFhc2LETtVUJVgoVj8
+    short-id: e9eb910e5af883e3
+  servername: se.chick-chirik.com
   client-fingerprint: chrome
+- name: 🇸🇪 瑞典 (Sweden) 09
+  server: 51.20.72.15
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: amazonskr05
 proxy-groups:
 - name: PROXIES
   type: select
@@ -99,7 +100,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07
   - 🇸🇪 瑞典 (Sweden) 08
   - 🇸🇪 瑞典 (Sweden) 09
-  - 🇸🇪 瑞典 (Sweden) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -114,6 +114,5 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 07
   - 🇸🇪 瑞典 (Sweden) 08
   - 🇸🇪 瑞典 (Sweden) 09
-  - 🇸🇪 瑞典 (Sweden) 10
 rules:
 - MATCH,PROXIES

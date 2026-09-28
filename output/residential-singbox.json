@@ -5,37 +5,42 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇸 美国 (United States) 01 (移动家宽)",
-      "server": "172.64.32.103",
-      "server_port": 2052,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "tag": "🇯🇵 日本 (Japan) 01 (家宽)",
+      "server": "116.204.164.5",
+      "server_port": 7443,
+      "uuid": "2416ff70-cb17-4cdc-834d-a89c00261e01",
+      "tls": {
+        "enabled": true,
+        "server_name": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev"
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "36.224.141.124",
-      "server_port": 50099,
-      "method": "chacha20-ietf-poly1305",
-      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)",
-      "server": "dog-hk.kunlun01dns.com",
-      "server_port": 21021,
-      "uuid": "9464ca40-dd75-3742-a628-d931a9f413b2",
-      "security": "auto"
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+      "server": "acf1b599-tmeqo0-u4zl7f-1jk6u.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "45bc25b2-1a10-11ed-91c0-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "acf1b599-tmeqo0-u4zl7f-1jk6u.nw4.hyhuawei.com",
+        "insecure": true
+      }
     },
     {
       "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
       "server": "ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn",
       "server_port": 443,
       "password": "9sK2mP8xQ7vL3nZ6",
@@ -46,13 +51,33 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇸 美国 (United States) 01 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)",
+        "🇯🇵 日本 (Japan) 01 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
       ]
     },
@@ -60,9 +85,9 @@
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇸 美国 (United States) 01 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)",
+        "🇯🇵 日本 (Japan) 01 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"

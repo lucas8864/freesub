@@ -6,7 +6,48 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
-      "server": "5.253.28.240",
+      "server": "194.76.154.31",
+      "server_port": 40443,
+      "uuid": "9f0baff8-bdee-4de9-9515-bcc4932b41fa",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ",
+          "short_id": "a8ae"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
+      "server": "31.76.111.79",
+      "server_port": 443,
+      "uuid": "ac9a573b-67ff-4953-9e13-4cf43576f8f0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "hh.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8w1MyEJV4l9QeNWbYMXny5tTLNTw_9nsQ7jOuiQhix4",
+          "short_id": "0123456789abcdef"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
+      "server": "5.253.28.218",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
       "tls": {
@@ -28,18 +69,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04",
+      "server": "5.253.28.240",
+      "server_port": 40443,
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇾 塞浦路斯 (Cyprus) 01"
+        "🇨🇾 塞浦路斯 (Cyprus) 01",
+        "🇨🇾 塞浦路斯 (Cyprus) 02",
+        "🇨🇾 塞浦路斯 (Cyprus) 03",
+        "🇨🇾 塞浦路斯 (Cyprus) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇾 塞浦路斯 (Cyprus) 01"
+        "🇨🇾 塞浦路斯 (Cyprus) 01",
+        "🇨🇾 塞浦路斯 (Cyprus) 02",
+        "🇨🇾 塞浦路斯 (Cyprus) 03",
+        "🇨🇾 塞浦路斯 (Cyprus) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
-  server: dog-hk.kunlun01dns.com
-  port: 21021
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  server: acf1b599-tmeqo0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: 45bc25b2-1a10-11ed-91c0-f23c91cfbbc9
+  sni: acf1b599-tmeqo0-u4zl7f-1jk6u.nw4.hyhuawei.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (移动家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
 rules:
 - MATCH,PROXIES

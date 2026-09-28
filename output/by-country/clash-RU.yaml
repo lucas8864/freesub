@@ -5,26 +5,32 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 94.249.186.68
-  port: 8443
+  server: 104.21.5.173
+  port: 2096
   udp: true
   type: vless
-  uuid: b21bfee6-dbd3-4e0b-840f-d66f07bf3186
+  uuid: 7c6a566b-4c4a-b8f2-1719-a3096b424141
+  tls: true
+  servername: peekconfigg.vipserver1-39d.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /sync
+    headers:
+      Host: peekconfigg.vipserver1-39d.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02
+  server: 147.45.46.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: ce5949b7-5137-4007-8a0a-063aad88b920
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: OAKZv1BA4SuH3tEQGf24i9ZJiKbYQoWoVZwrUdARQwU
-    short-id: 77c5f417fe413756
-  servername: deepl.com
-  client-fingerprint: safari
-- name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 91.196.32.163
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: germany3.h2corp.local
-  skip-cert-verify: true
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: sellflow.org
+  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 03
   server: 91.240.86.70
   port: 22443
@@ -34,6 +40,13 @@ proxies:
   sni: 91.240.86.70
   skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 176.32.35.2
+  port: 10090
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 895b4b796a357570
+- name: 🇷🇺 俄罗斯 (Russia) 05
   server: du-rov.secureservice.top
   port: 8443
   udp: true
@@ -46,7 +59,19 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 07
   server: fbsv6.guardora.pro
   port: 443
   udp: true
@@ -61,21 +86,6 @@ proxies:
     path: /ws
     headers:
       Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 176.123.162.100
-  port: 9880
-  udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: aabb
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,6 +97,7 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
+  - 🇷🇺 俄罗斯 (Russia) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,5 +109,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
+  - 🇷🇺 俄罗斯 (Russia) 07
 rules:
 - MATCH,PROXIES

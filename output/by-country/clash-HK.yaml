@@ -5,21 +5,25 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16116
+  server: sth.free-outline.giize.com
+  port: 1081
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: v7qnj9jvxtnpmj4l
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: zfd-hkv2.kunlun01dns.com
-  port: 16112
+  server: hk-1.gsafevpnapi.com
+  port: 20270
   udp: true
-  type: vmess
-  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: e3a14b3d-8995-4031-a207-32ba5707c1ba
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0MIamX22OTB4zDokZ5WN_GHBVYs7MkFceuipUvql9Q8
+    short-id: d5b538acf8a93540
+  servername: www.yahoo.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 119.246.1.143
   port: 443
@@ -34,50 +38,49 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
+  sni: 202.146.222.89
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üáüá
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: xg1.mangshe.xyz
-  port: 2060
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 191.223.214.11
+  port: 8444
   udp: true
-  type: hysteria2
-  password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
-  sni: xg1.mangshe.xyz
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 8.217.229.155
+  type: ss
+  cipher: aes-128-gcm
+  password: 9be5ac71-b790-4364-a268-d7bed994f213
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 202.146.222.29
   port: 443
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 09
-  server: 47.83.207.148
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 10
+  server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   udp: true
   type: vmess
@@ -85,43 +88,12 @@ proxies:
   alterId: 0
   cipher: auto
   tls: true
-  servername: VAH4URdZL3jDX5r2.v.3dns.vip
+  servername: i2psm3knof5qjjix.v.3dns.vip
   skip-cert-verify: false
   network: ws
   ws-opts:
     path: /ws-vmess
-    headers:
-      Host: VAH4URdZL3jDX5r2.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: 47.83.143.75
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1658f804-41bf-4b7c-a0be-ba01097e0f41
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Y9TEgB_8YVWzv8-wblXBjeX2t7IAtQhtQ3pE08gfNWw
-    short-id: 862266ae05b7a62f
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: 47.240.80.220
-  port: 2052
-  udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: vpn.12169.top
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
@@ -129,45 +101,27 @@ proxies:
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 14
-  server: sth.free-outline.giize.com
-  port: 1081
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: 47.240.80.220
+  port: 2052
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: v7qnj9jvxtnpmj4l
-- name: 🇭🇰 中国香港 (Hong Kong) 15
-  server: 47.76.44.32
-  port: 443
+  type: trojan
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  sni: 47.240.80.220
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 13
+  server: 47.239.6.251
+  port: 13779
   udp: true
-  type: vmess
-  uuid: f23bb427c1f94373876c2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  flow: xtls-rprx-vision
   tls: true
-  servername: 93ucrn4i0PffUAbk.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 93ucrn4i0PffUAbk.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 16
-  server: 6jdvarazgu3qqr6q.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: 6JDvArazgU3qQR6Q.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+  reality-opts:
+    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
+    short-id: af1bdd293097b664
+  servername: tesla.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -186,9 +140,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
   - 🇭🇰 中国香港 (Hong Kong) 13
-  - 🇭🇰 中国香港 (Hong Kong) 14
-  - 🇭🇰 中国香港 (Hong Kong) 15
-  - 🇭🇰 中国香港 (Hong Kong) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -207,8 +158,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
   - 🇭🇰 中国香港 (Hong Kong) 13
-  - 🇭🇰 中国香港 (Hong Kong) 14
-  - 🇭🇰 中国香港 (Hong Kong) 15
-  - 🇭🇰 中国香港 (Hong Kong) 16
 rules:
 - MATCH,PROXIES
