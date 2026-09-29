@@ -12,6 +12,26 @@ proxies:
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 02
+  server: 144.31.212.253
+  port: 443
+  udp: true
+  type: hysteria2
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  sni: vps155-edge.kermemehori.ru
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 185.79.138.71
+  port: 448
+  udp: true
+  type: vless
+  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  tls: true
+  reality-opts:
+    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
+    short-id: cd21e552537c7c0b
+  servername: www.samsung.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04
   server: 45.149.147.97
   port: 443
   udp: true
@@ -24,7 +44,20 @@ proxies:
     short-id: d345ad4657adeef9
   servername: google.com
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 03
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: 212.147.245.198
+  port: 443
+  udp: true
+  type: vless
+  uuid: 042d2d08-2973-5d10-97ad-3b75f16bbe54
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xwLNHc6jBOg5Ddr1LezwY7I45nP485Qfu1YJXMKwVnI
+    short-id: 330a464a00000000
+  servername: online.1c.ru
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 06
   server: 144.31.27.215
   port: 43000
   udp: true
@@ -37,8 +70,8 @@ proxies:
     short-id: 568d87a47271344e
   servername: 144.31.27.215
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 83.219.97.26
+- name: 🇫🇮 芬兰 (Finland) 07
+  server: est1313.ggisopi.su
   port: 443
   udp: true
   type: vless
@@ -48,19 +81,20 @@ proxies:
   reality-opts:
     public-key: SB1uC0OEveYjSiS_Nuw9Ld-uVVXWqi794OGnldthY3I
   servername: est1313.ggisopi.su
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 185.79.138.71
-  port: 448
+  client-fingerprint: safari
+- name: 🇫🇮 芬兰 (Finland) 08
+  server: 153.52.117.131
+  port: 443
   udp: true
   type: vless
-  uuid: 0b0915d7-6800-4580-a44b-77d84f105e6a
+  uuid: 3d9daa27-6283-406d-a2d4-c6f22c635a14
   tls: true
-  reality-opts:
-    public-key: CsDgNRcCwCkPIslfZpKTIK71KFpIFNsotbdzKcZVoH8
-    short-id: cd21e552537c7c0b
-  servername: www.samsung.com
-  client-fingerprint: firefox
+  servername: fi.astrafic.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
 proxy-groups:
 - name: PROXIES
   type: select
@@ -71,6 +105,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
+  - 🇫🇮 芬兰 (Finland) 07
+  - 🇫🇮 芬兰 (Finland) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +118,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
+  - 🇫🇮 芬兰 (Finland) 07
+  - 🇫🇮 芬兰 (Finland) 08
 rules:
 - MATCH,PROXIES

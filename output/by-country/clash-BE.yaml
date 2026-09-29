@@ -4,28 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01
-  server: 103.86.49.57
-  port: 80
+- name: 🇧🇪 比利时 (Belgium) 01
+  server: 104.21.64.198
+  port: 2095
   udp: true
   type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
+  uuid: 73796e63-0000-4000-8000-000000000008
   network: ws
   ws-opts:
-    path: /ws
+    path: /sync
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: vqrlof-pwa5a7-onfjlv.zedbazi061.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01
+  - 🇧🇪 比利时 (Belgium) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01
+  - 🇧🇪 比利时 (Belgium) 01
 rules:
 - MATCH,PROXIES

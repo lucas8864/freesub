@@ -4,14 +4,84 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vmess",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01",
-      "server": "103.115.109.49",
+      "server": "165.154.195.38",
+      "server_port": 35034,
+      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02",
+      "server": "r3mrcg001286ek2.cybervena.com",
+      "server_port": 50099,
+      "method": "chacha20-ietf-poly1305",
+      "password": "7e731ec3-f8e1-43f6-92cf-3978d14705c4"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03",
+      "server": "tw3.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "4588f7a2-5df0-4f32-89d0-813a848ad593",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdnets.asus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JE82iOR_U_H7ffxJ5yfoxXeRkMlE-aVu1wxR7n6jrVM",
+          "short_id": "473277e2"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04",
+      "server": "tw4.miyazono-kaori.com",
+      "server_port": 443,
+      "uuid": "4588f7a2-5df0-4f32-89d0-813a848ad593",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "dlcdnets.asus.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g",
+          "short_id": "e6d59aff03e5b0"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05",
+      "server": "vpn-tw-002.fastervpn.world",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "103.115.109.49",
+        "server_name": "vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06",
+      "server": "ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn",
+      "server_port": 443,
+      "password": "9sK2mP8xQ7vL3nZ6",
+      "tls": {
+        "enabled": true,
+        "server_name": "ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn",
         "insecure": true
       }
     },
@@ -20,14 +90,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01",
+        "🇹🇼 中国台湾 (Taiwan) 02",
+        "🇹🇼 中国台湾 (Taiwan) 03",
+        "🇹🇼 中国台湾 (Taiwan) 04",
+        "🇹🇼 中国台湾 (Taiwan) 05",
+        "🇹🇼 中国台湾 (Taiwan) 06"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01",
+        "🇹🇼 中国台湾 (Taiwan) 02",
+        "🇹🇼 中国台湾 (Taiwan) 03",
+        "🇹🇼 中国台湾 (Taiwan) 04",
+        "🇹🇼 中国台湾 (Taiwan) 05",
+        "🇹🇼 中国台湾 (Taiwan) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

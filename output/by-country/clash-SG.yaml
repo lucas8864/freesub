@@ -5,28 +5,65 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇬 新加坡 (Singapore) 01
+  server: 104.17.3.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: fc60147e-76b8-4bc5-b691-90b2da79e3d2
+  tls: true
+  servername: nautica-cff.kloningstrife002.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /138.2.74.219-28616
+    headers:
+      Host: nautica-cff.kloningstrife002.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 02
+  server: 172.67.140.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 527451fe-ee1f-4e6f-94ca-808f055f7c9b
+  tls: true
+  servername: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/ERYN0G44hia16zhR
+    headers:
+      Host: 05a5f9v5a6cm563ieoye7j-8tnpd.hsysyegegrygvvvdujhh.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 03
+  server: 172.67.216.233
+  port: 443
+  udp: true
+  type: vless
+  uuid: 23e34376-aa47-4c8d-97ea-02915e01fcca
+  tls: true
+  servername: J3Bx1S9MK2syLW66yJ-hSk.TJsJrKk8GbHTS0Q5-0Os.wOrKeRS.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /vl/uwojyr8LT2gMeHnQJVf2HntOGHsvRH3?ed=2560
+    headers:
+      Host: j3bx1s9mk2sylw66yj-hsk.tjsjrkk8gbhts0q5-0os.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 04
+  server: 68.183.227.4
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 05
   server: 168.107.84.41
   port: 56927
   udp: true
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: s9CVCQlH8SB/LXByDobKTOMdTjJ7WScGfA57wZhHbek=
-- name: 🇸🇬 新加坡 (Singapore) 02
-  server: 149.88.23.207
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 03
-  server: 138.2.84.129
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: OD1p/OGuWN9AneAVzkNz0dQtKbZIkOJ9Ji9QTYcGmDY=
-- name: 🇸🇬 新加坡 (Singapore) 04
+- name: 🇸🇬 新加坡 (Singapore) 06
   server: 149.88.23.202
   port: 18000
   udp: true
@@ -34,36 +71,49 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇸🇬 新加坡 (Singapore) 05
-  server: 168.107.78.228
-  port: 56927
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
-- name: 🇸🇬 新加坡 (Singapore) 06
+- name: 🇸🇬 新加坡 (Singapore) 07
   server: 128.199.172.224
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 07
-  server: 68.183.227.4
+- name: 🇸🇬 新加坡 (Singapore) 08
+  server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 08
-  server: 138.2.73.238
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
 - name: 🇸🇬 新加坡 (Singapore) 09
+  server: 149.88.23.207
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇸🇬 新加坡 (Singapore) 10
+  server: 168.107.78.228
+  port: 56927
+  udp: true
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: bkirkeLNxhjqSpiH40KS1FGcpKSwnAEWm8+DN3QLPoU=
+- name: 🇸🇬 新加坡 (Singapore) 11
+  server: 18.140.238.157
+  port: 31870
+  udp: true
+  type: vless
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HEaa9lsAxLy1r13R-eB0nZWYj9n4kwxAeZFLFTKF4kc
+    short-id: 2fef6c2f
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 12
   server: 18.143.191.201
   port: 21464
   udp: true
@@ -76,27 +126,58 @@ proxies:
     short-id: 52f8
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 10
-  server: 206.206.76.75
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 13
+  server: 54.251.239.81
+  port: 26415
   udp: true
   type: vless
-  uuid: 1e3d3634-36ac-43ac-a439-9665d885238f
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: TqIFzUEEI1pIOR8BEpkNKEXcJ6cPfE5EzHb5joIivig
-    short-id: 9930177816ab09da
+    public-key: eC5S3o9uFN6i_YjDjiALCXbc_dzh3kEm2C5zduDGtS8
+    short-id: b7dd999667b0406e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 11
-  server: 68.183.227.45
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 14
+  server: 54.169.200.246
+  port: 41688
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12
+  type: vless
+  uuid: 49c0aac1-5e05-4f04-b624-248fc59e03c4
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: srwIElIGTPs0kshpN1vvPsn4wixV_pLd56y_v9m0sTk
+    short-id: 7f342137c20387
+  servername: www.intel.com
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 15
+  server: 18.136.119.69
+  port: 20975
+  udp: true
+  type: vless
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GVg6RWWCJfXATSmArzQD69rXqs9-804Ot-_uX3WrJE4
+    short-id: 2bb0dc48
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 16
+  server: 54.169.72.60
+  port: 8686
+  udp: true
+  type: vless
+  uuid: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  tls: true
+  reality-opts:
+    public-key: A3NXnUIT-W0m1Y_leRnv5so2IeCvk9FCFgL31PulfTw
+    short-id: 628b3c90c98ead4f
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 17
   server: xjp2.mangshe.xyz
   port: 2060
   udp: true
@@ -104,7 +185,29 @@ proxies:
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   sni: xjp2.mangshe.xyz
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 13
+- name: 🇸🇬 新加坡 (Singapore) 18
+  server: 18.140.72.106
+  port: 23070
+  udp: true
+  type: vless
+  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: px79hKhwQDhnVMdX3CF8dHKQsAVT8-FJ8ilk7JZAO2U
+    short-id: c7f5ef2673cc86bc
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 19
+  server: onhit.shalana.xyz
+  port: 443
+  udp: true
+  type: vless
+  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  tls: true
+  servername: onhit.shalana.xyz
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 20
   server: sg-1.gsafevpnapi.com
   port: 20270
   udp: true
@@ -117,7 +220,7 @@ proxies:
     short-id: fc13d6208ebbae16
   servername: www.yahoo.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 14
+- name: 🇸🇬 新加坡 (Singapore) 21
   server: 217.217.254.126
   port: 2053
   udp: true
@@ -129,29 +232,37 @@ proxies:
     short-id: 87829de0e2bb82cb
   servername: www.cloudflare.com
   client-fingerprint: random
-- name: 🇸🇬 新加坡 (Singapore) 15
-  server: 3.0.111.82
-  port: 12972
+- name: 🇸🇬 新加坡 (Singapore) 22
+  server: free-server.techsonic.dev
+  port: 2096
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
+  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
   tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 16
-  server: onhit.shalana.xyz
+  servername: free-server.techsonic.dev
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /free-server.techsonic.dev
+    headers:
+      Host: free-server.techsonic.dev
+- name: 🇸🇬 新加坡 (Singapore) 23
+  server: 170.114.52.22
   port: 443
   udp: true
   type: vless
-  uuid: 408fbae6-a40b-4f0b-9723-0b4ce8e3d035
+  uuid: 38415950-f815-4ca8-94d0-6cbf22be7566
   tls: true
-  servername: onhit.shalana.xyz
+  servername: asia.csmasterofficial.store
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 17
+  client-fingerprint: qq
+  network: ws
+  ws-opts:
+    path: /cs
+    headers:
+      Host: asia.csmasterofficial.store
+- name: 🇸🇬 新加坡 (Singapore) 24
   server: 3.0.111.82
   port: 17623
   udp: true
@@ -164,22 +275,43 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 18
-  server: 68.183.227.236
-  port: 8080
+- name: 🇸🇬 新加坡 (Singapore) 25
+  server: 116.251.217.65
+  port: 443
   udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 19
-  server: s3.huhiuh.space
-  port: 18642
+  type: vless
+  uuid: 2388e166-3890-33ae-f77e-efac00000002
+  tls: true
+  servername: netlivpn4813.ddhshhshs.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN
+    headers:
+      Host: netlivpn4813.ddhshhshs.workers.dev
+- name: 🇸🇬 新加坡 (Singapore) 26
+  server: 138.2.73.238
+  port: 50160
   udp: true
   type: hysteria2
-  password: user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2
+  password: f87376e17da040ed04c9665ce8972930
   sni: www.bing.com
   skip-cert-verify: true
-- name: 🇸🇬 新加坡 (Singapore) 20
+- name: 🇸🇬 新加坡 (Singapore) 27
+  server: 3.0.111.82
+  port: 12972
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇸🇬 新加坡 (Singapore) 28
   server: 3.0.111.82
   port: 10574
   udp: true
@@ -191,50 +323,14 @@ proxies:
     public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
     short-id: 48050fab
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 21
-  server: 91.193.58.108
-  port: 2096
+  client-fingerprint: qq
+- name: 🇸🇬 新加坡 (Singapore) 29
+  server: 161.118.219.5
+  port: 56927
   udp: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  tls: true
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /free-server.techsonic.dev
-    headers:
-      Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 22
-  server: newyork-production-b0c5.up.railway.app
-  port: 443
-  udp: true
-  type: vless
-  uuid: f230a028-7b22-c891-32a5-510b66662f31
-  tls: true
-  servername: newyork-production-b0c5.up.railway.app
-  skip-cert-verify: false
-  client-fingerprint: ios
-  network: ws
-  ws-opts:
-    path: /ws/f230a028-7b22-c891-32a5-510b66662f31
-    headers:
-      Host: newyork-production-b0c5.up.railway.app
-- name: 🇸🇬 新加坡 (Singapore) 23
-  server: 18.139.227.162
-  port: 28243
-  udp: true
-  type: vless
-  uuid: d00d9d18-20cf-4191-be76-6f73d43a27ec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: IXxfPvq2OkbSuA-ZTBFpMzkDU1uO8dEI1e7s9VfHh1Y
-    short-id: 7996bf4dcf194d18
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: 2022-blake3-chacha20-poly1305
+  password: 9PfRlIGvpMs8nD7s65B/3IxccQG+p631X9tCLZy+CRI=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -263,6 +359,12 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 21
   - 🇸🇬 新加坡 (Singapore) 22
   - 🇸🇬 新加坡 (Singapore) 23
+  - 🇸🇬 新加坡 (Singapore) 24
+  - 🇸🇬 新加坡 (Singapore) 25
+  - 🇸🇬 新加坡 (Singapore) 26
+  - 🇸🇬 新加坡 (Singapore) 27
+  - 🇸🇬 新加坡 (Singapore) 28
+  - 🇸🇬 新加坡 (Singapore) 29
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -291,5 +393,11 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 21
   - 🇸🇬 新加坡 (Singapore) 22
   - 🇸🇬 新加坡 (Singapore) 23
+  - 🇸🇬 新加坡 (Singapore) 24
+  - 🇸🇬 新加坡 (Singapore) 25
+  - 🇸🇬 新加坡 (Singapore) 26
+  - 🇸🇬 新加坡 (Singapore) 27
+  - 🇸🇬 新加坡 (Singapore) 28
+  - 🇸🇬 新加坡 (Singapore) 29
 rules:
 - MATCH,PROXIES
