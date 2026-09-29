@@ -33,33 +33,23 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 04",
-      "server": "108.165.233.223",
-      "server_port": 443,
-      "uuid": "2388e166-3890-33ae-f77e-efac00000001",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 03",
+      "server": "136.175.82.85",
+      "server_port": 18775,
+      "uuid": "9ae5940b-0278-403d-a1e1-9dddc47bdcf6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "netlivpn4813.ddhshhshs.workers.dev",
-        "insecure": false,
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN-NetliVPN",
-        "headers": {
-          "Host": "netlivpn4813.ddhshhshs.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
@@ -70,8 +60,7 @@
         "auto",
         "🇧🇬 保加利亚 (Bulgaria) 01",
         "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03",
-        "🇧🇬 保加利亚 (Bulgaria) 04"
+        "🇧🇬 保加利亚 (Bulgaria) 03"
       ]
     },
     {
@@ -80,8 +69,7 @@
       "outbounds": [
         "🇧🇬 保加利亚 (Bulgaria) 01",
         "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03",
-        "🇧🇬 保加利亚 (Bulgaria) 04"
+        "🇧🇬 保加利亚 (Bulgaria) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

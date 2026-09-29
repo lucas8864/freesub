@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇴🇲 OM 01
-  server: 130.94.81.180
-  port: 18415
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
+  server: test.keoplentuio.xyz
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: b667234b8d2e7eb34444857ea3a9b18a
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇴🇲 OM 01
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇴🇲 OM 01
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
 rules:
 - MATCH,PROXIES

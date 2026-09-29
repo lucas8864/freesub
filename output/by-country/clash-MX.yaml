@@ -4,29 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇺 匈牙利 (Hungary) 01
-  server: 45.9.168.211
+- name: 🇲🇽 墨西哥 (Mexico) 01
+  server: 34.51.29.171
   port: 443
   udp: true
   type: vless
-  uuid: 7de5e70d-b95e-4019-affb-636151647b52
-  flow: xtls-rprx-vision
+  uuid: 9ad81959-02c6-4679-a419-2af6a16ca07a
   tls: true
   reality-opts:
-    public-key: SARDrN_d46PsugT2k5ILoQAJqaA1eCOZhe1BjKMonj8
-  servername: mzone.hu.3cloudhost.com
-  client-fingerprint: chrome
+    public-key: 8vHditYTXXNZ37iNTraU4w129svOplF0QUhZwX2n3FA
+    short-id: dcabbf24adf88abc
+  servername: www.cloudflare.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇺 匈牙利 (Hungary) 01
+  - 🇲🇽 墨西哥 (Mexico) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇺 匈牙利 (Hungary) 01
+  - 🇲🇽 墨西哥 (Mexico) 01
 rules:
 - MATCH,PROXIES

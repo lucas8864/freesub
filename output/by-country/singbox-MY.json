@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇲🇾 马来西亚 (Malaysia) 01",
-      "server": "my1.miyazono-kaori.com",
-      "server_port": 443,
-      "uuid": "4588f7a2-5df0-4f32-89d0-813a848ad593",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.setel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "t3HU7p5iYjE9Lcq2-QHTXZFhpAvoXljTNDgmFkFN-Tc",
-          "short_id": "99f8972e3dd5ed"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 02",
       "server": "platform128.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -43,16 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01",
-        "🇲🇾 马来西亚 (Malaysia) 02"
+        "🇲🇾 马来西亚 (Malaysia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01",
-        "🇲🇾 马来西亚 (Malaysia) 02"
+        "🇲🇾 马来西亚 (Malaysia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
