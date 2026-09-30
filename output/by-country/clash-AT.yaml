@@ -25,14 +25,6 @@ proxies:
   servername: at.quattro-tech.ru
   client-fingerprint: chrome
 - name: 🇦🇹 奥地利 (Austria) 03
-  server: 86.106.119.23
-  port: 443
-  udp: true
-  type: trojan
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
-  sni: gr.freeguard.org
-  skip-cert-verify: false
-- name: 🇦🇹 奥地利 (Austria) 04
   server: 31.77.227.6
   port: 52006
   udp: true
@@ -50,7 +42,6 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
   - 🇦🇹 奥地利 (Austria) 03
-  - 🇦🇹 奥地利 (Austria) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,6 +50,5 @@ proxy-groups:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
   - 🇦🇹 奥地利 (Austria) 03
-  - 🇦🇹 奥地利 (Austria) 04
 rules:
 - MATCH,PROXIES

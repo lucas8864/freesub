@@ -5,17 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 178.236.16.98
-  port: 35728
+  server: 89.218.15.90
+  port: 10002
   udp: true
   type: vless
-  uuid: a00d89f6-ab7e-4e30-a5e5-54c701d62c93
+  uuid: 392fcc7e-b995-11f1-a6b7-1b2272a86bd5
   tls: true
-  reality-opts:
-    public-key: vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng
-    short-id: 69a2
-  servername: yahoo.com
-  client-fingerprint: chrome
+  servername: kz1.vpnjantit.com
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /vpnjantit
+    headers:
+      Host: kz1.vpnjantit.com
 proxy-groups:
 - name: PROXIES
   type: select

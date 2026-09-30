@@ -7,13 +7,21 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
       "server": "195.238.126.20",
-      "server_port": 9012,
+      "server_port": 9011,
       "method": "aes-256-cfb",
-      "password": "xaupMUvhptwxdDUg"
+      "password": "M3t2ZEQcMGRWBjRa"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "server": "195.238.126.20",
+      "server_port": 9001,
+      "method": "aes-256-cfb",
+      "password": "UkXRsXvR6buDMG2Y"
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
       "server": "62.77.158.1",
       "server_port": 443,
       "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
@@ -23,33 +31,13 @@
         "server_name": "online.1c.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs",
           "short_id": "6a"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
-      "server": "lithuania-2.kochvpn.pw",
-      "server_port": 443,
-      "uuid": "2923fef2-3b52-a9c2-cde4-c2343eb74a2c",
-      "tls": {
-        "enabled": true,
-        "server_name": "lithuania-2.kochvpn.pw",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/ws"
       }
     },
     {

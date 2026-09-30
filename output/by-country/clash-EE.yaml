@@ -5,35 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: 109.206.241.10
-  skip-cert-verify: true
-- name: 🇪🇪 爱沙尼亚 (Estonia) 02
-  server: 94.183.170.135
-  port: 443
-  udp: true
-  type: vless
-  uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03
-  server: 179.254.126.173
-  port: 443
-  udp: true
-  type: vless
-  uuid: 7013d889-14f4-4475-a5ff-a5ecd992b522
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9H_heZMEI3tShkb5pXRrlAzwGWIzGFCRX_HgyPdktnU
-  servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -42,24 +13,18 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01
-  - 🇪🇪 爱沙尼亚 (Estonia) 02
-  - 🇪🇪 爱沙尼亚 (Estonia) 03
-  - 🇪🇪 爱沙尼亚 (Estonia) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
-  - 🇪🇪 爱沙尼亚 (Estonia) 02
-  - 🇪🇪 爱沙尼亚 (Estonia) 03
-  - 🇪🇪 爱沙尼亚 (Estonia) 04
 rules:
 - MATCH,PROXIES

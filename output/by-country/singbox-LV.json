@@ -20,16 +20,8 @@
       "password": "mwgRg9hRq3b4Qnwb"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 03",
-      "server": "185.135.86.175",
-      "server_port": 9036,
-      "method": "aes-256-cfb",
-      "password": "hbtvgUz5uNYyB3Rf"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 04",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03",
       "server": "31.57.28.147",
       "server_port": 443,
       "uuid": "2412bd96-925b-43f2-81d1-0ed4f0793699",
@@ -39,7 +31,7 @@
         "server_name": "download-cdn.jetbrains.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -49,43 +41,43 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 05",
-      "server": "latvia-3.kochvpn.pw",
-      "server_port": 443,
-      "uuid": "8de0e6f4-d365-fa64-d5ba-eed9ea513e06",
+      "type": "hysteria2",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 04",
+      "server": "91.240.86.70",
+      "server_port": 24443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
       "tls": {
         "enabled": true,
-        "server_name": "latvia-3.kochvpn.pw",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/stream/ws"
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 05",
+      "server": "185.135.86.175",
+      "server_port": 9094,
+      "method": "aes-256-cfb",
+      "password": "rpgbNnU9rDDU4aWZ"
     },
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 06",
-      "server": "193.163.203.199",
-      "server_port": 443,
-      "uuid": "3e2591b2-4739-4c59-b540-344f0b6505ac",
+      "server": "104.252.19.114",
+      "server_port": 8443,
+      "uuid": "40cba749-bca9-4089-9c02-84a357244ce0",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "x6.megabitvpn.org",
+        "server_name": "omvpn.info",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "xa2v36oJSdYGM1SSiMYyehw9RTdlBHOLcE5-YOK6unE",
-          "short_id": "3c7ab85b281ecc8f"
+          "public_key": "cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI",
+          "short_id": ""
         }
       }
     },

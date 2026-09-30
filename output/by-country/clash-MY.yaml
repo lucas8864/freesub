@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /platform128
-    headers:
-      Host: platform128.halalkhor.info
 proxy-groups:
 - name: PROXIES
   type: select

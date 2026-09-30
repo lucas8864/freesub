@@ -4,9 +4,36 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01",
-      "server": "85.204.107.175",
+      "server": "104.143.223.60",
+      "server_port": 2085,
+      "uuid": "60f70a3c-6d58-4929-9b64-6bdf38eb5c95",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 02",
+      "server": "130.49.161.70",
+      "server_port": 443,
+      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy2.aspidnet.xyz",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇦🇪 阿联酋 (UAE) 03",
+      "server": "85.204.107.174",
       "server_port": 8080,
       "password": "Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0",
       "tls": {
@@ -17,7 +44,49 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
+      "tag": "🇦🇪 阿联酋 (UAE) 04",
+      "server": "151.241.166.181",
+      "server_port": 443,
+      "uuid": "e9844617-e393-4876-afa7-11859695f4ee",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.gazladder.work",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 05",
+      "server": "pl-3.omuvpn.tech",
+      "server_port": 443,
+      "uuid": "228ecfd3-9bf0-42fd-a50e-581f84022513",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ozone.nl",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM",
+          "short_id": "1b066aef44"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 06",
       "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -35,7 +104,11 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02"
+        "🇦🇪 阿联酋 (UAE) 02",
+        "🇦🇪 阿联酋 (UAE) 03",
+        "🇦🇪 阿联酋 (UAE) 04",
+        "🇦🇪 阿联酋 (UAE) 05",
+        "🇦🇪 阿联酋 (UAE) 06"
       ]
     },
     {
@@ -43,7 +116,11 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02"
+        "🇦🇪 阿联酋 (UAE) 02",
+        "🇦🇪 阿联酋 (UAE) 03",
+        "🇦🇪 阿联酋 (UAE) 04",
+        "🇦🇪 阿联酋 (UAE) 05",
+        "🇦🇪 阿联酋 (UAE) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

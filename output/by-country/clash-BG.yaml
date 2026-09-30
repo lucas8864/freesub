@@ -6,11 +6,11 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01
   server: 213.183.63.60
-  port: 9085
+  port: 9054
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: 9ej82EKe2gq7gLAM
+  password: VcFuyXvND2yQWSFY
 - name: 🇧🇬 保加利亚 (Bulgaria) 02
   server: 193.148.59.178
   port: 443
@@ -25,18 +25,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇧🇬 保加利亚 (Bulgaria) 03
-  server: 136.175.82.85
-  port: 18775
+  server: 213.183.63.60
+  port: 9049
   udp: true
-  type: vless
-  uuid: 9ae5940b-0278-403d-a1e1-9dddc47bdcf6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: oR75S6pg_RDAKIuzv_WrCiwaUqqFoek2iuo5N22llQQ
-    short-id: 6ba85179e30d4fc2
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: PRBf4BS2HvJqtWxY
 proxy-groups:
 - name: PROXIES
   type: select

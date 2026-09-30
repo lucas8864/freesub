@@ -5,17 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 151.241.226.201
-  port: 2053
+  server: 85.192.48.142
+  port: 443
   udp: true
   type: vless
-  uuid: 0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8
+  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
-    short-id: 9e419c0759b54d6f
-  servername: www.apple.com
-  client-fingerprint: chrome
+    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
+    short-id: db04ce8bdb8900f1
+  servername: nvidia.com
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

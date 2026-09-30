@@ -6,12 +6,48 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "153.76.185.155",
-      "server_port": 3090,
-      "uuid": "43b15d01-8cc5-40ea-b42a-cb1a727224dc",
+      "server": "8.6.112.9",
+      "server_port": 443,
+      "uuid": "11e9eea1-b1a9-4f02-a1a1-b24f7664b1cf",
+      "tls": {
+        "enabled": true,
+        "server_name": "ancIEnt-HeaRt-60c5.dPccgIzieB.WoRKers.dEV",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiYW1sczlYWkFHOCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0",
+        "headers": {
+          "Host": "ancient-heart-60c5.dpccgizieb.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02",
+      "server": "195.133.66.229",
+      "server_port": 443,
+      "uuid": "4abdfe42-aec7-4b66-974d-3f891e2e8184",
+      "tls": {
+        "enabled": true,
+        "server_name": "nlll.gaz-service.shop",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Zl6Fe6WYQuaFe_QNUB4qU7nRkGujy7LqjoQ96GO3jUc",
+          "short_id": ""
+        }
+      },
       "transport": {
         "type": "grpc",
-        "service_name": "vless"
+        "service_name": "grpc"
       }
     },
     {
@@ -19,14 +55,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01"
+        "🇨🇿 捷克 (Czech) 01",
+        "🇨🇿 捷克 (Czech) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01"
+        "🇨🇿 捷克 (Czech) 01",
+        "🇨🇿 捷克 (Czech) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

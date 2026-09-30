@@ -19,13 +19,6 @@ proxies:
   cipher: aes-256-cfb
   password: mwgRg9hRq3b4Qnwb
 - name: 🇱🇻 拉脱维亚 (Latvia) 03
-  server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 04
   server: 31.57.28.147
   port: 443
   udp: true
@@ -37,32 +30,33 @@ proxies:
     public-key: d7yg69dK4DkaV1EPpQcgd4GBncMN9u1o1Nk9u-i7wGc
     short-id: 7a18a196e730e1d5
   servername: download-cdn.jetbrains.com
-  client-fingerprint: firefox
-- name: 🇱🇻 拉脱维亚 (Latvia) 05
-  server: latvia-3.kochvpn.pw
-  port: 443
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 04
+  server: 91.240.86.70
+  port: 24443
   udp: true
-  type: vless
-  uuid: 8de0e6f4-d365-fa64-d5ba-eed9ea513e06
-  tls: true
-  servername: latvia-3.kochvpn.pw
+  type: hysteria2
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  sni: hy.quattro-tech.ru
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /stream/ws
+- name: 🇱🇻 拉脱维亚 (Latvia) 05
+  server: 185.135.86.175
+  port: 9094
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: rpgbNnU9rDDU4aWZ
 - name: 🇱🇻 拉脱维亚 (Latvia) 06
-  server: 193.163.203.199
-  port: 443
+  server: 104.252.19.114
+  port: 8443
   udp: true
   type: vless
-  uuid: 3e2591b2-4739-4c59-b540-344f0b6505ac
+  uuid: 40cba749-bca9-4089-9c02-84a357244ce0
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xa2v36oJSdYGM1SSiMYyehw9RTdlBHOLcE5-YOK6unE
-    short-id: 3c7ab85b281ecc8f
-  servername: x6.megabitvpn.org
+    public-key: cD8mVX41lqyVGCuPz0-tQWcNqkMxiPZxU7JJsyyNAEI
+  servername: omvpn.info
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
