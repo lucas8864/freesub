@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 01",
-      "server": "195.238.126.20",
-      "server_port": 9011,
-      "method": "aes-256-cfb",
-      "password": "M3t2ZEQcMGRWBjRa"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
-      "server": "195.238.126.20",
-      "server_port": 9001,
-      "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
-    },
-    {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 01",
       "server": "62.77.158.1",
       "server_port": 443,
       "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
@@ -31,7 +15,7 @@
         "server_name": "online.1c.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "safari"
         },
         "reality": {
           "enabled": true,
@@ -41,45 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 04",
-      "server": "94.176.234.161",
-      "server_port": 443,
-      "uuid": "d448490d-4ee6-442f-80e1-5e1c186c4ce1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.intel.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "UpI0XKNUsMJ24XawPQ8g7br1faEsO7BOvmIIGg9Wrm8",
-          "short_id": "dbb2ef1c7c"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01",
-        "🇱🇹 立陶宛 (Lithuania) 02",
-        "🇱🇹 立陶宛 (Lithuania) 03",
-        "🇱🇹 立陶宛 (Lithuania) 04"
+        "🇱🇹 立陶宛 (Lithuania) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01",
-        "🇱🇹 立陶宛 (Lithuania) 02",
-        "🇱🇹 立陶宛 (Lithuania) 03",
-        "🇱🇹 立陶宛 (Lithuania) 04"
+        "🇱🇹 立陶宛 (Lithuania) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "213.183.63.60",
-      "server_port": 9054,
-      "method": "aes-256-cfb",
-      "password": "VcFuyXvND2yQWSFY"
-    },
-    {
       "type": "vless",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
       "server": "193.148.59.178",
       "server_port": 443,
       "uuid": "20d7c485-5d24-49b5-a5cc-bb7a7daf9908",
@@ -33,30 +25,18 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 03",
-      "server": "213.183.63.60",
-      "server_port": 9049,
-      "method": "aes-256-cfb",
-      "password": "PRBf4BS2HvJqtWxY"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01",
-        "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01",
-        "🇧🇬 保加利亚 (Bulgaria) 02",
-        "🇧🇬 保加利亚 (Bulgaria) 03"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,15 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
-  server: 104.143.223.60
-  port: 2085
-  udp: true
-  type: vless
-  uuid: 60f70a3c-6d58-4929-9b64-6bdf38eb5c95
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless
-- name: 🇦🇪 阿联酋 (UAE) 02
   server: 130.49.161.70
   port: 443
   udp: true
@@ -23,40 +14,15 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03
-  server: 85.204.107.174
+- name: 🇦🇪 阿联酋 (UAE) 02
+  server: 85.204.107.175
   port: 8080
   udp: true
   type: hysteria2
   password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: true
-- name: 🇦🇪 阿联酋 (UAE) 04
-  server: 151.241.166.181
-  port: 443
-  udp: true
-  type: vless
-  uuid: e9844617-e393-4876-afa7-11859695f4ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SoMfQzFhE5QfKWMZA7ZNkYP63P5hiyWEbE9fsPIP4Go
-  servername: pl.gazladder.work
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05
-  server: pl-3.omuvpn.tech
-  port: 443
-  udp: true
-  type: vless
-  uuid: 228ecfd3-9bf0-42fd-a50e-581f84022513
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Jx7Z4PZ5DvGyEniIJhf6LwetaZ1_WDvPdpqtBDYOjyM
-    short-id: 1b066aef44
-  servername: ozone.nl
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 06
+- name: 🇦🇪 阿联酋 (UAE) 03
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -65,8 +31,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,9 +39,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
-  - 🇦🇪 阿联酋 (UAE) 04
-  - 🇦🇪 阿联酋 (UAE) 05
-  - 🇦🇪 阿联酋 (UAE) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -86,8 +47,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
-  - 🇦🇪 阿联酋 (UAE) 04
-  - 🇦🇪 阿联酋 (UAE) 05
-  - 🇦🇪 阿联酋 (UAE) 06
 rules:
 - MATCH,PROXIES

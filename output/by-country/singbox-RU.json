@@ -4,51 +4,67 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "172.64.32.103",
-      "server_port": 80,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls ",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
+      "server": "195.58.48.137",
+      "server_port": 20999,
+      "method": "aes-256-gcm",
+      "password": "8ad9d72a5571df86"
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇷🇺 俄罗斯 (Russia) 02",
-      "server": "104.18.0.1",
-      "server_port": 443,
-      "uuid": "3ccba794-1c6d-48a8-acf2-f5caf0e69d86",
+      "server": "srv-17e124.21freedom.net",
+      "server_port": 11592,
+      "password": "41edb44c8e",
       "tls": {
         "enabled": true,
-        "server_name": "all.speedtest03.ccwu.cc",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "all.speedtest03.ccwu.cc"
-        }
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03",
-      "server": "172.67.167.77",
+      "server": "139.28.168.201",
       "server_port": 443,
-      "uuid": "cc08d2d0-8a7a-4469-81d2-c43704451271",
+      "uuid": "a368752a-32fc-42f3-980a-6b049218b23f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev",
+        "server_name": "china.letsconnectpoint.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI",
+          "short_id": "3b74d85e"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
+      "server": "91.240.86.70",
+      "server_port": 22443,
+      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
+      "tls": {
+        "enabled": true,
+        "server_name": "hy.quattro-tech.ru",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "fbsv6.guardora.pro",
+      "server_port": 443,
+      "uuid": "bc5ec86c-3e65-4272-994c-59a924c72a68",
+      "tls": {
+        "enabled": true,
+        "server_name": "fbsv6.guardora.pro",
         "insecure": false,
         "alpn": [
           "http/1.1"
@@ -60,120 +76,15 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/vl/6871nrbnl9WsdAiOUInt",
+        "path": "/ws",
         "headers": {
-          "Host": "9tg-d0htbrb5e3tp0c-o7ix23cx0f.ftfgblgft6-1h2iv2oo4h0.workers.dev"
+          "Host": "fbsv6.guardora.pro"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04",
-      "server": "94.249.187.46",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "IXa3ylzS_jBOAsQy071tIQ"
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05",
-      "server": "104.18.32.47",
-      "server_port": 2087,
-      "uuid": "5a0028f9-c656-cec9-4b61-54678477a408",
-      "tls": {
-        "enabled": true,
-        "server_name": "green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/game",
-        "headers": {
-          "Host": "green-credit-7e7b.vpnfreev2rayconfig-sale1.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 06",
-      "server": "62.181.53.170",
-      "server_port": 2055,
-      "method": "chacha20-ietf-poly1305",
-      "password": "9qGcNiZj4uCi7DGSjxlg5Q"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07",
-      "server": "91.240.86.70",
-      "server_port": 22443,
-      "password": "3f63c86c-ac4a-4900-85cf-4fedf93c2ca5",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy.quattro-tech.ru",
-        "insecure": false
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08",
-      "server": "138.124.254.232",
-      "server_port": 443,
-      "password": "fba73f98-777a-42a6-83c0-7d1f6f070e8d",
-      "tls": {
-        "enabled": true,
-        "server_name": "crt.dodopanel.biz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 09",
-      "server": "du-rov.secureservice.top",
-      "server_port": 8443,
-      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "du-rov.secureservice.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
-          "short_id": "3cbc3d737fb9c4af"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 10",
-      "server": "china.letsconnectpoint.com",
-      "server_port": 443,
-      "uuid": "914f3806-07a1-4158-9624-e183de065a38",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "china.letsconnectpoint.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI",
-          "short_id": "3b74d85e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 11",
       "server": "45.12.75.242",
       "server_port": 26424,
       "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
@@ -193,47 +104,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 12",
-      "server": "45.152.113.206",
-      "server_port": 443,
-      "uuid": "859a537b-09cf-4bce-8da4-ecbb72950e3a",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07",
+      "server": "du-rov.secureservice.top",
+      "server_port": 8443,
+      "uuid": "c53ea5e9-ed8b-4990-805d-7f1d6451426c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "1.ru.oncloudnineservicestreang.com",
+        "server_name": "du-rov.secureservice.top",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Thx57ocixT-wpeK_mdnJaluVW6eAwhlMgglxgjxEmhs",
-          "short_id": "65557338e1cd5605"
+          "public_key": "fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI",
+          "short_id": "3cbc3d737fb9c4af"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 13",
-      "server": "176.123.162.100",
-      "server_port": 9880,
-      "uuid": "5d16ac22-6eea-426f-b778-6f4c2961faef",
-      "tls": {
-        "enabled": true,
-        "server_name": "dl.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU",
-          "short_id": "aabb"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpc-tunnel"
       }
     },
     {
@@ -247,13 +134,7 @@
         "🇷🇺 俄罗斯 (Russia) 04",
         "🇷🇺 俄罗斯 (Russia) 05",
         "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07",
-        "🇷🇺 俄罗斯 (Russia) 08",
-        "🇷🇺 俄罗斯 (Russia) 09",
-        "🇷🇺 俄罗斯 (Russia) 10",
-        "🇷🇺 俄罗斯 (Russia) 11",
-        "🇷🇺 俄罗斯 (Russia) 12",
-        "🇷🇺 俄罗斯 (Russia) 13"
+        "🇷🇺 俄罗斯 (Russia) 07"
       ]
     },
     {
@@ -266,13 +147,7 @@
         "🇷🇺 俄罗斯 (Russia) 04",
         "🇷🇺 俄罗斯 (Russia) 05",
         "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07",
-        "🇷🇺 俄罗斯 (Russia) 08",
-        "🇷🇺 俄罗斯 (Russia) 09",
-        "🇷🇺 俄罗斯 (Russia) 10",
-        "🇷🇺 俄罗斯 (Russia) 11",
-        "🇷🇺 俄罗斯 (Russia) 12",
-        "🇷🇺 俄罗斯 (Russia) 13"
+        "🇷🇺 俄罗斯 (Russia) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: 85.192.48.142
-  port: 443
+  server: www.asamping.ir
+  port: 1468
   udp: true
-  type: vless
-  uuid: adc11f30-e4cb-4985-bf5e-f9ded69c019f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: nvidia.com
-  client-fingerprint: ''
+  type: ss
+  cipher: aes-128-gcm
+  password: fSf3x7CtssaHpL1HC72dPQ
 proxy-groups:
 - name: PROXIES
   type: select
