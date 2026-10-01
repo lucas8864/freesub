@@ -5,28 +5,61 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "x-tw01.xueshan168.cc",
-      "server_port": 16000,
-      "uuid": "cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "s0.awsstatic.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8",
-          "short_id": ""
+      "tag": "🇺🇸 美国 (United States) 01 (家宽)",
+      "server": "172.64.154.8",
+      "server_port": 2086,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+      "tag": "🇺🇸 美国 (United States) 02 (家宽)",
+      "server": "172.64.32.103",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇺🇸 美国 (United States) 03 (移动家宽)",
+      "server": "162.159.48.32",
+      "server_port": 2095,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+      "server": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "5f091cbe-fb34-11ea-9777-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
       "server": "hinet1.2yly.com",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
@@ -45,22 +78,15 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03 (移动家宽)",
-      "server": "tcdnu.azad0namah.ir",
-      "server_port": 8443,
-      "uuid": "0da0a073-a5b0-4229-bf11-24592f6290b9",
-      "tls": {
-        "enabled": true,
-        "server_name": "tcdnu.azad0namah.ir",
-        "insecure": false
-      },
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 06 (家宽)",
+      "server": "hi.northcluster.info",
+      "server_port": 52300,
+      "uuid": "6e571484-4166-4699-8f58-b34a1823691f",
+      "security": "auto",
       "transport": {
         "type": "ws",
-        "path": "/tuws/",
-        "headers": {
-          "Host": "tcdnu.azad0namah.ir"
-        }
+        "path": "/video"
       }
     },
     {
@@ -68,18 +94,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽)"
+        "🇺🇸 美国 (United States) 01 (家宽)",
+        "🇺🇸 美国 (United States) 02 (家宽)",
+        "🇺🇸 美国 (United States) 03 (移动家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇷 土耳其 (Turkey) 03 (移动家宽)"
+        "🇺🇸 美国 (United States) 01 (家宽)",
+        "🇺🇸 美国 (United States) 02 (家宽)",
+        "🇺🇸 美国 (United States) 03 (移动家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 06 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

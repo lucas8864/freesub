@@ -5,53 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 188.114.97.8
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 9c63fd59-f9ee-446e-97ec-0bf2de21ed7b
-  tls: true
-  servername: dRy-GLITTer-ef10.gFRYubCdrYujVRtH.WorkErS.DEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiVVhGU1pOZ1oxaTFUUldyVCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0
-    headers:
-      Host: dry-glitter-ef10.gfryubcdryujvrth.workers.dev
-- name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 94.249.187.46
-  port: 1080
+  server: 195.133.23.200
+  port: 20998
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: IXa3ylzS_jBOAsQy071tIQ
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 91.240.86.70
-  port: 22443
-  udp: true
-  type: hysteria2
-  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  sni: 91.240.86.70
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 95.215.108.36
-  port: 443
-  udp: true
-  type: vless
-  uuid: 84a3061b-3573-4a3c-a631-f26c31209268
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bDAry75taTMaPJII9vRrJuXAjQglTJxCOVWraQ5BozY
-  servername: ru-02.vacvps.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 05
+  cipher: aes-256-gcm
+  password: 81a20429165df87e
+- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 139.28.168.201
   port: 443
   udp: true
   type: vless
-  uuid: a368752a-32fc-42f3-980a-6b049218b23f
+  uuid: 914f3806-07a1-4158-9624-e183de065a38
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -59,35 +24,7 @@ proxies:
     short-id: 3b74d85e
   servername: china.letsconnectpoint.com
   client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 78.159.246.110
-  port: 443
-  udp: true
-  type: vless
-  uuid: bc5ec86c-3e65-4272-994c-59a924c72a68
-  tls: true
-  servername: fbsv6.guardora.pro
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: fbsv6.guardora.pro
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: 194.113.235.66
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1c5ed2e1-56da-41ab-9a78-159d9892ec17
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lHCkAu_DOVFtE-iL2JGrPt44QeTCFijXuRfuGaSni3Q
-    short-id: 9e4eced6e98ed4d4
-  servername: github.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08
+- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -107,11 +44,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
   - 🇷🇺 俄罗斯 (Russia) 03
-  - 🇷🇺 俄罗斯 (Russia) 04
-  - 🇷🇺 俄罗斯 (Russia) 05
-  - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -120,10 +52,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
   - 🇷🇺 俄罗斯 (Russia) 03
-  - 🇷🇺 俄罗斯 (Russia) 04
-  - 🇷🇺 俄罗斯 (Russia) 05
-  - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
 rules:
 - MATCH,PROXIES

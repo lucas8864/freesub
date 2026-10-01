@@ -4,25 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
-      "server": "62.77.158.1",
-      "server_port": 443,
-      "uuid": "2eceaf2b-a775-5a9c-9990-dad2b3660fb6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "online.1c.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs",
-          "short_id": "6a"
-        }
-      }
+      "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "selector",

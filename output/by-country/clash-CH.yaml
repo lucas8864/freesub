@@ -12,39 +12,37 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02
-  server: 82.38.64.235
+  server: 179.237.103.152
+  port: 443
+  udp: true
+  type: vless
+  uuid: e0bd9dfa-0cf9-47c0-92ac-7dba08ebcff8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8PZTYkhNhSgagVdaI-iqSCPXJwDhHU23IUwZIu08zH4
+    short-id: 9de8ae53dabf1dc2
+  servername: www.google.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 82.38.64.229
   port: 8443
   udp: true
   type: hysteria2
   password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
   sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 03
-  server: 208.69.78.217
-  port: 2053
-  udp: true
-  type: vless
-  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
-  tls: true
-  reality-opts:
-    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
-    short-id: ad86e2d52ff40ebd
-  servername: www.apple.com
-  client-fingerprint: chrome
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 176.108.241.226
-  port: 9882
+  server: 185.18.250.245
+  port: 443
   udp: true
-  type: vless
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  tls: true
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-  servername: dl.google.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
+  type: trojan
+  password: humanity
+  sni: www.calmlunch.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
