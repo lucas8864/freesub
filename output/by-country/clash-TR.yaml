@@ -4,24 +4,31 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01
-  server: www.asamping.ir
-  port: 1468
+- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
+  server: 104.21.41.247
+  port: 2053
   udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: fSf3x7CtssaHpL1HC72dPQ
+  type: vless
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
+  tls: true
+  servername: tcdnu.azad0namah.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tucdn/
+    headers:
+      Host: tcdnu.azad0namah.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01
+  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
 rules:
 - MATCH,PROXIES

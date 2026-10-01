@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  server: x-tw01.xueshan168.cc
+  port: 16000
+  udp: true
+  type: vless
+  uuid: cf20ac54-9c77-4fec-b2b6-bcf8223aa4d5
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8
+  servername: s0.awsstatic.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -15,17 +27,35 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
+  server: tcdnu.azad0namah.ir
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 0da0a073-a5b0-4229-bf11-24592f6290b9
+  tls: true
+  servername: tcdnu.azad0namah.ir
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tuws/
+    headers:
+      Host: tcdnu.azad0namah.ir
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
 rules:
 - MATCH,PROXIES
