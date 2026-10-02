@@ -4,15 +4,18 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01",
-      "server": "45.205.27.78",
-      "server_port": 10443,
-      "password": "8604561c-f683-4d56-b1e4-3165e254cf4f",
+      "type": "vless",
+      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01",
+      "server": "trackydev.site",
+      "server_port": 443,
+      "uuid": "92d67828-4c56-4795-af5a-f387651380dc",
       "tls": {
         "enabled": true,
-        "server_name": "45.205.27.78",
-        "insecure": true
+        "server_name": "trackydev.site",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
       }
     },
     {
@@ -20,14 +23,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

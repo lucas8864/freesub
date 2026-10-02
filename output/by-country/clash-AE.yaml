@@ -15,30 +15,17 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02
-  server: 217.60.33.215
+  server: node-nl.shtormvpn.shop
   port: 443
-  udp: true
-  type: hysteria2
-  password: 865e271f7c97b549b024255c9d02cebe9cc0c2c070a82b1e11bb11b9cd88dd01
-  sni: streambox.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 03
-  server: 45.192.12.93
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇦🇪 阿联酋 (UAE) 04
-  server: uae.unixzone.us
-  port: 22573
   udp: true
   type: vless
-  uuid: 39947382-3212-41c9-bc3a-589574ac8b23
-  network: ws
-  ws-opts:
-    path: /
+  uuid: cc4d63e2-3a86-49b3-9598-328bbe93e56c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yI6maXxTQ8zRHg39X8YMQtKW-IVfNIn0_OCUIQKmcXw
+  servername: google.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -46,8 +33,6 @@ proxy-groups:
   - AUTO
   - 🇦🇪 阿联酋 (UAE) 01
   - 🇦🇪 阿联酋 (UAE) 02
-  - 🇦🇪 阿联酋 (UAE) 03
-  - 🇦🇪 阿联酋 (UAE) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,7 +40,5 @@ proxy-groups:
   proxies:
   - 🇦🇪 阿联酋 (UAE) 01
   - 🇦🇪 阿联酋 (UAE) 02
-  - 🇦🇪 阿联酋 (UAE) 03
-  - 🇦🇪 阿联酋 (UAE) 04
 rules:
 - MATCH,PROXIES

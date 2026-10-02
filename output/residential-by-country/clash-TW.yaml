@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01
-  server: 45.205.27.78
-  port: 10443
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
+  port: 443
   udp: true
-  type: trojan
-  password: 8604561c-f683-4d56-b1e4-3165e254cf4f
-  sni: 45.205.27.78
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
 rules:
 - MATCH,PROXIES

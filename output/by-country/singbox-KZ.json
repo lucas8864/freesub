@@ -4,15 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇻🇳 越南 (Vietnam) 01",
-      "server": "109.110.162.40",
-      "server_port": 23005,
-      "password": "fac593ac-d6aa-4523-bea9-b3eb2a2b3da3",
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
+      "server": "89.218.15.90",
+      "server_port": 10002,
+      "uuid": "392fcc7e-b995-11f1-a6b7-1b2272a86bd5",
       "tls": {
         "enabled": true,
-        "server_name": "82.yuanul.com",
+        "server_name": "kz1.vpnjantit.com",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit",
+        "headers": {
+          "Host": "kz1.vpnjantit.com"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

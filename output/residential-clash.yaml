@@ -5,8 +5,8 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽)
-  server: 172.64.32.103
-  port: 2095
+  server: 104.18.46.234
+  port: 2082
   udp: true
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -15,13 +15,13 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
   port: 443
   udp: true
-  type: hysteria2
-  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
-  sni: bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com
+  type: anytls
+  password: 9sK2mP8xQ7vL3nZ6
+  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -29,13 +29,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
 rules:
 - MATCH,PROXIES

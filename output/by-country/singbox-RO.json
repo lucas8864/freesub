@@ -6,19 +6,7 @@
     {
       "type": "hysteria2",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01",
-      "server": "162.249.127.143",
-      "server_port": 8443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
-      "server": "77.74.123.102",
+      "server": "77.74.123.104",
       "server_port": 8443,
       "password": "s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z",
       "tls": {
@@ -29,7 +17,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 03",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -45,28 +33,28 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 04",
-      "server": "46.28.67.55",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03",
+      "server": "146.70.124.85",
       "server_port": 443,
-      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "uuid": "40abbe13-f02e-4da2-9b19-966c2c3eb4ee",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
-          "short_id": "d06d78e974491b6e"
+          "public_key": "byzvlw97wjAAAfHs5AZRV0P0H6_JKBEZ4yfLS0HNewE",
+          "short_id": "fe24f8a0a560056e"
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 05",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04",
       "server": "185.156.44.99",
       "server_port": 443,
       "password": "gf1:gfhysteria2024",
@@ -77,33 +65,21 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 06",
-      "server": "38.180.35.145",
-      "server_port": 443,
-      "password": "600421cf-11d7-429f-a65b-c30397f1bc03",
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 05",
+      "server": "162.249.127.143",
+      "server_port": 8443,
+      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
       "tls": {
         "enabled": true,
-        "server_name": "bu2.freeguard.org",
-        "insecure": false
-      }
-    },
-    {
-      "type": "anytls",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 07",
-      "server": "test01.y1static-content-distribution.shop",
-      "server_port": 56726,
-      "password": "3fc0f254-54c3-4cf3-896b-5999a2b4c757",
-      "tls": {
-        "enabled": true,
-        "server_name": "hk11.pulsarcore.site",
+        "server_name": "hop-germany-september.dynuddns.com",
         "insecure": true
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 08",
-      "server": "154.46.31.106",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 06",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "QFWzCw2uX9B9i6qAYeFBIE"
@@ -118,9 +94,7 @@
         "🇷🇴 罗马尼亚 (Romania) 03",
         "🇷🇴 罗马尼亚 (Romania) 04",
         "🇷🇴 罗马尼亚 (Romania) 05",
-        "🇷🇴 罗马尼亚 (Romania) 06",
-        "🇷🇴 罗马尼亚 (Romania) 07",
-        "🇷🇴 罗马尼亚 (Romania) 08"
+        "🇷🇴 罗马尼亚 (Romania) 06"
       ]
     },
     {
@@ -132,9 +106,7 @@
         "🇷🇴 罗马尼亚 (Romania) 03",
         "🇷🇴 罗马尼亚 (Romania) 04",
         "🇷🇴 罗马尼亚 (Romania) 05",
-        "🇷🇴 罗马尼亚 (Romania) 06",
-        "🇷🇴 罗马尼亚 (Romania) 07",
-        "🇷🇴 罗马尼亚 (Romania) 08"
+        "🇷🇴 罗马尼亚 (Romania) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
