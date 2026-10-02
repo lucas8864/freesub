@@ -12,6 +12,45 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02
+  server: 152.67.75.161
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 3a702d4d1de4949005d8431220e040fb
+  sni: www.bing.com
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: c13f29db6a638ad2b211b9ce2669ef27
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 82.38.64.237
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
+  sni: hopp-swizland-new.mysynology.net
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 04
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 05
+  server: 176.65.144.84
+  port: 443
+  udp: true
+  type: vless
+  uuid: 0f4081e7-612b-425f-8def-eebf144aedba
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ITd6cmCxudmTvGcwnAzpd0VRe8jS9KJAQ1tmtVN3mCM
+    short-id: 9e15546f267baa64
+  servername: indigo.clouderiux.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 06
   server: 179.237.103.152
   port: 443
   udp: true
@@ -24,25 +63,21 @@ proxies:
     short-id: 9de8ae53dabf1dc2
   servername: www.google.com
   client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 03
-  server: 82.38.64.229
-  port: 8443
+- name: 🇨🇭 瑞士 (Switzerland) 07
+  server: 45.132.176.161
+  port: 9882
   udp: true
-  type: hysteria2
-  password: we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH
-  sni: hopp-swizland-new.mysynology.net
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 185.18.250.245
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
+  type: vless
+  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
+  tls: true
+  reality-opts:
+    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
+    short-id: aa
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-tunnel
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +87,9 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
+  - 🇨🇭 瑞士 (Switzerland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +99,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 02
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
+  - 🇨🇭 瑞士 (Switzerland) 07
 rules:
 - MATCH,PROXIES

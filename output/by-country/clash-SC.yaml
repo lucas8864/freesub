@@ -4,28 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇷 IR 01
-  server: www.asamping.ir
-  port: 2052
+- name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: 45.205.27.78
+  port: 10443
   udp: true
-  type: vless
-  uuid: 5f424b45-29e5-4cbe-b752-88ac535c11b7
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: www.asamping.ir
+  type: trojan
+  password: 8604561c-f683-4d56-b1e4-3165e254cf4f
+  sni: 45.205.27.78
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇷 IR 01
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇷 IR 01
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 rules:
 - MATCH,PROXIES

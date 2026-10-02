@@ -1,0 +1,53 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01",
+      "server": "149.104.109.252",
+      "server_port": 8882,
+      "method": "aes-256-gcm",
+      "password": "kDWvXYZoTBcGkC4"
+    },
+    {
+      "type": "anytls",
+      "tag": "🇵🇭 菲律宾 (Philippines) 02",
+      "server": "yazhouany02.downapptwo.cc",
+      "server_port": 17930,
+      "password": "3fc0f254-54c3-4cf3-896b-5999a2b4c757",
+      "tls": {
+        "enabled": true,
+        "server_name": "flv02.swiftrelay.cc",
+        "insecure": true
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇵🇭 菲律宾 (Philippines) 01",
+        "🇵🇭 菲律宾 (Philippines) 02"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇵🇭 菲律宾 (Philippines) 01",
+        "🇵🇭 菲律宾 (Philippines) 02"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

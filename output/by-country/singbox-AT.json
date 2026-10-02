@@ -4,8 +4,34 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "trojan",
       "tag": "🇦🇹 奥地利 (Austria) 01",
+      "server": "104.18.30.64",
+      "server_port": 2053,
+      "password": "@MrVpn294",
+      "tls": {
+        "enabled": true,
+        "server_name": "8jlDmDT24EoG8QjvQgS2NOh1.MAeLIn313.WorKERS.DEV",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/z9e6AWiiaxtgkjdQXbd45JZ?ed=2560",
+        "headers": {
+          "Host": "8jldmdt24eog8qjvqgs2noh1.maelin313.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -16,14 +42,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇦🇹 奥地利 (Austria) 01",
+        "🇦🇹 奥地利 (Austria) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇦🇹 奥地利 (Austria) 01",
+        "🇦🇹 奥地利 (Austria) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

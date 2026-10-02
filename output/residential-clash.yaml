@@ -5,17 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇸 美国 (United States) 01 (家宽)
-  server: 172.64.154.8
-  port: 2086
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 02 (家宽)
   server: 172.64.32.103
   port: 2095
   udp: true
@@ -26,68 +15,27 @@ proxies:
     path: /?ed=2560security=tls
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇺🇸 美国 (United States) 03 (移动家宽)
-  server: 162.159.48.32
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  network: ws
-  ws-opts:
-    path: /?ed=2560security=tls
-    headers:
-      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
-- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
-  server: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  server: bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com
   port: 443
   udp: true
   type: hysteria2
-  password: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
-  sni: 2193972c-tmkao0-u1vxv2-v3c2.hk3.hyhuawei.com
+  password: 6ddb6a68-d5f5-ca30-3943-cf0c9876d50c
+  sni: bff4b219-tmkao0-tnnrly-g43g.hk3.hyhuawei.com
   skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  server: hinet1.2yly.com
-  port: 24215
-  udp: true
-  type: vless
-  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
-  tls: true
-  reality-opts:
-    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
-  server: hi.northcluster.info
-  port: 52300
-  udp: true
-  type: vmess
-  uuid: 6e571484-4166-4699-8f58-b34a1823691f
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /video
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇸 美国 (United States) 01 (家宽)
-  - 🇺🇸 美国 (United States) 02 (家宽)
-  - 🇺🇸 美国 (United States) 03 (移动家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇸 美国 (United States) 01 (家宽)
-  - 🇺🇸 美国 (United States) 02 (家宽)
-  - 🇺🇸 美国 (United States) 03 (移动家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 06 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 rules:
 - MATCH,PROXIES
