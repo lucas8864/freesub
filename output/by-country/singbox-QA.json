@@ -5,20 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01",
-      "server": "geo.shkola112.site",
+      "tag": "🇶🇦 卡塔尔 (Qatar) 01",
+      "server": "34.18.212.19",
       "server_port": 443,
-      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
+      "uuid": "b6f775c2-70fd-4247-8d12-82cac46fdd50",
       "tls": {
         "enabled": true,
-        "server_name": "geo.shkola112.site",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api-vless",
-        "headers": {
-          "Host": "geo.shkola112.site"
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "tT6wEOh8ASizQYNRb51QdDlxAksSJbEaBnbQBajc6SQ",
+          "short_id": "c5426331173ca15c"
         }
       }
     },
@@ -27,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇪 格鲁吉亚 (Georgia) 01"
+        "🇶🇦 卡塔尔 (Qatar) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇪 格鲁吉亚 (Georgia) 01"
+        "🇶🇦 卡塔尔 (Qatar) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
