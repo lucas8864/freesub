@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "wss.zazazuza.ru",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
