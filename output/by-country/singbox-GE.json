@@ -5,15 +5,20 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 01",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
+      "tag": "🇬🇪 格鲁吉亚 (Georgia) 01",
+      "server": "172.67.159.161",
+      "server_port": 443,
+      "uuid": "76ac91c5-ea82-4046-8ee7-2ffbb563ac94",
+      "tls": {
+        "enabled": true,
+        "server_name": "geo.shkola112.site",
+        "insecure": false
+      },
       "transport": {
         "type": "ws",
-        "path": "/ws",
+        "path": "/api-vless",
         "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
+          "Host": "geo.shkola112.site"
         }
       }
     },
@@ -22,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01"
+        "🇬🇪 格鲁吉亚 (Georgia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01"
+        "🇬🇪 格鲁吉亚 (Georgia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

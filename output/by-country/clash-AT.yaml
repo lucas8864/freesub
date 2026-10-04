@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇹 奥地利 (Austria) 01
-  server: 82.110.60.9
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇹 奥地利 (Austria) 02
   server: 31.77.227.6
   port: 52006
   udp: true
@@ -21,6 +14,13 @@ proxies:
   tls: true
   servername: bigdick.gamegrow.ru
   skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 02
+  server: apadana.gamingnet.ir
+  port: 57467
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-256-gcm
+  password: mp6qnmHU66oG5bhOinug4uzkh+1tLLyT5gMHIo5evUA=:wkU3pzc96Bl+VD5TwzaibINc0qLdHFD4wRaQMfK+7Sw=
 proxy-groups:
 - name: PROXIES
   type: select

@@ -4,16 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 01",
-      "server": "82.110.60.9",
-      "server_port": 19999,
-      "method": "aes-256-gcm",
-      "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
-    },
-    {
       "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02",
+      "tag": "🇦🇹 奥地利 (Austria) 01",
       "server": "31.77.227.6",
       "server_port": 52006,
       "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
@@ -23,6 +15,14 @@
         "server_name": "bigdick.gamegrow.ru",
         "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 02",
+      "server": "apadana.gamingnet.ir",
+      "server_port": 57467,
+      "method": "2022-blake3-aes-256-gcm",
+      "password": "mp6qnmHU66oG5bhOinug4uzkh+1tLLyT5gMHIo5evUA=:wkU3pzc96Bl+VD5TwzaibINc0qLdHFD4wRaQMfK+7Sw="
     },
     {
       "type": "selector",

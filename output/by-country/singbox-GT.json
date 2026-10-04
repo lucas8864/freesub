@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇾 马来西亚 (Malaysia) 01",
-      "server": "149.33.30.176",
+      "tag": "🇬🇹 GT 01",
+      "server": "185.47.254.251",
       "server_port": 443,
-      "uuid": "5fffad1b-10f0-41ff-abe7-e5a92696d5ef",
+      "uuid": "878fb7f7-fc65-465e-a352-17c7216c6f3d",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "gateway.icloud.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "rk_iTiKEWYK02oF8lCIXrVlM7pWMSYX-Iuaz6Eat5lI",
-          "short_id": "4b26322b354bd74e"
+          "public_key": "6-_ZidygR8PRt4gtHlGCAW-PPmjEIm7Wn7MZqJU1z1Q",
+          "short_id": "6c059ecfddf9b179"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇾 马来西亚 (Malaysia) 01"
+        "🇬🇹 GT 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇾 马来西亚 (Malaysia) 01"
+        "🇬🇹 GT 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
