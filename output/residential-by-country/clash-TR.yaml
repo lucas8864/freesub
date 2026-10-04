@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  server: tutaim.azad0namah.ir
-  port: 5566
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: 8NwabdWBXK1q1QaBhF69rw==:d8C1FciKoaFD6xRFbCYyFQ==
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
@@ -23,13 +16,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
 rules:
 - MATCH,PROXIES

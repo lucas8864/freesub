@@ -5,26 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01
-  server: 185.164.175.81
-  port: 19999
+  server: 91.201.65.122
+  port: 9097
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: aes-256-cfb
+  password: Sn5B7jTqr76aCJT8
 - name: 🇮🇹 意大利 (Italy) 02
   server: 204.216.216.23
   port: 10086
   udp: true
   type: vless
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
-- name: 🇮🇹 意大利 (Italy) 03
-  server: 89.41.172.85
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,7 +24,6 @@ proxy-groups:
   - AUTO
   - 🇮🇹 意大利 (Italy) 01
   - 🇮🇹 意大利 (Italy) 02
-  - 🇮🇹 意大利 (Italy) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -40,6 +31,5 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 (Italy) 01
   - 🇮🇹 意大利 (Italy) 02
-  - 🇮🇹 意大利 (Italy) 03
 rules:
 - MATCH,PROXIES
