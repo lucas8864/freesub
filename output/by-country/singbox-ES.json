@@ -14,23 +14,23 @@
     {
       "type": "shadowsocks",
       "tag": "🇪🇸 西班牙 (Spain) 02",
-      "server": "108.181.121.226",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "WSyL4XTwNsdv"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 03",
       "server": "140.174.184.5",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "qItG8SueYQcP"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03",
+      "server": "108.181.121.226",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "WSyL4XTwNsdv"
+    },
+    {
       "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 04",
-      "server": "assets-es.pleiades.codes",
+      "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
       "tls": {
@@ -48,6 +48,26 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 05",
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -55,7 +75,8 @@
         "🇪🇸 西班牙 (Spain) 01",
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04"
+        "🇪🇸 西班牙 (Spain) 04",
+        "🇪🇸 西班牙 (Spain) 05"
       ]
     },
     {
@@ -65,7 +86,8 @@
         "🇪🇸 西班牙 (Spain) 01",
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04"
+        "🇪🇸 西班牙 (Spain) 04",
+        "🇪🇸 西班牙 (Spain) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

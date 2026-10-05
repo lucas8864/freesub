@@ -5,18 +5,68 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇹 意大利 (Italy) 01
-  server: 91.201.65.122
-  port: 9097
+  server: 89.41.172.85
+  port: 22324
+  udp: true
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  alterId: 0
+  cipher: auto
+- name: 🇮🇹 意大利 (Italy) 02
+  server: 185.164.175.81
+  port: 19999
   udp: true
   type: ss
-  cipher: aes-256-cfb
-  password: Sn5B7jTqr76aCJT8
-- name: 🇮🇹 意大利 (Italy) 02
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇮🇹 意大利 (Italy) 03
   server: 204.216.216.23
   port: 10086
   udp: true
   type: vless
   uuid: 9f0285ee-20ca-4953-bcdb-86a920652923
+- name: 🇮🇹 意大利 (Italy) 04
+  server: 57.131.38.163
+  port: 2053
+  udp: true
+  type: vless
+  uuid: d4b08cd6-0903-411a-9dac-45dbdf5c9712
+  tls: true
+  reality-opts:
+    public-key: Ej2H5ucT7qKegYcT8wODdlxa-cLHr7F4hDVUHzAhcnc
+    short-id: 5b8a942318178e7b
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇮🇹 意大利 (Italy) 05
+  server: 116.204.164.30
+  port: 7443
+  udp: true
+  type: vless
+  uuid: d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+- name: 🇮🇹 意大利 (Italy) 06
+  server: 116.204.164.60
+  port: 7443
+  udp: true
+  type: vless
+  uuid: c676be7d-b481-4bba-88d0-65855e09dc67
+  tls: true
+  servername: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -24,6 +74,10 @@ proxy-groups:
   - AUTO
   - 🇮🇹 意大利 (Italy) 01
   - 🇮🇹 意大利 (Italy) 02
+  - 🇮🇹 意大利 (Italy) 03
+  - 🇮🇹 意大利 (Italy) 04
+  - 🇮🇹 意大利 (Italy) 05
+  - 🇮🇹 意大利 (Italy) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -31,5 +85,9 @@ proxy-groups:
   proxies:
   - 🇮🇹 意大利 (Italy) 01
   - 🇮🇹 意大利 (Italy) 02
+  - 🇮🇹 意大利 (Italy) 03
+  - 🇮🇹 意大利 (Italy) 04
+  - 🇮🇹 意大利 (Italy) 05
+  - 🇮🇹 意大利 (Italy) 06
 rules:
 - MATCH,PROXIES

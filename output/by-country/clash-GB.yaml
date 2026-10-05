@@ -5,14 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 51.38.71.51
-  port: 2083
+  server: 51.77.225.200
+  port: 8388
   udp: true
   type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+  cipher: chacha20-ietf-poly1305
+  password: zRZNBszYyWo5
 - name: 🇬🇧 英国 (United Kingdom) 02
-  server: 66.90.104.43
+  server: 149.102.149.207
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: LXchLsIwtCeUAUgu
+- name: 🇬🇧 英国 (United Kingdom) 03
+  server: 66.90.104.42
   port: 2083
   udp: true
   type: vless
@@ -20,62 +27,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 04
-  server: 149.102.149.207
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 146.70.61.18
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 06
-  server: 149.102.132.184
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: g5h5jleTRSyO3Rk4
-- name: 🇬🇧 英国 (United Kingdom) 07
-  server: 51.77.225.200
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: zRZNBszYyWo5
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 09
-  server: 23.81.34.204
-  port: 443
-  udp: true
-  type: vless
-  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
-    short-id: b19b017d6f453873
-  servername: speed.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 10
   server: 186.190.211.147
   port: 22324
   udp: true
@@ -83,52 +35,42 @@ proxies:
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
   alterId: 0
   cipher: auto
-- name: 🇬🇧 英国 (United Kingdom) 11
-  server: 186.190.211.188
+- name: 🇬🇧 英国 (United Kingdom) 05
+  server: 141.98.101.181
   port: 443
   udp: true
-  type: vless
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  tls: true
-  servername: 186.190.211.188
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 12
-  server: 146.70.23.32
-  port: 8080
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 06
+  server: 51.38.71.51
+  port: 2083
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 13
-  server: 57.129.132.223
-  port: 80
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:2tFqykGqZ101XW11f6iRiERnPycFAjjYq0y2zUYhKho=
+- name: 🇬🇧 英国 (United Kingdom) 07
+  server: 149.102.132.184
+  port: 443
   udp: true
-  type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 14
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 08
+  server: 158.173.24.73
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 09
   server: 149.102.149.207
   port: 443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: LXchLsIwtCeUAUgu
-- name: 🇬🇧 英国 (United Kingdom) 15
-  server: 87.192.47.10
-  port: 52006
-  udp: true
-  type: vless
-  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: grok.setlisting.ru
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 16
+- name: 🇬🇧 英国 (United Kingdom) 10
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -140,7 +82,34 @@ proxies:
     short-id: d051f678212f9d54
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 17
+- name: 🇬🇧 英国 (United Kingdom) 11
+  server: 149.102.132.184
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: g5h5jleTRSyO3Rk4
+- name: 🇬🇧 英国 (United Kingdom) 12
+  server: 23.81.34.204
+  port: 443
+  udp: true
+  type: vless
+  uuid: 99955907-9070-46f0-a200-9c7a0b9d74fe
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J_p_dxR8dIKaezk1_Ins5MZ7e4dqgrr2n9690vVuQ2s
+    short-id: b19b017d6f453873
+  servername: speed.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 13
+  server: 146.70.23.32
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 14
   server: 66.90.105.211
   port: 2083
   udp: true
@@ -149,7 +118,70 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vless
+- name: 🇬🇧 英国 (United Kingdom) 15
+  server: 95.85.224.51
+  port: 443
+  udp: true
+  type: vless
+  uuid: 342ab7e4-5a89-0001-8809-304120d4aa83
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WWeAHWUVD-phmnjNJ823cer0c4CMIbEs08AhsuEZmDc
+    short-id: a696de84963656de
+  servername: max.ru
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 16
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 17
+  server: aksai.org
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aksai.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
 - name: 🇬🇧 英国 (United Kingdom) 18
+  server: 87.192.47.10
+  port: 52006
+  udp: true
+  type: vless
+  uuid: bc659d88-a1e0-4c65-a49a-7b51b26a7a7f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: grok.setlisting.ru
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 19
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vmess
+  uuid: a25cbf11-2908-4a1b-a3a8-9a571777dca3
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: google.com
+- name: 🇬🇧 英国 (United Kingdom) 20
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -160,20 +192,8 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
     short-id: 9922313fffed1c63
   servername: www.apple.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 19
-  server: 46.250.240.80
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 948df76f-505d-4608-9c76-a933ee3ccc76
-  tls: true
-  reality-opts:
-    public-key: CYFeysLf--_IVhxQOCd3ZxLrAVWFFOkJzvIGHOVXN3E
-    short-id: 4cc9dc65f7770115
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇬🇧 英国 (United Kingdom) 20
+  client-fingerprint: random
+- name: 🇬🇧 英国 (United Kingdom) 21
   server: 186.190.211.67
   port: 443
   udp: true
@@ -189,7 +209,7 @@ proxies:
     path: /linkvws
     headers:
       Host: pahobac.org
-- name: 🇬🇧 英国 (United Kingdom) 21
+- name: 🇬🇧 英国 (United Kingdom) 22
   server: 87.239.249.137
   port: 443
   udp: true
@@ -202,17 +222,30 @@ proxies:
     short-id: 91af08b1ce1f
   servername: www.foxsports.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 22
-  server: 107.181.151.241
+- name: 🇬🇧 英国 (United Kingdom) 23
+  server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
+  uuid: ee39fb11-56a3-4ee7-9e7c-35a4235bd30e
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
-    short-id: 2a80364e93d9
+    short-id: b27ba098687b
+  servername: www.tradingview.com
+  client-fingerprint: chrome
+- name: 🇬🇧 英国 (United Kingdom) 24
+  server: server.slavkiti.monster
+  port: 443
+  udp: true
+  type: vless
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: 8325360e8bd2
   servername: www.foxsports.com
   client-fingerprint: chrome
 proxy-groups:
@@ -242,6 +275,8 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 20
   - 🇬🇧 英国 (United Kingdom) 21
   - 🇬🇧 英国 (United Kingdom) 22
+  - 🇬🇧 英国 (United Kingdom) 23
+  - 🇬🇧 英国 (United Kingdom) 24
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -269,5 +304,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 20
   - 🇬🇧 英国 (United Kingdom) 21
   - 🇬🇧 英国 (United Kingdom) 22
+  - 🇬🇧 英国 (United Kingdom) 23
+  - 🇬🇧 英国 (United Kingdom) 24
 rules:
 - MATCH,PROXIES

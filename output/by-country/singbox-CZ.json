@@ -4,23 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "85.117.235.50",
+      "server": "188.114.96.3",
       "server_port": 443,
-      "uuid": "f4d71fd6-1c25-4748-836b-1dbda9268039",
-      "flow": "xtls-rprx-vision",
+      "password": "Telegram_healer_config",
       "tls": {
         "enabled": true,
-        "server_name": "cz1.animeteka.info",
+        "server_name": "cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PmdZ2ETkHc0zjYcs22xT_wyZk5fEpX7mg7RP396HBBc",
-          "short_id": "232b1b09e45325a4"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tr/3F3fUAGJks9doKvjt8AREH4QR?ed=2560",
+        "headers": {
+          "Host": "cdtfrgmtcsbaarmz-9owpz7g4.f9w96pzky6un-covzx6b-hzlm80woj2.workers.dev"
         }
       }
     },

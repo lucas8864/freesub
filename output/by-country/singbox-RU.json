@@ -6,20 +6,112 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "31.76.34.216",
-      "server_port": 443,
-      "uuid": "94def50e-5f3c-4e4c-9719-3325f42d2131",
-      "flow": "xtls-rprx-vision",
+      "server": "188.114.97.8",
+      "server_port": 8443,
+      "uuid": "d4d2d3f3-9dec-4e8f-8daf-145ecac96e66",
       "tls": {
         "enabled": true,
-        "server_name": "ru-c-1.minzt.su",
+        "server_name": "cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=",
+        "headers": {
+          "Host": "crimson-leaf-7e45.hzhduuebfjdcb.workers.dev"
+        },
+        "max_early_data": 2560,
+        "early_data_header_name": "Sec-WebSocket-Protocol"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 02",
+      "server": "194.38.11.86",
+      "server_port": 65443,
+      "method": "aes-256-cfb",
+      "password": "7eadc6dbe2ae"
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03",
+      "server": "45.12.75.242",
+      "server_port": 26424,
+      "uuid": "633f424e-2b11-48da-a6b3-a849dd71456f",
+      "tls": {
+        "enabled": true,
+        "server_name": "ya.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00",
+          "public_key": "l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0",
+          "short_id": "23103e1e"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
+      "server": "89.23.117.99",
+      "server_port": 443,
+      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-1-9.imnotgay.party",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "176.57.218.235",
+      "server_port": 443,
+      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-1-8.imnotgay.party",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06",
+      "server": "185.104.114.92",
+      "server_port": 443,
+      "uuid": "65616081-1772-49d7-a793-42bc13d22f69",
+      "tls": {
+        "enabled": true,
+        "server_name": "ru-1-5.imnotgay.party",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg",
           "short_id": ""
         }
       }
@@ -29,14 +121,24 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇺 俄罗斯 (Russia) 01"
+        "🇷🇺 俄罗斯 (Russia) 01",
+        "🇷🇺 俄罗斯 (Russia) 02",
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04",
+        "🇷🇺 俄罗斯 (Russia) 05",
+        "🇷🇺 俄罗斯 (Russia) 06"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇺 俄罗斯 (Russia) 01"
+        "🇷🇺 俄罗斯 (Russia) 01",
+        "🇷🇺 俄罗斯 (Russia) 02",
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04",
+        "🇷🇺 俄罗斯 (Russia) 05",
+        "🇷🇺 俄罗斯 (Russia) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

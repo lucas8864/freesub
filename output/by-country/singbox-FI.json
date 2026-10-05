@@ -4,8 +4,24 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01",
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "45.149.114.171",
+      "server_port": 777,
+      "method": "chacha20-ietf-poly1305",
+      "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03",
       "server": "65.108.3.59",
       "server_port": 443,
       "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
@@ -26,7 +42,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "tag": "🇫🇮 芬兰 (Finland) 04",
       "server": "144.31.212.253",
       "server_port": 443,
       "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
@@ -37,12 +53,66 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 05",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 06",
+      "server": "131.123.13.93",
+      "server_port": 443,
+      "uuid": "55ccbeb5-0bf4-4e4d-afcb-23c038e73e00",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "1mcfn.67resserv67.info",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "rj3rvl7AGOd0NOPrX6h2c1auXGnCBJTPMDeT86AMvBA",
+          "short_id": "29455a3a790acbd0"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 07",
+      "server": "155.212.137.105",
+      "server_port": 8443,
+      "uuid": "8365898d-a770-471c-af85-c228b8b57af3",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ads.x5.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "2n94MwFJqLcx_sXXNi_bY1VSGN7RahvPTnvXtjY6pUA",
+          "short_id": ""
+        }
+      }
     },
     {
       "type": "selector",
@@ -51,7 +121,11 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03"
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05",
+        "🇫🇮 芬兰 (Finland) 06",
+        "🇫🇮 芬兰 (Finland) 07"
       ]
     },
     {
@@ -60,7 +134,11 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03"
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05",
+        "🇫🇮 芬兰 (Finland) 06",
+        "🇫🇮 芬兰 (Finland) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

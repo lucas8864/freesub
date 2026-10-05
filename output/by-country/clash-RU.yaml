@@ -5,28 +5,93 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 31.76.34.216
+  server: 188.114.97.8
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d4d2d3f3-9dec-4e8f-8daf-145ecac96e66
+  tls: true
+  servername: cRIMSON-LeAf-7E45.hzhdUuEBFjDCB.workERs.DEv
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiODgwQ1AwWDV0MnFTRWE1cCIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: crimson-leaf-7e45.hzhduuebfjdcb.workers.dev
+- name: 🇷🇺 俄罗斯 (Russia) 02
+  server: 194.38.11.86
+  port: 65443
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 7eadc6dbe2ae
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 89.23.117.99
   port: 443
   udp: true
   type: vless
-  uuid: 94def50e-5f3c-4e4c-9719-3325f42d2131
-  flow: xtls-rprx-vision
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
   tls: true
   reality-opts:
-    public-key: XrgbY2hKJQG8QOZO2J1pGmZsbvjSsSWoM9iULIMGK00
-  servername: ru-c-1.minzt.su
-  client-fingerprint: ''
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: ru-1-9.imnotgay.party
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 176.57.218.235
+  port: 443
+  udp: true
+  type: vless
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  tls: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: ru-1-8.imnotgay.party
+  client-fingerprint: edge
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 185.104.114.92
+  port: 443
+  udp: true
+  type: vless
+  uuid: 65616081-1772-49d7-a793-42bc13d22f69
+  tls: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: ru-1-5.imnotgay.party
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇷🇺 俄罗斯 (Russia) 02
+  - 🇷🇺 俄罗斯 (Russia) 03
+  - 🇷🇺 俄罗斯 (Russia) 04
+  - 🇷🇺 俄罗斯 (Russia) 05
+  - 🇷🇺 俄罗斯 (Russia) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01
+  - 🇷🇺 俄罗斯 (Russia) 02
+  - 🇷🇺 俄罗斯 (Russia) 03
+  - 🇷🇺 俄罗斯 (Russia) 04
+  - 🇷🇺 俄罗斯 (Russia) 05
+  - 🇷🇺 俄罗斯 (Russia) 06
 rules:
 - MATCH,PROXIES

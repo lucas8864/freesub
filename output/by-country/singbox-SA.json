@@ -5,22 +5,25 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇿 阿塞拜疆 (Azerbaijan) 01",
-      "server": "az.xelnivo.ir",
-      "server_port": 45642,
-      "uuid": "688fcedc-c730-47fb-9fc0-b5962a38788e",
+      "tag": "🇸🇦 沙特 (Saudi Arabia) 01",
+      "server": "81.208.170.142",
+      "server_port": 1500,
+      "uuid": "e332f028-d343-5b44-8016-b3130f39e133",
       "tls": {
         "enabled": true,
-        "server_name": "play.google.com",
+        "server_name": "www.ebay.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "rlWw1txOKfyTIegqGc5YUQo1CxqZEXBPeQZppA6H014",
-          "short_id": "8f798d413a5dbf01"
+          "public_key": "VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE",
+          "short_id": "775eb6408888248e"
         }
+      },
+      "transport": {
+        "type": "grpc"
       }
     },
     {
@@ -28,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01"
+        "🇸🇦 沙特 (Saudi Arabia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇿 阿塞拜疆 (Azerbaijan) 01"
+        "🇸🇦 沙特 (Saudi Arabia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
