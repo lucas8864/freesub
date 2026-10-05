@@ -5,23 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇦🇶 AQ 01",
-      "server": "2.27.26.128",
-      "server_port": 443,
-      "uuid": "8710a337-f504-4b75-8989-224cfd803b2d",
+      "tag": "🇦🇹 奥地利 (Austria) 01 (家宽)",
+      "server": "31.77.227.6",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "aq-1.global-cdn.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "safari"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8",
-          "short_id": "90f9d05bf95cb335"
-        }
+        "server_name": "bigdick.gamegrow.ru",
+        "insecure": false
       }
     },
     {
@@ -29,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇶 AQ 01"
+        "🇦🇹 奥地利 (Austria) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇶 AQ 01"
+        "🇦🇹 奥地利 (Austria) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

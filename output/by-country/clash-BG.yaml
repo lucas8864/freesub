@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇶 AQ 01
-  server: 2.27.26.128
+- name: 🇧🇬 保加利亚 (Bulgaria) 01
+  server: 193.148.59.178
   port: 443
   udp: true
   type: vless
-  uuid: 8710a337-f504-4b75-8989-224cfd803b2d
+  uuid: 20d7c485-5d24-49b5-a5cc-bb7a7daf9908
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8
-    short-id: 90f9d05bf95cb335
-  servername: aq-1.global-cdn.org
-  client-fingerprint: safari
+    public-key: -GMpCber8qtrKzJbwvpLcwlIhOy-5zS66u_x9lLvIjE
+    short-id: e3daad69
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇶 AQ 01
+  - 🇧🇬 保加利亚 (Bulgaria) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇶 AQ 01
+  - 🇧🇬 保加利亚 (Bulgaria) 01
 rules:
 - MATCH,PROXIES

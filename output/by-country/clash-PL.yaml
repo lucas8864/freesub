@@ -5,34 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 95.85.254.221
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
-  tls: true
-  reality-opts:
-    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
-  servername: samsung.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 138.124.104.2
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3464a5bd-6a17-4ac3-8ca9-86a54c1aac7b
-  tls: true
-  reality-opts:
-    public-key: tKAYeVSM4yLXiOdKLMFP751fhII6YyqfbMXy_MSuejI
-  servername: samsung.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: vless-grpc
-- name: 🇵🇱 波兰 (Poland) 03
   server: 70.34.255.101
   port: 80
   udp: true
@@ -41,7 +13,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇵🇱 波兰 (Poland) 04
+- name: 🇵🇱 波兰 (Poland) 02
   server: 70.34.252.154
   port: 80
   udp: true
@@ -50,64 +22,33 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 50.7.249.138
+- name: 🇵🇱 波兰 (Poland) 03
+  server: 202.78.163.237
   port: 443
   udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: polkadotnewone.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 06
-  server: 83.168.95.145
-  port: 443
-  udp: true
-  type: vless
-  uuid: f28e0ce1-ed75-4e90-b069-5215a80dfb4a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: AcuvO982QLzf76fVydfSuJIiF5520rmj7AxpaxyRwUg
-    short-id: d345ad4657adeef9
-  servername: google.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 07
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04
   server: admin.wwwinternetvideo.click
   port: 443
   udp: true
   type: hysteria2
   password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
   sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 08
-  server: 50.7.249.155
-  port: 443
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 05
+  server: pl.flen-vpn.xyz
+  port: 8443
   udp: true
   type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
   tls: true
-  servername: poland-good.failspace.top
+  servername: pl.flen-vpn.xyz
   skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10
-  server: 31.77.13.19
+- name: 🇵🇱 波兰 (Poland) 06
+  server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
   type: vless
@@ -118,63 +59,7 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 11
-  server: pl999.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl999.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 12
-  server: 83.168.107.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
-    short-id: c56d4f1c
-  servername: google.com
-  client-fingerprint: safari
-- name: 🇵🇱 波兰 (Poland) 13
-  server: pol-pol-poland.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pol-pol-poland.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 14
-  server: 202.78.163.237
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 15
-  server: 2.26.54.13
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 95909398-3902-495b-9670-63f1b13becde
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: dBvFkg2zny545Ws6H_LXKEohOYV2MW_zACRrRQE1IUg
-    short-id: f9d89d4a
-  servername: files.meridian-labs.net
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 16
+- name: 🇵🇱 波兰 (Poland) 07
   server: 188.114.96.19
   port: 80
   udp: true
@@ -199,15 +84,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05
   - 🇵🇱 波兰 (Poland) 06
   - 🇵🇱 波兰 (Poland) 07
-  - 🇵🇱 波兰 (Poland) 08
-  - 🇵🇱 波兰 (Poland) 09
-  - 🇵🇱 波兰 (Poland) 10
-  - 🇵🇱 波兰 (Poland) 11
-  - 🇵🇱 波兰 (Poland) 12
-  - 🇵🇱 波兰 (Poland) 13
-  - 🇵🇱 波兰 (Poland) 14
-  - 🇵🇱 波兰 (Poland) 15
-  - 🇵🇱 波兰 (Poland) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -220,14 +96,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05
   - 🇵🇱 波兰 (Poland) 06
   - 🇵🇱 波兰 (Poland) 07
-  - 🇵🇱 波兰 (Poland) 08
-  - 🇵🇱 波兰 (Poland) 09
-  - 🇵🇱 波兰 (Poland) 10
-  - 🇵🇱 波兰 (Poland) 11
-  - 🇵🇱 波兰 (Poland) 12
-  - 🇵🇱 波兰 (Poland) 13
-  - 🇵🇱 波兰 (Poland) 14
-  - 🇵🇱 波兰 (Poland) 15
-  - 🇵🇱 波兰 (Poland) 16
 rules:
 - MATCH,PROXIES

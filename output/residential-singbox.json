@@ -5,38 +5,35 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
-      "server": "212.74.39.235",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
+      "tag": "🇺🇸 美国 (United States) 01 (家宽)",
+      "server": "172.64.32.108",
+      "server_port": 2082,
+      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560security=tls",
+        "headers": {
+          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 02 (家宽)",
-      "server": "129.151.64.169",
-      "server_port": 31867,
-      "uuid": "f7ff2e67-b687-4098-a28a-d102c27ba19c",
+      "tag": "🇦🇹 奥地利 (Austria) 02 (家宽)",
+      "server": "31.77.227.6",
+      "server_port": 52006,
+      "uuid": "bc659d88-a1e0-076c-a49a-7b51b26a7a7f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev"
-        }
+        "server_name": "bigdick.gamegrow.ru",
+        "insecure": false
       }
     },
     {
       "type": "tuic",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-      "server": "tw1.dexlos.com",
+      "server": "tw6.dexlos.com",
       "server_port": 8080,
       "uuid": "D7286728-678E-443B-B76B-B699654C66DD",
       "password": "D7286728-678E-443B-B76B-B699654C66DD",
@@ -44,7 +41,7 @@
       "udp_relay_mode": "native",
       "tls": {
         "enabled": true,
-        "server_name": "tw1.dexlos.com",
+        "server_name": "tw6.dexlos.com",
         "insecure": true,
         "alpn": [
           "h3"
@@ -52,31 +49,40 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-      "server": "104.20.36.205",
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+      "server": "36ea20ad-tmrpc0-tt8rqc-jjv2.nw4.hyhuawei.com",
       "server_port": 443,
-      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
+      "password": "31676725-b0fd-fed2-c857-2da8ce5a6e4f",
       "tls": {
         "enabled": true,
-        "server_name": "argo6.5671234.xyz",
-        "insecure": false,
+        "server_name": "36ea20ad-tmrpc0-tt8rqc-jjv2.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/e8e2cecb6188f7fb",
-        "headers": {
-          "Host": "argo6.5671234.xyz"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
         }
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇸🇬 新加坡 (Singapore) 05 (家宽)",
+      "tag": "🇸🇬 新加坡 (Singapore) 06 (家宽)",
       "server": "s3.huhiuh.space",
       "server_port": 18642,
       "password": "user317_windows:c70565e9-a99f-40ef-b96c-469a3949eed2",
@@ -87,26 +93,66 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
+      "server": "argo6.5671234.xyz",
+      "server_port": 443,
+      "uuid": "08aaab35-a42d-4755-a03e-20c18cb1b3e8",
+      "tls": {
+        "enabled": true,
+        "server_name": "argo6.5671234.xyz",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e8e2cecb6188f7fb"
+      }
+    },
+    {
+      "type": "tuic",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 08 (家宽)",
+      "server": "tw3.dexlos.com",
+      "server_port": 8080,
+      "uuid": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "password": "8A9905B7-801B-41AF-BFC9-2034212770F6",
+      "congestion_control": "bbr",
+      "udp_relay_mode": "native",
+      "tls": {
+        "enabled": true,
+        "server_name": "tw3.dexlos.com",
+        "insecure": true,
+        "alpn": [
+          "h3"
+        ]
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
-        "🇯🇵 日本 (Japan) 02 (家宽)",
+        "🇺🇸 美国 (United States) 01 (家宽)",
+        "🇦🇹 奥地利 (Austria) 02 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-        "🇸🇬 新加坡 (Singapore) 05 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+        "🇸🇬 新加坡 (Singapore) 06 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 08 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
-        "🇯🇵 日本 (Japan) 02 (家宽)",
+        "🇺🇸 美国 (United States) 01 (家宽)",
+        "🇦🇹 奥地利 (Austria) 02 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
-        "🇸🇬 新加坡 (Singapore) 05 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 05 (家宽)",
+        "🇸🇬 新加坡 (Singapore) 06 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 07 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 08 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

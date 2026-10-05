@@ -22,13 +22,6 @@
     {
       "type": "vless",
       "tag": "🇮🇹 意大利 (Italy) 03",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 04",
       "server": "57.131.38.163",
       "server_port": 2053,
       "uuid": "d4b08cd6-0903-411a-9dac-45dbdf5c9712",
@@ -47,48 +40,31 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 05",
-      "server": "116.204.164.30",
-      "server_port": 7443,
-      "uuid": "d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f",
-      "tls": {
-        "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇮🇹 意大利 (Italy) 04",
+      "server": "91.201.65.122",
+      "server_port": 9097,
+      "method": "aes-256-cfb",
+      "password": "Sn5B7jTqr76aCJT8"
     },
     {
       "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 06",
-      "server": "116.204.164.60",
-      "server_port": 7443,
-      "uuid": "c676be7d-b481-4bba-88d0-65855e09dc67",
+      "tag": "🇮🇹 意大利 (Italy) 05",
+      "server": "82.118.16.187",
+      "server_port": 443,
+      "uuid": "dc2259c4-388e-4285-ba18-df619b6672b6",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
-        "insecure": false,
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
+          "fingerprint": ""
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "R5ycsjJ-v024902dMSqTsSdqxUwCFEXMebdBEWFt9VU",
+          "short_id": "cd6065902eea7a02"
         }
       }
     },
@@ -101,8 +77,7 @@
         "🇮🇹 意大利 (Italy) 02",
         "🇮🇹 意大利 (Italy) 03",
         "🇮🇹 意大利 (Italy) 04",
-        "🇮🇹 意大利 (Italy) 05",
-        "🇮🇹 意大利 (Italy) 06"
+        "🇮🇹 意大利 (Italy) 05"
       ]
     },
     {
@@ -113,8 +88,7 @@
         "🇮🇹 意大利 (Italy) 02",
         "🇮🇹 意大利 (Italy) 03",
         "🇮🇹 意大利 (Italy) 04",
-        "🇮🇹 意大利 (Italy) 05",
-        "🇮🇹 意大利 (Italy) 06"
+        "🇮🇹 意大利 (Italy) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
