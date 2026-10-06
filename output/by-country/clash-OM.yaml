@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01
-  server: us3.xiaoliyu.cyou
-  port: 18333
+- name: 🇴🇲 OM 01
+  server: w7k2mf.5tencent.asia
+  port: 35016
   udp: true
-  type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: us3.xiaoliyu.cyou
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-128-gcm
+  password: 6ee847c4-04ef-4786-9720-eb6f73fbd80b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇴🇲 OM 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇴🇲 OM 01
 rules:
 - MATCH,PROXIES

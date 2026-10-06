@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 01",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "tag": "🇴🇲 OM 01",
+      "server": "w7k2mf.5tencent.asia",
+      "server_port": 35016,
+      "method": "aes-128-gcm",
+      "password": "6ee847c4-04ef-4786-9720-eb6f73fbd80b"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01"
+        "🇴🇲 OM 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01"
+        "🇴🇲 OM 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

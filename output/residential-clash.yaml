@@ -4,8 +4,15 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  server: 104.20.36.205
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: 172.66.152.4
   port: 443
   udp: true
   type: vless
@@ -18,29 +25,32 @@ proxies:
     path: /e8e2cecb6188f7fb
     headers:
       Host: argo6.5671234.xyz
-- name: 🇦🇹 奥地利 (Austria) 02 (家宽)
-  server: 31.77.227.6
-  port: 52006
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  server: hinet1.2yly.com
+  port: 24215
   udp: true
   type: vless
-  uuid: bc659d88-a1e0-076c-a49a-7b51b26a7a7f
-  flow: xtls-rprx-vision
+  uuid: 19d5a678-8396-4e3b-93da-ece618d0e83a
   tls: true
-  servername: bigdick.gamegrow.ru
-  skip-cert-verify: false
+  reality-opts:
+    public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  - 🇦🇹 奥地利 (Austria) 02 (家宽)
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  - 🇦🇹 奥地利 (Austria) 02 (家宽)
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 rules:
 - MATCH,PROXIES

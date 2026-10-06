@@ -4,32 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇾 塞浦路斯 (Cyprus) 01
-  server: 5.253.28.240
-  port: 2443
+- name: 🇸🇦 沙特 (Saudi Arabia) 01
+  server: 81.208.170.142
+  port: 1500
   udp: true
   type: vless
-  uuid: 5e679ccd-1586-4d5f-b87b-48251046cad8
+  uuid: e332f028-d343-5b44-8016-b3130f39e133
   tls: true
   reality-opts:
-    public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
-    short-id: 92c32de179e5d908
-  servername: deepl.com
+    public-key: VQxVgczORkbSNdDrkNOYs6zMBINpViztTKDuWCeQsVE
+    short-id: 775eb6408888248e
+  servername: www.ebay.com
   client-fingerprint: chrome
   network: grpc
   grpc-opts:
-    grpc-service-name: rex-eb0bf76b710ce763
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇾 塞浦路斯 (Cyprus) 01
+  - 🇸🇦 沙特 (Saudi Arabia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇾 塞浦路斯 (Cyprus) 01
+  - 🇸🇦 沙特 (Saudi Arabia) 01
 rules:
 - MATCH,PROXIES

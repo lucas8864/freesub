@@ -4,53 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇭 泰国 (Thailand) 01",
-      "server": "103.86.49.57",
-      "server_port": 80,
-      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇭 泰国 (Thailand) 02",
-      "server": "175.29.23.179",
-      "server_port": 443,
-      "uuid": "d342d11e-d424-4583-b36e-524ab1f0afa4",
-      "tls": {
-        "enabled": true,
-        "server_name": "fzo5i.ir46.90k.hh.ov0.kdns.fr",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/glasspanel/guest000_0_5de14443985f/",
-        "headers": {
-          "Host": "fzo5i.ir46.90k.hh.ov0.kdns.fr"
-        }
-      }
+      "server": "119.46.51.45",
+      "server_port": 37515,
+      "uuid": "9b76bc31-17a5-4454-934a-8d5fb602cd70",
+      "security": "auto"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇭 泰国 (Thailand) 01",
-        "🇹🇭 泰国 (Thailand) 02"
+        "🇹🇭 泰国 (Thailand) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇭 泰国 (Thailand) 01",
-        "🇹🇭 泰国 (Thailand) 02"
+        "🇹🇭 泰国 (Thailand) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
