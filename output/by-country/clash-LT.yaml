@@ -18,6 +18,40 @@ proxies:
   type: ss
   cipher: aes-256-cfb
   password: xaupMUvhptwxdDUg
+- name: 🇱🇹 立陶宛 (Lithuania) 03
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
+- name: 🇱🇹 立陶宛 (Lithuania) 04
+  server: 195.238.126.20
+  port: 9086
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 37Z4TFCYhfxcpc9Q
+- name: 🇱🇹 立陶宛 (Lithuania) 05
+  server: 195.238.126.20
+  port: 9068
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: mwgRg9hRq3b4Qnwb
+- name: 🇱🇹 立陶宛 (Lithuania) 06
+  server: 62.77.158.1
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2eceaf2b-a775-5a9c-9990-dad2b3660fb6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sVhkyiMXvpofflCdSszxQmsqOXV1kg1Ldxq1a9mOPjs
+    short-id: 6a
+  servername: online.1c.ru
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -25,6 +59,10 @@ proxy-groups:
   - AUTO
   - 🇱🇹 立陶宛 (Lithuania) 01
   - 🇱🇹 立陶宛 (Lithuania) 02
+  - 🇱🇹 立陶宛 (Lithuania) 03
+  - 🇱🇹 立陶宛 (Lithuania) 04
+  - 🇱🇹 立陶宛 (Lithuania) 05
+  - 🇱🇹 立陶宛 (Lithuania) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -32,5 +70,9 @@ proxy-groups:
   proxies:
   - 🇱🇹 立陶宛 (Lithuania) 01
   - 🇱🇹 立陶宛 (Lithuania) 02
+  - 🇱🇹 立陶宛 (Lithuania) 03
+  - 🇱🇹 立陶宛 (Lithuania) 04
+  - 🇱🇹 立陶宛 (Lithuania) 05
+  - 🇱🇹 立陶宛 (Lithuania) 06
 rules:
 - MATCH,PROXIES
