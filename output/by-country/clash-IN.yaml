@@ -28,22 +28,6 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 03
-  server: 185.67.125.90
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: aksai.org
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /linkvws
-    headers:
-      Host: aksai.org
-- name: 🇮🇳 印度 (India) 04
   server: 172.105.39.124
   port: 7002
   udp: true
@@ -58,7 +42,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
-  - 🇮🇳 印度 (India) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +50,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
-  - 🇮🇳 印度 (India) 04
 rules:
 - MATCH,PROXIES

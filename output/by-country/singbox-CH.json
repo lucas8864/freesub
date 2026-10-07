@@ -26,19 +26,7 @@
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 02",
-      "server": "140.238.213.114",
-      "server_port": 50160,
-      "password": "84a506ca5aca505696a454d828420b3f",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03",
-      "server": "82.38.64.235",
+      "server": "82.38.64.229",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
@@ -49,7 +37,7 @@
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
@@ -62,8 +50,7 @@
         "auto",
         "🇨🇭 瑞士 (Switzerland) 01",
         "🇨🇭 瑞士 (Switzerland) 02",
-        "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04"
+        "🇨🇭 瑞士 (Switzerland) 03"
       ]
     },
     {
@@ -72,8 +59,7 @@
       "outbounds": [
         "🇨🇭 瑞士 (Switzerland) 01",
         "🇨🇭 瑞士 (Switzerland) 02",
-        "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04"
+        "🇨🇭 瑞士 (Switzerland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
