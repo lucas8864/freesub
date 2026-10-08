@@ -5,19 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 02
   server: 140.174.184.5
   port: 8388
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: qItG8SueYQcP
+- name: 🇪🇸 西班牙 (Spain) 02
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
 - name: 🇪🇸 西班牙 (Spain) 03
   server: 212.227.235.66
   port: 2053
@@ -44,37 +44,18 @@ proxies:
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
 - name: 🇪🇸 西班牙 (Spain) 05
-  server: 185.174.137.172
-  port: 8446
-  udp: true
-  type: hysteria2
-  password: e9dc02d400b67c727aca1620
-  sni: 185.174.137.172
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 06
-  server: 46.28.71.247
+  server: 83.147.18.3
   port: 443
   udp: true
   type: vless
-  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
-    short-id: 0dfc23fe80778c00
+    public-key: 3iVJAIGPx6JMlhlRmfpGrHkSmLpHJ4CPvBBH7KsFrFA
+    short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 07
-  server: 154.62.226.101
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.surfweb.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -85,8 +66,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,7 +76,5 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
-  - 🇪🇸 西班牙 (Spain) 06
-  - 🇪🇸 西班牙 (Spain) 07
 rules:
 - MATCH,PROXIES

@@ -4,98 +4,58 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "5.175.178.30",
-      "server_port": 443,
-      "uuid": "8fc806fa-350b-4548-937a-2bf35f7fe7eb",
-      "flow": "xtls-rprx-vision",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
       "tls": {
         "enabled": true,
-        "server_name": "ee1.sky-vault.top",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_KTsOFhGnC0W28ZqO8_FApozMp7tJ9cVBTLKLAA_OR0",
-          "short_id": "ae64c9b46bff174a"
-        }
+        "server_name": "russiapower.accesscam.org",
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
       "server": "94.183.170.135",
-      "server_port": 443,
+      "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "estproxy4.lockdwn.com"
+      "tls": {
+        "enabled": true,
+        "server_name": "estproxy4.lockdwn.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
-      "server": "94.183.170.135",
-      "server_port": 8443,
-      "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
+      "server": "93.89.220.37",
+      "server_port": 443,
+      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "estproxy4.lockdwn.com",
-        "insecure": false
+        "server_name": "ibm.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
+          "short_id": "e88cb983f3c97528"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
-      "server": "95.85.242.166",
-      "server_port": 443,
-      "uuid": "2b781b4a-5942-0018-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-root.sworkingvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 05",
-      "server": "95.85.242.160",
-      "server_port": 443,
-      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-root.sworkingvpn.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "AhLy7ha7FF2EQfu-3SxOFKUwExyHActYPHtyv82KNCI",
-          "short_id": "15bcc0a77c3cacdf"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06",
-      "server": "77.72.85.246",
+      "server": "77.72.85.247",
       "server_port": 8443,
       "uuid": "6c713691-3ca2-4446-ad25-113d1bed6b03",
       "tls": {
@@ -104,7 +64,11 @@
         "insecure": false,
         "alpn": [
           "http/1.1"
-        ]
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
@@ -122,9 +86,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05",
-        "🇪🇪 爱沙尼亚 (Estonia) 06"
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ]
     },
     {
@@ -134,9 +96,7 @@
         "🇪🇪 爱沙尼亚 (Estonia) 01",
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05",
-        "🇪🇪 爱沙尼亚 (Estonia) 06"
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

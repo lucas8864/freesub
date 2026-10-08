@@ -14,6 +14,14 @@ proxies:
   ws-opts:
     path: /
 - name: 🇵🇱 波兰 (Poland) 02
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03
   server: 70.34.255.101
   port: 80
   udp: true
@@ -22,24 +30,14 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇵🇱 波兰 (Poland) 03
-  server: 81.90.20.200
-  port: 443
-  udp: true
-  type: vless
-  uuid: 51c14658-8873-4454-9383-c41fc80bde4b
-  flow: xtls-rprx-vision
-  tls: true
-  servername: pl.pupoe.sbs
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 04
-  server: 202.78.163.237
+  server: admin.wwwinternetvideo.click
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: cheerful-swan.rooster465.autos
-  skip-cert-verify: false
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: true
 - name: 🇵🇱 波兰 (Poland) 05
   server: 177.1.192.74
   port: 443
@@ -52,7 +50,7 @@ proxies:
     public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
     short-id: 770618b6
   servername: addons.mozilla.org
-  client-fingerprint: randomized
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 06
   server: 177.1.192.72
   port: 443
@@ -65,39 +63,15 @@ proxies:
     public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
     short-id: 46455ff0
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 07
-  server: 144.31.49.47
+  server: 202.78.163.237
   port: 443
   udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 08
-  server: 64.176.73.20
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5b5e4cbf-2366-499a-8327-0cd9918c687d
-  flow: xtls-rprx-vision
-  tls: true
-  servername: storage.surfweb.club
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 09
-  server: 83.168.107.220
-  port: 443
-  udp: true
-  type: vless
-  uuid: b1813cbd-831f-4cb3-baf8-5bc0cc8298bc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: s0lbZ5BO3ctZjE8DzsXkNL0NvLl6FgLG6532NQzXigo
-    short-id: c56d4f1c
-  servername: google.com
-  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
@@ -110,8 +84,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05
   - 🇵🇱 波兰 (Poland) 06
   - 🇵🇱 波兰 (Poland) 07
-  - 🇵🇱 波兰 (Poland) 08
-  - 🇵🇱 波兰 (Poland) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,7 +96,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 05
   - 🇵🇱 波兰 (Poland) 06
   - 🇵🇱 波兰 (Poland) 07
-  - 🇵🇱 波兰 (Poland) 08
-  - 🇵🇱 波兰 (Poland) 09
 rules:
 - MATCH,PROXIES
