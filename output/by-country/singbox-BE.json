@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "31.77.18.13",
-      "server_port": 8443,
-      "uuid": "961a77fd-fe35-4037-b541-e5dd056702bd",
+      "tag": "🇧🇪 比利时 (Belgium) 01",
+      "server": "113.30.152.2",
+      "server_port": 443,
+      "uuid": "2b781b4a-5942-48e0-a7f3-5a07b7b488c1",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "be-root.sworkingvpn.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "L2voh7WsEg0a5w6Wt0S-1xO_pfR3-BxNlEE8LRzOnW4",
-          "short_id": "45cddb1a5cbc6c11"
+          "public_key": "cceRo0o9bFMlCNVahZCrQWRzMAsR5M6abWXADIapY0w",
+          "short_id": "15bcc0a77c3cacdf"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01"
+        "🇧🇪 比利时 (Belgium) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01"
+        "🇧🇪 比利时 (Belgium) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

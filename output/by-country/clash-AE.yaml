@@ -5,19 +5,67 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
+  server: 94.183.193.24
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73bec071-8d42-4294-a453-de168627649b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 02
+  server: 94.183.193.212
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73bec071-8d42-4294-a453-de168627649b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 03
+  server: 94.183.193.79
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73bec071-8d42-4294-a453-de168627649b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 04
+  server: 94.183.193.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: 73bec071-8d42-4294-a453-de168627649b
+  tls: true
+  reality-opts:
+    public-key: zYNnGVEkMFCUR_9NcYeaXfm9A_L-PP6iG2sIIST6S0M
+    short-id: 1ed136481e0ede74
+  servername: eu86.vaultberry.cloud
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05
   server: 157.228.155.238
   port: 443
   udp: true
   type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: 5BDht3tAZdKEKpJymGlRK9JugOnieA-kMSWz_0FoE0I
     short-id: 6f76ad09
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 02
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 06
   server: 130.49.161.70
   port: 443
   udp: true
@@ -27,7 +75,20 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03
+- name: 🇦🇪 阿联酋 (UAE) 07
+  server: 146.70.102.82
+  port: 443
+  udp: true
+  type: vless
+  uuid: 31fd2fde-ca69-450e-8c03-eaad819b06b9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GDer6NQYXdbccrFI0tLn2671PjCvrcSy0R7TKY8vG1k
+    short-id: 002fb4ec7b3088cc
+  servername: www.datadoghq.com
+  client-fingerprint: chrome
+- name: 🇦🇪 阿联酋 (UAE) 08
   server: 157.228.155.185
   port: 443
   udp: true
@@ -40,20 +101,7 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 04
-  server: 157.228.128.59
-  port: 443
-  udp: true
-  type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 05
+- name: 🇦🇪 阿联酋 (UAE) 09
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -72,6 +120,10 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
+  - 🇦🇪 阿联酋 (UAE) 07
+  - 🇦🇪 阿联酋 (UAE) 08
+  - 🇦🇪 阿联酋 (UAE) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +134,9 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
+  - 🇦🇪 阿联酋 (UAE) 07
+  - 🇦🇪 阿联酋 (UAE) 08
+  - 🇦🇪 阿联酋 (UAE) 09
 rules:
 - MATCH,PROXIES
