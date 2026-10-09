@@ -13,8 +13,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 94.183.170.135
   port: 8443
@@ -24,22 +22,9 @@ proxies:
   tls: true
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
-  server: 77.72.85.246
+  server: 77.72.85.247
   port: 8443
   udp: true
   type: vless
@@ -52,27 +37,27 @@ proxies:
     path: /vpn-wss/fluxor/59011/
     headers:
       Host: fdghyt.com
-- name: 🇪🇪 爱沙尼亚 (Estonia) 05
-  server: stoniy.fytpn.com
-  port: 56789
-  udp: true
-  type: vless
-  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PDHRi_RRFsPhxLoH2C1l9A9HdL2y7g1uOzXmY0XnmzQ
-    short-id: a2aa
-  servername: stoniy.fytpn.com
-  client-fingerprint: chrome
-- name: 🇪🇪 爱沙尼亚 (Estonia) 06
-  server: stoniy.fytpn.com
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04
+  server: 79.98.37.18
   port: 2097
   udp: true
   type: trojan
   password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
   sni: stoniy.fytpn.com
   skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 05
+  server: 93.89.220.37
+  port: 443
+  udp: true
+  type: vless
+  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
+    short-id: e88cb983f3c97528
+  servername: ibm.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -83,7 +68,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
   - 🇪🇪 爱沙尼亚 (Estonia) 05
-  - 🇪🇪 爱沙尼亚 (Estonia) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,6 +78,5 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
   - 🇪🇪 爱沙尼亚 (Estonia) 05
-  - 🇪🇪 爱沙尼亚 (Estonia) 06
 rules:
 - MATCH,PROXIES

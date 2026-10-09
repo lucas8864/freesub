@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇶 IQ 01
-  server: 172.67.147.209
-  port: 443
+  server: 178.17.57.120
+  port: 40443
   udp: true
   type: vless
-  uuid: 38d6b629-64c2-4c31-a10d-26eb3a2a053d
+  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+  flow: xtls-rprx-vision
   tls: true
-  servername: lHNs3ww2-CXQ-Gj1vvOBkEPIg4noPkc.hqu4v38Hi9iFtcp6mZfMX-3bmx.WoRKeRS.dEV
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /vl/cxl8Wn1ylnsk63nJ0
-    headers:
-      Host: lhns3ww2-cxq-gj1vvobkepig4nopkc.hqu4v38hi9iftcp6mzfmx-3bmx.workers.dev
+  reality-opts:
+    public-key: w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4
+    short-id: db46e2946fc466fd
+  servername: deepl.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

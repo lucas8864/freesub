@@ -5,32 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 185.103.110.66
-  port: 18280
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 02
   server: 185.103.110.68
   port: 18283
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: 185.103.110.66
+  port: 18280
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: 144.31.27.215
-  port: 43000
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 47f79fc1-0646-40e8-8a58-73e85d183d5a
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: dxCQnOekn14riFxt3vdwDNydvW47FsmwFG6BJ2mUgEg
-    short-id: 568d87a47271344e
-  servername: 144.31.27.215
-  client-fingerprint: chrome
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04
   server: 65.108.3.59
   port: 443
@@ -43,40 +42,20 @@ proxies:
     public-key: jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no
     short-id: 90ec9bba2019
   servername: web.eitaa.com
-  client-fingerprint: ''
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 217.19.122.214
-  port: 7449
-  udp: true
-  type: vless
-  uuid: 985fbc4e-f2fd-4a7f-b09f-f9b7728dd0a4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: OGMQnJGgrCYDojFm4u7YrvOoOmtjK6iZ4_q-Kmanozs
-    short-id: 03cf706025caa46e
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 06
-  server: 87.242.94.90
-  port: 8443
-  udp: true
-  type: vless
-  uuid: f23bc4f1-cc71-4003-ae6c-d6abe21d8191
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pobC1laHCtpMK1EA520CyOpYeel0t90hEV_eRJExFAE
-    short-id: 20272c52657d22da
-  servername: passport.yandex.ru
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 07
-  server: 45.149.114.171
-  port: 777
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: van2.ragnarok-it.xyz
+  port: 8446
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242
+  type: vless
+  uuid: a61496c3-f256-4a36-8a52-8638b9cc900a
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Y6ZtoxCUW1qFIvLTNfbrsyfCDoIBaRsqGNtbF_mcAXM
+    short-id: 7bac4b112d30d1
+  servername: amd.com
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -87,8 +66,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
-  - 🇫🇮 芬兰 (Finland) 06
-  - 🇫🇮 芬兰 (Finland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -99,7 +76,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
-  - 🇫🇮 芬兰 (Finland) 06
-  - 🇫🇮 芬兰 (Finland) 07
 rules:
 - MATCH,PROXIES

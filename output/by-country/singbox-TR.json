@@ -6,6 +6,30 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
+      "server": "62.60.233.157",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02",
       "server": "78.135.73.47",
       "server_port": 443,
       "uuid": "25e16692-d097-4e69-9e2d-8415609c1968",
@@ -15,7 +39,7 @@
         "server_name": "www.datadoghq.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,21 +49,9 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇹🇷 土耳其 (Turkey) 02",
-      "server": "162.249.126.40",
-      "server_port": 9443,
-      "password": "9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z",
-      "tls": {
-        "enabled": true,
-        "server_name": "hop-germany-september.dynuddns.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 03",
-      "server": "104.21.48.18",
+      "server": "172.67.176.3",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
       "tls": {
@@ -56,34 +68,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
-        "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04"
+        "🇹🇷 土耳其 (Turkey) 03"
       ]
     },
     {
@@ -92,8 +83,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
-        "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04"
+        "🇹🇷 土耳其 (Turkey) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

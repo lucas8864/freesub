@@ -4,15 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
+      "type": "vless",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "56481.df6h451rh.xin",
+      "server": "61.18.134.10",
       "server_port": 443,
-      "password": "6725d134ee80",
+      "uuid": "e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
       "tls": {
         "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
+        "server_name": "mswo-gy191m.zhiyuantech.cloud",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
+        "headers": {
+          "Host": "mswo-gy191m.zhiyuantech.cloud"
+        }
       }
     },
     {

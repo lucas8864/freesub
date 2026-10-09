@@ -4,40 +4,27 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "56481.df6h451rh.xin",
-      "server_port": 443,
-      "password": "6725d134ee80",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "hinet1.2yly.com",
-      "server_port": 24215,
-      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+      "server": "61.18.134.10",
+      "server_port": 443,
+      "uuid": "e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
       "tls": {
         "enabled": true,
-        "server_name": "addons.mozilla.org",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
-          "short_id": ""
+        "server_name": "mswo-gy191m.zhiyuantech.cloud",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384",
+        "headers": {
+          "Host": "mswo-gy191m.zhiyuantech.cloud"
         }
       }
     },
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
       "server": "t4.qifei.app",
       "server_port": 443,
       "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
@@ -57,13 +44,42 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽)",
+      "server": "p141.panda001.net",
+      "server_port": 4652,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04 (家宽)",
+      "server": "hinet1.2yly.com",
+      "server_port": 24215,
+      "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
+      "tls": {
+        "enabled": true,
+        "server_name": "addons.mozilla.org",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+        "🇰🇷 韩国 (South Korea) 03 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
       ]
     },
     {
@@ -71,8 +87,9 @@
       "tag": "auto",
       "outbounds": [
         "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+        "🇰🇷 韩国 (South Korea) 03 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 04 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

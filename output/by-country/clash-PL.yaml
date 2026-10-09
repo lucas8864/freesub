@@ -5,8 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
+  server: 202.78.163.237
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: cheerful-swan.rooster465.autos
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 02
+  server: 78.17.128.153
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 03
   server: 95.85.253.241
-  port: 2083
+  port: 2087
   udp: true
   type: vless
   uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
@@ -14,7 +30,7 @@ proxies:
   servername: 95.85.253.241
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02
+- name: 🇵🇱 波兰 (Poland) 04
   server: 177.1.192.72
   port: 443
   udp: true
@@ -27,112 +43,15 @@ proxies:
     short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03
-  server: 202.78.163.237
+- name: 🇵🇱 波兰 (Poland) 05
+  server: enabling-snipe.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: cheerful-swan.rooster465.autos
+  sni: enabling-snipe.rooster465.autos
   skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 04
-  server: 177.1.192.74
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
-    short-id: 770618b6
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 06
-  server: 78.17.128.153
-  port: 35076
-  udp: true
-  type: hysteria2
-  password: b4c8ee9caa74b7ba0a61
-  sni: scrap.halyvanedorogo.ru
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 07
-  server: 95.85.253.241
-  port: 2053
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08
-  server: 95.85.253.241
-  port: 2087
-  udp: true
-  type: vless
-  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
-  tls: true
-  servername: 95.85.253.241
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09
-  server: pol2.fytpn.com
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a889fba5-5472-4022-a6b4-9710157fda2f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7JLSiscJksRdmmRLnbqXlBgc4nce6lTvhKp3NIlXHFg
-    short-id: a2aa
-  servername: pol2.fytpn.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 10
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 11
-  server: pl.flen-vpn.xyz
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 12
-  server: 144.31.93.231
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3710fc0f-5f0c-4b9c-a5d4-40cb419e943a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WKN5yaRN05O2WdCURXRmS-yBVYaabaFWOvGudX6ohWc
-    short-id: b97e7d4582b6fa6e
-  servername: yandex.ru
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 13
   server: 95.85.253.241
   port: 8443
   udp: true
@@ -147,8 +66,64 @@ proxies:
     path: /ws-cdn1-vless
     headers:
       Host: pl.fastmirror-labs.xyz
-- name: 🇵🇱 波兰 (Poland) 14
-  server: 31.77.13.19
+- name: 🇵🇱 波兰 (Poland) 07
+  server: 222.167.245.248
+  port: 2097
+  udp: true
+  type: trojan
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
+  sni: pol2.fytpn.com
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 08
+  server: 144.31.49.47
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 09
+  server: 95.85.253.241
+  port: 2083
+  udp: true
+  type: vless
+  uuid: ee0a38e3-d148-48ac-ba99-5133446c2377
+  tls: true
+  servername: 95.85.253.241
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 10
+  server: 2.26.225.89
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 11
+  server: admin.wwwinternetvideo.click
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 12
+  server: 177.1.192.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d852af3-a121-41aa-9aed-4ca40a6f7b4d
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: qC0g7Y0pwyLFTGAPG2zfZNuo64Cda695wdKgLU4KkF8
+    short-id: 770618b6
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 13
+  server: pl-waw.dontblockmepls.com
   port: 2063
   udp: true
   type: vless
@@ -159,14 +134,6 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 15
-  server: pol2.fytpn.com
-  port: 2097
-  udp: true
-  type: trojan
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  sni: pol2.fytpn.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -185,8 +152,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 11
   - 🇵🇱 波兰 (Poland) 12
   - 🇵🇱 波兰 (Poland) 13
-  - 🇵🇱 波兰 (Poland) 14
-  - 🇵🇱 波兰 (Poland) 15
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -205,7 +170,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 11
   - 🇵🇱 波兰 (Poland) 12
   - 🇵🇱 波兰 (Poland) 13
-  - 🇵🇱 波兰 (Poland) 14
-  - 🇵🇱 波兰 (Poland) 15
 rules:
 - MATCH,PROXIES
