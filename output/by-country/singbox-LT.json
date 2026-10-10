@@ -7,23 +7,43 @@
       "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
       "server": "195.238.126.20",
-      "server_port": 9001,
+      "server_port": 9012,
       "method": "aes-256-cfb",
-      "password": "UkXRsXvR6buDMG2Y"
+      "password": "xaupMUvhptwxdDUg"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "server": "195.238.126.20",
+      "server_port": 9008,
+      "method": "aes-256-cfb",
+      "password": "y9VURyNzJWNRYEGQ"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
+      "server": "195.238.126.20",
+      "server_port": 9078,
+      "method": "aes-256-cfb",
+      "password": "JCJpbRbQZNw9XFZG"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01"
+        "🇱🇹 立陶宛 (Lithuania) 01",
+        "🇱🇹 立陶宛 (Lithuania) 02",
+        "🇱🇹 立陶宛 (Lithuania) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01"
+        "🇱🇹 立陶宛 (Lithuania) 01",
+        "🇱🇹 立陶宛 (Lithuania) 02",
+        "🇱🇹 立陶宛 (Lithuania) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

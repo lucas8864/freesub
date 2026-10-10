@@ -5,113 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01
-  server: 134.195.196.211
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 02
-  server: 162.159.152.31
-  port: 443
-  udp: true
-  type: trojan
-  password: '123456'
-  sni: now-pages-sub-em4.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇨🇦 加拿大 (Canada) 03
-  server: 104.18.0.1
-  port: 443
-  udp: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  tls: true
-  servername: all.speedtest03.ccwu.cc
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: all.speedtest03.ccwu.cc
-- name: 🇨🇦 加拿大 (Canada) 04
-  server: 162.159.81.104
-  port: 80
-  udp: true
-  type: vless
-  uuid: 4b00d726-e072-429b-997e-f07affea3b7f
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiUEVTdDRlR2hhc0JuYyIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJlZml4IiwicGFuZWxJUHMiOlsiWzI2MDI6ZmM1OTpiMDo2NDo6XSJdfQ
-    headers:
-      Host: icy-darkness-8ff1.farzambia12mo.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 05
-  server: 51.222.200.165
-  port: 5000
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 06
-  server: 104.19.150.163
-  port: 443
-  udp: true
-  type: trojan
-  password: '123456'
-  sni: now-pages-sub-em4.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇨🇦 加拿大 (Canada) 07
-  server: 172.67.152.243
-  port: 443
-  udp: true
-  type: trojan
-  password: Telegram_healer_config
-  sni: 3W2hk6ZJ92orjcjEdmI77hzC.Ny49nUZ6G33RYkoWAZquNl-b9GuN5T.WoRKERs.dEv
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /tr/e2X4F8y1t8YGOWfIV2ImzqxmdmGEpf?ed=2560
-- name: 🇨🇦 加拿大 (Canada) 08
-  server: 23.162.200.198
-  port: 18000
-  udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 09
-  server: 138.197.141.58
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 10
-  server: 104.16.246.173
-  port: 443
-  udp: true
-  type: trojan
-  password: '123456'
-  sni: now-pages-sub-em4.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇨🇦 加拿大 (Canada) 11
-  server: 51.222.107.43
-  port: 2083
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
-- name: 🇨🇦 加拿大 (Canada) 12
   server: 66.70.179.198
   port: 2053
   udp: true
@@ -123,37 +16,43 @@ proxies:
     short-id: 83f8317a948bb769
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 13
-  server: 148.113.196.75
-  port: 8443
+- name: 🇨🇦 加拿大 (Canada) 02
+  server: ca225.vpnbook.com
+  port: 443
   udp: true
-  type: vless
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  tls: true
-  servername: ov-canada1.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇨🇦 加拿大 (Canada) 14
-  server: 137.184.174.93
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e5c65ph
+- name: 🇨🇦 加拿大 (Canada) 03
+  server: 51.222.136.236
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 (Canada) 04
+  server: 23.162.200.198
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 05
+  server: 138.197.141.58
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 15
-  server: 162.159.153.42
-  port: 443
+- name: 🇨🇦 加拿大 (Canada) 06
+  server: 51.79.85.185
+  port: 8118
   udp: true
-  type: trojan
-  password: '123456'
-  sni: now-pages-sub-em4.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇨🇦 加拿大 (Canada) 16
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 07
   server: 209.200.246.148
   port: 443
   udp: true
@@ -166,133 +65,41 @@ proxies:
     short-id: f98843107912e782
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 17
-  server: 104.17.100.185
-  port: 443
+- name: 🇨🇦 加拿大 (Canada) 08
+  server: 137.184.174.93
+  port: 8080
   udp: true
-  type: vless
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
-  tls: true
-  servername: vlesss.xttd.eu.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
-    headers:
-      Host: vlesss.xttd.eu.org
-- name: 🇨🇦 加拿大 (Canada) 18
-  server: 162.159.152.81
-  port: 443
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇨🇦 加拿大 (Canada) 09
+  server: 134.195.196.211
+  port: 18000
   udp: true
-  type: trojan
-  password: '123456'
-  sni: now-pages-sub-em4.pages.dev
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /?ed=2560
-- name: 🇨🇦 加拿大 (Canada) 19
-  server: small-scene-f215.amiralizarefast1.workers.dev
-  port: 443
-  udp: true
-  type: vless
-  uuid: d9f94532-c4d4-4f94-ba23-6eb6d35bfc7d
-  tls: true
-  servername: small-scene-f215.amiralizarefast1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /eyJqdW5rIjoiZW5GMjJSRmYiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
-    headers:
-      Host: small-scene-f215.amiralizarefast1.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 20
-  server: 162.159.153.194
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
-  tls: true
-  servername: vlesss.xttd.eu.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
-    headers:
-      Host: vlesss.xttd.eu.org
-- name: 🇨🇦 加拿大 (Canada) 21
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 10
   server: 149.22.95.183
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇨🇦 加拿大 (Canada) 22
-  server: 51.222.12.127
-  port: 445
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: zDNVedRFPQexG9v
-- name: 🇨🇦 加拿大 (Canada) 23
-  server: 162.159.153.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
-  tls: true
-  servername: vlesss.xttd.eu.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
-    headers:
-      Host: vlesss.xttd.eu.org
-- name: 🇨🇦 加拿大 (Canada) 24
-  server: 51.222.155.113
-  port: 5601
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 25
-  server: 8.6.112.242
-  port: 443
-  udp: true
-  type: vless
-  uuid: 64726966-0000-4000-8000-740000000000
-  tls: true
-  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /drift?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-    headers:
-      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
-- name: 🇨🇦 加拿大 (Canada) 26
-  server: milo.rubinaz.xyz
+- name: 🇨🇦 加拿大 (Canada) 11
+  server: 212.74.39.188
   port: 8080
   udp: true
   type: vless
   uuid: 6bceb548-d9b6-461f-8e37-a5a7fbcdc2c8
-- name: 🇨🇦 加拿大 (Canada) 27
-  server: 51.222.136.236
-  port: 8882
+- name: 🇨🇦 加拿大 (Canada) 12
+  server: 51.222.107.43
+  port: 2083
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 28
-  server: 51.79.85.185
-  port: 8118
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: cdBIDV42DCwnfIN
+  cipher: 2022-blake3-aes-256-gcm
+  password: cOiC+3JhAXMwdGV5exnrMSorJU0Rl5qlLCbCAuDlWY4=:HWFFJN19JkvbTKo/79AfnbRBK9uHUUaFNZJyLjEoJGs=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -310,22 +117,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 10
   - 🇨🇦 加拿大 (Canada) 11
   - 🇨🇦 加拿大 (Canada) 12
-  - 🇨🇦 加拿大 (Canada) 13
-  - 🇨🇦 加拿大 (Canada) 14
-  - 🇨🇦 加拿大 (Canada) 15
-  - 🇨🇦 加拿大 (Canada) 16
-  - 🇨🇦 加拿大 (Canada) 17
-  - 🇨🇦 加拿大 (Canada) 18
-  - 🇨🇦 加拿大 (Canada) 19
-  - 🇨🇦 加拿大 (Canada) 20
-  - 🇨🇦 加拿大 (Canada) 21
-  - 🇨🇦 加拿大 (Canada) 22
-  - 🇨🇦 加拿大 (Canada) 23
-  - 🇨🇦 加拿大 (Canada) 24
-  - 🇨🇦 加拿大 (Canada) 25
-  - 🇨🇦 加拿大 (Canada) 26
-  - 🇨🇦 加拿大 (Canada) 27
-  - 🇨🇦 加拿大 (Canada) 28
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -343,21 +134,5 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 10
   - 🇨🇦 加拿大 (Canada) 11
   - 🇨🇦 加拿大 (Canada) 12
-  - 🇨🇦 加拿大 (Canada) 13
-  - 🇨🇦 加拿大 (Canada) 14
-  - 🇨🇦 加拿大 (Canada) 15
-  - 🇨🇦 加拿大 (Canada) 16
-  - 🇨🇦 加拿大 (Canada) 17
-  - 🇨🇦 加拿大 (Canada) 18
-  - 🇨🇦 加拿大 (Canada) 19
-  - 🇨🇦 加拿大 (Canada) 20
-  - 🇨🇦 加拿大 (Canada) 21
-  - 🇨🇦 加拿大 (Canada) 22
-  - 🇨🇦 加拿大 (Canada) 23
-  - 🇨🇦 加拿大 (Canada) 24
-  - 🇨🇦 加拿大 (Canada) 25
-  - 🇨🇦 加拿大 (Canada) 26
-  - 🇨🇦 加拿大 (Canada) 27
-  - 🇨🇦 加拿大 (Canada) 28
 rules:
 - MATCH,PROXIES

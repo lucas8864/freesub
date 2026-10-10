@@ -5,7 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇩 摩尔多瓦 (Moldova) 01
-  server: ap2.directly.chat
+  server: 185.147.27.100
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2f9107cb-9af0-4c94-a89d-50437218e5fa
+  tls: true
+  servername: ap2.directly.chat
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /md/1
+    headers:
+      Host: ap2.directly.chat
+- name: 🇲🇩 摩尔多瓦 (Moldova) 02
+  server: 185.147.27.215
   port: 443
   udp: true
   type: vless
@@ -25,11 +40,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01
+  - 🇲🇩 摩尔多瓦 (Moldova) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01
+  - 🇲🇩 摩尔多瓦 (Moldova) 02
 rules:
 - MATCH,PROXIES
