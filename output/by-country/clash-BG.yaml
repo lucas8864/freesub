@@ -6,19 +6,12 @@ log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01
   server: 213.183.63.60
-  port: 9030
+  port: 9098
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: GeregetR8cvQHzYr
+  password: aLpQtfEZe445QyHk
 - name: 🇧🇬 保加利亚 (Bulgaria) 02
-  server: 213.183.63.60
-  port: 9054
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: VcFuyXvND2yQWSFY
-- name: 🇧🇬 保加利亚 (Bulgaria) 03
   server: 93.152.223.201
   port: 443
   udp: true
@@ -33,7 +26,6 @@ proxy-groups:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01
   - 🇧🇬 保加利亚 (Bulgaria) 02
-  - 🇧🇬 保加利亚 (Bulgaria) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,6 +33,5 @@ proxy-groups:
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01
   - 🇧🇬 保加利亚 (Bulgaria) 02
-  - 🇧🇬 保加利亚 (Bulgaria) 03
 rules:
 - MATCH,PROXIES

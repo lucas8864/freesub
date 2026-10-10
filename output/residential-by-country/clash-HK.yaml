@@ -5,21 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  server: 61.18.134.10
-  port: 443
-  udp: true
-  type: vless
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-  tls: true
-  servername: mswo-gy191m.zhiyuantech.cloud
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
-    headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: t4.qifei.app
+  server: 42.200.173.5
   port: 443
   udp: true
   type: vless
@@ -28,21 +14,20 @@ proxies:
   tls: true
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 rules:
 - MATCH,PROXIES

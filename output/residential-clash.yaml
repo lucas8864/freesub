@@ -4,22 +4,35 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  server: 61.18.134.10
+- name: 🇨🇦 加拿大 (Canada) 01 (家宽)
+  server: 185.193.29.123
   port: 443
   udp: true
   type: vless
-  uuid: e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+  uuid: 1d16c6e0-1bbe-435b-b661-90043fee999c
   tls: true
-  servername: mswo-gy191m.zhiyuantech.cloud
+  servername: notls.lukongtou.eu.org
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /e077d2c2-7dc5-4e6e-a44d-79c4e4d8b384
+    path: Telegram-WangCai2🇨🇳
     headers:
-      Host: mswo-gy191m.zhiyuantech.cloud
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: t4.qifei.app
+      Host: notls.lukongtou.eu.org
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  server: tumspr.azad0namah.ir
+  port: 5566
+  udp: true
+  type: ss
+  cipher: 2022-blake3-aes-128-gcm
+  password: 8NwabdWBXK1q1QaBhF69rw==:Lzvg7nuGDOIqso68553eNQ==
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
+  server: test.keoplentuio.xyz
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
+  server: 42.200.173.5
   port: 443
   udp: true
   type: vless
@@ -28,17 +41,11 @@ proxies:
   tls: true
   reality-opts:
     public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
   servername: s3.ap-east-1.amazonaws.com
-  client-fingerprint: random
-- name: 🇰🇷 韩国 (South Korea) 03 (家宽)
-  server: p141.panda001.net
-  port: 4652
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
-  server: hinet1.2yly.com
+  client-fingerprint: chrome
+- name: 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
+  server: 61.230.162.88
   port: 24215
   udp: true
   type: vless
@@ -47,24 +54,26 @@ proxies:
   reality-opts:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
-  client-fingerprint: chrome
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  - 🇰🇷 韩国 (South Korea) 03 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇨🇦 加拿大 (Canada) 01 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  - 🇰🇷 韩国 (South Korea) 03 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇨🇦 加拿大 (Canada) 01 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 04 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 05 (家宽)
 rules:
 - MATCH,PROXIES

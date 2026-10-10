@@ -4,21 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01",
-      "server": "104.16.71.213",
+      "type": "vless",
+      "tag": "🇲🇩 摩尔多瓦 (Moldova) 01",
+      "server": "ap2.directly.chat",
       "server_port": 443,
-      "password": "humanity",
+      "uuid": "2f9107cb-9af0-4c94-a89d-50437218e5fa",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
+        "server_name": "ap2.directly.chat",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       },
       "transport": {
         "type": "ws",
-        "path": "/assignment",
+        "path": "/md/1",
         "headers": {
-          "Host": "www.calmlunch.com"
+          "Host": "ap2.directly.chat"
         }
       }
     },
@@ -27,14 +35,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01"
+        "🇲🇩 摩尔多瓦 (Moldova) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01"
+        "🇲🇩 摩尔多瓦 (Moldova) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

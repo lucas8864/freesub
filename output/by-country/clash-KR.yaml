@@ -14,19 +14,12 @@ proxies:
   cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02
   server: 141.164.45.187
-  port: 6679
+  port: 9101
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: TEzjfAYq2IjtuoS
+  password: e4FCWrgpkji3QY
 - name: 🇰🇷 韩国 (South Korea) 03
-  server: 141.164.45.187
-  port: 5498
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: lGqs95QkFHo2NV
-- name: 🇰🇷 韩国 (South Korea) 04
   server: 34.22.111.30
   port: 443
   udp: true
@@ -38,76 +31,23 @@ proxies:
     short-id: 8685f8b4d9f4f51e
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 05
-  server: 132.226.226.189
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 1671a252e2a97dc2bda4e515475931da
-  sni: 132.226.226.189
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 06
+- name: 🇰🇷 韩国 (South Korea) 04
   server: central-jawfish.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: central-jawfish.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 07
-  server: fancy-skink.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: fancy-skink.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 08
-  server: 52.78.119.244
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 09
+- name: 🇰🇷 韩国 (South Korea) 05
   server: 152.70.237.123
   port: 2053
   udp: true
   type: hysteria2
   password: maintell
-  sni: 152.70.237.123
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 10
-  server: 43.203.225.50
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 11
-  server: 3.39.4.109
-  port: 18967
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: qq
-- name: 🇰🇷 韩国 (South Korea) 12
-  server: pure-kodiak.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pure-kodiak.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 13
+- name: 🇰🇷 韩国 (South Korea) 06
   server: 43.203.202.217
   port: 443
   udp: true
@@ -115,79 +55,15 @@ proxies:
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 14
-  server: 152.67.200.82
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
-  sni: 152.67.200.82
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 15
-  server: 54.180.231.160
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 54.180.231.160
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 16
-  server: glorious-lark.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: glorious-lark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 17
-  server: 52.78.100.155
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 18
-  server: 3.38.115.120
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 19
-  server: 52.78.158.255
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: vpn-kr-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 20
+- name: 🇰🇷 韩国 (South Korea) 07
   server: 3.34.95.215
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 3.34.95.215
+  sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 21
-  server: 13.124.119.204
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
-  sni: 13.124.119.204
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 22
-  server: working-tomcat.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: working-tomcat.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 23
+- name: 🇰🇷 韩国 (South Korea) 08
   server: 3.38.251.233
   port: 443
   udp: true
@@ -195,76 +71,103 @@ proxies:
   password: H7mP2xY9kJ4nQ9wR5tF6vB3z
   sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 24
-  server: 3.35.168.225
+- name: 🇰🇷 韩国 (South Korea) 09
+  server: engaging-toucan.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: engaging-toucan.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 10
+  server: fancy-skink.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: fancy-skink.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 11
+  server: 43.203.225.50
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 12
+  server: noted-cougar.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: noted-cougar.rooster465.autos
   skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 25
-  server: 3.39.4.109
-  port: 13672
+- name: 🇰🇷 韩国 (South Korea) 13
+  server: 13.124.119.204
+  port: 443
   udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 26
-  server: 131.186.19.174
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 14
+  server: 54.180.231.160
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 15
+  server: 132.226.226.189
   port: 50160
   udp: true
   type: hysteria2
-  password: 7302ad33229de166d393cd56143a1e4c
-  sni: whatsapp.com
+  password: 1671a252e2a97dc2bda4e515475931da
+  sni: www.bing.com
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 27
-  server: 152-69-231-175.liao.kdns.fr
-  port: 50160
+- name: 🇰🇷 韩国 (South Korea) 16
+  server: cunning-grub.rooster465.autos
+  port: 443
   udp: true
-  type: hysteria2
-  password: 1beb216e3f60aea9555dae60d219a5ca
-  sni: 152-69-231-175.liao.kdns.fr
+  type: trojan
+  password: UX82473651
+  sni: cunning-grub.rooster465.autos
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 28
+- name: 🇰🇷 韩国 (South Korea) 17
   server: inviting-rabbit.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: inviting-rabbit.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 18
+  server: 52.78.158.255
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 29
-  server: optimum-snapper.rooster465.autos
+- name: 🇰🇷 韩国 (South Korea) 19
+  server: 52.78.119.244
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 20
+  server: pure-kodiak.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: optimum-snapper.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 30
-  server: 154.90.62.70
-  port: 56127
-  udp: true
-  type: trojan
-  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
-  sni: 154.90.62.70
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 31
-  server: kind-stork.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: kind-stork.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 32
+  sni: pure-kodiak.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 21
   server: 64.176.231.183
   port: 443
   udp: true
@@ -276,16 +179,34 @@ proxies:
     public-key: GR_zPAgxF9PZ70Z9UpSmMlcd2STyoAC0fZTSHkTTCGE
     short-id: ca193e889d958f81
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇰🇷 韩国 (South Korea) 33
-  server: 52.78.203.191
-  port: 443
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 22
+  server: 3.39.4.109
+  port: 18967
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: delicate-buck.rooster465.autos
-  skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 34
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇰🇷 韩国 (South Korea) 23
+  server: 3.39.4.109
+  port: 13672
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 24
   server: 151.245.106.49
   port: 2053
   udp: true
@@ -296,9 +217,89 @@ proxies:
     public-key: F6C33iIbfmt1mUsuLTarIC8ygdHKMqsaGvrSQltyxUo
     short-id: 429499c03d4cc8a0
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: random
+- name: 🇰🇷 韩国 (South Korea) 25
+  server: 3.38.115.120
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: 3.38.115.120
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 26
+  server: 52.78.100.155
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ9wR5tF6vB3z
+  sni: vpn-kr-002.fastervpn.world
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 27
+  server: delicate-buck.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: delicate-buck.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 28
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 29
+  server: kind-stork.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: kind-stork.rooster465.autos
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 30
+  server: 52.78.42.192
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: working-tomcat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 31
+  server: 152-69-231-175.liao.kdns.fr
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 1beb216e3f60aea9555dae60d219a5ca
+  sni: 152-69-231-175.liao.kdns.fr
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 32
+  server: 3.34.131.153
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: pretty-rat.rooster465.autos
+  skip-cert-verify: false
+- name: 🇰🇷 韩国 (South Korea) 33
+  server: 152.67.200.82
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 3d7634af8cb2c6cb4bac1c0efad8b43d
+  sni: 152-67-200-82.liao.kdns.fr
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 34
+  server: optimum-snapper.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimum-snapper.rooster465.autos
+  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 35
-  server: main-fawn.rooster465.autos
+  server: 3.35.207.188
   port: 443
   udp: true
   type: trojan
@@ -306,20 +307,12 @@ proxies:
   sni: main-fawn.rooster465.autos
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 36
-  server: 13.125.69.162
+  server: glorious-lark.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: engaging-toucan.rooster465.autos
-  skip-cert-verify: false
-- name: 🇰🇷 韩国 (South Korea) 37
-  server: 3.34.131.153
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: pretty-rat.rooster465.autos
+  sni: glorious-lark.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -362,7 +355,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 34
   - 🇰🇷 韩国 (South Korea) 35
   - 🇰🇷 韩国 (South Korea) 36
-  - 🇰🇷 韩国 (South Korea) 37
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -404,6 +396,5 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 34
   - 🇰🇷 韩国 (South Korea) 35
   - 🇰🇷 韩国 (South Korea) 36
-  - 🇰🇷 韩国 (South Korea) 37
 rules:
 - MATCH,PROXIES
