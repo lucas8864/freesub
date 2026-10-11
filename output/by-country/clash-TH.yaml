@@ -13,19 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇹🇭 泰国 (Thailand) 02
-  server: 154.21.203.106
-  port: 21033
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
-    short-id: cbd39bea0805e2
-  servername: www.kaidee.com
-  client-fingerprint: firefox
-- name: 🇹🇭 泰国 (Thailand) 03
   server: 103.86.49.57
   port: 80
   udp: true
@@ -36,8 +23,8 @@ proxies:
     path: /ws
     headers:
       Host: aIs.SpEeDtEsT.nEt
-- name: 🇹🇭 泰国 (Thailand) 04
-  server: 188.114.97.6
+- name: 🇹🇭 泰国 (Thailand) 03
+  server: 104.16.10.2
   port: 443
   udp: true
   type: vless
@@ -45,19 +32,31 @@ proxies:
   tls: true
   servername: v2ray.simspeedup.com
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /ws
     headers:
       Host: v2ray.simspeedup.com
-- name: 🇹🇭 泰国 (Thailand) 05
-  server: pphfree2.mvpnpvpn.de5.net
+- name: 🇹🇭 泰国 (Thailand) 04
+  server: 103.107.52.106
   port: 52351
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
+- name: 🇹🇭 泰国 (Thailand) 05
+  server: dghk2610.supertoolify.com
+  port: 21033
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EG-jzQw1RyOwAM4L9rMKondSx7cyFmPyv1OP7xXkIk4
+    short-id: cbd39bea0805e2
+  servername: www.kaidee.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

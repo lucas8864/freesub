@@ -5,31 +5,56 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  server: tumspr.azad0namah.ir
-  port: 5566
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-128-gcm
-  password: 8NwabdWBXK1q1QaBhF69rw==:Lzvg7nuGDOIqso68553eNQ==
-- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
   server: test.keoplentuio.xyz
   port: 2053
   udp: true
   type: vless
   uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: 24864168545164.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 24864168545164.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 24864168545164.d6f54hd1j.cc
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  server: 654168416355441.d6f54hd1j.cc
+  port: 443
+  udp: true
+  type: vmess
+  uuid: ecdc303d-bcbf-4129-bc02-dd67703f7081
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 654168416355441.d6f54hd1j.cc
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 rules:
 - MATCH,PROXIES

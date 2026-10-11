@@ -5,6 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
+  server: 147.45.60.160
+  port: 8444
+  udp: true
+  type: vless
+  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
+  tls: true
+  reality-opts:
+    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
+  servername: github.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 193.233.74.6
   port: 8444
   udp: true
@@ -19,71 +33,23 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 02
+- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: eicdhshSrFLCx/sZ1PSpuKyoVWGZpU95tFS4iGC1c04=
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: edge.cloudtechone.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5036de9b-1a18-40e2-97f6-9cbb4a4753e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
-    short-id: f93c9d5127e622e4
-  servername: edge.cloudtechone.org
-  client-fingerprint: chrome
 - name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 153.80.241.206
-  port: 8444
+  server: 94.198.54.132
+  port: 443
   udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
+  type: hysteria2
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  sni: msk.frkn.org
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05
-  server: 79.174.92.222
-  port: 443
-  udp: true
-  type: vless
-  uuid: 03ca8c3f-e777-45b5-a1b1-592094ca99ee
-  tls: true
-  reality-opts:
-    public-key: _PYBo3dyZRpGC44vADqcmlBCSeAVh1X8l3mulghVsTI
-    short-id: a1b2c3d4
-  servername: m.vk.com
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 93.188.184.150
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ru-1-2.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ru-api
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: du-rov.secureservice.top
+  server: 5.42.99.64
   port: 8443
   udp: true
   type: vless
@@ -95,7 +61,15 @@ proxies:
     short-id: 3cbc3d737fb9c4af
   servername: du-rov.secureservice.top
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 139.28.168.126
+  port: 8080
+  udp: true
+  type: hysteria2
+  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
+  sni: hopp-honkong-new.roxa.org
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 07
   server: 45.12.75.242
   port: 26424
   udp: true
@@ -106,7 +80,7 @@ proxies:
     public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
     short-id: 23103e1e
   servername: ya.ru
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,7 +93,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
   - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,6 +105,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
   - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
 rules:
 - MATCH,PROXIES

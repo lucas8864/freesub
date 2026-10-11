@@ -6,14 +6,37 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01",
-      "server": "185.103.110.68",
-      "server_port": 18283,
+      "server": "185.103.110.66",
+      "server_port": 18280,
       "method": "aes-128-gcm",
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "170.168.4.59",
+      "server_port": 17170,
+      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
+      "tls": {
+        "enabled": true,
+        "server_name": "northerntrail.gazette.help",
+        "insecure": false,
+        "alpn": [
+          "h2"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "trail-grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03",
       "server": "fi.pythonsetupbib.online",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
@@ -34,79 +57,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "2.26.55.163",
-      "server_port": 443,
-      "uuid": "621bcb9e-7df5-427b-a9d4-6e87223c8bca",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "specific3.kandnet.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "95.216.27.15",
-      "server_port": 2053,
-      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.google.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
-          "short_id": "d368b94e275ab080"
-        }
-      }
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 05",
-      "server": "144.31.212.253",
-      "server_port": 443,
-      "password": "cf83b611-6cba-4535-adcb-8da06c6a9146",
+      "server": "finkawwwbroy5.qcloud.surf",
+      "server_port": 20326,
+      "password": "f83ce3c4-07d9-4895-bd14-cb74abbcab37",
       "tls": {
         "enabled": true,
-        "server_name": "vps155-edge.kermemehori.ru",
+        "server_name": "finkawwwbroy5.qcloud.surf",
         "insecure": true
       }
     },
     {
-      "type": "trojan",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 06",
-      "server": "85.209.129.5",
-      "server_port": 443,
-      "password": "muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA",
-      "tls": {
-        "enabled": true,
-        "server_name": "fl.global-cdn.org",
-        "insecure": true,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ajv"
-      }
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "vless",
@@ -133,56 +107,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 09",
+      "tag": "🇫🇮 芬兰 (Finland) 08",
       "server": "45.149.114.171",
       "server_port": 777,
       "method": "chacha20-ietf-poly1305",
       "password": "Jeoq8ujfkqZKKvACQhoqBQ1PA3uq4242"
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 10",
-      "server": "170.168.4.59",
-      "server_port": 17170,
-      "uuid": "3eec23c1-2a0d-4d53-afa5-62745a1f5ffe",
-      "tls": {
-        "enabled": true,
-        "server_name": "northerntrail.gazette.help",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "trail-grpc"
-      }
     },
     {
       "type": "selector",
@@ -196,9 +126,7 @@
         "🇫🇮 芬兰 (Finland) 05",
         "🇫🇮 芬兰 (Finland) 06",
         "🇫🇮 芬兰 (Finland) 07",
-        "🇫🇮 芬兰 (Finland) 08",
-        "🇫🇮 芬兰 (Finland) 09",
-        "🇫🇮 芬兰 (Finland) 10"
+        "🇫🇮 芬兰 (Finland) 08"
       ]
     },
     {
@@ -212,9 +140,7 @@
         "🇫🇮 芬兰 (Finland) 05",
         "🇫🇮 芬兰 (Finland) 06",
         "🇫🇮 芬兰 (Finland) 07",
-        "🇫🇮 芬兰 (Finland) 08",
-        "🇫🇮 芬兰 (Finland) 09",
-        "🇫🇮 芬兰 (Finland) 10"
+        "🇫🇮 芬兰 (Finland) 08"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

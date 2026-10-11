@@ -6,25 +6,64 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "62.60.159.81",
-      "server_port": 2053,
-      "uuid": "fc00adfb-232a-46ce-8b93-0c70e516aa8a",
+      "server": "sw.golangwikito.cfd",
+      "server_port": 443,
+      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.samsung.com",
+        "server_name": "sw.golangwikito.cfd",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "ygmJxS-Mc7g0buNSUTVGhazT-FoBjyYtLLfUYIQxFTw",
-          "short_id": "d0ea1847066af5a6"
+          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
+          "short_id": "a1037b25dcef6aa7"
         }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "grpce5bb9e71"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 02",
+      "server": "2.26.55.163",
+      "server_port": 443,
+      "uuid": "621bcb9e-7df5-427b-a9d4-6e87223c8bca",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "specific3.kandnet.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw",
+          "short_id": ""
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "swe.wizard.select",
+      "server_port": 443,
+      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "swe.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
+          "short_id": "3b20e438da99"
+        }
       }
     },
     {
@@ -32,14 +71,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇪 瑞典 (Sweden) 01"
+        "🇸🇪 瑞典 (Sweden) 01",
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇪 瑞典 (Sweden) 01"
+        "🇸🇪 瑞典 (Sweden) 01",
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
