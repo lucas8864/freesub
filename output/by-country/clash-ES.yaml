@@ -17,13 +17,6 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇪🇸 西班牙 (Spain) 02
-  server: 108.181.121.226
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: WSyL4XTwNsdv
-- name: 🇪🇸 西班牙 (Spain) 03
   server: 83.147.18.3
   port: 443
   udp: true
@@ -36,6 +29,21 @@ proxies:
     short-id: fd8cf7e1173f0edb
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 03
+  server: 108.181.121.226
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: WSyL4XTwNsdv
+- name: 🇪🇸 西班牙 (Spain) 04
+  server: spainspeedboostjbl88.qcloud.surf
+  port: 27313
+  udp: true
+  type: hysteria2
+  password: 8bd04756-3beb-4348-82c9-d35453df50ce
+  sni: spainspeedboostjbl88.qcloud.surf
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -44,6 +52,7 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
   - 🇪🇸 西班牙 (Spain) 03
+  - 🇪🇸 西班牙 (Spain) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +61,6 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
   - 🇪🇸 西班牙 (Spain) 03
+  - 🇪🇸 西班牙 (Spain) 04
 rules:
 - MATCH,PROXIES

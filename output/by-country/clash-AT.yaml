@@ -12,13 +12,26 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02
-  server: 5.254.51.108
+  server: 5.254.51.109
   port: 9443
   udp: true
   type: hysteria2
   password: Hc9_NX924RE_Mn948rgrwiub_m93V84nll
   sni: keyhop-voxility-at.dynuddns.com
   skip-cert-verify: true
+- name: 🇦🇹 奥地利 (Austria) 03
+  server: at-3.wizard.select
+  port: 443
+  udp: true
+  type: vless
+  uuid: 074b00de-c4d0-11f1-9902-a337233c6cda
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: S9OR9-SQHGl717N9AV_LoouRgSd-M4Yz7os10Mj8XxI
+    short-id: cee953f6
+  servername: at-3.wizard.select
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +39,7 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
+  - 🇦🇹 奥地利 (Austria) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +47,6 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
+  - 🇦🇹 奥地利 (Austria) 03
 rules:
 - MATCH,PROXIES

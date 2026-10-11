@@ -14,7 +14,7 @@
     {
       "type": "hysteria2",
       "tag": "🇦🇹 奥地利 (Austria) 02",
-      "server": "5.254.51.108",
+      "server": "5.254.51.109",
       "server_port": 9443,
       "password": "Hc9_NX924RE_Mn948rgrwiub_m93V84nll",
       "tls": {
@@ -24,12 +24,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 03",
+      "server": "at-3.wizard.select",
+      "server_port": 443,
+      "uuid": "074b00de-c4d0-11f1-9902-a337233c6cda",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "at-3.wizard.select",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "S9OR9-SQHGl717N9AV_LoouRgSd-M4Yz7os10Mj8XxI",
+          "short_id": "cee953f6"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 (Austria) 02",
+        "🇦🇹 奥地利 (Austria) 03"
       ]
     },
     {
@@ -37,7 +59,8 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 (Austria) 02",
+        "🇦🇹 奥地利 (Austria) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

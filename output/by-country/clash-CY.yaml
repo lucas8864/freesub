@@ -5,6 +5,44 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01
+  server: 194.76.154.31
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 9f0baff8-bdee-4de9-9515-bcc4932b41fa
+  tls: true
+  reality-opts:
+    public-key: MN6QjUHDUXyteMdR-cDna89fq4X3qgQhLnNqTtRUbBQ
+    short-id: a8ae
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02
+  server: 185.166.154.111
+  port: 443
+  udp: true
+  type: vless
+  uuid: 91d734be-a3d0-4d50-83ab-74cf7b6966fa
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bQZcMViJWXus9rMSTOa-ZAaUJC0mIlPx7XmzrLp8GQU
+    short-id: 94f32cfc
+  servername: cdn.bulkavpn.top
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03
+  server: 5.253.28.240
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -25,11 +63,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01
+  - 🇨🇾 塞浦路斯 (Cyprus) 02
+  - 🇨🇾 塞浦路斯 (Cyprus) 03
+  - 🇨🇾 塞浦路斯 (Cyprus) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01
+  - 🇨🇾 塞浦路斯 (Cyprus) 02
+  - 🇨🇾 塞浦路斯 (Cyprus) 03
+  - 🇨🇾 塞浦路斯 (Cyprus) 04
 rules:
 - MATCH,PROXIES

@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "t4.qifei.app",
-      "server_port": 443,
-      "uuid": "b98d4c6e-6770-4a31-8256-a4750cdea0e7",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇩🇰 丹麦 (Denmark) 01",
+      "server": "193.233.253.180",
+      "server_port": 8444,
+      "uuid": "f55e9aba-7b14-4f6f-b59a-d5b3d45c9309",
       "tls": {
         "enabled": true,
-        "server_name": "s3.ap-east-1.amazonaws.com",
+        "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo",
-          "short_id": ""
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇩🇰 丹麦 (Denmark) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇩🇰 丹麦 (Denmark) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
