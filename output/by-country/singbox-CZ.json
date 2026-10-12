@@ -4,9 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "cz.h2.cleanersaz.help",
+      "server": "172.64.153.235",
+      "server_port": 8443,
+      "uuid": "656bb400-3b7a-47e3-94b0-0362f3865072",
+      "tls": {
+        "enabled": true,
+        "server_name": "socks5.revil-time3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/socks5://128.140.46.169:13482",
+        "headers": {
+          "Host": "socks5.revil-time3.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇿 捷克 (Czech) 02",
+      "server": "95.85.238.173",
       "server_port": 443,
       "password": "c-E0lamG8OnEj9M_uh3oJPmIXqYIVGctO-NHELF1TmNYs7Jl",
       "tls": {
@@ -20,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01"
+        "🇨🇿 捷克 (Czech) 01",
+        "🇨🇿 捷克 (Czech) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01"
+        "🇨🇿 捷克 (Czech) 01",
+        "🇨🇿 捷克 (Czech) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

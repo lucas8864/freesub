@@ -16,19 +16,19 @@ proxies:
     public-key: miDhSALrcCvSfc38VjCDYlzNh5M61NMR5IkUli7IN08
     short-id: 0da7e14db353e7d0
   servername: lv.nztvpn.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 02
-  server: 138.124.180.137
+  server: 72.56.52.35
   port: 443
   udp: true
   type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
+    public-key: Qny0nDXZPLi-EqG6kCxz4zZykkttmKgBcXU1DIMj32w
+    short-id: 4ab3ad05ce108450
+  servername: pap.pl
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

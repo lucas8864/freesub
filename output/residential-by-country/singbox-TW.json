@@ -17,10 +17,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "24864168545164.d6f54hd1j.cc"
-        }
+        "path": "/"
       }
     },
     {
@@ -36,7 +33,11 @@
         "insecure": false
       },
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "654168416355441.d6f54hd1j.cc"
+        }
       }
     },
     {

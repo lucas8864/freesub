@@ -5,13 +5,31 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
+  server: 185.103.110.68
+  port: 18283
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: f9300a9bf39ae0347c3a3bfbc4dd7754
+- name: 🇫🇮 芬兰 (Finland) 02
   server: 185.103.110.66
   port: 18280
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: f9300a9bf39ae0347c3a3bfbc4dd7754
-- name: 🇫🇮 芬兰 (Finland) 02
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 85.209.129.5
+  port: 443
+  udp: true
+  type: trojan
+  password: muLkJXY1WyEbDdP-AoNpjg3HddPCAcBA
+  sni: fl.global-cdn.org
+  skip-cert-verify: true
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ajv
+- name: 🇫🇮 芬兰 (Finland) 04
   server: 170.168.4.59
   port: 17170
   udp: true
@@ -24,7 +42,13 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: trail-grpc
-- name: 🇫🇮 芬兰 (Finland) 03
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: edge10.cyrionflare.com
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇫🇮 芬兰 (Finland) 06
   server: fi.pythonsetupbib.online
   port: 443
   udp: true
@@ -37,43 +61,7 @@ proxies:
     short-id: bdf5852d1423e694
   servername: fi.pythonsetupbib.online
   client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: edge10.cyrionflare.com
-  port: 2052
-  udp: true
-  type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: finkawwwbroy5.qcloud.surf
-  port: 20326
-  udp: true
-  type: hysteria2
-  password: f83ce3c4-07d9-4895-bd14-cb74abbcab37
-  sni: finkawwwbroy5.qcloud.surf
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 06
-  server: 185.103.110.68
-  port: 18283
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: f9300a9bf39ae0347c3a3bfbc4dd7754
 - name: 🇫🇮 芬兰 (Finland) 07
-  server: 87.228.92.114
-  port: 25481
-  udp: true
-  type: vless
-  uuid: 68c3d665-b2b5-4ffb-9f37-9f3d8c47324d
-  tls: true
-  reality-opts:
-    public-key: mhIAHuZIEr2NpdGGSeOxar7VRSgEfVoNwb_G8Y0073E
-    short-id: 3b84fc70657725af
-  servername: www.bing.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 8cb5baa18cd7
-- name: 🇫🇮 芬兰 (Finland) 08
   server: 45.149.114.171
   port: 777
   udp: true
@@ -92,7 +80,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05
   - 🇫🇮 芬兰 (Finland) 06
   - 🇫🇮 芬兰 (Finland) 07
-  - 🇫🇮 芬兰 (Finland) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,6 +92,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 05
   - 🇫🇮 芬兰 (Finland) 06
   - 🇫🇮 芬兰 (Finland) 07
-  - 🇫🇮 芬兰 (Finland) 08
 rules:
 - MATCH,PROXIES

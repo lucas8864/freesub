@@ -11,20 +11,20 @@
       "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "140.238.213.114",
+        "server_name": "off",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 02",
-      "server": "82.38.64.229",
+      "server": "82.38.64.237",
       "server_port": 8443,
       "password": "we9_I1893UFj3149xbr1_k8qvJ8734ic_Mx82gH",
       "tls": {
         "enabled": true,
         "server_name": "hopp-swizland-new.mysynology.net",
-        "insecure": true
+        "insecure": false
       }
     },
     {
@@ -38,7 +38,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
@@ -55,7 +55,7 @@
       "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 04",
       "server": "208.69.78.217",
-      "server_port": 33044,
+      "server_port": 21067,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
       "tls": {
         "enabled": true,
@@ -65,47 +65,39 @@
       "obfs": {
         "type": "salamander",
         "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "server": "81.94.148.104",
+      "server_port": 2096,
+      "uuid": "3fcec4e4-a674-44d2-8cae-c253cec43b9c",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
       }
     },
     {
       "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06",
       "server": "132.243.175.144",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 06",
-      "server": "208.69.78.217",
-      "server_port": 21161,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 07",
-      "server": "208.69.78.217",
-      "server_port": 33053,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
     },
     {
       "type": "selector",
@@ -117,8 +109,7 @@
         "🇨🇭 瑞士 (Switzerland) 03",
         "🇨🇭 瑞士 (Switzerland) 04",
         "🇨🇭 瑞士 (Switzerland) 05",
-        "🇨🇭 瑞士 (Switzerland) 06",
-        "🇨🇭 瑞士 (Switzerland) 07"
+        "🇨🇭 瑞士 (Switzerland) 06"
       ]
     },
     {
@@ -130,8 +121,7 @@
         "🇨🇭 瑞士 (Switzerland) 03",
         "🇨🇭 瑞士 (Switzerland) 04",
         "🇨🇭 瑞士 (Switzerland) 05",
-        "🇨🇭 瑞士 (Switzerland) 06",
-        "🇨🇭 瑞士 (Switzerland) 07"
+        "🇨🇭 瑞士 (Switzerland) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

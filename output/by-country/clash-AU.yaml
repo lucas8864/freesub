@@ -1,0 +1,46 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇦🇺 澳大利亚 (Australia) 01
+  server: vpn-au-001.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-au-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 02
+  server: 212.135.211.242
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 1c3fb1c0-1204-49db-b842-f72d50f014c1
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aus.lovehk.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /Sydney3
+    headers:
+      Host: aus.lovehk.xyz
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇦🇺 澳大利亚 (Australia) 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇦🇺 澳大利亚 (Australia) 02
+rules:
+- MATCH,PROXIES

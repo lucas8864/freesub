@@ -18,8 +18,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 24864168545164.d6f54hd1j.cc
 - name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
   server: 654168416355441.d6f54hd1j.cc
   port: 443
@@ -34,6 +32,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 654168416355441.d6f54hd1j.cc
 proxy-groups:
 - name: PROXIES
   type: select

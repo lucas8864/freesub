@@ -5,14 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: 77.74.123.101
+  server: 103.76.131.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: zAhEr9jTxLlgEpMbFwGAnHkFkYa3nZJ1h4BAp67hlno
+    short-id: 4d3ee72b6bfc59cb
+  servername: github.io
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 02
+  server: 154.46.31.106
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
+- name: 🇷🇴 罗马尼亚 (Romania) 03
+  server: 77.74.123.109
   port: 8443
   udp: true
   type: hysteria2
   password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
   sni: grape-test-italy.dynuddns.net
   skip-cert-verify: true
-- name: 🇷🇴 罗马尼亚 (Romania) 02
+- name: 🇷🇴 罗马尼亚 (Romania) 04
   server: 162.249.125.133
   port: 443
   udp: true
@@ -22,7 +42,20 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 03
+- name: 🇷🇴 罗马尼亚 (Romania) 05
+  server: herbalromania.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EMM388R9SzURuXjJiD8vzI8pzGaaTdJM5UvRUAuxEg4
+    short-id: e27ba09622ff673a
+  servername: herbalromania.top
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 06
   server: 82.152.132.120
   port: 443
   udp: true
@@ -35,13 +68,41 @@ proxies:
     short-id: ef7c4e4302bd52d7
   servername: ro1.gigobingo.ru
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 04
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 (Romania) 07
+  server: 46.28.67.55
   port: 443
+  udp: true
+  type: vless
+  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU
+    short-id: d06d78e974491b6e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 08
+  server: 194.68.44.42
+  port: 64546
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
+  password: U83u9OGpvSatIUW7LsWffr
+- name: 🇷🇴 罗马尼亚 (Romania) 09
+  server: autostream.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 62610fc6-8333-41f9-9258-08915e4343ab
+  tls: true
+  reality-opts:
+    public-key: qs57RRflA_LrI4H5rFIgF0aoWM1P1dLrtd5Yi5NiRQ0
+    short-id: 2dcb233be829ed90
+  servername: cdnjs.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +112,11 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02
   - 🇷🇴 罗马尼亚 (Romania) 03
   - 🇷🇴 罗马尼亚 (Romania) 04
+  - 🇷🇴 罗马尼亚 (Romania) 05
+  - 🇷🇴 罗马尼亚 (Romania) 06
+  - 🇷🇴 罗马尼亚 (Romania) 07
+  - 🇷🇴 罗马尼亚 (Romania) 08
+  - 🇷🇴 罗马尼亚 (Romania) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -60,5 +126,10 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 02
   - 🇷🇴 罗马尼亚 (Romania) 03
   - 🇷🇴 罗马尼亚 (Romania) 04
+  - 🇷🇴 罗马尼亚 (Romania) 05
+  - 🇷🇴 罗马尼亚 (Romania) 06
+  - 🇷🇴 罗马尼亚 (Romania) 07
+  - 🇷🇴 罗马尼亚 (Romania) 08
+  - 🇷🇴 罗马尼亚 (Romania) 09
 rules:
 - MATCH,PROXIES

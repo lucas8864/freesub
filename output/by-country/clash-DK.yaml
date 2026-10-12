@@ -19,17 +19,27 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇩🇰 丹麦 (Denmark) 02
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16305
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇩🇰 丹麦 (Denmark) 01
+  - 🇩🇰 丹麦 (Denmark) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇰 丹麦 (Denmark) 01
+  - 🇩🇰 丹麦 (Denmark) 02
 rules:
 - MATCH,PROXIES

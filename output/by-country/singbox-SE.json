@@ -6,64 +6,55 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "sw.golangwikito.cfd",
+      "server": "5.129.206.155",
       "server_port": 443,
-      "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
+      "uuid": "c9c219dc-50da-4135-8e5b-67020291f0ec",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "sw.golangwikito.cfd",
+        "server_name": "p92e5mc7t.zenaltra-hub95.cyou",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "Kb8SsVPprs46BJSUNp5JvWLI-TFEiHmlBOXLQd37Glg",
-          "short_id": "a1037b25dcef6aa7"
+          "public_key": "esjSMExL6v40ksVJD5urvmQD4XZVWfBOCvStdk-q4DE",
+          "short_id": "6ba85179e30d4fc2"
         }
       }
     },
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "2.26.55.163",
-      "server_port": 443,
-      "uuid": "621bcb9e-7df5-427b-a9d4-6e87223c8bca",
+      "server": "136.148.223.212",
+      "server_port": 25119,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "specific3.kandnet.com",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "0eWdILjmoRVSJFDMiQskgkKG2Fc4TEMZ3XEPJ8ez9Hw",
-          "short_id": ""
+          "public_key": "szPq4a3cvxfBOmGyg-UJCV3d1Jqjnj7YR3gaxyYtnk4",
+          "short_id": "10f517"
         }
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇸🇪 瑞典 (Sweden) 03",
-      "server": "swe.wizard.select",
-      "server_port": 443,
-      "uuid": "3db6eb7e-c548-11f1-9902-a337233c6cda",
-      "flow": "xtls-rprx-vision",
+      "server": "sweedenqfds777.qcloud.surf",
+      "server_port": 21223,
+      "password": "4ad3dbf5-2005-4d96-b56c-a0ca9905cab6",
       "tls": {
         "enabled": true,
-        "server_name": "swe.wizard.select",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Sikc1gu5t_uwitf1xTTChP9tpT_sjY530p2tioHbmz0",
-          "short_id": "3b20e438da99"
-        }
+        "server_name": "sweedenqfds777.qcloud.surf",
+        "insecure": false
       }
     },
     {

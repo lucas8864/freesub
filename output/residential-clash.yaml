@@ -4,13 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   server: 24864168545164.d6f54hd1j.cc
   port: 443
   udp: true
@@ -24,9 +18,7 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: 24864168545164.d6f54hd1j.cc
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
   server: 654168416355441.d6f54hd1j.cc
   port: 443
   udp: true
@@ -40,21 +32,36 @@ proxies:
   network: ws
   ws-opts:
     path: /
+    headers:
+      Host: 654168416355441.d6f54hd1j.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  server: 42.200.173.5
+  port: 443
+  udp: true
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
+    short-id: 1a
+  servername: s3.ap-east-1.amazonaws.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
 rules:
 - MATCH,PROXIES
