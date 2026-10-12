@@ -5,117 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 162.159.228.255
-  port: 443
-  udp: true
-  type: vless
-  uuid: b135a1e0-ebdb-4d46-b3fa-bd1e78580244
-  tls: true
-  servername: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wjwkhoaftdgrt8qus.mp8pmwdgwf3sdapasouszjobjr57nrxxgtx9n.workers.dev
-- name: 🇯🇵 日本 (Japan) 02
-  server: 162.159.153.194
-  port: 443
-  udp: true
-  type: vless
-  uuid: 1e922b22-d169-4461-89c1-07e09ff2617c
-  tls: true
-  servername: vlesss.xttd.eu.org
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /proxyip=proxyip.fxxk.dedyn.io
-    headers:
-      Host: vlesss.xttd.eu.org
-- name: 🇯🇵 日本 (Japan) 03
-  server: 128.241.25.11
-  port: 30021
-  udp: true
-  type: vless
-  uuid: 72fbb611-628d-4afa-8198-bda3e38021f9
-  tls: true
-  servername: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3t1yvbyla-rj740g.28m7r63dttya6gazmhoo.workers.dev
-- name: 🇯🇵 日本 (Japan) 04
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇯🇵 日本 (Japan) 05
-  server: 128.241.25.215
-  port: 30036
-  udp: true
-  type: vless
-  uuid: 196b7228-58df-4bcf-af2a-2e96608d5add
-  tls: true
-  servername: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 2-gys60wmzb6bqzd.qpsjn114hh3vlph9z60sesz0agjawpwroneg.workers.dev
-- name: 🇯🇵 日本 (Japan) 06
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 07
+- name: 🇯🇵 日本 (Japan) 02
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 08
+- name: 🇯🇵 日本 (Japan) 03
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 09
-  server: 129.153.71.28
-  port: 28863
+- name: 🇯🇵 日本 (Japan) 04
+  server: 54.238.153.132
+  port: 443
   udp: true
-  type: vless
-  uuid: 3e956106-7f92-4cbf-bf77-715d3890fa84
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 10
+  type: trojan
+  password: UX82473651
+  sni: obliging-louse.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 05
+  server: 8.211.175.236
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06
   server: 154.31.114.248
   port: 50159
   udp: true
@@ -128,97 +54,70 @@ proxies:
     short-id: 091e1c5db8451757
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 11
-  server: 45.76.218.34
-  port: 32676
-  udp: true
-  type: trojan
-  password: c8b9c7ca-c022-4ee4-9690-2d615c784b14
-  sni: lazeno.vip
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 12
-  server: 13.193.213.184
+- name: 🇯🇵 日本 (Japan) 07
+  server: 43.207.198.39
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: stable-python.rooster465.autos
+  sni: fancy-javelin.rooster465.autos
   skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 13
-  server: 18.183.167.216
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: amazed-mako.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 14
-  server: 52.194.251.232
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: optimal-penguin.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 15
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 16
-  server: 45.32.52.173
-  port: 8886
-  udp: true
-  type: trojan
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  sni: 45.32.52.173
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 17
-  server: warm-krill.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: warm-krill.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 18
-  server: 3.112.29.244
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: evident-ant.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 19
+- name: 🇯🇵 日本 (Japan) 08
   server: 45.32.10.7
   port: 443
   udp: true
   type: hysteria2
   password: 96ab5cd282733fd4c312a61f972f330a
   sni: vp3.yysyy.online
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 20
-  server: 52.192.217.187
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: evolving-platypus.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 21
-  server: 3.112.188.176
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: live-stallion.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 22
-  server: 103.75.118.228
-  port: 11452
+- name: 🇯🇵 日本 (Japan) 09
+  server: 3.112.29.244
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evident-ant.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 10
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: 168.138.43.75
+- name: 🇯🇵 日本 (Japan) 11
+  server: comic-poodle.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: comic-poodle.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 12
+  server: allowed-poodle.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: allowed-poodle.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 13
+  server: legible-ram.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: legible-ram.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 14
+  server: 3.114.220.22
+  port: 18007
   udp: true
   type: vless
   uuid: 814bd064-544d-4255-a070-5705c03f6da9
@@ -229,31 +128,103 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 23
-  server: 137.220.221.179
+- name: 🇯🇵 日本 (Japan) 15
+  server: 54.249.55.154
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: prime-corgi.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 16
+  server: stable-python.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: stable-python.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 17
+  server: 138.3.208.26
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 184cdec28da5a09450803c8debcd2cc9
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 18
+  server: 142.91.108.25
   port: 443
   udp: true
   type: vless
-  uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
-- name: 🇯🇵 日本 (Japan) 24
-  server: open.2ml.bid
-  port: 5443
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
+    short-id: ea36c03d86f91287
+  servername: jp3.nztvpn.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 19
+  server: 13.231.247.130
+  port: 443
   udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: open.2ml.bid
+  type: trojan
+  password: UX82473651
+  sni: concrete-aardvark.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 20
+  server: live-stallion.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: live-stallion.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 25
-  server: 172.111.146.64
+- name: 🇯🇵 日本 (Japan) 21
+  server: 52.194.251.232
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: optimal-penguin.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 22
+  server: 31.77.29.47
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9ee57d03-dcf5-488b-aff7-305301879353
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZrHDiON568oDDRIl0XXBL5kBK5bNnkadKFzt6UYIoUs
+    short-id: ee2fb8a902f1fa2b
+  servername: jp-akn-1.movietop24.site
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 23
+  server: 84.247.155.196
   port: 80
   udp: true
-  type: vmess
-  uuid: 05b8c783-7f59-47f9-9923-06a465679f6a
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /vmess/
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 24
+  server: 43.206.225.188
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: warm-krill.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 25
+  server: 13.230.76.132
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: equipped-stingray.rooster465.autos
+  skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 26
   server: jpga01.jumpernode.site
   port: 443
@@ -268,83 +239,14 @@ proxies:
   servername: amzn.com
   client-fingerprint: chrome
 - name: 🇯🇵 日本 (Japan) 27
-  server: obliging-louse.rooster465.autos
+  server: open.2ml.cc.cd
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: obliging-louse.rooster465.autos
-  skip-cert-verify: false
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 28
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 29
-  server: legible-ram.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: legible-ram.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 30
-  server: 168.138.43.75
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-    headers:
-      Host: jp01.a0a.xyz
-- name: 🇯🇵 日本 (Japan) 31
-  server: allowed-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: allowed-poodle.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 32
-  server: 158.101.148.79
-  port: 443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: 158.101.148.79
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 33
-  server: equipped-stingray.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: equipped-stingray.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 34
-  server: 138.2.21.246
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: my_super_password_123
-  sni: 138.2.21.246
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 35
-  server: 54.250.237.143
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: accurate-frog.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 36
   server: 142.91.106.31
   port: 43000
   udp: true
@@ -357,38 +259,120 @@ proxies:
     short-id: 8d66106f
   servername: 142.91.106.31
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 37
-  server: 203.137.165.164
-  port: 57554
-  udp: true
-  type: vless
-  uuid: e5b2a063-a114-4bd0-802d-b2da1fe1d1da
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 38
-  server: 43.207.198.39
+- name: 🇯🇵 日本 (Japan) 29
+  server: 54.199.66.128
   port: 443
   udp: true
   type: trojan
   password: UX82473651
-  sni: fancy-javelin.rooster465.autos
+  sni: integral-rodent.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 30
+  server: 54.250.237.143
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: accurate-frog.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 31
+  server: 13.230.91.226
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: musical-terrier.rooster465.autos
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 39
+- name: 🇯🇵 日本 (Japan) 32
+  server: 52.192.45.137
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: promoted-rattler.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 33
+  server: 172.233.79.107
+  port: 443
+  udp: true
+  type: vless
+  uuid: d90087c3-54f5-4283-a13f-615260c8b0c7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hTweFDvbSucrGERtiiwDfoqD3vo_Z9cuaqboff3FTXQ
+  servername: googleapis.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 34
+  server: 3.114.220.22
+  port: 19645
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: edge
+- name: 🇯🇵 日本 (Japan) 35
+  server: amazed-mako.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: amazed-mako.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 36
+  server: brief-glider.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: brief-glider.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 37
+  server: 52.192.217.187
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: evolving-platypus.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 38
   server: organic-caribou.rooster465.autos
   port: 443
   udp: true
   type: trojan
   password: UX82473651
   sni: organic-caribou.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 39
+  server: 138.2.21.246
+  port: 5443
+  udp: true
+  type: hysteria2
+  password: my_super_password_123
+  sni: open.2ml.cc.cd
   skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 40
+  server: 18.183.212.83
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: normal-macaque.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 41
+  server: 54.65.177.190
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: winning-marten.rooster465.autos
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 42
   server: 3.114.220.22
   port: 10583
   udp: true
@@ -401,331 +385,28 @@ proxies:
     short-id: 48050fab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 41
-  server: 13.230.91.226
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: musical-terrier.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 42
-  server: 3.114.220.22
-  port: 18007
-  udp: true
-  type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: firefox
 - name: 🇯🇵 日本 (Japan) 43
-  server: 18.183.212.83
+  server: 84.247.155.196
   port: 443
   udp: true
-  type: trojan
-  password: UX82473651
-  sni: normal-macaque.rooster465.autos
-  skip-cert-verify: false
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
 - name: 🇯🇵 日本 (Japan) 44
-  server: 176.34.5.100
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: assuring-skink.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 45
-  server: 54.199.66.128
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: integral-rodent.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 46
-  server: 3.114.220.22
-  port: 19645
+  server: 18.183.215.124
+  port: 28573
   udp: true
   type: vless
-  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  uuid: 871bfce7-8440-4394-8d82-56b51f20fdad
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
-    short-id: 48050fab
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 47
-  server: comic-poodle.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: comic-poodle.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 48
-  server: 57.129.130.63
-  port: 52014
-  udp: true
-  type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 49
-  server: 209.248.32.116
-  port: 28106
-  udp: true
-  type: trojan
-  password: HOrViv
-  sni: download.windowsupdate.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 50
-  server: winning-marten.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: winning-marten.rooster465.autos
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 51
-  server: 129.151.64.169
-  port: 31867
-  udp: true
-  type: vless
-  uuid: f7ff2e67-b687-4098-a28a-d102c27ba19c
-  tls: true
-  servername: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: mw5qisav.wjwqvie0wb1eqhb8e83clqdoq3m5p9a4on.workers.dev
-- name: 🇯🇵 日本 (Japan) 52
-  server: 54.249.55.154
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: prime-corgi.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 53
-  server: 188.114.97.6
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  tls: true
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
+    public-key: 1DJr9toke7FRuSXjibBVuNvRnLnJnN5kXwUBG6Romzg
+    short-id: 03653bc03be10c97
+  servername: www.sony.com
   client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /tyxyws
-    headers:
-      Host: jp3.yohototo.top
-- name: 🇯🇵 日本 (Japan) 54
-  server: 57.129.52.47
-  port: 52014
-  udp: true
-  type: vless
-  uuid: ecc4675b-1607-4699-8b20-23af97b671af
-  tls: true
-  servername: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: kqjifhg9rw.tradsc8p9xp7wxyqmc1wy0ah.workers.dev
-- name: 🇯🇵 日本 (Japan) 55
-  server: 79.137.199.52
-  port: 21
-  udp: true
-  type: vless
-  uuid: 763e2ddd-c830-4f4f-801c-f6f2c3418d4f
-  tls: true
-  servername: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: bapj1qapjk4.0sds0li1bwcz0i76it0gjxv1.workers.dev
-- name: 🇯🇵 日本 (Japan) 56
-  server: 37.120.222.70
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇯🇵 日本 (Japan) 57
-  server: 116.204.164.5
-  port: 7443
-  udp: true
-  type: vless
-  uuid: 2416ff70-cb17-4cdc-834d-a89c00261e01
-  tls: true
-  servername: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: o-85ley6knn8ut.6nvkygqh144t7xtdyvh0y3o4gzo3ujhnk8n.workers.dev
-- name: 🇯🇵 日本 (Japan) 58
-  server: 13.231.247.130
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: concrete-aardvark.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 59
-  server: 5.75.195.83
-  port: 56879
-  udp: true
-  type: vless
-  uuid: f8847ac2-e586-400f-841b-00081ea4592e
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 60
-  server: 188.34.142.174
-  port: 444
-  udp: true
-  type: vless
-  uuid: da46ec1f-84ad-4470-866f-010b58357b19
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 61
-  server: 54.179.79.12
-  port: 53646
-  udp: true
-  type: vless
-  uuid: d57b9436-a238-4066-8b11-d23ae57c5982
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 62
-  server: 46.101.46.169
-  port: 486
-  udp: true
-  type: vless
-  uuid: 16bf3359-e7d8-4de6-86a0-6d65cf793b56
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 63
-  server: 5.9.117.252
-  port: 4433
-  udp: true
-  type: vless
-  uuid: ef286b0e-21ed-4e2b-9110-e2ddc7627892
-  tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-- name: 🇯🇵 日本 (Japan) 64
-  server: promoted-rattler.rooster465.autos
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: promoted-rattler.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 65
-  server: 142.91.108.25
-  port: 443
-  udp: true
-  type: vless
-  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 9ZCYjybxMQ7JpE39B8u_Bo-alI1LIbt5ER0E-4yMjiM
-    short-id: ea36c03d86f91287
-  servername: jp3.nztvpn.com
-  client-fingerprint: ios
-- name: 🇯🇵 日本 (Japan) 66
-  server: 13.230.139.12
-  port: 443
-  udp: true
-  type: trojan
-  password: UX82473651
-  sni: brief-glider.rooster465.autos
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 67
-  server: jp5.998998.best
-  port: 443
-  udp: true
-  type: vmess
-  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: server11.9966338.xyz
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ieusrdgfhteuirgfiuws
-    headers:
-      Host: server11.9966338.xyz
-- name: 🇯🇵 日本 (Japan) 68
-  server: 43.255.157.234
+- name: 🇯🇵 日本 (Japan) 45
+  server: 103.30.76.37
   port: 27916
   udp: true
   type: vless
@@ -737,47 +418,37 @@ proxies:
     short-id: 6772eb2b7a
   servername: cdn-dynmedia-1.microsoft.com
   client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 69
-  server: 43.247.132.85
-  port: 41563
+- name: 🇯🇵 日本 (Japan) 46
+  server: 176.34.5.100
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: assuring-skink.rooster465.autos
+  skip-cert-verify: false
+- name: 🇯🇵 日本 (Japan) 47
+  server: 104.18.37.127
+  port: 443
   udp: true
   type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  reality-opts:
-    public-key: HrcXRHtsitc_AVlN-_8fZuRgaP-Mqa_9JJotI9OnkVc
-    short-id: 25c79e5856c7
-  servername: iosapps.itunes.apple.com
-  client-fingerprint: firefox
-- name: 🇯🇵 日本 (Japan) 70
-  server: open.2ml.cc.cd
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 48
+  server: open.2ml.bid
   port: 443
   udp: true
   type: hysteria2
   password: my_super_password_123
-  sni: open.2ml.cc.cd
+  sni: open.2ml.bid
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 71
-  server: t14.qifei.app
-  port: 443
-  udp: true
-  type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 72
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
 proxy-groups:
 - name: PROXIES
   type: select
@@ -831,30 +502,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 46
   - 🇯🇵 日本 (Japan) 47
   - 🇯🇵 日本 (Japan) 48
-  - 🇯🇵 日本 (Japan) 49
-  - 🇯🇵 日本 (Japan) 50
-  - 🇯🇵 日本 (Japan) 51
-  - 🇯🇵 日本 (Japan) 52
-  - 🇯🇵 日本 (Japan) 53
-  - 🇯🇵 日本 (Japan) 54
-  - 🇯🇵 日本 (Japan) 55
-  - 🇯🇵 日本 (Japan) 56
-  - 🇯🇵 日本 (Japan) 57
-  - 🇯🇵 日本 (Japan) 58
-  - 🇯🇵 日本 (Japan) 59
-  - 🇯🇵 日本 (Japan) 60
-  - 🇯🇵 日本 (Japan) 61
-  - 🇯🇵 日本 (Japan) 62
-  - 🇯🇵 日本 (Japan) 63
-  - 🇯🇵 日本 (Japan) 64
-  - 🇯🇵 日本 (Japan) 65
-  - 🇯🇵 日本 (Japan) 66
-  - 🇯🇵 日本 (Japan) 67
-  - 🇯🇵 日本 (Japan) 68
-  - 🇯🇵 日本 (Japan) 69
-  - 🇯🇵 日本 (Japan) 70
-  - 🇯🇵 日本 (Japan) 71
-  - 🇯🇵 日本 (Japan) 72
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -908,29 +555,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 46
   - 🇯🇵 日本 (Japan) 47
   - 🇯🇵 日本 (Japan) 48
-  - 🇯🇵 日本 (Japan) 49
-  - 🇯🇵 日本 (Japan) 50
-  - 🇯🇵 日本 (Japan) 51
-  - 🇯🇵 日本 (Japan) 52
-  - 🇯🇵 日本 (Japan) 53
-  - 🇯🇵 日本 (Japan) 54
-  - 🇯🇵 日本 (Japan) 55
-  - 🇯🇵 日本 (Japan) 56
-  - 🇯🇵 日本 (Japan) 57
-  - 🇯🇵 日本 (Japan) 58
-  - 🇯🇵 日本 (Japan) 59
-  - 🇯🇵 日本 (Japan) 60
-  - 🇯🇵 日本 (Japan) 61
-  - 🇯🇵 日本 (Japan) 62
-  - 🇯🇵 日本 (Japan) 63
-  - 🇯🇵 日本 (Japan) 64
-  - 🇯🇵 日本 (Japan) 65
-  - 🇯🇵 日本 (Japan) 66
-  - 🇯🇵 日本 (Japan) 67
-  - 🇯🇵 日本 (Japan) 68
-  - 🇯🇵 日本 (Japan) 69
-  - 🇯🇵 日本 (Japan) 70
-  - 🇯🇵 日本 (Japan) 71
-  - 🇯🇵 日本 (Japan) 72
 rules:
 - MATCH,PROXIES

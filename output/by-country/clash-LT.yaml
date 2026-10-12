@@ -6,25 +6,25 @@ log-level: info
 proxies:
 - name: 🇱🇹 立陶宛 (Lithuania) 01
   server: 195.238.126.20
-  port: 9012
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: xaupMUvhptwxdDUg
-- name: 🇱🇹 立陶宛 (Lithuania) 02
-  server: 195.238.126.20
   port: 9078
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: JCJpbRbQZNw9XFZG
-- name: 🇱🇹 立陶宛 (Lithuania) 03
+- name: 🇱🇹 立陶宛 (Lithuania) 02
   server: 195.238.126.20
-  port: 9002
+  port: 9001
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: b8KkNDjEd5QqFyRm
+  password: UkXRsXvR6buDMG2Y
+- name: 🇱🇹 立陶宛 (Lithuania) 03
+  server: 195.238.126.20
+  port: 9008
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: y9VURyNzJWNRYEGQ
 - name: 🇱🇹 立陶宛 (Lithuania) 04
   server: 84.32.109.20
   port: 443
@@ -37,7 +37,7 @@ proxies:
     public-key: 3jySGemfaqPZ2vM66Qtzo5SotO3eoRn1FeGaKp6KBQ4
     short-id: 0da7e14db353e7d0
   servername: litv.nztvpn.com
-  client-fingerprint: random
+  client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select

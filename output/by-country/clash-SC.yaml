@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
-  server: 42.200.173.5
+- name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: 144.31.50.236
   port: 443
   udp: true
   type: vless
-  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
+  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0i_xAxYgSNx5NMpK2lOaWGS-CvAiD_LneYPO0MF0owo
-    short-id: 1a
-  servername: s3.ap-east-1.amazonaws.com
+    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
+    short-id: bbe46bd8f6b96839
+  servername: yandex.ru
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 rules:
 - MATCH,PROXIES

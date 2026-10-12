@@ -6,26 +6,47 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "server": "206.223.249.90",
+      "server_port": 33891,
+      "uuid": "9977ba41-b6aa-4033-9492-2f6abfcade31",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "browser.yandex.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "fj5f0rWTOAgd2gqCCWgag3oAGwb6MCef3OFNdnQLWW8",
+          "short_id": "f5bc6788"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
+      "server": "178.236.16.98",
+      "server_port": 35728,
+      "uuid": "a00d89f6-ab7e-4e30-a5e5-54c701d62c93",
       "tls": {
         "enabled": true,
         "server_name": "yahoo.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
+          "public_key": "vhUFNoFcvtZAVMo8y5K5eU2V43m5q6yjmWIhp5RkFng",
+          "short_id": "69a2"
         }
       }
     },
     {
       "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
       "server": "38.107.234.57",
       "server_port": 80,
       "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
@@ -44,7 +65,8 @@
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
       ]
     },
     {
@@ -52,7 +74,8 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

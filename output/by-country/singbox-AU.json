@@ -16,40 +16,18 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇦🇺 澳大利亚 (Australia) 02",
-      "server": "212.135.211.242",
-      "server_port": 443,
-      "uuid": "1c3fb1c0-1204-49db-b842-f72d50f014c1",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "aus.lovehk.xyz",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/Sydney3",
-        "headers": {
-          "Host": "aus.lovehk.xyz"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01",
-        "🇦🇺 澳大利亚 (Australia) 02"
+        "🇦🇺 澳大利亚 (Australia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01",
-        "🇦🇺 澳大利亚 (Australia) 02"
+        "🇦🇺 澳大利亚 (Australia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

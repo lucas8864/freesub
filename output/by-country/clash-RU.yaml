@@ -19,34 +19,33 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 89.125.103.208
-  port: 20111
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 994ccabf6f0950d6
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 193.233.74.6
-  port: 8444
-  udp: true
-  type: vless
-  uuid: f55e9aba-7b14-4f6f-b59a-d5b3d45c9309
-  tls: true
-  reality-opts:
-    public-key: FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0
-    short-id: 457fab2ac885dbe0
-  servername: github.com
-  client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 04
   server: 130.49.189.158
   port: 43558
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: freede.aiage.work
+  port: 443
+  udp: true
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
+  client-fingerprint: firefox
+- name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: match-stream.lovkisport.blog
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 05
   server: 153.80.241.206
   port: 8444
@@ -61,86 +60,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: edge.cloudtechone.org
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5036de9b-1a18-40e2-97f6-9cbb4a4753e4
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _IBXb9NfhsnS21XbU9PIl73ExvrjXGXVLO0Za1ui5Fo
-    short-id: f93c9d5127e622e4
-  servername: edge.cloudtechone.org
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: 94.198.54.132
-  port: 443
-  udp: true
-  type: hysteria2
-  password: f317b5d6-d399-4d3d-a051-89d674ae953c
-  sni: msk.frkn.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 139.28.168.126
-  port: 8080
-  udp: true
-  type: hysteria2
-  password: we_9m92rJZ93_m9Cj3KXB_mC9AS7Nx
-  sni: hopp-honkong-new.roxa.org
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 09
-  server: du-rov.secureservice.top
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 10
-  server: 5.42.99.64
-  port: 8443
-  udp: true
-  type: vless
-  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
-    short-id: 3cbc3d737fb9c4af
-  servername: du-rov.secureservice.top
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 11
-  server: 193.164.149.248
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: ru-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-- name: 🇷🇺 俄罗斯 (Russia) 12
-  server: 93.188.184.150
-  port: 443
-  udp: true
-  type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
-  tls: true
-  reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ru-1-2.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ru-api
 proxy-groups:
 - name: PROXIES
   type: select
@@ -151,13 +70,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
-  - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
-  - 🇷🇺 俄罗斯 (Russia) 10
-  - 🇷🇺 俄罗斯 (Russia) 11
-  - 🇷🇺 俄罗斯 (Russia) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -168,12 +80,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 03
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
-  - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
-  - 🇷🇺 俄罗斯 (Russia) 10
-  - 🇷🇺 俄罗斯 (Russia) 11
-  - 🇷🇺 俄罗斯 (Russia) 12
 rules:
 - MATCH,PROXIES

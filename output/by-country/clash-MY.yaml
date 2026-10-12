@@ -5,7 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇲🇾 马来西亚 (Malaysia) 01
-  server: 172.66.130.130
+  server: mm.good2026.com
+  port: 11186
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 99234c60-b01a-4d67-889a-cab58ab0061a
+- name: 🇲🇾 马来西亚 (Malaysia) 02
+  server: 66.154.113.180
   port: 443
   udp: true
   type: vmess
@@ -26,11 +33,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇲🇾 马来西亚 (Malaysia) 01
+  - 🇲🇾 马来西亚 (Malaysia) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇲🇾 马来西亚 (Malaysia) 01
+  - 🇲🇾 马来西亚 (Malaysia) 02
 rules:
 - MATCH,PROXIES

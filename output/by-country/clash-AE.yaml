@@ -5,6 +5,15 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
+  server: 104.143.223.79
+  port: 2085
+  udp: true
+  type: vless
+  uuid: 14e227c3-5a83-4b4d-a41a-e5f499c79415
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless
+- name: 🇦🇪 阿联酋 (UAE) 02
   server: 157.228.155.185
   port: 443
   udp: true
@@ -17,7 +26,17 @@ proxies:
     short-id: 5ea112e8
   servername: addons.mozilla.org
   client-fingerprint: random
-- name: 🇦🇪 阿联酋 (UAE) 02
+- name: 🇦🇪 阿联酋 (UAE) 03
+  server: 130.49.161.70
+  port: 443
+  udp: true
+  type: hysteria2
+  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
+  sni: hy2.aspidnet.xyz
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 04
   server: 157.228.155.238
   port: 443
   udp: true
@@ -30,17 +49,7 @@ proxies:
     short-id: 6f76ad09
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇦🇪 阿联酋 (UAE) 03
-  server: 130.49.161.70
-  port: 443
-  udp: true
-  type: hysteria2
-  password: p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR
-  sni: hy2.aspidnet.xyz
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 04
+- name: 🇦🇪 阿联酋 (UAE) 05
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -49,8 +58,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 06
+  server: 157.228.128.59
+  port: 443
+  udp: true
+  type: vless
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
+    short-id: 06e00e7c
+  servername: addons.mozilla.org
+  client-fingerprint: randomized
 proxy-groups:
 - name: PROXIES
   type: select
@@ -60,6 +80,8 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -69,5 +91,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
+  - 🇦🇪 阿联酋 (UAE) 06
 rules:
 - MATCH,PROXIES
