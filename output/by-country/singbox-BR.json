@@ -5,22 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇸🇨 塞舌尔 (Seychelles) 01",
-      "server": "144.31.50.236",
+      "tag": "🇧🇷 巴西 (Brazil) 01",
+      "server": "35.199.90.53",
       "server_port": 443,
-      "uuid": "1c332eae-7e02-4acd-996d-4eb3e652401c",
-      "flow": "xtls-rprx-vision",
+      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
       "tls": {
         "enabled": true,
-        "server_name": "yandex.ru",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM",
-          "short_id": "bbe46bd8f6b96839"
+          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
+          "short_id": "b62a4da6cd1c4dd6"
         }
       }
     },
@@ -29,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01"
+        "🇧🇷 巴西 (Brazil) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01"
+        "🇧🇷 巴西 (Brazil) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

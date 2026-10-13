@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇸🇨 塞舌尔 (Seychelles) 01
-  server: 144.31.50.236
+- name: 🇬🇷 希腊 (Greece) 01
+  server: 157.228.150.34
   port: 443
   udp: true
   type: vless
-  uuid: 1c332eae-7e02-4acd-996d-4eb3e652401c
+  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: uitO4Z8t9TplwwYaqwLqh5rfxDh_X8bOBiNuPbzvaEM
-    short-id: bbe46bd8f6b96839
-  servername: yandex.ru
+    public-key: NOw-idkk3OCn-N0IRS93leujH4ik-E749O2T5BYJQ0M
+    short-id: 3cef317b
+  servername: addons.mozilla.org
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇸🇨 塞舌尔 (Seychelles) 01
+  - 🇬🇷 希腊 (Greece) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇸🇨 塞舌尔 (Seychelles) 01
+  - 🇬🇷 希腊 (Greece) 01
 rules:
 - MATCH,PROXIES
