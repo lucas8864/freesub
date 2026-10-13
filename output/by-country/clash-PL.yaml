@@ -5,18 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 80.47.12.94
+  server: pl.golangwikito.cfd
   port: 443
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: f8d52ece-fad4-478d-875d-df6eed3befa7
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
-  servername: pl-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
+    public-key: DsTVLCehsKvfFGtNZU5leKOLTlEp28qeifHYtRKOFwg
+    short-id: f8b695e5c59d028c
+  servername: pl.golangwikito.cfd
+  client-fingerprint: ''
 - name: 🇵🇱 波兰 (Poland) 02
-  server: 2.26.231.218
+  server: 45.192.12.93
+  port: 443
+  udp: true
+  type: hysteria2
+  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
+  sni: admin.wwwinternetvideo.click
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03
+  server: 31.77.13.19
   port: 2063
   udp: true
   type: vless
@@ -27,20 +37,20 @@ proxies:
     public-key: MMpt_jWc4J3oySBdf5sPDVRkiWlZmOObth6A1scM9BM
   servername: rusbid.de
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03
-  server: 177.1.192.81
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 04
+  server: 144.31.101.196
+  port: 33891
   udp: true
   type: vless
-  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
+  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
-    short-id: 85766a81
-  servername: addons.mozilla.org
+    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
+    short-id: 5bd7b68ca4c04443
+  servername: browser.yandex.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04
+- name: 🇵🇱 波兰 (Poland) 05
   server: 177.1.192.72
   port: 443
   udp: true
@@ -53,30 +63,7 @@ proxies:
     short-id: 46455ff0
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 144.31.49.47
-  port: 443
-  udp: true
-  type: hysteria2
-  password: YutbgyXL1mGaSlBXDoEucWvYbrDCINgUcQ6R6_At5Pjr2xCc
-  sni: admin.wwwinternetvideo.click
-  skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 06
-  server: 91.215.43.248
-  port: 443
-  udp: true
-  type: vless
-  uuid: a5893c8b-28a2-4947-9a1c-708db25506c3
-  tls: true
-  servername: my.kempekl.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /gateway/v1/ws/a64eb463966ba9c4bfd628f1de0362ae
-    headers:
-      Host: my.kempekl.online
-- name: 🇵🇱 波兰 (Poland) 07
   server: 177.1.192.74
   port: 443
   udp: true
@@ -89,7 +76,31 @@ proxies:
     short-id: 770618b6
   servername: addons.mozilla.org
   client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07
+  server: pl-1-1.unturned-rust-dead.lol
+  port: 443
+  udp: true
+  type: vless
+  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  tls: true
+  reality-opts:
+    public-key: gS0qvWKumWcOVoAgf8SHt6Sm3tqpBw07c5sA_Clb1hg
+  servername: pl-1-1.unturned-rust-dead.lol
+  client-fingerprint: random
 - name: 🇵🇱 波兰 (Poland) 08
+  server: 87.242.127.113
+  port: 4510
+  udp: true
+  type: vless
+  uuid: c3db7657-88ce-42a6-b998-1e0364b277ac
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: hkvjyE8WMKHvdGfMta7PAIGz6HAv2WiXvWvAQmsE_DM
+    short-id: 2d0c188798bae174
+  servername: 9c99da.usecache.net
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 09
   server: 2.26.225.89
   port: 8443
   udp: true
@@ -111,6 +122,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06
   - 🇵🇱 波兰 (Poland) 07
   - 🇵🇱 波兰 (Poland) 08
+  - 🇵🇱 波兰 (Poland) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,5 +136,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 06
   - 🇵🇱 波兰 (Poland) 07
   - 🇵🇱 波兰 (Poland) 08
+  - 🇵🇱 波兰 (Poland) 09
 rules:
 - MATCH,PROXIES
