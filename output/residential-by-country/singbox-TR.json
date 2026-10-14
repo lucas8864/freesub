@@ -12,7 +12,11 @@
       "tls": {
         "enabled": true,
         "server_name": "googol.wookshop.ir",
-        "insecure": true,
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"

@@ -5,15 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 208.69.78.217
-  port: 21175
+  server: 132.243.175.144
+  port: 8388
   udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02
   server: 140.238.213.114
   port: 50160
@@ -38,16 +35,6 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 208.69.78.217
-  port: 33025
-  udp: true
-  type: hysteria2
-  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
-  sni: vpn.local
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: mbQXP2ASuHbF6ZPq
-- name: 🇨🇭 瑞士 (Switzerland) 05
   server: 138.124.96.88
   port: 41826
   udp: true
@@ -62,6 +49,31 @@ proxies:
     path: /
     headers:
       Host: ''
+- name: 🇨🇭 瑞士 (Switzerland) 05
+  server: ch.srv.vbuste.ru
+  port: 444
+  udp: true
+  type: vless
+  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  tls: true
+  reality-opts:
+    public-key: 0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08
+    short-id: 4be4110078ebed4a
+  servername: ch.srv.vbuste.ru
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
+- name: 🇨🇭 瑞士 (Switzerland) 06
+  server: 208.69.78.217
+  port: 33025
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
 proxy-groups:
 - name: PROXIES
   type: select
@@ -72,6 +84,7 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -82,5 +95,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
 rules:
 - MATCH,PROXIES

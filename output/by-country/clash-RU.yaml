@@ -19,13 +19,6 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
-- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 193.233.74.6
   port: 8444
   udp: true
@@ -40,22 +33,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 176.124.214.107
-  port: 8443
-  udp: true
-  type: vless
-  uuid: ed8704b8-9e9e-48e6-b55b-ae9079ab3a59
-  tls: true
-  reality-opts:
-    public-key: i5a8i2AWUSMZ-rYA6hGBRCBBoe7W5ah33SCdF5JkMk4
-    short-id: 8bcfe256cf216fd8
-  servername: apple.com
-  client-fingerprint: ''
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-- name: 🇷🇺 俄罗斯 (Russia) 05
+- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 213.165.56.102
   port: 443
   udp: true
@@ -68,6 +46,21 @@ proxies:
     short-id: 57e7977c9011061c
   servername: freede.aiage.work
   client-fingerprint: ''
+- name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 52+ggoCvKFVJyT1NDiuWOZw2rHIvAg3tgqgJl8aeCwY=
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: 'off'
+  skip-cert-verify: true
 - name: 🇷🇺 俄罗斯 (Russia) 06
   server: 153.80.241.206
   port: 8444
@@ -82,6 +75,47 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
+- name: 🇷🇺 俄罗斯 (Russia) 07
+  server: 130.49.189.250
+  port: 28152
+  udp: true
+  type: hysteria2
+  password: 4ad3dbf5-2005-4d96-b56c-a0ca9905cab6
+  sni: alb1337.zaebalsanoproxyklinus.lol
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 08
+  server: hy9.shamanfun.ru
+  port: 1443
+  udp: true
+  type: hysteria2
+  password: c635b5f6-b5ea-4e57-927f-75860b0cb984
+  sni: hy9.shamanfun.ru
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 09
+  server: 45.12.75.242
+  port: 26424
+  udp: true
+  type: vless
+  uuid: 633f424e-2b11-48da-a6b3-a849dd71456f
+  tls: true
+  reality-opts:
+    public-key: l8AubqcxQO-HRFJy4pZL1vbLOo-eXit69s-XulSELE0
+    short-id: 23103e1e
+  servername: ya.ru
+  client-fingerprint: chrome
+- name: 🇷🇺 俄罗斯 (Russia) 10
+  server: du-rov.secureservice.top
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c53ea5e9-ed8b-4990-805d-7f1d6451426c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fSVfR9NB-6J6smrZlavi0GWd8JfDh0aXuEkKbtuFzUI
+    short-id: 3cbc3d737fb9c4af
+  servername: du-rov.secureservice.top
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,6 +127,10 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
+  - 🇷🇺 俄罗斯 (Russia) 07
+  - 🇷🇺 俄罗斯 (Russia) 08
+  - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -104,5 +142,9 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
+  - 🇷🇺 俄罗斯 (Russia) 07
+  - 🇷🇺 俄罗斯 (Russia) 08
+  - 🇷🇺 俄罗斯 (Russia) 09
+  - 🇷🇺 俄罗斯 (Russia) 10
 rules:
 - MATCH,PROXIES

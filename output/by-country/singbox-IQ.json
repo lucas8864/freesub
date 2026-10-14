@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇷 巴西 (Brazil) 01",
-      "server": "35.199.90.53",
-      "server_port": 443,
-      "uuid": "5e517b94-e207-47ee-be3c-3020a57594e8",
+      "tag": "🇮🇶 IQ 01",
+      "server": "arcturus.yokkastars.com",
+      "server_port": 40443,
+      "uuid": "bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "pCImwRkTjx8OIUiu1WFelZQFt1p3Q0lUoPbvjVq8GTs",
-          "short_id": "b62a4da6cd1c4dd6"
+          "public_key": "w4AYHvQnQS6olDqoG9ptLOtgehaWOsv9HQhDax5bLA4",
+          "short_id": "db46e2946fc466fd"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇮🇶 IQ 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇮🇶 IQ 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

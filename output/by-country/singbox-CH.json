@@ -4,20 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01",
-      "server": "208.69.78.217",
-      "server_port": 21175,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
     },
     {
       "type": "hysteria2",
@@ -56,24 +48,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04",
-      "server": "208.69.78.217",
-      "server_port": 33025,
-      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
-      "tls": {
-        "enabled": true,
-        "server_name": "vpn.local",
-        "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "mbQXP2ASuHbF6ZPq"
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04",
       "server": "138.124.96.88",
       "server_port": 41826,
       "uuid": "2eb3f6a0-df6e-49b6-994c-177acdd50a97",
@@ -92,6 +68,45 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "server": "ch.srv.vbuste.ru",
+      "server_port": 444,
+      "uuid": "318c935d-c195-41d3-99ad-9bbcfdab3386",
+      "tls": {
+        "enabled": true,
+        "server_name": "ch.srv.vbuste.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0-or5ogGhYbBgsVSrSC2Fhxyp2BN97Y9pqIdg61Qd08",
+          "short_id": "4be4110078ebed4a"
+        }
+      },
+      "transport": {
+        "type": "grpc"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 06",
+      "server": "208.69.78.217",
+      "server_port": 33025,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -100,7 +115,8 @@
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
         "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05"
+        "🇨🇭 瑞士 (Switzerland) 05",
+        "🇨🇭 瑞士 (Switzerland) 06"
       ]
     },
     {
@@ -111,7 +127,8 @@
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
         "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05"
+        "🇨🇭 瑞士 (Switzerland) 05",
+        "🇨🇭 瑞士 (Switzerland) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
