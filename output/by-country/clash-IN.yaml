@@ -28,7 +28,15 @@ proxies:
     public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
     short-id: 9980e0609b0d3891
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 03
+  server: in.tronsg.com
+  port: 443
+  udp: true
+  type: trojan
+  password: Trojan@82164024
+  sni: in.tronsg.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +44,7 @@ proxy-groups:
   - AUTO
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
+  - 🇮🇳 印度 (India) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +52,6 @@ proxy-groups:
   proxies:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
+  - 🇮🇳 印度 (India) 03
 rules:
 - MATCH,PROXIES

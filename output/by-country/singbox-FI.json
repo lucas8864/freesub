@@ -6,18 +6,30 @@
     {
       "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 01",
-      "server": "185.103.110.68",
-      "server_port": 18283,
-      "method": "aes-128-gcm",
-      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇫🇮 芬兰 (Finland) 02",
       "server": "185.103.110.66",
       "server_port": 18280,
       "method": "aes-128-gcm",
       "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "95.216.27.15",
+      "server_port": 2053,
+      "uuid": "1c81f6d3-5771-4c5d-9fdd-1655eff50634",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM",
+          "short_id": "d368b94e275ab080"
+        }
+      }
     },
     {
       "type": "vless",
@@ -41,53 +53,39 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "87.58.149.117",
-      "server_port": 443,
-      "uuid": "6338c01a-310e-42c3-bf4f-2a20e161054b",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "freefl.aiage.work",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "EqN5QtvWGccdkmL5ZNVDBRxRhWgr6g_vr3ABT8Q2dW4",
-          "short_id": "ff0ddf949624ef2a"
-        }
-      }
+      "server": "185.103.110.68",
+      "server_port": 18283,
+      "method": "aes-128-gcm",
+      "password": "f9300a9bf39ae0347c3a3bfbc4dd7754"
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 05",
-      "server": "salt0.khovanski.mom",
-      "server_port": 443,
-      "uuid": "ace33fb8-c593-4b17-8f72-f3359b6e9638",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "salt0.khovanski.mom",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "III2StgFziJtisbaKDYlEF2qYwBHJZnzZH5DHdwuFQ8",
-          "short_id": "d110331f200987ae"
-        }
-      }
+      "server": "edge10.cyrionflare.com",
+      "server_port": 2052,
+      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
     },
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 06",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+      "server": "fi-p1.h1cloud.net",
+      "server_port": 25633,
+      "uuid": "ec572cf0-1337-4c51-b4ec-ff2f538c1f4c",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "YLIRYJ8UkT0nSSgxJr7YckNuXnokVyEs2G6thNyx1GE",
+          "short_id": "200811f031ae7463"
+        }
+      }
     },
     {
       "type": "vless",
@@ -100,7 +98,7 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -114,27 +112,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 08",
-      "server": "65.108.3.59",
-      "server_port": 443,
-      "uuid": "8df2e661-6f46-471b-9133-7fc13a0daa35",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "web.eitaa.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "jDoORbrtDrvAlFSo19CJbc99C4ev8SAo1MwczSUt9no",
-          "short_id": "90ec9bba2019"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -145,8 +122,7 @@
         "🇫🇮 芬兰 (Finland) 04",
         "🇫🇮 芬兰 (Finland) 05",
         "🇫🇮 芬兰 (Finland) 06",
-        "🇫🇮 芬兰 (Finland) 07",
-        "🇫🇮 芬兰 (Finland) 08"
+        "🇫🇮 芬兰 (Finland) 07"
       ]
     },
     {
@@ -159,8 +135,7 @@
         "🇫🇮 芬兰 (Finland) 04",
         "🇫🇮 芬兰 (Finland) 05",
         "🇫🇮 芬兰 (Finland) 06",
-        "🇫🇮 芬兰 (Finland) 07",
-        "🇫🇮 芬兰 (Finland) 08"
+        "🇫🇮 芬兰 (Finland) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
