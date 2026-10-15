@@ -16,23 +16,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-      "server": "38.107.234.57",
-      "server_port": 80,
-      "uuid": "567f4be5-12ab-42e1-b8d9-db6fd1fdd31c",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess/",
-        "headers": {
-          "Host": "38.107.234.57"
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
+      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
       "server": "109.248.170.119",
       "server_port": 13447,
       "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
@@ -56,8 +41,7 @@
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
       ]
     },
     {
@@ -65,8 +49,7 @@
       "tag": "auto",
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

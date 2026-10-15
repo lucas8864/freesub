@@ -5,28 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇾 塞浦路斯 (Cyprus) 01
-  server: 185.233.187.188
-  port: 2087
-  udp: true
-  type: hysteria2
-  password: d0589fb6-420b-4078-a72a-66d270a25fd9
-  sni: fireedge.eaglors.com
-  skip-cert-verify: false
-- name: 🇨🇾 塞浦路斯 (Cyprus) 02
   server: 5.253.28.240
-  port: 40443
-  udp: true
-  type: vless
-  uuid: 405b964e-a2d2-454f-aaaa-711cc218897c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
-    short-id: 88b6
-  servername: deepl.com
-  client-fingerprint: chrome
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03
-  server: hydra.yokkastars.com
   port: 2443
   udp: true
   type: vless
@@ -36,10 +15,21 @@ proxies:
     public-key: h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg
     short-id: 92c32de179e5d908
   servername: deepl.com
-  client-fingerprint: qq
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: rex-eb0bf76b710ce763
+- name: 🇨🇾 塞浦路斯 (Cyprus) 02
+  server: 77.110.105.122
+  port: 443
+  udp: true
+  type: vless
+  uuid: 019fbe0f-2d9f-4b89-9f81-e1e36129892a
+  flow: xtls-rprx-vision
+  tls: true
+  servername: co-pl.speedtec.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -47,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01
   - 🇨🇾 塞浦路斯 (Cyprus) 02
-  - 🇨🇾 塞浦路斯 (Cyprus) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01
   - 🇨🇾 塞浦路斯 (Cyprus) 02
-  - 🇨🇾 塞浦路斯 (Cyprus) 03
 rules:
 - MATCH,PROXIES

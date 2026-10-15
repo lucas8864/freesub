@@ -5,43 +5,29 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇺🇦 乌克兰 (Ukraine) 01
-  server: z5n1.vpnpolar.online
+  server: 83.147.18.75
   port: 443
   udp: true
   type: vless
-  uuid: 49e4b91a-bd15-4e54-9b51-41a3380afb51
+  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  flow: xtls-rprx-vision
   tls: true
-  servername: z5n1.vpnpolar.online
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /beeline
-    headers:
-      Host: z5n1.vpnpolar.online
-- name: 🇺🇦 乌克兰 (Ukraine) 02
-  server: 91.196.163.140
-  port: 14430
-  udp: true
-  type: vless
-  uuid: e86a3662-9b31-4d59-bc80-9e8644749b95
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 91.196.163.140
+  reality-opts:
+    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
+    short-id: 7f1e29593aa94ad1
+  servername: www.bing.com
+  client-fingerprint: qq
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇺🇦 乌克兰 (Ukraine) 01
-  - 🇺🇦 乌克兰 (Ukraine) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇺🇦 乌克兰 (Ukraine) 01
-  - 🇺🇦 乌克兰 (Ukraine) 02
 rules:
 - MATCH,PROXIES

@@ -12,6 +12,14 @@ proxies:
   cipher: chacha20-ietf-poly1305
   password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
 - name: 🇨🇭 瑞士 (Switzerland) 02
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03
   server: 45.90.59.15
   port: 443
   udp: true
@@ -24,7 +32,7 @@ proxies:
     short-id: 19253fae84102271
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇨🇭 瑞士 (Switzerland) 03
+- name: 🇨🇭 瑞士 (Switzerland) 04
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -39,48 +47,17 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 45.133.151.186
-  port: 25393
-  udp: true
-  type: vless
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
-  tls: true
-  reality-opts:
-    public-key: 04F4vhrx_H_SHsrsVw1eCpwlysu4kL3hTl9GAr00XkI
-    short-id: bcc707a7148e4a0c
-  servername: www.samsung.com
-  client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 05
-  server: 177.3.208.65
-  port: 443
+  server: 104.165.205.42
+  port: 8443
   udp: true
-  type: vless
-  uuid: 4f34bc04-479c-49ba-91a8-6bb9ed15031c
-  tls: true
-  servername: tgmansion.site
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /vless-il
-    headers:
-      Host: tgmansion.site
+  type: hysteria2
+  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
+  sni: speedtestmark.com
+  skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 06
-  server: 87.228.92.113
-  port: 25576
-  udp: true
-  type: vless
-  uuid: d54a7512-dda3-4218-8ae7-c591d300fd7c
-  tls: true
-  reality-opts:
-    public-key: ErmbQFm-toukc_-s7geF1w7pJggmrIq9XiT55sjRNHc
-    short-id: 58914abc2bb85e84
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇨🇭 瑞士 (Switzerland) 07
   server: 208.69.78.217
-  port: 21154
+  port: 33025
   udp: true
   type: hysteria2
   password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
@@ -99,7 +76,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
   - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,6 +87,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
   - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
 rules:
 - MATCH,PROXIES
