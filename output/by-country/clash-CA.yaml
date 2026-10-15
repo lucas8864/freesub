@@ -5,20 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇦 加拿大 (Canada) 01
+  server: 149.22.95.183
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇨🇦 加拿大 (Canada) 02
+  server: 51.79.49.116
+  port: 8882
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: kDWvXYZoTBcGkC4
+- name: 🇨🇦 加拿大 (Canada) 03
   server: 51.222.136.236
   port: 8882
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: kDWvXYZoTBcGkC4
-- name: 🇨🇦 加拿大 (Canada) 02
-  server: 137.184.174.93
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 03
+- name: 🇨🇦 加拿大 (Canada) 04
   server: 23.162.200.198
   port: 18000
   udp: true
@@ -26,61 +33,29 @@ proxies:
   uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
   alterId: 0
   cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 04
-  server: 138.197.141.58
+- name: 🇨🇦 加拿大 (Canada) 05
+  server: 137.184.174.93
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇨🇦 加拿大 (Canada) 05
-  server: 149.22.95.183
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
 - name: 🇨🇦 加拿大 (Canada) 06
-  server: 148.113.196.75
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 08f96221-9b7b-4e6f-8ffe-aee8b9c9b504
-  tls: true
-  servername: ov-canada1.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇨🇦 加拿大 (Canada) 07
-  server: 51.79.31.36
-  port: 31146
-  udp: true
-  type: vless
-  uuid: f0466557-2fd5-442e-94cb-12c6b764155e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: QAoJHZT6_DZsBu-jH74uYZUTpGgxmvN2tXpRKj4CygE
-    short-id: cf4e6f8338
-  servername: play-fe.googleapis.com
-  client-fingerprint: chrome
-- name: 🇨🇦 加拿大 (Canada) 08
-  server: 51.222.200.165
-  port: 5000
+  server: 51.222.141.125
+  port: 445
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: Y6R9pAtvxxzmGC
-- name: 🇨🇦 加拿大 (Canada) 09
-  server: 134.195.196.211
-  port: 18000
+  password: zDNVedRFPQexG9v
+- name: 🇨🇦 加拿大 (Canada) 07
+  server: ca.tronsg.com
+  port: 443
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
-- name: 🇨🇦 加拿大 (Canada) 10
+  type: trojan
+  password: Trojan@82164024
+  sni: ca.tronsg.com
+  skip-cert-verify: false
+- name: 🇨🇦 加拿大 (Canada) 08
   server: 209.200.246.148
   port: 443
   udp: true
@@ -93,7 +68,35 @@ proxies:
     short-id: f98843107912e782
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇨🇦 加拿大 (Canada) 09
+  server: 134.195.196.211
+  port: 18000
+  udp: true
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
+- name: 🇨🇦 加拿大 (Canada) 10
+  server: 51.79.31.36
+  port: 31146
+  udp: true
+  type: vless
+  uuid: f0466557-2fd5-442e-94cb-12c6b764155e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: QAoJHZT6_DZsBu-jH74uYZUTpGgxmvN2tXpRKj4CygE
+    short-id: cf4e6f8338
+  servername: play-fe.googleapis.com
+  client-fingerprint: chrome
 - name: 🇨🇦 加拿大 (Canada) 11
+  server: 51.79.85.185
+  port: 8118
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: cdBIDV42DCwnfIN
+- name: 🇨🇦 加拿大 (Canada) 12
   server: milo.rubinaz.xyz
   port: 8080
   udp: true
@@ -115,6 +118,7 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 09
   - 🇨🇦 加拿大 (Canada) 10
   - 🇨🇦 加拿大 (Canada) 11
+  - 🇨🇦 加拿大 (Canada) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -131,5 +135,6 @@ proxy-groups:
   - 🇨🇦 加拿大 (Canada) 09
   - 🇨🇦 加拿大 (Canada) 10
   - 🇨🇦 加拿大 (Canada) 11
+  - 🇨🇦 加拿大 (Canada) 12
 rules:
 - MATCH,PROXIES
