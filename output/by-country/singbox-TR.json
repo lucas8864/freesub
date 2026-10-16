@@ -35,7 +35,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -71,7 +71,7 @@
     {
       "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 04",
-      "server": "104.21.48.18",
+      "server": "nimm.mpd.cc.cd",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
       "tls": {
@@ -81,10 +81,7 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
+        "path": "/0962"
       }
     },
     {

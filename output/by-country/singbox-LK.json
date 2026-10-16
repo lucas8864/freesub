@@ -10,7 +10,11 @@
       "server_port": 80,
       "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
-        "type": "ws"
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "free.sahanwickramasinghe.me"
+        }
       }
     },
     {

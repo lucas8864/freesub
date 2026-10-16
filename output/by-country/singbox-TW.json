@@ -14,24 +14,24 @@
     {
       "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02",
-      "server": "160.187.100.109",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "160.187.100.109",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03",
       "server": "103.115.109.49",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
         "server_name": "https",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03",
+      "server": "160.187.100.109",
+      "server_port": 443,
+      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
@@ -55,18 +55,6 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05",
-      "server": "684616s4.df6h451rh.xin",
-      "server_port": 443,
-      "password": "ec74bb6a86c2",
-      "tls": {
-        "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -74,8 +62,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01",
         "🇹🇼 中国台湾 (Taiwan) 02",
         "🇹🇼 中国台湾 (Taiwan) 03",
-        "🇹🇼 中国台湾 (Taiwan) 04",
-        "🇹🇼 中国台湾 (Taiwan) 05"
+        "🇹🇼 中国台湾 (Taiwan) 04"
       ]
     },
     {
@@ -85,8 +72,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01",
         "🇹🇼 中国台湾 (Taiwan) 02",
         "🇹🇼 中国台湾 (Taiwan) 03",
-        "🇹🇼 中国台湾 (Taiwan) 04",
-        "🇹🇼 中国台湾 (Taiwan) 05"
+        "🇹🇼 中国台湾 (Taiwan) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

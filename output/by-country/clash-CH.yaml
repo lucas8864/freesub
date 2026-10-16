@@ -12,12 +12,13 @@ proxies:
   cipher: aes-128-gcm
   password: 2bf536a4bd6008511734a505d248de2c
 - name: 🇨🇭 瑞士 (Switzerland) 02
-  server: 132.243.175.144
-  port: 8388
+  server: 140.238.213.114
+  port: 50160
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 03
   server: 45.90.59.15
   port: 443
@@ -32,14 +33,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 05
   server: 138.124.63.224
   port: 8444
   udp: true
@@ -54,15 +47,7 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇨🇭 瑞士 (Switzerland) 06
-  server: 104.165.205.42
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 990c8eb6-4c4e-4277-8602-79af8402cdd0
-  sni: speedtestmark.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 07
+- name: 🇨🇭 瑞士 (Switzerland) 05
   server: 208.69.78.217
   port: 33025
   udp: true
@@ -82,8 +67,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
-  - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,7 +77,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
-  - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
 rules:
 - MATCH,PROXIES

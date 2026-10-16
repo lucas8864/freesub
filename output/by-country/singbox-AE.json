@@ -25,22 +25,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
-      "server": "185.253.116.33",
-      "server_port": 14430,
-      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "185.253.116.33"
-        }
-      }
-    },
-    {
       "type": "hysteria2",
-      "tag": "🇦🇪 阿联酋 (UAE) 03",
+      "tag": "🇦🇪 阿联酋 (UAE) 02",
       "server": "130.49.161.70",
       "server_port": 443,
       "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
@@ -52,6 +38,20 @@
       "obfs": {
         "type": "salamander",
         "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 03",
+      "server": "185.253.116.33",
+      "server_port": 14430,
+      "uuid": "aee7ae19-672f-49d8-8a92-aa7cdfc89f89",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "185.253.116.33"
+        }
       }
     },
     {
@@ -78,7 +78,7 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 05",
-      "server": "84.235.244.108",
+      "server": "uae.unixzone.us",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
       "transport": {
@@ -90,22 +90,134 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇪 阿联酋 (UAE) 06",
-      "server": "45.59.120.217",
+      "server": "31.57.190.34",
       "server_port": 443,
-      "uuid": "8732f92b-ba85-48f7-92e4-ad029f1cd4e7",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "strm.yandex.net",
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 07",
+      "server": "31.57.190.34",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 08",
+      "server": "31.57.190.34",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w",
-          "short_id": "29c2dd1e3ef7c4d4"
+          "fingerprint": "unsafe"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 09",
+      "server": "31.57.190.34",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 10",
+      "server": "31.57.190.34",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws"
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 11",
+      "server": "31.57.190.34",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.pleadcourt.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.pleadcourt.org"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇦🇪 阿联酋 (UAE) 12",
+      "server": "31.57.190.34",
+      "server_port": 443,
+      "password": "humanity",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.volumeroot.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.volumeroot.com"
         }
       }
     },
@@ -119,7 +231,13 @@
         "🇦🇪 阿联酋 (UAE) 03",
         "🇦🇪 阿联酋 (UAE) 04",
         "🇦🇪 阿联酋 (UAE) 05",
-        "🇦🇪 阿联酋 (UAE) 06"
+        "🇦🇪 阿联酋 (UAE) 06",
+        "🇦🇪 阿联酋 (UAE) 07",
+        "🇦🇪 阿联酋 (UAE) 08",
+        "🇦🇪 阿联酋 (UAE) 09",
+        "🇦🇪 阿联酋 (UAE) 10",
+        "🇦🇪 阿联酋 (UAE) 11",
+        "🇦🇪 阿联酋 (UAE) 12"
       ]
     },
     {
@@ -131,7 +249,13 @@
         "🇦🇪 阿联酋 (UAE) 03",
         "🇦🇪 阿联酋 (UAE) 04",
         "🇦🇪 阿联酋 (UAE) 05",
-        "🇦🇪 阿联酋 (UAE) 06"
+        "🇦🇪 阿联酋 (UAE) 06",
+        "🇦🇪 阿联酋 (UAE) 07",
+        "🇦🇪 阿联酋 (UAE) 08",
+        "🇦🇪 阿联酋 (UAE) 09",
+        "🇦🇪 阿联酋 (UAE) 10",
+        "🇦🇪 阿联酋 (UAE) 11",
+        "🇦🇪 阿联酋 (UAE) 12"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -28,7 +28,7 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 - name: 🇹🇷 土耳其 (Turkey) 03
   server: 62.60.233.157
   port: 8444
@@ -44,7 +44,7 @@ proxies:
   grpc-opts:
     grpc-service-name: GunService
 - name: 🇹🇷 土耳其 (Turkey) 04
-  server: 104.21.48.18
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
