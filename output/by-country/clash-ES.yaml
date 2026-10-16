@@ -18,26 +18,18 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02
-  server: es2.xiaoliyu.cyou
-  port: 18333
-  udp: true
-  type: hysteria2
-  password: 8b64b840-a48d-4ac0-b10f-8f7d7081a0f1
-  sni: es2.xiaoliyu.cyou
-  skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 03
-  server: 193.238.154.78
+  server: 46.28.71.247
   port: 443
   udp: true
   type: vless
-  uuid: 897d47f8-4dd5-42a1-bcd0-bef19caff55a
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 4eE3K8Eac-ELze-LwRyJolqmhPqgCVqwQM1DKu6i0Ts
-    short-id: e93d46ee3735069e
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -45,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
 rules:
 - MATCH,PROXIES
