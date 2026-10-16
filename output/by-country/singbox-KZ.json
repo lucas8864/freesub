@@ -56,34 +56,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 04",
-      "server": "91.217.10.26",
-      "server_port": 443,
-      "uuid": "244d9eab-3311-40c7-b47f-4968dc3088a6",
-      "tls": {
-        "enabled": true,
-        "server_name": "tcpkz1.figurapn.ru",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ",
-          "short_id": "868419504747f6de"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
       ]
     },
     {
@@ -92,8 +71,7 @@
       "outbounds": [
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
         "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 04"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

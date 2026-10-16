@@ -36,18 +36,6 @@ proxies:
     short-id: '83'
   servername: yahoo.com
   client-fingerprint: chrome
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
-  server: 91.217.10.26
-  port: 443
-  udp: true
-  type: vless
-  uuid: 244d9eab-3311-40c7-b47f-4968dc3088a6
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: 868419504747f6de
-  servername: tcpkz1.figurapn.ru
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -56,7 +44,6 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,6 +52,5 @@ proxy-groups:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 04
 rules:
 - MATCH,PROXIES

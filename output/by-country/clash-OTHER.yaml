@@ -5,37 +5,63 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01
-  server: 172.64.80.1
-  port: 8443
+  server: 104.21.70.22
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: brightlux.forum
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /raccoonwsvless
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: brightlux.forum
 - name: 🌐 其他地区 (Other) 02
-  server: 172.64.80.1
-  port: 8443
+  server: 104.21.70.22
+  port: 443
   udp: true
-  type: vmess
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
   tls: true
-  servername: v2ray1.dozapp.xyz
+  servername: luminouspetal.cyou
   skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /lMnsZUN4/
+    path: /raccoonwsvlessfp=chrome
     headers:
-      Host: v2ray1.dozapp.xyz
+      Host: luminouspetal.cyou
+- name: 🌐 其他地区 (Other) 03
+  server: 104.21.70.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: efe19c5a-0ea1-4666-8a4c-4a33f4670775
+  tls: true
+  servername: brightlux.forum
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /raccoonwsvless
+    headers:
+      Host: brightlux.forum
+- name: 🌐 其他地区 (Other) 04
+  server: uk3-2.998998.best
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: server22.9966338.xyz
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /serhrdftshg
+    headers:
+      Host: server22.9966338.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +69,8 @@ proxy-groups:
   - AUTO
   - 🌐 其他地区 (Other) 01
   - 🌐 其他地区 (Other) 02
+  - 🌐 其他地区 (Other) 03
+  - 🌐 其他地区 (Other) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -50,5 +78,7 @@ proxy-groups:
   proxies:
   - 🌐 其他地区 (Other) 01
   - 🌐 其他地区 (Other) 02
+  - 🌐 其他地区 (Other) 03
+  - 🌐 其他地区 (Other) 04
 rules:
 - MATCH,PROXIES

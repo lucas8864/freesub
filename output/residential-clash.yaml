@@ -4,13 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   server: hinet1.2yly.com
   port: 24215
   udp: true
@@ -21,19 +15,30 @@ proxies:
     public-key: mdWKUPMVTtTbDqK10BPb89OcqBC2-Lx-4NOYtqc1GWE
   servername: addons.mozilla.org
   client-fingerprint: safari
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽)
+  server: 183.109.131.75
+  port: 20086
+  udp: true
+  type: vmess
+  uuid: b26c4803-0bca-467c-a245-c9a80bdd72ec
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇰🇷 韩国 (South Korea) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇷 土耳其 (Turkey) 01 (移动家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇰🇷 韩国 (South Korea) 02 (家宽)
 rules:
 - MATCH,PROXIES

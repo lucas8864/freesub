@@ -31,18 +31,12 @@ proxies:
   servername: www.apple.com
   client-fingerprint: random
 - name: 🇱🇻 拉脱维亚 (Latvia) 03
-  server: 195.123.208.32
-  port: 443
+  server: 185.135.86.175
+  port: 9082
   udp: true
-  type: vless
-  uuid: 1ebcb694-875c-4be7-b6a2-d53c8208991b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: ICrsmE5hqN7IsDIyHPG2WkDUUFK_VEj9yobLv8zuDwk
-    short-id: 757b9e1ef18e60f0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 04
   server: 185.220.223.24
   port: 443
