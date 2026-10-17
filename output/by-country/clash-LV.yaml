@@ -5,18 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01
-  server: 195.123.213.28
-  port: 443
+  server: 185.135.86.175
+  port: 9082
   udp: true
-  type: vless
-  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
-    short-id: 5c256336e3b673fa
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  type: ss
+  cipher: aes-256-cfb
+  password: 45xgMgm386pjWjTx
 - name: 🇱🇻 拉脱维亚 (Latvia) 02
   server: 138.124.180.137
   port: 443
@@ -29,14 +23,20 @@ proxies:
     public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
     short-id: 33acba1b
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇱🇻 拉脱维亚 (Latvia) 03
-  server: 185.135.86.175
-  port: 9082
+  server: 185.220.223.25
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 45xgMgm386pjWjTx
+  type: vless
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
+    short-id: 3c6afdc4124d0560
+  servername: lv.aiage.work
+  client-fingerprint: firefox
 - name: 🇱🇻 拉脱维亚 (Latvia) 04
   server: 185.220.223.24
   port: 443
@@ -49,6 +49,19 @@ proxies:
     public-key: ds-U8G06uZvV9qFhAeO16dwS9Nkcw_coYr_4puEUGFg
     short-id: 3c6afdc4124d0560
   servername: lv.aiage.work
+  client-fingerprint: ''
+- name: 🇱🇻 拉脱维亚 (Latvia) 05
+  server: 195.123.213.28
+  port: 443
+  udp: true
+  type: vless
+  uuid: 02fcc1a4-ee90-4970-8bbb-4ffaa8109d24
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo
+    short-id: 5c256336e3b673fa
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -59,6 +72,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02
   - 🇱🇻 拉脱维亚 (Latvia) 03
   - 🇱🇻 拉脱维亚 (Latvia) 04
+  - 🇱🇻 拉脱维亚 (Latvia) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,5 +82,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 02
   - 🇱🇻 拉脱维亚 (Latvia) 03
   - 🇱🇻 拉脱维亚 (Latvia) 04
+  - 🇱🇻 拉脱维亚 (Latvia) 05
 rules:
 - MATCH,PROXIES
