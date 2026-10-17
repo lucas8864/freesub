@@ -4,28 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "hysteria2",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01",
-      "server": "165.154.195.38",
-      "server_port": 35034,
-      "uuid": "959a8caf-4cea-43d0-a548-3628e7ddfafc",
-      "security": "auto"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02",
-      "server": "103.115.109.49",
-      "server_port": 443,
-      "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
-      "tls": {
-        "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 03",
       "server": "160.187.100.109",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -36,20 +16,8 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04",
-      "server": "684616s4.df6h451rh.xin",
-      "server_port": 443,
-      "password": "ec74bb6a86c2",
-      "tls": {
-        "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 02",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -72,10 +40,7 @@
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01",
-        "🇹🇼 中国台湾 (Taiwan) 02",
-        "🇹🇼 中国台湾 (Taiwan) 03",
-        "🇹🇼 中国台湾 (Taiwan) 04",
-        "🇹🇼 中国台湾 (Taiwan) 05"
+        "🇹🇼 中国台湾 (Taiwan) 02"
       ]
     },
     {
@@ -83,10 +48,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01",
-        "🇹🇼 中国台湾 (Taiwan) 02",
-        "🇹🇼 中国台湾 (Taiwan) 03",
-        "🇹🇼 中国台湾 (Taiwan) 04",
-        "🇹🇼 中国台湾 (Taiwan) 05"
+        "🇹🇼 中国台湾 (Taiwan) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

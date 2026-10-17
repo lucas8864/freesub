@@ -5,20 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇷 法国 (France) 01
-  server: 162.159.153.4
-  port: 443
+  server: 51.83.192.80
+  port: 8388
   udp: true
-  type: vless
-  uuid: f2a73750-3087-48ff-a763-1348c15dce68
-  tls: true
-  servername: rAyAn-007.mAxImA.DpDnS.OrG
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: rAyAn-007.mAxImA.DpDnS.OrG
+  type: ss
+  cipher: aes-256-gcm
+  password: itzvpn@321
 - name: 🇫🇷 法国 (France) 02
   server: 37.148.203.124
   port: 12238
@@ -27,24 +19,37 @@ proxies:
   cipher: aes-128-gcm
   password: 6163d9d532e40f417dd8ebb5f9716495
 - name: 🇫🇷 法国 (France) 03
+  server: 51.44.167.227
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 04
+  server: 62.210.124.146
+  port: 22000
+  udp: true
+  type: hysteria2
+  password: dongtaiwang.com
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 05
   server: 54.36.174.140
   port: 443
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: e5c65ph
-- name: 🇫🇷 法国 (France) 04
-  server: 138.124.70.41
-  port: 14430
+- name: 🇫🇷 法国 (France) 06
+  server: 62.210.147.2
+  port: 43115
   udp: true
-  type: vless
-  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 138.124.70.41
-- name: 🇫🇷 法国 (France) 05
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: www.microsoft.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 07
   server: 51.77.217.70
   port: 2053
   udp: true
@@ -55,93 +60,8 @@ proxies:
     public-key: g63cT3uI0Y5iUtj3m__RYz7nmR1eIK4AYikdnZCl63w
     short-id: bfe58beb41f1d09f
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 06
-  server: 13.36.234.11
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 07
-  server: 62.210.124.146
-  port: 22000
-  udp: true
-  type: hysteria2
-  password: dongtaiwang.com
-  sni: www.microsoft.com
-  skip-cert-verify: true
+  client-fingerprint: ''
 - name: 🇫🇷 法国 (France) 08
-  server: 152.228.162.19
-  port: 80
-  udp: true
-  type: vless
-  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇫🇷 法国 (France) 09
-  server: 149.202.57.89
-  port: 443
-  udp: true
-  type: vless
-  uuid: 126fdbae-bb34-5882-a40c-fb60c5ea4afb
-  flow: xtls-rprx-vision
-  tls: true
-  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 10
-  server: 54.36.174.134
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: e5c65ph
-- name: 🇫🇷 法国 (France) 11
-  server: 185.18.250.245
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 12
-  server: 51.83.192.80
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
-- name: 🇫🇷 法国 (France) 13
-  server: 62.210.147.2
-  port: 43115
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: www.microsoft.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 14
-  server: 51.44.167.227
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-fr-001.fastervpn.world
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 15
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 16
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -154,41 +74,15 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 17
-  server: 173.212.201.85
-  port: 443
+- name: 🇫🇷 法国 (France) 09
+  server: 62.210.7.139
+  port: 60111
   udp: true
   type: hysteria2
-  password: gf1:gfhysteria2024
-  sni: www.docker.com
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: bing.com
   skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 18
-  server: 145.223.68.58
-  port: 443
-  udp: true
-  type: vless
-  uuid: edb50d20-2d3e-4c1e-8a75-a17168a89aa5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: qc2DcqT9zPPZr6ePZ7ukxACWrYhRNIBjDIjCK7veyQg
-    short-id: a44ff7d2e80213c2
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇫🇷 法国 (France) 19
-  server: 137.74.16.237
-  port: 443
-  udp: true
-  type: vless
-  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
-    short-id: b390e0a721d242b0
-  servername: www.icloud.com
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 20
+- name: 🇫🇷 法国 (France) 10
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -201,32 +95,40 @@ proxies:
     short-id: '01'
   servername: fuck.rkn
   client-fingerprint: ''
-- name: 🇫🇷 法国 (France) 21
-  server: 195.58.140.146
+- name: 🇫🇷 法国 (France) 11
+  server: 138.124.70.41
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 138.124.70.41
+- name: 🇫🇷 法国 (France) 12
+  server: 152.228.162.19
+  port: 80
+  udp: true
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇫🇷 法国 (France) 13
+  server: 137.74.16.237
   port: 443
   udp: true
   type: vless
-  uuid: d7790b85-9659-4558-a405-e0ab57d32984
+  uuid: aaec4e42-a095-44b6-a239-f16d234a0798
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI
-    short-id: dc927a04e8572c61
-  servername: d1-fr.cloud-cdn.xyz
-  client-fingerprint: random
-- name: 🇫🇷 法国 (France) 22
-  server: 54.37.136.194
-  port: 2053
-  udp: true
-  type: vless
-  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
-  tls: true
-  reality-opts:
-    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
-    short-id: 50ba05992b05c1c3
-  servername: www.cloudflare.com
+    public-key: 7LSzvilTVKGMtBDuKGeMrLtlhY7tQf5YcG566dEgO0I
+    short-id: b390e0a721d242b0
+  servername: www.icloud.com
   client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 23
+- name: 🇫🇷 法国 (France) 14
   server: 152.228.139.33
   port: 35108
   udp: true
@@ -241,27 +143,15 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: grpc-common3
-- name: 🇫🇷 法国 (France) 24
-  server: 45.87.41.18
+- name: 🇫🇷 法国 (France) 15
+  server: 13.36.234.11
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 25
-  server: 46.226.166.208
-  port: 14430
-  udp: true
-  type: vless
-  uuid: af827fd0-6381-426f-bc5e-dcd9a7baeaac
-  network: ws
-  ws-opts:
-    path: /vless
-- name: 🇫🇷 法国 (France) 26
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 16
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -272,22 +162,36 @@ proxies:
     public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
     short-id: 2fed44d8c59f7e71
   servername: www.sony.com
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 27
-  server: 212.227.144.37
-  port: 8443
+- name: 🇫🇷 法国 (France) 17
+  server: 54.37.136.194
+  port: 2053
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 28
+  type: vless
+  uuid: e8a432c8-5d84-49a5-b822-67ed761a58f9
+  tls: true
+  reality-opts:
+    public-key: Vemd9Jjk5xKO8qSC3g8VVagwcb4J1BcTvp86CswQC0A
+    short-id: 50ba05992b05c1c3
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 18
+  server: 195.58.140.146
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7790b85-9659-4558-a405-e0ab57d32984
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lRuJPDrUb0b32-47hl4BgDoQutqmkuW31N4qVxbDgmI
+    short-id: dc927a04e8572c61
+  servername: d1-fr.cloud-cdn.xyz
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 19
   server: 145.239.55.210
   port: 80
   udp: true
@@ -300,18 +204,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.fortresshost.ir.
-- name: 🇫🇷 法国 (France) 29
-  server: 185.255.179.166
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇫🇷 法国 (France) 30
+- name: 🇫🇷 法国 (France) 20
   server: skycitybox-bidarbash.sbs
   port: 443
   udp: true
@@ -325,6 +218,36 @@ proxies:
     path: /zoodi
     headers:
       Host: skycitybox-bidarbash.sbs
+- name: 🇫🇷 法国 (France) 21
+  server: 173.212.201.85
+  port: 443
+  udp: true
+  type: hysteria2
+  password: gf1:gfhysteria2024
+  sni: www.docker.com
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 22
+  server: 149.202.57.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: 126fdbae-bb34-5882-a40c-fb60c5ea4afb
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+- name: 🇫🇷 法国 (France) 23
+  server: 149.202.57.89
+  port: 443
+  udp: true
+  type: vless
+  uuid: rgiw5k0gg5
+  flow: xtls-rprx-vision
+  tls: true
+  servername: rgiw5k0gg5-1492025789-direct.kheibarr.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -353,13 +276,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 21
   - 🇫🇷 法国 (France) 22
   - 🇫🇷 法国 (France) 23
-  - 🇫🇷 法国 (France) 24
-  - 🇫🇷 法国 (France) 25
-  - 🇫🇷 法国 (France) 26
-  - 🇫🇷 法国 (France) 27
-  - 🇫🇷 法国 (France) 28
-  - 🇫🇷 法国 (France) 29
-  - 🇫🇷 法国 (France) 30
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -388,12 +304,5 @@ proxy-groups:
   - 🇫🇷 法国 (France) 21
   - 🇫🇷 法国 (France) 22
   - 🇫🇷 法国 (France) 23
-  - 🇫🇷 法国 (France) 24
-  - 🇫🇷 法国 (France) 25
-  - 🇫🇷 法国 (France) 26
-  - 🇫🇷 法国 (France) 27
-  - 🇫🇷 法国 (France) 28
-  - 🇫🇷 法国 (France) 29
-  - 🇫🇷 法国 (France) 30
 rules:
 - MATCH,PROXIES

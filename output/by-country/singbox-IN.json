@@ -4,18 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇮🇳 印度 (India) 01",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
-      }
+      "server": "139.84.166.47",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "GEdoeeqLZtkJRgSa"
     },
     {
       "type": "vmess",
@@ -32,30 +26,16 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 04",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",
@@ -64,8 +44,7 @@
         "auto",
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04"
+        "🇮🇳 印度 (India) 03"
       ]
     },
     {
@@ -74,8 +53,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04"
+        "🇮🇳 印度 (India) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
