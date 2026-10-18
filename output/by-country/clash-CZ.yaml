@@ -11,34 +11,17 @@ proxies:
   type: ss
   cipher: aes-256-gcm
   password: I6o9NnialYLMEjVt28RF4dpjmr9wMvNL
-- name: 🇨🇿 捷克 (Czech) 02
-  server: cl-glb6e059ee.gcdn.co
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6206cb76-491d-4237-baf1-8c29eea4eafb
-  tls: true
-  servername: node-3.wt419.site
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /qVnRkTxmLwBzHjYpFaDgUcSeNrKxMtVbWqZhPcLsJfGy
-    headers:
-      Host: node-3.wt419.site
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇨🇿 捷克 (Czech) 01
-  - 🇨🇿 捷克 (Czech) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇨🇿 捷克 (Czech) 01
-  - 🇨🇿 捷克 (Czech) 02
 rules:
 - MATCH,PROXIES

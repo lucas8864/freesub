@@ -4,8 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "109.206.241.10",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
+      "server": "196.198.111.138",
+      "server_port": 8443,
+      "uuid": "b3441cc7-1e5f-4eb6-8207-90788eeca21e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "api-6ad3c751.adhil.uk",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
       "server": "143.246.41.31",
       "server_port": 443,
       "uuid": "43212c32-01f2-4356-b216-67dc1c178262",
@@ -26,7 +51,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
       "server": "ee.h1cloud.net",
       "server_port": 25895,
       "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
@@ -50,7 +75,9 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 02",
+        "🇪🇪 爱沙尼亚 (Estonia) 03",
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ]
     },
     {
@@ -58,7 +85,9 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02"
+        "🇪🇪 爱沙尼亚 (Estonia) 02",
+        "🇪🇪 爱沙尼亚 (Estonia) 03",
+        "🇪🇪 爱沙尼亚 (Estonia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

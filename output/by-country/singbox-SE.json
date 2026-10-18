@@ -44,6 +44,29 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "94.143.231.146",
+      "server_port": 443,
+      "uuid": "6e05822a-e9da-4135-a9db-71aa07a944af",
+      "tls": {
+        "enabled": true,
+        "server_name": "sub.merky.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/merky-connect/de6/",
+        "headers": {
+          "Host": "sub.merky.top"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 04",
       "server": "45.12.63.219",
       "server_port": 443,
       "uuid": "9cb8d71c-fe06-4402-a591-eaa1f173b890",
@@ -53,45 +76,13 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "safari"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
         "type": "grpc",
         "service_name": "swedenfeed"
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04",
-      "server": "46.253.132.237",
-      "server_port": 23688,
-      "uuid": "c19ecc7f-8312-4d9d-90c9-1a997d82d3c5",
-      "tls": {
-        "enabled": true,
-        "server_name": "apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "kbITklNKTdfvB6e3xy97pTV7gjl3Z3irv246oRZ5Gnk",
-          "short_id": "f679b4f2"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "awarecricketer"
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 05",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",
@@ -101,8 +92,7 @@
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 04"
       ]
     },
     {
@@ -112,8 +102,7 @@
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

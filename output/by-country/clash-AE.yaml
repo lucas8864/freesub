@@ -16,7 +16,7 @@ proxies:
     public-key: uYU7UXkfNB-BEfjyrCUtRcN2JfFdlFWfMHCeX7bz4Qc
     short-id: e022bfea
   servername: addons.mozilla.org
-  client-fingerprint: randomized
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02
   server: 130.49.161.70
   port: 443
@@ -28,18 +28,20 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 03
-  server: 157.228.128.59
+  server: 31.59.210.32
   port: 443
   udp: true
   type: vless
-  uuid: df53b6c2-8005-475c-9eb9-74e1be785dc8
-  flow: xtls-rprx-vision
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: QnxkyscHouhaLDJHT47beyenVd4LHi62yfJIeRV01Ws
-    short-id: 06e00e7c
-  servername: addons.mozilla.org
+    public-key: qvVoQPNyuM86jBvBqOL-Z9VO_C9jMi_ZH8bb4fotNWA
+    short-id: 7ec4374ffc6308fd
+  servername: www.yandex.ru
   client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
 - name: 🇦🇪 阿联酋 (UAE) 04
   server: 31.59.210.37
   port: 443
@@ -51,7 +53,7 @@ proxies:
     public-key: 5k0dtOSzmshCubdYeKppsUdHU4i2ghaB9uSJSzGjHW4
     short-id: 6dbf4931096f9890
   servername: www.yandex.ru
-  client-fingerprint: qq
+  client-fingerprint: safari
   network: grpc
   grpc-opts:
     grpc-service-name: astracat
@@ -67,47 +69,20 @@ proxies:
     headers:
       Host: uae.unixzone.us
 - name: 🇦🇪 阿联酋 (UAE) 06
-  server: 142.91.101.39
-  port: 627
+  server: 31.59.210.26
+  port: 2088
   udp: true
   type: vless
-  uuid: 8199228b-e84b-42a2-9268-e400391e483a
-  tls: true
-  servername: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9qohadlkywguh.hlf9x1796lkopyju2kplt9c9smz1vyuv0u8azzk.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 07
-  server: 45.77.241.190
-  port: 8441
-  udp: true
-  type: vless
-  uuid: 75f440b2-2cf8-45e7-9565-af7fde5bacc2
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 08
-  server: 45.59.120.217
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8732f92b-ba85-48f7-92e4-ad029f1cd4e7
+  uuid: 5413edfb-08d6-4fba-b51c-809c04feb127
   tls: true
   reality-opts:
-    public-key: mWxcYeYE-M3iE0RBjTzG88QI9kj2wivJDoIYDu_aG3w
-    short-id: 29c2dd1e3ef7c4d4
-  servername: strm.yandex.net
-  client-fingerprint: chrome
+    public-key: Eq3c19Y0WGB1APWMADQB-oxCvZFSVFAQxG5L6b8EkUg
+    short-id: b1ad165f903c62fe
+  servername: www.yandex.ru
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: astracat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -119,8 +94,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
   - 🇦🇪 阿联酋 (UAE) 06
-  - 🇦🇪 阿联酋 (UAE) 07
-  - 🇦🇪 阿联酋 (UAE) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,7 +105,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 04
   - 🇦🇪 阿联酋 (UAE) 05
   - 🇦🇪 阿联酋 (UAE) 06
-  - 🇦🇪 阿联酋 (UAE) 07
-  - 🇦🇪 阿联酋 (UAE) 08
 rules:
 - MATCH,PROXIES

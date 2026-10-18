@@ -5,58 +5,61 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 202.146.222.174
-  port: 443
+  server: 200.181.82.91
+  port: 21148
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
 - name: 🇭🇰 中国香港 (Hong Kong) 02
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 207.56.137.51
+  server: 202.146.222.174
   port: 443
   udp: true
-  type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
   type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 156.239.13.161
-  port: 51443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
   udp: true
-  type: vless
-  uuid: 3e4c67dd-eeaa-48ad-8066-0dca798cccb3
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: WpfLIDfNGu5tmsHEa_mrZAgTDwPYD_9TK2zagNx3kgk
-    short-id: aa5b653590725505
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: qTKDR8jXE3wEFxJM.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qTKDR8jXE3wEFxJM.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: node1.luoye.ee
+  port: 443
+  udp: true
+  type: trojan
+  password: 1d23fec1-1430-46d8-bba6-9a175136fcac
+  sni: node1.luoye.ee
+  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 4c2d5151.266nets.com
+  port: 12001
+  udp: true
+  type: trojan
+  password: bad06c3525a6eaee1757b34776b83892
+  sni: ixigua.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -72,17 +75,76 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: 47.238.210.5
-  port: 13779
+- name: 🇭🇰 中国香港 (Hong Kong) 08
+  server: 2.27.109.179
+  port: 45464
+  udp: true
+  type: trojan
+  password: XuMweB2PWs
+  sni: 2.27.109.179.sslip.io
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 09
+  server: m.cnmjin.net
+  port: 16632
+  udp: true
+  type: vmess
+  uuid: f3485652-a8ee-4f31-9af3-821c53f2bb82
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 38f5eab4e496b3c8c927160a60d5865b.mobgslb.tbcache.com
+- name: 🇭🇰 中国香港 (Hong Kong) 10
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 11
+  server: nycqg19zkwacpm1b.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: nycqg19zkwacpm1b.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: 207.56.137.51
+  port: 443
   udp: true
   type: vless
-  uuid: 928e6cce-8ced-4243-9a48-a6642edd09b0
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: llTyp52oRXnJmQ3I9UUrmlwbMA79B-wLCRHCu-8dLGg
-    short-id: af1bdd293097b664
-  servername: tesla.com
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 13
+  server: 156.239.13.161
+  port: 51443
+  udp: true
+  type: vless
+  uuid: 3e4c67dd-eeaa-48ad-8066-0dca798cccb3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WpfLIDfNGu5tmsHEa_mrZAgTDwPYD_9TK2zagNx3kgk
+    short-id: aa5b653590725505
+  servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -96,6 +158,12 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
   - 🇭🇰 中国香港 (Hong Kong) 07
+  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 09
+  - 🇭🇰 中国香港 (Hong Kong) 10
+  - 🇭🇰 中国香港 (Hong Kong) 11
+  - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -108,5 +176,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
   - 🇭🇰 中国香港 (Hong Kong) 07
+  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 09
+  - 🇭🇰 中国香港 (Hong Kong) 10
+  - 🇭🇰 中国香港 (Hong Kong) 11
+  - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
 rules:
 - MATCH,PROXIES
