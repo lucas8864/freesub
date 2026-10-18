@@ -5,38 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: fi1server.rabstvo.shop
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 9yOIR2_QAChKs26rYaiX_aoNnOALd0aU
-  sni: fi1server.rabstvo.shop
-  skip-cert-verify: false
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 109.248.170.119
-  port: 13447
+  server: 83.222.23.81
+  port: 38065
   udp: true
   type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  uuid: 4b9063e0-3288-44e9-9aac-80fbfce323a0
   tls: true
   reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
+    public-key: dSSDPTK6AHfAdRAXD9i4rzqcNIY65RxlF25UyCKdiyo
+    short-id: fa
   servername: yahoo.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
 rules:
 - MATCH,PROXIES

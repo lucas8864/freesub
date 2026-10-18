@@ -25,59 +25,22 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 02",
-      "server": "ees92.shhflow.xyz",
-      "server_port": 5443,
-      "password": "43212c32-01f2-4356-b216-67dc1c178262",
+      "server": "ee.h1cloud.net",
+      "server_port": 25895,
+      "uuid": "f90b7d43-69e2-4b46-a672-8029bc6796a2",
       "tls": {
         "enabled": true,
-        "server_name": "ees92.shhflow.xyz",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
-      "server": "ee-1-1.unturned-rust-dead.lol",
-      "server_port": 443,
-      "uuid": "c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8",
-      "tls": {
-        "enabled": true,
-        "server_name": "ee-1-1.unturned-rust-dead.lol",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "ee-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
-      "server": "93.89.220.37",
-      "server_port": 443,
-      "uuid": "185e2bb3-2934-48d0-bbd5-dd20d16e83ee",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "ibm.com",
+        "server_name": "www.samsung.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g",
-          "short_id": "e88cb983f3c97528"
+          "public_key": "jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k",
+          "short_id": "a73f0410d728c823"
         }
       }
     },
@@ -87,9 +50,7 @@
       "outbounds": [
         "auto",
         "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02",
-        "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04"
+        "🇪🇪 爱沙尼亚 (Estonia) 02"
       ]
     },
     {
@@ -97,9 +58,7 @@
       "tag": "auto",
       "outbounds": [
         "🇪🇪 爱沙尼亚 (Estonia) 01",
-        "🇪🇪 爱沙尼亚 (Estonia) 02",
-        "🇪🇪 爱沙尼亚 (Estonia) 03",
-        "🇪🇪 爱沙尼亚 (Estonia) 04"
+        "🇪🇪 爱沙尼亚 (Estonia) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

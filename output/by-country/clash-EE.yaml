@@ -18,39 +18,16 @@ proxies:
   servername: ees92.shhflow.xyz
   client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02
-  server: ees92.shhflow.xyz
-  port: 5443
-  udp: true
-  type: hysteria2
-  password: 43212c32-01f2-4356-b216-67dc1c178262
-  sni: ees92.shhflow.xyz
-  skip-cert-verify: false
-- name: 🇪🇪 爱沙尼亚 (Estonia) 03
-  server: ee-1-1.unturned-rust-dead.lol
-  port: 443
+  server: ee.h1cloud.net
+  port: 25895
   udp: true
   type: vless
-  uuid: c6e3c24c-ce20-4ad5-8c8c-68cb05890ea8
+  uuid: f90b7d43-69e2-4b46-a672-8029bc6796a2
   tls: true
   reality-opts:
-    public-key: aYz4_13W8gtAXGBrWeqJXtExahAJ9kUPDapqeyAlYCk
-  servername: ee-1-1.unturned-rust-dead.lol
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ee-grpc
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
-  server: 93.89.220.37
-  port: 443
-  udp: true
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: lwKaUQ81wJUJRsqAPsfTPj5V_f9N50UYEwzRI_nuq2g
-    short-id: e88cb983f3c97528
-  servername: ibm.com
+    public-key: jOVKSP-bS9OkILJ8Epz8hadh6qhavCrOiJYeF0NCn0k
+    short-id: a73f0410d728c823
+  servername: www.samsung.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -59,8 +36,6 @@ proxy-groups:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01
   - 🇪🇪 爱沙尼亚 (Estonia) 02
-  - 🇪🇪 爱沙尼亚 (Estonia) 03
-  - 🇪🇪 爱沙尼亚 (Estonia) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,7 +43,5 @@ proxy-groups:
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01
   - 🇪🇪 爱沙尼亚 (Estonia) 02
-  - 🇪🇪 爱沙尼亚 (Estonia) 03
-  - 🇪🇪 爱沙尼亚 (Estonia) 04
 rules:
 - MATCH,PROXIES

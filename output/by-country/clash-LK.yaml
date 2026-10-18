@@ -16,7 +16,7 @@ proxies:
     headers:
       Host: free.sahanwickramasinghe.me
 - name: 🇱🇰 斯里兰卡 (Sri Lanka) 02
-  server: free.sahanwickramasinghe.me
+  server: 104.17.70.206
   port: 8443
   udp: true
   type: vless
@@ -24,7 +24,6 @@ proxies:
   tls: true
   servername: free.sahanwickramasinghe.me
   skip-cert-verify: false
-  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
