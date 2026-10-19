@@ -5,26 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 213.165.56.102
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
-    short-id: 5f5e74dfd296b28d
-  servername: freede.aiage.work
-  client-fingerprint: ios
-- name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 194.38.11.86
-  port: 65443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 03
   server: 77.90.61.135
   port: 443
   udp: true
@@ -36,23 +16,7 @@ proxies:
     short-id: ce1dc482
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: match-stream.lovkisport.blog
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 05
-  server: 194.87.118.184
-  port: 2053
-  udp: true
-  type: hysteria2
-  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
-  sni: match-stream.lovkisport.blog
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06
+- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 168.113.135.90
   port: 443
   udp: true
@@ -65,20 +29,36 @@ proxies:
     short-id: 11ac376e18d20343
   servername: m-vruvc.mvpstr.com
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: m-vruvc.mvpstr.com
-  port: 443
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: 194.87.118.184
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 04
+  server: 194.87.118.184
+  port: 2053
+  udp: true
+  type: hysteria2
+  password: 7ab3c77e-8fcc-4848-918f-cae3d4eac794
+  sni: match-stream.lovkisport.blog
+  skip-cert-verify: false
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 139.28.168.75
+  port: 10444
   udp: true
   type: vless
-  uuid: 7c86240f-ac0c-4cfe-87c8-fa0dd69b2d25
+  uuid: 154bd388-4968-4900-a088-18676f428a20
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: ZtAlhN1pU4MTmv4KaX9J_5_8KWnwy9IOnc-BLzIf234
-    short-id: 11ac376e18d20343
-  servername: m-vruvc.mvpstr.com
+    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
+    short-id: 8debcf36f1cc69ff
+  servername: video.yandex.ru
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08
+- name: 🇷🇺 俄罗斯 (Russia) 06
   server: 153.80.241.206
   port: 8444
   udp: true
@@ -92,39 +72,25 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 09
-  server: xsru1.ddnsfree.com
+- name: 🇷🇺 俄罗斯 (Russia) 07
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: MYkM/b5ww6KhyHjBKB6OZifqzcXEnDT2jDIBWywYAws=
+- name: 🇷🇺 俄罗斯 (Russia) 08
+  server: 213.165.56.102
   port: 443
   udp: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  tls: true
-  servername: xsru1.ddnsfree.com
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc-ru
-- name: 🇷🇺 俄罗斯 (Russia) 10
-  server: 91.196.32.163
-  port: 443
-  udp: true
-  type: hysteria2
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  sni: 91.196.32.163
-  skip-cert-verify: true
-- name: 🇷🇺 俄罗斯 (Russia) 11
-  server: 139.28.168.75
-  port: 10444
-  udp: true
-  type: vless
-  uuid: 154bd388-4968-4900-a088-18676f428a20
+  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 0oTkcqwLTUNLnSOP-VUWErmy6usAIg-biBE6ioZO-Vo
-    short-id: 8debcf36f1cc69ff
-  servername: video.yandex.ru
+    public-key: A_bQLZE6D32TJUdAf9doQTPaTUXyJjPXLSklplG4V1g
+    short-id: 57e7977c9011061c
+  servername: freede.aiage.work
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -139,9 +105,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
-  - 🇷🇺 俄罗斯 (Russia) 10
-  - 🇷🇺 俄罗斯 (Russia) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -155,8 +118,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
-  - 🇷🇺 俄罗斯 (Russia) 10
-  - 🇷🇺 俄罗斯 (Russia) 11
 rules:
 - MATCH,PROXIES

@@ -5,82 +5,87 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 13.140.91.117
-  port: 25111
-  udp: true
-  type: ss
-  cipher: 2022-blake3-aes-256-gcm
-  password: jNyPnuL1dS5CZLfr6AeO8/CtbUvT3MIOWAaSwoJlTkc=:qKqgMJPzm/OIdljS+Q1vRGcQfIgAFGVr+dWGhkzEuaY=
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 13.140.91.117
-  port: 36154
-  udp: true
-  type: vmess
-  uuid: b2fd9449-458a-4243-bbf9-5735070d6817
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 13.140.91.117
-  port: 23808
+  server: 82.29.36.250
+  port: 443
   udp: true
   type: vless
-  uuid: 54327b73-3ce6-437d-9d00-3d6398d9f9f5
+  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 09XPceP705hC-5sEDXDSLeL2eMOrF-mFISK8JaJ7q2g
+    short-id: 09353d6dc5b789
+  servername: aws.amazon.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 103.149.182.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2��
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 8c05abce-tnhmo0-tohhws-zn8y.hk3.hyhuawei.com
+  server: 8.217.254.88
   port: 443
   udp: true
-  type: hysteria2
-  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  sni: 8c05abce-tnhmo0-tohhws-zn8y.hk3.hyhuawei.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 8aeab52c-tnhmo0-tohhws-zn8y.nw4.hyhuawei.com
+  server: 47.243.194.125
   port: 443
   udp: true
-  type: hysteria2
-  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  sni: 8aeab52c-tnhmo0-tohhws-zn8y.nw4.hyhuawei.com
-  skip-cert-verify: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
 - name: 🇭🇰 中国香港 (Hong Kong) 06
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: fi.api.nurcloud.org
+  server: 207.56.137.51
   port: 443
   udp: true
   type: vless
-  uuid: 29d5b0b0-0417-46cc-948f-8f3077ded709
+  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: DYai8uLOumyG7Gh3H8ADSmRMZpfw-t98uU4D6ean_Gw
-    short-id: b289dd8ac05d4594
-  servername: fi.api.nurcloud.org
-  client-fingerprint: firefox
+    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
+    short-id: f713561d
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: nas.aizhzo.com
-  port: 5010
-  udp: true
-  type: hysteria2
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  sni: nas.aizhzo.com
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 09
-  server: 4c2d5151.266nets.com
-  port: 12001
-  udp: true
-  type: trojan
-  password: bad06c3525a6eaee1757b34776b83892
-  sni: ixigua.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10
   server: yg1.ygkkk.dpdns.org
   port: 443
   udp: true
@@ -96,32 +101,62 @@ proxies:
     path: /b2ba4a73-3123-479e-aa96-5973a9ecd0c0-vm
     headers:
       Host: jmp1.907737.xyz
-- name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: hk03.ccdn3.work
-  port: 795
-  udp: true
-  type: vless
-  uuid: fc12fb20-4380-11ec-8c97-d707e267af0b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: y_DoQCjABoe8YBWpEbBTTQJp8d62WJc_-vNUzKgwtS8
-    short-id: fec557fa67449ccc
-  servername: i1.hdslb.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: 207.56.137.51
+- name: 🇭🇰 中国香港 (Hong Kong) 09
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   port: 443
   udp: true
-  type: vless
-  uuid: 01ada9fb-fa2f-45da-a0d0-bce80cdf433b
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: WNifT0qNHWrUsvC6cuvej0rzZe6qPijopbmJyRADOF0
-    short-id: f713561d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+- name: 🇭🇰 中国香港 (Hong Kong) 10
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 11
+  server: 47.243.153.153
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: qtkdr8jxe3wefxjm.v.3dns.vip
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: qtkdr8jxe3wefxjm.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: qtkdr8jxe3wefxjm.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select

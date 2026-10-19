@@ -15,45 +15,18 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇪🇸 西班牙 (Spain) 02
-  server: 196.245.52.149
-  port: 25535
-  udp: true
-  type: vless
-  uuid: c379d8e4-c67d-42ec-a3ed-ca99d1ad0546
-  tls: true
-  reality-opts:
-    public-key: Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4
-    short-id: 7642ce57308852e7
-  servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 03
-  server: 212.227.144.37
-  port: 8443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01
-  - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇸 西班牙 (Spain) 01
-  - 🇪🇸 西班牙 (Spain) 02
-  - 🇪🇸 西班牙 (Spain) 03
 rules:
 - MATCH,PROXIES

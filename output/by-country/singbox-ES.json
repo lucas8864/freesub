@@ -14,7 +14,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -24,64 +24,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02",
-      "server": "196.245.52.149",
-      "server_port": 25535,
-      "uuid": "c379d8e4-c67d-42ec-a3ed-ca99d1ad0546",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "Jh7CocBJSA55VZcLfXwXwoQ_Hi5pV-L1vv1SY-IrSh4",
-          "short_id": "7642ce57308852e7"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 03",
-      "server": "212.227.144.37",
-      "server_port": 8443,
-      "password": "humanity",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false,
-        "alpn": [
-          "v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus"
-        ]
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02",
-        "🇪🇸 西班牙 (Spain) 03"
+        "🇪🇸 西班牙 (Spain) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇸 西班牙 (Spain) 01",
-        "🇪🇸 西班牙 (Spain) 02",
-        "🇪🇸 西班牙 (Spain) 03"
+        "🇪🇸 西班牙 (Spain) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,7 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇻🇳 越南 (Vietnam) 01",
+      "tag": "🌐 其他地区 (Other) 01",
       "server": "172.67.168.158",
       "server_port": 2087,
       "uuid": "1d0e8e53-6999-4752-ac21-c0c54ff5bc09",
@@ -31,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇻🇳 越南 (Vietnam) 01"
+        "🌐 其他地区 (Other) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇻🇳 越南 (Vietnam) 01"
+        "🌐 其他地区 (Other) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
