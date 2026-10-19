@@ -18,7 +18,7 @@ proxies:
   servername: www.bing.com
   client-fingerprint: qq
 - name: 🇲🇩 摩尔多瓦 (Moldova) 02
-  server: md1.aiage.work
+  server: 85.120.144.27
   port: 443
   udp: true
   type: vless
@@ -27,21 +27,8 @@ proxies:
   tls: true
   reality-opts:
     public-key: 0dtXhkhkh-_MBFoGwzdW4PdlJtVX9oswhJZHbUPGCmo
-    short-id: e829f50f0a3f416b
+    short-id: 5d7a45ac0ad6adff
   servername: md1.aiage.work
-  client-fingerprint: chrome
-- name: 🇲🇩 摩尔多瓦 (Moldova) 03
-  server: ro2.aiage.work
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6338c01a-310e-42c3-bf4f-2a20e161054b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pkKL2cqqPNxc1rqrvhJmexI7NOeZFaGUawAwqQpVY3c
-    short-id: 1d2fecf1d2475168
-  servername: ro2.aiage.work
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
@@ -50,7 +37,6 @@ proxy-groups:
   - AUTO
   - 🇲🇩 摩尔多瓦 (Moldova) 01
   - 🇲🇩 摩尔多瓦 (Moldova) 02
-  - 🇲🇩 摩尔多瓦 (Moldova) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -58,6 +44,5 @@ proxy-groups:
   proxies:
   - 🇲🇩 摩尔多瓦 (Moldova) 01
   - 🇲🇩 摩尔多瓦 (Moldova) 02
-  - 🇲🇩 摩尔多瓦 (Moldova) 03
 rules:
 - MATCH,PROXIES

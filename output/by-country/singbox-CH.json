@@ -4,31 +4,23 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇨🇭 瑞士 (Switzerland) 01",
+      "server": "132.243.175.144",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02",
       "server": "140.238.213.114",
       "server_port": 50160,
       "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02",
-      "server": "152.67.75.161",
-      "server_port": 443,
-      "password": "3a702d4d1de4949005d8431220e040fb",
-      "tls": {
-        "enabled": true,
         "server_name": "www.bing.com",
         "insecure": true
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "c13f29db6a638ad2b211b9ce2669ef27"
       }
     },
     {
@@ -77,6 +69,22 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "server": "208.69.78.217",
+      "server_port": 33025,
+      "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
+      "tls": {
+        "enabled": true,
+        "server_name": "vpn.local",
+        "insecure": true
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "mbQXP2ASuHbF6ZPq"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -84,7 +92,8 @@
         "🇨🇭 瑞士 (Switzerland) 01",
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04"
+        "🇨🇭 瑞士 (Switzerland) 04",
+        "🇨🇭 瑞士 (Switzerland) 05"
       ]
     },
     {
@@ -94,7 +103,8 @@
         "🇨🇭 瑞士 (Switzerland) 01",
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04"
+        "🇨🇭 瑞士 (Switzerland) 04",
+        "🇨🇭 瑞士 (Switzerland) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -28,20 +28,8 @@ proxies:
     public-key: bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104
     short-id: 9e419c0759b54d6f
   servername: www.apple.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇹🇷 土耳其 (Turkey) 03
-  server: 136.148.64.229
-  port: 2083
-  udp: true
-  type: vless
-  uuid: 0f32f9e7-d83c-4052-9a5e-103ed967b11c
-- name: 🇹🇷 土耳其 (Turkey) 04
-  server: vpn.networkforexir.site
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 05
   server: 62.60.233.157
   port: 8444
   udp: true
@@ -55,20 +43,9 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇹🇷 土耳其 (Turkey) 06
+- name: 🇹🇷 土耳其 (Turkey) 04
   server: 172.67.176.3
   port: 2053
-  udp: true
-  type: trojan
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  sni: nimm.mpd.cc.cd
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /0962
-- name: 🇹🇷 土耳其 (Turkey) 07
-  server: 188.114.98.0
-  port: 443
   udp: true
   type: trojan
   password: e309e031-991e-4656-9934-44d10deb8fd8
@@ -86,9 +63,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
-  - 🇹🇷 土耳其 (Turkey) 05
-  - 🇹🇷 土耳其 (Turkey) 06
-  - 🇹🇷 土耳其 (Turkey) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -98,8 +72,5 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 02
   - 🇹🇷 土耳其 (Turkey) 03
   - 🇹🇷 土耳其 (Turkey) 04
-  - 🇹🇷 土耳其 (Turkey) 05
-  - 🇹🇷 土耳其 (Turkey) 06
-  - 🇹🇷 土耳其 (Turkey) 07
 rules:
 - MATCH,PROXIES

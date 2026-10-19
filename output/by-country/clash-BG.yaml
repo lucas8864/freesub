@@ -4,24 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇰 丹麦 (Denmark) 01
-  server: 200.181.82.92
-  port: 22023
+- name: 🇧🇬 保加利亚 (Bulgaria) 01
+  server: 213.183.63.60
+  port: 9085
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
+  cipher: aes-256-cfb
+  password: 9ej82EKe2gq7gLAM
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇩🇰 丹麦 (Denmark) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇰 丹麦 (Denmark) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 01
 rules:
 - MATCH,PROXIES

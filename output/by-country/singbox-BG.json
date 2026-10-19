@@ -4,29 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
-      "tag": "🇨🇳 CN 01",
-      "server": "120.48.133.162",
-      "server_port": 10086,
-      "uuid": "4fc543d5-23ce-4556-ae2b-01685edd4397",
-      "security": "auto",
-      "transport": {
-        "type": "ws"
-      }
+      "type": "shadowsocks",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
+      "server": "213.183.63.60",
+      "server_port": 9085,
+      "method": "aes-256-cfb",
+      "password": "9ej82EKe2gq7gLAM"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

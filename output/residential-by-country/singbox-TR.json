@@ -4,32 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01",
-      "server": "95.128.71.79",
-      "server_port": 14430,
-      "uuid": "8cef7621-c6f0-486e-b51d-59c30c5b0b25",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.128.71.79"
-        }
-      }
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 01 (移动家宽)",
+      "server": "78.135.77.110",
+      "server_port": 11700,
+      "method": "aes-128-gcm",
+      "password": "BI2omXgXduu95xATu5uaU3jn2Lpb9-qK"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01"
+        "🇹🇷 土耳其 (Turkey) 01 (移动家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

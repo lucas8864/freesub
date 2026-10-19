@@ -4,26 +4,33 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 01",
-      "server": "139.84.166.47",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "GEdoeeqLZtkJRgSa"
-    },
-    {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02",
-      "server": "5.253.29.254",
-      "server_port": 14430,
-      "uuid": "c7c27192-60a5-4ce1-b613-95270d82309d",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.253.29.254"
+      "tag": "🇮🇳 印度 (India) 01",
+      "server": "148.113.5.44",
+      "server_port": 443,
+      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
+          "short_id": "221873918e0bb74d"
         }
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 02",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vless",
@@ -36,7 +43,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -48,41 +55,17 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 04",
-      "server": "148.113.5.44",
-      "server_port": 443,
-      "uuid": "72ea5a91-ffcc-43d2-9297-5993c3abf186",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "QLjTpkXRB453R9fXhJzKkc_q_gSm2MZrIOuxW4uW-mI",
-          "short_id": "221873918e0bb74d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05",
       "server": "13.140.56.100",
       "server_port": 14430,
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "13.140.56.100"
-        }
+        "path": "/vless"
       }
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 06",
+      "tag": "🇮🇳 印度 (India) 05",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
@@ -93,14 +76,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 07",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -109,9 +84,7 @@
         "🇮🇳 印度 (India) 02",
         "🇮🇳 印度 (India) 03",
         "🇮🇳 印度 (India) 04",
-        "🇮🇳 印度 (India) 05",
-        "🇮🇳 印度 (India) 06",
-        "🇮🇳 印度 (India) 07"
+        "🇮🇳 印度 (India) 05"
       ]
     },
     {
@@ -122,9 +95,7 @@
         "🇮🇳 印度 (India) 02",
         "🇮🇳 印度 (India) 03",
         "🇮🇳 印度 (India) 04",
-        "🇮🇳 印度 (India) 05",
-        "🇮🇳 印度 (India) 06",
-        "🇮🇳 印度 (India) 07"
+        "🇮🇳 印度 (India) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

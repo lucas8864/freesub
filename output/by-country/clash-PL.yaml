@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 45.194.66.17
+  server: 45.192.12.106
   port: 443
   udp: true
   type: vless
@@ -18,40 +18,6 @@ proxies:
   servername: pl.golangwikito.cfd
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02
-  server: 177.1.192.81
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
-    short-id: 85766a81
-  servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03
-  server: pl1.dedushka.top
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl1.dedushka.top
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04
-  server: 144.31.101.196
-  port: 33891
-  udp: true
-  type: vless
-  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
-    short-id: 5bd7b68ca4c04443
-  servername: browser.yandex.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 05
   server: 177.1.192.74
   port: 443
   udp: true
@@ -64,15 +30,28 @@ proxies:
     short-id: 770618b6
   servername: addons.mozilla.org
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06
-  server: pl2.dedushka.top
+- name: 🇵🇱 波兰 (Poland) 03
+  server: 78.17.171.62
   port: 443
   udp: true
   type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
+  password: u93yPGuY2zgIsisJZKS2QzJzg
+  sni: freetoplay-2.tetris-game.world
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 04
+  server: 83.168.91.16
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  tls: true
+  servername: pl-exit-02.10media.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 07
+  client-fingerprint: safari
+  network: grpc
+  grpc-opts:
+    grpc-service-name: framefeed
+- name: 🇵🇱 波兰 (Poland) 05
   server: 177.1.192.72
   port: 443
   udp: true
@@ -84,37 +63,70 @@ proxies:
     public-key: y3YCXTqEVks0nGfiSwJ43ol4pY69-mWFUZsdmveoVDM
     short-id: 46455ff0
   servername: addons.mozilla.org
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 08
-  server: 83.168.91.16
+  client-fingerprint: random
+- name: 🇵🇱 波兰 (Poland) 06
+  server: 177.1.192.81
   port: 443
   udp: true
   type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
+  uuid: 5ac49a12-f275-44b4-b11d-26505f3f268e
+  flow: xtls-rprx-vision
   tls: true
-  servername: pl-exit-02.10media.top
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: grpc
-  grpc-opts:
-    grpc-service-name: framefeed
-- name: 🇵🇱 波兰 (Poland) 09
-  server: 200.181.82.91
-  port: 21818
+  reality-opts:
+    public-key: JNr60Nnq_sdeAz5jd25bxNDx_c9CeYLu7DRbQH3P5xk
+    short-id: 85766a81
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 07
+  server: 144.31.101.196
+  port: 33891
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-- name: 🇵🇱 波兰 (Poland) 10
-  server: 200.181.82.92
-  port: 28814
+  type: vless
+  uuid: 1c794e75-bcd4-4a65-9f69-ed0a10f33d60
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: HXXIkFRPeRpluXJ7SOoUGf9EOq4Lw-oJpvg1W0UPbEw
+    short-id: 5bd7b68ca4c04443
+  servername: browser.yandex.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 08
+  server: pl1.dedushka.top
+  port: 443
   udp: true
   type: trojan
-  password: 0dad9116-eb88-47b6-98dd-67c9ed43afa6
-  sni: www.baidu.com
-  skip-cert-verify: true
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl1.dedushka.top
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 09
+  server: pl2.dedushka.top
+  port: 443
+  udp: true
+  type: trojan
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: pl2.dedushka.top
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 10
+  server: 150.251.113.34
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
+    short-id: 150a627d15154cf2
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 11
-  server: pl.flen-vpn.xyz
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 12
+  server: 2.26.225.89
   port: 8443
   udp: true
   type: vless
@@ -122,7 +134,15 @@ proxies:
   tls: true
   servername: pl.flen-vpn.xyz
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 12
+- name: 🇵🇱 波兰 (Poland) 13
+  server: scrap.halyvanedorogo.ru
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 14
   server: 37.9.4.112
   port: 17701
   udp: true
@@ -132,20 +152,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 588c76723192f87cfe6d6786816177cd2bd9773acdc545928d7d1d5e8338d4ce
-- name: 🇵🇱 波兰 (Poland) 13
-  server: 82.118.22.161
-  port: 443
-  udp: true
-  type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 14
+- name: 🇵🇱 波兰 (Poland) 15
   server: 54.37.131.126
   port: 80
   udp: true
@@ -158,14 +165,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 15
-  server: 78.17.171.62
-  port: 443
-  udp: true
-  type: trojan
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  sni: FREETOPLAY-2.TETRIS-GAME.WORLD
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
