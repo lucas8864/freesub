@@ -6,11 +6,22 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01",
-      "server": "31.57.185.220",
+      "server": "185.95.231.156",
       "server_port": 443,
-      "uuid": "2e2e204a-7e61-48fb-8182-5955821e8da0",
-      "transport": {
-        "type": "ws"
+      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+          "short_id": "a3a578ab"
+        }
       }
     },
     {

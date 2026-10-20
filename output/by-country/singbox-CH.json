@@ -4,39 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇨🇭 瑞士 (Switzerland) 01",
-      "server": "128.241.25.3",
-      "server_port": 30021,
-      "uuid": "afec813e-a5c7-432d-be48-2803c30eea4e",
+      "server": "140.238.213.114",
+      "server_port": 50160,
+      "password": "84a506ca5aca505696a454d828420b3f",
       "tls": {
         "enabled": true,
-        "server_name": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev"
-        }
+        "server_name": "off",
+        "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇨🇭 瑞士 (Switzerland) 02",
-      "server": "132.243.175.144",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "e8KgS8fD0yDqYFpgN4G5piCOt9aFyqA3"
-    },
-    {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 03",
+      "tag": "🇨🇭 瑞士 (Switzerland) 02",
       "server": "45.90.59.15",
       "server_port": 443,
       "uuid": "3950b45e-740d-4dca-ac95-505ec8534592",
@@ -57,7 +38,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇭 瑞士 (Switzerland) 04",
+      "tag": "🇨🇭 瑞士 (Switzerland) 03",
       "server": "208.69.78.217",
       "server_port": 33025,
       "password": "capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw",
@@ -73,7 +54,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇭 瑞士 (Switzerland) 05",
+      "tag": "🇨🇭 瑞士 (Switzerland) 04",
       "server": "208.69.78.217",
       "server_port": 2053,
       "uuid": "c0dd6d59-1573-43af-8b70-1470b2632a6d",
@@ -99,8 +80,7 @@
         "🇨🇭 瑞士 (Switzerland) 01",
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05"
+        "🇨🇭 瑞士 (Switzerland) 04"
       ]
     },
     {
@@ -110,8 +90,7 @@
         "🇨🇭 瑞士 (Switzerland) 01",
         "🇨🇭 瑞士 (Switzerland) 02",
         "🇨🇭 瑞士 (Switzerland) 03",
-        "🇨🇭 瑞士 (Switzerland) 04",
-        "🇨🇭 瑞士 (Switzerland) 05"
+        "🇨🇭 瑞士 (Switzerland) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
