@@ -13,6 +13,51 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
+      "server": "2.56.175.179",
+      "server_port": 9443,
+      "uuid": "8179d7cc-82bc-4eae-a97f-5d30c6c2a812",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg",
+          "short_id": "6ba7b810"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
+      "server": "5.253.30.99",
+      "server_port": 40443,
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 04",
       "server": "5.253.28.240",
       "server_port": 2443,
       "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
@@ -40,7 +85,9 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01",
-        "🇨🇾 塞浦路斯 (Cyprus) 02"
+        "🇨🇾 塞浦路斯 (Cyprus) 02",
+        "🇨🇾 塞浦路斯 (Cyprus) 03",
+        "🇨🇾 塞浦路斯 (Cyprus) 04"
       ]
     },
     {
@@ -48,7 +95,9 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01",
-        "🇨🇾 塞浦路斯 (Cyprus) 02"
+        "🇨🇾 塞浦路斯 (Cyprus) 02",
+        "🇨🇾 塞浦路斯 (Cyprus) 03",
+        "🇨🇾 塞浦路斯 (Cyprus) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

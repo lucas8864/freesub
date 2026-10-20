@@ -11,6 +11,34 @@ proxies:
   type: vless
   uuid: c7c27192-60a5-4ce1-b613-95270d82309d
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02
+  server: 2.56.175.179
+  port: 9443
+  udp: true
+  type: vless
+  uuid: 8179d7cc-82bc-4eae-a97f-5d30c6c2a812
+  tls: true
+  reality-opts:
+    public-key: 8bhS-nnIN67a292RpJsCPzXQy4CzpzOVLTPn5CiAFyg
+    short-id: 6ba7b810
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03
+  server: 5.253.30.99
+  port: 40443
+  udp: true
+  type: vless
+  uuid: 511c1563-2cb6-4064-abc6-a59ee49818a8
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0
+    short-id: 88b6
+  servername: deepl.com
+  client-fingerprint: chrome
+- name: 🇨🇾 塞浦路斯 (Cyprus) 04
   server: 5.253.28.240
   port: 2443
   udp: true
@@ -32,6 +60,8 @@ proxy-groups:
   - AUTO
   - 🇨🇾 塞浦路斯 (Cyprus) 01
   - 🇨🇾 塞浦路斯 (Cyprus) 02
+  - 🇨🇾 塞浦路斯 (Cyprus) 03
+  - 🇨🇾 塞浦路斯 (Cyprus) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +69,7 @@ proxy-groups:
   proxies:
   - 🇨🇾 塞浦路斯 (Cyprus) 01
   - 🇨🇾 塞浦路斯 (Cyprus) 02
+  - 🇨🇾 塞浦路斯 (Cyprus) 03
+  - 🇨🇾 塞浦路斯 (Cyprus) 04
 rules:
 - MATCH,PROXIES

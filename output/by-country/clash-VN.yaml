@@ -4,7 +4,20 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01
+- name: 🇻🇳 越南 (Vietnam) 01
+  server: funagfrdfs.alixxplay.com
+  port: 55688
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: KeV1nArisy7FO5DjqTSmn0hBnlNd38rzhbIMMpe-MBw
+    short-id: a46bb5972cf50671
+  servername: bilibili-vn.biliimg.com
+  client-fingerprint: chrome
+- name: 🇻🇳 越南 (Vietnam) 02
   server: 172.67.168.158
   port: 2087
   udp: true
@@ -24,12 +37,14 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01
+  - 🇻🇳 越南 (Vietnam) 01
+  - 🇻🇳 越南 (Vietnam) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01
+  - 🇻🇳 越南 (Vietnam) 01
+  - 🇻🇳 越南 (Vietnam) 02
 rules:
 - MATCH,PROXIES
