@@ -22,27 +22,6 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 02",
-      "server": "185.253.116.46",
-      "server_port": 443,
-      "uuid": "CQ9D5NqEbxPfdg",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.heise.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "RQ4Z91En99W1IloruReNIuqeIY1PHfrd-Unv7XL--jU",
-          "short_id": "11a7579d"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03",
       "server": "84.235.244.108",
       "server_port": 22573,
       "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
@@ -54,28 +33,12 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04",
-      "server": "95.174.68.188",
-      "server_port": 14430,
-      "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "95.174.68.188"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02",
-        "🇦🇪 阿联酋 (UAE) 03",
-        "🇦🇪 阿联酋 (UAE) 04"
+        "🇦🇪 阿联酋 (UAE) 02"
       ]
     },
     {
@@ -83,9 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02",
-        "🇦🇪 阿联酋 (UAE) 03",
-        "🇦🇪 阿联酋 (UAE) 04"
+        "🇦🇪 阿联酋 (UAE) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
