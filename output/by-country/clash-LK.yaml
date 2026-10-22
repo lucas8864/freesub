@@ -13,17 +13,33 @@ proxies:
   network: ws
   ws-opts:
     path: /
+- name: 🇱🇰 斯里兰卡 (Sri Lanka) 02
+  server: 104.17.74.206
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  tls: true
+  servername: free.sahanwickramasinghe.me
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: free.sahanwickramasinghe.me
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇱🇰 斯里兰卡 (Sri Lanka) 01
+  - 🇱🇰 斯里兰卡 (Sri Lanka) 02
 rules:
 - MATCH,PROXIES

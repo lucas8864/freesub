@@ -15,32 +15,36 @@ proxies:
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
 - name: 🇦🇪 阿联酋 (UAE) 02
-  server: 57.129.130.63
-  port: 52014
+  server: 151.241.166.159
+  port: 443
   udp: true
   type: vless
-  uuid: d731cf09-79a6-4647-aabe-8e0fda4fe3be
+  uuid: 7ab86f1f-871e-4de6-9dae-7addf6dc976c
+  flow: xtls-rprx-vision
   tls: true
-  servername: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 9-7u3b6e.wzkija0v0du4yhk6jfyfafml3nh22kne.workers.dev
+  reality-opts:
+    public-key: tPhBRGpTbyaPFF3W0wpqncSrdNsV5I-eyM3S9CZoeCQ
+    short-id: 9a26e586f8cadc07
+  servername: pl-hsts.zloygo.com
+  client-fingerprint: ''
 - name: 🇦🇪 阿联酋 (UAE) 03
-  server: 95.174.68.188
+  server: zfd-boardv2.kunlun01dns.com
+  port: 16284
+  udp: true
+  type: vmess
+  uuid: 0802ac03-7973-39ef-a019-ba02de6c01e1
+  alterId: 0
+  cipher: auto
+- name: 🇦🇪 阿联酋 (UAE) 04
+  server: 185.253.116.33
   port: 14430
   udp: true
   type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  uuid: aee7ae19-672f-49d8-8a92-aa7cdfc89f89
   network: ws
   ws-opts:
     path: /vless
-    headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 04
+- name: 🇦🇪 阿联酋 (UAE) 05
   server: uae.unixzone.us
   port: 22573
   udp: true
@@ -58,6 +62,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,5 +72,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
 rules:
 - MATCH,PROXIES

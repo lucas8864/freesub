@@ -5,23 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 31.133.0.186
-  port: 443
-  udp: true
-  type: trojan
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  sni: pl2.dedushka.top
-  skip-cert-verify: true
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 2.26.225.89
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
-  tls: true
-  servername: pl.flen-vpn.xyz
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03
   server: 31.133.0.182
   port: 443
   udp: true
@@ -29,37 +12,24 @@ proxies:
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   sni: pl1.dedushka.top
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 04
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 144.31.0.140
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9c794bb7-54fe-4acd-844a-a26209af36c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ
-    short-id: 7271129440ade8fa
-  servername: api.sakhalin.fyi
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 06
-  server: 78.17.171.137
+- name: 🇵🇱 波兰 (Poland) 02
+  server: 31.133.0.186
   port: 443
   udp: true
   type: trojan
-  password: u93yPGuY2zgIsisJZKS2QzJzg
-  sni: 2.HI-L.IM
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  sni: 31.133.0.186
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 03
+  server: pl.flen-vpn.xyz
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 51a1fd52-fd88-4905-a976-35e44be28e4b
+  tls: true
+  servername: pl.flen-vpn.xyz
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /f2fc2a1f
-- name: 🇵🇱 波兰 (Poland) 07
+- name: 🇵🇱 波兰 (Poland) 04
   server: 54.37.131.126
   port: 80
   udp: true
@@ -72,27 +42,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 08
-  server: 150.251.113.34
-  port: 443
-  udp: true
-  type: vless
-  uuid: d7d724b5-17ce-4f3c-877d-dfbf0f07afa1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 8yMLSTbkpJFfbgTjNzotzz7U8OT6AERrclgKdKrXXW8
-    short-id: 150a627d15154cf2
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 09
-  server: 92.118.150.146
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: pl.tronsg.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -102,11 +51,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
-  - 🇵🇱 波兰 (Poland) 05
-  - 🇵🇱 波兰 (Poland) 06
-  - 🇵🇱 波兰 (Poland) 07
-  - 🇵🇱 波兰 (Poland) 08
-  - 🇵🇱 波兰 (Poland) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,10 +60,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
-  - 🇵🇱 波兰 (Poland) 05
-  - 🇵🇱 波兰 (Poland) 06
-  - 🇵🇱 波兰 (Poland) 07
-  - 🇵🇱 波兰 (Poland) 08
-  - 🇵🇱 波兰 (Poland) 09
 rules:
 - MATCH,PROXIES
