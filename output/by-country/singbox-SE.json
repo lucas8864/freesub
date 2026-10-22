@@ -6,11 +6,12 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "51.21.247.148",
-      "server_port": 443,
-      "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
-        "type": "http"
+        "type": "ws",
+        "path": "/vless"
       }
     },
     {
@@ -20,18 +21,23 @@
       "server_port": 443,
       "uuid": "7060231d-b9ba-495f-a218-bf427940cf3e",
       "transport": {
-        "type": "http"
+        "type": "http",
+        "host": [
+          "play.googleapis.com"
+        ],
+        "path": "/"
       }
     },
     {
-      "type": "vless",
+      "type": "anytls",
       "tag": "🇸🇪 瑞典 (Sweden) 03",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
+      "server": "svip.skycon808.com",
+      "server_port": 60005,
+      "password": "13f0acfa-38c1-4e82-a758-583aa31740df",
+      "tls": {
+        "enabled": true,
+        "server_name": "xjp18.2uuzhe.com",
+        "insecure": true
       }
     },
     {
