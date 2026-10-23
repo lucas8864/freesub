@@ -4,8 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
+      "server": "162.159.153.4",
+      "server_port": 443,
+      "uuid": "f2a73750-3087-48ff-a763-1348c15dce68",
+      "tls": {
+        "enabled": true,
+        "server_name": "rayan-007.maxima.dpdns.org",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "headers": {
+          "Host": "rayan-007.maxima.dpdns.org"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇨🇿 捷克 (Czech) 02",
       "server": "67.159.18.34",
       "server_port": 17001,
       "method": "aes-256-gcm",
@@ -13,22 +35,22 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02",
-      "server": "89.125.237.24",
+      "tag": "🇨🇿 捷克 (Czech) 03",
+      "server": "server.slavkiti.monster",
       "server_port": 443,
-      "uuid": "9c794bb7-54fe-4acd-844a-a26209af36c3",
+      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "web.stride.surf",
+        "server_name": "www.tradingview.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "13nLTYkdBEFR-A4CfK2beOx-5LKEsXh1QHPq8Kt52BQ",
-          "short_id": "7271129440ade8fa"
+          "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
+          "short_id": "ee1716767f9b"
         }
       }
     },
@@ -38,7 +60,8 @@
       "outbounds": [
         "auto",
         "🇨🇿 捷克 (Czech) 01",
-        "🇨🇿 捷克 (Czech) 02"
+        "🇨🇿 捷克 (Czech) 02",
+        "🇨🇿 捷克 (Czech) 03"
       ]
     },
     {
@@ -46,7 +69,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇿 捷克 (Czech) 01",
-        "🇨🇿 捷克 (Czech) 02"
+        "🇨🇿 捷克 (Czech) 02",
+        "🇨🇿 捷克 (Czech) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

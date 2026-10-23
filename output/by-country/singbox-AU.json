@@ -15,7 +15,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -25,18 +25,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇺 澳大利亚 (Australia) 02",
+      "server": "forwarded.frnhk.xyz",
+      "server_port": 46004,
+      "uuid": "3c5f522d-6695-474f-abcf-2b1a65d503fa",
+      "transport": {
+        "type": "ws",
+        "path": "/aus1023",
+        "headers": {
+          "Host": "forwarded.frnhk.xyz"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇺 澳大利亚 (Australia) 01"
+        "🇦🇺 澳大利亚 (Australia) 01",
+        "🇦🇺 澳大利亚 (Australia) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇺 澳大利亚 (Australia) 01"
+        "🇦🇺 澳大利亚 (Australia) 01",
+        "🇦🇺 澳大利亚 (Australia) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -11,22 +11,6 @@
       "uuid": "fcdb24e3-5e66-4c45-b89e-ac9441f4dcda",
       "transport": {
         "type": "ws",
-        "path": "/"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 02",
-      "server": "104.17.74.206",
-      "server_port": 8443,
-      "uuid": "c136a12c-4260-48a7-a1e6-fbda83a11045",
-      "tls": {
-        "enabled": true,
-        "server_name": "free.sahanwickramasinghe.me",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
         "path": "/",
         "headers": {
           "Host": "free.sahanwickramasinghe.me"
@@ -38,16 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 02"
+        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
