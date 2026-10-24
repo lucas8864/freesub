@@ -4,8 +4,29 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇷🇴 罗马尼亚 (Romania) 01",
+      "server": "82.117.255.174",
+      "server_port": 443,
+      "uuid": "679439c5-28f2-485e-af5f-60a5fcd9c36c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "gateway.icloud.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0",
+          "short_id": "31e91d43e553bf32"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
       "server": "162.249.125.133",
       "server_port": 443,
       "password": "QCgqi_I4EkV8UR-OgQ_tG4EnVTEVvIyR2GgRBzrIn2s",
@@ -20,9 +41,30 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 03",
+      "server": "ro1.accessboy.com",
+      "server_port": 443,
+      "uuid": "caf3d607-95c9-4ea0-98b5-864027056ba0",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "ro1.accessboy.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4",
+          "short_id": "1c5869a95671bcb0"
+        }
+      }
+    },
+    {
       "type": "shadowsocks",
-      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
-      "server": "154.46.31.106",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 04",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
       "server_port": 443,
       "method": "chacha20-ietf-poly1305",
       "password": "QFWzCw2uX9B9i6qAYeFBIE"
@@ -33,7 +75,9 @@
       "outbounds": [
         "auto",
         "🇷🇴 罗马尼亚 (Romania) 01",
-        "🇷🇴 罗马尼亚 (Romania) 02"
+        "🇷🇴 罗马尼亚 (Romania) 02",
+        "🇷🇴 罗马尼亚 (Romania) 03",
+        "🇷🇴 罗马尼亚 (Romania) 04"
       ]
     },
     {
@@ -41,7 +85,9 @@
       "tag": "auto",
       "outbounds": [
         "🇷🇴 罗马尼亚 (Romania) 01",
-        "🇷🇴 罗马尼亚 (Romania) 02"
+        "🇷🇴 罗马尼亚 (Romania) 02",
+        "🇷🇴 罗马尼亚 (Romania) 03",
+        "🇷🇴 罗马尼亚 (Romania) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

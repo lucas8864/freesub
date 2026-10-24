@@ -17,6 +17,14 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇪🇸 西班牙 (Spain) 02
+  server: es1.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  type: anytls
+  password: 672445a0-a669-4978-8eb1-cfa5e6cdead4
+  sni: es1.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇪🇸 西班牙 (Spain) 03
   server: 193.238.154.78
   port: 443
   udp: true
@@ -29,6 +37,19 @@ proxies:
     short-id: e93d46ee3735069e
   servername: gateway.icloud.com
   client-fingerprint: ''
+- name: 🇪🇸 西班牙 (Spain) 04
+  server: 46.28.71.247
+  port: 443
+  udp: true
+  type: vless
+  uuid: 12c53e32-e589-47d6-b857-e4132294f767
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE
+    short-id: 0dfc23fe80778c00
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +57,8 @@ proxy-groups:
   - AUTO
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
+  - 🇪🇸 西班牙 (Spain) 03
+  - 🇪🇸 西班牙 (Spain) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +66,7 @@ proxy-groups:
   proxies:
   - 🇪🇸 西班牙 (Spain) 01
   - 🇪🇸 西班牙 (Spain) 02
+  - 🇪🇸 西班牙 (Spain) 03
+  - 🇪🇸 西班牙 (Spain) 04
 rules:
 - MATCH,PROXIES

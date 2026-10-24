@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
+  server: 82.117.255.174
+  port: 443
+  udp: true
+  type: vless
+  uuid: 679439c5-28f2-485e-af5f-60a5fcd9c36c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0QDBHaCRO2dPeeSVy3B3R_U12ZOvbvWl1JTFW_ZcpD0
+    short-id: 31e91d43e553bf32
+  servername: gateway.icloud.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 02
   server: 162.249.125.133
   port: 443
   udp: true
@@ -14,8 +27,21 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
-- name: 🇷🇴 罗马尼亚 (Romania) 02
-  server: 154.46.31.106
+- name: 🇷🇴 罗马尼亚 (Romania) 03
+  server: ro1.accessboy.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: caf3d607-95c9-4ea0-98b5-864027056ba0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1TtWNQhTJr_3H7-ypMw4EiLzVxy22AzUtMiE5JmQMl4
+    short-id: 1c5869a95671bcb0
+  servername: ro1.accessboy.com
+  client-fingerprint: chrome
+- name: 🇷🇴 罗马尼亚 (Romania) 04
+  server: bogging-eyeteeth-fly.freesocks.work
   port: 443
   udp: true
   type: ss
@@ -28,6 +54,8 @@ proxy-groups:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01
   - 🇷🇴 罗马尼亚 (Romania) 02
+  - 🇷🇴 罗马尼亚 (Romania) 03
+  - 🇷🇴 罗马尼亚 (Romania) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -35,5 +63,7 @@ proxy-groups:
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01
   - 🇷🇴 罗马尼亚 (Romania) 02
+  - 🇷🇴 罗马尼亚 (Romania) 03
+  - 🇷🇴 罗马尼亚 (Romania) 04
 rules:
 - MATCH,PROXIES

@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: pl1.h1cloud.net
-  port: 27591
+  server: edge10.cyrionflare.com
+  port: 2052
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
-    short-id: 6c5c7900406a1ae7
-  servername: www.samsung.com
-  client-fingerprint: chrome
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 02
+  server: site.teslamotor.site
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 03
   server: 92.118.150.146
   port: 443
   udp: true
@@ -24,7 +24,7 @@ proxies:
   password: Trojan@82164024
   sni: pl.tronsg.com
   skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03
+- name: 🇵🇱 波兰 (Poland) 04
   server: 54.37.131.126
   port: 80
   udp: true
@@ -45,6 +45,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
+  - 🇵🇱 波兰 (Poland) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -53,5 +54,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 01
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
+  - 🇵🇱 波兰 (Poland) 04
 rules:
 - MATCH,PROXIES
