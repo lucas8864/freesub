@@ -6,47 +6,24 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01",
-      "server": "edge10.cyrionflare.com",
-      "server_port": 2052,
-      "uuid": "1a8ecc41-6e62-431b-8eca-87c2fa4dc286"
+      "server": "5.22.221.127",
+      "server_port": 443,
+      "uuid": "44dfa3a7-f648-4587-819b-e653c0823f28"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇵🇱 波兰 (Poland) 02",
+      "server": "49.12.249.167",
+      "server_port": 147,
+      "method": "chacha20-ietf-poly1305",
+      "password": "5uDrCF_iLoxCiRkKku6f7A"
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 02",
+      "tag": "🇵🇱 波兰 (Poland) 03",
       "server": "site.teslamotor.site",
       "server_port": 20001,
       "uuid": "8e8210b7-71a4-4799-8b9b-2e69698b1eaf"
-    },
-    {
-      "type": "trojan",
-      "tag": "🇵🇱 波兰 (Poland) 03",
-      "server": "92.118.150.146",
-      "server_port": 443,
-      "password": "Trojan@82164024",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl.tronsg.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 04",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "6deef9ad-1357-443d-f95c-cb18952c20b3",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
     },
     {
       "type": "selector",
@@ -55,8 +32,7 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01",
         "🇵🇱 波兰 (Poland) 02",
-        "🇵🇱 波兰 (Poland) 03",
-        "🇵🇱 波兰 (Poland) 04"
+        "🇵🇱 波兰 (Poland) 03"
       ]
     },
     {
@@ -65,8 +41,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01",
         "🇵🇱 波兰 (Poland) 02",
-        "🇵🇱 波兰 (Poland) 03",
-        "🇵🇱 波兰 (Poland) 04"
+        "🇵🇱 波兰 (Poland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

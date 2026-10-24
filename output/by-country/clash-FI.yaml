@@ -16,31 +16,32 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 31.77.199.147
-  port: 4443
+  server: 95.216.27.15
+  port: 2053
   udp: true
   type: vless
-  uuid: 20dd9433-389e-4573-ba7b-689619cf13da
-  flow: xtls-rprx-vision
+  uuid: 1c81f6d3-5771-4c5d-9fdd-1655eff50634
   tls: true
   reality-opts:
-    public-key: GvkQwcZWiXQBLzEhTVfQkyPpdgo6Opc3RtLsED9sA0A
-    short-id: 7da2eae792187ab9
-  servername: images.unsplash.com
+    public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
+    short-id: d368b94e275ab080
+  servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: static.86.39.13.49.clients.your-server.de
+  server: 185.119.81.7
   port: 443
   udp: true
   type: vless
-  uuid: 6c688f63-fad4-45d8-a6a1-1e978ed26b8b
+  uuid: 2f5cfa10-43e5-4912-800d-557308a26a29
   flow: xtls-rprx-vision
   tls: true
-  servername: static.75.209.109.65.clients.your-server.de
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  reality-opts:
+    public-key: 9BUlinkTIxNgD2Em4KShtEbXOjBKvz2mDwT1VqoeR1k
+    short-id: 80c4e0bda641d6c9
+  servername: ht689zw45oor.cloudydigital.net
+  client-fingerprint: firefox
 - name: 🇫🇮 芬兰 (Finland) 04
-  server: hw3.divarkhaghazi.com
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -55,20 +56,33 @@ proxies:
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 05
-  server: finland02.azotvpn.xyz
+  server: finp2g.yandex-api.store
   port: 8443
   udp: true
   type: vless
-  uuid: 5a96c1fc-f167-44b9-9020-8f6867537d14
+  uuid: 78559873-84ef-4cab-a0b2-46d4cd20de4a
+  tls: true
+  servername: finp2g.yandex-api.store
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /assets
+    headers:
+      Host: finp2g.yandex-api.store
+- name: 🇫🇮 芬兰 (Finland) 06
+  server: webdisk.jaggyslawa.org
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8cc7d0fc-1b83-4ee3-b51d-8a03a9b19435
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: fQ1M2sO50w5A3oM55Hfs8vmZ320I8VaKdzRqeXOMMnQ
-    short-id: 07f508fe5d2355d3
-  servername: finland02.azotvpn.xyz
-  client-fingerprint: ''
-  network: grpc
-  grpc-opts:
-    grpc-service-name: ''
+    public-key: zfsjt2A8ur0qHWIuCG7F9W4wZN3VTuL6fkTljC-9R0s
+    short-id: 87174b37ce3b
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +93,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +104,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
 rules:
 - MATCH,PROXIES
