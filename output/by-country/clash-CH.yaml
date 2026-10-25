@@ -17,8 +17,43 @@ proxies:
   udp: true
   type: hysteria2
   password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
+  sni: www.bing.com
   skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 45.90.59.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 04
+  server: 208.69.78.217
+  port: 33025
+  udp: true
+  type: hysteria2
+  password: capadm96216165:nXUv9sPkKFsDMmhZ7jbE28sw
+  sni: vpn.local
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: mbQXP2ASuHbF6ZPq
+- name: 🇨🇭 瑞士 (Switzerland) 05
+  server: areal5.greewebservices.ir
+  port: 5455
+  udp: true
+  type: vless
+  uuid: 7c4e57be-ff6f-4ef7-ba17-f839351d9af9
+  tls: true
+  reality-opts:
+    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
+    short-id: e3085d4fc679ba12
+  servername: amp-api-edge.apps.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +61,9 @@ proxy-groups:
   - AUTO
   - 🇨🇭 瑞士 (Switzerland) 01
   - 🇨🇭 瑞士 (Switzerland) 02
+  - 🇨🇭 瑞士 (Switzerland) 03
+  - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +71,8 @@ proxy-groups:
   proxies:
   - 🇨🇭 瑞士 (Switzerland) 01
   - 🇨🇭 瑞士 (Switzerland) 02
+  - 🇨🇭 瑞士 (Switzerland) 03
+  - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05
 rules:
 - MATCH,PROXIES

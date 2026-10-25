@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
-  server: 128.241.25.3
-  port: 30021
-  udp: true
-  type: vless
-  uuid: afec813e-a5c7-432d-be48-2803c30eea4e
-  tls: true
-  servername: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: wkytah9k8oggj60.qzfi0skkopy875xhtc0l9pwds.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02
   server: 130.49.161.70
   port: 443
   udp: true
@@ -29,7 +14,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
-- name: 🇦🇪 阿联酋 (UAE) 03
+- name: 🇦🇪 阿联酋 (UAE) 02
   server: 185.253.116.33
   port: 14430
   udp: true
@@ -38,8 +23,8 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
-- name: 🇦🇪 阿联酋 (UAE) 04
-  server: uae.unixzone.us
+- name: 🇦🇪 阿联酋 (UAE) 03
+  server: 84.235.244.108
   port: 22573
   udp: true
   type: vless
@@ -47,32 +32,8 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇦🇪 阿联酋 (UAE) 05
-  server: 95.174.68.188
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
-  network: ws
-  ws-opts:
-    path: /vless
     headers:
-      Host: 95.174.68.188
-- name: 🇦🇪 阿联酋 (UAE) 06
-  server: 175.41.179.37
-  port: 51262
-  udp: true
-  type: vless
-  uuid: 903fed13-8e78-4fa2-a83e-b392b289741f
-  tls: true
-  servername: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: 3tmj2egtm-fno.49bnithzk8vphybv36d1z1xkzfvogt2m6.workers.dev
+      Host: uae.unixzone.us
 proxy-groups:
 - name: PROXIES
   type: select
@@ -81,9 +42,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
-  - 🇦🇪 阿联酋 (UAE) 04
-  - 🇦🇪 阿联酋 (UAE) 05
-  - 🇦🇪 阿联酋 (UAE) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -92,8 +50,5 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 01
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
-  - 🇦🇪 阿联酋 (UAE) 04
-  - 🇦🇪 阿联酋 (UAE) 05
-  - 🇦🇪 阿联酋 (UAE) 06
 rules:
 - MATCH,PROXIES

@@ -5,14 +5,21 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽)",
-      "server": "gu232.izzzzzi.com",
-      "server_port": 20052,
-      "password": "e56e752c86a640cd",
+      "tag": "🌐 其他地区 (Other) 01",
+      "server": "104.16.71.213",
+      "server_port": 443,
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "gu232.izzzzzi.com",
+        "server_name": "www.calmlunch.com",
         "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
+        }
       }
     },
     {
@@ -20,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽)"
+        "🌐 其他地区 (Other) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (移动家宽)"
+        "🌐 其他地区 (Other) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
