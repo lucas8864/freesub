@@ -1,0 +1,45 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇸 美国 (United States) 01 (家宽) R50
+  server: 23.160.56.99
+  port: 2087
+  udp: true
+  type: vless
+  uuid: f1e7eafa-0d6f-441e-8565-29f34171aef2
+- name: 🇰🇷 韩国 (South Korea) 02 (家宽)
+  server: p141.panda001.net
+  port: 4652
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: qwerREWQ@@
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (移动家宽)
+  server: gu232.izzzzzi.com
+  port: 20052
+  udp: true
+  type: trojan
+  password: e56e752c86a640cd
+  sni: gu232.izzzzzi.com
+  skip-cert-verify: false
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇸 美国 (United States) 01 (家宽) R50
+  - 🇰🇷 韩国 (South Korea) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (移动家宽)
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇸 美国 (United States) 01 (家宽) R50
+  - 🇰🇷 韩国 (South Korea) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (移动家宽)
+rules:
+- MATCH,PROXIES
