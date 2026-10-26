@@ -6,9 +6,23 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01",
-      "server": "5.22.221.127",
+      "server": "82.118.22.161",
       "server_port": 443,
-      "uuid": "44dfa3a7-f648-4587-819b-e653c0823f28"
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
     },
     {
       "type": "vless",
@@ -36,25 +50,17 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 04",
-      "server": "tr2.soft10.ir",
-      "server_port": 2053,
-      "uuid": "480b4042-f713-43d7-b24b-b4064c97f841",
+      "server": "2.26.6.1",
+      "server_port": 2087,
+      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
       "tls": {
         "enabled": true,
-        "server_name": "tr2.soft10.ir",
+        "server_name": "2.26.6.1",
         "insecure": false,
-        "alpn": [
-          "http/1.1",
-          "h2"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/"
       }
     },
     {
@@ -73,79 +79,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 06",
-      "server": "pl1.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl1.pad-sservice.lat",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/PL1W",
-        "headers": {
-          "Host": "pl1.pad-service.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 07",
-      "server": "pl3.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl3.pad-sservice.lat",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/PL3W",
-        "headers": {
-          "Host": "pl3.pad-service.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 08",
-      "server": "pl2.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "pl2.pad-sservice.lat",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/PL2W",
-        "headers": {
-          "Host": "pl2.pad-service.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 09",
-      "server": "2.26.6.1",
-      "server_port": 2087,
-      "uuid": "b9fdc03f-389b-4cda-9be4-155b623bee15",
-      "tls": {
-        "enabled": true,
-        "server_name": "2.26.6.1",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -154,11 +87,7 @@
         "🇵🇱 波兰 (Poland) 02",
         "🇵🇱 波兰 (Poland) 03",
         "🇵🇱 波兰 (Poland) 04",
-        "🇵🇱 波兰 (Poland) 05",
-        "🇵🇱 波兰 (Poland) 06",
-        "🇵🇱 波兰 (Poland) 07",
-        "🇵🇱 波兰 (Poland) 08",
-        "🇵🇱 波兰 (Poland) 09"
+        "🇵🇱 波兰 (Poland) 05"
       ]
     },
     {
@@ -169,11 +98,7 @@
         "🇵🇱 波兰 (Poland) 02",
         "🇵🇱 波兰 (Poland) 03",
         "🇵🇱 波兰 (Poland) 04",
-        "🇵🇱 波兰 (Poland) 05",
-        "🇵🇱 波兰 (Poland) 06",
-        "🇵🇱 波兰 (Poland) 07",
-        "🇵🇱 波兰 (Poland) 08",
-        "🇵🇱 波兰 (Poland) 09"
+        "🇵🇱 波兰 (Poland) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

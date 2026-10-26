@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "hinet1.2yly.com",
+      "server": "118.167.211.77",
       "server_port": 24215,
       "uuid": "19d5a678-8396-4e3b-93da-ece618d0e83a",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "addons.mozilla.org",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -24,18 +24,15 @@
       }
     },
     {
-      "type": "anytls",
+      "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-      "server": "684616s4.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
+      "server": "kw119.zxmm.eu.org",
+      "server_port": 20031,
+      "password": "00a72bf349e6479b",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "kw119.zxmm.eu.org",
+        "insecure": true
       }
     },
     {

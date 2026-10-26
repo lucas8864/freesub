@@ -6,6 +6,48 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
+      "server": "151.241.226.201",
+      "server_port": 2053,
+      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
+          "short_id": "9e419c0759b54d6f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 02",
+      "server": "trdatair.egekaradecojistik.net.tr",
+      "server_port": 35577,
+      "uuid": "b7d3a581-74d6-4ead-9235-ce9dedf08152",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "play.google.com"
+        }
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇹🇷 土耳其 (Turkey) 03",
+      "server": "location8.cpanel-host10.ir",
+      "server_port": 56134,
+      "method": "chacha20-ietf-poly1305",
+      "password": "uvKNudV-N8AUCrykPiyznA"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04",
       "server": "185.98.63.6",
       "server_port": 8443,
       "uuid": "6845a59f-970b-4e1e-8e26-06a34ee663d6",
@@ -26,7 +68,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02",
+      "tag": "🇹🇷 土耳其 (Turkey) 05",
       "server": "177.3.208.65",
       "server_port": 443,
       "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
@@ -46,25 +88,48 @@
     },
     {
       "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 03",
-      "server": "trdatair.egekaradecojistik.net.tr",
-      "server_port": 35577,
-      "uuid": "b7d3a581-74d6-4ead-9235-ce9dedf08152",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "play.google.com"
+      "tag": "🇹🇷 土耳其 (Turkey) 06",
+      "server": "193.160.141.27",
+      "server_port": 443,
+      "uuid": "fd0a5c32-afc0-4d57-b95a-ca6ec8f93e87",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "abuse.ozon.ru",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
         }
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇹🇷 土耳其 (Turkey) 04",
-      "server": "location8.cpanel-host10.ir",
-      "server_port": 56134,
-      "method": "chacha20-ietf-poly1305",
-      "password": "uvKNudV-N8AUCrykPiyznA"
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 07",
+      "server": "62.133.63.45",
+      "server_port": 8444,
+      "uuid": "a346c521-7a7f-452b-9356-a4893feb5982",
+      "tls": {
+        "enabled": true,
+        "server_name": "github.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
+          "short_id": "457fab2ac885dbe0"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "GunService"
+      }
     },
     {
       "type": "selector",
@@ -74,7 +139,10 @@
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
         "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04"
+        "🇹🇷 土耳其 (Turkey) 04",
+        "🇹🇷 土耳其 (Turkey) 05",
+        "🇹🇷 土耳其 (Turkey) 06",
+        "🇹🇷 土耳其 (Turkey) 07"
       ]
     },
     {
@@ -84,7 +152,10 @@
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
         "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04"
+        "🇹🇷 土耳其 (Turkey) 04",
+        "🇹🇷 土耳其 (Turkey) 05",
+        "🇹🇷 土耳其 (Turkey) 06",
+        "🇹🇷 土耳其 (Turkey) 07"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

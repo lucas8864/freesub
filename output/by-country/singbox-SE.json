@@ -4,71 +4,37 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "50.7.38.243",
-      "server_port": 443,
-      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
-      "tls": {
-        "enabled": true,
-        "server_name": "promo.betust.net",
-        "insecure": false
-      }
+      "server": "13.48.205.27",
+      "server_port": 12809,
+      "uuid": "413abec9-e07c-424e-8c0a-da234bef870e",
+      "security": "auto"
     },
     {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "tag": "🇸🇪 瑞典 (Sweden) 02",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
       "transport": {
         "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04",
-      "server": "191.44.114.179",
-      "server_port": 2096,
-      "uuid": "d1641bc6-3757-43db-815a-9b3f4d9b0d7e",
-      "tls": {
-        "enabled": true,
-        "server_name": "st33614.rumedia-cdn.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/cdn/v3/live",
-        "headers": {
-          "Host": "st33614.rumedia-cdn.com"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05",
-      "server": "193.188.21.253",
-      "server_port": 14430,
-      "uuid": "57f7772d-f5d6-4d8f-992d-5fa5e0d6da55",
-      "transport": {
-        "type": "ws",
         "path": "/vless",
         "headers": {
-          "Host": "193.188.21.253"
+          "Host": "5.178.109.174"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "promo.betust.net",
+      "server_port": 443,
+      "password": "d4ca9415f0eac7897472e1e5b86d2e96",
+      "tls": {
+        "enabled": true,
+        "server_name": "promo.betust.net",
+        "insecure": true
       }
     },
     {
@@ -78,9 +44,7 @@
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 03"
       ]
     },
     {
@@ -89,9 +53,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

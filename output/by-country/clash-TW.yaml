@@ -13,12 +13,12 @@ proxies:
   sni: tjtw.m2k699.com
   skip-cert-verify: false
 - name: 🇹🇼 中国台湾 (Taiwan) 02
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: whatsapp.com
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
