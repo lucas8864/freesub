@@ -12,28 +12,18 @@
       "password": "VcFuyXvND2yQWSFY"
     },
     {
-      "type": "vmess",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
-      "server": "45.144.48.32",
-      "server_port": 56080,
-      "uuid": "f4daaec7-0e1e-4c8e-97e8-cff5347c2dae",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01",
-        "🇧🇬 保加利亚 (Bulgaria) 02"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01",
-        "🇧🇬 保加利亚 (Bulgaria) 02"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

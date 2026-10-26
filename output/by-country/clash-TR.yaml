@@ -30,6 +30,17 @@ proxies:
   ws-opts:
     path: /vless-tr
 - name: 🇹🇷 土耳其 (Turkey) 03
+  server: trdatair.egekaradecojistik.net.tr
+  port: 35577
+  udp: true
+  type: vless
+  uuid: b7d3a581-74d6-4ead-9235-ce9dedf08152
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: play.google.com
+- name: 🇹🇷 土耳其 (Turkey) 04
   server: location8.cpanel-host10.ir
   port: 56134
   udp: true
@@ -44,6 +55,7 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
   - 🇹🇷 土耳其 (Turkey) 03
+  - 🇹🇷 土耳其 (Turkey) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,5 +64,6 @@ proxy-groups:
   - 🇹🇷 土耳其 (Turkey) 01
   - 🇹🇷 土耳其 (Turkey) 02
   - 🇹🇷 土耳其 (Turkey) 03
+  - 🇹🇷 土耳其 (Turkey) 04
 rules:
 - MATCH,PROXIES

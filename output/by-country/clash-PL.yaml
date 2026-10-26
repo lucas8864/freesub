@@ -25,11 +25,23 @@ proxies:
   tls: true
   servername: ru1.radiolumens.uk
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
 - name: 🇵🇱 波兰 (Poland) 04
+  server: tr2.soft10.ir
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 480b4042-f713-43d7-b24b-b4064c97f841
+  tls: true
+  servername: tr2.soft10.ir
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇵🇱 波兰 (Poland) 05
   server: 54.37.131.126
   port: 80
   udp: true
@@ -42,18 +54,57 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 82.118.22.161
-  port: 443
+- name: 🇵🇱 波兰 (Poland) 06
+  server: pl1.pad-sservice.lat
+  port: 8443
   udp: true
   type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
+  servername: pl1.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /PL1W
+    headers:
+      Host: pl1.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 07
+  server: pl3.pad-sservice.lat
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl3.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /PL3W
+    headers:
+      Host: pl3.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 08
+  server: pl2.pad-sservice.lat
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  tls: true
+  servername: pl2.pad-sservice.lat
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /PL2W
+    headers:
+      Host: pl2.pad-service.com
+- name: 🇵🇱 波兰 (Poland) 09
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: false
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -65,6 +116,10 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
   - 🇵🇱 波兰 (Poland) 05
+  - 🇵🇱 波兰 (Poland) 06
+  - 🇵🇱 波兰 (Poland) 07
+  - 🇵🇱 波兰 (Poland) 08
+  - 🇵🇱 波兰 (Poland) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -75,5 +130,9 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
   - 🇵🇱 波兰 (Poland) 05
+  - 🇵🇱 波兰 (Poland) 06
+  - 🇵🇱 波兰 (Poland) 07
+  - 🇵🇱 波兰 (Poland) 08
+  - 🇵🇱 波兰 (Poland) 09
 rules:
 - MATCH,PROXIES
