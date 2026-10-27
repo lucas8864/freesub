@@ -6,46 +6,36 @@
     {
       "type": "vless",
       "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
-      "server": "hydra.yokkastars.com",
-      "server_port": 2443,
-      "uuid": "5e679ccd-1586-4d5f-b87b-48251046cad8",
+      "server": "171.22.119.74",
+      "server_port": 8447,
+      "uuid": "6aed42ba-cd2d-4671-87d9-c949b6876888"
+    },
+    {
+      "type": "trojan",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
+      "server": "171.22.119.74",
+      "server_port": 8446,
+      "password": "Pass-Client-1",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "h85e28MxBgNyT9d9cNeOLVtWfHq6cT_1_oxZOTajtTg",
-          "short_id": "92c32de179e5d908"
-        }
+        "server_name": "171.22.119.74",
+        "insecure": true
       },
       "transport": {
         "type": "grpc",
-        "service_name": "rex-eb0bf76b710ce763"
+        "service_name": "grpc-video-call"
       }
     },
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
-      "server": "5.253.28.240",
-      "server_port": 40443,
-      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
-      "flow": "xtls-rprx-vision",
+      "type": "hysteria2",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
+      "server": "hys-eu.letsconnectpoint.com",
+      "server_port": 443,
+      "password": "4b1be712-774c-4b65-8491-a3339e124a70",
       "tls": {
         "enabled": true,
-        "server_name": "deepl.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
-          "short_id": "88b6"
-        }
+        "server_name": "hys-eu.letsconnectpoint.com",
+        "insecure": false
       }
     },
     {
@@ -54,7 +44,8 @@
       "outbounds": [
         "auto",
         "🇨🇾 塞浦路斯 (Cyprus) 01",
-        "🇨🇾 塞浦路斯 (Cyprus) 02"
+        "🇨🇾 塞浦路斯 (Cyprus) 02",
+        "🇨🇾 塞浦路斯 (Cyprus) 03"
       ]
     },
     {
@@ -62,7 +53,8 @@
       "tag": "auto",
       "outbounds": [
         "🇨🇾 塞浦路斯 (Cyprus) 01",
-        "🇨🇾 塞浦路斯 (Cyprus) 02"
+        "🇨🇾 塞浦路斯 (Cyprus) 02",
+        "🇨🇾 塞浦路斯 (Cyprus) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

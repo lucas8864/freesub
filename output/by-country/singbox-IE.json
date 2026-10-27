@@ -4,18 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "684616s4.df6h451rh.xin",
+      "type": "vless",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01",
+      "server": "ir-new-ded.failspace.top",
       "server_port": 443,
-      "password": "0324fbc29561",
+      "uuid": "cd3bb7d9-7df3-4644-ac05-c260990ac277",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "px.ads.linkedin.com",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
+        "server_name": "ir-new-ded.failspace.top",
+        "insecure": false
       }
     },
     {
@@ -23,14 +21,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇮🇪 爱尔兰 (Ireland) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇮🇪 爱尔兰 (Ireland) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

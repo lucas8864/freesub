@@ -22,17 +22,6 @@ proxies:
     headers:
       Host: 178.172.227.124
 - name: 🇧🇾 白俄罗斯 (Belarus) 03
-  server: 95.128.71.79
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 95.128.71.79
-- name: 🇧🇾 白俄罗斯 (Belarus) 04
   server: 178.172.227.228
   port: 14430
   udp: true
@@ -43,6 +32,17 @@ proxies:
     path: /vless
     headers:
       Host: 178.172.227.228
+- name: 🇧🇾 白俄罗斯 (Belarus) 04
+  server: 95.128.71.79
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 8cef7621-c6f0-486e-b51d-59c30c5b0b25
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.128.71.79
 proxy-groups:
 - name: PROXIES
   type: select
