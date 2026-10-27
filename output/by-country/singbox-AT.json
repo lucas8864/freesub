@@ -14,61 +14,21 @@
     {
       "type": "vless",
       "tag": "🇦🇹 奥地利 (Austria) 02",
-      "server": "au7.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
+      "server": "softice.net",
+      "server_port": 443,
+      "uuid": "ef328563-cda1-4530-9b0a-988cc5a74d78",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "au7.pad-sservice.lat",
+        "server_name": "softice.net",
         "insecure": false,
         "alpn": [
+          "h2",
           "http/1.1"
         ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/AU7W",
-        "headers": {
-          "Host": "au7.pad-sservice.lat"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 03",
-      "server": "au6.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "au6.pad-sservice.lat",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/AU6W"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 04",
-      "server": "au2.pad-sservice.lat",
-      "server_port": 8443,
-      "uuid": "2b0e5676-fb62-4bf0-9607-6e7818421e8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "au2.pad-sservice.lat",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/A11U",
-        "headers": {
-          "Host": "au2.pad-service.com"
         }
       }
     },
@@ -78,9 +38,7 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02",
-        "🇦🇹 奥地利 (Austria) 03",
-        "🇦🇹 奥地利 (Austria) 04"
+        "🇦🇹 奥地利 (Austria) 02"
       ]
     },
     {
@@ -88,9 +46,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02",
-        "🇦🇹 奥地利 (Austria) 03",
-        "🇦🇹 奥地利 (Austria) 04"
+        "🇦🇹 奥地利 (Austria) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

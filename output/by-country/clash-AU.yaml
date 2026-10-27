@@ -5,24 +5,49 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01
+  server: 51.161.204.242
+  port: 443
+  udp: true
+  type: vless
+  uuid: a14b736b-a92a-48d6-a596-5d31f7378ded
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE
+    short-id: d15c17cef9b2e456
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇦🇺 澳大利亚 (Australia) 02
+  server: 45.63.30.142
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectwithemployerstohireyouridealteam.com
+  skip-cert-verify: false
+- name: 🇦🇺 澳大利亚 (Australia) 03
   server: au.tronsg.com
   port: 443
   udp: true
   type: trojan
   password: Trojan@82164024
   sni: au.tronsg.com
-  skip-cert-verify: true
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇦🇺 澳大利亚 (Australia) 02
+  - 🇦🇺 澳大利亚 (Australia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01
+  - 🇦🇺 澳大利亚 (Australia) 02
+  - 🇦🇺 澳大利亚 (Australia) 03
 rules:
 - MATCH,PROXIES

@@ -29,7 +29,28 @@
         "type": "ws",
         "path": "/ws",
         "headers": {
-          "Host": "aIs.SpEeDtEsT.nEt"
+          "Host": "v2ray.simspeedup.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇭 泰国 (Thailand) 03",
+      "server": "45.154.26.63",
+      "server_port": 443,
+      "uuid": "ff85e702-b605-4109-884d-2c1f065d0954",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk",
+          "short_id": "3c032a7e"
         }
       }
     },
@@ -39,7 +60,8 @@
       "outbounds": [
         "auto",
         "🇹🇭 泰国 (Thailand) 01",
-        "🇹🇭 泰国 (Thailand) 02"
+        "🇹🇭 泰国 (Thailand) 02",
+        "🇹🇭 泰国 (Thailand) 03"
       ]
     },
     {
@@ -47,7 +69,8 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇭 泰国 (Thailand) 01",
-        "🇹🇭 泰国 (Thailand) 02"
+        "🇹🇭 泰国 (Thailand) 02",
+        "🇹🇭 泰国 (Thailand) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

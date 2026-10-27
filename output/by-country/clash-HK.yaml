@@ -5,6 +5,22 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: dog-hk.kunlun01dns.com
+  port: 21020
+  udp: true
+  type: vmess
+  uuid: 9464ca40-dd75-3742-a628-d931a9f413b2
+  alterId: 0
+  cipher: auto
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: tjyg.m2k699.com
+  port: 24999
+  udp: true
+  type: trojan
+  password: 29086912-33e4-4e06-ba2b-60f1a195864f
+  sni: www.itunes.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 165.154.63.139
   port: 443
   udp: true
@@ -17,15 +33,15 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: tjjnd.m2k699.com
-  port: 24999
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 202.146.222.89
+  port: 443
   udp: true
-  type: trojan
-  password: 29086912-33e4-4e06-ba2b-60f1a195864f
-  sni: www.itunes.com
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03
+- name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 50.7.44.28
   port: 2091
   udp: true
@@ -37,24 +53,24 @@ proxies:
     public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
     short-id: 08a4b1f473932632
   servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 202.146.222.89
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: speedtest.tinkoff.ru
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
+- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https://t.me/wangcai2🇨🇳
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
+- name: 🇭🇰 中国香港 (Hong Kong) 08
   server: 501.150333.xyz
   port: 21002
   udp: true
@@ -66,7 +82,22 @@ proxies:
     short-id: 48b41af29b500164
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 07
+- name: 🇭🇰 中国香港 (Hong Kong) 09
+  server: 43.254.166.147
+  port: 443
+  udp: true
+  type: vless
+  uuid: c6553c99-837d-490a-af1c-c526d8c38e99
+  tls: true
+  servername: usyun.cc
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /trial-gs-relay
+    headers:
+      Host: usyun.cc
+- name: 🇭🇰 中国香港 (Hong Kong) 10
   server: 501.150333.xyz
   port: 21004
   udp: true
@@ -76,6 +107,28 @@ proxies:
   reality-opts:
     public-key: OCs6EIBsSg-f8MW0RE7QDwjZafk09F1aGl7olF7yAW0
     short-id: 04f9f3b03c9a6d79
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11
+  server: nas.aizhzo.com
+  port: 5010
+  udp: true
+  type: hysteria2
+  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
+  sni: nas.aizhzo.com
+  skip-cert-verify: false
+  obfs: salamander
+  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: 501.150333.xyz
+  port: 21001
+  udp: true
+  type: vless
+  uuid: 972be0be-1831-4b5e-b26b-3b6e139a1cd0
+  tls: true
+  reality-opts:
+    public-key: OCs6EIBsSg-f8MW0RE7QDwjZafk09F1aGl7olF7yAW0
+    short-id: 15d7e7f1939e82e5
   servername: www.cloudflare.com
   client-fingerprint: chrome
 proxy-groups:
@@ -90,6 +143,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
   - 🇭🇰 中国香港 (Hong Kong) 07
+  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 09
+  - 🇭🇰 中国香港 (Hong Kong) 10
+  - 🇭🇰 中国香港 (Hong Kong) 11
+  - 🇭🇰 中国香港 (Hong Kong) 12
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -102,5 +160,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
   - 🇭🇰 中国香港 (Hong Kong) 07
+  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 09
+  - 🇭🇰 中国香港 (Hong Kong) 10
+  - 🇭🇰 中国香港 (Hong Kong) 11
+  - 🇭🇰 中国香港 (Hong Kong) 12
 rules:
 - MATCH,PROXIES

@@ -12,46 +12,16 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02
-  server: au7.pad-sservice.lat
-  port: 8443
+  server: softice.net
+  port: 443
   udp: true
   type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
+  uuid: ef328563-cda1-4530-9b0a-988cc5a74d78
+  flow: xtls-rprx-vision
   tls: true
-  servername: au7.pad-sservice.lat
+  servername: softice.net
   skip-cert-verify: false
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /AU7W
-    headers:
-      Host: au7.pad-sservice.lat
-- name: 🇦🇹 奥地利 (Austria) 03
-  server: au6.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: au6.pad-sservice.lat
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /AU6W
-- name: 🇦🇹 奥地利 (Austria) 04
-  server: au2.pad-sservice.lat
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  tls: true
-  servername: au2.pad-sservice.lat
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /A11U
-    headers:
-      Host: au2.pad-service.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -59,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
-  - 🇦🇹 奥地利 (Austria) 03
-  - 🇦🇹 奥地利 (Austria) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -68,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
-  - 🇦🇹 奥地利 (Austria) 03
-  - 🇦🇹 奥地利 (Austria) 04
 rules:
 - MATCH,PROXIES

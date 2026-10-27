@@ -25,14 +25,6 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 03
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: www.bing.com
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 04
   server: 208.69.78.217
   port: 2053
   udp: true
@@ -43,51 +35,25 @@ proxies:
     public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
     short-id: ad86e2d52ff40ebd
   servername: www.apple.com
-  client-fingerprint: chrome
+  client-fingerprint: random
+- name: 🇨🇭 瑞士 (Switzerland) 04
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 140.238.213.114
+  skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 05
-  server: 185.18.250.252
+  server: swz.proxyplankton.ru
   port: 443
   udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
+  type: vless
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+  tls: true
+  servername: swz.proxyplankton.ru
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇨🇭 瑞士 (Switzerland) 06
-  server: 185.18.250.252
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /assignment
-- name: 🇨🇭 瑞士 (Switzerland) 07
-  server: 185.18.250.252
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇨🇭 瑞士 (Switzerland) 08
-  server: 185.18.250.245
-  port: 443
-  udp: true
-  type: trojan
-  password: humanity
-  sni: www.calmlunch.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /assignment
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -98,9 +64,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
-  - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
-  - 🇨🇭 瑞士 (Switzerland) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -111,8 +74,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
-  - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
-  - 🇨🇭 瑞士 (Switzerland) 08
 rules:
 - MATCH,PROXIES

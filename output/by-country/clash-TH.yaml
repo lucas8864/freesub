@@ -24,7 +24,20 @@ proxies:
   ws-opts:
     path: /ws
     headers:
-      Host: aIs.SpEeDtEsT.nEt
+      Host: v2ray.simspeedup.com
+- name: 🇹🇭 泰国 (Thailand) 03
+  server: 45.154.26.63
+  port: 443
+  udp: true
+  type: vless
+  uuid: ff85e702-b605-4109-884d-2c1f065d0954
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MiQ5B4j6In71lWvCi0vO_DkVSDb7sii34bh5efBMswk
+    short-id: 3c032a7e
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +45,7 @@ proxy-groups:
   - AUTO
   - 🇹🇭 泰国 (Thailand) 01
   - 🇹🇭 泰国 (Thailand) 02
+  - 🇹🇭 泰国 (Thailand) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +53,6 @@ proxy-groups:
   proxies:
   - 🇹🇭 泰国 (Thailand) 01
   - 🇹🇭 泰国 (Thailand) 02
+  - 🇹🇭 泰国 (Thailand) 03
 rules:
 - MATCH,PROXIES
