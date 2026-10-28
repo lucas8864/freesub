@@ -5,13 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 13.143.239.84
-  port: 4443
+  server: 217.60.182.138
+  port: 8843
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nl1.obxodvpn.us
-  skip-cert-verify: false
+  type: vless
+  uuid: f7274516-0050-4544-9462-0f1ca689db54
+  tls: true
+  reality-opts:
+    public-key: XD-GOGR9K3rGRCfpytDaJZmtXOr7ZO6OdczpjUE0Dh8
+    short-id: a4f8c92d
+  servername: myschoolonline.cvedcmimikal.space
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 46205b
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02
   server: 79.182.39.232
   port: 25895

@@ -13,7 +13,7 @@ proxies:
   tls: true
   servername: 45-149-147-213.sslip.io
   skip-cert-verify: false
-  client-fingerprint: safari
+  client-fingerprint: firefox
   network: grpc
   grpc-opts:
     grpc-service-name: kobedin-server1-vless
@@ -29,6 +29,19 @@ proxies:
   grpc-opts:
     grpc-service-name: kobedin-server1-trojan
 - name: 🇫🇮 芬兰 (Finland) 03
+  server: 2.27.13.152
+  port: 8443
+  udp: true
+  type: vless
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 14YyFG_j2yPEUu-gO_G9GqCqRiZ0DIUgzReV9CZvOAk
+    short-id: 0f47ff9aa15e3e30
+  servername: www.nokia.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04
   server: 95.216.27.15
   port: 2053
   udp: true
@@ -39,22 +52,7 @@ proxies:
     public-key: 4nfogj5mHqNowtSn_2sXS3xTX8vcH75rFEU2BWvyekM
     short-id: d368b94e275ab080
   servername: www.google.com
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 77.42.12.225
-  port: 443
-  udp: true
-  type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
-  tls: true
-  reality-opts:
-    public-key: GJzag9Wrvz_bO9AQaA-Oq0P1kV9btmxxAdzPV-uQB18
-    short-id: 09d0a94a1c6fc9d5
-  servername: 8fc752g.fi3.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: f345a414c040
+  client-fingerprint: ''
 - name: 🇫🇮 芬兰 (Finland) 05
   server: 65.109.212.193
   port: 465
@@ -64,37 +62,24 @@ proxies:
   tls: true
   servername: hw3.divarkhaghazi.com.
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
 - name: 🇫🇮 芬兰 (Finland) 06
-  server: 45.144.234.157
-  port: 14430
+  server: 263651t.fi3.h1clayd.click
+  port: 443
   udp: true
   type: vless
-  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 07
-  server: 2.27.13.152
-  port: 2096
-  udp: true
-  type: vless
-  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
-  servername: st4834a.rumedia-cdn.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /cdn/v3/live
-    headers:
-      Host: st4834a.rumedia-cdn.com
+  reality-opts:
+    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
+    short-id: 2892e611785bafd1
+  servername: 263651t.fi3.h1clayd.click
+  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
@@ -106,7 +91,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
   - 🇫🇮 芬兰 (Finland) 06
-  - 🇫🇮 芬兰 (Finland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -118,6 +102,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 04
   - 🇫🇮 芬兰 (Finland) 05
   - 🇫🇮 芬兰 (Finland) 06
-  - 🇫🇮 芬兰 (Finland) 07
 rules:
 - MATCH,PROXIES

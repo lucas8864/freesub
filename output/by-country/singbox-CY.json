@@ -4,15 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
-      "server": "171.22.119.74",
-      "server_port": 8447,
-      "uuid": "6aed42ba-cd2d-4671-87d9-c949b6876888"
-    },
-    {
       "type": "trojan",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
       "server": "171.22.119.74",
       "server_port": 8446,
       "password": "Pass-Client-1",
@@ -28,7 +21,7 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
       "server": "hys-eu.letsconnectpoint.com",
       "server_port": 443,
       "password": "4b1be712-774c-4b65-8491-a3339e124a70",
@@ -36,6 +29,27 @@
         "enabled": true,
         "server_name": "hys-eu.letsconnectpoint.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 03",
+      "server": "5.253.28.240",
+      "server_port": 40443,
+      "uuid": "405b964e-a2d2-454f-aaaa-711cc218897c",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "deepl.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
+        }
       }
     },
     {

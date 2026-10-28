@@ -1,0 +1,33 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  server: aaaa1.yeurl.cc
+  port: 35513
+  udp: true
+  type: vless
+  uuid: 94bdc044-265c-40ef-a274-14714c71cc0c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 6mUgjCN0nEp3iSabXk2qVaaBN_dLlO8Sr0JcwSMBoHw
+    short-id: 6056f9ac2ee8b66e
+  servername: www.bing.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+rules:
+- MATCH,PROXIES

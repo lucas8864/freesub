@@ -5,6 +5,88 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: 103.149.182.79
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf
+  password: asd123456
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/wangcai2🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: hk2.open-bridonyx.top
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 4ubYp4HaBJgn1qXwfo0hiejncurXCckII-O_FMDXTgI
+    short-id: 3b74d85e
+  servername: hk2.open-bridonyx.top
+  client-fingerprint: qq
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 50.7.44.28
+  port: 2091
+  udp: true
+  type: vless
+  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
+    short-id: 08a4b1f473932632
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 103.238.227.211
+  port: 21003
+  udp: true
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: eb9539689690d35c
+  servername: www.cloudflare.com
+  client-fingerprint: firefox
+- name: 🇭🇰 中国香港 (Hong Kong) 08 (家宽)
+  server: ftaaa.yeurl.cc
+  port: 35801
+  udp: true
+  type: vless
+  uuid: 94bdc044-265c-40ef-a274-14714c71cc0c
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MRbSjXaWW6gjV3ZiwsSqq9emSyjRHa4bc229bJCxiS4
+    short-id: af3d450224d2e8b2
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 09
   server: 165.154.63.139
   port: 443
   udp: true
@@ -17,23 +99,19 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 202.146.222.29
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 10
+  server: 103.238.227.211
+  port: 21002
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2üá®üá≥
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
+  type: vless
+  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  tls: true
+  reality-opts:
+    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
+    short-id: f0e6a8bb98db3efd
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 11
   server: 38.22.88.248
   port: 27509
   udp: true
@@ -46,83 +124,66 @@ proxies:
     short-id: 6ba85179e30d4fc2
   servername: www.suffolk.edu
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 47.243.194.125
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: NYcQg19zkwaCPM1B.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: 67.159.49.26
-  port: 2091
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: aaaa2.yeurl.cc
+  port: 35502
   udp: true
   type: vless
-  uuid: 76b6a658-ce80-4500-b24d-404c94639ac6
+  uuid: 94bdc044-265c-40ef-a274-14714c71cc0c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 1N6AW5YuEwBoYcZK5KuugDzBHsa0NKZMT8QI-EmyL0k
-    short-id: 08a4b1f473932632
-  servername: www.apple.com
+    public-key: gG2M1Ae4tkUxn5gThU164nyDV2a_lgiFysLD70ftwGs
+    short-id: 372dea9a47ad3839
+  servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 103.238.227.211
-  port: 21002
+- name: 🇭🇰 中国香港 (Hong Kong) 13
+  server: ntcaaa.yeurl.cc
+  port: 35500
   udp: true
   type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  uuid: 94bdc044-265c-40ef-a274-14714c71cc0c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: f0e6a8bb98db3efd
-  servername: www.cloudflare.com
+    public-key: CdUmcU2yeoME6_6I1eEd9F86vZ7Lwf4_IWDZ2Ct5jlE
+    short-id: 237e5c2bd93735e8
+  servername: www.bing.com
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 09
-  server: 103.238.227.211
-  port: 21003
+- name: 🇭🇰 中国香港 (Hong Kong) 14
+  server: aaaa1.yeurl.cc
+  port: 35505
   udp: true
   type: vless
-  uuid: 52d2187c-34e1-40fd-a6f5-0a74ff7d3e9a
+  uuid: 94bdc044-265c-40ef-a274-14714c71cc0c
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: EXU8eOS1kf_ROqC68NO-zbzRFGx7U5zE6WvjxRzYeTo
-    short-id: eb9539689690d35c
-  servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: 47.76.57.83
-  port: 443
+    public-key: dKYlBW5SGefmMdS_aTzyf6eTmtlEGEMYYWYdXXgRrTE
+    short-id: 035392c036ac8851
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 15
+  server: aaaa2.yeurl.cc
+  port: 35506
   udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: 94bdc044-265c-40ef-a274-14714c71cc0c
+  flow: xtls-rprx-vision
   tls: true
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  reality-opts:
+    public-key: Gd2XCYD-PGA4qPI_GnhYiehFZYKfoWJzT8jwVjFPFiA
+    short-id: 9044789203b5a079
+  servername: www.bing.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 16
+  server: 124.151.45.214
+  port: 12010
+  udp: true
+  type: trojan
+  password: 298c5651d3015d7cee9e8411eaa0bd72
+  sni: apis.99912345.xyz
   skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: vah4urdzl3jdx5r2.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -135,9 +196,15 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
   - 🇭🇰 中国香港 (Hong Kong) 07
-  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽)
   - 🇭🇰 中国香港 (Hong Kong) 09
   - 🇭🇰 中国香港 (Hong Kong) 10
+  - 🇭🇰 中国香港 (Hong Kong) 11
+  - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
+  - 🇭🇰 中国香港 (Hong Kong) 14
+  - 🇭🇰 中国香港 (Hong Kong) 15
+  - 🇭🇰 中国香港 (Hong Kong) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -150,8 +217,14 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
   - 🇭🇰 中国香港 (Hong Kong) 07
-  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 08 (家宽)
   - 🇭🇰 中国香港 (Hong Kong) 09
   - 🇭🇰 中国香港 (Hong Kong) 10
+  - 🇭🇰 中国香港 (Hong Kong) 11
+  - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
+  - 🇭🇰 中国香港 (Hong Kong) 14
+  - 🇭🇰 中国香港 (Hong Kong) 15
+  - 🇭🇰 中国香港 (Hong Kong) 16
 rules:
 - MATCH,PROXIES

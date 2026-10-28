@@ -33,6 +33,13 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: c1b4086fea89914496c7e10967a419216566
+- name: 🇷🇴 罗马尼亚 (Romania) 04
+  server: bogging-eyeteeth-fly.freesocks.work
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
@@ -41,6 +48,7 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01
   - 🇷🇴 罗马尼亚 (Romania) 02
   - 🇷🇴 罗马尼亚 (Romania) 03
+  - 🇷🇴 罗马尼亚 (Romania) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -49,5 +57,6 @@ proxy-groups:
   - 🇷🇴 罗马尼亚 (Romania) 01
   - 🇷🇴 罗马尼亚 (Romania) 02
   - 🇷🇴 罗马尼亚 (Romania) 03
+  - 🇷🇴 罗马尼亚 (Romania) 04
 rules:
 - MATCH,PROXIES
