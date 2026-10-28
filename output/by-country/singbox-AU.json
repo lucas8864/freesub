@@ -16,15 +16,24 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇦🇺 澳大利亚 (Australia) 02",
-      "server": "au.tronsg.com",
+      "server": "51.161.204.242",
       "server_port": 443,
-      "password": "Trojan@82164024",
+      "uuid": "a14b736b-a92a-48d6-a596-5d31f7378ded",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "au.tronsg.com",
-        "insecure": true
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "a2qGjvUPq6Nz5FTbn_MSHp-055q2h8YXqIL5VIJ5zwE",
+          "short_id": "d15c17cef9b2e456"
+        }
       }
     },
     {
@@ -36,32 +45,19 @@
       "tls": {
         "enabled": true,
         "server_name": "au001.zestapp778.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇦🇺 澳大利亚 (Australia) 04",
-      "server": "51.161.204.244",
+      "server": "au.tronsg.com",
       "server_port": 443,
-      "uuid": "36e89875-9c53-482b-bc41-d3890e9da176",
-      "flow": "xtls-rprx-vision",
+      "password": "Trojan@82164024",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "random"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "gCAazs5uxNuMZIxfDdw8wPE0nwKY4QfBfBkQveKAkEk",
-          "short_id": "0ad08b47f498efd2"
-        }
+        "server_name": "au.tronsg.com",
+        "insecure": false
       }
     },
     {

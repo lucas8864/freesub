@@ -6,41 +6,21 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-      "server": "109.248.170.119",
-      "server_port": 13447,
-      "uuid": "b573cefb-7bc7-4a42-b407-b8b534e66773",
+      "server": "45.136.59.28",
+      "server_port": 43000,
+      "uuid": "a8b8b21e-1f31-4e4d-a639-efb2de0d577e",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "yahoo.com",
+        "server_name": "45.136.59.28",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
-          "public_key": "_0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE",
-          "short_id": "83"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 02",
-      "server": "kazakhstan.letsconnectpoint.com",
-      "server_port": 443,
-      "uuid": "4b1be712-774c-4b65-8491-a3339e124a70",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "kazakhstan.letsconnectpoint.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk",
-          "short_id": "a9c3f7e2"
+          "public_key": "osqok9aA_NR7WyAxZptD36-_U8BF_9gL8AH84MMzbFs",
+          "short_id": "ced96d59"
         }
       }
     },
@@ -49,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-        "🇰🇿 哈萨克斯坦 (Kazakhstan) 02"
+        "🇰🇿 哈萨克斯坦 (Kazakhstan) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

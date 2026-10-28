@@ -4,26 +4,30 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇳🇴 挪威 (Norway) 01",
-      "server": "185.213.23.63",
-      "server_port": 990,
-      "method": "chacha20-ietf-poly1305",
-      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
+      "type": "trojan",
+      "tag": "🇨🇱 智利 (Chile) 01",
+      "server": "64.176.7.205",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "advanceyouremploymentskillsandcareerdevelopmenthub.com",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇳🇴 挪威 (Norway) 01"
+        "🇨🇱 智利 (Chile) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇳🇴 挪威 (Norway) 01"
+        "🇨🇱 智利 (Chile) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

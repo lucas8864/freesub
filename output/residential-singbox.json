@@ -5,57 +5,7 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "aaaa1.yeurl.cc",
-      "server_port": 35513,
-      "uuid": "94bdc044-265c-40ef-a274-14714c71cc0c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "6mUgjCN0nEp3iSabXk2qVaaBN_dLlO8Sr0JcwSMBoHw",
-          "short_id": "6056f9ac2ee8b66e"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-      "server": "aaaa1.yeurl.cc",
-      "server_port": 35503,
-      "uuid": "94bdc044-265c-40ef-a274-14714c71cc0c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "nDfTdosTrjY7J61KmFGkSERzF-hxK_vS3GS5QcA9ZiQ",
-          "short_id": "0d10e91f9ea0a534"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇰🇷 韩国 (South Korea) 03 (家宽)",
-      "server": "p141.panda001.net",
-      "server_port": 4652,
-      "method": "aes-256-cfb",
-      "password": "qwerREWQ@@"
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04 (家宽)",
+      "tag": "🇮🇳 印度 (India) 01 (家宽)",
       "server": "122.176.216.52",
       "server_port": 443,
       "uuid": "16ae3ea5-cf3e-6973-7bf3-2b4b28d0ea88",
@@ -65,7 +15,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "android"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -77,87 +27,18 @@
       }
     },
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽)",
-      "server": "56481.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true,
-        "alpn": [
-          "http/1.1"
-        ]
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06 (家宽)",
-      "server": "aaaa2.yeurl.cc",
-      "server_port": 35504,
-      "uuid": "94bdc044-265c-40ef-a274-14714c71cc0c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fv2rCTwEmGHoNe7TAx_B1or6Q3UH-Xc-VoAdCf4onwQ",
-          "short_id": "13b61e0b366a8587"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07 (家宽)",
-      "server": "aaaa1.yeurl.cc",
-      "server_port": 35501,
-      "uuid": "94bdc044-265c-40ef-a274-14714c71cc0c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.bing.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MRbSjXaWW6gjV3ZiwsSqq9emSyjRHa4bc229bJCxiS4",
-          "short_id": "af3d450224d2e8b2"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-        "🇰🇷 韩国 (South Korea) 03 (家宽)",
-        "🇮🇳 印度 (India) 04 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽)"
+        "🇮🇳 印度 (India) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
-        "🇰🇷 韩国 (South Korea) 03 (家宽)",
-        "🇮🇳 印度 (India) 04 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 05 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 06 (家宽)",
-        "🇭🇰 中国香港 (Hong Kong) 07 (家宽)"
+        "🇮🇳 印度 (India) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
