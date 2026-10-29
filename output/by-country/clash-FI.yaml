@@ -5,12 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: helsinki03.npvnot.com
-  port: 995
+  server: 45.144.234.157
+  port: 14430
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: MjNhN2QwNmFlYTRlZGMxNWVlOTI0MGI0MTU4MDY1
+  type: vless
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
   server: 95.216.27.15
   port: 2053
@@ -24,17 +28,20 @@ proxies:
   servername: www.google.com
   client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: 263651t.fi3.h1clayd.click
-  port: 443
+  server: hw3.divarkhaghazi.com
+  port: 465
   udp: true
   type: vless
-  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
+  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
-  reality-opts:
-    public-key: nNe5Y8_G7L0_VO5lqlee3h5UmRH4RXjaRYGCDUkbQz4
-    short-id: 2892e611785bafd1
-  servername: 263651t.fi3.h1clayd.click
-  client-fingerprint: edge
+  servername: hw3.divarkhaghazi.com.
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: hw3.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select

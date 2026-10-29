@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
+  server: 155.117.5.208
+  port: 20001
+  udp: true
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
+- name: 🇵🇱 波兰 (Poland) 02
+  server: 168.222.43.53
+  port: 2052
+  udp: true
+  type: vless
+  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
+- name: 🇵🇱 波兰 (Poland) 03
   server: 45.148.119.127
   port: 443
   udp: true
@@ -17,30 +29,28 @@ proxies:
     short-id: '50'
   servername: cloudflare.com
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 155.117.5.208
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 03
-  server: poland-new-new.failspace.top
-  port: 443
-  udp: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-  flow: xtls-rprx-vision
-  tls: true
-  servername: poland-new-new.failspace.top
-  skip-cert-verify: false
-  client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 04
-  server: 168.222.43.53
-  port: 2052
+  server: 78.17.128.153
+  port: 35076
+  udp: true
+  type: hysteria2
+  password: b4c8ee9caa74b7ba0a61
+  sni: scrap.halyvanedorogo.ru
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 05
+  server: ru1.radiolumens.uk
+  port: 8445
   udp: true
   type: vless
-  uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
-- name: 🇵🇱 波兰 (Poland) 05
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+  tls: true
+  servername: ru1.radiolumens.uk
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: beru-pl
+- name: 🇵🇱 波兰 (Poland) 06
   server: 54.37.131.126
   port: 80
   udp: true
@@ -53,7 +63,7 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 06
+- name: 🇵🇱 波兰 (Poland) 07
   server: 2.26.6.1
   port: 2087
   udp: true
@@ -73,6 +83,7 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04
   - 🇵🇱 波兰 (Poland) 05
   - 🇵🇱 波兰 (Poland) 06
+  - 🇵🇱 波兰 (Poland) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -84,5 +95,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 04
   - 🇵🇱 波兰 (Poland) 05
   - 🇵🇱 波兰 (Poland) 06
+  - 🇵🇱 波兰 (Poland) 07
 rules:
 - MATCH,PROXIES

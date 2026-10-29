@@ -4,27 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01
-  server: 130.94.95.198
-  port: 57353
+- name: 🇻🇳 越南 (Vietnam) 01
+  server: 150.95.109.109
+  port: 2086
   udp: true
   type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: in001.zestapp778.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01
+  - 🇻🇳 越南 (Vietnam) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01
+  - 🇻🇳 越南 (Vietnam) 01
 rules:
 - MATCH,PROXIES
