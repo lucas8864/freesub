@@ -16,6 +16,18 @@ proxies:
     headers:
       Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 02
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇮🇳 印度 (India) 03
   server: 178.212.35.198
   port: 443
   udp: true
@@ -27,34 +39,34 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03
-  server: 194.61.31.126
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: random
 - name: 🇮🇳 印度 (India) 04
   server: in002.zestapp778.com
-  port: 46362
+  port: 42733
   udp: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  tls: true
-  servername: in002.zestapp778.com
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: in002.zestapp778.com
   skip-cert-verify: false
 - name: 🇮🇳 印度 (India) 05
-  server: 139.84.132.62
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0179
+- name: 🇮🇳 印度 (India) 06
+  server: 64.176.96.237
   port: 443
   udp: true
   type: trojan
-  password: Trojan@82164024
-  sni: 139.84.132.62
+  password: Tg3RnK7Xp8B1
+  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
@@ -66,6 +78,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03
   - 🇮🇳 印度 (India) 04
   - 🇮🇳 印度 (India) 05
+  - 🇮🇳 印度 (India) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +89,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03
   - 🇮🇳 印度 (India) 04
   - 🇮🇳 印度 (India) 05
+  - 🇮🇳 印度 (India) 06
 rules:
 - MATCH,PROXIES

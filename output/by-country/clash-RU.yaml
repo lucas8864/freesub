@@ -5,37 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 147.45.46.157
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 75985152-e16e-4a48-87ff-35c2615e0ab5
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: firefox
-- name: 🇷🇺 俄罗斯 (Russia) 02
-  server: 195.58.49.167
-  port: 18443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: 193.160.141.81
-  port: 8443
-  udp: true
-  type: vless
-  uuid: ee82f319-ab92-425d-8e04-28a29f33f670
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 04
   server: 193.233.253.180
   port: 8444
   udp: true
@@ -49,50 +18,30 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: GunService
-- name: 🇷🇺 俄罗斯 (Russia) 05
-  server: 193.160.140.159
+- name: 🇷🇺 俄罗斯 (Russia) 02
+  server: pol.qikbro.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 9f3d0b52-9b0f-4af7-ac42-d3ca2fd2a685
+  tls: true
+  servername: pol.qikbro.com
+  skip-cert-verify: false
+  network: grpc
+  grpc-opts:
+    grpc-service-name: assets
+- name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 185.147.27.183
   port: 8443
   udp: true
   type: vless
-  uuid: d4353076-3ec7-47dc-88b0-f21eb59fbfb8
+  uuid: 379998c5-2a71-4202-9c74-522e0c3c5404
   flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
+  servername: ekb.eg
+  skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: 193.160.141.138
-  port: 8443
-  udp: true
-  type: vless
-  uuid: b4a1200a-9765-4649-94f2-c26e0a37dffb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: 193.160.140.168
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 5ce803ae-a81c-4276-b1f8-ee3b845c5c4b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-  servername: apple.com
-  client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
-- name: 🇷🇺 俄罗斯 (Russia) 09
+- name: 🇷🇺 俄罗斯 (Russia) 04
   server: 201.24.121.243
   port: 443
   udp: true
@@ -105,6 +54,44 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: vlgrpc
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 194.87.143.165
+  port: 8443
+  udp: true
+  type: vless
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  tls: true
+  servername: wsru1.wba-pn.ru
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 130.49.189.158
+  port: 43558
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: cZGr8nLHdf+FE5ZAw0Y/Rzsml4AyikGL481Pg7eBpsI=
+- name: 🇷🇺 俄罗斯 (Russia) 07
+  server: srv-17e124.21freedom.net
+  port: 11592
+  udp: true
+  type: hysteria2
+  password: 41edb44c8e
+  sni: srv-17e124.21freedom.net
+  skip-cert-verify: true
+- name: 🇷🇺 俄罗斯 (Russia) 08
+  server: 185.147.27.164
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3a90bf69-1ffe-4ebb-b9a7-ad9ba8e9f66f
+  flow: xtls-rprx-vision
+  tls: true
+  servername: user-6a8d949a.noooo.win
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,7 +105,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -132,6 +118,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 06
   - 🇷🇺 俄罗斯 (Russia) 07
   - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
 rules:
 - MATCH,PROXIES

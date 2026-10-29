@@ -5,13 +5,13 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 01",
-      "server": "172.67.166.188",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
+      "server": "5.253.29.253",
       "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "uuid": "76ef5ab3-7075-4e23-b445-f3b1bd05d431",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
+        "server_name": "indi.qikbro.com",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -19,31 +19,29 @@
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/vlessws",
-        "headers": {
-          "Host": "vpn.cintaku.qzz.io"
-        }
+        "type": "grpc",
+        "service_name": "assets"
       }
     },
     {
       "type": "vless",
-      "tag": "🇨🇳 CN 02",
-      "server": "vpn.cintaku.qzz.io",
-      "server_port": 443,
-      "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 02",
+      "server": "5.253.30.99",
+      "server_port": 40443,
+      "uuid": "511c1563-2cb6-4064-abc6-a59ee49818a8",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
+        "server_name": "deepl.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cwmcqsfS7klQlkcoUNuATEk0NiPY-NnRb9z8rCJDQw0",
+          "short_id": "88b6"
         }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vlessws"
       }
     },
     {
@@ -51,16 +49,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇳 CN 01",
-        "🇨🇳 CN 02"
+        "🇨🇾 塞浦路斯 (Cyprus) 01",
+        "🇨🇾 塞浦路斯 (Cyprus) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇳 CN 01",
-        "🇨🇳 CN 02"
+        "🇨🇾 塞浦路斯 (Cyprus) 01",
+        "🇨🇾 塞浦路斯 (Cyprus) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
