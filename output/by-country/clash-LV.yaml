@@ -5,32 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01
-  server: 138.124.180.137
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
-    short-id: 33acba1b
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02
-  server: 45.43.79.92
-  port: 443
-  udp: true
-  type: vless
-  uuid: 042b12d8-bac4-4b3a-b661-79e333f08e4e
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
-    short-id: af4ca5d16438c938
-  servername: vikt659.isgood.host
-  client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 03
   server: 195.123.213.28
   port: 443
   udp: true
@@ -43,6 +17,45 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 02
+  server: 138.124.180.137
+  port: 443
+  udp: true
+  type: vless
+  uuid: 5234b2b7-5e07-422c-8159-d62a676c00c6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GBdkyDLfr0LIZo_94Xv8ycAKOmkjArYzwJAEMhuXX2c
+    short-id: 33acba1b
+  servername: www.apple.com
+  client-fingerprint: firefox
+- name: 🇱🇻 拉脱维亚 (Latvia) 03
+  server: 31.58.171.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4d259556-57f7-4e5a-9a4a-48868787fb38
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo
+    short-id: f77f3068
+  servername: dl.google.com
+  client-fingerprint: chrome
+- name: 🇱🇻 拉脱维亚 (Latvia) 04
+  server: 45.43.79.92
+  port: 443
+  udp: true
+  type: vless
+  uuid: 042b12d8-bac4-4b3a-b661-79e333f08e4e
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM
+    short-id: af4ca5d16438c938
+  servername: vikt659.isgood.host
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +64,7 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01
   - 🇱🇻 拉脱维亚 (Latvia) 02
   - 🇱🇻 拉脱维亚 (Latvia) 03
+  - 🇱🇻 拉脱维亚 (Latvia) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +73,6 @@ proxy-groups:
   - 🇱🇻 拉脱维亚 (Latvia) 01
   - 🇱🇻 拉脱维亚 (Latvia) 02
   - 🇱🇻 拉脱维亚 (Latvia) 03
+  - 🇱🇻 拉脱维亚 (Latvia) 04
 rules:
 - MATCH,PROXIES
