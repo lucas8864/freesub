@@ -20,39 +20,13 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "65.109.211.81",
-      "server_port": 465,
-      "uuid": "09f30c46-3964-41ce-882a-72aee83ddd42",
-      "tls": {
-        "enabled": true,
-        "server_name": "hw6.divarkhaghazi.com.",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "hw6.divarkhaghazi.com."
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "65.109.210.221",
+      "server": "hw3.divarkhaghazi.com",
       "server_port": 465,
       "uuid": "924e20da-fcad-4e7e-8113-c62d27a0d01e",
       "tls": {
         "enabled": true,
         "server_name": "hw3.divarkhaghazi.com.",
-        "insecure": false,
+        "insecure": true,
         "alpn": [
           "http/1.1"
         ],
@@ -71,13 +45,23 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "mail.loyalsmile.net",
-      "server_port": 8080,
-      "uuid": "66315d7f-ebf4-43f6-a475-c578c382409f",
-      "transport": {
-        "type": "ws",
-        "path": "/wp-content3"
+      "tag": "🇫🇮 芬兰 (Finland) 03",
+      "server": "6.bmi.ir.asopardaz.ir",
+      "server_port": 8443,
+      "uuid": "2da85937-93d9-4509-8491-63b1921cf447",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "timeline.www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs",
+          "short_id": "e915"
+        }
       }
     },
     {
@@ -87,8 +71,7 @@
         "auto",
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 03"
       ]
     },
     {
@@ -97,8 +80,7 @@
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
-        "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

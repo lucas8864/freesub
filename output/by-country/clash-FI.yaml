@@ -16,44 +16,33 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 65.109.211.81
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com.
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 65.109.210.221
+  server: hw3.divarkhaghazi.com
   port: 465
   udp: true
   type: vless
   uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
   tls: true
   servername: hw3.divarkhaghazi.com.
-  skip-cert-verify: false
+  skip-cert-verify: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
     headers:
       Host: hw3.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: mail.loyalsmile.net
-  port: 8080
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 6.bmi.ir.asopardaz.ir
+  port: 8443
   udp: true
   type: vless
-  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
-  network: ws
-  ws-opts:
-    path: /wp-content3
+  uuid: 2da85937-93d9-4509-8491-63b1921cf447
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
+    short-id: e915
+  servername: timeline.www.cloudflare.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -62,7 +51,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
-  - 🇫🇮 芬兰 (Finland) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,6 +59,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
-  - 🇫🇮 芬兰 (Finland) 04
 rules:
 - MATCH,PROXIES

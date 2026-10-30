@@ -6,27 +6,6 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 01",
-      "server": "195.123.213.28",
-      "server_port": 443,
-      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.cloudflare.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
-          "short_id": "5c256336e3b673fa"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇱🇻 拉脱维亚 (Latvia) 02",
       "server": "138.124.180.137",
       "server_port": 443,
       "uuid": "5234b2b7-5e07-422c-8159-d62a676c00c6",
@@ -46,12 +25,55 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02",
+      "server": "45.43.79.92",
+      "server_port": 443,
+      "uuid": "042b12d8-bac4-4b3a-b661-79e333f08e4e",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "vikt659.isgood.host",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "M4Y9h339sntl5wEpiCa7f4IKhJ_8JLzPnAz2IzKlngM",
+          "short_id": "af4ca5d16438c938"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 03",
+      "server": "195.123.213.28",
+      "server_port": 443,
+      "uuid": "02fcc1a4-ee90-4970-8bbb-4ffaa8109d24",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "NMgy1XgCSXExOg6Tg8xG9lCWttMF6sjdpB41lZy6FWo",
+          "short_id": "5c256336e3b673fa"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇱🇻 拉脱维亚 (Latvia) 01",
-        "🇱🇻 拉脱维亚 (Latvia) 02"
+        "🇱🇻 拉脱维亚 (Latvia) 02",
+        "🇱🇻 拉脱维亚 (Latvia) 03"
       ]
     },
     {
@@ -59,7 +81,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇻 拉脱维亚 (Latvia) 01",
-        "🇱🇻 拉脱维亚 (Latvia) 02"
+        "🇱🇻 拉脱维亚 (Latvia) 02",
+        "🇱🇻 拉脱维亚 (Latvia) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

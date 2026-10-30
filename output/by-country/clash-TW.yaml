@@ -5,28 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01
-  server: vpn-tw-002.fastervpn.world
+  server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 103.115.109.49
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02
-  server: n04.jinggai.online
-  port: 8443
+  server: 160.187.100.109
+  port: 443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  tls: true
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 160.187.100.109
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select

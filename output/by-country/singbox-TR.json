@@ -14,12 +14,12 @@
         "server_name": "github.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
           "public_key": "FWitre1jinQR7qz5HQ0q2Q4Gg9xA9B0SyizCziN7Ch0",
-          "short_id": ""
+          "short_id": "457fab2ac885dbe0"
         }
       },
       "transport": {
@@ -28,23 +28,42 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇹🇷 土耳其 (Turkey) 02",
-      "server": "151.241.226.201",
-      "server_port": 2053,
-      "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
+      "server": "free.ertebatgoostar.ir",
+      "server_port": 443,
+      "uuid": "118b0abc-c8f6-476a-9777-bc73f6e2548b",
+      "security": "auto"
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 03",
+      "server": "tr.privatevip.ir",
+      "server_port": 448,
+      "uuid": "7c730089-1791-4828-89b2-86e7e1663063",
+      "transport": {
+        "type": "ws",
+        "path": "/"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇹🇷 土耳其 (Turkey) 04",
+      "server": "177.3.208.65",
+      "server_port": 443,
+      "uuid": "4f34bc04-479c-49ba-91a8-6bb9ed15031c",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "tgmansion.site",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "bYW_MmB_CUHrsyoCAUKviI2LZdHf63yY2yOPXbih104",
-          "short_id": "9e419c0759b54d6f"
+          "fingerprint": "firefox"
         }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vless-tr"
       }
     },
     {
@@ -53,7 +72,9 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01",
-        "🇹🇷 土耳其 (Turkey) 02"
+        "🇹🇷 土耳其 (Turkey) 02",
+        "🇹🇷 土耳其 (Turkey) 03",
+        "🇹🇷 土耳其 (Turkey) 04"
       ]
     },
     {
@@ -61,7 +82,9 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01",
-        "🇹🇷 土耳其 (Turkey) 02"
+        "🇹🇷 土耳其 (Turkey) 02",
+        "🇹🇷 土耳其 (Turkey) 03",
+        "🇹🇷 土耳其 (Turkey) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

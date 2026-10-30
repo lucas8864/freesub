@@ -5,112 +5,138 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇩🇪 德国 (Germany) 01
+  server: 104.18.35.86
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1c7f675f-5923-463f-83fb-af4c898cecea
+  tls: true
+  servername: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /eyJqdW5rIjoiZWhuWFFGNWRISXBjSmRGWSIsInByb3RvY29sIjoidmwiLCJtb2RlIjoicHJveHlpcCIsInBhbmVsSVBzIjpbXX0=
+    headers:
+      Host: 0Ee6wOQz4W8W0cDqiTgq6XZ-q0o9r6o9.merTEssWAgGEr08.WoRKErs.dEv
+- name: 🇩🇪 德国 (Germany) 02
+  server: 172.66.44.124
+  port: 8443
+  udp: true
+  type: vless
+  uuid: b2f2f9f2-1864-48ea-839b-22815faff1f1
+  tls: true
+  servername: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+  skip-cert-verify: false
+  client-fingerprint: randomized
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: stf839dvvyog9d2qa4-b8z6ahgn7b7qi.pages.dev
+- name: 🇩🇪 德国 (Germany) 03
+  server: 162.159.153.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇩🇪 德国 (Germany) 04
+  server: 162.159.152.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: f2a73750-3087-48ff-a763-1348c15dce68
+  tls: true
+  servername: rayan-007.maxima.dpdns.org
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: rayan-007.maxima.dpdns.org
+- name: 🇩🇪 德国 (Germany) 05
   server: 185.176.204.18
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇩🇪 德国 (Germany) 02
-  server: 168.222.43.53
+- name: 🇩🇪 德国 (Germany) 06
+  server: 155.117.5.208
   port: 10000
   udp: true
   type: vless
   uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
-- name: 🇩🇪 德国 (Germany) 03
+- name: 🇩🇪 德国 (Germany) 07
   server: 213.202.208.199
   port: 5000
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: Y6R9pAtvxxzmGC
-- name: 🇩🇪 德国 (Germany) 04
-  server: 193.108.119.29
-  port: 443
+- name: 🇩🇪 德国 (Germany) 08
+  server: 94.249.189.41
+  port: 43000
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 05
-  server: 146.70.20.147
-  port: 8080
+  type: vless
+  uuid: cec0cf85-cf9f-44ce-9eb0-cb1f9b8d7ba1
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: YagqjrSaICX5_qhcRvWOfM_yatBa5FtJexO9IlZeIEo
+    short-id: 093e1846
+  servername: 94.249.189.41
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 09
+  server: 185.226.172.8
+  port: 8008
   udp: true
   type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 06
-  server: 193.108.119.96
+  cipher: aes-256-gcm
+  password: XKFKl2rULjIp74
+- name: 🇩🇪 德国 (Germany) 10
+  server: 144.31.125.60
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 07
+  type: vless
+  uuid: 9015f0bc-2053-4ca1-9b9b-a018b97b32d2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SVgtyuD9khylgHuB0treGekxVSHPOS-wPZTNHUf6zj8
+    short-id: 85c86a9863
+  servername: www.intel.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 11
+  server: 94.249.195.81
+  port: 43000
+  udp: true
+  type: vless
+  uuid: 6ddd64ac-972b-4809-8399-9ada51b64837
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pR4VpawT5rTi2LKtKvRtAiaW5p1ZGRNiao6_5TAkawI
+    short-id: c6552fdd
+  servername: 94.249.195.81
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 12
   server: 169.150.210.233
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇩🇪 德国 (Germany) 08
-  server: 151.243.169.164
-  port: 12824
-  udp: true
-  type: hysteria2
-  password: d62s7ghfehm742us
-  sni: derfderf.ru
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 09
-  server: 179.254.127.159
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 23c82941-70f4-4381-90db-bd28e9a902e9
-  sni: steel7.hadsvpn.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 10
-  server: 193.108.119.78
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.iloverussia2026.com
-  skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 11
-  server: 88.99.213.222
-  port: 14444
-  udp: true
-  type: hysteria2
-  password: mhsl
-  sni: 88.99.213.222
-  skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 12
-  server: 91.107.179.0
-  port: 10105
-  udp: true
-  type: vless
-  uuid: ad3f4a0a-a89f-498e-9869-a93c8fa185b1
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PFC3JN1er1JE2vAemwRhNjewz8I4NUWP4XHf2Dza4Es
-    short-id: 12e321badd07906e
-  servername: play.google.com
-  client-fingerprint: chrome
 - name: 🇩🇪 德国 (Germany) 13
-  server: 57.129.41.216
-  port: 80
-  udp: true
-  type: vless
-  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: OV-Germany1.09vpn.com
-- name: 🇩🇪 德国 (Germany) 14
   server: edge.bookmai.com
   port: 443
   udp: true
@@ -122,30 +148,136 @@ proxies:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
   servername: mother-earth.fyi
   client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 14
+  server: 146.70.20.147
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇩🇪 德国 (Germany) 15
-  server: 87.120.126.49
+  server: 193.108.119.193
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 16
+  server: 193.108.119.96
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 17
+  server: 193.108.119.29
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: blog.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 18
+  server: 88.99.213.222
+  port: 14444
+  udp: true
+  type: hysteria2
+  password: mhsl
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 19
+  server: ov-germany1.09vpn.com
+  port: 80
+  udp: true
+  type: vless
+  uuid: 7d74eae4-8a06-4306-a923-ad686f30bf26
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇩🇪 德国 (Germany) 20
+  server: 82.118.19.153
   port: 443
   udp: true
   type: vless
-  uuid: 76ef5ab3-7075-4e23-b445-f3b1bd05d431
+  uuid: adcaa148-7c66-4282-a81a-99ec8afa029d
   flow: xtls-rprx-vision
   tls: true
-  servername: gers.connect-qik.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇩🇪 德国 (Germany) 16
-  server: 91.107.247.173
-  port: 2083
+  reality-opts:
+    public-key: Tiuy8om5Lk0pWL95-8LaFFTwH0vbURVMoOkaW9xGaiE
+    short-id: 670ed9f350bd8ee0
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 21
+  server: 5.45.100.100
+  port: 51511
+  udp: true
+  type: hysteria2
+  password: miaoge110
+  sni: 5.45.100.100
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 22
+  server: 9.247.23.209
+  port: 443
   udp: true
   type: vless
-  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
   tls: true
-  servername: sino.bestsellers1.site
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 23
+  server: 179.254.127.159
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 23c82941-70f4-4381-90db-bd28e9a902e9
+  sni: steel7.hadsvpn.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 24
+  server: 201.58.183.42
+  port: 443
+  udp: true
+  type: vless
+  uuid: 50a87e21-f0e2-4b53-a787-91adfe748f63
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: y0wgEdmPNIKlAMJHeC0teOW_fBnX8tmRE8n1CwOZSwU
+  servername: 13oktober.live
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 25
+  server: 193.108.119.78
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.iloverussia2026.com
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 26
+  server: 163.245.42.157
+  port: 443
+  udp: true
+  type: vless
+  uuid: b9bfa54d-bc44-4592-a6d6-89a9665d286f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: mother-earth.fyi
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 27
+  server: 3.69.232.199
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-de-002.fastervpn.world
   skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
-- name: 🇩🇪 德国 (Germany) 17
+- name: 🇩🇪 德国 (Germany) 28
   server: 91.107.180.176
   port: 465
   udp: true
@@ -160,86 +292,105 @@ proxies:
     path: /
     headers:
       Host: hw7.divarkhaghazi.com.
-- name: 🇩🇪 德国 (Germany) 18
-  server: 148.253.210.191
+- name: 🇩🇪 德国 (Germany) 29
+  server: 91.107.247.173
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
+  tls: true
+  servername: sino.bestsellers1.site
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 30
+  server: 45.32.157.84
+  port: 443
+  udp: true
+  type: trojan
+  password: Tg3RnK7Xp8B1
+  sni: ash.d50f6225-23b4-3a7b-9f15-a0fb2fc16803.kailib.com
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 31
+  server: octpus1.gsmonline.ir
+  port: 8080
+  udp: true
+  type: vmess
+  uuid: ea183122-9b4a-4dc3-afe2-adb114e2019d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: snapp.ir
+- name: 🇩🇪 德国 (Germany) 32
+  server: derfderf.ru
+  port: 12824
+  udp: true
+  type: hysteria2
+  password: d62s7ghfehm742us
+  sni: derfderf.ru
+  skip-cert-verify: false
+- name: 🇩🇪 德国 (Germany) 33
+  server: 91.107.188.129
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 36592d47-b9f5-4e8f-949e-45ac05472aab
+  tls: true
+  servername: site.check-looks.space
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇩🇪 德国 (Germany) 34
+  server: 148-253-210-191.sslip.io
   port: 443
   udp: true
   type: vless
   uuid: 53f03acd-fec1-6685-fc8f-03baf9550cb8
   tls: true
   servername: 148-253-210-191.sslip.io
-  skip-cert-verify: false
+  skip-cert-verify: true
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /test-ws
-    headers:
-      Host: 148-253-210-191.sslip.io
-- name: 🇩🇪 德国 (Germany) 19
-  server: 191.217.217.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 846cedee-2a52-0002-a0b9-11850ead6a8b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: q3UXFUE5yYxNE4ugLUnYdpc9WRtR-sjsDTrKsiqzDHE
-  servername: nl-central.v8x2b.lol
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 20
-  server: 57.129.113.16
-  port: 8388
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: NcAXc0UZI6yQJE1p8QmOv8
-- name: 🇩🇪 德国 (Germany) 21
-  server: 185.226.172.8
-  port: 8008
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: XKFKl2rULjIp74
-- name: 🇩🇪 德国 (Germany) 22
-  server: gernode.barnikle1.me
-  port: 1412
-  udp: true
-  type: vless
-  uuid: 94c5a8a7-4296-400d-b413-639157be5224
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
-    short-id: 4ea6a183
-  servername: www.dhl.de
-  client-fingerprint: chrome
-- name: 🇩🇪 德国 (Germany) 23
-  server: 18.193.79.104
+- name: 🇩🇪 德国 (Germany) 35
+  server: 3.64.194.247
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 18.193.79.104
+  sni: 127.0.0.1
   skip-cert-verify: true
-- name: 🇩🇪 德国 (Germany) 24
-  server: mail.loyalsmile.net
-  port: 2095
-  udp: true
-  type: vless
-  uuid: 66315d7f-ebf4-43f6-a475-c578c382409f
-  network: ws
-  ws-opts:
-    path: /wp-content
-- name: 🇩🇪 德国 (Germany) 25
-  server: 193.108.119.193
+- name: 🇩🇪 德国 (Germany) 36
+  server: vpn-de-002.fastervpn.world
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.iloverussia2026.com
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 127.0.0.1
+  skip-cert-verify: true
+- name: 🇩🇪 德国 (Germany) 37
+  server: www.gptcloudai.com
+  port: 443
+  udp: true
+  type: vmess
+  uuid: e70a5b70-f63c-4450-af8b-94990cdf80c0
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: www.gptcloudai.com
   skip-cert-verify: false
-- name: 🇩🇪 德国 (Germany) 26
+  network: ws
+  ws-opts:
+    path: /truth
+    headers:
+      Host: www.gptcloudai.com
+- name: 🇩🇪 德国 (Germany) 38
   server: 82.39.171.12
   port: 443
   udp: true
@@ -251,6 +402,32 @@ proxies:
     public-key: e2RLf57Li_-MDZGE9ss1BWPgP54mqRb5PfXhW2jcVVg
     short-id: c39cc7310a
   servername: yahoo.com
+  client-fingerprint: chrome
+- name: 🇩🇪 德国 (Germany) 39
+  server: 167.233.147.148
+  port: 443
+  udp: true
+  type: vless
+  uuid: 47e7e14d-2519-4146-aa2f-6eaa52c0a908
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 0E-OTXVHsukKvwgwynrI49nTaT5m6rxdaFPg4D_UszI
+    short-id: 9cc0
+  servername: dynu.com
+  client-fingerprint: firefox
+- name: 🇩🇪 德国 (Germany) 40
+  server: gernode.barnikle1.me
+  port: 1412
+  udp: true
+  type: vless
+  uuid: 94c5a8a7-4296-400d-b413-639157be5224
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: bNpg56GtTArrVyrnonNlMA-3JyYIAFATdgsH_wn0gmc
+    short-id: 4ea6a183
+  servername: www.dhl.de
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
@@ -283,6 +460,20 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 24
   - 🇩🇪 德国 (Germany) 25
   - 🇩🇪 德国 (Germany) 26
+  - 🇩🇪 德国 (Germany) 27
+  - 🇩🇪 德国 (Germany) 28
+  - 🇩🇪 德国 (Germany) 29
+  - 🇩🇪 德国 (Germany) 30
+  - 🇩🇪 德国 (Germany) 31
+  - 🇩🇪 德国 (Germany) 32
+  - 🇩🇪 德国 (Germany) 33
+  - 🇩🇪 德国 (Germany) 34
+  - 🇩🇪 德国 (Germany) 35
+  - 🇩🇪 德国 (Germany) 36
+  - 🇩🇪 德国 (Germany) 37
+  - 🇩🇪 德国 (Germany) 38
+  - 🇩🇪 德国 (Germany) 39
+  - 🇩🇪 德国 (Germany) 40
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -314,5 +505,19 @@ proxy-groups:
   - 🇩🇪 德国 (Germany) 24
   - 🇩🇪 德国 (Germany) 25
   - 🇩🇪 德国 (Germany) 26
+  - 🇩🇪 德国 (Germany) 27
+  - 🇩🇪 德国 (Germany) 28
+  - 🇩🇪 德国 (Germany) 29
+  - 🇩🇪 德国 (Germany) 30
+  - 🇩🇪 德国 (Germany) 31
+  - 🇩🇪 德国 (Germany) 32
+  - 🇩🇪 德国 (Germany) 33
+  - 🇩🇪 德国 (Germany) 34
+  - 🇩🇪 德国 (Germany) 35
+  - 🇩🇪 德国 (Germany) 36
+  - 🇩🇪 德国 (Germany) 37
+  - 🇩🇪 德国 (Germany) 38
+  - 🇩🇪 德国 (Germany) 39
+  - 🇩🇪 德国 (Germany) 40
 rules:
 - MATCH,PROXIES
