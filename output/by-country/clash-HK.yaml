@@ -5,14 +5,70 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: 31.57.248.176
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 8.218.195.61
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: EX1oGt73NzPQKAc2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.89
+  sni: https%3a%2f%2ft.me%2fclashv8%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 47.243.194.125
+  port: 443
+  udp: true
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: NYcQg19zkwaCPM1B.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: 165.154.63.139
   port: 443
   udp: true
@@ -25,32 +81,48 @@ proxies:
     short-id: ca4aedd4
   servername: www.amazon.com
   client-fingerprint: random
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 202.146.222.29
+- name: 🇭🇰 中国香港 (Hong Kong) 08
+  server: i2psm3knof5qjjix.v.3dns.vip
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 202.146.222.174
+  type: vmess
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 09
+  server: euu1yalfmcqvljex.v.3dns.vip
   port: 443
   udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.174
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: 195.58.144.56
-  port: 11907
+  type: vmess
+  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: euu1yalfmcqvljex.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: euu1yalfmcqvljex.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 10
+  server: 152.175.6.229
+  port: 31884
   udp: true
   type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   tls: true
-  servername: 195.58.144.56
+  servername: hk010.zestapp778.com
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -61,6 +133,11 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
+  - 🇭🇰 中国香港 (Hong Kong) 06
+  - 🇭🇰 中国香港 (Hong Kong) 07
+  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 09
+  - 🇭🇰 中国香港 (Hong Kong) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -71,5 +148,10 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
+  - 🇭🇰 中国香港 (Hong Kong) 06
+  - 🇭🇰 中国香港 (Hong Kong) 07
+  - 🇭🇰 中国香港 (Hong Kong) 08
+  - 🇭🇰 中国香港 (Hong Kong) 09
+  - 🇭🇰 中国香港 (Hong Kong) 10
 rules:
 - MATCH,PROXIES

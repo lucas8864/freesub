@@ -4,38 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01",
-      "server": "130.49.161.70",
-      "server_port": 443,
-      "password": "p7Q76LzlnS4hIzr1W3staBOnUe_WwSkR",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2.aspidnet.xyz",
-        "insecure": false
-      },
-      "obfs": {
-        "type": "salamander",
-        "password": "rG07s3COMIEvdnQipRyWzx_H_2xygNC3"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
-      "server": "84.235.244.108",
-      "server_port": 22573,
-      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "uae.unixzone.us"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 03",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
@@ -49,32 +19,14 @@
     },
     {
       "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 04",
-      "server": "app-mi-26.spbstudentlife.com",
-      "server_port": 443,
-      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "assets-mi-26.spbstudentlife.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "randomized"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc",
-          "short_id": "a7856800c2deb7b2"
-        }
+      "tag": "🇦🇪 阿联酋 (UAE) 02",
+      "server": "uae.unixzone.us",
+      "server_port": 22573,
+      "uuid": "39947382-3212-41c9-bc3a-589574ac8b23",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇦🇪 阿联酋 (UAE) 05",
-      "server": "178.253.16.185",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "x2A6AsyZ-rAllz0wbKHzWA"
     },
     {
       "type": "selector",
@@ -82,10 +34,7 @@
       "outbounds": [
         "auto",
         "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02",
-        "🇦🇪 阿联酋 (UAE) 03",
-        "🇦🇪 阿联酋 (UAE) 04",
-        "🇦🇪 阿联酋 (UAE) 05"
+        "🇦🇪 阿联酋 (UAE) 02"
       ]
     },
     {
@@ -93,10 +42,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇪 阿联酋 (UAE) 01",
-        "🇦🇪 阿联酋 (UAE) 02",
-        "🇦🇪 阿联酋 (UAE) 03",
-        "🇦🇪 阿联酋 (UAE) 04",
-        "🇦🇪 阿联酋 (UAE) 05"
+        "🇦🇪 阿联酋 (UAE) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
