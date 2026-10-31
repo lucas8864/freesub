@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: 202.146.222.89
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02
   server: 165.154.63.139
@@ -24,14 +24,14 @@ proxies:
     public-key: AE81BrwMc8-kwGEIA1LhzaL03er0Qwt2V-fFy76F5jQ
     short-id: ca4aedd4
   servername: www.amazon.com
-  client-fingerprint: chrome
+  client-fingerprint: random
 - name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2ð\x9f\x87¨ð\x9f\x87³
+  sni: https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 202.146.222.174
@@ -39,7 +39,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/wangcai2🇨🇳
+  sni: 202.146.222.174
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 195.58.144.56
@@ -51,38 +51,6 @@ proxies:
   servername: 195.58.144.56
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 47.243.194.125
-  port: 443
-  udp: true
-  type: vmess
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: nycqg19zkwacpm1b.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: euu1yalfmcqvljex.v.3dns.vip
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: euu1yalfmcqvljex.v.3dns.vip
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /ws-vmess
-    headers:
-      Host: euu1yalfmcqvljex.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -93,8 +61,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
-  - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -105,7 +71,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 03
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
-  - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
 rules:
 - MATCH,PROXIES

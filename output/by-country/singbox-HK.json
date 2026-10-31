@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "vk.com",
+        "server_name": "202.146.222.89",
         "insecure": true
       }
     },
@@ -27,7 +27,7 @@
         "server_name": "www.amazon.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         },
         "reality": {
           "enabled": true,
@@ -44,7 +44,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2ð\\x9f\\x87¨ð\\x9f\\x87³",
+        "server_name": "https3a2f2ft.me2fwangcai2efa3bfc3bcc3a1",
         "insecure": true
       }
     },
@@ -56,7 +56,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2🇨🇳",
+        "server_name": "202.146.222.174",
         "insecure": true
       }
     },
@@ -81,46 +81,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 06",
-      "server": "47.243.194.125",
-      "server_port": 443,
-      "uuid": "f23bb427-c1f9-4373-876c-2f43e9f790f3",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "nycqg19zkwacpm1b.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "nycqg19zkwacpm1b.v.3dns.vip"
-        }
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 07",
-      "server": "euu1yalfmcqvljex.v.3dns.vip",
-      "server_port": 443,
-      "uuid": "d237ab38-1974-4b36-94a3-0665ce8587b9",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "euu1yalfmcqvljex.v.3dns.vip",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws-vmess",
-        "headers": {
-          "Host": "euu1yalfmcqvljex.v.3dns.vip"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -129,9 +89,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02",
         "🇭🇰 中国香港 (Hong Kong) 03",
         "🇭🇰 中国香港 (Hong Kong) 04",
-        "🇭🇰 中国香港 (Hong Kong) 05",
-        "🇭🇰 中国香港 (Hong Kong) 06",
-        "🇭🇰 中国香港 (Hong Kong) 07"
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ]
     },
     {
@@ -142,9 +100,7 @@
         "🇭🇰 中国香港 (Hong Kong) 02",
         "🇭🇰 中国香港 (Hong Kong) 03",
         "🇭🇰 中国香港 (Hong Kong) 04",
-        "🇭🇰 中国香港 (Hong Kong) 05",
-        "🇭🇰 中国香港 (Hong Kong) 06",
-        "🇭🇰 中国香港 (Hong Kong) 07"
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

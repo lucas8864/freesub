@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🇧🇷 巴西 (Brazil) 01",
-      "server": "216.238.104.154",
+      "type": "shadowsocks",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 01",
+      "server": "45.207.207.25",
       "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
-        "insecure": false
-      }
+      "method": "aes-256-gcm",
+      "password": "gj1+XKulKV0nmw6IThckOkkJh5DSM7+C"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇸🇨 塞舌尔 (Seychelles) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇷 巴西 (Brazil) 01"
+        "🇸🇨 塞舌尔 (Seychelles) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

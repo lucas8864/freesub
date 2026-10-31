@@ -6,17 +6,13 @@
     {
       "type": "vless",
       "tag": "🇨🇳 CN 01",
-      "server": "vpn.cintaku.qzz.io",
+      "server": "8.35.211.242",
       "server_port": 443,
       "uuid": "fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349",
       "tls": {
         "enabled": true,
         "server_name": "vpn.cintaku.qzz.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
