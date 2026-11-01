@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 摩尔多瓦 (Moldova) 01
-  server: 5.252.179.15
+- name: 🇺🇦 乌克兰 (Ukraine) 01
+  server: staging.lastilhame.monster
   port: 443
   udp: true
   type: vless
-  uuid: 0ab273e4-cea6-41d0-bbab-41071d2fc455
+  uuid: aded66f1-de12-4c3c-af9e-a21d6e7d9c96
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: XQB2zIgrhD8AtxgYFM8UiiWYt1sLVBLhMg1M4-sGMAY
-    short-id: 296f27de82dad7ff
-  servername: www.bing.com
+    public-key: FjcEZNQ8t5E4R04_11T6ghsOutdqwKKrelkuadakoQg
+    short-id: 2a80364e93d9
+  servername: www.foxsports.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 摩尔多瓦 (Moldova) 01
+  - 🇺🇦 乌克兰 (Ukraine) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 摩尔多瓦 (Moldova) 01
+  - 🇺🇦 乌克兰 (Ukraine) 01
 rules:
 - MATCH,PROXIES

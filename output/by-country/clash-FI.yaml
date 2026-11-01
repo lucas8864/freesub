@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 65.109.211.81
-  port: 465
-  udp: true
-  type: vless
-  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
-  tls: true
-  servername: hw6.divarkhaghazi.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: hw6.divarkhaghazi.com.
-- name: 🇫🇮 芬兰 (Finland) 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -30,8 +15,8 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 65.109.210.221
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: hw3.divarkhaghazi.com.
   port: 465
   udp: true
   type: vless
@@ -43,8 +28,19 @@ proxies:
   network: ws
   ws-opts:
     path: /
-    headers:
-      Host: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: fin2.vpngold.ru
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
+    short-id: 385cb18df0892069
+  servername: fin2.vpngold.ru
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
