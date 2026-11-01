@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
+  server: 95.216.27.15
+  port: 2053
+  udp: true
+  type: vless
+  uuid: b79d736d-0f10-4169-b626-362059d18204
+  tls: true
+  reality-opts:
+    public-key: aiHdxKOzcFZDILKj3MIPrMsyT0XxMy_O6xoxnz6MIWs
+    short-id: 10351b07c712d2a2
+  servername: www.cloudflare.com
+  client-fingerprint: ''
+- name: 🇫🇮 芬兰 (Finland) 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,32 +27,21 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02
-  server: hw3.divarkhaghazi.com.
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 65.109.211.81
   port: 465
   udp: true
   type: vless
-  uuid: 924e20da-fcad-4e7e-8113-c62d27a0d01e
+  uuid: 09f30c46-3964-41ce-882a-72aee83ddd42
   tls: true
-  servername: hw3.divarkhaghazi.com.
+  servername: hw6.divarkhaghazi.com.
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: fin2.vpngold.ru
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a52fd54b-ba4d-4d11-8e00-301e2646cd66
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 1H1DiBCBB7fpALV71pH1q66ePybBFlVOcxftdlQimQ8
-    short-id: 385cb18df0892069
-  servername: fin2.vpngold.ru
-  client-fingerprint: firefox
+    headers:
+      Host: hw6.divarkhaghazi.com.
 proxy-groups:
 - name: PROXIES
   type: select

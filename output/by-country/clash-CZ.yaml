@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇿 捷克 (Czech) 01
-  server: 212.102.38.25
+  server: server.slavkiti.monster
   port: 443
   udp: true
   type: vless
-  uuid: b34a52cb-cd52-49a8-9362-b8e97c151d49
+  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 23cb4W9THzBKsrECsLh-A_FcKZfkAtUONoDze8-GnQE
-    short-id: e90360ec7cc61b20
-  servername: udemy.com
-  client-fingerprint: ''
+    public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
+    short-id: bbcab8fa80a3
+  servername: www.microsoft.com
+  client-fingerprint: chrome
 - name: 🇨🇿 捷克 (Czech) 02
   server: cz-prg.dontblockmepls.com
   port: 2063

@@ -6,35 +6,33 @@
     {
       "type": "vless",
       "tag": "🇦🇪 阿联酋 (UAE) 01",
-      "server": "37.120.222.70",
-      "server_port": 8082,
-      "uuid": "59c3c1c7-62d0-4707-9d67-5ff9c008591c",
-      "tls": {
-        "enabled": true,
-        "server_name": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇦🇪 阿联酋 (UAE) 02",
       "server": "95.174.68.188",
       "server_port": 14430,
       "uuid": "965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0",
       "transport": {
         "type": "ws",
         "path": "/vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇦🇪 阿联酋 (UAE) 02",
+      "server": "app-mi-26.spbstudentlife.com",
+      "server_port": 443,
+      "uuid": "07680ffb-0666-4836-b6ad-ec0de62bc38f",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "assets-mi-26.spbstudentlife.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc",
+          "short_id": "a7856800c2deb7b2"
+        }
       }
     },
     {

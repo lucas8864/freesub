@@ -5,21 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
-  server: 37.120.222.70
-  port: 8082
-  udp: true
-  type: vless
-  uuid: 59c3c1c7-62d0-4707-9d67-5ff9c008591c
-  tls: true
-  servername: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /@Marisa_kristi
-    headers:
-      Host: c6dbx99g6stb418qeo.t3jmlj0r152zji4htdkm9.workers.dev
-- name: 🇦🇪 阿联酋 (UAE) 02
   server: 95.174.68.188
   port: 14430
   udp: true
@@ -28,6 +13,19 @@ proxies:
   network: ws
   ws-opts:
     path: /vless
+- name: 🇦🇪 阿联酋 (UAE) 02
+  server: app-mi-26.spbstudentlife.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cYtAkO6yUCuRTxHvF8EH76bybk1yfS005KLls-at2yc
+    short-id: a7856800c2deb7b2
+  servername: assets-mi-26.spbstudentlife.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03
   server: 84.235.244.108
   port: 22573

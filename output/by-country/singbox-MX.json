@@ -12,17 +12,13 @@
       "tls": {
         "enabled": true,
         "server_name": "connectwithtopemployersandfindidealjobs.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇲🇽 墨西哥 (Mexico) 02",
-      "server": "mx001.zestapp778.com",
+      "server": "149.104.87.33",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
       "tls": {
@@ -32,12 +28,34 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇲🇽 墨西哥 (Mexico) 03",
+      "server": "147.78.1.253",
+      "server_port": 443,
+      "uuid": "39a390af-1f90-4c0e-89e4-4e2023732e4b",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "TefL2KtNcNLPmUY8TKlu5pA7ffipqgmbBN6gpyzyklk",
+          "short_id": ""
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇲🇽 墨西哥 (Mexico) 01",
-        "🇲🇽 墨西哥 (Mexico) 02"
+        "🇲🇽 墨西哥 (Mexico) 02",
+        "🇲🇽 墨西哥 (Mexico) 03"
       ]
     },
     {
@@ -45,7 +63,8 @@
       "tag": "auto",
       "outbounds": [
         "🇲🇽 墨西哥 (Mexico) 01",
-        "🇲🇽 墨西哥 (Mexico) 02"
+        "🇲🇽 墨西哥 (Mexico) 02",
+        "🇲🇽 墨西哥 (Mexico) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
