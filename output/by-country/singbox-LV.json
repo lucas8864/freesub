@@ -27,21 +27,21 @@
     {
       "type": "vless",
       "tag": "🇱🇻 拉脱维亚 (Latvia) 02",
-      "server": "31.58.171.53",
+      "server": "72.56.52.248",
       "server_port": 443,
-      "uuid": "4d259556-57f7-4e5a-9a4a-48868787fb38",
+      "uuid": "2614a96d-e39f-4cca-a9c7-467a178c2c0a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "dl.google.com",
+        "server_name": "lv.dexlen.cc",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "iCy_Y2B58KB39rw94EycaBO-aldt2PaMmWz62arreSo",
-          "short_id": "f77f3068"
+          "public_key": "OFmJtVi6OB9E6KIc5QV5YmoouimRFc-Se9hICjtV8hQ",
+          "short_id": ""
         }
       }
     },

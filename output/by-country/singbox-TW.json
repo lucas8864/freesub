@@ -11,7 +11,7 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "160.187.100.109",
+        "server_name": "vpn-tw-002.fastervpn.world",
         "insecure": true
       }
     },
@@ -23,37 +23,13 @@
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https%3a%2f%2ft.me%2foneclickvpnkeys",
+        "server_name": "https://t.me/oneclickvpnkeys",
         "insecure": true
       }
     },
     {
       "type": "trojan",
       "tag": "🇹🇼 中国台湾 (Taiwan) 03",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 54815,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 04",
-      "server": "ench-snet-app.w-ctrip.cn",
-      "server_port": 22003,
-      "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
-      "tls": {
-        "enabled": true,
-        "server_name": "cm.g.doubleclick.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 05",
       "server": "ench-snet-app.w-ctrip.cn",
       "server_port": 45502,
       "password": "b17e9b52db9623bd6c16eea3d7adb5b3",
@@ -64,6 +40,25 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 04",
+      "server": "n04.jinggai.online",
+      "server_port": 8443,
+      "uuid": "91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a",
+      "tls": {
+        "enabled": true,
+        "server_name": "n04.jinggai.online",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/nvl-n04-ws/e0577fe8fd7c8823",
+        "headers": {
+          "Host": "n04.jinggai.online"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -71,8 +66,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01",
         "🇹🇼 中国台湾 (Taiwan) 02",
         "🇹🇼 中国台湾 (Taiwan) 03",
-        "🇹🇼 中国台湾 (Taiwan) 04",
-        "🇹🇼 中国台湾 (Taiwan) 05"
+        "🇹🇼 中国台湾 (Taiwan) 04"
       ]
     },
     {
@@ -82,8 +76,7 @@
         "🇹🇼 中国台湾 (Taiwan) 01",
         "🇹🇼 中国台湾 (Taiwan) 02",
         "🇹🇼 中国台湾 (Taiwan) 03",
-        "🇹🇼 中国台湾 (Taiwan) 04",
-        "🇹🇼 中国台湾 (Taiwan) 05"
+        "🇹🇼 中国台湾 (Taiwan) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
