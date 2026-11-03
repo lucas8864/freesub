@@ -16,24 +16,87 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇵🇱 波兰 (Poland) 02",
-      "server": "179.198.49.218",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03",
+      "server": "new-p33.vurneq.ir",
       "server_port": 443,
-      "uuid": "7ad63b26-bf70-4872-8fab-ebaf73a1e19d",
+      "uuid": "de23f71d-a638-43d5-b0f7-d9f616077c9a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "assets-44.topp-con.xyz",
+        "server_name": "delivery.mp.microsoft.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "edge"
         },
         "reality": {
           "enabled": true,
-          "public_key": "9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo",
-          "short_id": "75fe71d16ccae610"
+          "public_key": "XzPy2vjzBXPB5eC1cHEn37MRCCq47zYE-apfA1XUbhY",
+          "short_id": "51852ca8c115946e"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04",
+      "server": "84.23.52.120",
+      "server_port": 28448,
+      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.sparxiecn.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lovelive"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 05",
+      "server": "84.23.52.120",
+      "server_port": 28447,
+      "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl.sparxiecn.com",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/lovelive"
       }
     },
     {
@@ -42,7 +105,10 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01",
-        "🇵🇱 波兰 (Poland) 02"
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03",
+        "🇵🇱 波兰 (Poland) 04",
+        "🇵🇱 波兰 (Poland) 05"
       ]
     },
     {
@@ -50,7 +116,10 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01",
-        "🇵🇱 波兰 (Poland) 02"
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03",
+        "🇵🇱 波兰 (Poland) 04",
+        "🇵🇱 波兰 (Poland) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

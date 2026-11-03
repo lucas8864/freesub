@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "56481.df6h451rh.xin",
-      "server_port": 443,
-      "password": "0324fbc29561",
-      "tls": {
-        "enabled": true,
-        "server_name": "images.ctfassets.net",
-        "insecure": true
-      }
+      "type": "shadowsocks",
+      "tag": "🇨🇴 哥伦比亚 (Colombia) 01",
+      "server": "149.104.107.41",
+      "server_port": 8090,
+      "method": "aes-256-gcm",
+      "password": "PCnnH6SQSnfoS27"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇨🇴 哥伦比亚 (Colombia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇨🇴 哥伦比亚 (Colombia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

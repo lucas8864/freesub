@@ -13,18 +13,57 @@ proxies:
   sni: browseexecutivejobopeningsandenhanceleadershipcareer.com
   skip-cert-verify: false
 - name: 🇵🇱 波兰 (Poland) 02
-  server: 179.198.49.218
+  server: 54.37.131.126
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+- name: 🇵🇱 波兰 (Poland) 03
+  server: new-p33.vurneq.ir
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: de23f71d-a638-43d5-b0f7-d9f616077c9a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: 9CKMhiYPXEIfQh_XFbbN1GoBxeLxJkaar2wg9FZKfBo
-    short-id: 75fe71d16ccae610
-  servername: assets-44.topp-con.xyz
-  client-fingerprint: chrome
+    public-key: XzPy2vjzBXPB5eC1cHEn37MRCCq47zYE-apfA1XUbhY
+    short-id: 51852ca8c115946e
+  servername: delivery.mp.microsoft.com
+  client-fingerprint: edge
+- name: 🇵🇱 波兰 (Poland) 04
+  server: 84.23.52.120
+  port: 28448
+  udp: true
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /lovelive
+- name: 🇵🇱 波兰 (Poland) 05
+  server: 84.23.52.120
+  port: 28447
+  udp: true
+  type: vless
+  uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
+  tls: true
+  servername: pl.sparxiecn.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /lovelive
 proxy-groups:
 - name: PROXIES
   type: select
@@ -32,6 +71,9 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01
   - 🇵🇱 波兰 (Poland) 02
+  - 🇵🇱 波兰 (Poland) 03
+  - 🇵🇱 波兰 (Poland) 04
+  - 🇵🇱 波兰 (Poland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -39,5 +81,8 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01
   - 🇵🇱 波兰 (Poland) 02
+  - 🇵🇱 波兰 (Poland) 03
+  - 🇵🇱 波兰 (Poland) 04
+  - 🇵🇱 波兰 (Poland) 05
 rules:
 - MATCH,PROXIES
