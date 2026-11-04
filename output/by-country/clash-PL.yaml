@@ -26,41 +26,28 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
 - name: 🇵🇱 波兰 (Poland) 03
-  server: new-p33.vurneq.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: de23f71d-a638-43d5-b0f7-d9f616077c9a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XzPy2vjzBXPB5eC1cHEn37MRCCq47zYE-apfA1XUbhY
-    short-id: 51852ca8c115946e
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: edge
-- name: 🇵🇱 波兰 (Poland) 04
   server: 84.23.52.120
-  port: 28448
+  port: 28450
   udp: true
   type: vless
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   tls: true
   servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /lovelive
-- name: 🇵🇱 波兰 (Poland) 05
+- name: 🇵🇱 波兰 (Poland) 04
   server: 84.23.52.120
-  port: 28447
+  port: 28449
   udp: true
   type: vless
   uuid: 4d8132cb-f4e3-428c-91ff-2b4f7a868551
   tls: true
   servername: pl.sparxiecn.com
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  skip-cert-verify: true
+  client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /lovelive
@@ -73,7 +60,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
-  - 🇵🇱 波兰 (Poland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -83,6 +69,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
-  - 🇵🇱 波兰 (Poland) 05
 rules:
 - MATCH,PROXIES

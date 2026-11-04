@@ -9,12 +9,12 @@ proxies:
   port: 443
   udp: true
   type: vless
-  uuid: ff40696b-06d6-443b-9481-8d01eddd13e1
+  uuid: fad0b9a6-187d-4fcc-96fc-498bc5b3135a
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: d659da01fb94
+    short-id: 8325360e8bd2
   servername: www.foxsports.com
   client-fingerprint: firefox
 - name: 🇨🇿 捷克 (Czech) 02
@@ -22,13 +22,13 @@ proxies:
   port: 443
   udp: true
   type: vless
-  uuid: 4d017db2-7655-4276-9557-e2ec25b04ee7
+  uuid: b60cab55-e7a1-413d-a297-ddd7bad3fb62
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
     public-key: J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk
-    short-id: ee1716767f9b
-  servername: www.tradingview.com
+    short-id: bbcab8fa80a3
+  servername: www.microsoft.com
   client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES

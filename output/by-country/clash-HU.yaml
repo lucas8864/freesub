@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇳 CN 01
-  server: 104.21.91.49
-  port: 443
+- name: 🇭🇺 匈牙利 (Hungary) 01
+  server: 172.67.131.125
+  port: 2083
   udp: true
   type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
+  uuid: f418674e-f518-4318-8ff9-e10000000046
   tls: true
-  servername: vpn.cintaku.qzz.io
+  servername: smart-edge-424.arti98399-1905.workers.dev
   skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /sync
     headers:
-      Host: vpn.cintaku.qzz.io
+      Host: smart-edge-424.arti98399-1905.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇳 CN 01
+  - 🇭🇺 匈牙利 (Hungary) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇳 CN 01
+  - 🇭🇺 匈牙利 (Hungary) 01
 rules:
 - MATCH,PROXIES
