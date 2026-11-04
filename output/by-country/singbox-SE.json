@@ -16,18 +16,12 @@
       }
     },
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "5.178.109.174",
-      "server_port": 14430,
-      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
-      "transport": {
-        "type": "ws",
-        "path": "/vless",
-        "headers": {
-          "Host": "5.178.109.174"
-        }
-      }
+      "server": "13.60.203.88",
+      "server_port": 11640,
+      "method": "chacha20-ietf-poly1305",
+      "password": "TfOlNVXwjXLEncsLTh4ucO"
     },
     {
       "type": "selector",

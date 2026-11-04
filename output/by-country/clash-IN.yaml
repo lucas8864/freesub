@@ -5,15 +5,27 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01
-  server: in002.zestapp778.com
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02
+  server: 139.84.210.39
   port: 42733
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: in002.zestapp778.com
-  skip-cert-verify: false
-- name: 🇮🇳 印度 (India) 02
-  server: 178.212.35.198
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 03
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -23,8 +35,16 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 03
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 04
+  server: 144.24.109.215
+  port: 51000
+  udp: true
+  type: hysteria2
+  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
+  sni: cn.cremedelamer.com
+  skip-cert-verify: true
+- name: 🇮🇳 印度 (India) 05
   server: 13.140.56.100
   port: 14430
   udp: true
@@ -35,14 +55,6 @@ proxies:
     path: /vless
     headers:
       Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 04
-  server: 144.24.109.215
-  port: 51000
-  udp: true
-  type: hysteria2
-  password: d105c6ae-621b-47c1-b85b-075fd6a39aca
-  sni: cn.cremedelamer.com
-  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -52,6 +64,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
   - 🇮🇳 印度 (India) 04
+  - 🇮🇳 印度 (India) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +74,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
   - 🇮🇳 印度 (India) 04
+  - 🇮🇳 印度 (India) 05
 rules:
 - MATCH,PROXIES

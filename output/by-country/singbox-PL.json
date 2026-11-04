@@ -16,23 +16,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 02",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "059fda3e-5ca9-4fbd-dd89-01cc6d4bb5dd",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
-        }
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 03",
+      "tag": "🇵🇱 波兰 (Poland) 02",
       "server": "84.23.52.120",
       "server_port": 28450,
       "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
@@ -52,7 +37,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 04",
+      "tag": "🇵🇱 波兰 (Poland) 03",
       "server": "84.23.52.120",
       "server_port": 28449,
       "uuid": "4d8132cb-f4e3-428c-91ff-2b4f7a868551",
@@ -77,8 +62,7 @@
         "auto",
         "🇵🇱 波兰 (Poland) 01",
         "🇵🇱 波兰 (Poland) 02",
-        "🇵🇱 波兰 (Poland) 03",
-        "🇵🇱 波兰 (Poland) 04"
+        "🇵🇱 波兰 (Poland) 03"
       ]
     },
     {
@@ -87,8 +71,7 @@
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01",
         "🇵🇱 波兰 (Poland) 02",
-        "🇵🇱 波兰 (Poland) 03",
-        "🇵🇱 波兰 (Poland) 04"
+        "🇵🇱 波兰 (Poland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

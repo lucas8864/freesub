@@ -13,16 +13,12 @@ proxies:
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 5.178.109.174
-  port: 14430
+  server: 13.60.203.88
+  port: 11640
   udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: TfOlNVXwjXLEncsLTh4ucO
 proxy-groups:
 - name: PROXIES
   type: select
