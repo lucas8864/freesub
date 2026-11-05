@@ -16,23 +16,15 @@ proxies:
     headers:
       Host: 5.178.109.174
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 70.34.207.14
-  port: 443
+  server: mein-1.octavia.dpdns.org
+  port: 50000
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
+  type: hysteria2
+  password: xo43w4tc13ou2h3x
+  sni: main-1.octavia.dpdns.org
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03
-  server: se3.shtil.io
-  port: 443
-  udp: true
-  type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-  tls: true
-  servername: se3.shtil.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  obfs: salamander
+  obfs-password: a99lje1n7ystml9q
 proxy-groups:
 - name: PROXIES
   type: select
@@ -40,7 +32,6 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
-  - 🇸🇪 瑞典 (Sweden) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -48,6 +39,5 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
-  - 🇸🇪 瑞典 (Sweden) 03
 rules:
 - MATCH,PROXIES
