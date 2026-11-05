@@ -4,8 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
+      "server": "5.178.109.174",
+      "server_port": 14430,
+      "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "5.178.109.174"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 02",
       "server": "70.34.207.14",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -16,12 +30,24 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 02",
-      "server": "13.60.203.88",
-      "server_port": 11640,
-      "method": "chacha20-ietf-poly1305",
-      "password": "TfOlNVXwjXLEncsLTh4ucO"
+      "type": "vless",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "se3.shtil.io",
+      "server_port": 443,
+      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
+      "tls": {
+        "enabled": true,
+        "server_name": "se3.shtil.io",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      }
     },
     {
       "type": "selector",
@@ -29,7 +55,8 @@
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
-        "🇸🇪 瑞典 (Sweden) 02"
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03"
       ]
     },
     {
@@ -37,7 +64,8 @@
       "tag": "auto",
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
-        "🇸🇪 瑞典 (Sweden) 02"
+        "🇸🇪 瑞典 (Sweden) 02",
+        "🇸🇪 瑞典 (Sweden) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,31 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 109.71.247.200
+  server: 141.0.187.15
   port: 443
   udp: true
-  type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: LEziyH-E4k9hehGRJkVi1FadVObB_NZJy8U7oUCVWXU
-    short-id: b9120cd53ffd7bba
-  servername: static-47.topp-con.xyz
-  client-fingerprint: ios
+  type: hysteria2
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
+  skip-cert-verify: false
 - name: 🇪🇪 爱沙尼亚 (Estonia) 02
-  server: 5.129.202.80
+  server: 31.77.236.114
   port: 443
   udp: true
   type: vless
-  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
-    short-id: 2ef2b10d5143d798
-  servername: mirror-50.topp-con.xyz
-  client-fingerprint: chrome
+    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
+    short-id: 1a2b3c4d
+  servername: files.porsche.com
+  client-fingerprint: firefox
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03
   server: 185.225.205.53
   port: 443
@@ -44,18 +39,18 @@ proxies:
   servername: addons.mozilla.org
   client-fingerprint: chrome
 - name: 🇪🇪 爱沙尼亚 (Estonia) 04
-  server: 31.77.236.114
+  server: 5.129.202.80
   port: 443
   udp: true
   type: vless
-  uuid: 5c32201a-6c0e-451b-8f0a-24b4bd40df59
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: kBTMVLCNE0jjwuJF6H5-65l5Pe0QToS0Hg-9Tmaa7Sk
-    short-id: 1a2b3c4d
-  servername: files.porsche.com
-  client-fingerprint: firefox
+    public-key: NY2bvH4IFKTstWkBWwyU5MmlzuKk0nU08cBoHlti2S8
+    short-id: 2ef2b10d5143d798
+  servername: mirror-50.topp-con.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

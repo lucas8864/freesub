@@ -5,6 +5,17 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 02
   server: 70.34.207.14
   port: 443
   udp: true
@@ -12,13 +23,16 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 02
-  server: 13.60.203.88
-  port: 11640
+- name: 🇸🇪 瑞典 (Sweden) 03
+  server: se3.shtil.io
+  port: 443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: TfOlNVXwjXLEncsLTh4ucO
+  type: vless
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  tls: true
+  servername: se3.shtil.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -26,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -33,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇸🇪 瑞典 (Sweden) 01
   - 🇸🇪 瑞典 (Sweden) 02
+  - 🇸🇪 瑞典 (Sweden) 03
 rules:
 - MATCH,PROXIES
