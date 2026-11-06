@@ -10,28 +10,23 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2
+  sni: https
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02
-  server: 152.32.167.33
-  port: 443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: Q8QwBSGN6J-FqgDV1pYNm0VThS_xNRyQ3DPPa9YZ3j4
-    short-id: cff998a4
-  servername: www.amazon.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 03
   server: vpn-tw-002.fastervpn.world
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03
+  server: 18.141.210.28
+  port: 10000
+  udp: true
+  type: hysteria2
+  password: eRlY6dXnQ4QUzVOQi6YDfZWq
+  sni: sg-transit-3.nebulacloud.win
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES

@@ -4,29 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇲🇩 摩尔多瓦 (Moldova) 01
-  server: md.flicker.work
+- name: 🌐 其他地区 (Other) 01
+  server: 104.16.10.191
   port: 443
   udp: true
   type: vless
-  uuid: 255a8044-3337-473e-af26-46a37208adcc
-  flow: xtls-rprx-vision
+  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
   tls: true
-  reality-opts:
-    public-key: wRmMiCGZjpdyIxZSPF0EGeFcsBk8TDqPu9pYRxLzIEA
-  servername: md.flicker.work
+  servername: u.srilankangrill.online
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇲🇩 摩尔多瓦 (Moldova) 01
+  - 🌐 其他地区 (Other) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇲🇩 摩尔多瓦 (Moldova) 01
+  - 🌐 其他地区 (Other) 01
 rules:
 - MATCH,PROXIES

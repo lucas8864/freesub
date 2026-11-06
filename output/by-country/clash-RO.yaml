@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: 194.68.44.42
-  port: 64546
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-- name: 🇷🇴 罗马尼亚 (Romania) 02
   server: 46.28.67.55
   port: 443
   udp: true
@@ -24,6 +17,13 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇷🇴 罗马尼亚 (Romania) 02
+  server: 194.68.44.42
+  port: 64546
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: U83u9OGpvSatIUW7LsWffr
 proxy-groups:
 - name: PROXIES
   type: select
