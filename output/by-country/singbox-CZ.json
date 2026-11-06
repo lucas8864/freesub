@@ -6,44 +6,21 @@
     {
       "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "155.212.240.10",
+      "server": "193.124.17.190",
       "server_port": 443,
-      "uuid": "f27b6f65-6e59-4f89-b929-afa397ca587f",
-      "tls": {
-        "enabled": true,
-        "server_name": "n.bitpulse.me",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/019bcbad-3813-7cce-8786-3ac0e418f128",
-        "headers": {
-          "Host": "n.bitpulse.me"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇨🇿 捷克 (Czech) 02",
-      "server": "server.slavkiti.monster",
-      "server_port": 443,
-      "uuid": "4d017db2-7655-4276-9557-e2ec25b04ee7",
+      "uuid": "fad0b9a6-187d-4fcc-96fc-498bc5b3135a",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.tradingview.com",
+        "server_name": "www.foxsports.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
           "public_key": "J-dv-HrWfQ_IOoyutv0Kg-rO8QwoRwc02dS1dS_tblk",
-          "short_id": "ee1716767f9b"
+          "short_id": "8325360e8bd2"
         }
       }
     },
@@ -52,16 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01",
-        "🇨🇿 捷克 (Czech) 02"
+        "🇨🇿 捷克 (Czech) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01",
-        "🇨🇿 捷克 (Czech) 02"
+        "🇨🇿 捷克 (Czech) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

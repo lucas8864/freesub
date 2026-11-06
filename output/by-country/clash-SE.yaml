@@ -5,6 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 02
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -15,16 +28,6 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 02
-  server: mein-1.octavia.dpdns.org
-  port: 50000
-  udp: true
-  type: hysteria2
-  password: xo43w4tc13ou2h3x
-  sni: main-1.octavia.dpdns.org
-  skip-cert-verify: false
-  obfs: salamander
-  obfs-password: a99lje1n7ystml9q
 proxy-groups:
 - name: PROXIES
   type: select

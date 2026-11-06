@@ -13,14 +13,6 @@ proxies:
   sni: www.bing.com
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 02
-  server: 208.69.78.29
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 03
   server: 208.69.78.60
   port: 443
   udp: true
@@ -28,6 +20,47 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 45.90.59.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
+    short-id: 19253fae84102271
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 04
+  server: 104.165.205.42
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: 54d2f622-fd71-4f5f-8813-832b68f4ca3b
+  sni: speedtestmark.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 05
+  server: 208.69.78.29
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 06
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +69,9 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01
   - 🇨🇭 瑞士 (Switzerland) 02
   - 🇨🇭 瑞士 (Switzerland) 03
+  - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +80,8 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 01
   - 🇨🇭 瑞士 (Switzerland) 02
   - 🇨🇭 瑞士 (Switzerland) 03
+  - 🇨🇭 瑞士 (Switzerland) 04
+  - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
 rules:
 - MATCH,PROXIES

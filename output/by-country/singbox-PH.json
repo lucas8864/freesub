@@ -4,14 +4,14 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "141.0.187.15",
-      "server_port": 443,
-      "password": "70043bfa-d6fb-4980-b27e-773e9e8b2004",
+      "type": "trojan",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01",
+      "server": "130.94.52.37",
+      "server_port": 46298,
+      "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
-        "server_name": "crt.onecloudstream.com",
+        "server_name": "ph001.zestapp778.com",
         "insecure": false
       }
     },
@@ -20,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01"
+        "🇵🇭 菲律宾 (Philippines) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01"
+        "🇵🇭 菲律宾 (Philippines) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

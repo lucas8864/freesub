@@ -10,17 +10,9 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: https%3a%2f%2ft.me%2fwangcai2
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03
   server: 152.32.167.33
   port: 443
   udp: true
@@ -33,33 +25,14 @@ proxies:
     short-id: cff998a4
   servername: www.amazon.com
   client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04
-  server: n04.jinggai.online
-  port: 8443
+- name: 🇹🇼 中国台湾 (Taiwan) 03
+  server: vpn-tw-002.fastervpn.world
+  port: 443
   udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  tls: true
-  servername: n04.jinggai.online
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-    headers:
-      Host: n04.jinggai.online
-- name: 🇹🇼 中国台湾 (Taiwan) 05
-  server: 83.147.13.74
-  port: 8443
-  udp: true
-  type: vless
-  uuid: eb8c97f7-a154-4442-91b0-54c0d055ad0b
-  tls: true
-  reality-opts:
-    public-key: 4g6gX0ueJap7pY_iTDx23h6bzo3KIOTcFzP1Uacn0QA
-    short-id: 4ad2e4e660550e43
-  servername: github.githubassets.com
-  client-fingerprint: chrome
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: www.bing.com
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -68,8 +41,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
   - 🇹🇼 中国台湾 (Taiwan) 03
-  - 🇹🇼 中国台湾 (Taiwan) 04
-  - 🇹🇼 中国台湾 (Taiwan) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -78,7 +49,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
   - 🇹🇼 中国台湾 (Taiwan) 03
-  - 🇹🇼 中国台湾 (Taiwan) 04
-  - 🇹🇼 中国台湾 (Taiwan) 05
 rules:
 - MATCH,PROXIES
