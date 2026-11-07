@@ -16,18 +16,15 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 199.232.8.223
-  port: 443
+  server: 179.253.82.47
+  port: 4444
   udp: true
-  type: trojan
-  password: TtI1G9ChUwNxRuPgOxiPNwAd6FN4BlBJ
-  sni: community.fastly.steamstatic.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /
+  type: hysteria2
+  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  sni: fl3.nexfile.net
+  skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: 188.114.96.3
+  server: 104.18.0.1
   port: 2053
   udp: true
   type: trojan
@@ -37,27 +34,6 @@ proxies:
   network: ws
   ws-opts:
     path: /
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 65.108.240.210
-  port: 39018
-  udp: true
-  type: vmess
-  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
-  alterId: 0
-  cipher: auto
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 6.bmi.ir.asopardaz.ir
-  port: 8443
-  udp: true
-  type: vless
-  uuid: fe4d2b3e-965f-4389-a6e4-05887ef5fd2b
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: JtA0d5K6Jnmg35oWP9SDOsc1ceuqaxOsNg33fiPHJQs
-    short-id: e915
-  servername: hostgator.com
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,8 +42,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
-  - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,7 +50,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
-  - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES

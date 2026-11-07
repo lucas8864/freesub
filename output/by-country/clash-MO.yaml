@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01
-  server: 104.16.10.191
-  port: 443
+- name: 🇲🇴 MO 01
+  server: mo01.dw.sh-cloudflare.sbs
+  port: 11107
   udp: true
   type: vless
-  uuid: b8d8a5b0-867f-4491-b4e4-30edc04bb10e
+  uuid: 792ba6a8-b887-42bd-9480-4eb19b0a9b2b
+  flow: xtls-rprx-vision
   tls: true
-  servername: u.srilankangrill.online
-  skip-cert-verify: false
+  reality-opts:
+    public-key: cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg
+    short-id: 9433bfa1
+  servername: cdn-dynmedia-1.microsoft.com
   client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: u.srilankangrill.online
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01
+  - 🇲🇴 MO 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01
+  - 🇲🇴 MO 01
 rules:
 - MATCH,PROXIES
