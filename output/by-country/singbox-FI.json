@@ -18,21 +18,30 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "179.253.82.47",
-      "server_port": 4444,
-      "password": "a35c508f-4d5d-4531-842e-6e9d43c762c0",
+      "server": "static.117.242.109.65.clients.your-server.de",
+      "server_port": 443,
+      "uuid": "320536e8-b0d3-4afa-a5ec-de93356ce562",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "fl3.nexfile.net",
-        "insecure": false
+        "server_name": "static.0.72.42.77.clients.your-server.de",
+        "insecure": false,
+        "alpn": [
+          "h2",
+          " http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
       }
     },
     {
       "type": "trojan",
       "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "104.18.0.1",
+      "server": "172.66.0.1",
       "server_port": 2053,
       "password": "gHQP0D7D15",
       "tls": {
@@ -44,7 +53,7 @@
         ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {

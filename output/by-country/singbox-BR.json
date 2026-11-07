@@ -5,18 +5,14 @@
   "outbounds": [
     {
       "type": "trojan",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
-      "server": "125.227.86.46",
+      "tag": "🇧🇷 巴西 (Brazil) 01",
+      "server": "216.238.104.154",
       "server_port": 443,
-      "password": "0a9f1f5a397bd427",
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "TG.freecodes",
-        "insecure": true
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "db"
+        "server_name": "findtemporaryworkandfreelancerprojectsonlineplatform.com",
+        "insecure": false
       }
     },
     {
@@ -24,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇧🇷 巴西 (Brazil) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
+        "🇧🇷 巴西 (Brazil) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

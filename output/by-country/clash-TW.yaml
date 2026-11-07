@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-tw-002.fastervpn.world
+  sni: 160.187.100.109
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 02
   server: 103.115.109.49
@@ -18,44 +18,22 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03
-  server: tw1.xueshan168.cc
+  server: 60.248.219.78
   port: 443
   udp: true
   type: vless
-  uuid: 9b7dc1a8-1977-4174-a82d-39ce4081b8eb
-  flow: xtls-rprx-vision
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   tls: true
-  reality-opts:
-    public-key: iv3BAoFjlsPSSjOn1cyXVZ3H31KqX65PoJusBEfU0lM
-  servername: s0.awsstatic.com
-  client-fingerprint: chrome
-- name: 🇹🇼 中国台湾 (Taiwan) 04
-  server: n04.jinggai.online
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
-  tls: true
-  servername: n04.jinggai.online
-  skip-cert-verify: false
+  servername: ty986gfazs.cainiaohub.xyz
+  skip-cert-verify: true
   network: ws
   ws-opts:
-    path: /nvl-n04-ws/e0577fe8fd7c8823
-- name: 🇹🇼 中国台湾 (Taiwan) 05
-  server: x-tw01.xueshan168.cc
-  port: 443
-  udp: true
-  type: vless
-  uuid: 9b7dc1a8-1977-4174-a82d-39ce4081b8eb
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: CuqzBeQR_1VIdOGOgn5v8-t-X-YzURF9b3wtKVVyKQ8
-  servername: s0.awsstatic.com
-  client-fingerprint: ios
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+    headers:
+      Host: ty986gfazs.cainiaohub.xyz
 proxy-groups:
 - name: PROXIES
   type: select
@@ -64,8 +42,6 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
   - 🇹🇼 中国台湾 (Taiwan) 03
-  - 🇹🇼 中国台湾 (Taiwan) 04
-  - 🇹🇼 中国台湾 (Taiwan) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -74,7 +50,5 @@ proxy-groups:
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
   - 🇹🇼 中国台湾 (Taiwan) 03
-  - 🇹🇼 中国台湾 (Taiwan) 04
-  - 🇹🇼 中国台湾 (Taiwan) 05
 rules:
 - MATCH,PROXIES

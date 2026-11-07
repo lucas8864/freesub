@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01
-  server: 157.228.64.24
-  port: 443
+- name: 🇸🇮 斯洛文尼亚 (Slovenia) 01
+  server: 92.42.201.160
+  port: 14443
   udp: true
   type: vless
-  uuid: db80088c-32a1-4cb8-a907-0f3cb7844152
+  uuid: a60da2ca-0abf-49f8-9dcb-156989d76ad2
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: QFYzek1TNFeZxhHP3gH-42RUYDGw0ZiigeDcUOFL2Vs
-    short-id: bd44ae7c721b8252
-  servername: gb1.japancase.site
+    public-key: fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY
+    short-id: e013fa99a81badcc
+  servername: node-slo05.rkitman.ru
   client-fingerprint: ''
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇸🇮 斯洛文尼亚 (Slovenia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇸🇮 斯洛文尼亚 (Slovenia) 01
 rules:
 - MATCH,PROXIES

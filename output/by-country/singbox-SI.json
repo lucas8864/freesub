@@ -5,22 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇲🇴 MO 01",
-      "server": "mo01.dw.sh-cloudflare.sbs",
-      "server_port": 11107,
-      "uuid": "792ba6a8-b887-42bd-9480-4eb19b0a9b2b",
+      "tag": "🇸🇮 斯洛文尼亚 (Slovenia) 01",
+      "server": "92.42.201.160",
+      "server_port": 14443,
+      "uuid": "a60da2ca-0abf-49f8-9dcb-156989d76ad2",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "cdn-dynmedia-1.microsoft.com",
+        "server_name": "node-slo05.rkitman.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": ""
         },
         "reality": {
           "enabled": true,
-          "public_key": "cIAvdh9g8o4OWaCs4yY1aKxz32F0N73O7kQpqp3oQHg",
-          "short_id": "9433bfa1"
+          "public_key": "fmZQYGYXw4xYtiuMFvH4Dgse1DBoGazt-vWM7LOdchY",
+          "short_id": "e013fa99a81badcc"
         }
       }
     },
@@ -29,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇲🇴 MO 01"
+        "🇸🇮 斯洛文尼亚 (Slovenia) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇲🇴 MO 01"
+        "🇸🇮 斯洛文尼亚 (Slovenia) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

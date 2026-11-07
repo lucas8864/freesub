@@ -16,15 +16,18 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 179.253.82.47
-  port: 4444
+  server: static.117.242.109.65.clients.your-server.de
+  port: 443
   udp: true
-  type: hysteria2
-  password: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  sni: fl3.nexfile.net
+  type: vless
+  uuid: 320536e8-b0d3-4afa-a5ec-de93356ce562
+  flow: xtls-rprx-vision
+  tls: true
+  servername: static.0.72.42.77.clients.your-server.de
   skip-cert-verify: false
+  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 03
-  server: 104.18.0.1
+  server: 172.66.0.1
   port: 2053
   udp: true
   type: trojan
