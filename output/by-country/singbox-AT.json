@@ -12,29 +12,8 @@
       "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02",
-      "server": "178.22.31.72",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "at1.japancase.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "zEntiD6D81wY__YHPvIw78e09CBIgYkyQ5meIo7c_hg",
-          "short_id": "41ae8e266bc3346f"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇦🇹 奥地利 (Austria) 03",
+      "tag": "🇦🇹 奥地利 (Austria) 02",
       "server": "82.110.60.9",
       "server_port": 19999,
       "method": "aes-256-gcm",
@@ -46,8 +25,7 @@
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02",
-        "🇦🇹 奥地利 (Austria) 03"
+        "🇦🇹 奥地利 (Austria) 02"
       ]
     },
     {
@@ -55,8 +33,7 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02",
-        "🇦🇹 奥地利 (Austria) 03"
+        "🇦🇹 奥地利 (Austria) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -16,18 +16,7 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: static.117.242.109.65.clients.your-server.de
-  port: 443
-  udp: true
-  type: vless
-  uuid: 320536e8-b0d3-4afa-a5ec-de93356ce562
-  flow: xtls-rprx-vision
-  tls: true
-  servername: static.0.72.42.77.clients.your-server.de
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 172.66.0.1
+  server: 188.114.96.3
   port: 2053
   udp: true
   type: trojan
@@ -44,7 +33,6 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
-  - 🇫🇮 芬兰 (Finland) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -52,6 +40,5 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
-  - 🇫🇮 芬兰 (Finland) 03
 rules:
 - MATCH,PROXIES
