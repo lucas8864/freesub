@@ -17,42 +17,17 @@ proxies:
     short-id: a3a578ab
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇱 以色列 (Israel) 02
-  server: 64.176.163.182
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: exploreeducationsectoropportunitiestodayandadvancecareers.com
-  skip-cert-verify: false
-- name: 🇮🇱 以色列 (Israel) 03
-  server: dddz-1-x.473221.xyz
-  port: 43117
-  udp: true
-  type: vless
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: sx45rPTYcCjQaHYudo1gfNFWYN4mQ4SCwGHfdGU-Hwc
-    short-id: 1f34079b44529536
-  servername: v1-dy.ixigua.com
-  client-fingerprint: edge
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01
-  - 🇮🇱 以色列 (Israel) 02
-  - 🇮🇱 以色列 (Israel) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇱 以色列 (Israel) 01
-  - 🇮🇱 以色列 (Israel) 02
-  - 🇮🇱 以色列 (Israel) 03
 rules:
 - MATCH,PROXIES

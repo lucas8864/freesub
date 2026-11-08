@@ -5,29 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 90.156.230.179
-  port: 443
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 38.107.234.57
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
+  server: 38.107.234.57
+  port: 8443
   udp: true
   type: vless
-  uuid: dc95c1dd-2cd3-414c-8cf1-71ae86dad666
-  flow: xtls-rprx-vision
+  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
   tls: true
-  reality-opts:
-    public-key: Au1rmQdDRjlEJk17IfLQv5PBUEEosMWNhAlrWZj6mnY
-    short-id: '14324280'
-  servername: kz-cdn-prsv-forum.keno.su
-  client-fingerprint: firefox
+  servername: 3h-kazakhstan1.09vpn.com
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /vless/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
 rules:
 - MATCH,PROXIES

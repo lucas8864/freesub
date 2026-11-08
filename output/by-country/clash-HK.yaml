@@ -5,6 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: 202.146.222.174
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 02
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/clashv8🇨🇳
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.29
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: ad6ea328-ace0-45e1-8b69-e698536fa709.67dc6e59-0fd8-4ca5-ba29-26a8817e203b.byteprivatelink.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2a778078-9f4f-4203-a204-6fb94547b707
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: xBBebAa3_FmRJAzPnEP9seJneZtPiIZVLHo23pHxRxc
+    short-id: a0134868
+  servername: live.douyin.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -14,51 +51,7 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 13.140.83.153
-  port: 1080
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 4IxReHOucKiwvosjoRXlLLpu20Pso-rZ
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 202.146.222.89
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: dddz-3-z.473221.xyz
-  port: 13212
-  udp: true
-  type: vless
-  uuid: 65ec84f5-0dd4-4582-8b4f-592e50b22116
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 4VguZbm-S2NkLpi7gLDsQMv2eDXP2LucxsvTiEt98yY
-    short-id: 961f7127a015ba
-  servername: v1-dy.ixigua.com
-  client-fingerprint: edge
 - name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: 165.154.63.139
   port: 443
   udp: true
@@ -82,7 +75,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -94,6 +86,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
-  - 🇭🇰 中国香港 (Hong Kong) 07
 rules:
 - MATCH,PROXIES

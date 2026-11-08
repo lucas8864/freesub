@@ -22,32 +22,6 @@ proxies:
   servername: 2.26.6.1
   skip-cert-verify: true
   client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03
-  server: 2.26.255.215
-  port: 443
-  udp: true
-  type: vless
-  uuid: 69e41e64-a832-471a-b740-94577ca85520
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: pOHbbyo_PlUwH4DjC6bKvC3jB8RPnCdu-nL8trAP8CI
-    short-id: '50'
-  servername: cloudflare.com
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 04
-  server: 77.232.135.141
-  port: 8445
-  udp: true
-  type: vless
-  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-  tls: true
-  servername: ru1.radiolumens.uk
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: beru-pl
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,8 +29,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01
   - 🇵🇱 波兰 (Poland) 02
-  - 🇵🇱 波兰 (Poland) 03
-  - 🇵🇱 波兰 (Poland) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,7 +36,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01
   - 🇵🇱 波兰 (Poland) 02
-  - 🇵🇱 波兰 (Poland) 03
-  - 🇵🇱 波兰 (Poland) 04
 rules:
 - MATCH,PROXIES

@@ -18,29 +18,15 @@
       }
     },
     {
-      "type": "trojan",
+      "type": "hysteria2",
       "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "188.114.96.3",
-      "server_port": 2053,
-      "password": "gHQP0D7D15",
+      "server": "fi1.obxodvpn.us",
+      "server_port": 443,
+      "password": "146d567c-6335-4e63-a8aa-7ec068642440",
       "tls": {
         "enabled": true,
-        "server_name": "marvdasht.phonecomparisonblog.org",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "marvdasht.phonecomparisonblog.org"
-        }
+        "server_name": "fi1.obxodvpn.us",
+        "insecure": false
       }
     },
     {
