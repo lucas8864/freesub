@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇸 西班牙 (Spain) 01
-  server: 66.163.118.103
+  server: 79.127.139.242
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 02
-  server: 79.127.139.242
+  server: 66.163.118.103
   port: 19999
   udp: true
   type: ss
@@ -29,22 +29,66 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 04
+  server: 66.163.118.40
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: cdn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 05
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 06
+  server: 49930ag.es8.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 95c2ba1e-a330-4e6b-bd81-bf9c0f647b2f
+  tls: true
+  reality-opts:
+    public-key: H_sPS4IJjHa4Wd7WLAtp_eamROtKBAj-G0UcMBHLHQw
+    short-id: 2437eeeb791b6d80
+  servername: 49930ag.es8.h1clayd.click
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 61c20be08f4f
+- name: 🇪🇸 西班牙 (Spain) 07
+  server: 66.163.118.113
+  port: 443
+  udp: true
+  type: vless
+  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: PwN5VWqwWKVfrqqrbLE4kzVu9vIXSENAUiAPjMWIrVY
+    short-id: 32209e627ee109c7
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇪🇸 西班牙 (Spain) 08
+  server: 66.163.118.251
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 09
   server: 167.17.71.167
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 05
-  server: 66.163.118.131
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -55,6 +99,10 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
+  - 🇪🇸 西班牙 (Spain) 06
+  - 🇪🇸 西班牙 (Spain) 07
+  - 🇪🇸 西班牙 (Spain) 08
+  - 🇪🇸 西班牙 (Spain) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -65,5 +113,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 03
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
+  - 🇪🇸 西班牙 (Spain) 06
+  - 🇪🇸 西班牙 (Spain) 07
+  - 🇪🇸 西班牙 (Spain) 08
+  - 🇪🇸 西班牙 (Spain) 09
 rules:
 - MATCH,PROXIES

@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "ee.subv.ru",
-      "server_port": 443,
-      "uuid": "90157e25-cee1-4217-921e-91f300bc1a24",
-      "flow": "xtls-rprx-vision",
+      "tag": "🇫🇷 法国 (France) 01 (移动家宽)",
+      "server": "8.6.112.0",
+      "server_port": 8443,
+      "uuid": "8eb92a78-ec8d-4ff6-8a2d-8b801367be87",
       "tls": {
         "enabled": true,
-        "server_name": "dvizhok.su",
+        "server_name": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "1vSZjvhZO01oAEH3b7eebR1qF5dLU1Dq2E7xu8pwGSs",
-          "short_id": "428ef87fd47a3a32"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "KAmraN02-3rpN9m-2.KAMran-02.WORKErS.dEV"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01"
+        "🇫🇷 法国 (France) 01 (移动家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01"
+        "🇫🇷 法国 (France) 01 (移动家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

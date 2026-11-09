@@ -6,22 +6,34 @@
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01",
-      "server": "185.95.231.156",
+      "server": "193.203.10.188",
       "server_port": 443,
-      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "no.gacvpn.site",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
-          "short_id": "a3a578ab"
+          "public_key": "mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk",
+          "short_id": "08d12dce"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇮🇱 以色列 (Israel) 02",
+      "server": "64.176.163.182",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "exploreeducationsectoropportunitiestodayandadvancecareers.com",
+        "insecure": false
       }
     },
     {
@@ -29,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01"
+        "🇮🇱 以色列 (Israel) 01",
+        "🇮🇱 以色列 (Israel) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01"
+        "🇮🇱 以色列 (Israel) 01",
+        "🇮🇱 以色列 (Israel) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
