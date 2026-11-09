@@ -4,24 +4,23 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇺 卢森堡 (Luxembourg) 01
-  server: 87.228.61.175
-  port: 1443
+- name: 🇨🇾 塞浦路斯 (Cyprus) 01
+  server: 45.86.60.174
+  port: 16443
   udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: tAGGzgRCi6W95UwG0qerf6
+  type: vless
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇺 卢森堡 (Luxembourg) 01
+  - 🇨🇾 塞浦路斯 (Cyprus) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇺 卢森堡 (Luxembourg) 01
+  - 🇨🇾 塞浦路斯 (Cyprus) 01
 rules:
 - MATCH,PROXIES

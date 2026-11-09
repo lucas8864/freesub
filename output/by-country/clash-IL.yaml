@@ -5,18 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇱 以色列 (Israel) 01
-  server: 193.203.10.188
+  server: 185.95.231.156
   port: 443
   udp: true
   type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  uuid: 1f8cf47a-b66a-4916-979f-26edfcf44eea
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: mCLTVbcvg_tkaIuGqMVVBV-5d_ftEoLnJHhrCmeLDFk
-    short-id: 08d12dce
-  servername: no.gacvpn.site
-  client-fingerprint: firefox
+    public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
+    short-id: a3a578ab
+  servername: www.apple.com
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02
   server: 64.176.163.182
   port: 443
