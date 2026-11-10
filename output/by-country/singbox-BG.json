@@ -4,24 +4,38 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "131.123.43.103",
+      "server": "191.44.112.170",
       "server_port": 443,
-      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
-      "flow": "xtls-rprx-vision",
+      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
       "tls": {
         "enabled": true,
-        "server_name": "bg2.gacvpn.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": ""
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg",
-          "short_id": "1f8bab7ad81089f2"
+        "server_name": "orbylume.my.to",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tvpn-trojan/bg",
+        "headers": {
+          "Host": "orbylume.my.to"
         }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
+      "server": "191.44.112.170.sslip.io",
+      "server_port": 443,
+      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
+      "tls": {
+        "enabled": true,
+        "server_name": "orbylume.my.to",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/tvpn-trojan/bg"
       }
     },
     {
@@ -29,14 +43,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01"
+        "🇧🇬 保加利亚 (Bulgaria) 01",
+        "🇧🇬 保加利亚 (Bulgaria) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01"
+        "🇧🇬 保加利亚 (Bulgaria) 01",
+        "🇧🇬 保加利亚 (Bulgaria) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

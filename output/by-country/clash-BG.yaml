@@ -5,29 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇧🇬 保加利亚 (Bulgaria) 01
-  server: 131.123.43.103
+  server: 191.44.112.170
   port: 443
   udp: true
-  type: vless
-  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: SgFQg7srP1xgjWhnSU9lpUMDRlsoLIXlw6nX-mfOdlg
-    short-id: 1f8bab7ad81089f2
-  servername: bg2.gacvpn.site
-  client-fingerprint: ''
+  type: trojan
+  password: 46d221fa-e9b4-748c-4eae-019a88e42991
+  sni: orbylume.my.to
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tvpn-trojan/bg
+- name: 🇧🇬 保加利亚 (Bulgaria) 02
+  server: 191.44.112.170.sslip.io
+  port: 443
+  udp: true
+  type: trojan
+  password: 46d221fa-e9b4-748c-4eae-019a88e42991
+  sni: orbylume.my.to
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tvpn-trojan/bg
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇧🇬 保加利亚 (Bulgaria) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇧🇬 保加利亚 (Bulgaria) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 02
 rules:
 - MATCH,PROXIES

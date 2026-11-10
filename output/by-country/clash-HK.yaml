@@ -5,38 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 202.146.222.89
-  port: 443
+  server: 31.57.248.176
+  port: 50160
   udp: true
   type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  password: b0917015b656b3dd2286b5633af0c5c1
+  sni: www.bing.com%23%e9%a6%83%e5%9a%9f%e9%a6%83%e5%9a%a2%7chk%7c%40wxgqlfx%7c147
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 202.146.222.174
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/oneclickvpnkeys
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: hk2.5yunapi.buzz
-  port: 13212
-  udp: true
-  type: hysteria2
-  password: ec374b01-8dba-48dc-aa9d-b23cb6b2e694
-  sni: hk2.5yunapi.buzz
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 202.146.222.29
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 152.32.254.68
   port: 5010
   udp: true
@@ -46,19 +22,49 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 47.244.120.197
-  port: 23026
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: 202.146.222.174
+  port: 443
   udp: true
-  type: vmess
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  alterId: 0
-  cipher: auto
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 202.146.222.174
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 202.146.222.89
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: t.me
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 202.146.222.29
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 47.129.105.174
+  port: 50000
+  udp: true
+  type: hysteria2
+  password: g4EKHBpZQ9ckIhFRyi3gHDFh
+  sni: sg-transit-3.nebulacloud.win
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 213.176.92.168
+  port: 14430
+  udp: true
+  type: vless
+  uuid: ba52cc43-700d-4040-9444-29214c98e6e0
   network: ws
   ws-opts:
-    path: /arki
+    path: /vless
     headers:
-      Host: 47.244.120.197
+      Host: 213.176.92.168
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,6 +76,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
+  - 🇭🇰 中国香港 (Hong Kong) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -81,5 +88,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 04
   - 🇭🇰 中国香港 (Hong Kong) 05
   - 🇭🇰 中国香港 (Hong Kong) 06
+  - 🇭🇰 中国香港 (Hong Kong) 07
 rules:
 - MATCH,PROXIES

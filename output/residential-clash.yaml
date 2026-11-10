@@ -4,25 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇪🇪 爱沙尼亚 (Estonia) 01
-  server: 201.8.64.7
-  port: 443
+- name: 🇺🇸 美国 (United States) 01 (移动家宽)
+  server: us001.zestapp778.com
+  port: 57277
   udp: true
-  type: hysteria2
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  sni: nlll.obxodvpn.us
+  type: trojan
+  password: 5t6i121em5lkmsmk
+  sni: us001.zestapp778.com
   skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇪🇪 爱沙尼亚 (Estonia) 01
+  - 🇺🇸 美国 (United States) 01 (移动家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇪🇪 爱沙尼亚 (Estonia) 01
+  - 🇺🇸 美国 (United States) 01 (移动家宽)
 rules:
 - MATCH,PROXIES

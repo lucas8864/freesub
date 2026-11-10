@@ -5,22 +5,24 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇺🇦 乌克兰 (Ukraine) 01",
-      "server": "194.150.220.179",
-      "server_port": 443,
-      "uuid": "db80088c-32a1-4cb8-a907-0f3cb7844152",
-      "flow": "xtls-rprx-vision",
+      "tag": "🌐 其他地区 (Other) 01",
+      "server": "103.31.4.75",
+      "server_port": 8443,
+      "uuid": "9443badf-414f-4b12-b19a-7cc2c7431163",
       "tls": {
         "enabled": true,
-        "server_name": "nl4.japancase.site",
+        "server_name": "moz.ar-marz.fun",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "lXCVb-MY5dJqMUw6xvkuPbi0idyfF-OkSY_6GpOovVI",
-          "short_id": "9f05c35b73b47d53"
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/man",
+        "headers": {
+          "Host": "moz.ar-marz.fun"
         }
       }
     },
@@ -29,14 +31,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇦 乌克兰 (Ukraine) 01"
+        "🌐 其他地区 (Other) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇦 乌克兰 (Ukraine) 01"
+        "🌐 其他地区 (Other) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
