@@ -6,14 +6,34 @@
     {
       "type": "shadowsocks",
       "tag": "🇸🇪 瑞典 (Sweden) 01",
+      "server": "70.34.212.124",
+      "server_port": 8388,
+      "method": "aes-256-gcm",
+      "password": "AxIYWtskJWIIaefW"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇸🇪 瑞典 (Sweden) 02",
       "server": "138.199.55.243",
       "server_port": 19999,
       "method": "aes-256-gcm",
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "trojan",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
+      "server": "70.34.207.14",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
+        "insecure": false
+      }
+    },
+    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 02",
+      "tag": "🇸🇪 瑞典 (Sweden) 04",
       "server": "138.124.86.230",
       "server_port": 48115,
       "uuid": "b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b",
@@ -32,20 +52,8 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 03",
-      "server": "70.34.207.14",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "searchhealthcarejobsandbuildmedicalcareerpathway.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04",
+      "tag": "🇸🇪 瑞典 (Sweden) 05",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -58,53 +66,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05",
-      "server": "194.104.94.141",
-      "server_port": 443,
-      "uuid": "6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6",
-      "tls": {
-        "enabled": true,
-        "server_name": "se3.shtil.io",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06",
-      "server": "mirinday385.dpdns.org",
-      "server_port": 8082,
-      "uuid": "a5ecffc2-6c54-4b08-9ea7-e9e14f8caadb",
-      "tls": {
-        "enabled": true,
-        "server_name": "mirinday385.dpdns.org",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1",
-          "h3"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "httpupgrade",
-        "path": "/am3rum"
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇸🇪 瑞典 (Sweden) 07",
+      "tag": "🇸🇪 瑞典 (Sweden) 06",
       "server": "95.143.196.97",
       "server_port": 443,
       "password": "FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF",
@@ -113,30 +76,6 @@
         "server_name": "connect-se.mimowhat.online",
         "insecure": false
       }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08",
-      "server": "p1.alonex.cc.cd",
-      "server_port": 8443,
-      "uuid": "e51e6447-078d-4766-91b4-dfa84c3cb579",
-      "tls": {
-        "enabled": true,
-        "server_name": "p1.alonex.cc.cd",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇸🇪 瑞典 (Sweden) 09",
-      "server": "70.34.212.124",
-      "server_port": 8388,
-      "method": "aes-256-gcm",
-      "password": "AxIYWtskJWIIaefW"
     },
     {
       "type": "selector",
@@ -148,10 +87,7 @@
         "🇸🇪 瑞典 (Sweden) 03",
         "🇸🇪 瑞典 (Sweden) 04",
         "🇸🇪 瑞典 (Sweden) 05",
-        "🇸🇪 瑞典 (Sweden) 06",
-        "🇸🇪 瑞典 (Sweden) 07",
-        "🇸🇪 瑞典 (Sweden) 08",
-        "🇸🇪 瑞典 (Sweden) 09"
+        "🇸🇪 瑞典 (Sweden) 06"
       ]
     },
     {
@@ -163,10 +99,7 @@
         "🇸🇪 瑞典 (Sweden) 03",
         "🇸🇪 瑞典 (Sweden) 04",
         "🇸🇪 瑞典 (Sweden) 05",
-        "🇸🇪 瑞典 (Sweden) 06",
-        "🇸🇪 瑞典 (Sweden) 07",
-        "🇸🇪 瑞典 (Sweden) 08",
-        "🇸🇪 瑞典 (Sweden) 09"
+        "🇸🇪 瑞典 (Sweden) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -6,6 +6,26 @@
     {
       "type": "vless",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
+      "server": "84.32.209.103",
+      "server_port": 443,
+      "uuid": "3f25b15b-1777-4c08-9ade-60336ac92a82",
+      "tls": {
+        "enabled": true,
+        "server_name": "edge-lt.lindenpixel.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
       "server": "germany3.banovano.space",
       "server_port": 2053,
       "uuid": "53555197-bf0a-49e6-bea1-211fcfc1d962",
@@ -26,14 +46,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇹 立陶宛 (Lithuania) 01"
+        "🇱🇹 立陶宛 (Lithuania) 01",
+        "🇱🇹 立陶宛 (Lithuania) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇹 立陶宛 (Lithuania) 01"
+        "🇱🇹 立陶宛 (Lithuania) 01",
+        "🇱🇹 立陶宛 (Lithuania) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
