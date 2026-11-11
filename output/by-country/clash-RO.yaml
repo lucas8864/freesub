@@ -5,13 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇴 罗马尼亚 (Romania) 01
-  server: 194.68.44.42
-  port: 64546
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: U83u9OGpvSatIUW7LsWffr
-- name: 🇷🇴 罗马尼亚 (Romania) 02
   server: 82.152.132.74
   port: 443
   udp: true
@@ -26,28 +19,17 @@ proxies:
     path: /assets/sync-8f3a71
     headers:
       Host: 82.152.132.74
-- name: 🇷🇴 罗马尼亚 (Romania) 03
-  server: bogging-eyeteeth-fly.freesocks.work
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: QFWzCw2uX9B9i6qAYeFBIE
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01
-  - 🇷🇴 罗马尼亚 (Romania) 02
-  - 🇷🇴 罗马尼亚 (Romania) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01
-  - 🇷🇴 罗马尼亚 (Romania) 02
-  - 🇷🇴 罗马尼亚 (Romania) 03
 rules:
 - MATCH,PROXIES

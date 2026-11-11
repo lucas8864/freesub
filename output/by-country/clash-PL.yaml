@@ -5,58 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 2.26.6.1
-  port: 2087
+  server: 201.58.139.66
+  port: 443
   udp: true
   type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: true
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 201.58.189.105
-  port: 2083
-  udp: true
-  type: vless
-  uuid: d7ddade6-b7a0-4cab-a910-d5d5c378d98a
+  uuid: 056405e8-de9f-4d0d-8145-956f13cc34da
   tls: true
   reality-opts:
-    public-key: B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4
-    short-id: 8bd80253
-  servername: dl.google.com
+    public-key: LY0H47MWx87_L_JBzxFAuTzKZB53U7MrZQK8-dNnMxM
+    short-id: 6c5c7900406a1ae7
+  servername: 57aac2t.pl7.h1clayd.click
   client-fingerprint: chrome
-  network: grpc
-  grpc-opts:
-    grpc-service-name: google.storage.v2.Storage
-- name: 🇵🇱 波兰 (Poland) 03
-  server: 2.26.224.174
-  port: 8443
-  udp: true
-  type: vless
-  uuid: a4e5f910-23f4-470f-82a7-ed9d7be71dec
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: d6qmF8ibk_PxtDJPzSa7LKw9VUI_mZ59DrTvmW3RaFc
-    short-id: 10983e6c816181c2
-  servername: teamdocs.su
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01
-  - 🇵🇱 波兰 (Poland) 02
-  - 🇵🇱 波兰 (Poland) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01
-  - 🇵🇱 波兰 (Poland) 02
-  - 🇵🇱 波兰 (Poland) 03
 rules:
 - MATCH,PROXIES

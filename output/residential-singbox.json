@@ -6,18 +6,30 @@
     {
       "type": "trojan",
       "tag": "🇺🇸 美国 (United States) 01 (移动家宽)",
-      "server": "us001.zestapp778.com",
+      "server": "130.94.19.95",
       "server_port": 57277,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "us001.zestapp778.com",
-        "insecure": false
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇰🇷 韩国 (South Korea) 02 (家宽)",
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
+    },
+    {
       "type": "vless",
-      "tag": "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
       "server": "60.248.219.78",
       "server_port": 443,
       "uuid": "c1c04450-bf71-4049-ad0c-9cf6d94d9f1f",
@@ -40,7 +52,8 @@
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇰🇷 韩国 (South Korea) 02 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)"
       ]
     },
     {
@@ -48,7 +61,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (移动家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇰🇷 韩国 (South Korea) 02 (家宽)",
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

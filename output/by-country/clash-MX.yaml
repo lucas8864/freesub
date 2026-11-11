@@ -20,26 +20,13 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇲🇽 墨西哥 (Mexico) 03
-  server: 88.210.37.174
-  port: 10103
-  udp: true
-  type: vless
-  uuid: dbf3f074-3b18-43f3-b82a-debd8c879c69
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: _ARuUG0vgXer4ywV6w9DEfFc9Bgq1zn2mi7YAW2-rAk
-    short-id: 2e70c4b2af549ea0
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇲🇽 墨西哥 (Mexico) 04
   server: mx001.zestapp778.com
   port: 15083
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: mx001.zestapp778.com
-  skip-cert-verify: false
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,7 +35,6 @@ proxy-groups:
   - 🇲🇽 墨西哥 (Mexico) 01
   - 🇲🇽 墨西哥 (Mexico) 02
   - 🇲🇽 墨西哥 (Mexico) 03
-  - 🇲🇽 墨西哥 (Mexico) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -57,6 +43,5 @@ proxy-groups:
   - 🇲🇽 墨西哥 (Mexico) 01
   - 🇲🇽 墨西哥 (Mexico) 02
   - 🇲🇽 墨西哥 (Mexico) 03
-  - 🇲🇽 墨西哥 (Mexico) 04
 rules:
 - MATCH,PROXIES

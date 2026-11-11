@@ -4,26 +4,25 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
-      "tag": "🇮🇪 爱尔兰 (Ireland) 01",
-      "server": "146.70.90.198",
-      "server_port": 17456,
-      "method": "aes-128-gcm",
-      "password": "881cf39affc5286799a585f1acd24d11"
+      "type": "vless",
+      "tag": "🇨🇾 塞浦路斯 (Cyprus) 01",
+      "server": "45.86.60.174",
+      "server_port": 16443,
+      "uuid": "13e541f3-d09d-4633-89df-8513db0ced20"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇪 爱尔兰 (Ireland) 01"
+        "🇨🇾 塞浦路斯 (Cyprus) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇪 爱尔兰 (Ireland) 01"
+        "🇨🇾 塞浦路斯 (Cyprus) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

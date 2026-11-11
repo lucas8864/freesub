@@ -20,36 +20,15 @@
       "security": "auto"
     },
     {
-      "type": "vless",
-      "tag": "🇲🇽 墨西哥 (Mexico) 03",
-      "server": "88.210.37.174",
-      "server_port": 10103,
-      "uuid": "dbf3f074-3b18-43f3-b82a-debd8c879c69",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "_ARuUG0vgXer4ywV6w9DEfFc9Bgq1zn2mi7YAW2-rAk",
-          "short_id": "2e70c4b2af549ea0"
-        }
-      }
-    },
-    {
       "type": "trojan",
-      "tag": "🇲🇽 墨西哥 (Mexico) 04",
+      "tag": "🇲🇽 墨西哥 (Mexico) 03",
       "server": "mx001.zestapp778.com",
       "server_port": 15083,
       "password": "5t6i121em5lkmsmk",
       "tls": {
         "enabled": true,
         "server_name": "mx001.zestapp778.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -59,8 +38,7 @@
         "auto",
         "🇲🇽 墨西哥 (Mexico) 01",
         "🇲🇽 墨西哥 (Mexico) 02",
-        "🇲🇽 墨西哥 (Mexico) 03",
-        "🇲🇽 墨西哥 (Mexico) 04"
+        "🇲🇽 墨西哥 (Mexico) 03"
       ]
     },
     {
@@ -69,8 +47,7 @@
       "outbounds": [
         "🇲🇽 墨西哥 (Mexico) 01",
         "🇲🇽 墨西哥 (Mexico) 02",
-        "🇲🇽 墨西哥 (Mexico) 03",
-        "🇲🇽 墨西哥 (Mexico) 04"
+        "🇲🇽 墨西哥 (Mexico) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
