@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
+  server: 2.26.6.1
+  port: 2087
+  udp: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+  tls: true
+  servername: 2.26.6.1
+  skip-cert-verify: true
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 02
   server: 201.58.189.105
   port: 2083
   udp: true
@@ -19,16 +29,6 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: google.storage.v2.Storage
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 2.26.6.1
-  port: 2087
-  udp: true
-  type: vless
-  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-  tls: true
-  servername: 2.26.6.1
-  skip-cert-verify: true
-  client-fingerprint: chrome
 - name: 🇵🇱 波兰 (Poland) 03
   server: 2.26.224.174
   port: 8443

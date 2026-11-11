@@ -4,32 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🌐 其他地区 (Other) 01
-  server: 103.31.4.75
-  port: 8443
+- name: 🇱🇹 立陶宛 (Lithuania) 01
+  server: 84.32.209.103
+  port: 443
   udp: true
   type: vless
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
+  uuid: 3f25b15b-1777-4c08-9ade-60336ac92a82
   tls: true
-  servername: moz.ar-marz.fun
+  servername: edge-lt.lindenpixel.com
   skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /man
-    headers:
-      Host: moz.ar-marz.fun
+  client-fingerprint: edge
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🌐 其他地区 (Other) 01
+  - 🇱🇹 立陶宛 (Lithuania) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🌐 其他地区 (Other) 01
+  - 🇱🇹 立陶宛 (Lithuania) 01
 rules:
 - MATCH,PROXIES

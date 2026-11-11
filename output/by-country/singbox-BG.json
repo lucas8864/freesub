@@ -6,7 +6,7 @@
     {
       "type": "trojan",
       "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
-      "server": "191.44.112.170",
+      "server": "191.44.112.170.sslip.io",
       "server_port": 443,
       "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
       "tls": {
@@ -23,36 +23,18 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇧🇬 保加利亚 (Bulgaria) 02",
-      "server": "191.44.112.170.sslip.io",
-      "server_port": 443,
-      "password": "46d221fa-e9b4-748c-4eae-019a88e42991",
-      "tls": {
-        "enabled": true,
-        "server_name": "orbylume.my.to",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tvpn-trojan/bg"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇬 保加利亚 (Bulgaria) 01",
-        "🇧🇬 保加利亚 (Bulgaria) 02"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇬 保加利亚 (Bulgaria) 01",
-        "🇧🇬 保加利亚 (Bulgaria) 02"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
