@@ -6,6 +6,71 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01",
+      "server": "138.124.242.46",
+      "server_port": 8443,
+      "uuid": "3f5e89d5-591f-4ac9-b071-b05680b573c3",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl2-edge.gacvpn.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "connect-pl"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 02",
+      "server": "191.101.184.15",
+      "server_port": 443,
+      "uuid": "e9e44c8f-44e1-450f-806d-f0dca6d7dc95",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "pl-gdn3.probe.geomyip.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "pwi1X4tYLhx5O7ppPJJ2BrxaHv9coKX2wrocw-2deGg",
+          "short_id": "2089c4369197cd65"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03",
+      "server": "201.58.189.105",
+      "server_port": 2083,
+      "uuid": "d7ddade6-b7a0-4cab-a910-d5d5c378d98a",
+      "tls": {
+        "enabled": true,
+        "server_name": "dl.google.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4",
+          "short_id": "8bd80253"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "google.storage.v2.Storage"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 04",
       "server": "201.58.139.66",
       "server_port": 443,
       "uuid": "056405e8-de9f-4d0d-8145-956f13cc34da",
@@ -28,14 +93,20 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03",
+        "🇵🇱 波兰 (Poland) 04"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03",
+        "🇵🇱 波兰 (Poland) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

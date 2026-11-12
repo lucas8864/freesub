@@ -5,45 +5,40 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 185.176.206.9
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 02
   server: 142.202.51.22
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 16.60.30.137
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: amazonskr05
-- name: 🇬🇧 英国 (United Kingdom) 04
+- name: 🇬🇧 英国 (United Kingdom) 02
   server: 38.114.120.221
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 05
-  server: 51.89.194.151
-  port: 2053
+- name: 🇬🇧 英国 (United Kingdom) 03
+  server: 185.176.206.9
+  port: 19999
   udp: true
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-  tls: true
-  reality-opts:
-    public-key: xPEBx4wUmwAAv4ikUALNBf5wH6TRhyeQ0Q2pcNELsV0
-    short-id: d051f678212f9d54
-  servername: www.apple.com
-  client-fingerprint: firefox
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 04
+  server: 94.156.250.148
+  port: 7001
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: RexnBgU7EV5ADxG
+- name: 🇬🇧 英国 (United Kingdom) 05
+  server: 104.222.183.180
+  port: 47195
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DYVqFDnYoMquRQunXC1xd2FyuDhd7JWs5jtf2eb7VkKLzXgZv8pt8gY1e91TT71V762zRX7MWW4HmjavanYdUF9bij8gG8AP
 - name: 🇬🇧 英国 (United Kingdom) 06
   server: 146.70.61.37
   port: 8080
@@ -59,6 +54,13 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 08
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 09
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -71,7 +73,16 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 09
+- name: 🇬🇧 英国 (United Kingdom) 10
+  server: 57.129.132.223
+  port: 80
+  udp: true
+  type: vless
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
+  network: ws
+  ws-opts:
+    path: /vless/
+- name: 🇬🇧 英国 (United Kingdom) 11
   server: 46.250.250.149
   port: 2053
   udp: true
@@ -82,18 +93,7 @@ proxies:
     public-key: hieuCHb3HYdDYHmTDyWw2SGqyfo36AVuA-wSiZMdU1M
     short-id: 9922313fffed1c63
   servername: www.apple.com
-  client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 10
-  server: 193.188.21.253
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 193.188.21.253
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -109,6 +109,7 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -124,5 +125,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
+  - 🇬🇧 英国 (United Kingdom) 11
 rules:
 - MATCH,PROXIES

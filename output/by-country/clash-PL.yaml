@@ -5,6 +5,47 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
+  server: 138.124.242.46
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 3f5e89d5-591f-4ac9-b071-b05680b573c3
+  tls: true
+  servername: pl2-edge.gacvpn.site
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: connect-pl
+- name: 🇵🇱 波兰 (Poland) 02
+  server: 191.101.184.15
+  port: 443
+  udp: true
+  type: vless
+  uuid: e9e44c8f-44e1-450f-806d-f0dca6d7dc95
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: pwi1X4tYLhx5O7ppPJJ2BrxaHv9coKX2wrocw-2deGg
+    short-id: 2089c4369197cd65
+  servername: pl-gdn3.probe.geomyip.com
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 03
+  server: 201.58.189.105
+  port: 2083
+  udp: true
+  type: vless
+  uuid: d7ddade6-b7a0-4cab-a910-d5d5c378d98a
+  tls: true
+  reality-opts:
+    public-key: B7x5bYp-YhtLeH31zYcilpKFCkGTMe3jtSECSw-bMC4
+    short-id: 8bd80253
+  servername: dl.google.com
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: google.storage.v2.Storage
+- name: 🇵🇱 波兰 (Poland) 04
   server: 201.58.139.66
   port: 443
   udp: true
@@ -22,11 +63,17 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01
+  - 🇵🇱 波兰 (Poland) 02
+  - 🇵🇱 波兰 (Poland) 03
+  - 🇵🇱 波兰 (Poland) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01
+  - 🇵🇱 波兰 (Poland) 02
+  - 🇵🇱 波兰 (Poland) 03
+  - 🇵🇱 波兰 (Poland) 04
 rules:
 - MATCH,PROXIES

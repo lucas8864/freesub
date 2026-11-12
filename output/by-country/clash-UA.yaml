@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇺🇦 乌克兰 (Ukraine) 01
+  server: 31.42.120.3
+  port: 443
+  udp: true
+  type: vless
+  uuid: e9e44c8f-44e1-450f-806d-f0dca6d7dc95
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fs9MtVb3_vCzH5k_BG6c55J3yYA6ZOJ9XCM_zsUmZy0
+    short-id: 90ccb43f88cc0cb5
+  servername: lv-rix3.probe.geomyip.com
+  client-fingerprint: chrome
+- name: 🇺🇦 乌克兰 (Ukraine) 02
+  server: 95.135.228.4
+  port: 443
+  udp: true
+  type: vless
+  uuid: e9e44c8f-44e1-450f-806d-f0dca6d7dc95
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: s0mjVjM1NTDiLYzVWHrdcSEsbJGikDXGzfLezRuJyT4
+    short-id: 0170fd1d861899a2
+  servername: ua-iev.probe.geomyip.com
+  client-fingerprint: chrome
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇺🇦 乌克兰 (Ukraine) 01
+  - 🇺🇦 乌克兰 (Ukraine) 02
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇺🇦 乌克兰 (Ukraine) 01
+  - 🇺🇦 乌克兰 (Ukraine) 02
+rules:
+- MATCH,PROXIES

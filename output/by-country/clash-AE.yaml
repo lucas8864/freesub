@@ -5,20 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇪 阿联酋 (UAE) 01
-  server: 151.241.19.29
-  port: 19999
+  server: 151.245.163.246
+  port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vless
+  uuid: e9e44c8f-44e1-450f-806d-f0dca6d7dc95
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: yXdCcOXX-Q4ygs18Wa9AYXi69RwZvAvrTaS5zq9CKzY
+    short-id: 8f24b4b6d3d46fa2
+  servername: us-mia2.probe.geomyip.com
+  client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 02
-  server: 151.241.19.36
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇦🇪 阿联酋 (UAE) 03
   server: 130.49.161.70
   port: 443
   udp: true
@@ -28,8 +27,19 @@ proxies:
   skip-cert-verify: false
   obfs: salamander
   obfs-password: rG07s3COMIEvdnQipRyWzx_H_2xygNC3
+- name: 🇦🇪 阿联酋 (UAE) 03
+  server: 95.174.68.188
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 965ffbbe-c6b6-4d5f-8dea-6d8abc55d9c0
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 95.174.68.188
 - name: 🇦🇪 阿联酋 (UAE) 04
-  server: 84.235.244.108
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
