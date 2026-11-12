@@ -4,14 +4,14 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇹 立陶宛 (Lithuania) 01
-  server: 84.32.209.103
+- name: 🇧🇬 保加利亚 (Bulgaria) 01
+  server: 88.80.150.15
   port: 443
   udp: true
   type: vless
-  uuid: 3f25b15b-1777-4c08-9ade-60336ac92a82
+  uuid: 1d46250c-f015-439d-a7fd-c4d9e2a4c63d
   tls: true
-  servername: edge-lt.lindenpixel.com
+  servername: bg2.oncloudvpn.com
   skip-cert-verify: false
   client-fingerprint: edge
   network: grpc
@@ -22,12 +22,12 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇱🇹 立陶宛 (Lithuania) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇹 立陶宛 (Lithuania) 01
+  - 🇧🇬 保加利亚 (Bulgaria) 01
 rules:
 - MATCH,PROXIES

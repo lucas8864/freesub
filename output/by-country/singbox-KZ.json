@@ -6,13 +6,13 @@
     {
       "type": "vless",
       "tag": "🇰🇿 哈萨克斯坦 (Kazakhstan) 01",
-      "server": "3h-kazakhstan1.09vpn.com",
+      "server": "38.107.234.57",
       "server_port": 8443,
       "uuid": "2424febb-43cb-488d-bdd1-401e923c8e48",
       "tls": {
         "enabled": true,
         "server_name": "3h-kazakhstan1.09vpn.com",
-        "insecure": false
+        "insecure": true
       },
       "transport": {
         "type": "ws",

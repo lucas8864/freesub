@@ -5,6 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01
+  server: 194.61.31.126
+  port: 2053
+  udp: true
+  type: vless
+  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
+  tls: true
+  reality-opts:
+    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
+    short-id: 9980e0609b0d3891
+  servername: www.apple.com
+  client-fingerprint: random
+- name: 🇮🇳 印度 (India) 02
   server: 178.212.35.198
   port: 443
   udp: true
@@ -16,19 +28,18 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇮🇳 印度 (India) 02
-  server: 194.61.31.126
-  port: 2053
+- name: 🇮🇳 印度 (India) 03
+  server: 13.140.56.100
+  port: 14430
   udp: true
   type: vless
-  uuid: 1d4e18bd-1f26-4915-b35a-7ace4826e76a
-  tls: true
-  reality-opts:
-    public-key: PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU
-    short-id: 9980e0609b0d3891
-  servername: www.apple.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04
   server: 103.172.116.201
   port: 10303
   udp: true
@@ -41,47 +52,21 @@ proxies:
     short-id: f96b3b17a0f5b1fe
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04
-  server: 13.140.56.100
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
 - name: 🇮🇳 印度 (India) 05
   server: 13.140.253.35
   port: 443
   udp: true
   type: vless
-  uuid: bcd3798c-a56f-6bfc-b738-a17c43bd4a50
+  uuid: f1d3c8af71c4ef75625fcf446aa2c15b
   tls: true
-  servername: xray-m0642ki4-silver-nebula-10.cloady.io
+  servername: xray-h0urp9tx-rapid-summit-2.cloady.io
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /362b2b2c7197d648
+    path: /050334203cc522a3
     headers:
-      Host: xray-m0642ki4-silver-nebula-10.cloady.io
-- name: 🇮🇳 印度 (India) 06
-  server: 85.234.100.32
-  port: 443
-  udp: true
-  type: vless
-  uuid: c1208c5a-2350-0003-affd-fc41b4319286
-  tls: true
-  servername: decdn-28.nome-rkp.net
-  skip-cert-verify: false
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /media/ws/
-    headers:
-      Host: decdn-28.nome-rkp.net
+      Host: xray-h0urp9tx-rapid-summit-2.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -92,7 +77,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03
   - 🇮🇳 印度 (India) 04
   - 🇮🇳 印度 (India) 05
-  - 🇮🇳 印度 (India) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -103,6 +87,5 @@ proxy-groups:
   - 🇮🇳 印度 (India) 03
   - 🇮🇳 印度 (India) 04
   - 🇮🇳 印度 (India) 05
-  - 🇮🇳 印度 (India) 06
 rules:
 - MATCH,PROXIES
