@@ -5,41 +5,55 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇬🇧 英国 (United Kingdom) 01
-  server: 158.173.24.73
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 02
   server: 38.114.120.221
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 03
+- name: 🇬🇧 英国 (United Kingdom) 02
   server: 142.202.51.22
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 04
-  server: 104.222.183.180
-  port: 47195
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: DYVqFDnYoMquRQunXC1xd2FyuDhd7JWs5jtf2eb7VkKLzXgZv8pt8gY1e91TT71V762zRX7MWW4HmjavanYdUF9bij8gG8AP
-- name: 🇬🇧 英国 (United Kingdom) 05
+- name: 🇬🇧 英国 (United Kingdom) 03
   server: 185.176.206.9
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇬🇧 英国 (United Kingdom) 04
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 05
+  server: 146.70.61.37
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 06
+  server: 98.98.142.161
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
+- name: 🇬🇧 英国 (United Kingdom) 07
+  server: 104.222.183.180
+  port: 47195
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: DYVqFDnYoMquRQunXC1xd2FyuDhd7JWs5jtf2eb7VkKLzXgZv8pt8gY1e91TT71V762zRX7MWW4HmjavanYdUF9bij8gG8AP
+- name: 🇬🇧 英国 (United Kingdom) 08
   server: 51.89.194.151
   port: 2053
   udp: true
@@ -51,41 +65,18 @@ proxies:
     short-id: d051f678212f9d54
   servername: www.apple.com
   client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 07
-  server: 146.70.61.37
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 08
-  server: 34.39.80.57
-  port: 50818
+- name: 🇬🇧 英国 (United Kingdom) 09
+  server: 193.188.21.253
+  port: 14430
   udp: true
   type: vless
-  uuid: 408c814e-f70a-4d16-b3b3-8182bb70211d
-  tls: true
-  servername: yingguo.rymaker.cn
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   network: ws
   ws-opts:
-    path: /GunService
-- name: 🇬🇧 英国 (United Kingdom) 09
-  server: 98.98.142.161
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
+    path: /vless
+    headers:
+      Host: 193.188.21.253
 - name: 🇬🇧 英国 (United Kingdom) 10
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 11
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -113,7 +104,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
-  - 🇬🇧 英国 (United Kingdom) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -129,6 +119,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 08
   - 🇬🇧 英国 (United Kingdom) 09
   - 🇬🇧 英国 (United Kingdom) 10
-  - 🇬🇧 英国 (United Kingdom) 11
 rules:
 - MATCH,PROXIES

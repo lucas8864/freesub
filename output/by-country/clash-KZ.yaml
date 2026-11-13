@@ -6,18 +6,6 @@ log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
   server: 38.107.234.57
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 2424febb-43cb-488d-bdd1-401e923c8e48
-  tls: true
-  servername: 3h-kazakhstan1.09vpn.com
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /vless/
-- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
-  server: 38.107.234.57
   port: 80
   udp: true
   type: vmess
@@ -33,13 +21,11 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
 rules:
 - MATCH,PROXIES

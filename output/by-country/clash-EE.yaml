@@ -4,23 +4,25 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇻🇳 越南 (Vietnam) 01
-  server: 150.95.109.109
-  port: 2086
+- name: 🇪🇪 爱沙尼亚 (Estonia) 01
+  server: nlll.obxodvpn.us
+  port: 443
   udp: true
-  type: vless
-  uuid: b83faafc-cbb7-4655-99d4-2c4c39a49d1b
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: nlll.obxodvpn.us
+  skip-cert-verify: true
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇻🇳 越南 (Vietnam) 01
+  - 🇪🇪 爱沙尼亚 (Estonia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇻🇳 越南 (Vietnam) 01
+  - 🇪🇪 爱沙尼亚 (Estonia) 01
 rules:
 - MATCH,PROXIES
