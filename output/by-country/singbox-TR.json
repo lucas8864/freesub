@@ -7,7 +7,7 @@
       "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
       "server": "sclass-b1.catcat321.com",
-      "server_port": 20027,
+      "server_port": 20028,
       "password": "d7563108-615c-4338-a7bd-77f359869a4a",
       "tls": {
         "enabled": true,
@@ -19,40 +19,17 @@
       "type": "trojan",
       "tag": "🇹🇷 土耳其 (Turkey) 02",
       "server": "sclass-b1.catcat321.com",
-      "server_port": 20028,
+      "server_port": 20027,
       "password": "d7563108-615c-4338-a7bd-77f359869a4a",
       "tls": {
         "enabled": true,
         "server_name": "hk.catxstar.com",
-        "insecure": false
+        "insecure": true
       }
     },
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 03",
-      "server": "188.225.37.43",
-      "server_port": 443,
-      "uuid": "4cabcd59-a405-4c00-96f5-03507e1e28fa",
-      "tls": {
-        "enabled": true,
-        "server_name": "torvani.cyou",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/api/boards/live",
-        "headers": {
-          "Host": "torvani.cyou"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 04",
       "server": "151.241.226.201",
       "server_port": 2053,
       "uuid": "0eed6293-8cf1-4e77-ac10-9c3d50d0b2f8",
@@ -77,8 +54,7 @@
         "auto",
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
-        "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04"
+        "🇹🇷 土耳其 (Turkey) 03"
       ]
     },
     {
@@ -87,8 +63,7 @@
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01",
         "🇹🇷 土耳其 (Turkey) 02",
-        "🇹🇷 土耳其 (Turkey) 03",
-        "🇹🇷 土耳其 (Turkey) 04"
+        "🇹🇷 土耳其 (Turkey) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

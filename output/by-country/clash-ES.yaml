@@ -36,20 +36,8 @@ proxies:
     public-key: 7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk
     short-id: 29e8dcd2b37aaa7f
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05
-  server: 9.247.174.134
-  port: 8443
-  udp: true
-  type: vless
-  uuid: 585a421d-d782-4420-912e-dd58ff5966d7
-  tls: true
-  reality-opts:
-    public-key: 7jPluypHwPilf_Mq7JOY96SwKkbK35WuIlN1HwGQ_0A
-    short-id: 974f7f8f
-  servername: play.googleapis.com
-  client-fingerprint: chrome
-- name: 🇪🇸 西班牙 (Spain) 06
   server: 66.163.118.62
   port: 443
   udp: true
@@ -57,13 +45,21 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: courses.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: true
-- name: 🇪🇸 西班牙 (Spain) 07
-  server: 66.163.118.62
+- name: 🇪🇸 西班牙 (Spain) 06
+  server: 66.163.118.203
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: 66.163.118.62
+  sni: blog.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 07
+  server: 66.163.118.251
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.discovergreatjobsandadvanceyourcareer.com
   skip-cert-verify: false
 - name: 🇪🇸 西班牙 (Spain) 08
   server: 196.199.122.2
