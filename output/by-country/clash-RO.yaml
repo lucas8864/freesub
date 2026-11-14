@@ -17,30 +17,17 @@ proxies:
     short-id: d06d78e974491b6e
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇷🇴 罗马尼亚 (Romania) 02
-  server: 46.28.67.55
-  port: 443
-  udp: true
-  type: vless
-  uuid: d1a6a033-fdbd-46a6-a177-3370ba042b9f
-  flow: xtls-rprx-vision
-  tls: true
-  servername: www.cloudflare.com
-  skip-cert-verify: false
-  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇷🇴 罗马尼亚 (Romania) 01
-  - 🇷🇴 罗马尼亚 (Romania) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇷🇴 罗马尼亚 (Romania) 01
-  - 🇷🇴 罗马尼亚 (Romania) 02
 rules:
 - MATCH,PROXIES

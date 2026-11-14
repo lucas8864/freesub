@@ -5,6 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
+  server: 65.108.240.210
+  port: 39018
+  udp: true
+  type: vmess
+  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
+  alterId: 0
+  cipher: auto
+- name: 🇫🇮 芬兰 (Finland) 02
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -15,26 +23,37 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 02
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 177.202.65.158
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
+  sni: hy2-fi2.snobvpn.online
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: s19161.h1cloud.net
+  port: 25749
+  udp: true
+  type: vless
+  uuid: e460e79d-5dd9-451d-8d1a-a84c8b70c9a7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE
+    short-id: f6b3841eabafff9a
+  servername: 80aa2br.fi4.h1clayd.click
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05
   server: 94.183.164.119
   port: 24433
   udp: true
   type: hysteria2
   password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03
-  server: 146.103.118.189
-  port: 443
-  udp: true
-  type: vless
-  uuid: ce698f0c-a8ec-474a-b5d8-3be8032deeb8
-  tls: true
-  servername: nl2.574ck.xyz
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /574ck-finland
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -43,6 +62,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -51,5 +72,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES

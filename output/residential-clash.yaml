@@ -4,7 +4,79 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+- name: 🇰🇷 韩国 (South Korea) 01 (家宽)
+  server: 49.254.204.133
+  port: 1774
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: 1234!@#$
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: twntxbnczyhgd.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fGRViNlqExmn0EvkfZmptnn4a9zei819zpLoMRDpRTw
+    short-id: 8fe3fe59c02a29
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  server: wwczsndbqwlhmdd.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: O9yFnoTlSgYL1B8cPd_30-O_bnTdYjBrXiqoRVh3rDw
+    short-id: 0ad46a758e5405b1
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  server: wwszhrmghgdgyltssbkqf.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: g5hU9u7Gb6_e2PzTzz7PtVcsz6Whx_w9U5YJp0WBjAY
+    short-id: f1d3a529563fec
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 05 (家宽)
+  server: wylldnlmch.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OmUiIEW7EXw5mmYBf1Ei7tXbC3fAYYzx9KzDr2Sudm0
+    short-id: e2e01b5602eb3f
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 06 (家宽)
+  server: nlmnbgwlhmnggdd.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EtyX9RyMycYtdqTpNs2VGTFw9swTDn_ey0qRb5XZR08
+    short-id: f3099404cd2d
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇹🇼 中国台湾 (Taiwan) 07 (家宽)
   server: 60.248.219.78
   port: 443
   udp: true
@@ -18,17 +90,44 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇰🇷 韩国 (South Korea) 08 (家宽)
+  server: rdclzxhxdnbqjcrzqdj.jiedddym.com
+  port: 20903
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Cp7TKdme39Ef-MAmZxJJthMbX8YHC2PdDgwnnUAEimQ
+    short-id: 34a4fa87a3ae811a
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽)
+  - 🇰🇷 韩国 (South Korea) 08 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
+  - 🇰🇷 韩国 (South Korea) 01 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 05 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 06 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 07 (家宽)
+  - 🇰🇷 韩国 (South Korea) 08 (家宽)
 rules:
 - MATCH,PROXIES

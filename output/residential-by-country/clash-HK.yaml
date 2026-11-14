@@ -1,0 +1,48 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  server: wylldnlmch.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: OmUiIEW7EXw5mmYBf1Ei7tXbC3fAYYzx9KzDr2Sudm0
+    short-id: e2e01b5602eb3f
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  server: nlmnbgwlhmnggdd.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: EtyX9RyMycYtdqTpNs2VGTFw9swTDn_ey0qRb5XZR08
+    short-id: f3099404cd2d
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇭🇰 中国香港 (Hong Kong) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+rules:
+- MATCH,PROXIES

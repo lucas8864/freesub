@@ -5,6 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
+  server: 168.138.205.100
+  port: 53758
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: Bwlqh7GcFB
+- name: 🇯🇵 日本 (Japan) 02
+  server: 8.209.247.109
+  port: 443
+  udp: true
+  type: hysteria2
+  password: usqmqUKJFIlCmvkCNSY64L3k
+  sni: bing.com
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 03
   server: 8.211.175.236
   port: 8443
   udp: true
@@ -12,26 +27,94 @@ proxies:
   password: u63SxILNwtrQZ7Y1ZrFaZfsA
   sni: bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 02
+- name: 🇯🇵 日本 (Japan) 04
+  server: zgsnrbbkzsdzdmnmppavjh.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: sre5tCmHhL4ew0sn0Polhsl_6NvEu4E2LVWYEWUH_UI
+    short-id: 325d4fd6caa3
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 05
+  server: rrnmbzgsnmbkdbdzdm.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: SIkoghKAHypuKD6uVc-dwMt5vR-lNxcbpHHsVf4lmzY
+    short-id: 16c7a9b3c7ee83f9
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 06
+  server: rbgnbyglpdsjddlsnmb.jiedddym.com
+  port: 443
+  udp: true
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: VNH8Q2mvF_LMPryghvH7Qx6eGf3MxZeyAkKGFKcUQDA
+    short-id: 18dcb2a6b0fbd3ef
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 07
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 08
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 09
   server: 138.3.208.26
   port: 50160
   udp: true
   type: hysteria2
   password: 184cdec28da5a09450803c8debcd2cc9
-  sni: 138.3.208.26
+  sni: '1'
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 03
-  server: 168.138.43.75
-  port: 80
+- name: 🇯🇵 日本 (Japan) 10
+  server: rdclzxhxdnbqjcrzqdj.jiedddym.com
+  port: 29912
   udp: true
-  type: vmess
-  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 04
+  type: vless
+  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: rKuLCKX4zOnJ7gBDro8XnZynvnef3uOb2dx5q53_-34
+    short-id: e44c096bc30aa2bc
+  servername: fastcdn.hoyoverse.com
+  client-fingerprint: ios
+- name: 🇯🇵 日本 (Japan) 11
+  server: zfapi.zalolink.com
+  port: 43149
+  udp: true
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: cvong7paE8XIzzbKWgV5iUruP1pBqI2IhMuBHc8c0UE
+    short-id: 15aa0ad4
+  servername: psstatic.cdn.bcebos.com
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 12
   server: 13.140.248.125
   port: 443
   udp: true
@@ -46,27 +129,20 @@ proxies:
     path: /e3e2aa65089989f0
     headers:
       Host: xray-p1vi234h-lunar-forest-6.cloady.io
-- name: 🇯🇵 日本 (Japan) 05
-  server: 168.138.205.100
-  port: 53758
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 06
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 07
-  server: 84.247.155.196
+- name: 🇯🇵 日本 (Japan) 13
+  server: 104.17.50.53
   port: 443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -79,6 +155,12 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 05
   - 🇯🇵 日本 (Japan) 06
   - 🇯🇵 日本 (Japan) 07
+  - 🇯🇵 日本 (Japan) 08
+  - 🇯🇵 日本 (Japan) 09
+  - 🇯🇵 日本 (Japan) 10
+  - 🇯🇵 日本 (Japan) 11
+  - 🇯🇵 日本 (Japan) 12
+  - 🇯🇵 日本 (Japan) 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +173,11 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 05
   - 🇯🇵 日本 (Japan) 06
   - 🇯🇵 日本 (Japan) 07
+  - 🇯🇵 日本 (Japan) 08
+  - 🇯🇵 日本 (Japan) 09
+  - 🇯🇵 日本 (Japan) 10
+  - 🇯🇵 日本 (Japan) 11
+  - 🇯🇵 日本 (Japan) 12
+  - 🇯🇵 日本 (Japan) 13
 rules:
 - MATCH,PROXIES

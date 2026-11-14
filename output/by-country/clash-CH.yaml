@@ -5,14 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 23.166.88.127
+  server: 186.190.215.251
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 02
-  server: 186.190.215.251
+  server: 23.166.88.127
   port: 19999
   udp: true
   type: ss
@@ -26,14 +26,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 140.238.213.114
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 84a506ca5aca505696a454d828420b3f
-  sni: 'off'
-  skip-cert-verify: true
-- name: 🇨🇭 瑞士 (Switzerland) 05
   server: 208.69.78.60
   port: 443
   udp: true
@@ -41,6 +33,71 @@ proxies:
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: cdn.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 05
+  server: 140.238.213.114
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: 84a506ca5aca505696a454d828420b3f
+  sni: 'off'
+  skip-cert-verify: true
+- name: 🇨🇭 瑞士 (Switzerland) 06
+  server: 208.69.78.29
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 07
+  server: 208.69.78.19
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: www.yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 08
+  server: 74.161.152.237
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 52a5a29f-c162-411a-8a37-a3f11b0dc537
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: WbgtxLlo2gmTzB4Wzxgh_U7G97d4ENTS10fYIoujET4
+    short-id: 0123456789abcdef
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇨🇭 瑞士 (Switzerland) 09
+  server: 208.69.78.222
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: yourultimateprofessionalcareerhub.com
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 10
+  server: guide.blog-forme.ru
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: guide.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇨🇭 瑞士 (Switzerland) 11
+  server: 208.69.78.217
+  port: 2053
+  udp: true
+  type: vless
+  uuid: c0dd6d59-1573-43af-8b70-1470b2632a6d
+  tls: true
+  reality-opts:
+    public-key: A49ue7zXSusJZdErPAewg3jqGdUFIO1a9xOunEKJfC0
+    short-id: ad86e2d52ff40ebd
+  servername: www.apple.com
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -51,6 +108,12 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
+  - 🇨🇭 瑞士 (Switzerland) 07
+  - 🇨🇭 瑞士 (Switzerland) 08
+  - 🇨🇭 瑞士 (Switzerland) 09
+  - 🇨🇭 瑞士 (Switzerland) 10
+  - 🇨🇭 瑞士 (Switzerland) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -61,5 +124,11 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 03
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
+  - 🇨🇭 瑞士 (Switzerland) 06
+  - 🇨🇭 瑞士 (Switzerland) 07
+  - 🇨🇭 瑞士 (Switzerland) 08
+  - 🇨🇭 瑞士 (Switzerland) 09
+  - 🇨🇭 瑞士 (Switzerland) 10
+  - 🇨🇭 瑞士 (Switzerland) 11
 rules:
 - MATCH,PROXIES

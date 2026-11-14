@@ -1,0 +1,75 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+      "server": "wylldnlmch.jiedddym.com",
+      "server_port": 443,
+      "uuid": "dee59b19-a32f-4d35-b1ee-3708e7d06efc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fastcdn.hoyoverse.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "OmUiIEW7EXw5mmYBf1Ei7tXbC3fAYYzx9KzDr2Sudm0",
+          "short_id": "e2e01b5602eb3f"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+      "server": "nlmnbgwlhmnggdd.jiedddym.com",
+      "server_port": 443,
+      "uuid": "dee59b19-a32f-4d35-b1ee-3708e7d06efc",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "fastcdn.hoyoverse.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EtyX9RyMycYtdqTpNs2VGTFw9swTDn_ey0qRb5XZR08",
+          "short_id": "f3099404cd2d"
+        }
+      }
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}

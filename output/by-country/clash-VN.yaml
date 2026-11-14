@@ -4,29 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇬 保加利亚 (Bulgaria) 01
-  server: p1real5.greewebservices.ir
-  port: 1270
+- name: 🇻🇳 越南 (Vietnam) 01
+  server: zfapi.zalolink.com
+  port: 55688
   udp: true
   type: vless
-  uuid: b0511969-f769-460b-963b-70c6b84b6967
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: xQnXh5EfPDhcEBB7rRiLca33GYrMEeUa35domLL_yA8
-    short-id: 9b60d3
-  servername: play.googleapis.com
+    public-key: 6dqd0hqbC0bht9RtsYamvlYdMpxyUbk7uXw0xtO8DzQ
+    short-id: 865c1b2c
+  servername: bilibili-vn.biliimg.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇬 保加利亚 (Bulgaria) 01
+  - 🇻🇳 越南 (Vietnam) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇬 保加利亚 (Bulgaria) 01
+  - 🇻🇳 越南 (Vietnam) 01
 rules:
 - MATCH,PROXIES

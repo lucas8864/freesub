@@ -6,20 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "server": "178.212.35.198",
+      "server_port": 443,
+      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
+          "short_id": "6bdc8320"
         }
       }
     },
@@ -40,20 +40,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03",
-      "server": "178.212.35.198",
-      "server_port": 443,
-      "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
+      "server": "194.61.31.126",
+      "server_port": 2053,
+      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
           "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q",
-          "short_id": "6bdc8320"
+          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
+          "short_id": "9980e0609b0d3891"
         }
       }
     },
@@ -77,29 +77,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05",
-      "server": "13.140.253.35",
-      "server_port": 443,
-      "uuid": "f1d3c8af-71c4-ef75-625f-cf446aa2c15b",
-      "tls": {
-        "enabled": true,
-        "server_name": "xray-h0urp9tx-rapid-summit-2.cloady.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/050334203cc522a3",
-        "headers": {
-          "Host": "xray-h0urp9tx-rapid-summit-2.cloady.io"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -107,8 +84,7 @@
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
         "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04",
-        "🇮🇳 印度 (India) 05"
+        "🇮🇳 印度 (India) 04"
       ]
     },
     {
@@ -118,8 +94,7 @@
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
         "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04",
-        "🇮🇳 印度 (India) 05"
+        "🇮🇳 印度 (India) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

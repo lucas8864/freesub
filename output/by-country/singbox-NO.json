@@ -5,25 +5,25 @@
   "outbounds": [
     {
       "type": "shadowsocks",
-      "tag": "🇦🇱 AL 01",
-      "server": "185.4.115.149",
-      "server_port": 1348,
+      "tag": "🇳🇴 挪威 (Norway) 01",
+      "server": "185.213.23.63",
+      "server_port": 990,
       "method": "chacha20-ietf-poly1305",
-      "password": "byX4-DV0C42PLFTWQhMTAQ63mZ8qrDRB"
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇱 AL 01"
+        "🇳🇴 挪威 (Norway) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇱 AL 01"
+        "🇳🇴 挪威 (Norway) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
