@@ -12,7 +12,7 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 02
-  server: 51.79.228.131
+  server: 149.88.106.74
   port: 19999
   udp: true
   type: ss
@@ -34,13 +34,12 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 05
-  server: 149.88.23.207
-  port: 18000
+  server: 51.79.228.131
+  port: 19999
   udp: true
-  type: vmess
-  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
-  alterId: 0
-  cipher: auto
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 06
   server: 15.235.182.183
   port: 19999
@@ -49,19 +48,20 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇬 新加坡 (Singapore) 07
-  server: 15.235.164.133
-  port: 19999
+  server: 149.88.23.207
+  port: 18000
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  type: vmess
+  uuid: f8c8dc3d-0d37-46b0-8b34-a7232882fcfe
+  alterId: 0
+  cipher: auto
 - name: 🇸🇬 新加坡 (Singapore) 08
-  server: 149.88.106.74
-  port: 19999
+  server: 68.183.227.4
+  port: 8080
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 09
   server: 68.183.235.240
   port: 8080
@@ -70,92 +70,46 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 10
-  server: 68.183.235.122
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 11
-  server: 68.183.227.4
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 12
   server: 128.1.186.73
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇸🇬 新加坡 (Singapore) 13
-  server: 149.28.130.108
-  port: 443
+- name: 🇸🇬 新加坡 (Singapore) 11
+  server: 140.245.62.225
+  port: 36442
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: searchcreativejobsandshowcaseyourartistictalents.com
+  type: vless
+  uuid: c6624b96-e346-490b-9145-74c2543a9483
+  flow: xtls-rprx-vision
+  tls: true
+  servername: xjpp.zjlo.top
   skip-cert-verify: false
-- name: 🇸🇬 新加坡 (Singapore) 14
+  client-fingerprint: firefox
+- name: 🇸🇬 新加坡 (Singapore) 12
+  server: 138.2.73.238
+  port: 50160
+  udp: true
+  type: hysteria2
+  password: f87376e17da040ed04c9665ce8972930
+  sni: www.bing.com
+  skip-cert-verify: true
+- name: 🇸🇬 新加坡 (Singapore) 13
   server: 68.183.227.236
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
+- name: 🇸🇬 新加坡 (Singapore) 14
+  server: 68.183.235.122
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇸🇬 新加坡 (Singapore) 15
-  server: aizdhftthtthttg.jiedddym.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cSMx9x6uQR46yaP9nN1s6B0Z8oK6ZoJRabRh5CaiWz4
-    short-id: c53a7e532ad8
-  servername: fastcdn.hoyoverse.com
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 16
-  server: 140.245.62.225
-  port: 36442
-  udp: true
-  type: vless
-  uuid: 2633cbab-e901-4f5a-9a0f-18ff319d0d70
-  flow: xtls-rprx-vision
-  tls: true
-  servername: xjpp.zjlo.top
-  skip-cert-verify: false
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 17
-  server: sgxjphhygcpyyds.jiedddym.com
-  port: 443
-  udp: true
-  type: vless
-  uuid: dee59b19-a32f-4d35-b1ee-3708e7d06efc
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 6XvdqZyfavSkCX9TQE38hHciuC2bkN5QU3SFDe8imhU
-    short-id: 68a4b4b03f676e1f
-  servername: fastcdn.hoyoverse.com
-  client-fingerprint: ios
-- name: 🇸🇬 新加坡 (Singapore) 18
-  server: 5.34.177.164
-  port: 443
-  udp: true
-  type: vless
-  uuid: ca678d26-5435-4d13-b378-06c4c3b070ff
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: cwWhNuekusD1iPZZ--7G891dU9PCacxyCYwsZxOApHA
-    short-id: b2efed6d157e7bb0
-  servername: gateway.icloud.com
-  client-fingerprint: chrome
-- name: 🇸🇬 新加坡 (Singapore) 19
   server: 139.162.27.96
   port: 2096
   udp: true
@@ -170,14 +124,21 @@ proxies:
     path: /free-server.techsonic.dev
     headers:
       Host: free-server.techsonic.dev
-- name: 🇸🇬 新加坡 (Singapore) 20
-  server: 138.2.73.238
-  port: 50160
+- name: 🇸🇬 新加坡 (Singapore) 16
+  server: 15.235.184.127
+  port: 443
   udp: true
-  type: hysteria2
-  password: f87376e17da040ed04c9665ce8972930
-  sni: 138.2.73.238
-  skip-cert-verify: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: exploredigitaljobplatformandfindonlinework.com
+  skip-cert-verify: false
+- name: 🇸🇬 新加坡 (Singapore) 17
+  server: 15.235.164.133
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -200,9 +161,6 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 15
   - 🇸🇬 新加坡 (Singapore) 16
   - 🇸🇬 新加坡 (Singapore) 17
-  - 🇸🇬 新加坡 (Singapore) 18
-  - 🇸🇬 新加坡 (Singapore) 19
-  - 🇸🇬 新加坡 (Singapore) 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -225,8 +183,5 @@ proxy-groups:
   - 🇸🇬 新加坡 (Singapore) 15
   - 🇸🇬 新加坡 (Singapore) 16
   - 🇸🇬 新加坡 (Singapore) 17
-  - 🇸🇬 新加坡 (Singapore) 18
-  - 🇸🇬 新加坡 (Singapore) 19
-  - 🇸🇬 新加坡 (Singapore) 20
 rules:
 - MATCH,PROXIES

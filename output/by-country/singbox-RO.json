@@ -25,18 +25,28 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 02",
+      "server": "bogging-eyeteeth-fly.freesocks.work",
+      "server_port": 443,
+      "method": "chacha20-ietf-poly1305",
+      "password": "QFWzCw2uX9B9i6qAYeFBIE"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇷🇴 罗马尼亚 (Romania) 01"
+        "🇷🇴 罗马尼亚 (Romania) 01",
+        "🇷🇴 罗马尼亚 (Romania) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇷🇴 罗马尼亚 (Romania) 01"
+        "🇷🇴 罗马尼亚 (Romania) 01",
+        "🇷🇴 罗马尼亚 (Romania) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -40,39 +40,23 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03",
-      "server": "194.61.31.126",
-      "server_port": 2053,
-      "uuid": "1d4e18bd-1f26-4915-b35a-7ace4826e76a",
+      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+      "server_port": 443,
+      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
       "tls": {
         "enabled": true,
-        "server_name": "www.apple.com",
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PuAGLfJy6cu1TNoHuKIKSxPetCbZI41fc8hQDjWPIAU",
-          "short_id": "9980e0609b0d3891"
+          "fingerprint": "chrome"
         }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 04",
-      "server": "13.140.253.35",
-      "server_port": 443,
-      "uuid": "f1d3c8af71c4ef75625fcf446aa2c15b",
-      "tls": {
-        "enabled": true,
-        "server_name": "xray-h0urp9tx-rapid-summit-2.cloady.io",
-        "insecure": true
       },
       "transport": {
         "type": "ws",
-        "path": "/050334203cc522a3",
+        "path": "/0175469f14317d82",
         "headers": {
-          "Host": "xray-h0urp9tx-rapid-summit-2.cloady.io"
+          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
         }
       }
     },
@@ -83,8 +67,7 @@
         "auto",
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04"
+        "🇮🇳 印度 (India) 03"
       ]
     },
     {
@@ -93,8 +76,7 @@
       "outbounds": [
         "🇮🇳 印度 (India) 01",
         "🇮🇳 印度 (India) 02",
-        "🇮🇳 印度 (India) 03",
-        "🇮🇳 印度 (India) 04"
+        "🇮🇳 印度 (India) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
