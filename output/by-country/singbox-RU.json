@@ -14,26 +14,6 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02",
-      "server": "5.59.204.81",
-      "server_port": 8443,
-      "uuid": "97fd7807-7e2b-49da-8a0e-e40197088f97",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "id-6af3f40b.adhil.uk",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 03",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -55,13 +35,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 03",
+      "server": "185.39.204.117",
+      "server_port": 10002,
+      "uuid": "facb802c-de2e-11f1-9a22-a3404e852f3b",
+      "tls": {
+        "enabled": true,
+        "server_name": "tr2.vpnjantit.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/vpnjantit"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
+      "server": "90.156.203.62",
+      "server_port": 5112,
+      "method": "chacha20-ietf-poly1305",
+      "password": "VVlAff77CnAU43Aoc5j15Y"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇷🇺 俄罗斯 (Russia) 01",
         "🇷🇺 俄罗斯 (Russia) 02",
-        "🇷🇺 俄罗斯 (Russia) 03"
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04"
       ]
     },
     {
@@ -70,7 +75,8 @@
       "outbounds": [
         "🇷🇺 俄罗斯 (Russia) 01",
         "🇷🇺 俄罗斯 (Russia) 02",
-        "🇷🇺 俄罗斯 (Russia) 03"
+        "🇷🇺 俄罗斯 (Russia) 03",
+        "🇷🇺 俄罗斯 (Russia) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

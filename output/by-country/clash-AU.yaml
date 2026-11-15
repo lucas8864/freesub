@@ -5,54 +5,24 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇺 澳大利亚 (Australia) 01
-  server: 3.25.216.38
-  port: 443
-  udp: true
-  type: vless
-  uuid: 07268046-452e-4b31-b118-d9328ed7e1b9
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 493Uab3KLeQRjd7iTXRYva-mAABOel_BY7FQ8GP9plg
-    short-id: 8f5e5552a0b3244d
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
-- name: 🇦🇺 澳大利亚 (Australia) 02
   server: 45.63.30.142
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   sni: connectwithemployerstohireyouridealteam.com
-  skip-cert-verify: true
-- name: 🇦🇺 澳大利亚 (Australia) 03
-  server: zfapi.zalolink.com
-  port: 54528
-  udp: true
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: 7GvJVbR6BRhtrc8-rcZvB8qTFUF1LPeM_MmoZ04mBxo
-    short-id: 54cca3c1c1c7
-  servername: www.apple.com
-  client-fingerprint: ios
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
-  - 🇦🇺 澳大利亚 (Australia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01
-  - 🇦🇺 澳大利亚 (Australia) 02
-  - 🇦🇺 澳大利亚 (Australia) 03
 rules:
 - MATCH,PROXIES

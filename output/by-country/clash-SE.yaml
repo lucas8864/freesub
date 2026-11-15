@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇪 瑞典 (Sweden) 01
-  server: 62.182.193.228
+  server: 70.34.212.124
   port: 8388
   udp: true
   type: ss
-  cipher: chacha20-ietf-poly1305
-  password: 2e555e46dbc421452416834962fd014f
+  cipher: aes-256-gcm
+  password: AxIYWtskJWIIaefW
 - name: 🇸🇪 瑞典 (Sweden) 02
   server: 138.199.55.243
   port: 19999
@@ -19,13 +19,26 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 03
-  server: 70.34.212.124
-  port: 8388
+  server: 194.59.250.52
+  port: 18501
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: AxIYWtskJWIIaefW
+  cipher: aes-128-gcm
+  password: 517403753b63fd4fac88986bf98b11e0
 - name: 🇸🇪 瑞典 (Sweden) 04
+  server: 138.124.86.230
+  port: 48115
+  udp: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  tls: true
+  servername: 138-124-86-230.sslip.io
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 05
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -36,32 +49,13 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 05
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 06
-  server: 3fb2b6t.se1.h1clayd.click
-  port: 443
+  server: 62.182.193.228
+  port: 8388
   udp: true
-  type: vless
-  uuid: 632cd343-1e8f-4bf6-a9a2-20ada1f6970f
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: XQWaIMBPo0mpWs3MooxxkjWNSgxnkIESd_2PnR8_2HA
-    short-id: 1061f1b1cdaad3ad
-  servername: 3fb2b6t.se1.h1clayd.click
-  client-fingerprint: firefox
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 2e555e46dbc421452416834962fd014f
 - name: 🇸🇪 瑞典 (Sweden) 07
   server: 95.143.196.97
   port: 443
