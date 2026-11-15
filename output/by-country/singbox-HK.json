@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇭🇰 中国香港 (Hong Kong) 01",
+      "server": "213.176.92.148",
+      "server_port": 40647,
+      "method": "aes-256-gcm",
+      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
       "server": "202.146.222.174",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
@@ -17,35 +25,43 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 02",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
       "server": "202.146.222.29",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "https://t.me/wangcai2≡ƒç¿≡ƒç│",
+        "server_name": "202.146.222.29",
         "insecure": true
       }
     },
     {
       "type": "hysteria2",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 03",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
       "server": "202.146.222.89",
       "server_port": 443,
       "password": "H7mP2xY9kJ4nQ8wR5tF6vB3z",
       "tls": {
         "enabled": true,
-        "server_name": "202.146.222.89",
+        "server_name": "vk.com",
         "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 04",
-      "server": "213.176.92.148",
-      "server_port": 40647,
-      "method": "aes-256-gcm",
-      "password": "DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY="
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05",
+      "server": "152.32.254.68",
+      "server_port": 5010,
+      "password": "eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ",
+      "tls": {
+        "enabled": true,
+        "server_name": "nas.aizhzo.com",
+        "insecure": false
+      },
+      "obfs": {
+        "type": "salamander",
+        "password": "7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9"
+      }
     },
     {
       "type": "selector",
@@ -55,7 +71,8 @@
         "🇭🇰 中国香港 (Hong Kong) 01",
         "🇭🇰 中国香港 (Hong Kong) 02",
         "🇭🇰 中国香港 (Hong Kong) 03",
-        "🇭🇰 中国香港 (Hong Kong) 04"
+        "🇭🇰 中国香港 (Hong Kong) 04",
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ]
     },
     {
@@ -65,7 +82,8 @@
         "🇭🇰 中国香港 (Hong Kong) 01",
         "🇭🇰 中国香港 (Hong Kong) 02",
         "🇭🇰 中国香港 (Hong Kong) 03",
-        "🇭🇰 中国香港 (Hong Kong) 04"
+        "🇭🇰 中国香港 (Hong Kong) 04",
+        "🇭🇰 中国香港 (Hong Kong) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

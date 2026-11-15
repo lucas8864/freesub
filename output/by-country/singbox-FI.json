@@ -4,8 +4,64 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "132.243.163.119",
+      "server_port": 25749,
+      "uuid": "e460e79d-5dd9-451d-8d1a-a84c8b70c9a7",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "80aa2br.fi4.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE",
+          "short_id": "f6b3841eabafff9a"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 03",
+      "server": "2.29.113.205",
+      "server_port": 443,
+      "uuid": "ccbafd15-2628-4012-ae24-10710c3136ef",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "MdgMHOkXm_YWW66AxD1R_uaxyDUkRNat5SDnHV1KYGg",
+          "short_id": "25b28986fdffdb86"
+        }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇫🇮 芬兰 (Finland) 04",
       "server": "177.202.65.158",
       "server_port": 443,
       "password": "247802ca-0fbb-428a-b807-91a6e571b5c7",
@@ -21,37 +77,38 @@
     },
     {
       "type": "hysteria2",
-      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "tag": "🇫🇮 芬兰 (Finland) 05",
       "server": "94.183.164.119",
       "server_port": 24433,
       "password": "549766c3-fa5f-471e-8031-ffc1f8d5064f",
       "tls": {
         "enabled": true,
-        "server_name": "94.183.164.119",
-        "insecure": true
+        "server_name": "lakes.blog-forme.ru",
+        "insecure": false
       }
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 03",
-      "server": "45.144.234.157",
-      "server_port": 14430,
-      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "tag": "🇫🇮 芬兰 (Finland) 06",
+      "server": "84.22.150.39",
+      "server_port": 7443,
+      "uuid": "9d5cbb90-876b-448d-9874-27ab35bae6e7",
+      "tls": {
+        "enabled": true,
+        "server_name": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/@Marisa_kristi",
         "headers": {
-          "Host": "45.144.234.157"
+          "Host": "woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev"
         }
       }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇫🇮 芬兰 (Finland) 04",
-      "server": "65.108.240.210",
-      "server_port": 39018,
-      "uuid": "8ca123a8-720b-47c5-bd0c-637431418b09",
-      "security": "auto"
     },
     {
       "type": "selector",
@@ -61,7 +118,9 @@
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
         "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05",
+        "🇫🇮 芬兰 (Finland) 06"
       ]
     },
     {
@@ -71,7 +130,9 @@
         "🇫🇮 芬兰 (Finland) 01",
         "🇫🇮 芬兰 (Finland) 02",
         "🇫🇮 芬兰 (Finland) 03",
-        "🇫🇮 芬兰 (Finland) 04"
+        "🇫🇮 芬兰 (Finland) 04",
+        "🇫🇮 芬兰 (Finland) 05",
+        "🇫🇮 芬兰 (Finland) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,24 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 177.202.65.158
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
-  sni: hy2-fi2.snobvpn.online
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
-- name: 🇫🇮 芬兰 (Finland) 02
-  server: 94.183.164.119
-  port: 24433
-  udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: 94.183.164.119
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 03
   server: 45.144.234.157
   port: 14430
   udp: true
@@ -33,14 +15,65 @@ proxies:
     path: /vless
     headers:
       Host: 45.144.234.157
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: 65.108.240.210
-  port: 39018
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: 132.243.163.119
+  port: 25749
   udp: true
-  type: vmess
-  uuid: 8ca123a8-720b-47c5-bd0c-637431418b09
-  alterId: 0
-  cipher: auto
+  type: vless
+  uuid: e460e79d-5dd9-451d-8d1a-a84c8b70c9a7
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: nmjOhfpVZtk9W-3GZk5JY0B-OvCFkjP2RvTVBNZO7lE
+    short-id: f6b3841eabafff9a
+  servername: 80aa2br.fi4.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 2.29.113.205
+  port: 443
+  udp: true
+  type: vless
+  uuid: ccbafd15-2628-4012-ae24-10710c3136ef
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: MdgMHOkXm_YWW66AxD1R_uaxyDUkRNat5SDnHV1KYGg
+    short-id: 25b28986fdffdb86
+  servername: www.cloudflare.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: 177.202.65.158
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
+  sni: hy2-fi2.snobvpn.online
+  skip-cert-verify: true
+  obfs: salamander
+  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
+- name: 🇫🇮 芬兰 (Finland) 05
+  server: 94.183.164.119
+  port: 24433
+  udp: true
+  type: hysteria2
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: lakes.blog-forme.ru
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 06
+  server: 84.22.150.39
+  port: 7443
+  udp: true
+  type: vless
+  uuid: 9d5cbb90-876b-448d-9874-27ab35bae6e7
+  tls: true
+  servername: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /@Marisa_kristi
+    headers:
+      Host: woc0zvrf11w2endu.dphdlc1u77bs3y4kvussbuap4p576f1ws7igthq8zbf3.workers.dev
 proxy-groups:
 - name: PROXIES
   type: select
@@ -50,6 +83,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -59,5 +94,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
   - 🇫🇮 芬兰 (Finland) 04
+  - 🇫🇮 芬兰 (Finland) 05
+  - 🇫🇮 芬兰 (Finland) 06
 rules:
 - MATCH,PROXIES
