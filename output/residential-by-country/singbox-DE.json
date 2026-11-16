@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 01",
-      "server": "217.60.182.154",
+      "type": "shadowsocks",
+      "tag": "🇩🇪 德国 (Germany) 01 (移动家宽)",
+      "server": "8.220.81.25",
       "server_port": 443,
-      "password": "b36a14f8-fc3f-4142-968f-48031cf5f330",
-      "tls": {
-        "enabled": true,
-        "server_name": "hy2-eee-1.aloranode.top",
-        "insecure": false
-      }
+      "method": "2022-blake3-chacha20-poly1305",
+      "password": "8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇪🇪 爱沙尼亚 (Estonia) 01"
+        "🇩🇪 德国 (Germany) 01 (移动家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇪🇪 爱沙尼亚 (Estonia) 01"
+        "🇩🇪 德国 (Germany) 01 (移动家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

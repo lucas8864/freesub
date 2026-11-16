@@ -5,19 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇱🇰 斯里兰卡 (Sri Lanka) 01",
-      "server": "170.114.45.6",
-      "server_port": 2096,
-      "uuid": "efd11a89-7506-44ce-95b6-6654859f155b",
-      "tls": {
-        "enabled": true,
-        "server_name": "pcloud.z-tas.com",
-        "insecure": false
-      },
+      "tag": "🇹🇭 泰国 (Thailand) 01",
+      "server": "www.true.th",
+      "server_port": 80,
+      "uuid": "f4c5605a-8424-441e-b23d-d6384d012c28",
       "transport": {
         "type": "ws",
+        "path": "/",
         "headers": {
-          "Host": "pcloud.z-tas.com"
+          "Host": "dcm4kwis2exkw.cloudfront.net"
         }
       }
     },
@@ -26,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇹🇭 泰国 (Thailand) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇰 斯里兰卡 (Sri Lanka) 01"
+        "🇹🇭 泰国 (Thailand) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

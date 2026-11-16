@@ -16,30 +16,17 @@ proxies:
     public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
   servername: cloudflare-dns.com
   client-fingerprint: firefox
-- name: 🇸🇨 塞舌尔 (Seychelles) 02
-  server: 188.225.24.192
-  port: 443
-  udp: true
-  type: vless
-  uuid: c0c949fc-2ed6-4597-b680-a1a3276ebf87
-  flow: xtls-rprx-vision
-  tls: true
-  servername: portal.bokovskay.app
-  skip-cert-verify: false
-  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇸🇨 塞舌尔 (Seychelles) 01
-  - 🇸🇨 塞舌尔 (Seychelles) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇸🇨 塞舌尔 (Seychelles) 01
-  - 🇸🇨 塞舌尔 (Seychelles) 02
 rules:
 - MATCH,PROXIES
