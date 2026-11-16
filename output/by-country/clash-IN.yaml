@@ -17,14 +17,20 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02
-  server: 13.140.56.100
-  port: 14430
+  server: 85.234.100.32
+  port: 443
   udp: true
   type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  uuid: c1208c5a-2350-0003-affd-fc41b4319286
+  tls: true
+  servername: decdn-28.nome-rkp.net
+  skip-cert-verify: false
+  client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /vless
+    path: /media/ws/
+    headers:
+      Host: decdn-28.nome-rkp.net
 - name: 🇮🇳 印度 (India) 03
   server: 13.140.253.35
   port: 443
@@ -40,6 +46,17 @@ proxies:
     path: /0175469f14317d82
     headers:
       Host: xray-dmr3b3hy-calm-maple-7.cloady.io
+- name: 🇮🇳 印度 (India) 04
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +65,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
+  - 🇮🇳 印度 (India) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +74,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
+  - 🇮🇳 印度 (India) 04
 rules:
 - MATCH,PROXIES

@@ -25,6 +25,19 @@ proxies:
   grpc-opts:
     grpc-service-name: vlgrpc
 - name: 🇷🇺 俄罗斯 (Russia) 03
+  server: 201.51.12.98
+  port: 443
+  udp: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  tls: true
+  servername: vps3.nemnogogo.com
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+- name: 🇷🇺 俄罗斯 (Russia) 04
   server: 185.39.204.117
   port: 10002
   udp: true
@@ -36,13 +49,6 @@ proxies:
   network: ws
   ws-opts:
     path: /vpnjantit
-- name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 90.156.203.62
-  port: 5112
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: VVlAff77CnAU43Aoc5j15Y
 proxy-groups:
 - name: PROXIES
   type: select
