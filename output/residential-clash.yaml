@@ -11,19 +11,12 @@ proxies:
   type: ss
   cipher: 2022-blake3-chacha20-poly1305
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇰🇷 韩国 (South Korea) 02 (家宽)
-  server: 49.254.204.133
-  port: 1774
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
-  server: fb00fe3d-toq2o0-tpkogt-1ryup.hk2.hyhuawei.com
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  server: 9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com
   port: 443
   udp: true
   type: vless
-  uuid: 3ee091ca-ab9c-11ef-a791-f23c9164ca5d
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
   tls: true
   reality-opts:
     public-key: c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo
@@ -35,15 +28,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
-  - 🇰🇷 韩国 (South Korea) 02 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇩🇪 德国 (Germany) 01 (移动家宽)
-  - 🇰🇷 韩国 (South Korea) 02 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
 rules:
 - MATCH,PROXIES

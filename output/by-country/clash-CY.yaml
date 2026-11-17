@@ -16,12 +16,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02
-  server: 45.86.60.174
-  port: 16443
-  udp: true
-  type: vless
-  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
-- name: 🇨🇾 塞浦路斯 (Cyprus) 03
   server: 194.55.167.133
   port: 443
   udp: true
@@ -34,6 +28,12 @@ proxies:
     short-id: 24f1fa53275b
   servername: cy1.gofizz.in
   client-fingerprint: firefox
+- name: 🇨🇾 塞浦路斯 (Cyprus) 03
+  server: 45.86.60.174
+  port: 16443
+  udp: true
+  type: vless
+  uuid: 13e541f3-d09d-4633-89df-8513db0ced20
 proxy-groups:
 - name: PROXIES
   type: select

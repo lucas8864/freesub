@@ -4,28 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01
-  server: www.true.th
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  server: 3h-kazakhstan1.09vpn.com
   port: 80
   udp: true
-  type: vless
-  uuid: f4c5605a-8424-441e-b23d-d6384d012c28
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /vmess/
     headers:
-      Host: dcm4kwis2exkw.cloudfront.net
+      Host: 3h-kazakhstan1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
 rules:
 - MATCH,PROXIES
