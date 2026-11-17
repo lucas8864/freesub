@@ -5,21 +5,22 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "9e5f5c4b-tomdc0-tpolhi-1rgxu.hk2.hyhuawei.com",
+      "tag": "🇷🇴 罗马尼亚 (Romania) 01",
+      "server": "46.28.67.55",
       "server_port": 443,
-      "uuid": "ea93064c-176c-11f0-885d-f23c91cfbbc9",
+      "uuid": "d1a6a033-fdbd-46a6-a177-3370ba042b9f",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "download.windowsupdate.com",
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "c9DdggKaJGSH7FN3JgGbi9ZvsUqOGGpIr7BhzTWeTCo",
-          "short_id": ""
+          "public_key": "i2dJ1_XGDpp50qpEclh6SWSWkxt4B0t2hi2qOVQbeSU",
+          "short_id": "d06d78e974491b6e"
         }
       }
     },
@@ -28,14 +29,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇷🇴 罗马尼亚 (Romania) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇷🇴 罗马尼亚 (Romania) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
