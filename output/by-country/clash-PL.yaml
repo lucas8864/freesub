@@ -5,6 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
+  server: 45.194.66.177
+  port: 443
+  udp: true
+  type: vless
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 31tawwo0.virtual-network.lol
+  skip-cert-verify: true
+- name: 🇵🇱 波兰 (Poland) 02
+  server: 144.31.0.101
+  port: 443
+  udp: true
+  type: vless
+  uuid: 955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 1eEtiZY5qDDosntp-9_xFnOIvOBzHy4d3-eA7v11qx0
+  servername: gmtrtb.wey-land.net
+  client-fingerprint: chrome
+- name: 🇵🇱 波兰 (Poland) 03
   server: 80.47.10.106
   port: 443
   udp: true
@@ -16,17 +38,7 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: pl8.galioncc.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 179.253.101.162
-  port: 443
-  udp: true
-  type: vless
-  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
-  flow: xtls-rprx-vision
-  tls: true
-  servername: app.streamru17.net
-  skip-cert-verify: false
-- name: 🇵🇱 波兰 (Poland) 03
+- name: 🇵🇱 波兰 (Poland) 04
   server: 54.37.131.126
   port: 80
   udp: true
@@ -39,33 +51,6 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 04
-  server: 185.253.7.22
-  port: 443
-  udp: true
-  type: vless
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  tls: true
-  servername: clover.filnex.baby
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
-    headers:
-      Host: clover.filnex.baby
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 185.253.7.22
-  port: 443
-  udp: true
-  type: vless
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  tls: true
-  servername: clover.filnex.baby
-  skip-cert-verify: true
-  network: ws
-  ws-opts:
-    path: /api/de6/stream
 proxy-groups:
 - name: PROXIES
   type: select
@@ -75,7 +60,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
-  - 🇵🇱 波兰 (Poland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -85,6 +69,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02
   - 🇵🇱 波兰 (Poland) 03
   - 🇵🇱 波兰 (Poland) 04
-  - 🇵🇱 波兰 (Poland) 05
 rules:
 - MATCH,PROXIES

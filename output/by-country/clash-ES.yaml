@@ -12,36 +12,33 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 02
-  server: 66.163.118.103
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇪🇸 西班牙 (Spain) 03
   server: 167.17.71.167
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇪🇸 西班牙 (Spain) 03
+  server: 66.163.118.103
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇪🇸 西班牙 (Spain) 04
-  server: 66.163.118.203
+  server: 185.176.9.26
   port: 443
   udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: blog.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Qxpi1A9yJXwgZ1ycBrasKBCrX3qkRJ646U28a-99WBE
+    short-id: 85750bd7
+  servername: es1.gofizz.in
+  client-fingerprint: firefox
 - name: 🇪🇸 西班牙 (Spain) 05
-  server: 66.163.118.251
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: resources.discovergreatjobsandadvanceyourcareer.com
-  skip-cert-verify: false
-- name: 🇪🇸 西班牙 (Spain) 06
   server: 46.28.71.247
   port: 443
   udp: true
@@ -54,6 +51,43 @@ proxies:
     short-id: 0dfc23fe80778c00
   servername: www.cloudflare.com
   client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 06
+  server: 66.163.118.62
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: courses.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 07
+  server: 66.163.118.115
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
+- name: 🇪🇸 西班牙 (Spain) 08
+  server: 196.196.149.81
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4201786b-d99b-4147-a5f0-20d47acddb81
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE
+    short-id: 42426c882c5fcd41
+  servername: 7aa271t.es1.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇪🇸 西班牙 (Spain) 09
+  server: 66.163.118.166
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: learn.discovergreatjobsandadvanceyourcareer.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -65,6 +99,9 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
   - 🇪🇸 西班牙 (Spain) 06
+  - 🇪🇸 西班牙 (Spain) 07
+  - 🇪🇸 西班牙 (Spain) 08
+  - 🇪🇸 西班牙 (Spain) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +113,8 @@ proxy-groups:
   - 🇪🇸 西班牙 (Spain) 04
   - 🇪🇸 西班牙 (Spain) 05
   - 🇪🇸 西班牙 (Spain) 06
+  - 🇪🇸 西班牙 (Spain) 07
+  - 🇪🇸 西班牙 (Spain) 08
+  - 🇪🇸 西班牙 (Spain) 09
 rules:
 - MATCH,PROXIES
