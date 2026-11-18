@@ -5,29 +5,6 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 195.3.223.125
-  port: 443
-  udp: true
-  type: vless
-  uuid: a30903dc-1bf0-4be5-8b1b-603a3a56211c
-  tls: true
-  reality-opts:
-    public-key: drl7nndYdfzZY1aQ0eUAWmNV0nsHig2uDnu9siy9biQ
-    short-id: a7c92e4b10d6f835
-  servername: api-net-ctl.galioncc.com
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 02
-  server: 45.194.66.177
-  port: 443
-  udp: true
-  type: vless
-  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
-  flow: xtls-rprx-vision
-  tls: true
-  servername: 31tawwo0.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 03
   server: 80.47.10.106
   port: 443
   udp: true
@@ -39,7 +16,17 @@ proxies:
     short-id: a7c92e4b10d6f835
   servername: pl8.galioncc.com
   client-fingerprint: firefox
-- name: 🇵🇱 波兰 (Poland) 04
+- name: 🇵🇱 波兰 (Poland) 02
+  server: 179.253.101.162
+  port: 443
+  udp: true
+  type: vless
+  uuid: fd90e601-a56c-42b8-aab7-aa02d26fcb04
+  flow: xtls-rprx-vision
+  tls: true
+  servername: app.streamru17.net
+  skip-cert-verify: false
+- name: 🇵🇱 波兰 (Poland) 03
   server: 54.37.131.126
   port: 80
   udp: true
@@ -52,19 +39,33 @@ proxies:
     path: /
     headers:
       Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
-- name: 🇵🇱 波兰 (Poland) 05
-  server: 82.118.22.161
+- name: 🇵🇱 波兰 (Poland) 04
+  server: 185.253.7.22
   port: 443
   udp: true
   type: vless
-  uuid: 05488656-d4bf-4634-8b2e-e4ff5a56c7e2
-  flow: xtls-rprx-vision
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
   tls: true
-  reality-opts:
-    public-key: xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E
-    short-id: fa3ea655619a3e78
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+  servername: clover.filnex.baby
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
+    headers:
+      Host: clover.filnex.baby
+- name: 🇵🇱 波兰 (Poland) 05
+  server: 185.253.7.22
+  port: 443
+  udp: true
+  type: vless
+  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
+  tls: true
+  servername: clover.filnex.baby
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /api/de6/stream
 proxy-groups:
 - name: PROXIES
   type: select

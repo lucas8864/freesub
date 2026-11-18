@@ -13,8 +13,7 @@ proxies:
   flow: xtls-rprx-vision
   tls: true
   servername: 10w0wjw.virtual-network.lol
-  skip-cert-verify: false
-  client-fingerprint: firefox
+  skip-cert-verify: true
 - name: 🇨🇾 塞浦路斯 (Cyprus) 02
   server: 45.86.60.174
   port: 16443

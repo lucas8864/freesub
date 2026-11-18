@@ -5,20 +5,14 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇷 韩国 (South Korea) 01
-  server: 49.254.204.133
-  port: 1774
+  server: 146.56.112.110
+  port: 8888
   udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: 1234!@#$
+  type: vmess
+  uuid: e7c302f3-90d6-42dd-9d7d-94a3683a3707
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 02
-  server: 211.178.105.134
-  port: 6123
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: qwerREWQ@@
-- name: 🇰🇷 韩国 (South Korea) 03
   server: 152.70.237.123
   port: 2053
   udp: true
@@ -26,7 +20,23 @@ proxies:
   password: maintell
   sni: 152.70.237.123
   skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 03
+  server: 129.154.61.196
+  port: 800
+  udp: true
+  type: vmess
+  uuid: a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0
+  alterId: 0
+  cipher: auto
 - name: 🇰🇷 韩国 (South Korea) 04
+  server: 158.247.253.243
+  port: 443
+  udp: true
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 05
   server: 132.226.226.189
   port: 50160
   udp: true
@@ -34,23 +44,17 @@ proxies:
   password: 1671a252e2a97dc2bda4e515475931da
   sni: 132.226.226.189
   skip-cert-verify: true
-- name: 🇰🇷 韩国 (South Korea) 05
-  server: 158.247.253.243
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectgraduateswithjobopeningsandgrowprofessionally.com
-  skip-cert-verify: false
 - name: 🇰🇷 韩国 (South Korea) 06
-  server: 152.69.226.63
-  port: 25555
+  server: 132.145.80.230
+  port: 80
   udp: true
-  type: vless
-  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  type: vmess
+  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /
+    path: /cctv13.m3u8
 - name: 🇰🇷 韩国 (South Korea) 07
   server: 152.69.231.175
   port: 50160
@@ -68,6 +72,23 @@ proxies:
   sni: 152.67.200.82
   skip-cert-verify: true
 - name: 🇰🇷 韩国 (South Korea) 09
+  server: 154.90.62.70
+  port: 56127
+  udp: true
+  type: trojan
+  password: p5jTPcffLgi4gaNOJd2KUTb9YEPBBD5B
+  sni: 154.90.62.70
+  skip-cert-verify: true
+- name: 🇰🇷 韩国 (South Korea) 10
+  server: 152.69.226.63
+  port: 25555
+  udp: true
+  type: vless
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  network: ws
+  ws-opts:
+    path: /
+- name: 🇰🇷 韩国 (South Korea) 11
   server: 140.238.2.250
   port: 443
   udp: true
@@ -75,17 +96,6 @@ proxies:
   uuid: 41a7089a-040b-4538-8b8d-010902405bde
   alterId: 0
   cipher: auto
-- name: 🇰🇷 韩国 (South Korea) 10
-  server: 132.145.80.230
-  port: 80
-  udp: true
-  type: vmess
-  uuid: 5155860e-d07d-46c3-9128-3afbd84626c7
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /cctv13.m3u8
 proxy-groups:
 - name: PROXIES
   type: select
@@ -101,6 +111,7 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08
   - 🇰🇷 韩国 (South Korea) 09
   - 🇰🇷 韩国 (South Korea) 10
+  - 🇰🇷 韩国 (South Korea) 11
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -116,5 +127,6 @@ proxy-groups:
   - 🇰🇷 韩国 (South Korea) 08
   - 🇰🇷 韩国 (South Korea) 09
   - 🇰🇷 韩国 (South Korea) 10
+  - 🇰🇷 韩国 (South Korea) 11
 rules:
 - MATCH,PROXIES
