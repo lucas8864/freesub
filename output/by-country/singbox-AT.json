@@ -12,29 +12,8 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vless",
-      "tag": "🇦🇹 奥地利 (Austria) 02",
-      "server": "67.159.17.252",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sdfsdfsf.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZSxFQHVt_avgBDW1Rbbn0SBDidOEftqHgAF9NH565kM",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "vmess",
-      "tag": "🇦🇹 奥地利 (Austria) 03",
+      "tag": "🇦🇹 奥地利 (Austria) 02",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -44,6 +23,14 @@
         "server_name": "xmfhlpy.com",
         "insecure": false
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇦🇹 奥地利 (Austria) 03",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
     },
     {
       "type": "selector",

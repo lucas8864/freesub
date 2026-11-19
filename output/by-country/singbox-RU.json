@@ -48,83 +48,6 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 03",
-      "server": "81.200.152.153",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "gmbasdasd.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "t2iopaZn9-fADmIi4taXbGUV6wFTFku4eGi8KISuZAM",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 04",
-      "server": "89.223.124.93",
-      "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "dfgdfgb.wey-land.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "rLkjhzhSAJrey5Qv3624_5B-MpViafV2dDdDCnqn_l4",
-          "short_id": ""
-        }
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05",
-      "server": "103.88.243.142",
-      "server_port": 11592,
-      "password": "41edb44c8e",
-      "tls": {
-        "enabled": true,
-        "server_name": "srv-17e124.21freedom.net",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06",
-      "server": "201.51.12.98",
-      "server_port": 443,
-      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
-      "tls": {
-        "enabled": true,
-        "server_name": "vps3.nemnogogo.com",
-        "insecure": false,
-        "alpn": [
-          "h2"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "mobile.api.Event"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07",
       "server": "201.24.121.243",
       "server_port": 443,
       "uuid": "32b5ca9b-3f81-4031-965d-e8b074216e8d",
@@ -147,23 +70,34 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 08",
-      "server": "94.228.123.26",
+      "tag": "🇷🇺 俄罗斯 (Russia) 04",
+      "server": "201.51.12.98",
       "server_port": 443,
-      "uuid": "955d8dc7-5e3b-40ac-b2bb-bd8aa20fc7e6",
-      "flow": "xtls-rprx-vision",
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
       "tls": {
         "enabled": true,
-        "server_name": "ghjgdfgdfghjmb.wey-land.net",
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "qq"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "cYVz2YZI-PELLGGm38rrGcipPvnWcSMswOh4j536bmg",
-          "short_id": ""
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "103.88.243.142",
+      "server_port": 11592,
+      "password": "41edb44c8e",
+      "tls": {
+        "enabled": true,
+        "server_name": "srv-17e124.21freedom.net",
+        "insecure": true
       }
     },
     {
@@ -175,10 +109,7 @@
         "🇷🇺 俄罗斯 (Russia) 02",
         "🇷🇺 俄罗斯 (Russia) 03",
         "🇷🇺 俄罗斯 (Russia) 04",
-        "🇷🇺 俄罗斯 (Russia) 05",
-        "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07",
-        "🇷🇺 俄罗斯 (Russia) 08"
+        "🇷🇺 俄罗斯 (Russia) 05"
       ]
     },
     {
@@ -189,10 +120,7 @@
         "🇷🇺 俄罗斯 (Russia) 02",
         "🇷🇺 俄罗斯 (Russia) 03",
         "🇷🇺 俄罗斯 (Russia) 04",
-        "🇷🇺 俄罗斯 (Russia) 05",
-        "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07",
-        "🇷🇺 俄罗斯 (Russia) 08"
+        "🇷🇺 俄罗斯 (Russia) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

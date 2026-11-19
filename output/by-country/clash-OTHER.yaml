@@ -4,31 +4,32 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇮🇩 印尼 (Indonesia) 01
-  server: 104.17.3.81
+- name: 🌐 其他地区 (Other) 01
+  server: 104.16.111.102
   port: 443
   udp: true
   type: vless
-  uuid: 12d67d2b-ae5c-4d56-9f14-d71d96f7826f
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   tls: true
-  servername: natan.srpcom.cloud
+  servername: jp3.yohototo.top
   skip-cert-verify: false
+  client-fingerprint: ios
   network: ws
   ws-opts:
-    path: /vlessws
+    path: /tyxyws
     headers:
-      Host: natan.srpcom.cloud
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇮🇩 印尼 (Indonesia) 01
+  - 🌐 其他地区 (Other) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇮🇩 印尼 (Indonesia) 01
+  - 🌐 其他地区 (Other) 01
 rules:
 - MATCH,PROXIES
