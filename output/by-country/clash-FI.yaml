@@ -5,11 +5,26 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01
-  server: 196.196.204.148
+  server: 185.88.101.105
   port: 443
   udp: true
   type: vless
-  uuid: 63aa95e5-3b36-4e53-a86f-7df59652e994
+  uuid: f2341274-8dd8-4b80-95fd-780641f6f2da
+  tls: true
+  reality-opts:
+    public-key: aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ
+    short-id: 0858af97f4e7324d
+  servername: fl13.svinka.pro
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: fl13svinkapro-grpc
+- name: 🇫🇮 芬兰 (Finland) 02
+  server: 179.254.126.220
+  port: 443
+  udp: true
+  type: vless
+  uuid: d3863595-3afe-4a74-8305-612ab69cd21c
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
@@ -17,21 +32,32 @@ proxies:
     short-id: 597e1c279d224774
   servername: 4c980ft.fi15.h1clayd.click
   client-fingerprint: firefox
-- name: 🇫🇮 芬兰 (Finland) 02
-  server: 162.159.160.117
-  port: 2083
+- name: 🇫🇮 芬兰 (Finland) 03
+  server: 45.144.234.157
+  port: 14430
   udp: true
   type: vless
-  uuid: a6ad7987-f17e-41fa-a752-72db9a725eb2
-  tls: true
-  servername: vipfree.dr-ping.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 59b0d30e-9b29-4fda-a35c-b2901ec32db7
   network: ws
   ws-opts:
-    path: /
+    path: /vless
     headers:
-      Host: vipfree.dr-ping.ir
+      Host: 45.144.234.157
+- name: 🇫🇮 芬兰 (Finland) 04
+  server: f0f0bet.fi2.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 537d8ade-134d-4ec2-905c-0187e7e1e22e
+  tls: true
+  reality-opts:
+    public-key: _oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY
+    short-id: cf2a731a5f2dc451
+  servername: f0f0bet.fi2.h1clayd.click
+  client-fingerprint: qq
+  network: grpc
+  grpc-opts:
+    grpc-service-name: ''
 proxy-groups:
 - name: PROXIES
   type: select
@@ -39,6 +65,8 @@ proxy-groups:
   - AUTO
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
+  - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -46,5 +74,7 @@ proxy-groups:
   proxies:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
+  - 🇫🇮 芬兰 (Finland) 03
+  - 🇫🇮 芬兰 (Finland) 04
 rules:
 - MATCH,PROXIES

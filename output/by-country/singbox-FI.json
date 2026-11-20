@@ -6,9 +6,33 @@
     {
       "type": "vless",
       "tag": "🇫🇮 芬兰 (Finland) 01",
-      "server": "196.196.204.148",
+      "server": "185.88.101.105",
       "server_port": 443,
-      "uuid": "63aa95e5-3b36-4e53-a86f-7df59652e994",
+      "uuid": "f2341274-8dd8-4b80-95fd-780641f6f2da",
+      "tls": {
+        "enabled": true,
+        "server_name": "fl13.svinka.pro",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "aFsY-EZjSNTomlAFShKwQIQMJ5pHiZQXXJpWvcz8WkQ",
+          "short_id": "0858af97f4e7324d"
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "fl13svinkapro-grpc"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 02",
+      "server": "179.254.126.220",
+      "server_port": 443,
+      "uuid": "d3863595-3afe-4a74-8305-612ab69cd21c",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -26,25 +50,39 @@
     },
     {
       "type": "vless",
-      "tag": "🇫🇮 芬兰 (Finland) 02",
-      "server": "162.159.160.117",
-      "server_port": 2083,
-      "uuid": "a6ad7987-f17e-41fa-a752-72db9a725eb2",
+      "tag": "🇫🇮 芬兰 (Finland) 03",
+      "server": "45.144.234.157",
+      "server_port": 14430,
+      "uuid": "59b0d30e-9b29-4fda-a35c-b2901ec32db7",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "45.144.234.157"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇫🇮 芬兰 (Finland) 04",
+      "server": "f0f0bet.fi2.h1clayd.click",
+      "server_port": 443,
+      "uuid": "537d8ade-134d-4ec2-905c-0187e7e1e22e",
       "tls": {
         "enabled": true,
-        "server_name": "vipfree.dr-ping.ir",
-        "insecure": false,
+        "server_name": "f0f0bet.fi2.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "qq"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "_oCg5rCW6XTxriBPzbd_AX0os6QhenVYO9cbrsDSyRY",
+          "short_id": "cf2a731a5f2dc451"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "vipfree.dr-ping.ir"
-        }
+        "type": "grpc"
       }
     },
     {
@@ -53,7 +91,9 @@
       "outbounds": [
         "auto",
         "🇫🇮 芬兰 (Finland) 01",
-        "🇫🇮 芬兰 (Finland) 02"
+        "🇫🇮 芬兰 (Finland) 02",
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04"
       ]
     },
     {
@@ -61,7 +101,9 @@
       "tag": "auto",
       "outbounds": [
         "🇫🇮 芬兰 (Finland) 01",
-        "🇫🇮 芬兰 (Finland) 02"
+        "🇫🇮 芬兰 (Finland) 02",
+        "🇫🇮 芬兰 (Finland) 03",
+        "🇫🇮 芬兰 (Finland) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,29 +4,19 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01",
-      "server": "82.40.63.138",
+      "server": "45.194.66.177",
       "server_port": 443,
-      "password": "ca60984f-b1f0-4073-bd33-4c75168f749a",
+      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "kraw-pl-4.fantoff.online",
-        "insecure": true
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇵🇱 波兰 (Poland) 02",
-      "server": "54.37.131.126",
-      "server_port": 80,
-      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/",
-        "headers": {
-          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        "server_name": "31tawwo0.virtual-network.lol",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
         }
       }
     },
@@ -35,16 +25,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01",
-        "🇵🇱 波兰 (Poland) 02"
+        "🇵🇱 波兰 (Poland) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01",
-        "🇵🇱 波兰 (Poland) 02"
+        "🇵🇱 波兰 (Poland) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
