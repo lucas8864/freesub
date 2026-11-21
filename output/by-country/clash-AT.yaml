@@ -12,6 +12,13 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇦🇹 奥地利 (Austria) 02
+  server: 152.53.1.57
+  port: 8388
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: AdawffFMHymlasRb0VOP3HFf7sTG5sJx
+- name: 🇦🇹 奥地利 (Austria) 03
   server: 154.47.19.225
   port: 1270
   udp: true
@@ -22,6 +29,20 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇦🇹 奥地利 (Austria) 04
+  server: 212.109.193.194
+  port: 2096
+  udp: true
+  type: vless
+  uuid: e436321f-24a9-4c38-b935-7d7dee0c3f68
+  tls: true
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+  servername: id.vk.com
+  client-fingerprint: firefox
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
 proxy-groups:
 - name: PROXIES
   type: select
@@ -29,6 +50,8 @@ proxy-groups:
   - AUTO
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
+  - 🇦🇹 奥地利 (Austria) 03
+  - 🇦🇹 奥地利 (Austria) 04
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -36,5 +59,7 @@ proxy-groups:
   proxies:
   - 🇦🇹 奥地利 (Austria) 01
   - 🇦🇹 奥地利 (Austria) 02
+  - 🇦🇹 奥地利 (Austria) 03
+  - 🇦🇹 奥地利 (Austria) 04
 rules:
 - MATCH,PROXIES

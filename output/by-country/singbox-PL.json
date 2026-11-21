@@ -21,18 +21,58 @@
       }
     },
     {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 02",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03",
+      "server": "82.118.22.161",
+      "server_port": 443,
+      "uuid": "05488656-d4bf-4634-8b2e-e4ff5a56c7e2",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "xY1KpNxaIGmi6jfeudYQ_aaLGQqWK_uHStnwUFd2_2E",
+          "short_id": "fa3ea655619a3e78"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇱 波兰 (Poland) 01"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇱 波兰 (Poland) 01"
+        "🇵🇱 波兰 (Poland) 01",
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

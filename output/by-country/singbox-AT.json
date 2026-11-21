@@ -12,8 +12,16 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇦🇹 奥地利 (Austria) 02",
+      "server": "152.53.1.57",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "AdawffFMHymlasRb0VOP3HFf7sTG5sJx"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇦🇹 奥地利 (Austria) 03",
       "server": "154.47.19.225",
       "server_port": 1270,
       "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
@@ -25,12 +33,38 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 04",
+      "server": "212.109.193.194",
+      "server_port": 2096,
+      "uuid": "e436321f-24a9-4c38-b935-7d7dee0c3f68",
+      "tls": {
+        "enabled": true,
+        "server_name": "id.vk.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc",
+          "short_id": ""
+        }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless-grpc-reality"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 (Austria) 02",
+        "🇦🇹 奥地利 (Austria) 03",
+        "🇦🇹 奥地利 (Austria) 04"
       ]
     },
     {
@@ -38,7 +72,9 @@
       "tag": "auto",
       "outbounds": [
         "🇦🇹 奥地利 (Austria) 01",
-        "🇦🇹 奥地利 (Austria) 02"
+        "🇦🇹 奥地利 (Austria) 02",
+        "🇦🇹 奥地利 (Austria) 03",
+        "🇦🇹 奥地利 (Austria) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

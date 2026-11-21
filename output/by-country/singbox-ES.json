@@ -30,6 +30,18 @@
     {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 04",
+      "server": "66.163.118.40",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "cdn.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 05",
       "server": "66.163.118.131",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -40,57 +52,8 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05",
-      "server": "196.199.122.2",
-      "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "7aa271t.es1.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE",
-          "short_id": "42426c882c5fcd41"
-        }
-      }
-    },
-    {
       "type": "trojan",
       "tag": "🇪🇸 西班牙 (Spain) 06",
-      "server": "66.163.118.62",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 07",
-      "server": "66.163.118.40",
-      "server_port": 443,
-      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
-      "tls": {
-        "enabled": true,
-        "server_name": "cdn.discovergreatjobsandadvanceyourcareer.com",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 08",
       "server": "66.163.118.244",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
@@ -102,14 +65,68 @@
     },
     {
       "type": "trojan",
-      "tag": "🇪🇸 西班牙 (Spain) 09",
-      "server": "66.163.118.244",
+      "tag": "🇪🇸 西班牙 (Spain) 07",
+      "server": "66.163.118.251",
       "server_port": 443,
       "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
       "tls": {
         "enabled": true,
-        "server_name": "66.163.118.244",
+        "server_name": "resources.discovergreatjobsandadvanceyourcareer.com",
         "insecure": false
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "🇪🇸 西班牙 (Spain) 08",
+      "server": "66.163.118.62",
+      "server_port": 443,
+      "password": "0ab6c98dae3b48e8b9c4a776b6c9c19a",
+      "tls": {
+        "enabled": true,
+        "server_name": "courses.discovergreatjobsandadvanceyourcareer.com",
+        "insecure": false
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 09",
+      "server": "196.196.149.81",
+      "server_port": 443,
+      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "7aa271t.es1.h1clayd.click",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "ZSmetD4e9QG5CiXhniHg5HJB68L4kwbgAkJmMHtVwEE",
+          "short_id": "42426c882c5fcd41"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 10",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
       }
     },
     {
@@ -125,7 +142,8 @@
         "🇪🇸 西班牙 (Spain) 06",
         "🇪🇸 西班牙 (Spain) 07",
         "🇪🇸 西班牙 (Spain) 08",
-        "🇪🇸 西班牙 (Spain) 09"
+        "🇪🇸 西班牙 (Spain) 09",
+        "🇪🇸 西班牙 (Spain) 10"
       ]
     },
     {
@@ -140,7 +158,8 @@
         "🇪🇸 西班牙 (Spain) 06",
         "🇪🇸 西班牙 (Spain) 07",
         "🇪🇸 西班牙 (Spain) 08",
-        "🇪🇸 西班牙 (Spain) 09"
+        "🇪🇸 西班牙 (Spain) 09",
+        "🇪🇸 西班牙 (Spain) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

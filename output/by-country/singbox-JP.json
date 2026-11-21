@@ -6,7 +6,7 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 01",
-      "server": "149.22.87.204",
+      "server": "149.22.87.240",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
@@ -22,22 +22,47 @@
     {
       "type": "shadowsocks",
       "tag": "🇯🇵 日本 (Japan) 03",
-      "server": "149.22.87.240",
+      "server": "168.138.205.100",
+      "server_port": 53758,
+      "method": "aes-128-gcm",
+      "password": "Bwlqh7GcFB"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 04",
+      "server": "64.176.34.102",
+      "server_port": 46130,
+      "uuid": "477350b2-7536-4f38-ee21-020efdde2d1d",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 05",
+      "server": "149.22.87.204",
       "server_port": 443,
       "method": "aes-128-gcm",
       "password": "shadowsocks"
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 04",
-      "server": "84.247.155.196",
-      "server_port": 443,
-      "method": "aes-256-gcm",
-      "password": "3eOFeNssde7PYYMv"
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 06",
+      "server": "155.248.175.201",
+      "server_port": 23169,
+      "uuid": "f67b1159-a61f-4ae4-9844-0701b716a290",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "djj.zjlo.top",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 05",
+      "tag": "🇯🇵 日本 (Japan) 07",
       "server": "94.177.131.113",
       "server_port": 443,
       "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
@@ -48,75 +73,32 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 06",
-      "server": "138.3.208.26",
-      "server_port": 50160,
-      "password": "184cdec28da5a09450803c8debcd2cc9",
-      "tls": {
-        "enabled": true,
-        "server_name": "138.3.208.26",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 07",
-      "server": "8.211.175.236",
-      "server_port": 8443,
-      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
-      "tag": "🇯🇵 日本 (Japan) 08",
-      "server": "8.209.247.109",
-      "server_port": 443,
-      "password": "usqmqUKJFIlCmvkCNSY64L3k",
-      "tls": {
-        "enabled": true,
-        "server_name": "bing.com",
-        "insecure": true
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 09",
+      "tag": "🇯🇵 日本 (Japan) 08",
       "server": "84.247.155.196",
       "server_port": 80,
       "method": "aes-256-gcm",
       "password": "3eOFeNssde7PYYMv"
     },
     {
-      "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 10",
-      "server": "139.162.125.126",
-      "server_port": 443,
-      "uuid": "eb6cf336-03bd-4dac-9f2a-3e456389279e",
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 09",
+      "server": "138.3.208.26",
+      "server_port": 50160,
+      "password": "184cdec28da5a09450803c8debcd2cc9",
       "tls": {
         "enabled": true,
-        "server_name": "itunes.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg",
-          "short_id": "bd6e3e70"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/ws",
-        "headers": {
-          "Host": "itunes.apple.com"
-        }
+        "server_name": "1",
+        "insecure": true
       }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇯🇵 日本 (Japan) 10",
+      "server": "84.247.155.196",
+      "server_port": 443,
+      "method": "aes-256-gcm",
+      "password": "3eOFeNssde7PYYMv"
     },
     {
       "type": "vless",
@@ -148,9 +130,9 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 12",
-      "server": "172.105.203.15",
+      "server": "45.76.222.108",
       "server_port": 443,
-      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
+      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -160,8 +142,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
-          "short_id": "0784b134"
+          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
+          "short_id": "b5c85d2d"
         }
       },
       "transport": {
@@ -175,6 +157,33 @@
     {
       "type": "vless",
       "tag": "🇯🇵 日本 (Japan) 13",
+      "server": "139.162.125.126",
+      "server_port": 443,
+      "uuid": "eb6cf336-03bd-4dac-9f2a-3e456389279e",
+      "tls": {
+        "enabled": true,
+        "server_name": "itunes.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "mMLchVbQzhQ2bGV6wkg1LP5Q7eqL2hCVHHMT0B03dwg",
+          "short_id": "bd6e3e70"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws",
+        "headers": {
+          "Host": "itunes.apple.com"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇯🇵 日本 (Japan) 14",
       "server": "172.104.86.181",
       "server_port": 443,
       "uuid": "010431f3-04f6-4404-a801-b93bf2e3c2b2",
@@ -201,7 +210,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 14",
+      "tag": "🇯🇵 日本 (Japan) 15",
       "server": "149.28.29.156",
       "server_port": 443,
       "uuid": "aa1a9052-720f-4bb0-92be-21b6baf9f386",
@@ -228,10 +237,10 @@
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 15",
-      "server": "45.76.222.108",
+      "tag": "🇯🇵 日本 (Japan) 16",
+      "server": "172.105.203.15",
       "server_port": 443,
-      "uuid": "bd95a04e-e3e1-460e-b89d-e9a693d393e0",
+      "uuid": "c8c9b995-b4b9-4915-9c7d-dee94aa733ba",
       "tls": {
         "enabled": true,
         "server_name": "itunes.apple.com",
@@ -241,8 +250,8 @@
         },
         "reality": {
           "enabled": true,
-          "public_key": "-_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE",
-          "short_id": "b5c85d2d"
+          "public_key": "HyAx05nhCz5mXxVxWXU1TrWRKdpYE0MHF4-V-LtyhTA",
+          "short_id": "0784b134"
         }
       },
       "transport": {
@@ -254,43 +263,43 @@
       }
     },
     {
-      "type": "trojan",
-      "tag": "🇯🇵 日本 (Japan) 16",
-      "server": "oracle-tokyo-2.waverider.yingdigame.com",
-      "server_port": 443,
-      "password": "ec893967c30f4c3a8b6d4c975af95f45",
+      "type": "hysteria2",
+      "tag": "🇯🇵 日本 (Japan) 17",
+      "server": "8.211.175.236",
+      "server_port": 8443,
+      "password": "u63SxILNwtrQZ7Y1ZrFaZfsA",
       "tls": {
         "enabled": true,
-        "server_name": "oracle-tokyo-2.waverider.yingdigame.com",
-        "insecure": false
+        "server_name": "8.211.175.236",
+        "insecure": true
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇯🇵 日本 (Japan) 17",
-      "server": "jpa.123069.xyz",
-      "server_port": 53758,
-      "method": "aes-128-gcm",
-      "password": "Bwlqh7GcFB"
+      "type": "vmess",
+      "tag": "🇯🇵 日本 (Japan) 18",
+      "server": "168.110.63.247",
+      "server_port": 8081,
+      "uuid": "c3bde296-8e44-4b8c-a325-577d5b3cc7c8",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/vless"
+      }
     },
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 18",
-      "server": "104.16.10.135",
+      "tag": "🇯🇵 日本 (Japan) 19",
+      "server": "104.19.33.25",
       "server_port": 443,
       "uuid": "4e4f1f70-5e56-4a76-bb9d-db087f4690c4",
       "tls": {
         "enabled": true,
         "server_name": "jp3.yohototo.top",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "tyxyws",
+        "path": "/tyxyws",
         "headers": {
           "Host": "jp3.yohototo.top"
         }
@@ -318,7 +327,8 @@
         "🇯🇵 日本 (Japan) 15",
         "🇯🇵 日本 (Japan) 16",
         "🇯🇵 日本 (Japan) 17",
-        "🇯🇵 日本 (Japan) 18"
+        "🇯🇵 日本 (Japan) 18",
+        "🇯🇵 日本 (Japan) 19"
       ]
     },
     {
@@ -342,7 +352,8 @@
         "🇯🇵 日本 (Japan) 15",
         "🇯🇵 日本 (Japan) 16",
         "🇯🇵 日本 (Japan) 17",
-        "🇯🇵 日本 (Japan) 18"
+        "🇯🇵 日本 (Japan) 18",
+        "🇯🇵 日本 (Japan) 19"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
