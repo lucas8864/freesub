@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01",
-      "server": "in.smrtai.top",
+      "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
       "tls": {
@@ -14,7 +14,7 @@
         "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -31,43 +31,15 @@
       "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
       "transport": {
         "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 03",
-      "server": "13.140.253.35",
-      "server_port": 443,
-      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
-      "tls": {
-        "enabled": true,
-        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0175469f14317d82",
+        "path": "/vless",
         "headers": {
-          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
+          "Host": "13.140.56.100"
         }
       }
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇮🇳 印度 (India) 04",
-      "server": "172.105.39.124",
-      "server_port": 7002,
-      "method": "aes-256-gcm",
-      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "vmess",
-      "tag": "🇮🇳 印度 (India) 05",
+      "tag": "🇮🇳 印度 (India) 03",
       "server": "152.67.8.205",
       "server_port": 80,
       "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
@@ -75,6 +47,30 @@
       "transport": {
         "type": "ws"
       }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04",
+      "server": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+      "server_port": 443,
+      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/0175469f14317d82"
+      }
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇮🇳 印度 (India) 05",
+      "server": "172.105.39.124",
+      "server_port": 7002,
+      "method": "aes-256-gcm",
+      "password": "RexnBgU7EV5ADxG"
     },
     {
       "type": "selector",

@@ -10,7 +10,7 @@ proxies:
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: connectwithemployerstohireyouridealteam.com
+  sni: 45.63.30.142
   skip-cert-verify: true
 - name: 🇦🇺 澳大利亚 (Australia) 02
   server: 13.55.52.44
@@ -20,6 +20,21 @@ proxies:
   password: linlin-2026
   sni: 13.55.52.44
   skip-cert-verify: true
+- name: 🇦🇺 澳大利亚 (Australia) 03
+  server: 104.18.11.153
+  port: 443
+  udp: true
+  type: vless
+  uuid: debafe5b-6760-4b00-b0b2-ee30cbf769f0
+  tls: true
+  servername: portland-wins-robbie-skirt.trycloudflare.com
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /e0843c8ad581
+    headers:
+      Host: portland-wins-robbie-skirt.trycloudflare.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +42,7 @@ proxy-groups:
   - AUTO
   - 🇦🇺 澳大利亚 (Australia) 01
   - 🇦🇺 澳大利亚 (Australia) 02
+  - 🇦🇺 澳大利亚 (Australia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +50,6 @@ proxy-groups:
   proxies:
   - 🇦🇺 澳大利亚 (Australia) 01
   - 🇦🇺 澳大利亚 (Australia) 02
+  - 🇦🇺 澳大利亚 (Australia) 03
 rules:
 - MATCH,PROXIES

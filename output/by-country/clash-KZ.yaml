@@ -5,28 +5,57 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
-  server: 109.248.170.119
-  port: 13447
+  server: 144.31.90.235
+  port: 8445
   udp: true
   type: vless
-  uuid: b573cefb-7bc7-4a42-b407-b8b534e66773
+  uuid: cac10246-5b76-4809-9fd0-417c58a3ca90
+  flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: _0wM2ep44eAcrgf5PflKaBivknCWT6kMvQBQUoScCkE
-    short-id: '83'
-  servername: yahoo.com
-  client-fingerprint: chrome
+    public-key: 32eua16pKE179lLHv-VNZGrX287qQFMXA3n0VgEzNTQ
+    short-id: b3a633bc754b648d
+  servername: portal.gifmems.com
+  client-fingerprint: firefox
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
+  server: 38.107.234.57
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
+    headers:
+      Host: 3h-kazakhstan1.09vpn.com
+- name: 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
+  server: 3h-kazakhstan1.09vpn.com
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 567f4be5-12ab-42e1-b8d9-db6fd1fdd31c
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess/
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇰🇿 哈萨克斯坦 (Kazakhstan) 01
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 02
+  - 🇰🇿 哈萨克斯坦 (Kazakhstan) 03
 rules:
 - MATCH,PROXIES

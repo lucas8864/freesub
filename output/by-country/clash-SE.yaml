@@ -12,36 +12,6 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 62.93.166.184
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 03
-  server: 5.178.109.174
-  port: 14430
-  udp: true
-  type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  network: ws
-  ws-opts:
-    path: /vless
-    headers:
-      Host: 5.178.109.174
-- name: 🇸🇪 瑞典 (Sweden) 04
-  server: 95.143.196.97
-  port: 443
-  udp: true
-  type: trojan
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  sni: connect-se.mimowhat.online
-  skip-cert-verify: false
-- name: 🇸🇪 瑞典 (Sweden) 05
   server: 138.124.86.230
   port: 48115
   udp: true
@@ -54,21 +24,70 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
+- name: 🇸🇪 瑞典 (Sweden) 03
+  server: 62.93.166.184
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 04
+  server: 5.178.109.174
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 05
+  server: sonau.yaremonta.loc.cc
+  port: 8080
+  udp: true
+  type: vless
+  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  network: ws
+  ws-opts:
+    path: /vless
 - name: 🇸🇪 瑞典 (Sweden) 06
-  server: 92.223.84.254
+  server: sonau.yaremonta.loc.cc
+  port: 8081
+  udp: true
+  type: vmess
+  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /vmess
+- name: 🇸🇪 瑞典 (Sweden) 07
+  server: sonau.yaremonta.loc.cc
+  port: 8443
+  udp: true
+  type: vless
+  uuid: c5468915-f60c-4134-b4d3-eb24501d7c65
+  network: grpc
+  grpc-opts:
+    grpc-service-name: vless-grpc
+- name: 🇸🇪 瑞典 (Sweden) 08
+  server: 77.232.143.142
   port: 443
   udp: true
   type: vless
-  uuid: 740b2630-b42d-425c-bacd-37e7e30d78f1
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   tls: true
-  servername: subgift.gcorecdn.com
+  servername: volumestyle.komediyatorg.net
   skip-cert-verify: false
   client-fingerprint: firefox
   network: ws
   ws-opts:
-    path: /t.me-SubGift
-    headers:
-      Host: subgift.gcorecdn.com
+    path: /media/ws/
 proxy-groups:
 - name: PROXIES
   type: select
@@ -80,6 +99,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05
   - 🇸🇪 瑞典 (Sweden) 06
+  - 🇸🇪 瑞典 (Sweden) 07
+  - 🇸🇪 瑞典 (Sweden) 08
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -91,5 +112,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05
   - 🇸🇪 瑞典 (Sweden) 06
+  - 🇸🇪 瑞典 (Sweden) 07
+  - 🇸🇪 瑞典 (Sweden) 08
 rules:
 - MATCH,PROXIES

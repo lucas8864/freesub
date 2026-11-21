@@ -5,28 +5,28 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 186.190.215.251
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇭 瑞士 (Switzerland) 02
-  server: 208.69.78.133
-  port: 443
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: ncIkubmoDGsl
-- name: 🇨🇭 瑞士 (Switzerland) 03
   server: 23.166.88.127
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇭 瑞士 (Switzerland) 02
+  server: 186.190.215.251
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 208.69.78.133
+  port: 443
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: ncIkubmoDGsl
 - name: 🇨🇭 瑞士 (Switzerland) 04
-  server: 79.127.184.104
+  server: leviko-ch7557.shopingggg.ir
   port: 19999
   udp: true
   type: ss
@@ -41,36 +41,12 @@ proxies:
   sni: 'off'
   skip-cert-verify: true
 - name: 🇨🇭 瑞士 (Switzerland) 06
-  server: 208.69.78.29
+  server: 208.69.78.33
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 07
-  server: 208.69.78.60
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: cdn.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 08
-  server: 208.69.78.19
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: www.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 09
-  server: 208.69.78.222
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: yourultimateprofessionalcareerhub.com
+  sni: courses.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -83,9 +59,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
   - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
-  - 🇨🇭 瑞士 (Switzerland) 08
-  - 🇨🇭 瑞士 (Switzerland) 09
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -97,8 +70,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 04
   - 🇨🇭 瑞士 (Switzerland) 05
   - 🇨🇭 瑞士 (Switzerland) 06
-  - 🇨🇭 瑞士 (Switzerland) 07
-  - 🇨🇭 瑞士 (Switzerland) 08
-  - 🇨🇭 瑞士 (Switzerland) 09
 rules:
 - MATCH,PROXIES

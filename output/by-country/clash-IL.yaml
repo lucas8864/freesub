@@ -18,12 +18,19 @@ proxies:
   servername: www.apple.com
   client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02
-  server: 206.245.128.123
-  port: 18443
+  server: 178.20.28.5
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: dmJDtsxs41dBer8X+7idvkvMQHqJuwRb
+  type: vless
+  uuid: 4fabeed0-790e-9724-8f12-138ed31ac60e
+  tls: true
+  reality-opts:
+    public-key: 4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo
+  servername: res.cdn.office.net
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: TunService
 proxy-groups:
 - name: PROXIES
   type: select
