@@ -25,44 +25,18 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇱 以色列 (Israel) 02",
-      "server": "178.20.28.5",
-      "server_port": 8443,
-      "uuid": "4fabeed0-790e-9724-8f12-138ed31ac60e",
-      "tls": {
-        "enabled": true,
-        "server_name": "res.cdn.office.net",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "4g8R0-Acc1LjppgvUopldH0Wg3JA2tPXvYB96aJnigo",
-          "short_id": ""
-        }
-      },
-      "transport": {
-        "type": "grpc",
-        "service_name": "TunService"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇱 以色列 (Israel) 01",
-        "🇮🇱 以色列 (Israel) 02"
+        "🇮🇱 以色列 (Israel) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇱 以色列 (Israel) 01",
-        "🇮🇱 以色列 (Israel) 02"
+        "🇮🇱 以色列 (Israel) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

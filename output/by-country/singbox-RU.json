@@ -6,9 +6,9 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 01",
-      "server": "37.235.247.81",
+      "server": "147.45.47.101",
       "server_port": 8443,
-      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
+      "uuid": "27f26dee-9cf1-4cca-93f8-9ac23d311408",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -27,9 +27,9 @@
     {
       "type": "vless",
       "tag": "🇷🇺 俄罗斯 (Russia) 02",
-      "server": "147.45.47.101",
+      "server": "37.235.247.81",
       "server_port": 8443,
-      "uuid": "27f26dee-9cf1-4cca-93f8-9ac23d311408",
+      "uuid": "2ae0670d-0bdf-409e-9a55-4e970252d378",
       "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
@@ -57,7 +57,7 @@
         "server_name": "apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -67,9 +67,65 @@
       }
     },
     {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇷🇺 俄罗斯 (Russia) 04",
-      "server": "103.88.243.142",
+      "server": "130.49.189.158",
+      "server_port": 43558,
+      "method": "chacha20-ietf-poly1305",
+      "password": "JYevOrmujurJsNP1ata0kNfjsxwFLAhgD73mrZPJP1I="
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 05",
+      "server": "168.113.253.178",
+      "server_port": 443,
+      "uuid": "608172ed-68e4-0001-85dc-f92c25d0eb92",
+      "tls": {
+        "enabled": true,
+        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 06",
+      "server": "168.113.253.178",
+      "server_port": 443,
+      "uuid": "58708e38-dd5a-0001-902d-93621ee2bd83",
+      "tls": {
+        "enabled": true,
+        "server_name": "uzndiuvzvqqljdyhzs.fcloudservices.site",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇷🇺 俄罗斯 (Russia) 07",
+      "server": "201.51.12.98",
+      "server_port": 443,
+      "uuid": "38308ff1-5aa9-494f-a25a-0f2870d56b3e",
+      "tls": {
+        "enabled": true,
+        "server_name": "vps3.nemnogogo.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "mobile.api.Event"
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇷🇺 俄罗斯 (Russia) 08",
+      "server": "srv-17e124.21freedom.net",
       "server_port": 11592,
       "password": "41edb44c8e",
       "tls": {
@@ -80,27 +136,30 @@
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 05",
-      "server": "147.45.175.81",
+      "tag": "🇷🇺 俄罗斯 (Russia) 09",
+      "server": "185.178.208.167",
       "server_port": 443,
-      "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
+      "uuid": "ffb2c504-2c6c-49f3-b4bd-9fd3ff6ce454",
       "tls": {
         "enabled": true,
-        "server_name": "xssite.webredirect.org",
+        "server_name": "unlik.club",
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
-        "type": "grpc",
-        "service_name": "grpc-ru"
+        "type": "ws",
+        "path": "/static/telemetry/3c9aaef00005/",
+        "headers": {
+          "Host": "tochkacdn.top"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇷🇺 俄罗斯 (Russia) 06",
+      "tag": "🇷🇺 俄罗斯 (Russia) 10",
       "server": "xssite.webredirect.org",
       "server_port": 443,
       "uuid": "c90395e6-2140-47ad-a54d-9b166729d3ef",
@@ -119,14 +178,6 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇷🇺 俄罗斯 (Russia) 07",
-      "server": "48.103.218.77",
-      "server_port": 18443,
-      "method": "aes-256-gcm",
-      "password": "5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -137,7 +188,10 @@
         "🇷🇺 俄罗斯 (Russia) 04",
         "🇷🇺 俄罗斯 (Russia) 05",
         "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07"
+        "🇷🇺 俄罗斯 (Russia) 07",
+        "🇷🇺 俄罗斯 (Russia) 08",
+        "🇷🇺 俄罗斯 (Russia) 09",
+        "🇷🇺 俄罗斯 (Russia) 10"
       ]
     },
     {
@@ -150,7 +204,10 @@
         "🇷🇺 俄罗斯 (Russia) 04",
         "🇷🇺 俄罗斯 (Russia) 05",
         "🇷🇺 俄罗斯 (Russia) 06",
-        "🇷🇺 俄罗斯 (Russia) 07"
+        "🇷🇺 俄罗斯 (Russia) 07",
+        "🇷🇺 俄罗斯 (Russia) 08",
+        "🇷🇺 俄罗斯 (Russia) 09",
+        "🇷🇺 俄罗斯 (Russia) 10"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

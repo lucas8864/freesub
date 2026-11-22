@@ -23,7 +23,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -32,21 +32,8 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 03",
-      "server": "62.93.166.184",
-      "server_port": 1270,
-      "uuid": "5c040f1d-45db-43bd-8d46-e4950e433735",
-      "security": "auto",
-      "tls": {
-        "enabled": true,
-        "server_name": "xmfhlpy.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 04",
+      "tag": "🇸🇪 瑞典 (Sweden) 03",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -59,72 +46,13 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05",
-      "server": "sonau.yaremonta.loc.cc",
-      "server_port": 8080,
-      "uuid": "c5468915-f60c-4134-b4d3-eb24501d7c65",
-      "transport": {
-        "type": "ws",
-        "path": "/vless"
-      }
-    },
-    {
-      "type": "vmess",
-      "tag": "🇸🇪 瑞典 (Sweden) 06",
-      "server": "sonau.yaremonta.loc.cc",
-      "server_port": 8081,
-      "uuid": "c5468915-f60c-4134-b4d3-eb24501d7c65",
-      "security": "auto",
-      "transport": {
-        "type": "ws",
-        "path": "/vmess"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07",
-      "server": "sonau.yaremonta.loc.cc",
-      "server_port": 8443,
-      "uuid": "c5468915-f60c-4134-b4d3-eb24501d7c65",
-      "transport": {
-        "type": "grpc",
-        "service_name": "vless-grpc"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 08",
-      "server": "77.232.143.142",
-      "server_port": 443,
-      "uuid": "58e22afd-bf74-4736-984d-63a8ca03d7f0",
-      "tls": {
-        "enabled": true,
-        "server_name": "volumestyle.komediyatorg.net",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/media/ws/"
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05",
-        "🇸🇪 瑞典 (Sweden) 06",
-        "🇸🇪 瑞典 (Sweden) 07",
-        "🇸🇪 瑞典 (Sweden) 08"
+        "🇸🇪 瑞典 (Sweden) 03"
       ]
     },
     {
@@ -133,12 +61,7 @@
       "outbounds": [
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
-        "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05",
-        "🇸🇪 瑞典 (Sweden) 06",
-        "🇸🇪 瑞典 (Sweden) 07",
-        "🇸🇪 瑞典 (Sweden) 08"
+        "🇸🇪 瑞典 (Sweden) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -12,14 +12,14 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 02
-  server: 167.17.64.27
+  server: 198.244.201.129
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 03
-  server: 79.137.99.183
+  server: 167.17.64.22
   port: 19999
   udp: true
   type: ss
@@ -40,41 +40,57 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 06
-  server: 57.129.83.85
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 07
   server: 57.129.76.233
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 08
-  server: 167.17.64.22
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 09
+- name: 🇫🇷 法国 (France) 07
   server: 38.109.228.110
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 08
+  server: 167.17.64.27
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 09
+  server: 79.137.99.183
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 10
-  server: 23.162.152.22
+  server: 57.129.83.85
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇫🇷 法国 (France) 11
+  server: 23.162.152.22
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇫🇷 法国 (France) 12
+  server: 54.36.102.152
+  port: 2083
+  udp: true
+  type: vless
+  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
+  network: ws
+  ws-opts:
+    path: /vless-kulo
+- name: 🇫🇷 法国 (France) 13
   server: 152.228.139.33
   port: 51671
   udp: true
@@ -85,45 +101,18 @@ proxies:
     public-key: -5PowNUY37Pi01YKO9fjRTrum1m_9n6XauaPDpmOJzU
     short-id: 2fed44d8c59f7e71
   servername: www.sony.com
-  client-fingerprint: firefox
+  client-fingerprint: random
   network: grpc
   grpc-opts:
     grpc-service-name: grpc_common3
-- name: 🇫🇷 法国 (France) 12
-  server: 198.244.201.129
-  port: 19999
+- name: 🇫🇷 法国 (France) 14
+  server: 107.161.160.28
+  port: 8388
   udp: true
   type: ss
   cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇫🇷 法国 (France) 13
-  server: 13.36.234.11
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 13.36.234.11
-  skip-cert-verify: true
-- name: 🇫🇷 法国 (France) 14
-  server: 62.210.7.139
-  port: 60111
-  udp: true
-  type: hysteria2
-  password: github.com/Alvin9999-newpac/fanqiang
-  sni: bing.com
-  skip-cert-verify: true
+  password: itzvpn@321
 - name: 🇫🇷 法国 (France) 15
-  server: 91.134.35.72
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 16
   server: 62.210.91.10
   port: 23576
   udp: true
@@ -135,8 +124,30 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 16
+  server: 13.36.234.11
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: 13.36.234.11
+  skip-cert-verify: true
 - name: 🇫🇷 法国 (France) 17
+  server: 62.210.7.139
+  port: 60111
+  udp: true
+  type: hysteria2
+  password: github.com/Alvin9999-newpac/fanqiang
+  sni: …
+  skip-cert-verify: true
+- name: 🇫🇷 法国 (France) 18
+  server: 62.144.51.95
+  port: 443
+  udp: true
+  type: vless
+  uuid: c657310e-d87c-4358-9cb7-200a0c3f35e8
+- name: 🇫🇷 法国 (France) 19
   server: 62.210.91.2
   port: 23576
   udp: true
@@ -148,25 +159,18 @@ proxies:
     public-key: 1y5h2FGWKXTJ9xLPCqPo6Mw7RxoZzh6fGkEQKNxpZ3s
     short-id: '01'
   servername: fuck.rkn
-  client-fingerprint: chrome
-- name: 🇫🇷 法国 (France) 18
-  server: 46.105.222.155
-  port: 1270
+  client-fingerprint: ''
+- name: 🇫🇷 法国 (France) 20
+  server: ov-france1.09vpn.com
+  port: 80
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇫🇷 法国 (France) 19
-  server: 107.161.160.28
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: itzvpn@321
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  network: ws
+  ws-opts:
+    path: /vless/
+    headers:
+      Host: ov-france1.09vpn.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -191,6 +195,7 @@ proxy-groups:
   - 🇫🇷 法国 (France) 17
   - 🇫🇷 法国 (France) 18
   - 🇫🇷 法国 (France) 19
+  - 🇫🇷 法国 (France) 20
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -215,5 +220,6 @@ proxy-groups:
   - 🇫🇷 法国 (France) 17
   - 🇫🇷 法国 (France) 18
   - 🇫🇷 法国 (France) 19
+  - 🇫🇷 法国 (France) 20
 rules:
 - MATCH,PROXIES

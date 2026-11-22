@@ -5,21 +5,34 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇼 中国台湾 (Taiwan) 01
-  server: 160.187.100.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: 160.187.100.109
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 02
   server: 103.115.109.49
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https
+  sni: https://t.me/oneclickvpnkeys
   skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 02
+  server: vpn-tw-002.fastervpn.world
+  port: 443
+  udp: true
+  type: hysteria2
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-tw-002.fastervpn.world%5cu0026insecure%3d1%5cu0026allowinsecure%3d1
+  skip-cert-verify: true
+- name: 🇹🇼 中国台湾 (Taiwan) 03
+  server: 162.19.192.89
+  port: 16616
+  udp: true
+  type: vmess
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -27,6 +40,7 @@ proxy-groups:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
+  - 🇹🇼 中国台湾 (Taiwan) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -34,5 +48,6 @@ proxy-groups:
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01
   - 🇹🇼 中国台湾 (Taiwan) 02
+  - 🇹🇼 中国台湾 (Taiwan) 03
 rules:
 - MATCH,PROXIES
