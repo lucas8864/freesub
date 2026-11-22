@@ -12,41 +12,46 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 02
-  server: 149.22.87.241
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 03
   server: 149.22.87.240
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 04
-  server: jpa.123069.xyz
-  port: 53758
+- name: 🇯🇵 日本 (Japan) 03
+  server: 149.22.87.241
+  port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
-  password: Bwlqh7GcFB
-- name: 🇯🇵 日本 (Japan) 05
-  server: 64.176.34.102
-  port: 46130
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 04
+  server: 168.110.63.247
+  port: 8081
   udp: true
   type: vmess
-  uuid: 477350b2-7536-4f38-ee21-020efdde2d1d
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
   alterId: 0
   cipher: auto
-- name: 🇯🇵 日本 (Japan) 06
-  server: 84.247.155.196
-  port: 80
+  network: ws
+  ws-opts:
+    path: /vless
+- name: 🇯🇵 日本 (Japan) 05
+  server: 8.211.175.236
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
+  type: hysteria2
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
+  sni: 8.211.175.236
+  skip-cert-verify: true
+- name: 🇯🇵 日本 (Japan) 06
+  server: 45.192.203.110
+  port: 36835
+  udp: true
+  type: anytls
+  password: czxPueuXQB1wUfMU
+  sni: www.bing.com
+  skip-cert-verify: true
 - name: 🇯🇵 日本 (Japan) 07
   server: 94.177.131.113
   port: 443
@@ -57,6 +62,101 @@ proxies:
   servername: kuruish.org
   skip-cert-verify: false
 - name: 🇯🇵 日本 (Japan) 08
+  server: jp2static.jumpernode.site
+  port: 443
+  udp: true
+  type: vless
+  uuid: f325fb7d-cad5-4ac8-8888-3f39b4b9d1ca
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
+    short-id: 6281f3ef81187ad8
+  servername: www.amzn.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 09
+  server: 198.13.53.39
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  tls: true
+  reality-opts:
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 10
+  server: 172.104.86.181
+  port: 443
+  udp: true
+  type: vless
+  uuid: 010431f3-04f6-4404-a801-b93bf2e3c2b2
+  tls: true
+  reality-opts:
+    public-key: ujYDprigWFLxcj4BtitDNa-hoPjIbpSzrnEcqp3cgjk
+    short-id: c8559ca1
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 11
+  server: 149.28.29.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  tls: true
+  reality-opts:
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 12
+  server: 45.76.222.108
+  port: 443
+  udp: true
+  type: vless
+  uuid: bd95a04e-e3e1-460e-b89d-e9a693d393e0
+  tls: true
+  reality-opts:
+    public-key: -_YzpVlKrn08il_kQdHxHTvJyWYAdetWN_IFRtvPgmE
+    short-id: b5c85d2d
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 13
+  server: 84.247.155.196
+  port: 80
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 14
+  server: 84.247.155.196
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: 3eOFeNssde7PYYMv
+- name: 🇯🇵 日本 (Japan) 15
   server: d1eyz.xiaoyan.io
   port: 16617
   udp: true
@@ -69,39 +169,8 @@ proxies:
     path: /
     headers:
       Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-- name: 🇯🇵 日本 (Japan) 09
-  server: 138.3.208.26
-  port: 50160
-  udp: true
-  type: hysteria2
-  password: 184cdec28da5a09450803c8debcd2cc9
-  sni: '1'
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 10
-  server: 84.247.155.196
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 11
-  server: oracle-tokyo-2.waverider.yingdigame.com
-  port: 443
-  udp: true
-  type: trojan
-  password: ec893967c30f4c3a8b6d4c975af95f45
-  sni: oracle-tokyo-2.waverider.yingdigame.com
-  skip-cert-verify: false
-- name: 🇯🇵 日本 (Japan) 12
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 13
-  server: 104.21.70.228
+- name: 🇯🇵 日本 (Japan) 16
+  server: 104.21.70.21
   port: 443
   udp: true
   type: vless
@@ -109,7 +178,7 @@ proxies:
   tls: true
   servername: jp3.yohototo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /tyxyws
@@ -133,6 +202,9 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11
   - 🇯🇵 日本 (Japan) 12
   - 🇯🇵 日本 (Japan) 13
+  - 🇯🇵 日本 (Japan) 14
+  - 🇯🇵 日本 (Japan) 15
+  - 🇯🇵 日本 (Japan) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -151,5 +223,8 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 11
   - 🇯🇵 日本 (Japan) 12
   - 🇯🇵 日本 (Japan) 13
+  - 🇯🇵 日本 (Japan) 14
+  - 🇯🇵 日本 (Japan) 15
+  - 🇯🇵 日本 (Japan) 16
 rules:
 - MATCH,PROXIES
