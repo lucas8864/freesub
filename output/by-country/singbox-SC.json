@@ -4,8 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "anytls",
       "tag": "🇸🇨 塞舌尔 (Seychelles) 01",
+      "server": "sfu.gosthk.site",
+      "server_port": 57180,
+      "password": "3a3bd9e1-3762-4f6f-8d10-bf32846d2824",
+      "tls": {
+        "enabled": true,
+        "server_name": "sfu.gosthk.site",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇸🇨 塞舌尔 (Seychelles) 02",
       "server": "46.29.255.123",
       "server_port": 59539,
       "uuid": "30572b57-f5ab-4eb8-82d4-a24d399b99f6",
@@ -29,14 +41,16 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇸🇨 塞舌尔 (Seychelles) 01"
+        "🇸🇨 塞舌尔 (Seychelles) 01",
+        "🇸🇨 塞舌尔 (Seychelles) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇸🇨 塞舌尔 (Seychelles) 01"
+        "🇸🇨 塞舌尔 (Seychelles) 01",
+        "🇸🇨 塞舌尔 (Seychelles) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -47,13 +47,39 @@
       }
     },
     {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+      "server": "5641sdds.df6h451rh.xin",
+      "server_port": 443,
+      "password": "0324fbc29561",
+      "tls": {
+        "enabled": true,
+        "server_name": "images.ctfassets.net",
+        "insecure": true
+      }
+    },
+    {
+      "type": "anytls",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 05 (家宽)",
+      "server": "ibsdsf.df6h451rh.xin",
+      "server_port": 443,
+      "password": "2902c46c8493",
+      "tls": {
+        "enabled": true,
+        "server_name": "docs.microsoft.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽)"
       ]
     },
     {
@@ -62,7 +88,9 @@
       "outbounds": [
         "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
         "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 03 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 04 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 05 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -5,23 +5,37 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
+  server: 171.22.129.227
+  port: 443
+  udp: true
+  type: vless
+  uuid: 42c83523-9f96-41b2-82d6-2edb71a4ac19
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA
+  servername: nujd35aknu.static-mirror.site
+  client-fingerprint: firefox
+- name: 🇵🇱 波兰 (Poland) 02
   server: 217.30.10.70
-  port: 9064
+  port: 9037
   udp: true
   type: ss
   cipher: aes-256-cfb
-  password: cp8pRSUAyLhTfVWH
+  password: TN2YqghxeFDKZfLU
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01
+  - 🇵🇱 波兰 (Poland) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇱 波兰 (Poland) 01
+  - 🇵🇱 波兰 (Poland) 02
 rules:
 - MATCH,PROXIES
