@@ -12,24 +12,21 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇬🇧 英国 (United Kingdom) 02
-  server: 38.114.120.221
+  server: 141.98.101.181
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇬🇧 英国 (United Kingdom) 03
+  server: 142.202.51.22
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇬🇧 英国 (United Kingdom) 03
-  server: 64.227.41.219
-  port: 443
-  udp: true
-  type: vless
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-  network: h2
-  h2-opts:
-    host: []
-    path: /
 - name: 🇬🇧 英国 (United Kingdom) 04
-  server: 142.202.51.22
+  server: 38.114.120.221
   port: 19999
   udp: true
   type: ss
@@ -43,31 +40,24 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇬🇧 英国 (United Kingdom) 06
-  server: 141.98.101.181
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇬🇧 英国 (United Kingdom) 07
-  server: 57.129.132.223
-  port: 80
-  udp: true
-  type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
-  network: ws
-  ws-opts:
-    path: /vless/
-    headers:
-      Host: google.com
-- name: 🇬🇧 英国 (United Kingdom) 08
   server: 146.70.61.37
   port: 8080
   udp: true
   type: ss
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
-- name: 🇬🇧 英国 (United Kingdom) 09
+- name: 🇬🇧 英国 (United Kingdom) 07
+  server: 142.202.51.42
+  port: 1270
+  udp: true
+  type: vmess
+  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: xmfhlpy.com
+  skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 08
   server: 149.7.16.228
   port: 1270
   udp: true
@@ -78,6 +68,13 @@ proxies:
   tls: true
   servername: xmfhlpy.com
   skip-cert-verify: false
+- name: 🇬🇧 英国 (United Kingdom) 09
+  server: 98.98.207.163
+  port: 8080
+  udp: true
+  type: ss
+  cipher: rc4-md5
+  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 10
   server: 98.98.142.161
   port: 8080
@@ -86,6 +83,18 @@ proxies:
   cipher: rc4-md5
   password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 11
+  server: a80b5386.fi2.h1clayd.click
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df
+  tls: true
+  reality-opts:
+    public-key: PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc
+    short-id: cc678f10161992a9
+  servername: a80b5386.fi2.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇬🇧 英国 (United Kingdom) 12
   server: 138.124.125.193
   port: 10444
   udp: true
@@ -98,61 +107,17 @@ proxies:
     short-id: 8debcf36f1cc69ff
   servername: ads.x5.ru
   client-fingerprint: random
-- name: 🇬🇧 英国 (United Kingdom) 12
-  server: 98.98.207.163
-  port: 8080
-  udp: true
-  type: ss
-  cipher: rc4-md5
-  password: 14fFPrbezE3HDZzsMOr6
 - name: 🇬🇧 英国 (United Kingdom) 13
-  server: 142.202.51.42
-  port: 1270
-  udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
-  skip-cert-verify: false
-- name: 🇬🇧 英国 (United Kingdom) 14
-  server: 13.141.36.15
-  port: 443
+  server: 57.129.132.223
+  port: 80
   udp: true
   type: vless
-  uuid: 2ccb06b6-9eac-44eb-ade7-c1e5afb8e7df
-  tls: true
-  reality-opts:
-    public-key: PslSaSQWP4BZZmkL7irab4FMti8sW6BvoC7ytFjJFyc
-    short-id: cc678f10161992a9
-  servername: a80b5386.fi2.h1clayd.click
-  client-fingerprint: chrome
-- name: 🇬🇧 英国 (United Kingdom) 15
-  server: 22egdg.mateflora.com
-  port: 40055
-  udp: true
-  type: hysteria2
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  sni: psstatic.cdn.bcebos.com
-  skip-cert-verify: true
-  obfs: salamander
-  obfs-password: 6fltjteoyab7fjf1
-- name: 🇬🇧 英国 (United Kingdom) 16
-  server: 172.64.155.209
-  port: 443
-  udp: true
-  type: vless
-  uuid: 55b3fd10-3658-40a2-8951-ec90932d1d30
-  tls: true
-  servername: sinavm2.soft10.ir
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
   network: ws
   ws-opts:
-    path: /SiNAVM-SiNAVM-SiNAVM-SiNAVM
+    path: /vless/
     headers:
-      Host: sinavm2.soft10.ir
+      Host: google.com
 proxy-groups:
 - name: PROXIES
   type: select
@@ -171,9 +136,6 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11
   - 🇬🇧 英国 (United Kingdom) 12
   - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
-  - 🇬🇧 英国 (United Kingdom) 15
-  - 🇬🇧 英国 (United Kingdom) 16
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -192,8 +154,5 @@ proxy-groups:
   - 🇬🇧 英国 (United Kingdom) 11
   - 🇬🇧 英国 (United Kingdom) 12
   - 🇬🇧 英国 (United Kingdom) 13
-  - 🇬🇧 英国 (United Kingdom) 14
-  - 🇬🇧 英国 (United Kingdom) 15
-  - 🇬🇧 英国 (United Kingdom) 16
 rules:
 - MATCH,PROXIES

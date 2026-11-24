@@ -4,14 +4,7 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇩🇪 德国 (Germany) 01 (移动家宽)
-  server: 47.254.167.157
-  port: 443
-  udp: true
-  type: ss
-  cipher: 2022-blake3-chacha20-poly1305
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+- name: 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   server: 60.248.219.78
   port: 443
   udp: true
@@ -25,6 +18,14 @@ proxies:
     path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
     headers:
       Host: ty986gfazs.cainiaohub.xyz
+- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+  server: er8u54dh.df6h451rh.xin
+  port: 443
+  udp: true
+  type: anytls
+  password: 2902c46c8493
+  sni: px.ads.linkedin.com
+  skip-cert-verify: true
 - name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
   server: rtifgjdr.df6h451rh.xin
   port: 443
@@ -38,7 +39,7 @@ proxy-groups:
   type: select
   proxies:
   - AUTO
-  - 🇩🇪 德国 (Germany) 01 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 - name: AUTO
@@ -46,7 +47,7 @@ proxy-groups:
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇩🇪 德国 (Germany) 01 (移动家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
   - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 rules:

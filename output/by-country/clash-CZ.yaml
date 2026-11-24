@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇦🇲 亚美尼亚 (Armenia) 01
-  server: 03e488t.es12.h1clayd.shop
-  port: 443
+- name: 🇨🇿 捷克 (Czech) 01
+  server: leviko-nl2962.shopingggg.ir
+  port: 9543
   udp: true
   type: vless
-  uuid: c5470a56-1b9b-451c-b075-02c82ee4aa6c
+  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: F-QRCTOgAul242ISSobCpwO8G6JGN0qeIdJdv60HIRo
-    short-id: bd35558b17a4930b
-  servername: 03e488t.es12.h1clayd.shop
+    public-key: M6Ck7wUfOLhQl4582CBnaXwscPEP6SCpdEkUDzoj4Fc
+    short-id: 123abcdf
+  servername: storage.yandexcloud.net
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇨🇿 捷克 (Czech) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇦🇲 亚美尼亚 (Armenia) 01
+  - 🇨🇿 捷克 (Czech) 01
 rules:
 - MATCH,PROXIES

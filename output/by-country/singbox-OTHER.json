@@ -6,16 +6,19 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01",
-      "server": "fr-free.fastestrelay.com",
+      "server": "188.114.98.0",
       "server_port": 443,
       "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
       "tls": {
         "enabled": true,
         "server_name": "fr-free.fastestrelay.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "ios"
         }
       },
       "transport": {
