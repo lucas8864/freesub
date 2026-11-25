@@ -4,8 +4,16 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "shadowsocks",
       "tag": "🇱🇹 立陶宛 (Lithuania) 01",
+      "server": "195.238.126.20",
+      "server_port": 9086,
+      "method": "aes-256-cfb",
+      "password": "37Z4TFCYhfxcpc9Q"
+    },
+    {
+      "type": "vless",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
       "server": "84.32.209.54",
       "server_port": 443,
       "uuid": "f69e272f-e0e5-4e9d-b180-5be63930cde9",
@@ -26,7 +34,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇱🇹 立陶宛 (Lithuania) 02",
+      "tag": "🇱🇹 立陶宛 (Lithuania) 03",
       "server": "84.32.209.118",
       "server_port": 443,
       "uuid": "a30903dc-1bf0-4be5-8b1b-603a3a56211c",
@@ -50,7 +58,8 @@
       "outbounds": [
         "auto",
         "🇱🇹 立陶宛 (Lithuania) 01",
-        "🇱🇹 立陶宛 (Lithuania) 02"
+        "🇱🇹 立陶宛 (Lithuania) 02",
+        "🇱🇹 立陶宛 (Lithuania) 03"
       ]
     },
     {
@@ -58,7 +67,8 @@
       "tag": "auto",
       "outbounds": [
         "🇱🇹 立陶宛 (Lithuania) 01",
-        "🇱🇹 立陶宛 (Lithuania) 02"
+        "🇱🇹 立陶宛 (Lithuania) 02",
+        "🇱🇹 立陶宛 (Lithuania) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

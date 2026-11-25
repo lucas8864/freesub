@@ -6,16 +6,13 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01",
-      "server": "104.27.97.42",
-      "server_port": 8443,
-      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
+      "server": "chatgpt.com",
+      "server_port": 443,
+      "uuid": "55b3fd10-3658-40a2-8951-ec90932d1d30",
       "tls": {
         "enabled": true,
-        "server_name": "free.sahanwickramasinghe.com",
+        "server_name": "sinavm2.soft10.ir",
         "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -23,8 +20,9 @@
       },
       "transport": {
         "type": "ws",
+        "path": "/SiNAVM-SiNAVM-SiNAVM-SiNAVM",
         "headers": {
-          "Host": "free.sahanwickramasinghe.com"
+          "Host": "sinavm2.soft10.ir"
         }
       }
     },

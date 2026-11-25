@@ -5,7 +5,7 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇮🇳 印度 (India) 01
-  server: 178.212.35.198
+  server: in.smrtai.top
   port: 443
   udp: true
   type: vless
@@ -15,7 +15,7 @@ proxies:
     public-key: 3LbVuwKpQv55GngyRhvGl9KyAHIDAgvJx_VRM5mUD2Q
     short-id: 6bdc8320
   servername: www.cloudflare.com
-  client-fingerprint: firefox
+  client-fingerprint: chrome
 - name: 🇮🇳 印度 (India) 02
   server: 152.67.8.205
   port: 80
@@ -28,6 +28,29 @@ proxies:
   ws-opts:
     path: /
 - name: 🇮🇳 印度 (India) 03
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 04
+  server: xray-ikmqcro3-rapid-river-6.cloady.io
+  port: 443
+  udp: true
+  type: vless
+  uuid: 213224a4-6cd1-b7f4-8bbc-4f50e5ed847b
+  tls: true
+  servername: xray-ikmqcro3-rapid-river-6.cloady.io
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /c54a815e676d9acc
+- name: 🇮🇳 印度 (India) 05
   server: xray-dmr3b3hy-calm-maple-7.cloady.io
   port: 443
   udp: true
@@ -35,11 +58,13 @@ proxies:
   uuid: 06a5afa1-2bbc-a5d1-1770-becd1089c636
   tls: true
   servername: xray-dmr3b3hy-calm-maple-7.cloady.io
-  skip-cert-verify: true
+  skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
     path: /0175469f14317d82
+    headers:
+      Host: xray-dmr3b3hy-calm-maple-7.cloady.io
 proxy-groups:
 - name: PROXIES
   type: select
@@ -48,6 +73,8 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
+  - 🇮🇳 印度 (India) 04
+  - 🇮🇳 印度 (India) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -56,5 +83,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 01
   - 🇮🇳 印度 (India) 02
   - 🇮🇳 印度 (India) 03
+  - 🇮🇳 印度 (India) 04
+  - 🇮🇳 印度 (India) 05
 rules:
 - MATCH,PROXIES

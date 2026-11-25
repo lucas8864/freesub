@@ -26,6 +26,13 @@ proxies:
   cipher: aes-128-gcm
   password: shadowsocks
 - name: 🇯🇵 日本 (Japan) 04
+  server: 8.216.7.10
+  port: 6666
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 05
   server: 158.101.151.157
   port: 443
   udp: true
@@ -38,52 +45,37 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 05
-  server: 129.225.181.46
+- name: 🇯🇵 日本 (Japan) 06
+  server: 103.75.118.228
+  port: 11452
+  udp: true
+  type: vless
+  uuid: 814bd064-544d-4255-a070-5705c03f6da9
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: k2hPp0tTW0Da-HK94wYpSCLbuK44LfGqC2MSJIM1Ti0
+    short-id: 48050fab
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇯🇵 日本 (Japan) 07
+  server: 8.211.175.236
   port: 8443
   udp: true
   type: hysteria2
-  password: oracle_hy2_pass_2026
+  password: u63SxILNwtrQZ7Y1ZrFaZfsA
   sni: bing.com
   skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 06
-  server: 161.33.20.255
-  port: 8880
-  udp: true
-  type: vmess
-  uuid: e0856508-d693-450a-a099-455091dc4f25
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
-- name: 🇯🇵 日本 (Japan) 07
-  server: 172.237.14.205
-  port: 443
-  udp: true
-  type: vless
-  uuid: 4796e022-f377-4a97-bc03-fbf525d7913c
-  tls: true
-  reality-opts:
-    public-key: dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ
-    short-id: da26e5a2
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 08
-  server: 139.162.91.247
+  server: 139.162.91.224
   port: 443
   udp: true
   type: vless
-  uuid: 8cfdacf8-e781-42f0-9872-8d1d22469de5
+  uuid: ff3038b1-a2f5-428f-89cd-5d5e4efba8e7
   tls: true
   reality-opts:
-    public-key: _gFFckW3h8hFfllawgec9U2PDBeLJeCK_Jgk1S5tgC8
-    short-id: 536d7739
+    public-key: wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk
+    short-id: e5b03494
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -92,15 +84,15 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 09
-  server: 172.238.18.103
+  server: 172.237.14.142
   port: 443
   udp: true
   type: vless
-  uuid: f4a4498a-c02f-4862-93ae-8f495c9cd2c0
+  uuid: 323aa578-bddb-47ed-bdb6-5650ade5825c
   tls: true
   reality-opts:
-    public-key: BDt3yJpYIovC6b1iJF2h8qH4LfQAoSC0u3iVa0cFeSM
-    short-id: 6ff775ae
+    public-key: UPeN2wAl3WQKsj-IchFF-81OnbhP1FQJ0EtcBFQn0Ak
+    short-id: 6093f81a
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -143,15 +135,15 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 12
-  server: 139.162.101.74
+  server: 172.238.18.103
   port: 443
   udp: true
   type: vless
-  uuid: 1e709d98-d4c3-45c1-bdcc-4268cf83eff8
+  uuid: f4a4498a-c02f-4862-93ae-8f495c9cd2c0
   tls: true
   reality-opts:
-    public-key: jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI
-    short-id: 7e1e09f4
+    public-key: BDt3yJpYIovC6b1iJF2h8qH4LfQAoSC0u3iVa0cFeSM
+    short-id: 6ff775ae
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -160,15 +152,15 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 13
-  server: 198.13.53.39
+  server: 139.162.91.182
   port: 443
   udp: true
   type: vless
-  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
+  uuid: b4ec7f6b-b41e-4018-9f76-19204e138db9
   tls: true
   reality-opts:
-    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
-    short-id: 7a7cc838
+    public-key: k0o_QkU2gSE5m1a6tWbkkZ-Z28GTj30UHW8cHWCulzU
+    short-id: db1a5f5e
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -177,40 +169,6 @@ proxies:
     headers:
       Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 14
-  server: 149.28.29.156
-  port: 443
-  udp: true
-  type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
-  tls: true
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 15
-  server: 172.237.14.142
-  port: 443
-  udp: true
-  type: vless
-  uuid: 323aa578-bddb-47ed-bdb6-5650ade5825c
-  tls: true
-  reality-opts:
-    public-key: UPeN2wAl3WQKsj-IchFF-81OnbhP1FQJ0EtcBFQn0Ak
-    short-id: 6093f81a
-  servername: itunes.apple.com
-  client-fingerprint: chrome
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 16
   server: 172.105.203.15
   port: 443
   udp: true
@@ -227,29 +185,67 @@ proxies:
     path: /ws
     headers:
       Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 17
-  server: jp2upload.jumpernode.site
+- name: 🇯🇵 日本 (Japan) 15
+  server: 139.162.91.247
   port: 443
   udp: true
   type: vless
-  uuid: f325fb7d-cad5-4ac8-8888-3f39b4b9d1ca
-  flow: xtls-rprx-vision
+  uuid: 8cfdacf8-e781-42f0-9872-8d1d22469de5
   tls: true
   reality-opts:
-    public-key: GeKuYNeAqQQkTN9OMJxXA9I-rXs7IiGh4Sl82crCITc
-    short-id: 83faf94a0e
-  servername: shop.business.amazon.com
+    public-key: _gFFckW3h8hFfllawgec9U2PDBeLJeCK_Jgk1S5tgC8
+    short-id: 536d7739
+  servername: itunes.apple.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 18
-  server: 139.162.91.224
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 16
+  server: 198.13.53.39
   port: 443
   udp: true
   type: vless
-  uuid: ff3038b1-a2f5-428f-89cd-5d5e4efba8e7
+  uuid: 8f21c635-ef0a-4b05-8356-f44d463b6e34
   tls: true
   reality-opts:
-    public-key: wmbc3kcjbG9-A9Fi7zaHuRVPH7A7UQkKNNvqyqJtMEk
-    short-id: e5b03494
+    public-key: xxPVgbxguyYuVIml6Eh6ZGcDLO1z0OWKZXfDdUGFv1k
+    short-id: 7a7cc838
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 17
+  server: 149.28.29.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  tls: true
+  reality-opts:
+    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
+    short-id: e535df57
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
+- name: 🇯🇵 日本 (Japan) 18
+  server: 139.162.101.74
+  port: 443
+  udp: true
+  type: vless
+  uuid: 1e709d98-d4c3-45c1-bdcc-4268cf83eff8
+  tls: true
+  reality-opts:
+    public-key: jd8UNLpim43LVV-iEzIXlUgTVuvi9Pf7E0kgQb3o0CI
+    short-id: 7e1e09f4
   servername: itunes.apple.com
   client-fingerprint: chrome
   network: ws
@@ -269,21 +265,23 @@ proxies:
   ws-opts:
     path: /vless
 - name: 🇯🇵 日本 (Japan) 20
-  server: 8.211.175.236
-  port: 8443
+  server: 172.237.14.205
+  port: 443
   udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
+  type: vless
+  uuid: 4796e022-f377-4a97-bc03-fbf525d7913c
+  tls: true
+  reality-opts:
+    public-key: dllB1KTn7oiEqa6OlmZl-j2kF5GN9bAQeoBinYV2cUQ
+    short-id: da26e5a2
+  servername: itunes.apple.com
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /ws
+    headers:
+      Host: itunes.apple.com
 - name: 🇯🇵 日本 (Japan) 21
-  server: 84.247.155.196
-  port: 80
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: 3eOFeNssde7PYYMv
-- name: 🇯🇵 日本 (Japan) 22
   server: 155.248.175.201
   port: 23169
   udp: true
@@ -293,7 +291,20 @@ proxies:
   tls: true
   servername: djj.zjlo.top
   skip-cert-verify: false
-  client-fingerprint: chrome
+  client-fingerprint: firefox
+- name: 🇯🇵 日本 (Japan) 22
+  server: 168.138.43.75
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 11c3627f-31e8-4695-dfbd-34076e2f1f5d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /cctv13.m3u8
+    headers:
+      Host: jp01.a0a.xyz
 proxy-groups:
 - name: PROXIES
   type: select

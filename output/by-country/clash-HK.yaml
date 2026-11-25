@@ -5,12 +5,12 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
-  server: 202.146.222.89
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https://t.me/clashv8\u0001f1e8\u0001f1f3
+  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af%d1%91%d1%80%d2%b9%d2%af%d1%96
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 02
   server: 202.146.222.174
@@ -18,23 +18,29 @@ proxies:
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2foneclickvpnkeys
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 202.146.222.29
+  server: 2.26.204.46
+  port: 31001
+  udp: true
+  type: vless
+  uuid: 12a4f736-2238-49ee-831f-5516f15cc951
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: lzpIiMqHXas_qayw-HvrySb78FNkVroBOqniwqPXPzY
+    short-id: 39793bc4708abbbb
+  servername: mensura.cdn-apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%253a%252f%252ft.me%252fwangcai2%25d1%2580%25d2%25b9%25d2%25af%25d1%2591%25d1%2580%25d2%25b9%25d2%25af%25d1%2596
+  sni: vk.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 213.176.92.148
-  port: 40647
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
 - name: 🇭🇰 中国香港 (Hong Kong) 05
   server: 152.32.254.68
   port: 5010
@@ -46,33 +52,37 @@ proxies:
   obfs: salamander
   obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
 - name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 23.141.172.229
-  port: 50541
-  udp: true
-  type: hysteria2
-  password: ePPsH1bMFD
-  sni: is1-ssl.mzstatic.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: 47.242.93.89
-  port: 12012
-  udp: true
-  type: trojan
-  password: '12012'
-  sni: ali-hk.b-gfw.cfd
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: jp2download.jumpernode.site
-  port: 443
+  server: 116.213.43.43
+  port: 11106
   udp: true
   type: vless
-  uuid: 033c1431-35e2-4125-ba06-adf4d4146865
+  uuid: 2e7bd251-52be-4ffa-b79e-108e1fe07185
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: KBPuCiAKJQQtlsodm5MIBFfYf-TGsrjCK5GGJzJJli4
-    short-id: 2ddd68bb35
-  servername: services-cdn.gfestage.nvidia.com
+    public-key: -13uTSuqk44pCU0x6yvldaskzyRIlO2ihmDvM0FsBns
+    short-id: da12e31124830d42
+  servername: www.apple.com
+  client-fingerprint: chrome
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: 213.176.92.148
+  port: 40647
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: DgMywXKqojHXeuXY8hOJaYGPFcjweCIJeD5cdg/cUUY=
+- name: 🇭🇰 中国香港 (Hong Kong) 08
+  server: 8.210.92.38
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4fc9dc3d-0d57-49e7-9bc0-e323165241bf
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: vhu6gifBQ8-hRzW1gqKFkEXDlQbf6Ex8kKj1FcxhmzA
+    short-id: d78318845237d9a9
+  servername: www.ebay.com
   client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES

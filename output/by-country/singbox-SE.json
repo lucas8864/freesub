@@ -23,7 +23,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         }
       },
       "transport": {
@@ -72,32 +72,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 06",
-      "server": "92.63.189.39",
-      "server_port": 8443,
-      "uuid": "7aa77858-f235-0003-9434-7ab060848b17",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "avelon.onl",
-        "insecure": false
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 07",
-      "server": "201.8.87.187",
-      "server_port": 443,
-      "uuid": "d7121b33-e335-4921-bb00-4c0b157e7fc1",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "2gcnbpjzq4go.cloud-kmt.com",
-        "insecure": false
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -106,9 +80,7 @@
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
         "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05",
-        "🇸🇪 瑞典 (Sweden) 06",
-        "🇸🇪 瑞典 (Sweden) 07"
+        "🇸🇪 瑞典 (Sweden) 05"
       ]
     },
     {
@@ -119,9 +91,7 @@
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
         "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05",
-        "🇸🇪 瑞典 (Sweden) 06",
-        "🇸🇪 瑞典 (Sweden) 07"
+        "🇸🇪 瑞典 (Sweden) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
