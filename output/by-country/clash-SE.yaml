@@ -12,15 +12,18 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇸🇪 瑞典 (Sweden) 02
-  server: 201.8.87.187
-  port: 443
+  server: 138.124.86.230
+  port: 48115
   udp: true
   type: vless
-  uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
-  flow: xtls-rprx-vision
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
   tls: true
-  servername: 2gcnbpjzq4go.cloud-kmt.com
+  servername: 138-124-86-230.sslip.io
   skip-cert-verify: false
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
 - name: 🇸🇪 瑞典 (Sweden) 03
   server: 138.199.55.230
   port: 1270
@@ -44,19 +47,6 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 05
-  server: 138.124.86.230
-  port: 48115
-  udp: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-  tls: true
-  servername: 138-124-86-230.sslip.io
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-- name: 🇸🇪 瑞典 (Sweden) 06
   server: 5.178.109.174
   port: 14430
   udp: true
@@ -67,6 +57,26 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 06
+  server: 92.63.189.39
+  port: 8443
+  udp: true
+  type: vless
+  uuid: 7aa77858-f235-0003-9434-7ab060848b17
+  flow: xtls-rprx-vision
+  tls: true
+  servername: avelon.onl
+  skip-cert-verify: false
+- name: 🇸🇪 瑞典 (Sweden) 07
+  server: 201.8.87.187
+  port: 443
+  udp: true
+  type: vless
+  uuid: d7121b33-e335-4921-bb00-4c0b157e7fc1
+  flow: xtls-rprx-vision
+  tls: true
+  servername: 2gcnbpjzq4go.cloud-kmt.com
+  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -78,6 +88,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05
   - 🇸🇪 瑞典 (Sweden) 06
+  - 🇸🇪 瑞典 (Sweden) 07
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -89,5 +100,6 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 04
   - 🇸🇪 瑞典 (Sweden) 05
   - 🇸🇪 瑞典 (Sweden) 06
+  - 🇸🇪 瑞典 (Sweden) 07
 rules:
 - MATCH,PROXIES

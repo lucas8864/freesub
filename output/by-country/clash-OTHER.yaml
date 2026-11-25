@@ -5,20 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01
-  server: 104.21.94.203
-  port: 443
+  server: 104.27.97.42
+  port: 8443
   udp: true
   type: vless
-  uuid: 364D2D52-E61E-4E52-80EC-2BC6BDF15349
+  uuid: 3692de53-42e6-4aed-a522-40ec355dcd2f
   tls: true
-  servername: fr-free.fastestrelay.com
+  servername: free.sahanwickramasinghe.com
   skip-cert-verify: false
   client-fingerprint: chrome
   network: ws
   ws-opts:
-    path: /700gvl
+    path: /
     headers:
-      Host: fr-free.fastestrelay.com
+      Host: free.sahanwickramasinghe.com
 proxy-groups:
 - name: PROXIES
   type: select

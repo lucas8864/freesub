@@ -6,13 +6,16 @@
     {
       "type": "vless",
       "tag": "🌐 其他地区 (Other) 01",
-      "server": "104.21.94.203",
-      "server_port": 443,
-      "uuid": "364D2D52-E61E-4E52-80EC-2BC6BDF15349",
+      "server": "104.27.97.42",
+      "server_port": 8443,
+      "uuid": "3692de53-42e6-4aed-a522-40ec355dcd2f",
       "tls": {
         "enabled": true,
-        "server_name": "fr-free.fastestrelay.com",
+        "server_name": "free.sahanwickramasinghe.com",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -20,9 +23,8 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/700gvl",
         "headers": {
-          "Host": "fr-free.fastestrelay.com"
+          "Host": "free.sahanwickramasinghe.com"
         }
       }
     },

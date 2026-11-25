@@ -4,33 +4,40 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇱 波兰 (Poland) 01",
-      "server": "171.22.129.227",
-      "server_port": 443,
-      "uuid": "42c83523-9f96-41b2-82d6-2edb71a4ac19",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "nujd35aknu.static-mirror.site",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "fJnm6-PhJGSwHaAdJOzXkYOfCPPCWSlaZrtfm1XsqhA",
-          "short_id": ""
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇵🇱 波兰 (Poland) 02",
+      "tag": "🇵🇱 波兰 (Poland) 01",
       "server": "217.30.10.70",
       "server_port": 9037,
       "method": "aes-256-cfb",
       "password": "TN2YqghxeFDKZfLU"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇵🇱 波兰 (Poland) 02",
+      "server": "54.37.131.126",
+      "server_port": 80,
+      "uuid": "1e55beca-3c69-4fa7-fb1f-15c1b767435f",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "google.whatsapp.snapp.torob.basalam.hesanid8.ir."
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇵🇱 波兰 (Poland) 03",
+      "server": "92.63.189.39",
+      "server_port": 8443,
+      "uuid": "7aa77858-f235-44d6-9434-7ab060848b17",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "avelon.onl",
+        "insecure": false
+      }
     },
     {
       "type": "selector",
@@ -38,7 +45,8 @@
       "outbounds": [
         "auto",
         "🇵🇱 波兰 (Poland) 01",
-        "🇵🇱 波兰 (Poland) 02"
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03"
       ]
     },
     {
@@ -46,7 +54,8 @@
       "tag": "auto",
       "outbounds": [
         "🇵🇱 波兰 (Poland) 01",
-        "🇵🇱 波兰 (Poland) 02"
+        "🇵🇱 波兰 (Poland) 02",
+        "🇵🇱 波兰 (Poland) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
