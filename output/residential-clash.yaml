@@ -12,47 +12,41 @@ proxies:
   password: 2902c46c8493
   sni: docs.microsoft.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  server: ibsdsf.df6h451rh.xin
-  port: 443
+- name: 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  server: v2new.nimbaha9.ir
+  port: 8080
   udp: true
-  type: anytls
-  password: 2902c46c8493
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  server: a54ge.df6h451rh.xin
-  port: 443
+  type: vless
+  uuid: f279c19a-b324-40cf-af57-049f9b1b68f2
+  network: ws
+  ws-opts:
+    path: /XDS45
+    headers:
+      Host: v2new.nimbaha9.ir
+- name: 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
+  server: raha.ertebatgoostar.ir
+  port: 80
   udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: docs.microsoft.com
-  skip-cert-verify: true
-- name: 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
-  server: mfjh645drfj1dr6j5.df6h451rh.xin
-  port: 443
-  udp: true
-  type: anytls
-  password: 0324fbc29561
-  sni: px.ads.linkedin.com
-  skip-cert-verify: true
+  type: vless
+  uuid: 8c49bed5-dbb2-4c0d-a2f1-2577b12c6c66
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇼 中国台湾 (Taiwan) 01 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 04 (家宽)
+  - 🇹🇷 土耳其 (Turkey) 02 (移动家宽)
+  - 🇹🇷 土耳其 (Turkey) 03 (移动家宽)
 rules:
 - MATCH,PROXIES

@@ -4,36 +4,28 @@
   },
   "outbounds": [
     {
-      "type": "vmess",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 01",
-      "server": "140.238.2.250",
-      "server_port": 443,
-      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "server": "211.178.105.134",
+      "server_port": 6123,
+      "method": "aes-256-cfb",
+      "password": "qwerREWQ@@"
+    },
+    {
+      "type": "vmess",
+      "tag": "🇰🇷 韩国 (South Korea) 02",
+      "server": "129.154.61.196",
+      "server_port": 800,
+      "uuid": "a915b1d6-cf28-4dc8-e4b4-e09c48c37ec0",
       "security": "auto"
     },
     {
-      "type": "hysteria2",
-      "tag": "🇰🇷 韩国 (South Korea) 02",
-      "server": "132.226.226.189",
-      "server_port": 50160,
-      "password": "1671a252e2a97dc2bda4e515475931da",
-      "tls": {
-        "enabled": true,
-        "server_name": "132.226.226.189",
-        "insecure": true
-      }
-    },
-    {
-      "type": "hysteria2",
+      "type": "shadowsocks",
       "tag": "🇰🇷 韩国 (South Korea) 03",
-      "server": "152.67.200.82",
-      "server_port": 50160,
-      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
-      "tls": {
-        "enabled": true,
-        "server_name": "off",
-        "insecure": true
-      }
+      "server": "49.254.204.133",
+      "server_port": 1774,
+      "method": "aes-256-cfb",
+      "password": "1234!@#$"
     },
     {
       "type": "hysteria2",
@@ -48,26 +40,73 @@
       }
     },
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇰🇷 韩国 (South Korea) 05",
+      "server": "140.238.2.250",
+      "server_port": 443,
+      "uuid": "41a7089a-040b-4538-8b8d-010902405bde",
+      "security": "auto"
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 06",
+      "server": "132.226.226.189",
+      "server_port": 50160,
+      "password": "1671a252e2a97dc2bda4e515475931da",
+      "tls": {
+        "enabled": true,
+        "server_name": "132.226.226.189",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 07",
+      "server": "152.69.231.175",
+      "server_port": 50160,
+      "password": "1beb216e3f60aea9555dae60d219a5ca",
+      "tls": {
+        "enabled": true,
+        "server_name": "152.69.231.175",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 08",
+      "server": "152.67.200.82",
+      "server_port": 50160,
+      "password": "3d7634af8cb2c6cb4bac1c0efad8b43d",
+      "tls": {
+        "enabled": true,
+        "server_name": "vk.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇰🇷 韩国 (South Korea) 09",
       "server": "152.69.226.63",
       "server_port": 25555,
       "uuid": "27c5483f-17f4-48ae-9a04-def53d88440d",
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "152.69.226.63"
+        }
       }
     },
     {
       "type": "vless",
-      "tag": "🇰🇷 韩国 (South Korea) 06",
-      "server": "krd.80782636.xyz",
+      "tag": "🇰🇷 韩国 (South Korea) 10",
+      "server": "104.25.128.15",
       "server_port": 443,
       "uuid": "db906786-8c49-4b17-9182-cea680ef954d",
       "tls": {
         "enabled": true,
-        "server_name": "krd.80782636.xyz",
-        "insecure": true,
+        "server_name": "krc.80782636.xyz",
+        "insecure": false,
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
@@ -77,8 +116,20 @@
         "type": "ws",
         "path": "/kw7x2mq9",
         "headers": {
-          "Host": "krd.80782636.xyz"
+          "Host": "krc.80782636.xyz"
         }
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇰🇷 韩国 (South Korea) 11",
+      "server": "www.ddsos.cc",
+      "server_port": 7788,
+      "password": "c8aa4ba6a243ddfdeb67515aa849624b",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.ddsos.cc",
+        "insecure": true
       }
     },
     {
@@ -91,7 +142,12 @@
         "🇰🇷 韩国 (South Korea) 03",
         "🇰🇷 韩国 (South Korea) 04",
         "🇰🇷 韩国 (South Korea) 05",
-        "🇰🇷 韩国 (South Korea) 06"
+        "🇰🇷 韩国 (South Korea) 06",
+        "🇰🇷 韩国 (South Korea) 07",
+        "🇰🇷 韩国 (South Korea) 08",
+        "🇰🇷 韩国 (South Korea) 09",
+        "🇰🇷 韩国 (South Korea) 10",
+        "🇰🇷 韩国 (South Korea) 11"
       ]
     },
     {
@@ -103,7 +159,12 @@
         "🇰🇷 韩国 (South Korea) 03",
         "🇰🇷 韩国 (South Korea) 04",
         "🇰🇷 韩国 (South Korea) 05",
-        "🇰🇷 韩国 (South Korea) 06"
+        "🇰🇷 韩国 (South Korea) 06",
+        "🇰🇷 韩国 (South Korea) 07",
+        "🇰🇷 韩国 (South Korea) 08",
+        "🇰🇷 韩国 (South Korea) 09",
+        "🇰🇷 韩国 (South Korea) 10",
+        "🇰🇷 韩国 (South Korea) 11"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

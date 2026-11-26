@@ -5,125 +5,90 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇯🇵 日本 (Japan) 01
-  server: 149.22.87.240
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-128-gcm
-  password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 02
-  server: 8.216.9.151
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 03
-  server: 8.216.9.190
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 04
   server: 149.22.87.241
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 05
-  server: 8.216.9.15
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 06
-  server: 8.216.8.84
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 07
-  server: 8.216.18.170
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 08
-  server: 47.91.18.202
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 09
-  server: 8.216.16.102
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 10
-  server: 8.211.174.191
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 11
-  server: 47.74.40.77
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 12
-  server: 47.74.40.243
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 13
-  server: 8.216.17.19
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 14
-  server: 8.216.15.30
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 15
-  server: 8.216.17.189
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 16
-  server: 8.216.18.189
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 17
+- name: 🇯🇵 日本 (Japan) 02
   server: 149.22.87.204
   port: 443
   udp: true
   type: ss
   cipher: aes-128-gcm
   password: shadowsocks
-- name: 🇯🇵 日本 (Japan) 18
+- name: 🇯🇵 日本 (Japan) 03
+  server: 8.216.8.135
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 04
+  server: 8.216.17.86
+  port: 6666
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 05
+  server: 8.216.4.158
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 06
+  server: 8.216.17.19
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 07
+  server: 47.91.2.13
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 08
+  server: 8.216.9.217
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 09
+  server: 149.22.87.240
+  port: 443
+  udp: true
+  type: ss
+  cipher: aes-128-gcm
+  password: shadowsocks
+- name: 🇯🇵 日本 (Japan) 10
+  server: 47.74.17.125
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 11
+  server: 47.91.15.175
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 12
+  server: 8.209.196.11
+  port: 5555
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: '123456'
+- name: 🇯🇵 日本 (Japan) 13
   server: 158.101.151.157
   port: 443
   udp: true
@@ -136,15 +101,7 @@ proxies:
     short-id: 684c7531e599dec0
   servername: www.microsoft.com
   client-fingerprint: chrome
-- name: 🇯🇵 日本 (Japan) 19
-  server: 8.209.247.109
-  port: 443
-  udp: true
-  type: hysteria2
-  password: usqmqUKJFIlCmvkCNSY64L3k
-  sni: bing.com
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 20
+- name: 🇯🇵 日本 (Japan) 14
   server: 168.138.43.75
   port: 80
   udp: true
@@ -155,70 +112,59 @@ proxies:
   network: ws
   ws-opts:
     path: /cctv13.m3u8
-- name: 🇯🇵 日本 (Japan) 21
-  server: 161.33.20.255
-  port: 8880
+- name: 🇯🇵 日本 (Japan) 15
+  server: 168.110.63.247
+  port: 8081
   udp: true
   type: vmess
-  uuid: e0856508-d693-450a-a099-455091dc4f25
+  uuid: c3bde296-8e44-4b8c-a325-577d5b3cc7c8
   alterId: 0
   cipher: auto
   network: ws
   ws-opts:
-    path: /e0856508-d693-450a-a099-455091dc4f25-vm
-- name: 🇯🇵 日本 (Japan) 22
-  server: 8.211.175.236
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: u63SxILNwtrQZ7Y1ZrFaZfsA
-  sni: 8.211.175.236
-  skip-cert-verify: true
-- name: 🇯🇵 日本 (Japan) 23
-  server: 8.216.5.89
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 24
-  server: 149.28.29.156
-  port: 443
+    path: /vless
+- name: 🇯🇵 日本 (Japan) 16
+  server: 213.183.41.31
+  port: 8463
   udp: true
   type: vless
-  uuid: aa1a9052-720f-4bb0-92be-21b6baf9f386
+  uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   tls: true
-  reality-opts:
-    public-key: qgCGmxD1lyAEIGZVEk4buAMGcvGvHLl9wGxPQlHCYX0
-    short-id: e535df57
-  servername: itunes.apple.com
-  client-fingerprint: chrome
+  servername: share.plumstatic.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /ws
+- name: 🇯🇵 日本 (Japan) 17
+  server: 104.16.10.234
+  port: 443
+  udp: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /tyxyws
     headers:
-      Host: itunes.apple.com
-- name: 🇯🇵 日本 (Japan) 25
-  server: 8.216.8.135
-  port: 5555
+      Host: jp3.yohototo.top
+- name: 🇯🇵 日本 (Japan) 18
+  server: 154.31.114.162
+  port: 8443
   udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 26
-  server: 8.216.5.230
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
-- name: 🇯🇵 日本 (Japan) 27
-  server: 8.216.0.168
-  port: 5555
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: '123456'
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  tls: true
+  servername: jp3.yohototo.top
+  skip-cert-verify: false
+  client-fingerprint: firefox
+  network: ws
+  ws-opts:
+    path: /tyxyws
+    headers:
+      Host: jp3.yohototo.top
 proxy-groups:
 - name: PROXIES
   type: select
@@ -242,15 +188,6 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16
   - 🇯🇵 日本 (Japan) 17
   - 🇯🇵 日本 (Japan) 18
-  - 🇯🇵 日本 (Japan) 19
-  - 🇯🇵 日本 (Japan) 20
-  - 🇯🇵 日本 (Japan) 21
-  - 🇯🇵 日本 (Japan) 22
-  - 🇯🇵 日本 (Japan) 23
-  - 🇯🇵 日本 (Japan) 24
-  - 🇯🇵 日本 (Japan) 25
-  - 🇯🇵 日本 (Japan) 26
-  - 🇯🇵 日本 (Japan) 27
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -274,14 +211,5 @@ proxy-groups:
   - 🇯🇵 日本 (Japan) 16
   - 🇯🇵 日本 (Japan) 17
   - 🇯🇵 日本 (Japan) 18
-  - 🇯🇵 日本 (Japan) 19
-  - 🇯🇵 日本 (Japan) 20
-  - 🇯🇵 日本 (Japan) 21
-  - 🇯🇵 日本 (Japan) 22
-  - 🇯🇵 日本 (Japan) 23
-  - 🇯🇵 日本 (Japan) 24
-  - 🇯🇵 日本 (Japan) 25
-  - 🇯🇵 日本 (Japan) 26
-  - 🇯🇵 日本 (Japan) 27
 rules:
 - MATCH,PROXIES

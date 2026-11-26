@@ -4,30 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "anytls",
-      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
-      "server": "ibsdsf.df6h451rh.xin",
+      "type": "shadowsocks",
+      "tag": "🇮🇪 爱尔兰 (Ireland) 01",
+      "server": "3.248.201.197",
       "server_port": 443,
-      "password": "2902c46c8493",
-      "tls": {
-        "enabled": true,
-        "server_name": "docs.microsoft.com",
-        "insecure": true
-      }
+      "method": "aes-256-cfb",
+      "password": "amazonskr05"
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇮🇪 爱尔兰 (Ireland) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)"
+        "🇮🇪 爱尔兰 (Ireland) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

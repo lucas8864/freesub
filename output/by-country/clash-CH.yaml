@@ -5,21 +5,21 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇭 瑞士 (Switzerland) 01
-  server: 23.166.88.189
-  port: 19999
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇭 瑞士 (Switzerland) 02
   server: 186.190.215.251
   port: 19999
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-- name: 🇨🇭 瑞士 (Switzerland) 03
+- name: 🇨🇭 瑞士 (Switzerland) 02
   server: 23.166.88.127
+  port: 19999
+  udp: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+- name: 🇨🇭 瑞士 (Switzerland) 03
+  server: 23.166.88.189
   port: 19999
   udp: true
   type: ss
@@ -39,15 +39,12 @@ proxies:
   servername: www.cloudflare.com
   client-fingerprint: chrome
 - name: 🇨🇭 瑞士 (Switzerland) 05
-  server: 186.190.215.4
-  port: 1270
+  server: 208.69.78.208
+  port: 443
   udp: true
-  type: vmess
-  uuid: 5c040f1d-45db-43bd-8d46-e4950e433735
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: xmfhlpy.com
+  type: trojan
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  sni: resources.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 06
   server: 79.127.184.104
@@ -57,30 +54,22 @@ proxies:
   cipher: aes-256-gcm
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
 - name: 🇨🇭 瑞士 (Switzerland) 07
-  server: 208.69.78.29
+  server: 208.69.78.222
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: learn.yourultimateprofessionalcareerhub.com
+  sni: yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 08
-  server: 208.69.78.158
+  server: 208.69.78.19
   port: 443
   udp: true
   type: trojan
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: api.yourultimateprofessionalcareerhub.com
+  sni: www.yourultimateprofessionalcareerhub.com
   skip-cert-verify: false
 - name: 🇨🇭 瑞士 (Switzerland) 09
-  server: 208.69.78.33
-  port: 443
-  udp: true
-  type: trojan
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  sni: courses.yourultimateprofessionalcareerhub.com
-  skip-cert-verify: false
-- name: 🇨🇭 瑞士 (Switzerland) 10
   server: 208.69.78.60
   port: 443
   udp: true
@@ -102,7 +91,6 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07
   - 🇨🇭 瑞士 (Switzerland) 08
   - 🇨🇭 瑞士 (Switzerland) 09
-  - 🇨🇭 瑞士 (Switzerland) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -117,6 +105,5 @@ proxy-groups:
   - 🇨🇭 瑞士 (Switzerland) 07
   - 🇨🇭 瑞士 (Switzerland) 08
   - 🇨🇭 瑞士 (Switzerland) 09
-  - 🇨🇭 瑞士 (Switzerland) 10
 rules:
 - MATCH,PROXIES
