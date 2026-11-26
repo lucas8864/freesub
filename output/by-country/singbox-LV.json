@@ -25,18 +25,40 @@
       }
     },
     {
+      "type": "vless",
+      "tag": "🇱🇻 拉脱维亚 (Latvia) 02",
+      "server": "213.183.45.23",
+      "server_port": 8450,
+      "uuid": "eb62cabf-5901-403a-aa0c-b1d9ed1b346d",
+      "tls": {
+        "enabled": true,
+        "server_name": "fonts.plumstatic.com",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/ws"
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇱🇻 拉脱维亚 (Latvia) 01"
+        "🇱🇻 拉脱维亚 (Latvia) 01",
+        "🇱🇻 拉脱维亚 (Latvia) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇱🇻 拉脱维亚 (Latvia) 01"
+        "🇱🇻 拉脱维亚 (Latvia) 01",
+        "🇱🇻 拉脱维亚 (Latvia) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
