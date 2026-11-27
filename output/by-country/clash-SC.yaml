@@ -4,30 +4,29 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇬🇷 希腊 (Greece) 01
-  server: leviko-gr9245.shopingggg.ir
-  port: 443
+- name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: 46.29.255.123
+  port: 59539
   udp: true
   type: vless
-  uuid: 8f704ed6-9a1a-4d04-94dd-1bff501716de
+  uuid: 30572b57-f5ab-4eb8-82d4-a24d399b99f6
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4
-    short-id: 94acb54627612d43
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
+    public-key: R6mPqCsjZMWauci4LHw7Qp1LGKmBd-sxMXplyOn9bSQ
+  servername: cloudflare-dns.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇬🇷 希腊 (Greece) 01
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇬🇷 希腊 (Greece) 01
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 rules:
 - MATCH,PROXIES

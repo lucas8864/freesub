@@ -6,17 +6,26 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01",
-      "server": "45.194.66.177",
+      "server": "188.225.56.100",
       "server_port": 443,
-      "uuid": "352a250d-080b-47b5-b7db-f9f8fa31c551",
-      "flow": "xtls-rprx-vision",
+      "uuid": "b432a23a-acff-425c-bf69-70480cd6ed09",
       "tls": {
         "enabled": true,
-        "server_name": "31tawwo0.virtual-network.lol",
+        "server_name": "e2.cdnwh.icu",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/stream/segment/3078a41dd7eb/",
+        "headers": {
+          "Host": "e2.cdnwh.icu"
         }
       }
     },

@@ -5,19 +5,20 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
-- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 194.87.69.12
   port: 18443
   udp: true
   type: ss
   cipher: aes-256-gcm
   password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
+- name: 🇷🇺 俄罗斯 (Russia) 02
+  server: 136.148.83.69
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
+  sni: szqbx-ru-77dc.my-fade.cloud
+  skip-cert-verify: false
 - name: 🇷🇺 俄罗斯 (Russia) 03
   server: 201.51.12.98
   port: 443
@@ -32,81 +33,37 @@ proxies:
   grpc-opts:
     grpc-service-name: mobile.api.Event
 - name: 🇷🇺 俄罗斯 (Russia) 04
-  server: 78.159.246.83
-  port: 445
-  udp: true
-  type: vless
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  tls: true
-  reality-opts:
-    public-key: VHWmCkZwC5XE-ctv0p8BinjoIx4SWgJUIsZPrhNf6TA
-  servername: passport.yandex.ru
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: grpc
-- name: 🇷🇺 俄罗斯 (Russia) 05
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 87bb2ac4-b7a1-0001-b11d-2107709ea6cb
-  sni: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-- name: 🇷🇺 俄罗斯 (Russia) 06
-  server: leviko-al2006.shopingggg.ir
-  port: 443
-  udp: true
-  type: vless
-  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
-  tls: true
-  servername: nl.lucheeebezlimitnoekino.stream
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /media/ws/
-- name: 🇷🇺 俄罗斯 (Russia) 07
-  server: 185.22.152.168
-  port: 18443
+  server: 130.49.189.158
+  port: 43558
   udp: true
   type: ss
-  cipher: aes-256-gcm
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-- name: 🇷🇺 俄罗斯 (Russia) 08
-  server: 136.148.83.69
+  cipher: chacha20-ietf-poly1305
+  password: LNc9h/4NA9Q6ZHNeYHoT5X/fR9aoE9KQR1SWhVDHBog=
+- name: 🇷🇺 俄罗斯 (Russia) 05
+  server: 147.45.175.81
   port: 443
   udp: true
   type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
   tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
+  servername: xssite.webredirect.org
   skip-cert-verify: false
   client-fingerprint: chrome
-- name: 🇷🇺 俄罗斯 (Russia) 09
-  server: 136.148.83.69
-  port: 443
-  udp: true
-  type: vless
-  uuid: 666821a2-5c3d-0001-a56f-5a3a562d7324
-  tls: true
-  servername: szqbx-ru-77dc.my-fade.cloud
-  skip-cert-verify: false
-  client-fingerprint: qq
-- name: 🇷🇺 俄罗斯 (Russia) 10
-  server: 196.245.52.183
+  network: grpc
+  grpc-opts:
+    grpc-service-name: grpc-ru
+- name: 🇷🇺 俄罗斯 (Russia) 06
+  server: 5d0319t.nl7.h1clayd.click
   port: 443
   udp: true
   type: vless
   uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
   tls: true
   reality-opts:
-    public-key: zbz--PMjcIC4Ggr3j-ibDf0fzXRTj0lM_HzjPJyMkVE
-    short-id: 50a749f0eccb628c
-  servername: 15b171g.nl7.h1clayd.click
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: 5b79e8a94241
+    public-key: l-GzBDuNuhnjxoRlZqKvT7jAt_sbVAxhGFsAttO5kXs
+    short-id: 361d0dd59c70516f
+  servername: 5d0319t.nl7.h1clayd.click
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
@@ -118,10 +75,6 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
-  - 🇷🇺 俄罗斯 (Russia) 10
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -133,9 +86,5 @@ proxy-groups:
   - 🇷🇺 俄罗斯 (Russia) 04
   - 🇷🇺 俄罗斯 (Russia) 05
   - 🇷🇺 俄罗斯 (Russia) 06
-  - 🇷🇺 俄罗斯 (Russia) 07
-  - 🇷🇺 俄罗斯 (Russia) 08
-  - 🇷🇺 俄罗斯 (Russia) 09
-  - 🇷🇺 俄罗斯 (Russia) 10
 rules:
 - MATCH,PROXIES

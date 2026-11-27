@@ -5,23 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇬🇷 希腊 (Greece) 01",
-      "server": "leviko-gr9245.shopingggg.ir",
+      "tag": "🇹🇭 泰国 (Thailand) 01",
+      "server": "195.58.46.231",
       "server_port": 443,
-      "uuid": "8f704ed6-9a1a-4d04-94dd-1bff501716de",
-      "flow": "xtls-rprx-vision",
+      "uuid": "bbb945a6-7d16-4099-b802-d3a7ccebd3ca",
       "tls": {
         "enabled": true,
-        "server_name": "www.cloudflare.com",
+        "server_name": "node43.lmdscdn.ru",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
-          "public_key": "biNcdU5mywtNw-KyPpLHindBxdEyAolT1WJ26N0b7y4",
-          "short_id": "94acb54627612d43"
+          "public_key": "PVlnR_I9tZ8hKhOHW6ySpSofhsaShcBQ_JV2-0TePVA",
+          "short_id": "b8abb26d3cfadcfb"
         }
+      },
+      "transport": {
+        "type": "grpc",
+        "service_name": "livestreamcontent"
       }
     },
     {
@@ -29,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇬🇷 希腊 (Greece) 01"
+        "🇹🇭 泰国 (Thailand) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇬🇷 希腊 (Greece) 01"
+        "🇹🇭 泰国 (Thailand) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
