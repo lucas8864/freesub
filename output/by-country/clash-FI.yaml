@@ -14,20 +14,21 @@ proxies:
   tls: true
   servername: mail1.besttotaldns.com
   skip-cert-verify: false
-  client-fingerprint: chrome
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 31.76.77.231
+  server: 92.38.145.145
   port: 443
   udp: true
   type: vless
-  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
-  flow: xtls-rprx-vision
+  uuid: 3f734801-dacb-418f-b1e7-340427940c77
   tls: true
-  reality-opts:
-    public-key: PMtmgfkxpREXi51S_EUUi3KbYauQLjGD6c_llKRk8H4
-    short-id: cc85fc7134024405
-  servername: www.google.com
+  servername: gcore.com
+  skip-cert-verify: false
   client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /dl
+    headers:
+      Host: app1.gptban.com
 proxy-groups:
 - name: PROXIES
   type: select

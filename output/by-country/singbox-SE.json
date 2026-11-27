@@ -36,7 +36,7 @@
         "insecure": false,
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         }
       },
       "transport": {
@@ -47,27 +47,6 @@
     {
       "type": "vless",
       "tag": "🇸🇪 瑞典 (Sweden) 04",
-      "server": "sw6.yndx-game.com",
-      "server_port": 443,
-      "uuid": "eb83b44c-ad8c-4658-9923-313e59bb4d5e",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "sw6.yndx-game.com",
-        "insecure": false,
-        "alpn": [
-          "h2",
-          "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇸🇪 瑞典 (Sweden) 05",
       "server": "5.178.109.174",
       "server_port": 14430,
       "uuid": "80de563a-cac8-40ea-8cb0-4cb082dd92f9",
@@ -87,8 +66,7 @@
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 04"
       ]
     },
     {
@@ -98,8 +76,7 @@
         "🇸🇪 瑞典 (Sweden) 01",
         "🇸🇪 瑞典 (Sweden) 02",
         "🇸🇪 瑞典 (Sweden) 03",
-        "🇸🇪 瑞典 (Sweden) 04",
-        "🇸🇪 瑞典 (Sweden) 05"
+        "🇸🇪 瑞典 (Sweden) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

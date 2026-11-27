@@ -5,17 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: h-pl.ok-habits.xyz
+  server: 45.194.66.177
   port: 443
   udp: true
   type: vless
-  uuid: 259ec8bc-5a6b-4b33-8a71-c40e8d150c24
+  uuid: 352a250d-080b-47b5-b7db-f9f8fa31c551
+  flow: xtls-rprx-vision
   tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: 1.4.8.8
-  client-fingerprint: chrome
+  servername: 31tawwo0.virtual-network.lol
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select

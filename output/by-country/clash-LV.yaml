@@ -5,6 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇱🇻 拉脱维亚 (Latvia) 01
+  server: 185.135.86.175
+  port: 9033
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
+- name: 🇱🇻 拉脱维亚 (Latvia) 02
   server: 195.123.213.28
   port: 443
   udp: true
@@ -17,7 +24,7 @@ proxies:
     short-id: 5c256336e3b673fa
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇱🇻 拉脱维亚 (Latvia) 02
+- name: 🇱🇻 拉脱维亚 (Latvia) 03
   server: 213.183.45.23
   port: 8450
   udp: true
@@ -26,7 +33,6 @@ proxies:
   tls: true
   servername: fonts.plumstatic.com
   skip-cert-verify: false
-  client-fingerprint: firefox
   network: ws
   ws-opts:
     path: /ws
@@ -37,6 +43,7 @@ proxy-groups:
   - AUTO
   - 🇱🇻 拉脱维亚 (Latvia) 01
   - 🇱🇻 拉脱维亚 (Latvia) 02
+  - 🇱🇻 拉脱维亚 (Latvia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -44,5 +51,6 @@ proxy-groups:
   proxies:
   - 🇱🇻 拉脱维亚 (Latvia) 01
   - 🇱🇻 拉脱维亚 (Latvia) 02
+  - 🇱🇻 拉脱维亚 (Latvia) 03
 rules:
 - MATCH,PROXIES

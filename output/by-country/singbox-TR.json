@@ -6,20 +6,22 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
-      "server": "143.246.136.128",
-      "server_port": 50738,
-      "uuid": "56665684-5ac0-4ba9-9d49-8b258fb57974",
+      "server": "104.21.44.113",
+      "server_port": 443,
+      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
       "tls": {
         "enabled": true,
-        "server_name": "turkey-ip1.mmdaqaorg.xyz",
+        "server_name": "still-bar-5702.vpnetwork3567.workers.dev",
         "insecure": false,
         "alpn": [
-          "h2",
           "http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "still-bar-5702.vpnetwork3567.workers.dev"
         }
       }
     },

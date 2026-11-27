@@ -16,7 +16,7 @@ proxies:
     public-key: 8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To
     short-id: a3a578ab
   servername: www.apple.com
-  client-fingerprint: random
+  client-fingerprint: chrome
 - name: 🇮🇱 以色列 (Israel) 02
   server: 195.206.235.72
   port: 443
@@ -29,6 +29,21 @@ proxies:
     short-id: e572b6579ea525d4
   servername: 71b840t.de7.h1clayd.click
   client-fingerprint: chrome
+- name: 🇮🇱 以色列 (Israel) 03
+  server: 196.245.153.156
+  port: 443
+  udp: true
+  type: vless
+  uuid: cda0862a-0f87-4be9-8ed8-1d0c9e382839
+  tls: true
+  reality-opts:
+    public-key: xn7KVKS5MOnsFrYrEeRS04JssBCOxh12rxegaDFyGkA
+    short-id: 6d289ff0f47c0aac
+  servername: 961ec0g.nl17.h1clayd.click
+  client-fingerprint: chrome
+  network: grpc
+  grpc-opts:
+    grpc-service-name: 7d5abcd7d8a1
 proxy-groups:
 - name: PROXIES
   type: select
@@ -36,6 +51,7 @@ proxy-groups:
   - AUTO
   - 🇮🇱 以色列 (Israel) 01
   - 🇮🇱 以色列 (Israel) 02
+  - 🇮🇱 以色列 (Israel) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -43,5 +59,6 @@ proxy-groups:
   proxies:
   - 🇮🇱 以色列 (Israel) 01
   - 🇮🇱 以色列 (Israel) 02
+  - 🇮🇱 以色列 (Israel) 03
 rules:
 - MATCH,PROXIES
