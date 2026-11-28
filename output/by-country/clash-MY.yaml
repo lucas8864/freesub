@@ -1,0 +1,31 @@
+port: 7890
+socks-port: 7891
+allow-lan: true
+mode: rule
+log-level: info
+proxies:
+- name: 🇲🇾 马来西亚 (Malaysia) 01
+  server: 23.227.38.61
+  port: 443
+  udp: true
+  type: trojan
+  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
+  sni: 44-ml-1.ccc4vortex.top
+  skip-cert-verify: true
+  network: ws
+  ws-opts:
+    path: /images
+proxy-groups:
+- name: PROXIES
+  type: select
+  proxies:
+  - AUTO
+  - 🇲🇾 马来西亚 (Malaysia) 01
+- name: AUTO
+  type: url-test
+  url: https://www.gstatic.com/generate_204
+  interval: 300
+  proxies:
+  - 🇲🇾 马来西亚 (Malaysia) 01
+rules:
+- MATCH,PROXIES

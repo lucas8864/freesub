@@ -12,18 +12,42 @@
       "password": "ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4="
     },
     {
+      "type": "vless",
+      "tag": "🇦🇹 奥地利 (Austria) 02",
+      "server": "172.67.199.12",
+      "server_port": 443,
+      "uuid": "963A4918-A630-29DA-A873-093CDF8AD784",
+      "tls": {
+        "enabled": true,
+        "server_name": "ancient-haze-d203.vpnetwork3567.workers.dev",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ]
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "ancient-haze-d203.vpnetwork3567.workers.dev"
+        }
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇦🇹 奥地利 (Austria) 01",
+        "🇦🇹 奥地利 (Austria) 02"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇦🇹 奥地利 (Austria) 01"
+        "🇦🇹 奥地利 (Austria) 01",
+        "🇦🇹 奥地利 (Austria) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

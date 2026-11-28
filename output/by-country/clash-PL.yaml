@@ -5,20 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇱 波兰 (Poland) 01
-  server: 188.225.56.100
+  server: 201.58.178.197
   port: 443
   udp: true
   type: vless
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
+  uuid: e894c08a-fecc-46f5-bf03-c95d0274c79d
+  flow: xtls-rprx-vision
   tls: true
-  servername: e2.cdnwh.icu
-  skip-cert-verify: false
-  client-fingerprint: random
-  network: ws
-  ws-opts:
-    path: /stream/segment/3078a41dd7eb/
-    headers:
-      Host: e2.cdnwh.icu
+  reality-opts:
+    public-key: EUuZAVtneL8O7MgjETmHvOyInaxqJu2RD6hiFQdDPwk
+    short-id: 0df067145606c0b0
+  servername: lesson4.schoolpizorbz.xyz
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select

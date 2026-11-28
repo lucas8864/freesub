@@ -6,6 +6,20 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 01",
+      "server": "13.140.56.100",
+      "server_port": 14430,
+      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "transport": {
+        "type": "ws",
+        "path": "/vless",
+        "headers": {
+          "Host": "13.140.56.100"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 02",
       "server": "178.212.35.198",
       "server_port": 443,
       "uuid": "6bdc8320-7eae-46fc-be08-f5f54e65dfc8",
@@ -25,16 +39,56 @@
     },
     {
       "type": "vless",
-      "tag": "🇮🇳 印度 (India) 02",
-      "server": "13.140.56.100",
-      "server_port": 14430,
-      "uuid": "68512eac-cd53-4de3-8d1e-08f6e04af1a9",
+      "tag": "🇮🇳 印度 (India) 03",
+      "server": "147.93.171.8",
+      "server_port": 8443,
+      "uuid": "591e7de6-f2dd-4ff9-ae21-8e00d5affa2a",
+      "tls": {
+        "enabled": true,
+        "server_name": "147-93-171-8.sslip.io",
+        "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
+        "utls": {
+          "enabled": true,
+          "fingerprint": "firefox"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/vless",
+        "path": "/vpn-live",
         "headers": {
-          "Host": "13.140.56.100"
+          "Host": "147-93-171-8.sslip.io"
         }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇮🇳 印度 (India) 04",
+      "server": "xray-ikmqcro3-rapid-river-6.cloady.io",
+      "server_port": 443,
+      "uuid": "213224a4-6cd1-b7f4-8bbc-4f50e5ed847b",
+      "tls": {
+        "enabled": true,
+        "server_name": "xray-ikmqcro3-rapid-river-6.cloady.io",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/c54a815e676d9acc"
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇮🇳 印度 (India) 05",
+      "server": "152.67.8.205",
+      "server_port": 80,
+      "uuid": "9db4c708-aef8-4359-821b-38e47990be0d",
+      "security": "auto",
+      "transport": {
+        "type": "ws",
+        "path": "/"
       }
     },
     {
@@ -43,7 +97,10 @@
       "outbounds": [
         "auto",
         "🇮🇳 印度 (India) 01",
-        "🇮🇳 印度 (India) 02"
+        "🇮🇳 印度 (India) 02",
+        "🇮🇳 印度 (India) 03",
+        "🇮🇳 印度 (India) 04",
+        "🇮🇳 印度 (India) 05"
       ]
     },
     {
@@ -51,7 +108,10 @@
       "tag": "auto",
       "outbounds": [
         "🇮🇳 印度 (India) 01",
-        "🇮🇳 印度 (India) 02"
+        "🇮🇳 印度 (India) 02",
+        "🇮🇳 印度 (India) 03",
+        "🇮🇳 印度 (India) 04",
+        "🇮🇳 印度 (India) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
